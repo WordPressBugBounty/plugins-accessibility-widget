@@ -1,111 +1,82 @@
 <?php
+
+/**
+ * The plugin bootstrap file
+ *
+ * This file is read by WordPress to generate the plugin information in the plugin
+ * admin area. This file also includes all of the dependencies used by the plugin,
+ * registers the activation and deactivation functions, and defines a function
+ * that starts the plugin.
+ *
+ * @link              https://www.cookieyes.com/
+ * @since             1.6.6
+ * @package           AccessibilityWidget
+ *
+ * @wordpress-plugin
+ * Plugin Name:       AccessYes Accessibility Widget for ADA, EAA & WCAG Readiness
+ * Plugin URI:        https://www.cookieyes.com/accessibility-widget/
+ * Description:       A simple way to make your website more accessible.
+ * Version:           3.0.0
+ * Author:            CookieYes
+ * Author URI:        https://www.cookieyes.com/
+ * License:           GPLv3
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain:       accessibility-widget
+ */
+
 /*
-* Plugin Name: Accessibility Widget
-* Plugin URI: http://webgrrrl.net/archives/accessibility-widget-revived.htm
-* Description: Enlarge text on your WP site with this widget. Revived plugin from tripcastradio.com.
-* Author: Lorna Timbah (webgrrrl)
-* Version: 2.2.1
-* Author URI: https://webgrrrl.net
+	Copyright 2025  AccessibilityWidget
+
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License, version 2, as
+	published by the Free Software Foundation.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-class widget_accesstxt extends WP_Widget {
-  /** constructor */
-  function __construct() {
-    parent::__construct(false, $name = 'Accessibility Widget');
-  }
-  /** @see WP_Widget::widget */
-  function widget($args, $instance) {
-    extract( $args );
-    $title = apply_filters('widget_title', $instance['title']);
-    $tags = str_replace(" ", "", $instance['tags']); // remove whitespaces
-    $fontsize = str_replace(" ", "", $instance['fontsize']); // remove whitespaces
-    $afontsize = explode(",", $fontsize); // transform into arrays
-    $controls = explode(",", str_replace(" ", "", $instance['controls'])); // remove whitespaces then transform into arrays
-    $tips = explode(",", $instance['tips']); // transform into arrays
 
-    echo $before_widget;
-    if ( $title ) echo $before_title . $title . $after_title;
-    ?>
-    <script type="text/javascript">
-		//Specify affected tags. Add or remove from list
-		var tgs = new Array(<?php echo "'" . str_replace(",", "','", $tags) . "'"; ?>);
-		//Specify spectrum of different font sizes
-		var szs = new Array(<?php echo "'" . str_replace(",", "','", $fontsize) . "'"; ?>);
-		var startSz = 2;
-		function ts( trgt,inc ) {
-			if (!document.getElementById) return
-			var d = document,cEl = null,sz = startSz,i,j,cTags;
-			sz = inc;
-			if ( sz < 0 ) sz = 0;
-			if ( sz > 6 ) sz = 6;
-			startSz = sz;
-			if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
-			cEl.style.fontSize = szs[ sz ];
-			for ( i = 0 ; i < tgs.length ; i++ ) {
-				cTags = cEl.getElementsByTagName( tgs[ i ] );
-				for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = szs[ sz ];
-			}
-		}
-		</script>
-    <ul>
-      <li><?php
-      $controlscount = count($controls);
-      foreach ($afontsize as $key => $value) {
-        $icontrols = ($controlscount > 1 ? $key : 0);
-        echo "<a href=\"javascript:ts('body'," . $key . ")\" style=\"font-size:" . $value . "\" title=\"" . $tips[$icontrols] . "\">" . $controls[$icontrols] . "</a>&nbsp;&nbsp;";
-      }
-      ?></li>
-    </ul>
-    <?php echo $after_widget; ?>
-    <?php
-  }
-  /** @see WP_Widget::update -- do not rename this */
-  function update($new_instance, $old_instance) {
-		$instance = $old_instance;
-		$instance['title'] = strip_tags(esc_attr($new_instance['title']));
-		$instance['tags'] = strip_tags(esc_attr($new_instance['tags']));
-		$instance['fontsize'] = strip_tags(esc_attr($new_instance['fontsize']));
-		$instance['controls'] = strip_tags(esc_attr($new_instance['controls']));
-		$instance['tips'] = strip_tags(esc_attr($new_instance['tips']));
-    return $instance;
-  }
-  /** @see WP_Widget::form -- do not rename this */
-  function form($instance) {
-    $str_default = "90%, 100%, 110%, 120%";
-    $title = strip_tags(esc_attr($instance['title']));
-    $tags = ($instance['tags'] == "" ? "body,p,li,td" : strip_tags(esc_attr($instance['tags'])));
-    $fontsize = ($instance['fontsize'] == "" ? $str_default : strip_tags(esc_attr($instance['fontsize'])));
-    $controls = ($instance['controls'] == "" ? $str_default : strip_tags(esc_attr($instance['controls'])));
-    $tips = ($instance['tips'] == "" ? $str_default : strip_tags(esc_attr($instance['tips'])));
-  ?>
-  <p>
-    <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'accessibility-widget'); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
-  </p>
-  <p>
-    <label for="<?php echo $this->get_field_id('tags'); ?>"><?php _e('Resize the following HTML/CSS tags (separate with a comma (,)):', 'accessibility-widget'); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('tags'); ?>" name="<?php echo $this->get_field_name('tags'); ?>" type="text" value="<?php echo $tags; ?>" /><br />
-  </p>
-  <p>
-    <label for="<?php echo $this->get_field_id('fontsize'); ?>"><?php _e('Set to these sizes (separate with a comma (,)):', 'accessibility-widget'); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('fontsize'); ?>" name="<?php echo $this->get_field_name('fontsize'); ?>" type="text" value="<?php echo $fontsize; ?>" /><br />
-  </p>
-  <p>
-    <label for="<?php echo $this->get_field_id('controls'); ?>"><?php _e('Set controller text (separate with a comma (,)):', 'accessibility-widget'); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('controls'); ?>" name="<?php echo $this->get_field_name('controls'); ?>" type="text" value="<?php echo $controls; ?>" /><br />
-  </p>
-  <p>
-    <label for="<?php echo $this->get_field_id('tips'); ?>"><?php _e('Set tooltip text on mouse hover (separate with a comma (,)):', 'accessibility-widget'); ?></label>
-    <input class="widefat" id="<?php echo $this->get_field_id('tips'); ?>" name="<?php echo $this->get_field_name('tips'); ?>" type="text" value="<?php echo $tips; ?>" /><br />
-  </p>
-  <?php
-  }
-} // end class widget_accesstxt
-
-if ( ! version_compare( PHP_VERSION, '5.3.0', '>=' ) ) {
-    $initValue = create_function('', 'return register_widget("widget_accesstxt");');
-} else {
-    $initValue = function() {
-	return register_widget( 'widget_accesstxt' );
-    };
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
-add_action( 'widgets_init', $initValue );
+
+define( 'CY_A11Y_VERSION', '3.0.0' );
+define( 'CY_A11Y_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+define( 'CY_A11Y_PLUGIN_BASEPATH', plugin_dir_path( __FILE__ ) );
+// Previous version settings (deprecated from 0.9 onwards).
+define( 'CY_A11Y_PLUGIN_FILENAME', __FILE__ );
+define( 'CY_A11Y_DEFAULT_LANGUAGE', cya11y_set_default_language() );
+
+
+function cya11y_set_default_language() {
+	$default = get_option( 'WPLANG', 'en_US' );
+	if ( empty( $default ) || strlen( $default ) <= 1 ) {
+		$default = 'en';
+	}
+	return substr( $default, 0, 2 );
+}
+
+/**
+ * Check if plugin is in legacy version.
+ *
+ * @return boolean
+ */
+function cya11y_is_legacy() {
+	if ( empty( get_option( 'cya11y_widget_settings', array() ) ) && ! empty( get_option( 'widget_accesstxt', '' ) ) ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+if ( cya11y_is_legacy() ) {
+	require_once CY_A11Y_PLUGIN_BASEPATH . 'legacy/loader.php';
+} else {
+	require_once CY_A11Y_PLUGIN_BASEPATH . 'lite/loader.php';
+}
