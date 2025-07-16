@@ -138,7 +138,7 @@ class Frontend {
 	 */
 	public function enqueue_scripts() {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/js/widget' . $suffix . '.js', array(), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/js/widget' . $suffix . '.js', array(), $this->version, true );
 		wp_localize_script( $this->plugin_name, '_cyA11yConfig', $this->get_store_data() );
 	}
 

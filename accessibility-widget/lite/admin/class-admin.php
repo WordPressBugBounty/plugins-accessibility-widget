@@ -150,7 +150,7 @@ class Admin {
 			'cyA11yGlobals',
 			array(
 				'api' => array(
-					'endpoint' => rest_url( 'cya11y/v1' ),
+					'endpoint' => rest_url( 'cya11y/v1/' ),
 					'nonce'    => wp_create_nonce( 'wp_rest' ),
 				),
 			)

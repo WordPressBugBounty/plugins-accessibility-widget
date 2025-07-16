@@ -2403,7 +2403,7 @@
     const toolId = `cya11y-${id}`;
     if (enable) {
       try {
-        const css = generateCSSFromConfig(config);
+        let css = generateCSSFromConfig({ ...config, selector: `*:not(#cya11y-container):not(#cya11y-container *)` });
         if (css) {
           addStylesheet({
             css,
@@ -2672,7 +2672,7 @@
     }
     const css = generateCSSFromConfig({
       ...filter,
-      selector: "html.cya11y-filter"
+      selector: "*:not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay)"
     });
     addStylesheet({ css, id: "cya11y-filter-style" });
     document.documentElement.classList.add("cya11y-filter");
@@ -3271,10 +3271,11 @@
       return null;
     }
   }
+  // get detected language
+  const detectedLanguage = getScriptDataAttribute("lang") || document.documentElement?.lang || navigator?.language || document.querySelector('meta[http-equiv="Content-Language"]')?.getAttribute('content');    
 
   // src/i18n/getDefaultLanguage.ts
   function getDefaultLanguage() {
-    const detectedLanguage = getScriptDataAttribute("lang") || document.documentElement?.lang || navigator?.language || document.querySelector('meta[http-equiv="Content-Language"]')?.content;
     const languageCode = detectedLanguage?.split(/[-_]/)?.[0]?.trim() || pluginConfig.language.default;
     const isLanguageSupported = LANGUAGES.some((lang) => lang.code === languageCode);
     if (isLanguageSupported) {
@@ -3882,17 +3883,20 @@
       const selectedIcon = ICON_LIBRARY.find(
         (icon) => icon.id === pluginConfig.iconId
       );
+      
+      const label = LANGUAGE_DICTIONARY[detectedLanguage?.split('-')[0]??pluginConfig.language.default][pluginConfig.label];
+
       shadow.innerHTML = `
       <style id="cya11y-widget-css">${widget_default}</style>
       <div class="cya11y-widget" data-position="${currentPosition}">
         <div class="cya11y-widget-icon">
           <div class="cya11y-tooltip" role="tooltip" aria-hidden="true">
             <div class="cya11y-tooltip-arrow"></div>
-            ${pluginConfig.label}
+            ${label || 'Accessibility menu'}
           </div>
           <button 
              class="cya11y-menu-btn" 
-             aria-label="${pluginConfig.label || "Accessibility menu"}"
+             aria-label="${label || 'Accessibility menu'}"
              aria-expanded="false"
              aria-haspopup="dialog"
              aria-controls="cya11y-accessibility-menu"
@@ -3959,6 +3963,14 @@
   }
 
   // src/widget.ts
+  function yieldToMain() {
+    if ("scheduler" in window && "yield" in window.scheduler) {
+      return window.scheduler.yield();
+    }
+    return new Promise((resolve) => {
+      setTimeout(resolve, 0);
+    });
+  }
   function accessibilityWidget() {
     try {
       const savedSettings = getSavedUserSettings();
@@ -3967,6 +3979,7 @@
       if (!userSettings.lang) {
         userSettings.lang = getDefaultLanguage();
       }
+      yieldToMain;
       runAccessibility();
       renderWidget();
       return {

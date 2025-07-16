@@ -4,11 +4,11 @@ Tags: web accessibility, wp accessibility, accessibility widget, wcag, ada
 Requires at least: 5.0.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 3.0.1
+Stable tag: 3.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-All-in-one WP accessibility widget to meet WCAG, ADA, EAA, and GDPR standards with text resize, color contrast, dyslexia font, and more for WordPress web accessibility.
+Free accessibility widget to support WCAG, ADA & EAA. Includes text resize, high contrast, dyslexia-friendly font, spacing, and more tools.
 
 == Description ==
 
@@ -87,6 +87,10 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Changelog ==
 
+= 3.0.2 = 
+
+[Fix] – Added translation to the widget button tooltip
+
 = 3.0.1 = 
 
 [Enhancement] - New improved UI
@@ -99,8 +103,6 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Upgrade Notice ==
 
-= 3.0.1 = 
+= 3.0.2 = 
 
-[Compatibility] - Tested OK with WordPress version 6.8
-[Enhancement] - Added accessibility widget
-[Enhancement] - New improved UI
+[Fix] – Added translation to the widget button tooltip
