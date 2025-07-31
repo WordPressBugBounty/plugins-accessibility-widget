@@ -326,7 +326,7 @@
   var require_de = __commonJS({
     "src/locales/de.json"(exports, module) {
       module.exports = {
-        "Accessibility menu": "barrierefreiheits-men\xFC",
+        "Accessibility menu": "Barrierefreiheits-Men\xFC",
         "Reset settings": "Einstellungen Zur\xFCcksetzen",
         Close: "Schlie\xDFen",
         "Content adjustments": "Inhaltsanpassungen",
@@ -354,7 +354,7 @@
         "Font Weight": "Schriftschnitt",
         "Dyslexia Font": "Legasthenie-Schriftart",
         Language: "Sprache",
-        "Accessibility widget": "barrierefreiheits-men\xFC \xF6ffnen",
+        "Accessibility widget": "Barrierefreiheits-Men\xFC \xF6ffnen",
         "Accessibility Profiles": "Barrierefreiheits-Profile",
         "Cognitive Disability": "Kognitive Beeintr\xE4chtigung",
         "Seizure Safe": "Anfallssicher",
@@ -449,7 +449,7 @@
   var require_es = __commonJS({
     "src/locales/es.json"(exports, module) {
       module.exports = {
-        "Accessibility menu": "men\xFA de accesibilidad",
+        "Accessibility menu": "Men\xFA de accesibilidad",
         "Reset settings": "Restablecer Configuraci\xF3n",
         Close: "Cerrar",
         "Content adjustments": "Ajustes de Contenido",
@@ -859,7 +859,7 @@
   var require_it = __commonJS({
     "src/locales/it.json"(exports, module) {
       module.exports = {
-        "Accessibility menu": "menu accessibilit\xE0",
+        "Accessibility menu": "Menu accessibilit\xE0",
         "Reset settings": "Ripristina impostazioni",
         Close: "Chiudi",
         "Content adjustments": "Regolazioni Contenuto",
@@ -1433,12 +1433,12 @@
   var require_pl = __commonJS({
     "src/locales/pl.json"(exports, module) {
       module.exports = {
-        "Accessibility menu": "menu dost\u0119pno\u015Bci",
+        "Accessibility menu": "Menu dost\u0119pno\u015Bci",
         "Reset settings": "Resetuj ustawienia",
         Close: "Zamknij",
         "Content adjustments": "Dostosowania Tre\u015Bci",
         "Navigation adjustments": "Dostosowania Nawigacji",
-        "Align Left": "cya11yr\xF3wnaj do Lewej",
+        "Align Left": "Wyr\xF3wnaj do Lewej",
         "Adjust Font Size": "Dostosuj Rozmiar Czcionki",
         "Highlight Title": "Pod\u015Bwietl Tytu\u0142",
         "Highlight Links": "Pod\u015Bwietl Linki",
@@ -1446,8 +1446,8 @@
         "Colour adjustments": "Dostosowania Kolor\xF3w",
         "Dark Contrast": "Ciemny Kontrast",
         "Light Contrast": "Jasny Kontrast",
-        "High Contrast": "cya11ysoki Kontrast",
-        "High Saturation": "cya11ysoka Nasycenie",
+        "High Contrast": "Wysoki Kontrast",
+        "High Saturation": "Wysokie Nasycenie",
         "Low Saturation": "Niskie Nasycenie",
         Monochrome: "Monochromatyczny",
         Tools: "Narz\u0119dzia",
@@ -1457,7 +1457,7 @@
         "Increase Font Size": "Zwi\u0119ksz Rozmiar Czcionki",
         "Decrease Font Size": "Zmniejsz Rozmiar Czcionki",
         "Letter Spacing": "Odst\u0119p Liter",
-        "Line Height": "cya11ysoko\u015B\u0107 Linii",
+        "Line Height": "Wysoko\u015B\u0107 Linii",
         "Font Weight": "Grubo\u015B\u0107 Czcionki",
         "Dyslexia Font": "Czcionka dla Dysleksji",
         Language: "J\u0119zyk",
@@ -1474,7 +1474,7 @@
   var require_pt = __commonJS({
     "src/locales/pt.json"(exports, module) {
       module.exports = {
-        "Accessibility menu": "menu de acessibilidade",
+        "Accessibility menu": "Menu de acessibilidade",
         "Reset settings": "Redefinir configura\xE7\xF5es",
         Close: "Fechar",
         "Content adjustments": "Ajustes de Conte\xFAdo",
@@ -2630,7 +2630,8 @@
         "fill": "#FFF",
         "background-color": "#181818"
       },
-      childrenSelector: DARK_CONTRAST_SELECTORS
+      childrenSelector: DARK_CONTRAST_SELECTORS,
+      mainSelector: ""
     },
     "light-contrast": {
       styles: {
@@ -2638,27 +2639,32 @@
         "fill": "#000",
         "background-color": "#FFF"
       },
-      childrenSelector: TEXT_SELECTORS
+      childrenSelector: TEXT_SELECTORS,
+      mainSelector: ""
     },
     "high-contrast": {
       styles: {
         "filter": "contrast(125%)"
-      }
+      },
+      mainSelector: ":not(html):not(body)"
     },
     "high-saturation": {
       styles: {
-        "filter": "saturate(200%)"
-      }
+        "filter": "saturate(150%)"
+      },
+      mainSelector: ":not(html):not(body)"
     },
     "low-saturation": {
       styles: {
         "filter": "saturate(50%)"
-      }
+      },
+      mainSelector: ":not(html):not(body)"
     },
     "monochrome": {
       styles: {
         "filter": "grayscale(100%)"
-      }
+      },
+      mainSelector: ":not(html):not(body)"
     }
   };
 
@@ -2667,15 +2673,15 @@
     const filter = FILTERS[contrast];
     if (!filter) {
       document.getElementById("cya11y-filter-style")?.remove();
-      document.documentElement.classList.remove("cya11y-filter");
+      document.body.classList.remove("cya11y-filter");
       return;
     }
     const css = generateCSSFromConfig({
       ...filter,
-      selector: "*:not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay)"
+      selector: `*${filter.mainSelector}:not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay)`
     });
     addStylesheet({ css, id: "cya11y-filter-style" });
-    document.documentElement.classList.add("cya11y-filter");
+    document.body.classList.add("cya11y-filter");
   }
 
   // src/views/menu/runAccessibility.ts
@@ -2988,7 +2994,7 @@
         document.removeEventListener("keydown", $menu._escapeKeyHandler);
         delete $menu._escapeKeyHandler;
       }
-      const widgetContainer = document.querySelector(".cya11y-container");
+      const widgetContainer = document.querySelector("#cya11y-container");
       if (widgetContainer) {
         const widgetShadowRoot = widgetContainer.shadowRoot;
         if (widgetShadowRoot) {
@@ -3001,7 +3007,7 @@
     } else {
       $menu.style.display = "block";
       $overlay.style.display = "block";
-      const widgetContainer = document.querySelector(".cya11y-container");
+      const widgetContainer = document.querySelector("#cya11y-container");
       if (widgetContainer) {
         const widgetShadowRoot = widgetContainer.shadowRoot;
         if (widgetShadowRoot) {
@@ -3200,10 +3206,27 @@
   ];
   var locales = LANGUAGES.map((lang) => lang.code);
   var LANGUAGE_DICTIONARY = {};
+  var languagesLoaded = false;
+  var languagesLoadingPromise = null;
   async function loadLanguages() {
-    for (const locale of locales) {
-      LANGUAGE_DICTIONARY[locale] = (await globImport_locales_json(`../locales/${locale}.json`)).default;
+    if (languagesLoaded) {
+      return;
     }
+    if (languagesLoadingPromise) {
+      return languagesLoadingPromise;
+    }
+    languagesLoadingPromise = (async () => {
+      try {
+        for (const locale of locales) {
+          LANGUAGE_DICTIONARY[locale] = (await globImport_locales_json(`../locales/${locale}.json`)).default;
+        }
+        languagesLoaded = true;
+      } catch (error) {
+        console.error("Failed to load languages:", error);
+        throw error;
+      }
+    })();
+    return languagesLoadingPromise;
   }
   loadLanguages();
 
@@ -3271,8 +3294,7 @@
       return null;
     }
   }
-  // get detected language
-  const detectedLanguage = getScriptDataAttribute("lang") || document.documentElement?.lang || navigator?.language || document.querySelector('meta[http-equiv="Content-Language"]')?.getAttribute('content');    
+  var detectedLanguage = getScriptDataAttribute("lang") || document.documentElement?.lang || navigator?.language || document.querySelector('meta[http-equiv="Content-Language"]')?.getAttribute("content");
 
   // src/i18n/getDefaultLanguage.ts
   function getDefaultLanguage() {
@@ -3851,7 +3873,7 @@
         openMenu();
         break;
       case "Escape":
-        const widgetContainer = document.querySelector(".cya11y-container");
+        const widgetContainer = document.querySelector("#cya11y-container");
         if (widgetContainer) {
           const shadowRoot = widgetContainer.shadowRoot;
           if (shadowRoot) {
@@ -3877,26 +3899,25 @@
         return null;
       }
       const $container = document.createElement("div");
-      $container.classList.add("cya11y-container");
+      $container.id = "cya11y-container";
       const shadow = $container.attachShadow({ mode: "open" });
       const currentPosition = pluginConfig.position[device];
       const selectedIcon = ICON_LIBRARY.find(
         (icon) => icon.id === pluginConfig.iconId
       );
-      
-      const label = LANGUAGE_DICTIONARY[detectedLanguage?.split('-')[0]??pluginConfig.language.default][pluginConfig.label];
-
+      const defaultLanguage = getDefaultLanguage();
+      const label = LANGUAGE_DICTIONARY[defaultLanguage][pluginConfig.label];
       shadow.innerHTML = `
       <style id="cya11y-widget-css">${widget_default}</style>
       <div class="cya11y-widget" data-position="${currentPosition}">
         <div class="cya11y-widget-icon">
           <div class="cya11y-tooltip" role="tooltip" aria-hidden="true">
             <div class="cya11y-tooltip-arrow"></div>
-            ${label || 'Accessibility menu'}
+            ${label}
           </div>
           <button 
              class="cya11y-menu-btn" 
-             aria-label="${label || 'Accessibility menu'}"
+             aria-label="${label || "Accessibility menu"}"
              aria-expanded="false"
              aria-haspopup="dialog"
              aria-controls="cya11y-accessibility-menu"
@@ -3963,23 +3984,14 @@
   }
 
   // src/widget.ts
-  function yieldToMain() {
-    if ("scheduler" in window && "yield" in window.scheduler) {
-      return window.scheduler.yield();
-    }
-    return new Promise((resolve) => {
-      setTimeout(resolve, 0);
-    });
-  }
-  function accessibilityWidget() {
+  async function accessibilityWidget() {
     try {
+      await loadLanguages();
       const savedSettings = getSavedUserSettings();
-      console.log("Default language:", getDefaultLanguage());
       Object.assign(userSettings, savedSettings);
       if (!userSettings.lang) {
         userSettings.lang = getDefaultLanguage();
       }
-      yieldToMain;
       runAccessibility();
       renderWidget();
       return {
@@ -4024,11 +4036,11 @@
   }
 
   // src/entry.ts
-  function initialize() {
+  async function initialize() {
     try {
       if (document.readyState === "complete" || document.readyState === "interactive") {
         document.removeEventListener("readystatechange", initialize);
-        accessibilityWidget();
+        await accessibilityWidget();
         if (!getScriptDataAttribute("disableObserveLang")) {
           observeHTMLLang();
         }

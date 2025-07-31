@@ -4,7 +4,7 @@ Tags: web accessibility, wp accessibility, accessibility widget, wcag, ada
 Requires at least: 5.0.0
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 3.0.2
+Stable tag: 3.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -87,6 +87,12 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Changelog ==
 
+= 3.0.3 2025-07-31 =
+
+[Fix] - Resolved a conflict issue with the MonsterInsights plugin.
+[Fix] - Corrected fallback language behavior when translation for the site language is unavailable.
+[Fix] - Language files were not loading properly when a caching plugin is active.
+
 = 3.0.2 = 
 
 [Fix] – Added translation to the widget button tooltip
@@ -103,6 +109,8 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Upgrade Notice ==
 
-= 3.0.2 = 
+= 3.0.3 =
 
-[Fix] – Added translation to the widget button tooltip
+[Fix] - Resolved a conflict issue with the MonsterInsights plugin.
+[Fix] - Corrected fallback language behavior when translation for the site language is unavailable.
+[Fix] - Language files were not loading properly when a caching plugin is active.
