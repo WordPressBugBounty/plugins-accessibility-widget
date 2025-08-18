@@ -249,11 +249,11 @@ class Api extends Rest_Controller {
 					'type'        => 'object',
 					'context'     => array( 'view', 'edit' ),
 					'properties'  => array(
-						'default' => array(
+						'default'  => array(
 							'type' => 'string',
 						),
 						'selected' => array(
-							'type' => 'array',
+							'type'  => 'array',
 							'items' => array(
 								'type' => 'string',
 							),

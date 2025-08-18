@@ -16,7 +16,7 @@
  * Plugin Name:       AccessYes Accessibility Widget for ADA, EAA & WCAG Readiness
  * Plugin URI:        https://www.cookieyes.com/accessibility-widget/
  * Description:       A simple way to make your website more accessible.
- * Version:           3.0.3
+ * Version:           3.0.4
  * Author:            CookieYes
  * Author URI:        https://www.cookieyes.com/
  * License:           GPLv3
@@ -46,7 +46,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'CY_A11Y_VERSION', '3.0.3' );
+define( 'CY_A11Y_VERSION', '3.0.4' );
 define( 'CY_A11Y_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'CY_A11Y_PLUGIN_BASEPATH', plugin_dir_path( __FILE__ ) );
 // Previous version settings (deprecated from 0.9 onwards).

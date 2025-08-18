@@ -24999,6 +24999,7 @@ const LANGUAGES = [
   { code: "my", label: "မြန်မာ (Burmese)" },
   { code: "nl", label: "Nederlands (Dutch)" },
   { code: "no", label: "Norsk (Norwegian)" },
+  { code: "nb", label: "Norsk bokmål (Norwegian Bokmål)" },
   { code: "pa", label: "ਪੰਜਾਬੀ (Punjabi)" },
   { code: "pl", label: "Polski (Polish)" },
   { code: "pt", label: "Português (Portuguese)" },
@@ -26775,7 +26776,7 @@ function App() {
         /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "a",
           {
-            href: "https://wordpress.org/support/plugin/accessibility-widget/reviews/?filter=5#new-post",
+            href: "https://wordpress.org/support/plugin/accessibility-widget/reviews/#new-post",
             target: "_blank",
             rel: "noopener noreferrer",
             className: "cy:text-[#1863DC] cy:no-underline hover:cy:underline",
@@ -26789,7 +26790,7 @@ function App() {
         " ",
         "to keep us going. This is just the first step from CookieYes toward a more inclusive web. More improvements on the way!"
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.0.3" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.0.4" })
     ] })
   ] }) }) });
 }

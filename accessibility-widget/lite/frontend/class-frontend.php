@@ -140,6 +140,13 @@ class Frontend {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/js/widget' . $suffix . '.js', array(), $this->version, true );
 		wp_localize_script( $this->plugin_name, '_cyA11yConfig', $this->get_store_data() );
+		wp_localize_script(
+			$this->plugin_name,
+			'_cyA11yAssets',
+			array(
+				'fonts' => plugin_dir_url( __FILE__ ) . 'assets/fonts/',
+			)
+		);
 	}
 
 	/**

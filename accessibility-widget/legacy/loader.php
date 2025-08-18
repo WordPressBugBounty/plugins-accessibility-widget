@@ -18,7 +18,7 @@ class widget_accesstxt extends WP_Widget {
 		echo $before_widget;
 		if ( $title ) {
 			echo $before_title . $title . $after_title;
-		}   
+		}
 		?>
 	<script type="text/javascript">
 		//Specify affected tags. Add or remove from list

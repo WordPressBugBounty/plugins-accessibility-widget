@@ -1306,6 +1306,47 @@
     }
   });
 
+  // src/locales/nb.json
+  var require_nb = __commonJS({
+    "src/locales/nb.json"(exports, module) {
+      module.exports = {
+        "Accessibility menu": "Tilgjengelighetsmeny",
+        "Reset settings": "Tilbakestill innstillinger",
+        Close: "Lukk",
+        "Content adjustments": "Innholdsjusteringer",
+        "Navigation adjustments": "Navigasjonsjusteringer",
+        "Align Left": "Venstrejuster",
+        "Adjust Font Size": "Juster skriftst\xF8rrelse",
+        "Highlight Title": "Fremhev tittel",
+        "Highlight Links": "Fremhev lenker",
+        "Readable Font": "Lesbar skrift",
+        "Colour adjustments": "Fargejusteringer",
+        "Dark Contrast": "M\xF8rk kontrast",
+        "Light Contrast": "Lys kontrast",
+        "High Contrast": "H\xF8y kontrast",
+        "High Saturation": "H\xF8y metning",
+        "Low Saturation": "Lav metning",
+        Monochrome: "Monokrom",
+        Tools: "Verkt\xF8y",
+        "Reading Guide": "Leseguide",
+        "Stop Animations": "Stopp animasjoner",
+        "Big Cursor": "Stor mark\xF8r",
+        "Increase Font Size": "\xD8k skriftst\xF8rrelse",
+        "Decrease Font Size": "Reduser skriftst\xF8rrelse",
+        "Letter Spacing": "Bokstavavstand",
+        "Line Height": "Linjeh\xF8yde",
+        "Font Weight": "Skrifttykkelse",
+        "Dyslexia Font": "Dysleksi-skrift",
+        Language: "Spr\xE5k",
+        "Accessibility widget": "Tilgjengelighetswidget",
+        "Accessibility Profiles": "Tilgjengelighetsprofiler",
+        "Cognitive Disability": "Kognitiv funksjonshemming",
+        "Seizure Safe": "Epilepsisikker",
+        "Accessibility statement": "Tilgjengelighetserkl\xE6ring"
+      };
+    }
+  });
+
   // src/locales/nl.json
   var require_nl = __commonJS({
     "src/locales/nl.json"(exports, module) {
@@ -2155,6 +2196,9 @@
     const jsonValue = JSON.stringify(value);
     try {
       localStorage.setItem(key, jsonValue);
+      window.dispatchEvent(new CustomEvent("cya11y:widgetStateChanged", {
+        detail: { key, value: jsonValue }
+      }));
     } catch (error) {
       console.warn("localStorage not available, falling back to cookies:", error);
       setCookie(key, jsonValue);
@@ -2449,7 +2493,7 @@
     styles: {
       "font-family": "OpenDyslexic3,Comic Sans MS,Arial,Helvetica,sans-serif"
     },
-    css: `@font-face {font-family: OpenDyslexic3;src: url("https://website-widgets.pages.dev/fonts/OpenDyslexic3-Regular.woff") format("woff"), url("https://website-widgets.pages.dev/fonts/OpenDyslexic3-Regular.ttf") format("truetype");}`
+    css: `@font-face {font-family: OpenDyslexic3;src: url("${window._cyA11yAssets?.fonts}OpenDyslexic3-Regular.woff") format("woff"), url("${window._cyA11yAssets?.fonts}OpenDyslexic3-Regular.ttf") format("truetype");}`
   };
   function readableFont(enable = false) {
     injectToolCSS({
@@ -3129,6 +3173,7 @@
     "../locales/mn.json": () => Promise.resolve().then(() => __toESM(require_mn())),
     "../locales/ms.json": () => Promise.resolve().then(() => __toESM(require_ms())),
     "../locales/my.json": () => Promise.resolve().then(() => __toESM(require_my())),
+    "../locales/nb.json": () => Promise.resolve().then(() => __toESM(require_nb())),
     "../locales/nl.json": () => Promise.resolve().then(() => __toESM(require_nl())),
     "../locales/no.json": () => Promise.resolve().then(() => __toESM(require_no())),
     "../locales/pa.json": () => Promise.resolve().then(() => __toESM(require_pa())),
@@ -3184,6 +3229,7 @@
     { code: "mn", label: "\u041C\u043E\u043D\u0433\u043E\u043B (Mongolian)" },
     { code: "ms", label: "Bahasa Malaysia (Malay)" },
     { code: "my", label: "\u1019\u103C\u1014\u103A\u1019\u102C (Burmese)" },
+    { code: "nb", label: "Norsk bokm\xE5l (Norwegian Bokm\xE5l)" },
     { code: "nl", label: "Nederlands (Dutch)" },
     { code: "no", label: "Norsk (Norwegian)" },
     { code: "pa", label: "\u0A2A\u0A70\u0A1C\u0A3E\u0A2C\u0A40 (Punjabi)" },
