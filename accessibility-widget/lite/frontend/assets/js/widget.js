@@ -2310,7 +2310,6 @@
   ];
   var DARK_CONTRAST_SELECTORS = [
     ...TEXT_SELECTORS,
-    "div",
     "span",
     "p",
     "a",
@@ -3237,7 +3236,7 @@
     { code: "pt", label: "Portugu\xEAs (Portuguese)" },
     { code: "ro", label: "Rom\xE2n\u0103 (Romanian)" },
     { code: "ru", label: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439 (Russian)" },
-    { code: "si", label: "Sloven\u0161\u010Dina (Slovene)" },
+    { code: "si", label: "\u0DC3\u0DD2\u0D82\u0DC4\u0DBD (Sinhala)" },
     { code: "sk", label: "sloven\u010Dina (Slovak)" },
     { code: "sl", label: "sloven\u0161\u010Dina (Slovenian)" },
     { code: "sr", label: "Srpski (Serbian)" },

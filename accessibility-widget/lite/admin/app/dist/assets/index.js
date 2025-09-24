@@ -26790,7 +26790,7 @@ function App() {
         " ",
         "to keep us going. This is just the first step from CookieYes toward a more inclusive web. More improvements on the way!"
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.0.4" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.0.5" })
     ] })
   ] }) }) });
 }
