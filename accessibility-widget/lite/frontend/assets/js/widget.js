@@ -1,6 +1,6 @@
 /*!
       * WebYes Accessibility Widget v2.0.0
-      * (c) 2025 webyes
+      * (c) 2026 webyes
       */
 "use strict";
 (() => {
@@ -1142,6 +1142,88 @@
     }
   });
 
+  // src/locales/lt.json
+  var require_lt = __commonJS({
+    "src/locales/lt.json"(exports, module) {
+      module.exports = {
+        "Accessibility menu": "Prieinamumo meniu",
+        "Reset settings": "Atkurti nustatymus",
+        Close: "U\u017Edaryti",
+        "Content adjustments": "Turinio koregavimai",
+        "Navigation adjustments": "Navigacijos koregavimai",
+        "Align Left": "Lygiuoti kair\u0117je",
+        "Adjust Font Size": "Koreguoti \u0161rifto dyd\u012F",
+        "Highlight Title": "Pary\u0161kinti antra\u0161t\u0119",
+        "Highlight Links": "Pary\u0161kinti nuorodas",
+        "Readable Font": "Skaitytinas \u0161riftas",
+        "Colour adjustments": "Spalv\u0173 koregavimai",
+        "Dark Contrast": "Tamsus kontrastas",
+        "Light Contrast": "\u0160viesus kontrastas",
+        "High Contrast": "Auk\u0161tas kontrastas",
+        "High Saturation": "Auk\u0161tas prisotinimas",
+        "Low Saturation": "\u017Demas prisotinimas",
+        Monochrome: "Vienaspalv\u0117",
+        Tools: "\u012Erankiai",
+        "Reading Guide": "Skaitymo gidas",
+        "Stop Animations": "Sustabdyti animacijas",
+        "Big Cursor": "Didelis \u017Eymeklis",
+        "Increase Font Size": "Padidinti \u0161rifto dyd\u012F",
+        "Decrease Font Size": "Suma\u017Einti \u0161rifto dyd\u012F",
+        "Letter Spacing": "Raid\u017Ei\u0173 tarpai",
+        "Line Height": "Eilu\u010Di\u0173 auk\u0161tis",
+        "Font Weight": "\u0160rifto storis",
+        "Dyslexia Font": "Disleksijos \u0161riftas",
+        Language: "Kalba",
+        "Accessibility widget": "Prieinamumo valdiklis",
+        "Accessibility Profiles": "Prieinamumo profiliai",
+        "Cognitive Disability": "Kognityvinis negalavimas",
+        "Seizure Safe": "Saugus nuo priepuoli\u0173",
+        "Accessibility statement": "Prieinamumo parei\u0161kimas"
+      };
+    }
+  });
+
+  // src/locales/lv.json
+  var require_lv = __commonJS({
+    "src/locales/lv.json"(exports, module) {
+      module.exports = {
+        "Accessibility menu": "Pieejam\u012Bbas izv\u0113lne",
+        "Reset settings": "Atiestat\u012Bt iestat\u012Bjumus",
+        Close: "Aizv\u0113rt",
+        "Content adjustments": "Satura piel\u0101gojumi",
+        "Navigation adjustments": "Navig\u0101cijas piel\u0101gojumi",
+        "Align Left": "Izl\u012Bdzin\u0101t pa kreisi",
+        "Adjust Font Size": "Piel\u0101got fonta izm\u0113ru",
+        "Highlight Title": "Izcelt virsrakstu",
+        "Highlight Links": "Izcelt saites",
+        "Readable Font": "Las\u0101ms fonts",
+        "Colour adjustments": "Kr\u0101su piel\u0101gojumi",
+        "Dark Contrast": "Tum\u0161s kontrasts",
+        "Light Contrast": "Gai\u0161s kontrasts",
+        "High Contrast": "Augsts kontrasts",
+        "High Saturation": "Augsts pies\u0101tin\u0101jums",
+        "Low Saturation": "Zems pies\u0101tin\u0101jums",
+        Monochrome: "Vienkr\u0101sains",
+        Tools: "R\u012Bki",
+        "Reading Guide": "Las\u012B\u0161anas vad\u012Bkla",
+        "Stop Animations": "Aptur\u0113t anim\u0101cijas",
+        "Big Cursor": "Liels kursors",
+        "Increase Font Size": "Palielin\u0101t fonta izm\u0113ru",
+        "Decrease Font Size": "Samazin\u0101t fonta izm\u0113ru",
+        "Letter Spacing": "Burtu atstarpes",
+        "Line Height": "Rindas augstums",
+        "Font Weight": "Fonta biezums",
+        "Dyslexia Font": "Fonts disleksijai",
+        Language: "Valoda",
+        "Accessibility widget": "Pieejam\u012Bbas logr\u012Bks",
+        "Accessibility Profiles": "Pieejam\u012Bbas profili",
+        "Cognitive Disability": "Kognit\u012Bvie trauc\u0113jumi",
+        "Seizure Safe": "Dro\u0161s pret l\u0113km\u0113m",
+        "Accessibility statement": "Pieejam\u012Bbas pazi\u0146ojums"
+      };
+    }
+  });
+
   // src/locales/ml.json
   var require_ml = __commonJS({
     "src/locales/ml.json"(exports, module) {
@@ -2043,6 +2125,47 @@
     }
   });
 
+  // src/locales/uk.json
+  var require_uk = __commonJS({
+    "src/locales/uk.json"(exports, module) {
+      module.exports = {
+        "Accessibility menu": "\u041C\u0435\u043D\u044E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0456",
+        "Reset settings": "\u0421\u043A\u0438\u043D\u0443\u0442\u0438 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
+        Close: "\u0417\u0430\u043A\u0440\u0438\u0442\u0438",
+        "Content adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u0432\u043C\u0456\u0441\u0442\u0443",
+        "Navigation adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u043D\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457",
+        "Align Left": "\u0412\u0438\u0440\u0456\u0432\u043D\u044F\u0442\u0438 \u043B\u0456\u0432\u043E\u0440\u0443\u0447",
+        "Adjust Font Size": "\u0417\u043C\u0456\u043D\u0438\u0442\u0438 \u0440\u043E\u0437\u043C\u0456\u0440 \u0448\u0440\u0438\u0444\u0442\u0443",
+        "Highlight Title": "\u041F\u0456\u0434\u0441\u0432\u0456\u0442\u0438\u0442\u0438 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A",
+        "Highlight Links": "\u041F\u0456\u0434\u0441\u0432\u0456\u0442\u0438\u0442\u0438 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F",
+        "Readable Font": "\u041B\u0435\u0433\u043A\u043E\u0447\u0438\u0442\u0430\u0431\u0435\u043B\u044C\u043D\u0438\u0439 \u0448\u0440\u0438\u0444\u0442",
+        "Colour adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u043A\u043E\u043B\u044C\u043E\u0440\u0456\u0432",
+        "Dark Contrast": "\u0422\u0435\u043C\u043D\u0430 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043D\u0456\u0441\u0442\u044C",
+        "Light Contrast": "\u0421\u0432\u0456\u0442\u043B\u0430 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043D\u0456\u0441\u0442\u044C",
+        "High Contrast": "\u0412\u0438\u0441\u043E\u043A\u0430 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043D\u0456\u0441\u0442\u044C",
+        "High Saturation": "\u0412\u0438\u0441\u043E\u043A\u0430 \u043D\u0430\u0441\u0438\u0447\u0435\u043D\u0456\u0441\u0442\u044C",
+        "Low Saturation": "\u041D\u0438\u0437\u044C\u043A\u0430 \u043D\u0430\u0441\u0438\u0447\u0435\u043D\u0456\u0441\u0442\u044C",
+        Monochrome: "\u041C\u043E\u043D\u043E\u0445\u0440\u043E\u043C\u043D\u0438\u0439 \u0440\u0435\u0436\u0438\u043C",
+        Tools: "\u0406\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0438",
+        "Reading Guide": "\u041B\u0456\u043D\u0456\u0439\u043A\u0430 \u0434\u043B\u044F \u0447\u0438\u0442\u0430\u043D\u043D\u044F",
+        "Stop Animations": "\u0417\u0443\u043F\u0438\u043D\u0438\u0442\u0438 \u0430\u043D\u0456\u043C\u0430\u0446\u0456\u0457",
+        "Big Cursor": "\u0412\u0435\u043B\u0438\u043A\u0438\u0439 \u043A\u0443\u0440\u0441\u043E\u0440",
+        "Increase Font Size": "\u0417\u0431\u0456\u043B\u044C\u0448\u0438\u0442\u0438 \u0448\u0440\u0438\u0444\u0442",
+        "Decrease Font Size": "\u0417\u043C\u0435\u043D\u0448\u0438\u0442\u0438 \u0448\u0440\u0438\u0444\u0442",
+        "Letter Spacing": "\u041C\u0456\u0436\u043B\u0456\u0442\u0435\u0440\u043D\u0438\u0439 \u0456\u043D\u0442\u0435\u0440\u0432\u0430\u043B",
+        "Line Height": "\u041C\u0456\u0436\u0440\u044F\u0434\u043A\u043E\u0432\u0438\u0439 \u0456\u043D\u0442\u0435\u0440\u0432\u0430\u043B",
+        "Font Weight": "\u0422\u043E\u0432\u0449\u0438\u043D\u0430 \u0448\u0440\u0438\u0444\u0442\u0443",
+        "Dyslexia Font": "\u0428\u0440\u0438\u0444\u0442 \u0434\u043B\u044F \u043B\u044E\u0434\u0435\u0439 \u0456\u0437 \u0434\u0438\u0441\u043B\u0435\u043A\u0441\u0456\u0454\u044E",
+        Language: "\u041C\u043E\u0432\u0430",
+        "Accessibility widget": "\u0412\u0456\u0434\u0436\u0435\u0442 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0456",
+        "Accessibility Profiles": "\u041F\u0440\u043E\u0444\u0456\u043B\u0456 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0456",
+        "Cognitive Disability": "\u041A\u043E\u0433\u043D\u0456\u0442\u0438\u0432\u043D\u0456 \u043F\u043E\u0440\u0443\u0448\u0435\u043D\u043D\u044F",
+        "Seizure Safe": "\u0411\u0435\u0437\u043F\u0435\u0447\u043D\u043E \u043F\u0440\u0438 \u0435\u043F\u0456\u043B\u0435\u043F\u0441\u0456\u0457",
+        "Accessibility statement": "\u0417\u0430\u044F\u0432\u0430 \u043F\u0440\u043E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0456\u0441\u0442\u044C"
+      };
+    }
+  });
+
   // src/locales/ur.json
   var require_ur = __commonJS({
     "src/locales/ur.json"(exports, module) {
@@ -2332,6 +2455,7 @@
   var FONT_SIZE_SELECTOR = "h1,h2,h3,h4,h5,h6,p,a,dl,dt,li,ol,th,td,span,blockquote,.cya11y-text,div,button";
   var ICON_SELECTOR_SET = new Set(ICON_SELECTOR);
   var ORIGINAL_FONT_SIZE_ATTR = "cya11yOrgFontSize";
+  var ORIGINAL_INLINE_FONT_SIZE_ATTR = "cya11yOrgInlineFontSize";
   function adjustFontSize(multiply = 1) {
     try {
       if (typeof multiply !== "number" || multiply <= 0) {
@@ -2344,13 +2468,34 @@
           if (Array.from(element.classList).some((cls) => ICON_SELECTOR_SET.has(cls))) {
             return;
           }
-          let originalFontSize = Number(element.dataset[ORIGINAL_FONT_SIZE_ATTR]) || parseInt(window.getComputedStyle(element).fontSize);
+          const isFirstRun = !element.dataset[ORIGINAL_FONT_SIZE_ATTR];
+          if (isFirstRun) {
+            const originalInlineStyle = element.style.fontSize;
+            const computedFontSize = parseInt(window.getComputedStyle(element).fontSize);
+            if (isNaN(computedFontSize) || computedFontSize <= 0) {
+              console.warn("Invalid original font size for element:", element);
+              return;
+            }
+            element.dataset[ORIGINAL_FONT_SIZE_ATTR] = String(computedFontSize);
+            if (originalInlineStyle) {
+              element.dataset[ORIGINAL_INLINE_FONT_SIZE_ATTR] = originalInlineStyle;
+            }
+          }
+          const originalFontSize = Number(element.dataset[ORIGINAL_FONT_SIZE_ATTR]);
           if (isNaN(originalFontSize) || originalFontSize <= 0) {
-            console.warn("Invalid original font size for element:", element);
+            console.warn("Invalid stored original font size for element:", element);
             return;
           }
-          if (!element.dataset[ORIGINAL_FONT_SIZE_ATTR]) {
-            element.dataset[ORIGINAL_FONT_SIZE_ATTR] = String(originalFontSize);
+          if (multiply === 1) {
+            if (isFirstRun) {
+              return;
+            }
+            if (element.dataset[ORIGINAL_INLINE_FONT_SIZE_ATTR]) {
+              element.style.fontSize = element.dataset[ORIGINAL_INLINE_FONT_SIZE_ATTR];
+            } else {
+              element.style.fontSize = "";
+            }
+            return;
           }
           const newFontSize = originalFontSize * multiply;
           element.style.fontSize = `${newFontSize.toFixed(0)}px`;
@@ -2721,7 +2866,7 @@
     }
     const css = generateCSSFromConfig({
       ...filter,
-      selector: `*${filter.mainSelector}:not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay)`
+      selector: `*${filter.mainSelector}:not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay):not(.cya11y-rg-container):not(.cya11y-rg-container *)`
     });
     addStylesheet({ css, id: "cya11y-filter-style" });
     document.body.classList.add("cya11y-filter");
@@ -2729,7 +2874,7 @@
 
   // src/views/menu/runAccessibility.ts
   function runAccessibility() {
-    adjustFontSize(userSettings?.fontSize);
+    adjustFontSize(userSettings?.states?.fontSize);
     renderTools();
     enableContrast(userSettings?.states?.contrast);
   }
@@ -3168,6 +3313,8 @@
     "../locales/ko.json": () => Promise.resolve().then(() => __toESM(require_ko())),
     "../locales/ku.json": () => Promise.resolve().then(() => __toESM(require_ku())),
     "../locales/lb.json": () => Promise.resolve().then(() => __toESM(require_lb())),
+    "../locales/lt.json": () => Promise.resolve().then(() => __toESM(require_lt())),
+    "../locales/lv.json": () => Promise.resolve().then(() => __toESM(require_lv())),
     "../locales/ml.json": () => Promise.resolve().then(() => __toESM(require_ml())),
     "../locales/mn.json": () => Promise.resolve().then(() => __toESM(require_mn())),
     "../locales/ms.json": () => Promise.resolve().then(() => __toESM(require_ms())),
@@ -3190,6 +3337,7 @@
     "../locales/te.json": () => Promise.resolve().then(() => __toESM(require_te())),
     "../locales/th.json": () => Promise.resolve().then(() => __toESM(require_th())),
     "../locales/tr.json": () => Promise.resolve().then(() => __toESM(require_tr())),
+    "../locales/uk.json": () => Promise.resolve().then(() => __toESM(require_uk())),
     "../locales/ur.json": () => Promise.resolve().then(() => __toESM(require_ur())),
     "../locales/vi.json": () => Promise.resolve().then(() => __toESM(require_vi())),
     "../locales/zh.json": () => Promise.resolve().then(() => __toESM(require_zh()))
@@ -3223,6 +3371,8 @@
     { code: "kn", label: "\u0C95\u0CA8\u0CCD\u0CA8\u0CA1 (Kannada)" },
     { code: "ko", label: "\uD55C\uAD6D\uC5B4 (Korean)" },
     { code: "ku", label: "Kurd\xEE (Kurdish)" },
+    { code: "lt", label: "Lietuvi\u0173 (Lithuanian)" },
+    { code: "lv", label: "Latvie\u0161u (Latvian)" },
     { code: "lb", label: "L\xEBtzebuergesch (Luxembourgish)" },
     { code: "ml", label: "\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02 (Malayalam)" },
     { code: "mn", label: "\u041C\u043E\u043D\u0433\u043E\u043B (Mongolian)" },
@@ -3246,6 +3396,7 @@
     { code: "te", label: "\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41 (Telugu)" },
     { code: "th", label: "\u0E44\u0E17\u0E22 (Thai)" },
     { code: "tr", label: "T\xFCrk\xE7e (Turkish)" },
+    { code: "uk", label: "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430 (Ukrainian)" },
     { code: "ur", label: "\u0627\u0631\u062F\u0648 (Urdu)" },
     { code: "vi", label: "Ti\u1EBFng Vi\u1EC7t (Vietnamese)" }
   ];
@@ -3889,7 +4040,8 @@
     "top-left": (margins) => ({
       top: `${margins.top}px`,
       left: `${margins.left}px`,
-      bottom: "auto"
+      bottom: "auto",
+      right: "auto"
     }),
     "top-right": (margins) => ({
       top: `${margins.top}px`,
@@ -3899,7 +4051,8 @@
     }),
     "bottom-left": (margins) => ({
       bottom: `${margins.bottom}px`,
-      left: `${margins.left}px`
+      left: `${margins.left}px`,
+      right: "auto"
     })
   };
   function getButtonStyle() {

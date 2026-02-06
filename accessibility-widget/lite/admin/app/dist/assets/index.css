@@ -465,6 +465,10 @@
     top: calc(var(--cy-spacing) * 4);
   }
 
+  .cy\:top-6 {
+    top: calc(var(--cy-spacing) * 6);
+  }
+
   .cy\:top-14 {
     top: calc(var(--cy-spacing) * 14);
   }
@@ -953,6 +957,10 @@
     min-height: calc(var(--cy-spacing) * 16);
   }
 
+  .cy\:min-h-\[266px\] {
+    min-height: 266px;
+  }
+
   .cy\:min-h-\[300px\] {
     min-height: 300px;
   }
@@ -1091,6 +1099,10 @@
 
   .cy\:w-\[58px\] {
     width: 58px;
+  }
+
+  .cy\:w-\[60\%\] {
+    width: 60%;
   }
 
   .cy\:w-\[100px\] {
@@ -1756,6 +1768,10 @@
     background-color: var(--color-bg);
   }
 
+  .cy\:bg-\[\#0B66E4\] {
+    background-color: #0b66e4;
+  }
+
   .cy\:bg-\[\#2DAD70\] {
     background-color: #2dad70;
   }
@@ -2018,6 +2034,10 @@
     padding-block: calc(var(--cy-spacing) * 4);
   }
 
+  .cy\:py-5 {
+    padding-block: calc(var(--cy-spacing) * 5);
+  }
+
   .cy\:py-5\.5 {
     padding-block: calc(var(--cy-spacing) * 5.5);
   }
@@ -2064,6 +2084,10 @@
 
   .cy\:pr-8 {
     padding-right: calc(var(--cy-spacing) * 8);
+  }
+
+  .cy\:pr-10 {
+    padding-right: calc(var(--cy-spacing) * 10);
   }
 
   .cy\:pb-3 {
@@ -2162,13 +2186,30 @@
     font-size: 10px;
   }
 
+  .cy\:text-\[12px\] {
+    font-size: 12px;
+  }
+
   .cy\:text-\[13px\] {
     font-size: 13px;
+  }
+
+  .cy\:text-\[14px\] {
+    font-size: 14px;
+  }
+
+  .cy\:text-\[18px\] {
+    font-size: 18px;
   }
 
   .cy\:leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+
+  .cy\:leading-relaxed {
+    --tw-leading: var(--cy-leading-relaxed);
+    line-height: var(--cy-leading-relaxed);
   }
 
   .cy\:font-\[300\] {
@@ -2223,6 +2264,10 @@
     white-space: nowrap;
   }
 
+  .cy\:text-\[\#0B66E4\] {
+    color: #0b66e4;
+  }
+
   .cy\:text-\[\#1578F7\] {
     color: #1578f7;
   }
@@ -2235,12 +2280,20 @@
     color: #535276;
   }
 
+  .cy\:text-\[16\] {
+    color: 16;
+  }
+
   .cy\:text-accent-foreground {
     color: var(--accent-foreground);
   }
 
   .cy\:text-black {
     color: var(--cy-color-black);
+  }
+
+  .cy\:text-blue-500 {
+    color: var(--cy-color-blue-500);
   }
 
   .cy\:text-blue-600 {
@@ -2311,6 +2364,16 @@
 
   .cy\:text-white\! {
     color: var(--cy-color-white) !important;
+  }
+
+  .cy\:text-white\/70 {
+    color: var(--cy-color-white);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .cy\:text-white\/70 {
+      color: color-mix(in oklab, var(--cy-color-white) 70%, transparent);
+    }
   }
 
   .cy\:tabular-nums {
@@ -2943,8 +3006,24 @@
       background-color: var(--sidebar-accent);
     }
 
-    .cy\:hover\:bg-white:hover {
+    .cy\:hover\:bg-white:hover, .cy\:hover\:bg-white\/10:hover {
       background-color: var(--cy-color-white);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .cy\:hover\:bg-white\/10:hover {
+        background-color: color-mix(in oklab, var(--cy-color-white) 10%, transparent);
+      }
+    }
+
+    .cy\:hover\:bg-white\/90:hover {
+      background-color: var(--cy-color-white);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .cy\:hover\:bg-white\/90:hover {
+        background-color: color-mix(in oklab, var(--cy-color-white) 90%, transparent);
+      }
     }
 
     .cy\:hover\:text-accent-foreground:hover {
@@ -2969,6 +3048,10 @@
 
     .cy\:hover\:text-sidebar-accent-foreground:hover {
       color: var(--sidebar-accent-foreground);
+    }
+
+    .cy\:hover\:text-white:hover {
+      color: var(--cy-color-white);
     }
 
     .cy\:hover\:underline:hover {
@@ -4097,6 +4180,10 @@
 
     .cy\:lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .cy\:lg\:flex-row {
+      flex-direction: row;
     }
 
     .cy\:lg\:px-8 {

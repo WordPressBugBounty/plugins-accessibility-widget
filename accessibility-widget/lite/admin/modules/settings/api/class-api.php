@@ -73,6 +73,30 @@ class Api extends Rest_Controller {
 				'schema' => array( $this, 'get_public_item_schema' ),
 			)
 		);
+		register_rest_route(
+		$this->namespace,
+		'/' . $this->rest_base . '/banners',
+		array(
+			array(
+				'methods'             => WP_REST_Server::CREATABLE,
+				'callback'            => array( $this, 'update_banner' ),
+				'permission_callback' => array( $this, 'create_item_permissions_check' ),
+				'args'                => array(
+					'banner_id' => array(
+						'required'          => true,
+						'type'              => 'string',
+						'sanitize_callback' => 'sanitize_text_field',
+						'description'       => __( 'Banner identifier.', 'accessibility-widget' ),
+					),
+					'data' => array(
+						'required'    => true,
+						'type'        => 'object',
+						'description' => __( 'Banner data to store (status, expiry, etc).', 'accessibility-widget' ),
+					),
+				),
+			),
+		)
+	);
 	}
 	/**
 	 * Get a collection of items.
@@ -83,7 +107,31 @@ class Api extends Rest_Controller {
 	public function get_items( $request ) {
 		$object = new Settings();
 		$data   = $object->get();
+		$data['banners'] = get_option( 'cya11y_banners', array() );
 		return rest_ensure_response( $data );
+	}
+
+	/**
+	 * Update a banner's data.
+	 *
+	 * @param WP_REST_Request $request Full details about the request.
+	 * @return WP_Error|WP_REST_Response
+	 */
+	public function update_banner( $request ) {
+		$banner_id = $request->get_param( 'banner_id' );
+		$data = $request->get_param( 'data' );
+		
+		$banners = get_option( 'cya11y_banners', array() );
+		
+		// Update or create banner data
+		$banners[ $banner_id ] = is_array( $data ) ? $data : array();
+		
+		update_option( 'cya11y_banners', $banners );
+		
+		return rest_ensure_response( array(
+			'success' => true,
+			'banners' => $banners,
+		) );
 	}
 	/**
 	 * Create a single cookie or cookie category.
@@ -305,6 +353,15 @@ class Api extends Rest_Controller {
 					'description' => __( 'Primary color in hex format.', 'accessibility-widget' ),
 					'type'        => 'string',
 					'context'     => array( 'view', 'edit' ),
+				),
+				'dismissedBanners' => array(
+					'description' => __( 'List of dismissed banner IDs.', 'accessibility-widget' ),
+					'type'        => 'array',
+					'context'     => array( 'view', 'edit' ),
+					'readonly'    => true,
+					'items'       => array(
+						'type' => 'string',
+					),
 				),
 				'modules'      => array(
 					'description' => __( 'Widget modules configuration.', 'accessibility-widget' ),

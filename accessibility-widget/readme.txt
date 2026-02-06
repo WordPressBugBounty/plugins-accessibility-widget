@@ -2,9 +2,9 @@
 Contributors: cookieyesdev
 Tags: web accessibility, wp accessibility, accessibility widget, wcag, ada
 Requires at least: 5.0.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 3.0.5
+Stable tag: 3.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -87,6 +87,33 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Changelog ==
 
+= 3.1.0 2026-02-04 =
+
+[Fix] - The Reading Guide is not functional when color adjustment modes such as High Contrast, High Saturation, Low Saturation, or Monochrome are enabled.
+
+= 3.0.9.1 2026-02-02 =
+
+[Fix] - Font size reset preserves original inline styles.
+
+= 3.0.9 2026-01-13 =
+
+[Fix] - Font size override issue.
+
+= 3.0.8 2025-12-26 =
+
+[Fix] - Incorrect font size issue.
+
+= 3.0.7 2025-12-4 =
+
+[Compatibility] – Tested OK with WordPress version 6.9.
+[Add] - Ukrainian language support.
+[Fix] - Minor fixes.
+
+= 3.0.6 2025-10-16 =
+
+[Add] - Latvian and Lithuanian language support.
+[Fix] - Minor fixes.
+
 = 3.0.5 2025-09-24 =
 
 [Fix] - Removed duplicate entry of slovene language.
@@ -118,6 +145,7 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Upgrade Notice ==
 
-= 3.0.5 =
+= 3.1.0 2026-02-04 =
 
-[Fix] - Removed duplicate entry of slovene language.
+[Fix] - The Reading Guide is not functional when color adjustment modes such as High Contrast, High Saturation, Low Saturation, or Monochrome are enabled.
+
