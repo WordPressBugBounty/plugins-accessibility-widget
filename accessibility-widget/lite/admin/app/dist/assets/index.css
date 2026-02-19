@@ -653,6 +653,10 @@
     margin-right: calc(var(--cy-spacing) * 3);
   }
 
+  .cy\:mr-4 {
+    margin-right: calc(var(--cy-spacing) * 4);
+  }
+
   .cy\:-mb-1 {
     margin-bottom: calc(var(--cy-spacing) * -1);
   }
@@ -679,6 +683,10 @@
 
   .cy\:-ml-4 {
     margin-left: calc(var(--cy-spacing) * -4);
+  }
+
+  .cy\:ml-0 {
+    margin-left: calc(var(--cy-spacing) * 0);
   }
 
   .cy\:ml-1 {

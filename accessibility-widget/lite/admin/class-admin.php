@@ -10,6 +10,11 @@
 
 namespace CookieYes\AccessibilityWidget\Lite\Admin;
 use CookieYes\AccessibilityWidget\Lite\Includes\Activator;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * The admin-specific functionality of the plugin.
  *
@@ -228,7 +233,7 @@ class Admin {
 	 */
 	public function plugin_action_links( $links ) {
 		$links[] = '<a href="https://www.cookieyes.com/accessibility-widget-support/" target="_blank">' . esc_html__( 'Support', 'accessibility-widget' ) . '</a>';
-		$links[] = '<a href="' . get_admin_url( null, 'edit.php?page=accessibility-widget' ) . '">' . esc_html__( 'Settings', 'accessibility-widget' ) . '</a>';
+		$links[] = '<a href="' . get_admin_url( null, 'admin.php?page=accessibility-widget' ) . '">' . esc_html__( 'Settings', 'accessibility-widget' ) . '</a>';
 		return array_reverse( $links );
 	}
 	/**

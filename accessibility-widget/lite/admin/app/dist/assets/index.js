@@ -22554,7 +22554,7 @@ function Header() {
       setIsSaving(false);
     }
   };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy-header cy:border-b cy:border-gray-200", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:justify-between cy:items-center cy:py-4", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy-header cy:border-b cy:border-gray-200", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 ", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:justify-between cy:items-center cy:py-4", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy-flex", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { className: "cy:w-[157px] cy:h-[37px] cy:text-white" }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:space-x-12", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:bg-[#00000045] cy:rounded-lg cy:px-4 cy:py-2", children: [
@@ -26857,12 +26857,12 @@ function App() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(SonnerProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:min-h-screen", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Header, {}),
     isLoading ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:py-8 cy:relative cy:min-h-[600px]", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SkeletonLoader, {}) }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(Tabs, { defaultValue: "customize", className: "cy:w-full", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsList, { className: "cy:w-full cy:flex cy:justify-start cy:px-4 cy:h-[56px] cy:bg-white cy:border-b cy:rounded-none cy:py-0", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsList, { className: "cy:w-full cy:flex cy:justify-start cy:h-[56px] cy:bg-white cy:border-b cy:rounded-none cy:py-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:h-[56px] cy:mx-auto cy:w-full", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           TabsTrigger,
           {
             value: "customize",
-            className: "cy:-mb-1 cy:flex-none  cy:border-0 cy:border-b-3 cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
+            className: "cy:-mb-1 cy:flex-none  cy:border-0 cy:border-b-3 cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:ml-0 cy:mr-4 cy:text-base! cy:font-medium",
             children: "Customise widget"
           }
         ),
@@ -26874,31 +26874,27 @@ function App() {
             children: "Settings"
           }
         )
-      ] }),
+      ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Banner, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "customize", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CustomizeTab, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "settings", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SettingsTab, {}) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:px-4 cy:py-4 cy:sm:px-6 cy:lg:px-8 cy:max-w-7xl cy:mx-auto cy:flex cy:justify-between", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
           "a",
           {
             href: "https://wordpress.org/support/plugin/accessibility-widget/reviews/#new-post",
             target: "_blank",
             rel: "noopener noreferrer",
             className: "cy:text-[#1863DC] cy:no-underline hover:cy:underline",
-            children: [
-              "Leave a",
-              " ",
-              " ★★★★★"
-            ]
+            children: "Leave a ★★★★★"
           }
         ),
         " ",
         "to keep us going. This is just the first step from CookieYes toward a more inclusive web. More improvements on the way!"
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.1.0" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.1.1" })
     ] })
   ] }) }) });
 }

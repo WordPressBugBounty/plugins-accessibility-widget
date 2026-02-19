@@ -3,22 +3,26 @@
  * Initialize the plugin.
  */
 
-if ( ! function_exists( 'rf_define_constants' ) ) {
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+if ( ! function_exists( 'cya11y_define_constants' ) ) {
 	/**
 	 * Return parsed URL
 	 *
 	 * @return void
 	 */
-	function rf_define_constants() {
+	function cya11y_define_constants() {
 	}
 }
 
-rf_define_constants();
+cya11y_define_constants();
 
 require_once CY_A11Y_PLUGIN_BASEPATH . 'class-autoloader.php';
 
-$autoloader = new \CookieYes\AccessibilityWidget\Lite\Autoloader();
-$autoloader->register();
+$cya11y_autoloader = new \CookieYes\AccessibilityWidget\Lite\Autoloader();
+$cya11y_autoloader->register();
 
 // register_activation_hook( __FILE__, array( \CookieYes\AccessibilityWidget\Lite\Includes\Activator::get_instance(), 'install' ) );
 

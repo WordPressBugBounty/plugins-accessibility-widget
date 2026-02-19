@@ -12,6 +12,10 @@
 
 namespace CookieYes\AccessibilityWidget\Lite\Frontend;
 use CookieYes\AccessibilityWidget\Lite\Admin\Modules\Settings\Includes\Settings;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 /**
  * The public-facing functionality of the plugin.
  *

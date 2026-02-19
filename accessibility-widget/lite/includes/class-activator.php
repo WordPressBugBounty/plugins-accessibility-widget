@@ -12,6 +12,10 @@
 
 namespace CookieYes\AccessibilityWidget\Lite\Includes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 
 /**
  * Fired during plugin activation.

@@ -13,10 +13,14 @@
 
 namespace CookieYes\AccessibilityWidget\Lite\Includes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 use CookieYes\AccessibilityWidget\Lite\Includes\Loader;
-use CookieYes\AccessibilityWidget\Lite\Includes\I18n;
 use CookieYes\AccessibilityWidget\Lite\Admin\Admin;
 use CookieYes\AccessibilityWidget\Lite\Frontend\Frontend;
+use CookieYes\AccessibilityWidget\Lite\Includes\Uninstall_Feedback;
 
 /**
  * The core plugin class.
@@ -120,20 +124,7 @@ class Base {
 		$this->loader = new \CookieYes\AccessibilityWidget\Lite\Includes\Loader();
 	}
 
-	/**
-	 * Define the locale for this plugin for internationalization.
-	 *
-	 * Uses the I18n class in order to set the domain and to register the hook
-	 * with WordPress.
-	 *
-	 * @since    3.0.0
-	 * @access   private
-	 */
-	private function set_locale() {
 
-		$plugin_i18n = I18n::get_instance();
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
-	}
 
 	/**
 	 * Register all of the hooks related to the admin area functionality
@@ -143,7 +134,11 @@ class Base {
 	 * @access   private
 	 */
 	private function define_admin_hooks() {
+		if ( is_admin() ) {
+			new Uninstall_Feedback();
+		}
 		$plugin_admin = new Admin( $this->get_plugin_name(), $this->get_version() );
+		$this->loader->add_filter( 'plugin_action_links_' . CY_A11Y_PLUGIN_BASENAME, $plugin_admin, 'plugin_action_links' );
 		if ( false === cya11y_is_admin_page() ) {
 			return;
 		}
