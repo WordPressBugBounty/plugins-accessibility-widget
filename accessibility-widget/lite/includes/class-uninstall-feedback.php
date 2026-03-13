@@ -144,22 +144,6 @@ class Uninstall_Feedback {
 					'link_url'  => 'https://www.cookieyes.com/accessibility-widget-support/',
 				),
 			),
-			array(
-				'id'     => 'other',
-				'text'   => __( 'Other', 'accessibility-widget' ),
-				'fields' => array(
-					array(
-						'type'        => 'textarea',
-						'label'       => __( 'Please share your feedback', 'accessibility-widget' ),
-						'placeholder' => __( 'What would you like us to know?', 'accessibility-widget' ),
-					),
-				),
-				'banner' => array(
-					'message'   => __( 'We\'re happy to help with any questions or issues you may have.', 'accessibility-widget' ),
-					'link_text' => __( 'Contact support', 'accessibility-widget' ),
-					'link_url'  => 'https://www.cookieyes.com/accessibility-widget-support/',
-				),
-			),
 		);
 		return $reasons;
 	}

@@ -151,6 +151,34 @@ class Frontend {
 				'fonts' => plugin_dir_url( __FILE__ ) . 'assets/fonts/',
 			)
 		);
+		wp_localize_script( $this->plugin_name, '_cyA11yStatementTemplates', $this->get_statement_templates() );
+	}
+
+	/**
+	 * Load statement templates from JSON files and return as an associative array keyed by language code.
+	 *
+	 * @return array
+	 */
+	private function get_statement_templates(): array {
+		$templates = array();
+		$dir       = plugin_dir_path( __FILE__ ) . 'assets/statement-templates/';
+		$files     = glob( $dir . '*.json' );
+		if ( ! $files ) {
+			return $templates;
+		}
+		foreach ( $files as $file ) {
+			$lang = basename( $file, '.json' );
+			// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+			$raw = file_get_contents( $file );
+			if ( false === $raw ) {
+				continue;
+			}
+			$data = json_decode( $raw, true );
+			if ( is_array( $data ) ) {
+				$templates[ $lang ] = $data;
+			}
+		}
+		return $templates;
 	}
 
 	/**

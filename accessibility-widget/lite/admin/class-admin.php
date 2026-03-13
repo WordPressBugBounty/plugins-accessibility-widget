@@ -91,6 +91,9 @@ class Admin {
 	 */
 	public function load() {
 		Activator::init();
+		if ( false === get_option( 'cya11y_review_install_date', false ) ) {
+			add_option( 'cya11y_review_install_date', time() );
+		}
 	}
 
 	/**
@@ -157,6 +160,13 @@ class Admin {
 				'api' => array(
 					'endpoint' => rest_url( 'cya11y/v1/' ),
 					'nonce'    => wp_create_nonce( 'wp_rest' ),
+				),
+				'site' => array(
+					'url' => home_url( '/' ),
+				),
+				'reviewBanner' => array(
+					'installDate' => absint( get_option( 'cya11y_review_install_date', 0 ) ),
+					'reviewUrl'   => 'https://wordpress.org/support/plugin/accessibility-widget/reviews/#new-post',
 				),
 			)
 		);

@@ -12144,6 +12144,22 @@ function composeRefs(...refs) {
 function useComposedRefs(...refs) {
   return reactExports.useCallback(composeRefs(...refs), refs);
 }
+function createContext2(rootComponentName, defaultContext) {
+  const Context = reactExports.createContext(defaultContext);
+  const Provider2 = (props) => {
+    const { children, ...context } = props;
+    const value = reactExports.useMemo(() => context, Object.values(context));
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Context.Provider, { value, children });
+  };
+  Provider2.displayName = rootComponentName + "Provider";
+  function useContext2(consumerName) {
+    const context = reactExports.useContext(Context);
+    if (context) return context;
+    if (defaultContext !== void 0) return defaultContext;
+    throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
+  }
+  return [Provider2, useContext2];
+}
 function createContextScope(scopeName, createContextScopeDeps = []) {
   let defaultContexts = [];
   function createContext3(rootComponentName, defaultContext) {
@@ -12229,7 +12245,7 @@ function createSlot(ownerName) {
   Slot2.displayName = `${ownerName}.Slot`;
   return Slot2;
 }
-var Slot$1 = /* @__PURE__ */ createSlot("Slot");
+var Slot$2 = /* @__PURE__ */ createSlot("Slot");
 // @__NO_SIDE_EFFECTS__
 function createSlotClone(ownerName) {
   const SlotClone = reactExports.forwardRef((props, forwardedRef) => {
@@ -14443,7 +14459,7 @@ var Arrow$1 = reactExports.forwardRef((props, forwardedRef) => {
   );
 });
 Arrow$1.displayName = NAME$2;
-var Root$5 = Arrow$1;
+var Root$6 = Arrow$1;
 function useSize(element) {
   const [size2, setSize] = reactExports.useState(void 0);
   useLayoutEffect2(() => {
@@ -14501,8 +14517,8 @@ var PopperAnchor = reactExports.forwardRef(
   }
 );
 PopperAnchor.displayName = ANCHOR_NAME;
-var CONTENT_NAME$3 = "PopperContent";
-var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$3);
+var CONTENT_NAME$4 = "PopperContent";
+var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$4);
 var PopperContent = reactExports.forwardRef(
   (props, forwardedRef) => {
     var _a, _b, _c, _d, _e, _f;
@@ -14522,7 +14538,7 @@ var PopperContent = reactExports.forwardRef(
       onPlaced,
       ...contentProps
     } = props;
-    const context = usePopperContext(CONTENT_NAME$3, __scopePopper);
+    const context = usePopperContext(CONTENT_NAME$4, __scopePopper);
     const [content, setContent] = reactExports.useState(null);
     const composedRefs = useComposedRefs(forwardedRef, (node) => setContent(node));
     const [arrow$12, setArrow] = reactExports.useState(null);
@@ -14645,7 +14661,7 @@ var PopperContent = reactExports.forwardRef(
     );
   }
 );
-PopperContent.displayName = CONTENT_NAME$3;
+PopperContent.displayName = CONTENT_NAME$4;
 var ARROW_NAME$2 = "PopperArrow";
 var OPPOSITE_SIDE = {
   top: "bottom",
@@ -14685,7 +14701,7 @@ var PopperArrow = reactExports.forwardRef(function PopperArrow2(props, forwarded
           visibility: contentContext.shouldHideArrow ? "hidden" : void 0
         },
         children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Root$5,
+          Root$6,
           {
             ...arrowProps,
             ref: forwardedRef,
@@ -14740,12 +14756,12 @@ function getSideAndAlignFromPlacement(placement) {
   const [side, align = "center"] = placement.split("-");
   return [side, align];
 }
-var Root2$2 = Popper;
+var Root2$3 = Popper;
 var Anchor = PopperAnchor;
-var Content$1 = PopperContent;
+var Content$2 = PopperContent;
 var Arrow = PopperArrow;
-var PORTAL_NAME$2 = "Portal";
-var Portal$1 = reactExports.forwardRef((props, forwardedRef) => {
+var PORTAL_NAME$3 = "Portal";
+var Portal$2 = reactExports.forwardRef((props, forwardedRef) => {
   var _a;
   const { container: containerProp, ...portalProps } = props;
   const [mounted, setMounted] = reactExports.useState(false);
@@ -14753,7 +14769,7 @@ var Portal$1 = reactExports.forwardRef((props, forwardedRef) => {
   const container = containerProp || mounted && ((_a = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a.body);
   return container ? ReactDOM.createPortal(/* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.div, { ...portalProps, ref: forwardedRef }), container) : null;
 });
-Portal$1.displayName = PORTAL_NAME$2;
+Portal$2.displayName = PORTAL_NAME$3;
 function useStateMachine(initialState, machine) {
   return reactExports.useReducer((state, event) => {
     const nextState = machine[state][event];
@@ -14970,7 +14986,7 @@ var VisuallyHidden = reactExports.forwardRef(
   }
 );
 VisuallyHidden.displayName = NAME$1;
-var Root$4 = VisuallyHidden;
+var Root$5 = VisuallyHidden;
 var [createTooltipContext, createTooltipScope] = createContextScope("Tooltip", [
   createPopperScope
 ]);
@@ -15023,12 +15039,12 @@ var TooltipProvider$1 = (props) => {
 TooltipProvider$1.displayName = PROVIDER_NAME;
 var TOOLTIP_NAME = "Tooltip";
 var [TooltipContextProvider, useTooltipContext] = createTooltipContext(TOOLTIP_NAME);
-var TRIGGER_NAME$2 = "TooltipTrigger";
+var TRIGGER_NAME$3 = "TooltipTrigger";
 var TooltipTrigger = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTooltip, ...triggerProps } = props;
-    const context = useTooltipContext(TRIGGER_NAME$2, __scopeTooltip);
-    const providerContext = useTooltipProviderContext(TRIGGER_NAME$2, __scopeTooltip);
+    const context = useTooltipContext(TRIGGER_NAME$3, __scopeTooltip);
+    const providerContext = useTooltipProviderContext(TRIGGER_NAME$3, __scopeTooltip);
     const popperScope = usePopperScope$1(__scopeTooltip);
     const ref = reactExports.useRef(null);
     const composedRefs = useComposedRefs(forwardedRef, ref, context.onTriggerChange);
@@ -15072,23 +15088,23 @@ var TooltipTrigger = reactExports.forwardRef(
     ) });
   }
 );
-TooltipTrigger.displayName = TRIGGER_NAME$2;
-var PORTAL_NAME$1 = "TooltipPortal";
-var [PortalProvider, usePortalContext] = createTooltipContext(PORTAL_NAME$1, {
+TooltipTrigger.displayName = TRIGGER_NAME$3;
+var PORTAL_NAME$2 = "TooltipPortal";
+var [PortalProvider$1, usePortalContext$1] = createTooltipContext(PORTAL_NAME$2, {
   forceMount: void 0
 });
-var CONTENT_NAME$2 = "TooltipContent";
+var CONTENT_NAME$3 = "TooltipContent";
 var TooltipContent = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const portalContext = usePortalContext(CONTENT_NAME$2, props.__scopeTooltip);
+    const portalContext = usePortalContext$1(CONTENT_NAME$3, props.__scopeTooltip);
     const { forceMount = portalContext.forceMount, side = "top", ...contentProps } = props;
-    const context = useTooltipContext(CONTENT_NAME$2, props.__scopeTooltip);
+    const context = useTooltipContext(CONTENT_NAME$3, props.__scopeTooltip);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: context.disableHoverableContent ? /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipContentImpl, { side, ...contentProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(TooltipContentHoverable, { side, ...contentProps, ref: forwardedRef }) });
   }
 );
 var TooltipContentHoverable = reactExports.forwardRef((props, forwardedRef) => {
-  const context = useTooltipContext(CONTENT_NAME$2, props.__scopeTooltip);
-  const providerContext = useTooltipProviderContext(CONTENT_NAME$2, props.__scopeTooltip);
+  const context = useTooltipContext(CONTENT_NAME$3, props.__scopeTooltip);
+  const providerContext = useTooltipProviderContext(CONTENT_NAME$3, props.__scopeTooltip);
   const ref = reactExports.useRef(null);
   const composedRefs = useComposedRefs(forwardedRef, ref);
   const [pointerGraceArea, setPointerGraceArea] = reactExports.useState(null);
@@ -15159,7 +15175,7 @@ var TooltipContentImpl = reactExports.forwardRef(
       onPointerDownOutside,
       ...contentProps
     } = props;
-    const context = useTooltipContext(CONTENT_NAME$2, __scopeTooltip);
+    const context = useTooltipContext(CONTENT_NAME$3, __scopeTooltip);
     const popperScope = usePopperScope$1(__scopeTooltip);
     const { onClose } = context;
     reactExports.useEffect(() => {
@@ -15186,7 +15202,7 @@ var TooltipContentImpl = reactExports.forwardRef(
         onFocusOutside: (event) => event.preventDefault(),
         onDismiss: onClose,
         children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          Content$1,
+          Content$2,
           {
             "data-state": context.stateAttribute,
             ...popperScope,
@@ -15205,7 +15221,7 @@ var TooltipContentImpl = reactExports.forwardRef(
             },
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Slottable, { children }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(VisuallyHiddenContentContextProvider, { scope: __scopeTooltip, isInside: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Root$4, { id: context.contentId, role: "tooltip", children: ariaLabel || children }) })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(VisuallyHiddenContentContextProvider, { scope: __scopeTooltip, isInside: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Root$5, { id: context.contentId, role: "tooltip", children: ariaLabel || children }) })
             ]
           }
         )
@@ -15213,7 +15229,7 @@ var TooltipContentImpl = reactExports.forwardRef(
     );
   }
 );
-TooltipContent.displayName = CONTENT_NAME$2;
+TooltipContent.displayName = CONTENT_NAME$3;
 var ARROW_NAME$1 = "TooltipArrow";
 var TooltipArrow = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -18496,7 +18512,7 @@ var RovingFocusGroupImpl = reactExports.forwardRef((props, forwardedRef) => {
     }
   );
 });
-var ITEM_NAME$1 = "RovingFocusGroupItem";
+var ITEM_NAME$2 = "RovingFocusGroupItem";
 var RovingFocusGroupItem = reactExports.forwardRef(
   (props, forwardedRef) => {
     const {
@@ -18509,7 +18525,7 @@ var RovingFocusGroupItem = reactExports.forwardRef(
     } = props;
     const autoId = useId();
     const id = tabStopId || autoId;
-    const context = useRovingFocusContext(ITEM_NAME$1, __scopeRovingFocusGroup);
+    const context = useRovingFocusContext(ITEM_NAME$2, __scopeRovingFocusGroup);
     const isCurrentTabStop = context.currentTabStopId === id;
     const getItems = useCollection$2(__scopeRovingFocusGroup);
     const { onFocusableItemAdd, onFocusableItemRemove, currentTabStopId } = context;
@@ -18566,7 +18582,7 @@ var RovingFocusGroupItem = reactExports.forwardRef(
     );
   }
 );
-RovingFocusGroupItem.displayName = ITEM_NAME$1;
+RovingFocusGroupItem.displayName = ITEM_NAME$2;
 var MAP_KEY_TO_FOCUS_INTENT = {
   ArrowLeft: "prev",
   ArrowUp: "prev",
@@ -18598,13 +18614,13 @@ function focusFirst$1(candidates, preventScroll = false) {
 function wrapArray$1(array, startIndex) {
   return array.map((_, index2) => array[(startIndex + index2) % array.length]);
 }
-var Root$3 = RovingFocusGroup;
+var Root$4 = RovingFocusGroup;
 var Item$1 = RovingFocusGroupItem;
 var TABS_NAME = "Tabs";
 var [createTabsContext, createTabsScope] = createContextScope(TABS_NAME, [
   createRovingFocusGroupScope
 ]);
-var useRovingFocusGroupScope = createRovingFocusGroupScope();
+var useRovingFocusGroupScope$1 = createRovingFocusGroupScope();
 var [TabsProvider, useTabsContext] = createTabsContext(TABS_NAME);
 var Tabs$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -18654,9 +18670,9 @@ var TabsList$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTabs, loop = true, ...listProps } = props;
     const context = useTabsContext(TAB_LIST_NAME, __scopeTabs);
-    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeTabs);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeTabs);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Root$3,
+      Root$4,
       {
         asChild: true,
         ...rovingFocusGroupScope,
@@ -18677,12 +18693,12 @@ var TabsList$1 = reactExports.forwardRef(
   }
 );
 TabsList$1.displayName = TAB_LIST_NAME;
-var TRIGGER_NAME$1 = "TabsTrigger";
+var TRIGGER_NAME$2 = "TabsTrigger";
 var TabsTrigger$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTabs, value, disabled = false, ...triggerProps } = props;
-    const context = useTabsContext(TRIGGER_NAME$1, __scopeTabs);
-    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeTabs);
+    const context = useTabsContext(TRIGGER_NAME$2, __scopeTabs);
+    const rovingFocusGroupScope = useRovingFocusGroupScope$1(__scopeTabs);
     const triggerId = makeTriggerId(context.baseId, value);
     const contentId = makeContentId(context.baseId, value);
     const isSelected = value === context.value;
@@ -18728,12 +18744,12 @@ var TabsTrigger$1 = reactExports.forwardRef(
     );
   }
 );
-TabsTrigger$1.displayName = TRIGGER_NAME$1;
-var CONTENT_NAME$1 = "TabsContent";
+TabsTrigger$1.displayName = TRIGGER_NAME$2;
+var CONTENT_NAME$2 = "TabsContent";
 var TabsContent$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeTabs, value, forceMount, children, ...contentProps } = props;
-    const context = useTabsContext(CONTENT_NAME$1, __scopeTabs);
+    const context = useTabsContext(CONTENT_NAME$2, __scopeTabs);
     const triggerId = makeTriggerId(context.baseId, value);
     const contentId = makeContentId(context.baseId, value);
     const isSelected = value === context.value;
@@ -18763,23 +18779,23 @@ var TabsContent$1 = reactExports.forwardRef(
     ) });
   }
 );
-TabsContent$1.displayName = CONTENT_NAME$1;
+TabsContent$1.displayName = CONTENT_NAME$2;
 function makeTriggerId(baseId, value) {
   return `${baseId}-trigger-${value}`;
 }
 function makeContentId(baseId, value) {
   return `${baseId}-content-${value}`;
 }
-var Root2$1 = Tabs$1;
+var Root2$2 = Tabs$1;
 var List = TabsList$1;
 var Trigger$1 = TabsTrigger$1;
-var Content = TabsContent$1;
+var Content$1 = TabsContent$1;
 function Tabs({
   className,
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Root2$1,
+    Root2$2,
     {
       "data-slot": "tabs",
       className: cn$1("cy:flex cy:flex-col cy:gap-2", className),
@@ -18824,7 +18840,7 @@ function TabsContent({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Content,
+    Content$1,
     {
       "data-slot": "tabs-content",
       className: cn$1("cy:flex-1 cy:outline-none", className),
@@ -18937,24 +18953,87 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$8 = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$8);
+const __iconNode$d = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$d);
 /**
  * @license lucide-react v0.513.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$7 = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$7);
+const __iconNode$c = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$c);
 /**
  * @license lucide-react v0.513.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$6 = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$6);
+const __iconNode$b = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$b);
+/**
+ * @license lucide-react v0.513.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$a = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+];
+const CircleCheck = createLucideIcon("circle-check", __iconNode$a);
+/**
+ * @license lucide-react v0.513.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$9 = [
+  ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
+  ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
+];
+const Copy = createLucideIcon("copy", __iconNode$9);
+/**
+ * @license lucide-react v0.513.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$8 = [
+  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
+  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
+  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
+];
+const ExternalLink = createLucideIcon("external-link", __iconNode$8);
+/**
+ * @license lucide-react v0.513.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$7 = [
+  [
+    "path",
+    {
+      d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0",
+      key: "1nclc0"
+    }
+  ],
+  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
+];
+const Eye = createLucideIcon("eye", __iconNode$7);
+/**
+ * @license lucide-react v0.513.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$6 = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 16v-4", key: "1dtifu" }],
+  ["path", { d: "M12 8h.01", key: "e9boi3" }]
+];
+const Info = createLucideIcon("info", __iconNode$6);
 /**
  * @license lucide-react v0.513.0 - ISC
  *
@@ -18962,18 +19041,6 @@ const ChevronUp = createLucideIcon("chevron-up", __iconNode$6);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$5 = [
-  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
-  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
-  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
-];
-const ExternalLink = createLucideIcon("external-link", __iconNode$5);
-/**
- * @license lucide-react v0.513.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$4 = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "m4.93 4.93 4.24 4.24", key: "1ymg45" }],
   ["path", { d: "m14.83 9.17 4.24-4.24", key: "1cb5xl" }],
@@ -18981,7 +19048,18 @@ const __iconNode$4 = [
   ["path", { d: "m9.17 14.83-4.24 4.24", key: "bqpfvv" }],
   ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }]
 ];
-const LifeBuoy = createLucideIcon("life-buoy", __iconNode$4);
+const LifeBuoy = createLucideIcon("life-buoy", __iconNode$5);
+/**
+ * @license lucide-react v0.513.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$4 = [
+  ["path", { d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71", key: "1cjeqo" }],
+  ["path", { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71", key: "19qd67" }]
+];
+const Link = createLucideIcon("link", __iconNode$4);
 /**
  * @license lucide-react v0.513.0 - ISC
  *
@@ -18989,10 +19067,11 @@ const LifeBuoy = createLucideIcon("life-buoy", __iconNode$4);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$3 = [
-  ["path", { d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71", key: "1cjeqo" }],
-  ["path", { d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71", key: "19qd67" }]
+  ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
+  ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
+  ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
 ];
-const Link = createLucideIcon("link", __iconNode$3);
+const Monitor = createLucideIcon("monitor", __iconNode$3);
 /**
  * @license lucide-react v0.513.0 - ISC
  *
@@ -19000,11 +19079,16 @@ const Link = createLucideIcon("link", __iconNode$3);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$2 = [
-  ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
-  ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
-  ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
+  [
+    "path",
+    {
+      d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z",
+      key: "1a8usu"
+    }
+  ],
+  ["path", { d: "m15 5 4 4", key: "1mk7zo" }]
 ];
-const Monitor = createLucideIcon("monitor", __iconNode$2);
+const Pencil = createLucideIcon("pencil", __iconNode$2);
 /**
  * @license lucide-react v0.513.0 - ISC
  *
@@ -19099,7 +19183,7 @@ function Button({
   asChild = false,
   ...props
 }) {
-  const Comp = asChild ? Slot$1 : "button";
+  const Comp = asChild ? Slot$2 : "button";
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Comp,
     {
@@ -19109,7 +19193,7 @@ function Button({
     }
   );
 }
-const webyesPromoBanner = "/wp-content/plugins/accessibility-widget/lite/admin/app/dist/assets/webyes-promo-banner.webp";
+const webyesPromoBanner = "/wp-content/plugins/accessibility-widget-plugin/lite/admin/app/dist/assets/webyes-promo-banner.webp";
 const createStoreImpl = (createState) => {
   let state;
   const listeners = /* @__PURE__ */ new Set();
@@ -19149,7 +19233,7 @@ const createImpl = (createState) => {
   return useBoundStore;
 };
 const create = (createState) => createImpl;
-const __vite_import_meta_env__ = { "BASE_URL": "/wp-content/plugins/accessibility-widget/lite/admin/app/dist", "DEV": false, "MODE": "production", "PROD": true, "SSR": false };
+const __vite_import_meta_env__ = { "BASE_URL": "/wp-content/plugins/accessibility-widget-plugin/lite/admin/app/dist", "DEV": false, "MODE": "production", "PROD": true, "SSR": false };
 const trackedConnections = /* @__PURE__ */ new Map();
 const getTrackedConnectionState = (name) => {
   const api2 = trackedConnections.get(name);
@@ -19560,7 +19644,16 @@ const DEFAULT_WIDGET_CONFIG = {
     },
     statement: {
       enabled: false,
-      url: ""
+      url: "",
+      displayInWidget: false,
+      generatedDate: "",
+      formData: {
+        companyName: "",
+        businessEmail: "",
+        website: "",
+        wcagStandard: "WCAG 2.2 Level AA",
+        conformanceStatus: "fully-conformant"
+      }
     }
   }
 };
@@ -21042,6 +21135,21 @@ const useWidgetStore = create()(
       setStatus: (status) => set((state) => ({ config: { ...state.config, status } }), false, "setStatus"),
       setStatementEnabled: (enabled) => set((state) => ({ config: { ...state.config, modules: { ...state.config.modules, statement: { ...state.config.modules.statement, enabled } } } }), false, "setStatementEnabled"),
       setStatementUrl: (url) => set((state) => ({ config: { ...state.config, modules: { ...state.config.modules, statement: { ...state.config.modules.statement, url } } } }), false, "setStatementUrl"),
+      setStatementDisplayInWidget: (displayInWidget) => set((state) => ({ config: { ...state.config, modules: { ...state.config.modules, statement: { ...state.config.modules.statement, displayInWidget } } } }), false, "setStatementDisplayInWidget"),
+      setStatementGeneratedDate: (generatedDate) => set((state) => ({ config: { ...state.config, modules: { ...state.config.modules, statement: { ...state.config.modules.statement, generatedDate } } } }), false, "setStatementGeneratedDate"),
+      setStatementFormData: (formData) => set(
+        (state) => ({
+          config: {
+            ...state.config,
+            modules: {
+              ...state.config.modules,
+              statement: { ...state.config.modules.statement, formData }
+            }
+          }
+        }),
+        false,
+        "setStatementFormData"
+      ),
       setLanguage: (language) => set((state) => ({ config: { ...state.config, language: { ...state.config.language, default: language } } }), false, "setLanguage"),
       // Position Actions
       setPosition: (device, position) => set(
@@ -21145,6 +21253,8 @@ const useBannerVisibility = (bannerId) => {
 };
 const Banner = () => {
   const { isVisible, hide: hide2 } = useBannerVisibility("webyes-promo");
+  const siteUrl = window.cyA11yGlobals.site.url;
+  const scanUrl = `https://accessibility.webyes.com/accessibility/scan?website_url=${encodeURIComponent(siteUrl)}`;
   if (!isVisible) return null;
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl  cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8 ", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -21177,10 +21287,10 @@ const Banner = () => {
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-blue-500", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Button,
             {
-              onClick: () => window.open("https://www.webyes.com/accessibility-checker/?utm_source=wordpress_plugin&utm_medium=banner&utm_campaign=accessyes&utm_content=plugin_banner", "_blank", "noopener,noreferrer"),
+              onClick: () => window.open(scanUrl, "_blank", "noopener,noreferrer"),
               className: "cy:bg-white cy:text-[#0B66E4] cy:hover:bg-white/90 cy:font-semibold cy:px-6 cy:py-5 cy:rounded-md cy:flex cy:items-center cy:gap-2 cy:text-[16]",
               children: [
-                "Learn more about WebYes",
+                "Run a scan with WebYes",
                 /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { size: 16 })
               ]
             }
@@ -21189,6 +21299,124 @@ const Banner = () => {
       ]
     }
   ) });
+};
+const accessYesLogo = "/wp-content/plugins/accessibility-widget-plugin/lite/admin/app/dist/assets/accessyes-logo.png";
+const REVIEW_BANNER_ID = "review-banner";
+const REVIEW_DELAY_DAYS = 7;
+function hasReachedReviewDelay(installDate) {
+  if (!installDate) {
+    return false;
+  }
+  const elapsedMs = Date.now() - installDate * 1e3;
+  return elapsedMs >= REVIEW_DELAY_DAYS * 24 * 60 * 60 * 1e3;
+}
+const useReviewBannerVisibility = () => {
+  var _a;
+  const banners = useWidgetStore((state) => state.config.banners || {});
+  const fetchConfig = useWidgetStore((state) => state.fetchConfig);
+  const installDate = ((_a = window.cyA11yGlobals.reviewBanner) == null ? void 0 : _a.installDate) ?? 0;
+  const checkVisibility = () => {
+    if (!hasReachedReviewDelay(installDate)) {
+      return false;
+    }
+    const bannerData = banners[REVIEW_BANNER_ID];
+    if (!bannerData) {
+      return true;
+    }
+    if (bannerData.status !== false) {
+      return true;
+    }
+    if (typeof bannerData.until === "number") {
+      return bannerData.until <= Math.floor(Date.now() / 1e3);
+    }
+    return false;
+  };
+  const [isVisible, setIsVisible] = reactExports.useState(checkVisibility());
+  reactExports.useEffect(() => {
+    setIsVisible(checkVisibility());
+  }, [banners, installDate]);
+  const hideTemporarily = async () => {
+    await updateBanner(REVIEW_BANNER_ID, {
+      status: false,
+      until: Math.floor(Date.now() / 1e3) + 60 * 24 * 60 * 60
+    });
+    setIsVisible(false);
+    await fetchConfig();
+  };
+  const hidePermanently = async () => {
+    await updateBanner(REVIEW_BANNER_ID, {
+      status: false
+    });
+    setIsVisible(false);
+    await fetchConfig();
+  };
+  return {
+    isVisible,
+    hidePermanently,
+    hideTemporarily
+  };
+};
+const ReviewBanner = () => {
+  const { isVisible, hidePermanently, hideTemporarily } = useReviewBannerVisibility();
+  if (!isVisible) return null;
+  const reviewUrl = window.cyA11yGlobals.reviewBanner.reviewUrl;
+  const handleReviewNow = async () => {
+    const reviewWindow = window.open("", "_blank", "noopener,noreferrer");
+    await hidePermanently();
+    if (reviewWindow) {
+      reviewWindow.location.href = reviewUrl;
+    } else {
+      window.open(reviewUrl, "_blank", "noopener,noreferrer");
+    }
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:relative cy:rounded-[5px] cy:border cy:border-[#d7e1f2] cy:bg-white cy:px-4 cy:py-4 cy:shadow-sm", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "button",
+      {
+        onClick: hideTemporarily,
+        className: "cy:absolute cy:right-4 cy:top-4 cy:flex cy:h-8 cy:w-8 cy:items-center cy:justify-center cy:rounded-full cy:text-[#7e7e7e] cy:transition-colors hover:cy:bg-black/5 hover:cy:text-[#555d66]",
+        "aria-label": "Dismiss review banner",
+        type: "button",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 18 })
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:gap-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "img",
+        {
+          src: accessYesLogo,
+          alt: "AccessYes by CookieYes",
+          className: "cy:mb-3 cy:h-7 cy:w-auto"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:mb-3 cy:text-[14px] cy:font-[400] cy:leading-5 cy:text-[#000000] cy:pb-3 cy:pt-1", children: [
+        "Hey, we at ",
+        /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "AccessYes" }),
+        " would like to thank you for using our plugin. We would really appreciate if you could take a moment to drop a quick review that will inspire us to keep going."
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-wrap cy:gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Button,
+          {
+            type: "button",
+            onClick: handleReviewNow,
+            className: "cy:h-8 cy:min-w-[94px] cy:rounded-[3px] cy:bg-[#1578F7] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-white hover:cy:bg-[#1558c7]",
+            children: "Review now"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Button,
+          {
+            type: "button",
+            variant: "outline",
+            onClick: hidePermanently,
+            className: "cy:h-8 cy:min-w-[124px] cy:rounded-[3px] cy:border-[#baafaf] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-[#756f6f] hover:cy:bg-[#f6f7f7]",
+            children: "Never show again"
+          }
+        )
+      ] })
+    ] })
+  ] }) });
 };
 const Logo = (props) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "svg",
@@ -22701,13 +22929,13 @@ var Label$2 = reactExports.forwardRef((props, forwardedRef) => {
   );
 });
 Label$2.displayName = NAME;
-var Root$2 = Label$2;
+var Root$3 = Label$2;
 function Label$1({
   className,
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Root$2,
+    Root$3,
     {
       "data-slot": "label",
       className: cn$1(
@@ -23919,7 +24147,7 @@ var Select$1 = (props) => {
   const isFormControl = trigger ? form || !!trigger.closest("form") : true;
   const [nativeOptionsSet, setNativeOptionsSet] = reactExports.useState(/* @__PURE__ */ new Set());
   const nativeSelectKey = Array.from(nativeOptionsSet).map((option) => option.props.value).join(";");
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root2$2, { ...popperScope, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root2$3, { ...popperScope, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
     SelectProvider,
     {
       required,
@@ -23980,12 +24208,12 @@ var Select$1 = (props) => {
   ) });
 };
 Select$1.displayName = SELECT_NAME;
-var TRIGGER_NAME = "SelectTrigger";
+var TRIGGER_NAME$1 = "SelectTrigger";
 var SelectTrigger$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const { __scopeSelect, disabled = false, ...triggerProps } = props;
     const popperScope = usePopperScope(__scopeSelect);
-    const context = useSelectContext(TRIGGER_NAME, __scopeSelect);
+    const context = useSelectContext(TRIGGER_NAME$1, __scopeSelect);
     const isDisabled = context.disabled || disabled;
     const composedRefs = useComposedRefs(forwardedRef, context.onTriggerChange);
     const getItems = useCollection$1(__scopeSelect);
@@ -24057,7 +24285,7 @@ var SelectTrigger$1 = reactExports.forwardRef(
     ) });
   }
 );
-SelectTrigger$1.displayName = TRIGGER_NAME;
+SelectTrigger$1.displayName = TRIGGER_NAME$1;
 var VALUE_NAME = "SelectValue";
 var SelectValue$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -24089,15 +24317,15 @@ var SelectIcon = reactExports.forwardRef(
   }
 );
 SelectIcon.displayName = ICON_NAME;
-var PORTAL_NAME = "SelectPortal";
+var PORTAL_NAME$1 = "SelectPortal";
 var SelectPortal = (props) => {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$1, { asChild: true, ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$2, { asChild: true, ...props });
 };
-SelectPortal.displayName = PORTAL_NAME;
-var CONTENT_NAME = "SelectContent";
+SelectPortal.displayName = PORTAL_NAME$1;
+var CONTENT_NAME$1 = "SelectContent";
 var SelectContent$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
-    const context = useSelectContext(CONTENT_NAME, props.__scopeSelect);
+    const context = useSelectContext(CONTENT_NAME$1, props.__scopeSelect);
     const [fragment, setFragment] = reactExports.useState();
     useLayoutEffect2(() => {
       setFragment(new DocumentFragment());
@@ -24112,11 +24340,11 @@ var SelectContent$1 = reactExports.forwardRef(
     return /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContentImpl, { ...props, ref: forwardedRef });
   }
 );
-SelectContent$1.displayName = CONTENT_NAME;
+SelectContent$1.displayName = CONTENT_NAME$1;
 var CONTENT_MARGIN = 10;
-var [SelectContentProvider, useSelectContentContext] = createSelectContext(CONTENT_NAME);
+var [SelectContentProvider, useSelectContentContext] = createSelectContext(CONTENT_NAME$1);
 var CONTENT_IMPL_NAME = "SelectContentImpl";
-var Slot = /* @__PURE__ */ createSlot("SelectContent.RemoveScroll");
+var Slot$1 = /* @__PURE__ */ createSlot("SelectContent.RemoveScroll");
 var SelectContentImpl = reactExports.forwardRef(
   (props, forwardedRef) => {
     const {
@@ -24140,7 +24368,7 @@ var SelectContentImpl = reactExports.forwardRef(
       //
       ...contentProps
     } = props;
-    const context = useSelectContext(CONTENT_NAME, __scopeSelect);
+    const context = useSelectContext(CONTENT_NAME$1, __scopeSelect);
     const [content, setContent] = reactExports.useState(null);
     const [viewport, setViewport] = reactExports.useState(null);
     const composedRefs = useComposedRefs(forwardedRef, (node) => setContent(node));
@@ -24280,7 +24508,7 @@ var SelectContentImpl = reactExports.forwardRef(
         position,
         isPositioned,
         searchRef,
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot, allowPinchZoom: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot$1, allowPinchZoom: true, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           FocusScope,
           {
             asChild: true,
@@ -24355,8 +24583,8 @@ SelectContentImpl.displayName = CONTENT_IMPL_NAME;
 var ITEM_ALIGNED_POSITION_NAME = "SelectItemAlignedPosition";
 var SelectItemAlignedPosition = reactExports.forwardRef((props, forwardedRef) => {
   const { __scopeSelect, onPlaced, ...popperProps } = props;
-  const context = useSelectContext(CONTENT_NAME, __scopeSelect);
-  const contentContext = useSelectContentContext(CONTENT_NAME, __scopeSelect);
+  const context = useSelectContext(CONTENT_NAME$1, __scopeSelect);
+  const contentContext = useSelectContentContext(CONTENT_NAME$1, __scopeSelect);
   const [contentWrapper, setContentWrapper] = reactExports.useState(null);
   const [content, setContent] = reactExports.useState(null);
   const composedRefs = useComposedRefs(forwardedRef, (node) => setContent(node));
@@ -24526,7 +24754,7 @@ var SelectPopperPosition = reactExports.forwardRef((props, forwardedRef) => {
   } = props;
   const popperScope = usePopperScope(__scopeSelect);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Content$1,
+    Content$2,
     {
       ...popperScope,
       ...popperProps,
@@ -24550,7 +24778,7 @@ var SelectPopperPosition = reactExports.forwardRef((props, forwardedRef) => {
   );
 });
 SelectPopperPosition.displayName = POPPER_POSITION_NAME;
-var [SelectViewportProvider, useSelectViewportContext] = createSelectContext(CONTENT_NAME, {});
+var [SelectViewportProvider, useSelectViewportContext] = createSelectContext(CONTENT_NAME$1, {});
 var VIEWPORT_NAME = "SelectViewport";
 var SelectViewport = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -24638,8 +24866,8 @@ var SelectLabel$1 = reactExports.forwardRef(
   }
 );
 SelectLabel$1.displayName = LABEL_NAME;
-var ITEM_NAME = "SelectItem";
-var [SelectItemContextProvider, useSelectItemContext] = createSelectContext(ITEM_NAME);
+var ITEM_NAME$1 = "SelectItem";
+var [SelectItemContextProvider, useSelectItemContext] = createSelectContext(ITEM_NAME$1);
 var SelectItem$1 = reactExports.forwardRef(
   (props, forwardedRef) => {
     const {
@@ -24649,8 +24877,8 @@ var SelectItem$1 = reactExports.forwardRef(
       textValue: textValueProp,
       ...itemProps
     } = props;
-    const context = useSelectContext(ITEM_NAME, __scopeSelect);
-    const contentContext = useSelectContentContext(ITEM_NAME, __scopeSelect);
+    const context = useSelectContext(ITEM_NAME$1, __scopeSelect);
+    const contentContext = useSelectContentContext(ITEM_NAME$1, __scopeSelect);
     const isSelected = context.value === value;
     const [textValue, setTextValue] = reactExports.useState(textValueProp ?? "");
     const [isFocused, setIsFocused] = reactExports.useState(false);
@@ -24746,7 +24974,7 @@ var SelectItem$1 = reactExports.forwardRef(
     );
   }
 );
-SelectItem$1.displayName = ITEM_NAME;
+SelectItem$1.displayName = ITEM_NAME$1;
 var ITEM_TEXT_NAME = "SelectItemText";
 var SelectItemText = reactExports.forwardRef(
   (props, forwardedRef) => {
@@ -24921,7 +25149,7 @@ var SelectArrow = reactExports.forwardRef(
   }
 );
 SelectArrow.displayName = ARROW_NAME;
-var BUBBLE_INPUT_NAME$2 = "SelectBubbleInput";
+var BUBBLE_INPUT_NAME$3 = "SelectBubbleInput";
 var SelectBubbleInput = reactExports.forwardRef(
   ({ __scopeSelect, value, ...props }, forwardedRef) => {
     const ref = reactExports.useRef(null);
@@ -24953,7 +25181,7 @@ var SelectBubbleInput = reactExports.forwardRef(
     );
   }
 );
-SelectBubbleInput.displayName = BUBBLE_INPUT_NAME$2;
+SelectBubbleInput.displayName = BUBBLE_INPUT_NAME$3;
 function shouldShowPlaceholder(value) {
   return value === "" || value === void 0;
 }
@@ -24997,11 +25225,11 @@ function findNextItem(items, search, currentItem) {
 function wrapArray(array, startIndex) {
   return array.map((_, index2) => array[(startIndex + index2) % array.length]);
 }
-var Root2 = Select$1;
+var Root2$1 = Select$1;
 var Trigger = SelectTrigger$1;
 var Value = SelectValue$1;
 var Icon = SelectIcon;
-var Portal = SelectPortal;
+var Portal$1 = SelectPortal;
 var Content2 = SelectContent$1;
 var Viewport = SelectViewport;
 var Group = SelectGroup$1;
@@ -25014,7 +25242,7 @@ var ScrollDownButton = SelectScrollDownButton$1;
 function Select({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root2, { "data-slot": "select", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root2$1, { "data-slot": "select", ...props });
 }
 function SelectGroup({
   ...props
@@ -25055,7 +25283,7 @@ function SelectContent({
   position = "popper",
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$1, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
     Content2,
     {
       "data-slot": "select-content",
@@ -25290,7 +25518,7 @@ const PositionPicker = ({ value, onChange, device = "desktop" }) => {
   )) });
 };
 var PAGE_KEYS = ["PageUp", "PageDown"];
-var ARROW_KEYS = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
+var ARROW_KEYS$1 = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
 var BACK_KEYS = {
   "from-left": ["Home", "PageDown", "ArrowDown", "ArrowLeft"],
   "from-right": ["Home", "PageDown", "ArrowDown", "ArrowRight"],
@@ -25401,7 +25629,7 @@ var Slider$1 = reactExports.forwardRef(
             onStepKeyDown: ({ event, direction: stepDirection }) => {
               if (!disabled) {
                 const isPageKey = PAGE_KEYS.includes(event.key);
-                const isSkipKey = isPageKey || event.shiftKey && ARROW_KEYS.includes(event.key);
+                const isSkipKey = isPageKey || event.shiftKey && ARROW_KEYS$1.includes(event.key);
                 const multiplier = isSkipKey ? 10 : 1;
                 const atIndex = valueIndexToChangeRef.current;
                 const value2 = values[atIndex];
@@ -25581,7 +25809,7 @@ var SliderImpl = reactExports.forwardRef(
           } else if (event.key === "End") {
             onEndKeyDown(event);
             event.preventDefault();
-          } else if (PAGE_KEYS.concat(ARROW_KEYS).includes(event.key)) {
+          } else if (PAGE_KEYS.concat(ARROW_KEYS$1).includes(event.key)) {
             onStepKeyDown(event);
             event.preventDefault();
           }
@@ -25738,7 +25966,7 @@ var SliderThumbImpl = reactExports.forwardRef(
   }
 );
 SliderThumb.displayName = THUMB_NAME$1;
-var BUBBLE_INPUT_NAME$1 = "RadioBubbleInput";
+var BUBBLE_INPUT_NAME$2 = "RadioBubbleInput";
 var SliderBubbleInput = reactExports.forwardRef(
   ({ __scopeSlider, value, ...props }, forwardedRef) => {
     const ref = reactExports.useRef(null);
@@ -25767,7 +25995,7 @@ var SliderBubbleInput = reactExports.forwardRef(
     );
   }
 );
-SliderBubbleInput.displayName = BUBBLE_INPUT_NAME$1;
+SliderBubbleInput.displayName = BUBBLE_INPUT_NAME$2;
 function getNextSortedValues(prevValues = [], nextValue, atIndex) {
   const nextValues = [...prevValues];
   nextValues[atIndex] = nextValue;
@@ -25825,7 +26053,7 @@ function roundValue(value, decimalCount) {
   const rounder = Math.pow(10, decimalCount);
   return Math.round(value * rounder) / rounder;
 }
-var Root$1 = Slider$1;
+var Root$2 = Slider$1;
 var Track = SliderTrack;
 var Range = SliderRange;
 var Thumb$1 = SliderThumb;
@@ -25842,7 +26070,7 @@ function Slider({
     [value, defaultValue, min2, max2]
   );
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    Root$1,
+    Root$2,
     {
       "data-slot": "slider",
       defaultValue,
@@ -26657,7 +26885,7 @@ var Switch$1 = reactExports.forwardRef(
           role: "switch",
           "aria-checked": checked,
           "aria-required": required,
-          "data-state": getState(checked),
+          "data-state": getState$2(checked),
           "data-disabled": disabled ? "" : void 0,
           disabled,
           value,
@@ -26698,7 +26926,7 @@ var SwitchThumb = reactExports.forwardRef(
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
       Primitive.span,
       {
-        "data-state": getState(context.checked),
+        "data-state": getState$2(context.checked),
         "data-disabled": context.disabled ? "" : void 0,
         ...thumbProps,
         ref: forwardedRef
@@ -26707,7 +26935,7 @@ var SwitchThumb = reactExports.forwardRef(
   }
 );
 SwitchThumb.displayName = THUMB_NAME;
-var BUBBLE_INPUT_NAME = "SwitchBubbleInput";
+var BUBBLE_INPUT_NAME$1 = "SwitchBubbleInput";
 var SwitchBubbleInput = reactExports.forwardRef(
   ({
     __scopeSwitch,
@@ -26756,18 +26984,18 @@ var SwitchBubbleInput = reactExports.forwardRef(
     );
   }
 );
-SwitchBubbleInput.displayName = BUBBLE_INPUT_NAME;
-function getState(checked) {
+SwitchBubbleInput.displayName = BUBBLE_INPUT_NAME$1;
+function getState$2(checked) {
   return checked ? "checked" : "unchecked";
 }
-var Root = Switch$1;
+var Root$1 = Switch$1;
 var Thumb = SwitchThumb;
 function Switch({
   className,
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Root,
+    Root$1,
     {
       "data-slot": "switch",
       className: cn$1(
@@ -26787,6 +27015,29 @@ function Switch({
     }
   );
 }
+const SettingsTab = () => {
+  const { config, setStatus } = useWidgetStore();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: "General settings" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: "Control your widget's visibility on desktop and mobile devices." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardAction, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}),
+        " "
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:border-b cy:border-gray-200 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-desktop", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Enable widget on desktop" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-desktop", checked: config.status.desktop, onCheckedChange: (checked) => setStatus({ ...config.status, desktop: checked }) })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-mobile", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Enable widget on mobile layouts" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-mobile", checked: config.status.mobile, onCheckedChange: (checked) => setStatus({ ...config.status, mobile: checked }) })
+      ] }) })
+    ] }) })
+  ] }) });
+};
 function Input({ className, type, ...props }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "input",
@@ -26803,52 +27054,1366 @@ function Input({ className, type, ...props }) {
     }
   );
 }
-const SettingsTab = () => {
-  const { config, setStatus, setStatementUrl, setStatementEnabled } = useWidgetStore();
-  const statement = useWidgetStore((state) => state.config.modules.statement);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: "General settings" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: "Control your widget's visibility and link your accessibility statement." }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardAction, { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}),
-        " "
+function SectionCard({ children, className }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: cn$1("cy:border-gray-200 cy:rounded-lg cy:p-6", className), children });
+}
+function Stepper({ step }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:mb-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: cn$1(
+          "cy:flex cy:items-center cy:justify-center cy:w-7 cy:h-7 cy:rounded-full cy:text-xs cy:font-semibold cy:border cy:flex-shrink-0",
+          step === 1 ? "cy:bg-primary cy:text-white cy:border-primary" : "cy:bg-transparent cy:text-muted-foreground cy:border-gray-300"
+        ),
+        children: "1"
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:h-px cy:flex-1 cy:mx-2 cy:bg-gray-300" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: cn$1(
+          "cy:flex cy:items-center cy:justify-center cy:h-7 cy:px-3 cy:rounded-full cy:text-xs cy:font-semibold cy:border cy:flex-shrink-0",
+          step === 2 ? "cy:bg-primary cy:text-white cy:border-primary" : "cy:bg-transparent cy:text-muted-foreground cy:border-gray-300"
+        ),
+        children: "Conformance status"
+      }
+    )
+  ] });
+}
+function StatementStep1({ step1, onChange, onNext }) {
+  const isValid = step1.companyName.trim() !== "" && step1.businessEmail.trim() !== "" && step1.website.trim() !== "";
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: "Generate statement" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mb-6" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stepper, { step: 1 }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-4 cy:max-w-lg", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "company-name", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
+          "Company Name",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Input,
+          {
+            id: "company-name",
+            value: step1.companyName,
+            onChange: (e) => onChange({ ...step1, companyName: e.target.value }),
+            placeholder: "Company Inc.",
+            className: "cy:h-[48px] cy:border! cy:rounded!"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "business-email", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
+          "Business E-mail",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Input,
+          {
+            id: "business-email",
+            type: "email",
+            value: step1.businessEmail,
+            onChange: (e) => onChange({ ...step1, businessEmail: e.target.value }),
+            placeholder: "info@company.com",
+            className: "cy:h-[48px] cy:border! cy:rounded!"
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "website", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
+          "Website",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Input,
+          {
+            id: "website",
+            type: "url",
+            value: step1.website,
+            onChange: (e) => onChange({ ...step1, website: e.target.value }),
+            placeholder: "https://company.com",
+            className: "cy:h-[48px] cy:border! cy:rounded!"
+          }
+        )
       ] })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:border-b cy:border-gray-200 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-desktop", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Enable widget on desktop" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-desktop", checked: config.status.desktop, onCheckedChange: (checked) => setStatus({ ...config.status, desktop: checked }) })
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:border-b cy:border-gray-200 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-mobile", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Enable widget on mobile layouts" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-mobile", checked: config.status.mobile, onCheckedChange: (checked) => setStatus({ ...config.status, mobile: checked }) })
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:py-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-accessibility-statement", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Link accessibility statement on widget" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-accessibility-statement", checked: statement.enabled, onCheckedChange: (checked) => setStatementEnabled(checked) })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:items-start cy:justify-between cy:space-x-2 cy:pt-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-accessibility-statement-url", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Accessibility statement URL" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:relative cy:w-1/2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Input,
+    /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mt-6" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mt-6 cy:flex cy:justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onNext, disabled: !isValid, className: "cy:rounded", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px]", children: "Next" }) }) })
+  ] });
+}
+var RADIO_NAME = "Radio";
+var [createRadioContext, createRadioScope] = createContextScope(RADIO_NAME);
+var [RadioProvider, useRadioContext] = createRadioContext(RADIO_NAME);
+var Radio = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const {
+      __scopeRadio,
+      name,
+      checked = false,
+      required,
+      disabled,
+      value = "on",
+      onCheck,
+      form,
+      ...radioProps
+    } = props;
+    const [button, setButton] = reactExports.useState(null);
+    const composedRefs = useComposedRefs(forwardedRef, (node) => setButton(node));
+    const hasConsumerStoppedPropagationRef = reactExports.useRef(false);
+    const isFormControl = button ? form || !!button.closest("form") : true;
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs(RadioProvider, { scope: __scopeRadio, checked, disabled, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Primitive.button,
+        {
+          type: "button",
+          role: "radio",
+          "aria-checked": checked,
+          "data-state": getState$1(checked),
+          "data-disabled": disabled ? "" : void 0,
+          disabled,
+          value,
+          ...radioProps,
+          ref: composedRefs,
+          onClick: composeEventHandlers(props.onClick, (event) => {
+            if (!checked) onCheck == null ? void 0 : onCheck();
+            if (isFormControl) {
+              hasConsumerStoppedPropagationRef.current = event.isPropagationStopped();
+              if (!hasConsumerStoppedPropagationRef.current) event.stopPropagation();
+            }
+          })
+        }
+      ),
+      isFormControl && /* @__PURE__ */ jsxRuntimeExports.jsx(
+        RadioBubbleInput,
+        {
+          control: button,
+          bubbles: !hasConsumerStoppedPropagationRef.current,
+          name,
+          value,
+          checked,
+          required,
+          disabled,
+          form,
+          style: { transform: "translateX(-100%)" }
+        }
+      )
+    ] });
+  }
+);
+Radio.displayName = RADIO_NAME;
+var INDICATOR_NAME = "RadioIndicator";
+var RadioIndicator = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeRadio, forceMount, ...indicatorProps } = props;
+    const context = useRadioContext(INDICATOR_NAME, __scopeRadio);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.checked, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Primitive.span,
+      {
+        "data-state": getState$1(context.checked),
+        "data-disabled": context.disabled ? "" : void 0,
+        ...indicatorProps,
+        ref: forwardedRef
+      }
+    ) });
+  }
+);
+RadioIndicator.displayName = INDICATOR_NAME;
+var BUBBLE_INPUT_NAME = "RadioBubbleInput";
+var RadioBubbleInput = reactExports.forwardRef(
+  ({
+    __scopeRadio,
+    control,
+    checked,
+    bubbles = true,
+    ...props
+  }, forwardedRef) => {
+    const ref = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(ref, forwardedRef);
+    const prevChecked = usePrevious(checked);
+    const controlSize = useSize(control);
+    reactExports.useEffect(() => {
+      const input = ref.current;
+      if (!input) return;
+      const inputProto = window.HTMLInputElement.prototype;
+      const descriptor = Object.getOwnPropertyDescriptor(
+        inputProto,
+        "checked"
+      );
+      const setChecked = descriptor.set;
+      if (prevChecked !== checked && setChecked) {
+        const event = new Event("click", { bubbles });
+        setChecked.call(input, checked);
+        input.dispatchEvent(event);
+      }
+    }, [prevChecked, checked, bubbles]);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Primitive.input,
+      {
+        type: "radio",
+        "aria-hidden": true,
+        defaultChecked: checked,
+        ...props,
+        tabIndex: -1,
+        ref: composedRefs,
+        style: {
+          ...props.style,
+          ...controlSize,
+          position: "absolute",
+          pointerEvents: "none",
+          opacity: 0,
+          margin: 0
+        }
+      }
+    );
+  }
+);
+RadioBubbleInput.displayName = BUBBLE_INPUT_NAME;
+function getState$1(checked) {
+  return checked ? "checked" : "unchecked";
+}
+var ARROW_KEYS = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
+var RADIO_GROUP_NAME = "RadioGroup";
+var [createRadioGroupContext, createRadioGroupScope] = createContextScope(RADIO_GROUP_NAME, [
+  createRovingFocusGroupScope,
+  createRadioScope
+]);
+var useRovingFocusGroupScope = createRovingFocusGroupScope();
+var useRadioScope = createRadioScope();
+var [RadioGroupProvider, useRadioGroupContext] = createRadioGroupContext(RADIO_GROUP_NAME);
+var RadioGroup = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const {
+      __scopeRadioGroup,
+      name,
+      defaultValue,
+      value: valueProp,
+      required = false,
+      disabled = false,
+      orientation,
+      dir,
+      loop = true,
+      onValueChange,
+      ...groupProps
+    } = props;
+    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeRadioGroup);
+    const direction = useDirection(dir);
+    const [value, setValue] = useControllableState({
+      prop: valueProp,
+      defaultProp: defaultValue ?? null,
+      onChange: onValueChange,
+      caller: RADIO_GROUP_NAME
+    });
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      RadioGroupProvider,
+      {
+        scope: __scopeRadioGroup,
+        name,
+        required,
+        disabled,
+        value,
+        onValueChange: setValue,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Root$4,
+          {
+            asChild: true,
+            ...rovingFocusGroupScope,
+            orientation,
+            dir: direction,
+            loop,
+            children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Primitive.div,
               {
-                id: "cy-toggle-accessibility-statement-url",
-                value: statement.url,
-                onChange: (e) => setStatementUrl(e.target.value),
-                placeholder: "E.g., yoursite.com/accessibility",
-                className: "cy:w-full cy:border! cy:rounded! cy:h-[48px] cy:pl-10"
+                role: "radiogroup",
+                "aria-required": required,
+                "aria-orientation": orientation,
+                "data-disabled": disabled ? "" : void 0,
+                dir: direction,
+                ...groupProps,
+                ref: forwardedRef
               }
-            ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { className: "cy:absolute cy:left-3 cy:top-1/2 cy:-translate-y-1/2 cy:text-gray-400 cy:w-5 cy:h-5" })
-          ] })
-        ] })
+            )
+          }
+        )
+      }
+    );
+  }
+);
+RadioGroup.displayName = RADIO_GROUP_NAME;
+var ITEM_NAME = "RadioGroupItem";
+var RadioGroupItem = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeRadioGroup, disabled, ...itemProps } = props;
+    const context = useRadioGroupContext(ITEM_NAME, __scopeRadioGroup);
+    const isDisabled = context.disabled || disabled;
+    const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeRadioGroup);
+    const radioScope = useRadioScope(__scopeRadioGroup);
+    const ref = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, ref);
+    const checked = context.value === itemProps.value;
+    const isArrowKeyPressedRef = reactExports.useRef(false);
+    reactExports.useEffect(() => {
+      const handleKeyDown = (event) => {
+        if (ARROW_KEYS.includes(event.key)) {
+          isArrowKeyPressedRef.current = true;
+        }
+      };
+      const handleKeyUp = () => isArrowKeyPressedRef.current = false;
+      document.addEventListener("keydown", handleKeyDown);
+      document.addEventListener("keyup", handleKeyUp);
+      return () => {
+        document.removeEventListener("keydown", handleKeyDown);
+        document.removeEventListener("keyup", handleKeyUp);
+      };
+    }, []);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Item$1,
+      {
+        asChild: true,
+        ...rovingFocusGroupScope,
+        focusable: !isDisabled,
+        active: checked,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Radio,
+          {
+            disabled: isDisabled,
+            required: context.required,
+            checked,
+            ...radioScope,
+            ...itemProps,
+            name: context.name,
+            ref: composedRefs,
+            onCheck: () => context.onValueChange(itemProps.value),
+            onKeyDown: composeEventHandlers((event) => {
+              if (event.key === "Enter") event.preventDefault();
+            }),
+            onFocus: composeEventHandlers(itemProps.onFocus, () => {
+              var _a;
+              if (isArrowKeyPressedRef.current) (_a = ref.current) == null ? void 0 : _a.click();
+            })
+          }
+        )
+      }
+    );
+  }
+);
+RadioGroupItem.displayName = ITEM_NAME;
+var INDICATOR_NAME2 = "RadioGroupIndicator";
+var RadioGroupIndicator = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeRadioGroup, ...indicatorProps } = props;
+    const radioScope = useRadioScope(__scopeRadioGroup);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(RadioIndicator, { ...radioScope, ...indicatorProps, ref: forwardedRef });
+  }
+);
+RadioGroupIndicator.displayName = INDICATOR_NAME2;
+var Root2 = RadioGroup;
+var Item2 = RadioGroupItem;
+var Indicator = RadioGroupIndicator;
+function RadioOption({ value, label, description, checked }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-start cy:gap-3", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Item2,
+      {
+        value,
+        id: `radio-${value}`,
+        className: cn$1(
+          "cy:mt-0.5 cy:size-4 cy:flex-shrink-0 cy:rounded-full cy:border",
+          "cy:focus:outline-none cy:focus-visible:ring-2 cy:focus-visible:ring-primary",
+          checked ? "cy:border-primary cy:bg-primary" : "cy:border-gray-400"
+        ),
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Indicator, { className: "cy:flex cy:items-center cy:justify-center cy:w-full cy:h-full", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-1.5 cy:h-1.5 cy:rounded-full cy:bg-white" }) })
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { htmlFor: `radio-${value}`, className: "cy:cursor-pointer", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "span",
+        {
+          className: "cy:text-sm cy:font-medium cy:text-black-600",
+          children: label
+        }
+      ),
+      description && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-xs cy:text-muted-foreground cy:mt-0.5 cy:leading-relaxed", children: description })
+    ] })
+  ] });
+}
+const DEFAULT_STEP1 = {
+  companyName: "",
+  businessEmail: ""
+};
+const DEFAULT_STEP2 = {
+  wcagStandard: "WCAG 2.2 Level AA",
+  conformanceStatus: "fully-conformant"
+};
+const WCAG_OPTIONS = [
+  { value: "WCAG 2.2 Level AA", label: "WCAG 2.2 Level AA" },
+  { value: "WCAG 2.1 Level AA", label: "WCAG 2.1 Level AA" },
+  { value: "WCAG 2.0 Level AA", label: "WCAG 2.0 Level AA" },
+  { value: "Other", label: "Other" }
+];
+const STATEMENT_TEMPLATE = `<h2>Accessibility Commitment</h2>
+<p>{{company_name}} is committed to improving the accessibility and usability of {{website_url}} for all users, including people with disabilities. We aim to provide an inclusive digital experience and continuously work toward enhancing accessibility across our website.</p>
+<h2>Accessibility Target Standard</h2>
+<p>We aim to align our website with <strong>{{accessibility_standard}}</strong> accessibility standards.</p>
+<p>This target standard guides our accessibility efforts and ongoing improvements.</p>
+<h2>Current Conformance Status</h2>
+<p>Based on our internal review, this website is <strong>{{conformance_status}}</strong> with <strong>{{accessibility_standard}}</strong>.</p>
+<p>This status reflects our evaluation at the time of publication and is based on our internal review and available information. Accessibility is an ongoing process, and conformance levels may evolve as updates are implemented.</p>
+<h2>Accessibility Features</h2>
+<p>To support accessibility, this website includes the AccessYes accessibility interface. This interface allows users to adjust certain visual and usability settings according to their individual needs, such as:</p>
+<ul>
+<li>Text size and spacing adjustments</li>
+<li>Contrast and color settings</li>
+<li>Highlighting tools</li>
+<li>Other assistive viewing options</li>
+</ul>
+<p>These tools are intended to improve user experience, but do not replace the need for accessible content and proper underlying website structure.</p>
+<h2>Limitations and Technical Considerations</h2>
+<p>Please note the following:</p>
+<p>The availability and effectiveness of accessibility features depend on the website's configuration and ongoing maintenance.</p>
+<p>While we strive to ensure accessibility across <strong>{{website_url}}</strong>, some content or features may not yet fully meet the selected accessibility standards. Some content may be provided by third parties or affected by technical constraints beyond our immediate control.</p>
+<p>Additionally, there may be certain legacy content or integrations that may not yet fully align with the selected accessibility standard. We are actively working to identify and address accessibility barriers within our control.</p>
+<h2>Feedback and Contact</h2>
+<p>If you experience any difficulty accessing content on this website or would like to report an accessibility issue, please contact us:</p>
+<p>Email: <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
+<p>When contacting us, please include the specific page URL and a description of the issue so we can investigate and respond appropriately.</p>
+<h2>Continuous Improvement</h2>
+<p>Accessibility is an ongoing effort. We regularly review our website and evaluate opportunities to improve accessibility and usability.</p>
+<p><em>Last updated: {{last_updated}}</em></p>`;
+const CONFORMANCE_OPTIONS = [
+  {
+    value: "fully-conformant",
+    label: "Fully conformant",
+    description: "The content fully conforms to the selected accessibility standard."
+  },
+  {
+    value: "partially-conformant",
+    label: "Partially conformant",
+    description: "Some parts of the content do not fully conform to the selected accessibility standard."
+  },
+  {
+    value: "non-conformant",
+    label: "Non conformant",
+    description: "The content does not conform to the selected accessibility standard."
+  },
+  {
+    value: "not-assessed",
+    label: "Not assessed",
+    description: "The content has not been evaluated or results are not available."
+  }
+];
+const PREDEFINED_WCAG = WCAG_OPTIONS.filter((o) => o.value !== "Other").map((o) => o.value);
+function StatementStep2({ step2, onChange, onBack, onGenerate }) {
+  const isOtherWcag = !PREDEFINED_WCAG.includes(step2.wcagStandard);
+  const radioWcagValue = isOtherWcag ? "Other" : step2.wcagStandard;
+  const [otherWcagText, setOtherWcagText] = reactExports.useState(
+    isOtherWcag && step2.wcagStandard !== "Other" ? step2.wcagStandard : ""
+  );
+  const handleWcagRadioChange = (v) => {
+    if (v === "Other") {
+      onChange({ ...step2, wcagStandard: otherWcagText || "Other" });
+    } else {
+      onChange({ ...step2, wcagStandard: v });
+    }
+  };
+  const handleOtherWcagInput = (text) => {
+    setOtherWcagText(text);
+    onChange({ ...step2, wcagStandard: text || "Other" });
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: "Generate statement" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mb-6" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stepper, { step: 2 }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-6 cy:max-w-lg", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mb-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: "Conformance status" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
+          "1. Select the accessibility standards you follow.",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Root2,
+          {
+            value: radioWcagValue,
+            onValueChange: handleWcagRadioChange,
+            className: "cy:space-y-2.5 cy:text-[16px] cy:text-black-600",
+            children: WCAG_OPTIONS.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              RadioOption,
+              {
+                value: o.value,
+                label: o.label,
+                checked: radioWcagValue === o.value
+              },
+              o.value
+            ))
+          }
+        ),
+        isOtherWcag && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:ml-7 cy:mt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Input,
+          {
+            value: otherWcagText,
+            onChange: (e) => handleOtherWcagInput(e.target.value),
+            placeholder: "Please specify the standard",
+            className: "cy:h-[40px] cy:border! cy:rounded! cy:max-w-xs",
+            autoFocus: true
+          }
+        ) })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
+          "2. Conformance status",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Root2,
+          {
+            value: step2.conformanceStatus,
+            onValueChange: (v) => onChange({ ...step2, conformanceStatus: v }),
+            className: "cy:space-y-3 cy:text-[16px] cy:text-black-600",
+            children: CONFORMANCE_OPTIONS.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              RadioOption,
+              {
+                value: o.value,
+                label: o.label,
+                description: o.description,
+                checked: step2.conformanceStatus === o.value
+              },
+              o.value
+            ))
+          }
+        )
       ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:mt-6 cy:flex cy:gap-3 cy:rounded-lg cy:border cy:border-blue-200 cy:bg-blue-50 cy:p-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { className: "cy:w-4 cy:h-4 cy:text-blue-600 cy:flex-shrink-0 cy:mt-0.5" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:tex-black-600 cy:leading-relaxed", children: "The statement will be generated based on the information you provide and your own assessment. Please ensure that the details entered accurately reflect your website's accessibility status and applicable requirements." })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mt-6" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:mt-6 cy:flex cy:justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Button,
+        {
+          variant: "outline",
+          onClick: onBack,
+          className: "cy:rounded cy:border-primary! cy:text-primary!",
+          children: "Back"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onGenerate, className: "cy:rounded", children: "Generate statement" })
+    ] })
+  ] });
+}
+var DIALOG_NAME = "Dialog";
+var [createDialogContext, createDialogScope] = createContextScope(DIALOG_NAME);
+var [DialogProvider, useDialogContext] = createDialogContext(DIALOG_NAME);
+var Dialog$1 = (props) => {
+  const {
+    __scopeDialog,
+    children,
+    open: openProp,
+    defaultOpen,
+    onOpenChange,
+    modal = true
+  } = props;
+  const triggerRef = reactExports.useRef(null);
+  const contentRef = reactExports.useRef(null);
+  const [open, setOpen] = useControllableState({
+    prop: openProp,
+    defaultProp: defaultOpen ?? false,
+    onChange: onOpenChange,
+    caller: DIALOG_NAME
+  });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    DialogProvider,
+    {
+      scope: __scopeDialog,
+      triggerRef,
+      contentRef,
+      contentId: useId(),
+      titleId: useId(),
+      descriptionId: useId(),
+      open,
+      onOpenChange: setOpen,
+      onOpenToggle: reactExports.useCallback(() => setOpen((prevOpen) => !prevOpen), [setOpen]),
+      modal,
+      children
+    }
+  );
+};
+Dialog$1.displayName = DIALOG_NAME;
+var TRIGGER_NAME = "DialogTrigger";
+var DialogTrigger = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeDialog, ...triggerProps } = props;
+    const context = useDialogContext(TRIGGER_NAME, __scopeDialog);
+    const composedTriggerRef = useComposedRefs(forwardedRef, context.triggerRef);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Primitive.button,
+      {
+        type: "button",
+        "aria-haspopup": "dialog",
+        "aria-expanded": context.open,
+        "aria-controls": context.contentId,
+        "data-state": getState(context.open),
+        ...triggerProps,
+        ref: composedTriggerRef,
+        onClick: composeEventHandlers(props.onClick, context.onOpenToggle)
+      }
+    );
+  }
+);
+DialogTrigger.displayName = TRIGGER_NAME;
+var PORTAL_NAME = "DialogPortal";
+var [PortalProvider, usePortalContext] = createDialogContext(PORTAL_NAME, {
+  forceMount: void 0
+});
+var DialogPortal$1 = (props) => {
+  const { __scopeDialog, forceMount, children, container } = props;
+  const context = useDialogContext(PORTAL_NAME, __scopeDialog);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider, { scope: __scopeDialog, forceMount, children: reactExports.Children.map(children, (child) => /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal$2, { asChild: true, container, children: child }) })) });
+};
+DialogPortal$1.displayName = PORTAL_NAME;
+var OVERLAY_NAME = "DialogOverlay";
+var DialogOverlay$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const portalContext = usePortalContext(OVERLAY_NAME, props.__scopeDialog);
+    const { forceMount = portalContext.forceMount, ...overlayProps } = props;
+    const context = useDialogContext(OVERLAY_NAME, props.__scopeDialog);
+    return context.modal ? /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogOverlayImpl, { ...overlayProps, ref: forwardedRef }) }) : null;
+  }
+);
+DialogOverlay$1.displayName = OVERLAY_NAME;
+var Slot = /* @__PURE__ */ createSlot("DialogOverlay.RemoveScroll");
+var DialogOverlayImpl = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeDialog, ...overlayProps } = props;
+    const context = useDialogContext(OVERLAY_NAME, __scopeDialog);
+    return (
+      // Make sure `Content` is scrollable even when it doesn't live inside `RemoveScroll`
+      // ie. when `Overlay` and `Content` are siblings
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ReactRemoveScroll, { as: Slot, allowPinchZoom: true, shards: [context.contentRef], children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Primitive.div,
+        {
+          "data-state": getState(context.open),
+          ...overlayProps,
+          ref: forwardedRef,
+          style: { pointerEvents: "auto", ...overlayProps.style }
+        }
+      ) })
+    );
+  }
+);
+var CONTENT_NAME = "DialogContent";
+var DialogContent$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const portalContext = usePortalContext(CONTENT_NAME, props.__scopeDialog);
+    const { forceMount = portalContext.forceMount, ...contentProps } = props;
+    const context = useDialogContext(CONTENT_NAME, props.__scopeDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: context.modal ? /* @__PURE__ */ jsxRuntimeExports.jsx(DialogContentModal, { ...contentProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(DialogContentNonModal, { ...contentProps, ref: forwardedRef }) });
+  }
+);
+DialogContent$1.displayName = CONTENT_NAME;
+var DialogContentModal = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const context = useDialogContext(CONTENT_NAME, props.__scopeDialog);
+    const contentRef = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, context.contentRef, contentRef);
+    reactExports.useEffect(() => {
+      const content = contentRef.current;
+      if (content) return hideOthers(content);
+    }, []);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      DialogContentImpl,
+      {
+        ...props,
+        ref: composedRefs,
+        trapFocus: context.open,
+        disableOutsidePointerEvents: true,
+        onCloseAutoFocus: composeEventHandlers(props.onCloseAutoFocus, (event) => {
+          var _a;
+          event.preventDefault();
+          (_a = context.triggerRef.current) == null ? void 0 : _a.focus();
+        }),
+        onPointerDownOutside: composeEventHandlers(props.onPointerDownOutside, (event) => {
+          const originalEvent = event.detail.originalEvent;
+          const ctrlLeftClick = originalEvent.button === 0 && originalEvent.ctrlKey === true;
+          const isRightClick = originalEvent.button === 2 || ctrlLeftClick;
+          if (isRightClick) event.preventDefault();
+        }),
+        onFocusOutside: composeEventHandlers(
+          props.onFocusOutside,
+          (event) => event.preventDefault()
+        )
+      }
+    );
+  }
+);
+var DialogContentNonModal = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const context = useDialogContext(CONTENT_NAME, props.__scopeDialog);
+    const hasInteractedOutsideRef = reactExports.useRef(false);
+    const hasPointerDownOutsideRef = reactExports.useRef(false);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      DialogContentImpl,
+      {
+        ...props,
+        ref: forwardedRef,
+        trapFocus: false,
+        disableOutsidePointerEvents: false,
+        onCloseAutoFocus: (event) => {
+          var _a, _b;
+          (_a = props.onCloseAutoFocus) == null ? void 0 : _a.call(props, event);
+          if (!event.defaultPrevented) {
+            if (!hasInteractedOutsideRef.current) (_b = context.triggerRef.current) == null ? void 0 : _b.focus();
+            event.preventDefault();
+          }
+          hasInteractedOutsideRef.current = false;
+          hasPointerDownOutsideRef.current = false;
+        },
+        onInteractOutside: (event) => {
+          var _a, _b;
+          (_a = props.onInteractOutside) == null ? void 0 : _a.call(props, event);
+          if (!event.defaultPrevented) {
+            hasInteractedOutsideRef.current = true;
+            if (event.detail.originalEvent.type === "pointerdown") {
+              hasPointerDownOutsideRef.current = true;
+            }
+          }
+          const target = event.target;
+          const targetIsTrigger = (_b = context.triggerRef.current) == null ? void 0 : _b.contains(target);
+          if (targetIsTrigger) event.preventDefault();
+          if (event.detail.originalEvent.type === "focusin" && hasPointerDownOutsideRef.current) {
+            event.preventDefault();
+          }
+        }
+      }
+    );
+  }
+);
+var DialogContentImpl = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeDialog, trapFocus, onOpenAutoFocus, onCloseAutoFocus, ...contentProps } = props;
+    const context = useDialogContext(CONTENT_NAME, __scopeDialog);
+    const contentRef = reactExports.useRef(null);
+    const composedRefs = useComposedRefs(forwardedRef, contentRef);
+    useFocusGuards();
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        FocusScope,
+        {
+          asChild: true,
+          loop: true,
+          trapped: trapFocus,
+          onMountAutoFocus: onOpenAutoFocus,
+          onUnmountAutoFocus: onCloseAutoFocus,
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            DismissableLayer,
+            {
+              role: "dialog",
+              id: context.contentId,
+              "aria-describedby": context.descriptionId,
+              "aria-labelledby": context.titleId,
+              "data-state": getState(context.open),
+              ...contentProps,
+              ref: composedRefs,
+              onDismiss: () => context.onOpenChange(false)
+            }
+          )
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(TitleWarning, { titleId: context.titleId }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(DescriptionWarning, { contentRef, descriptionId: context.descriptionId })
+      ] })
+    ] });
+  }
+);
+var TITLE_NAME = "DialogTitle";
+var DialogTitle$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeDialog, ...titleProps } = props;
+    const context = useDialogContext(TITLE_NAME, __scopeDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.h2, { id: context.titleId, ...titleProps, ref: forwardedRef });
+  }
+);
+DialogTitle$1.displayName = TITLE_NAME;
+var DESCRIPTION_NAME = "DialogDescription";
+var DialogDescription = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeDialog, ...descriptionProps } = props;
+    const context = useDialogContext(DESCRIPTION_NAME, __scopeDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.p, { id: context.descriptionId, ...descriptionProps, ref: forwardedRef });
+  }
+);
+DialogDescription.displayName = DESCRIPTION_NAME;
+var CLOSE_NAME = "DialogClose";
+var DialogClose = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeDialog, ...closeProps } = props;
+    const context = useDialogContext(CLOSE_NAME, __scopeDialog);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Primitive.button,
+      {
+        type: "button",
+        ...closeProps,
+        ref: forwardedRef,
+        onClick: composeEventHandlers(props.onClick, () => context.onOpenChange(false))
+      }
+    );
+  }
+);
+DialogClose.displayName = CLOSE_NAME;
+function getState(open) {
+  return open ? "open" : "closed";
+}
+var TITLE_WARNING_NAME = "DialogTitleWarning";
+var [WarningProvider, useWarningContext] = createContext2(TITLE_WARNING_NAME, {
+  contentName: CONTENT_NAME,
+  titleName: TITLE_NAME,
+  docsSlug: "dialog"
+});
+var TitleWarning = ({ titleId }) => {
+  const titleWarningContext = useWarningContext(TITLE_WARNING_NAME);
+  const MESSAGE = `\`${titleWarningContext.contentName}\` requires a \`${titleWarningContext.titleName}\` for the component to be accessible for screen reader users.
+
+If you want to hide the \`${titleWarningContext.titleName}\`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/${titleWarningContext.docsSlug}`;
+  reactExports.useEffect(() => {
+    if (titleId) {
+      const hasTitle = document.getElementById(titleId);
+      if (!hasTitle) console.error(MESSAGE);
+    }
+  }, [MESSAGE, titleId]);
+  return null;
+};
+var DESCRIPTION_WARNING_NAME = "DialogDescriptionWarning";
+var DescriptionWarning = ({ contentRef, descriptionId }) => {
+  const descriptionWarningContext = useWarningContext(DESCRIPTION_WARNING_NAME);
+  const MESSAGE = `Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${descriptionWarningContext.contentName}}.`;
+  reactExports.useEffect(() => {
+    var _a;
+    const describedById = (_a = contentRef.current) == null ? void 0 : _a.getAttribute("aria-describedby");
+    if (descriptionId && describedById) {
+      const hasDescription = document.getElementById(descriptionId);
+      if (!hasDescription) console.warn(MESSAGE);
+    }
+  }, [MESSAGE, contentRef, descriptionId]);
+  return null;
+};
+var Root = Dialog$1;
+var Portal = DialogPortal$1;
+var Overlay = DialogOverlay$1;
+var Content = DialogContent$1;
+var Title = DialogTitle$1;
+var Close = DialogClose;
+function Dialog({
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root, { "data-slot": "dialog", ...props });
+}
+function DialogPortal({
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Portal, { "data-slot": "dialog-portal", ...props });
+}
+function DialogOverlay({
+  className,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Overlay,
+    {
+      "data-slot": "dialog-overlay",
+      className: cn$1(
+        "cy:data-[state=open]:animate-in cy:data-[state=closed]:animate-out cy:data-[state=closed]:fade-out-0 cy:data-[state=open]:fade-in-0 cy:fixed cy:inset-0 cy:z-50 cy:bg-black/50",
+        className
+      ),
+      ...props
+    }
+  );
+}
+function DialogContent({
+  className,
+  children,
+  showCloseButton = true,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogPortal, { "data-slot": "dialog-portal", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(DialogOverlay, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      Content,
+      {
+        "data-slot": "dialog-content",
+        className: cn$1(
+          "cy:bg-background cy:data-[state=open]:animate-in cy:data-[state=closed]:animate-out cy:data-[state=closed]:fade-out-0 cy:data-[state=open]:fade-in-0 cy:data-[state=closed]:zoom-out-95 cy:data-[state=open]:zoom-in-95 cy:fixed cy:top-[50%] cy:left-[50%] cy:z-50 cy:grid cy:w-full cy:max-w-[calc(100%-2rem)] cy:translate-x-[-50%] cy:translate-y-[-50%] cy:gap-4 cy:rounded-lg cy:border cy:p-6 cy:shadow-lg cy:duration-200 cy:sm:max-w-lg",
+          className
+        ),
+        ...props,
+        children: [
+          children,
+          showCloseButton && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Close,
+            {
+              "data-slot": "dialog-close",
+              className: "cy:ring-offset-background cy:focus:ring-ring cy:data-[state=open]:bg-accent cy:data-[state=open]:text-muted-foreground cy:absolute cy:top-4 cy:right-4 cy:rounded-xs cy:opacity-70 cy:transition-opacity cy:hover:opacity-100 cy:focus:ring-2 cy:focus:ring-offset-2 cy:focus:outline-hidden cy:disabled:pointer-events-none cy:[&_svg]:pointer-events-none cy:[&_svg]:shrink-0 cy:[&_svg:not([class*=size-])]:size-4",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(X, {}),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:sr-only", children: "Close" })
+              ]
+            }
+          )
+        ]
+      }
+    )
+  ] });
+}
+function DialogHeader({ className, ...props }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "div",
+    {
+      "data-slot": "dialog-header",
+      className: cn$1("cy:flex cy:flex-col cy:gap-2 cy:text-center cy:sm:text-left", className),
+      ...props
+    }
+  );
+}
+function DialogTitle({
+  className,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Title,
+    {
+      "data-slot": "dialog-title",
+      className: cn$1("cy:text-lg cy:leading-none cy:font-semibold", className),
+      ...props
+    }
+  );
+}
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+}
+function fillStatementTemplate(template, step1, step2, generatedDate) {
+  var _a;
+  const e = escapeHtml;
+  const companyName = e(step1.companyName || "This organisation");
+  const websiteUrl = e(step1.website || "this website");
+  const contactEmail = e(step1.businessEmail);
+  const standard = e(step2.wcagStandard);
+  const conformanceLabel = ((_a = CONFORMANCE_OPTIONS.find((o) => o.value === step2.conformanceStatus)) == null ? void 0 : _a.label) ?? step2.conformanceStatus;
+  const conformance = e(conformanceLabel);
+  const lastUpdated = generatedDate ? new Date(generatedDate).toLocaleDateString(void 0, {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  }) : (/* @__PURE__ */ new Date()).toLocaleDateString(void 0, {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+  return template.replace(/\{\{company_name\}\}/g, companyName).replace(/\{\{website_url\}\}/g, websiteUrl).replace(/\{\{accessibility_standard\}\}/g, standard).replace(/\{\{conformance_status\}\}/g, conformance).replace(/\{\{contact_email\}\}/g, contactEmail).replace(/\{\{last_updated\}\}/g, lastUpdated);
+}
+function formatDate(iso) {
+  if (!iso) return "";
+  try {
+    return new Date(iso).toLocaleDateString(void 0, {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric"
+    });
+  } catch {
+    return iso;
+  }
+}
+async function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text);
+  }
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.style.position = "fixed";
+  textarea.style.top = "0";
+  textarea.style.left = "0";
+  textarea.style.opacity = "0";
+  document.body.appendChild(textarea);
+  textarea.focus();
+  textarea.select();
+  try {
+    const success = document.execCommand("copy");
+    if (!success) throw new Error("execCommand copy failed");
+  } finally {
+    document.body.removeChild(textarea);
+  }
+}
+function StatementGenerated({
+  generatedDate,
+  formData,
+  displayInWidget,
+  onEdit,
+  onToggleDisplay
+}) {
+  const [previewOpen, setPreviewOpen] = reactExports.useState(false);
+  const statementHtml = fillStatementTemplate(
+    STATEMENT_TEMPLATE,
+    {
+      companyName: (formData == null ? void 0 : formData.companyName) ?? "",
+      businessEmail: (formData == null ? void 0 : formData.businessEmail) ?? "",
+      website: (formData == null ? void 0 : formData.website) ?? ""
+    },
+    {
+      wcagStandard: (formData == null ? void 0 : formData.wcagStandard) ?? "",
+      conformanceStatus: (formData == null ? void 0 : formData.conformanceStatus) ?? ""
+    },
+    generatedDate
+  );
+  const handleCopy = async () => {
+    try {
+      await copyToClipboard(statementHtml);
+      toast.success("Statement copied to clipboard.");
+    } catch {
+      toast.error("Could not copy to clipboard.");
+    }
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:bg-[#F4F5FA]", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-start cy:justify-between cy:gap-4 cy:flex-wrap", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "cy:w-12 cy:h-12 cy:text-green-500 cy:flex-shrink-0", strokeWidth: 1 }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-0.5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: "Statement generated" }),
+            generatedDate && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-sm cy:text-muted-foreground", children: [
+              "Last updated: ",
+              formatDate(generatedDate)
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-2 cy:flex-wrap", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Button,
+            {
+              variant: "outline",
+              size: "sm",
+              className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:bg-white cy:text-primary! cy:text-sm",
+              onClick: () => setPreviewOpen(true),
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Eye, { className: "cy:w-4 cy:h-4" }),
+                "Preview"
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Button,
+            {
+              variant: "outline",
+              size: "sm",
+              className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:bg-white cy:text-primary! cy:text-sm",
+              onClick: handleCopy,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4" }),
+                "Copy statement"
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Button,
+            {
+              variant: "outline",
+              size: "sm",
+              className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:bg-white cy:text-primary! cy:text-sm",
+              onClick: onEdit,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "cy:w-4 cy:h-4" }),
+                "Edit"
+              ]
+            }
+          )
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mt-4 cy:rounded-lg cy:bg-[#D8E8FF] cy:p-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-start cy:justify-between cy:gap-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-0.5", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:block cy:text-base cy:font-semibold cy:text-foreground", children: "Display in widget overlay" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:block cy:text-sm cy:text-muted-foreground", children: "Show this generated statement directly inside the AccessYes widget." })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Switch,
+          {
+            id: "cy-display-in-widget",
+            checked: displayInWidget,
+            onCheckedChange: onToggleDisplay
+          }
+        )
+      ] }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Dialog, { open: previewOpen, onOpenChange: setPreviewOpen, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogContent, { showCloseButton: false, className: "cy:max-w-2xl cy:max-h-[85vh] cy:flex cy:flex-col cy:gap-0 cy:p-0", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogHeader, { className: "cy:flex cy:flex-row cy:items-center cy:justify-between cy:px-6 cy:py-4 cy:border-b cy:border-gray-200", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "cy:text-base cy:font-semibold", children: "Preview" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Button,
+            {
+              variant: "outline",
+              size: "sm",
+              className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:text-primary! cy:text-sm",
+              onClick: handleCopy,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4" }),
+                "Copy statement"
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              onClick: () => setPreviewOpen(false),
+              className: "cy:rounded cy:p-1 cy:text-muted-foreground cy:hover:text-foreground cy:hover:bg-gray-100 cy:transition-colors",
+              "aria-label": "Close preview",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "cy:w-5 cy:h-5" })
+            }
+          )
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "div",
+        {
+          className: "cy:overflow-y-auto cy:px-8 cy:py-6 cy:prose cy:prose-sm cy:max-w-none",
+          dangerouslySetInnerHTML: { __html: statementHtml }
+        }
+      )
+    ] }) })
+  ] });
+}
+function StatementLink({ enabled, url, onToggle, onUrlChange }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1 cy:mb-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: "Link your statement" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: "Already have an accessibility statement page? Link it here to make it accessible through the widget." })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px] cy:text-foreground", children: "Link statement on widget" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Switch,
+        {
+          id: "cy-toggle-link-statement",
+          checked: enabled,
+          onCheckedChange: onToggle
+        }
+      )
+    ] }),
+    enabled && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:mt-4 cy:space-y-1.5", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Label$1,
+        {
+          htmlFor: "cy-statement-url",
+          className: "cy:text-[16px] cy:font-medium cy:text-foreground",
+          children: "Accessibility statement URL"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:relative cy:max-w-xl", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Input,
+          {
+            id: "cy-statement-url",
+            value: url,
+            onChange: (e) => onUrlChange(e.target.value),
+            placeholder: "E.g., yoursite.com/accessibility",
+            className: "cy:w-full cy:border! cy:rounded! cy:h-[48px] cy:pl-10"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { className: "cy:absolute cy:left-3 cy:top-1/2 cy:-translate-y-1/2 cy:text-gray-400 cy:w-5 cy:h-5" })
+      ] })
+    ] })
+  ] });
+}
+function StatementGeneratorTab() {
+  var _a;
+  const {
+    config,
+    setStatementEnabled,
+    setStatementUrl,
+    setStatementDisplayInWidget,
+    setStatementGeneratedDate,
+    setStatementFormData
+  } = useWidgetStore();
+  const statement = config.modules.statement;
+  const hasStatement = !!(((_a = statement.formData) == null ? void 0 : _a.companyName) || statement.generatedDate);
+  const [tabState, setTabState] = reactExports.useState(hasStatement ? "generated" : "idle");
+  const [isSaving, setIsSaving] = reactExports.useState(false);
+  const savedFormData = statement.formData;
+  const [step1, setStep1] = reactExports.useState(() => ({
+    companyName: (savedFormData == null ? void 0 : savedFormData.companyName) || DEFAULT_STEP1.companyName,
+    businessEmail: (savedFormData == null ? void 0 : savedFormData.businessEmail) || DEFAULT_STEP1.businessEmail,
+    website: (savedFormData == null ? void 0 : savedFormData.website) || (typeof window !== "undefined" ? window.location.origin : "")
+  }));
+  const [step2, setStep2] = reactExports.useState(() => ({
+    wcagStandard: (savedFormData == null ? void 0 : savedFormData.wcagStandard) || DEFAULT_STEP2.wcagStandard,
+    conformanceStatus: (savedFormData == null ? void 0 : savedFormData.conformanceStatus) || DEFAULT_STEP2.conformanceStatus
+  }));
+  reactExports.useEffect(() => {
+    if ((savedFormData == null ? void 0 : savedFormData.companyName) || (savedFormData == null ? void 0 : savedFormData.businessEmail)) {
+      setStep1({
+        companyName: savedFormData.companyName,
+        businessEmail: savedFormData.businessEmail,
+        website: savedFormData.website
+      });
+      setStep2({
+        wcagStandard: savedFormData.wcagStandard,
+        conformanceStatus: savedFormData.conformanceStatus
+      });
+    }
+  }, [config.modules.statement.formData]);
+  const handleSave = reactExports.useCallback(async () => {
+    setIsSaving(true);
+    try {
+      await saveWidgetConfig(config);
+      toast.success("Changes saved successfully.");
+    } catch {
+      toast.error("Failed to save changes.");
+    } finally {
+      setIsSaving(false);
+    }
+  }, [config]);
+  const handleGenerate = reactExports.useCallback(async () => {
+    setTabState("generating");
+    const today = (/* @__PURE__ */ new Date()).toISOString().slice(0, 10);
+    const formData = {
+      companyName: step1.companyName,
+      businessEmail: step1.businessEmail,
+      website: step1.website,
+      wcagStandard: step2.wcagStandard,
+      conformanceStatus: step2.conformanceStatus
+    };
+    setStatementGeneratedDate(today);
+    setStatementFormData(formData);
+    try {
+      await saveWidgetConfig({
+        ...config,
+        modules: {
+          ...config.modules,
+          statement: {
+            ...statement,
+            generatedDate: today,
+            formData
+          }
+        }
+      });
+      toast.success("Statement generated and saved.");
+    } catch {
+      toast.error("Statement generated but could not be saved. Use Save changes.");
+    }
+    setTabState("generated");
+  }, [step1, step2, config, statement, setStatementGeneratedDate, setStatementFormData]);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: "Accessibility statement" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: "Generate and manage your website's accessibility statement." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardAction, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Button,
+        {
+          onClick: handleSave,
+          disabled: isSaving,
+          className: "cy:rounded cy:text-base!",
+          children: isSaving ? "Saving..." : "Save changes"
+        }
+      ) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:py-6 cy:space-y-4", children: [
+      tabState === "idle" && /* @__PURE__ */ jsxRuntimeExports.jsx(SectionCard, { className: "cy:border cy:border-gray-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-start cy:justify-between cy:gap-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-base cy:font-semibold cy:text-foreground", children: "Generate statement" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: "Don't have an accessibility statement? Use our generator to create a professional statement." })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Button,
+          {
+            onClick: () => setTabState("step1"),
+            className: "cy:rounded cy:flex-shrink-0",
+            children: "Get started"
+          }
+        )
+      ] }) }),
+      tabState === "step1" && /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatementStep1,
+        {
+          step1,
+          onChange: setStep1,
+          onNext: () => setTabState("step2")
+        }
+      ),
+      tabState === "step2" && /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatementStep2,
+        {
+          step2,
+          onChange: setStep2,
+          onBack: () => setTabState("step1"),
+          onGenerate: handleGenerate
+        }
+      ),
+      tabState === "generating" && /* @__PURE__ */ jsxRuntimeExports.jsx(SectionCard, { className: "cy:border cy:border-gray-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-3 cy:py-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "svg",
+          {
+            className: "cy:w-5 cy:h-5 cy:animate-spin cy:text-primary",
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "circle",
+                {
+                  className: "cy:opacity-25",
+                  cx: "12",
+                  cy: "12",
+                  r: "10",
+                  stroke: "currentColor",
+                  strokeWidth: "4"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "path",
+                {
+                  className: "cy:opacity-75",
+                  fill: "currentColor",
+                  d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                }
+              )
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-muted-foreground", children: "Generating statement..." })
+      ] }) }),
+      tabState === "generated" && /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatementGenerated,
+        {
+          generatedDate: statement.generatedDate,
+          formData: statement.formData,
+          displayInWidget: statement.displayInWidget,
+          onEdit: () => setTabState("step1"),
+          onToggleDisplay: (checked) => {
+            setStatementDisplayInWidget(checked);
+            if (checked) setStatementEnabled(false);
+          }
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        StatementLink,
+        {
+          enabled: statement.enabled,
+          url: statement.url,
+          onToggle: (checked) => {
+            setStatementEnabled(checked);
+            if (checked) setStatementDisplayInWidget(false);
+          },
+          onUrlChange: setStatementUrl
+        }
+      )
     ] }) })
   ] }) });
-};
+}
 function App() {
   const { isLoading, fetchConfig } = useWidgetStore();
   reactExports.useEffect(() => {
@@ -26869,18 +28434,32 @@ function App() {
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           TabsTrigger,
           {
+            value: "statement",
+            className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3 cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
+            children: "Statement"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          TabsTrigger,
+          {
             value: "settings",
             className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3  cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
             children: "Settings"
           }
         )
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Banner, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:w-full", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ReviewBanner, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Banner, {})
+      ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "customize", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CustomizeTab, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "statement", children: /* @__PURE__ */ jsxRuntimeExports.jsx(StatementGeneratorTab, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "settings", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SettingsTab, {}) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:px-4 cy:py-4 cy:sm:px-6 cy:lg:px-8 cy:max-w-7xl cy:mx-auto cy:flex cy:justify-between", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: [
+        "Please rate AccessYes",
+        " ",
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "a",
           {
@@ -26888,13 +28467,26 @@ function App() {
             target: "_blank",
             rel: "noopener noreferrer",
             className: "cy:text-[#1863DC] cy:no-underline hover:cy:underline",
-            children: "Leave a ★★★★★"
+            children: "★★★★★"
           }
         ),
         " ",
-        "to keep us going. This is just the first step from CookieYes toward a more inclusive web. More improvements on the way!"
+        "on",
+        " ",
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "a",
+          {
+            href: "https://wordpress.org/",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "cy:text-[#1863DC] cy:no-underline hover:cy:underline",
+            children: "WordPress.org"
+          }
+        ),
+        " ",
+        "to help us spread the word. Thank you from the team AccessYes!"
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.1.1" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.1.2" })
     ] })
   ] }) }) });
 }

@@ -4,7 +4,7 @@ Tags: web accessibility, wp accessibility, accessibility widget, wcag, ada
 Requires at least: 5.0.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 3.1.1
+Stable tag: 3.1.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -87,6 +87,13 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Changelog ==
 
+= 3.1.2 2026-03-13 =
+
+[Add] - Accessibility statement generator.
+[Fix] - Ensure 'disableContrast()' removes the class from '<body>' instead of 'documentElement'.
+[Enhancement] - Add 'cya11y-dark-contrast' body class when Dark Contrast mode is active to allow site CSS overrides.
+[Enhancement] - Add 'nav' to 'DARK_CONTRAST_SELECTORS' to support pagination elements in Dark Contrast mode.
+
 = 3.1.1 2026-02-19 =
 
 [Add] - Implemented the uninstall feedback pop.
@@ -151,9 +158,9 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Upgrade Notice ==
 
-= 3.1.1 2026-02-19 =
+= 3.1.2 2026-03-13 =
 
-[Add] - Implemented the uninstall feedback pop.
-[Enhancement] - Removed the tooltip from the widget button and enhanced widget focus visibility.
-[Fix] - Minor bugs.
-
+[Add] - Accessibility statement generator.
+[Fix] - Ensure 'disableContrast()' removes the class from '<body>' instead of 'documentElement'.
+[Enhancement] - Add 'cya11y-dark-contrast' body class when Dark Contrast mode is active to allow site CSS overrides.
+[Enhancement] - Add 'nav' to 'DARK_CONTRAST_SELECTORS' to support pagination elements in Dark Contrast mode.

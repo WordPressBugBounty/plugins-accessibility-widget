@@ -83,6 +83,7 @@ class Activator {
 		if ( true === cya11y_first_time_install() ) {
 			add_option( 'cya11y_first_time_activated_plugin', 'true' );
 		}
+		add_option( 'cya11y_review_install_date', time() );
 		self::maybe_update_db();
 		update_option( 'cya11y_version', CY_A11Y_VERSION );
 		do_action( 'cya11y_after_activate', CY_A11Y_VERSION );

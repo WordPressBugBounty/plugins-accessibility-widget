@@ -349,12 +349,12 @@ class Api extends Rest_Controller {
 						),
 					),
 				),
-				'primaryColor' => array(
-					'description' => __( 'Primary color in hex format.', 'accessibility-widget' ),
-					'type'        => 'string',
-					'context'     => array( 'view', 'edit' ),
-				),
-				'dismissedBanners' => array(
+			'primaryColor'     => array(
+				'description' => __( 'Primary color in hex format.', 'accessibility-widget' ),
+				'type'        => 'string',
+				'context'     => array( 'view', 'edit' ),
+			),
+			'dismissedBanners' => array(
 					'description' => __( 'List of dismissed banner IDs.', 'accessibility-widget' ),
 					'type'        => 'array',
 					'context'     => array( 'view', 'edit' ),
@@ -477,17 +477,43 @@ class Api extends Rest_Controller {
 								),
 							),
 						),
-						'statement' => array(
-							'type'       => 'object',
-							'properties' => array(
-								'enabled' => array(
-									'type' => 'boolean',
-								),
-								'url'     => array(
-									'type' => 'string',
+					'statement' => array(
+						'type'       => 'object',
+						'properties' => array(
+							'enabled'         => array(
+								'type' => 'boolean',
+							),
+							'url'             => array(
+								'type' => 'string',
+							),
+							'displayInWidget' => array(
+								'type' => 'boolean',
+							),
+							'generatedDate'   => array(
+								'type' => 'string',
+							),
+							'formData'        => array(
+								'type'       => 'object',
+								'properties' => array(
+									'companyName'       => array(
+										'type' => 'string',
+									),
+									'businessEmail'     => array(
+										'type' => 'string',
+									),
+									'website'           => array(
+										'type' => 'string',
+									),
+									'wcagStandard'      => array(
+										'type' => 'string',
+									),
+									'conformanceStatus' => array(
+										'type' => 'string',
+									),
 								),
 							),
 						),
+					),
 					),
 				),
 			),

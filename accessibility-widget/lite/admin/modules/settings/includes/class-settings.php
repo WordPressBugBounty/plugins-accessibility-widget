@@ -130,10 +130,19 @@ class Settings {
 						),
 					),
 				),
-				'statement' => array(
-					'enabled' => false,
-					'url'     => '',
+			'statement' => array(
+				'enabled'         => false,
+				'url'             => '',
+				'displayInWidget' => false,
+				'generatedDate'   => '',
+				'formData'        => array(
+					'companyName'       => '',
+					'businessEmail'     => '',
+					'website'           => '',
+					'wcagStandard'      => 'WCAG 2.2 Level AA',
+					'conformanceStatus' => 'fully-conformant',
 				),
+			),
 			),
 		);
 	}
@@ -167,6 +176,15 @@ class Settings {
 			'selected',
 		);
 	}
+
+	/**
+	 * Keys that contain HTML and should be sanitized with wp_kses_post instead of sanitize_text_field.
+	 *
+	 * @return array
+	 */
+	public static function get_html_keys() {
+		return array();
+	}
 	/**
 	 * Update settings to database.
 	 *
@@ -174,12 +192,10 @@ class Settings {
 	 * @return void
 	 */
 	public function update( $data, $clear = true ) {
-		$settings = get_option( 'cya11y_widget_settings', $this->data );
-
-		if ( empty( $settings ) ) {
-			$settings = $this->data;
-		}
-		$settings = self::sanitize( $data, $settings );
+		// Always sanitize against the class defaults so that newly added fields
+		// (e.g. statementContent, formData) are preserved even when they are
+		// absent from the currently stored DB value.
+		$settings = self::sanitize( $data, $this->data );
 		update_option( 'cya11y_widget_settings', $settings );
 		do_action( 'cya11y_after_update_settings', $clear );
 	}
@@ -192,8 +208,9 @@ class Settings {
 	 * @return array
 	 */
 	public static function sanitize( $settings, $defaults ) {
-		$result   = array();
-		$excludes = self::get_excludes();
+		$result    = array();
+		$excludes  = self::get_excludes();
+		$html_keys = self::get_html_keys();
 		foreach ( $defaults as $key => $data ) {
 			if ( in_array( $key, $excludes, true ) ) {
 				continue;
@@ -202,7 +219,9 @@ class Settings {
 				$result[ $key ] = $data;
 				continue;
 			}
-			if ( is_array( $data ) ) {
+			if ( in_array( $key, $html_keys, true ) ) {
+				$result[ $key ] = \wp_kses_post( $settings[ $key ] );
+			} elseif ( is_array( $data ) ) {
 				$result[ $key ] = self::sanitize_widget_data( $settings[ $key ], $data );
 			} else {
 				$result[ $key ] = self::sanitize_value( $settings[ $key ], $data );
