@@ -80,6 +80,9 @@ class Admin {
 		$this->load_modules();
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_print_scripts', array( $this, 'hide_admin_notices' ) );
+		add_action( 'admin_notices', array( $this, 'admin_notices' ) );
+		add_action( 'admin_init', array( $this, 'handle_review_notice_actions' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_global_styles' ) );
 
 		// add_filter( 'admin_body_class', array( $this, 'admin_body_classes' ) );
 	}
@@ -135,6 +138,15 @@ class Admin {
 				}
 			}
 		}
+	}
+
+	/**
+	 * Register the global stylesheets for the admin area (loaded on all WP admin pages).
+	 *
+	 * @since    3.0.0
+	 */
+	public function enqueue_global_styles() {
+		wp_enqueue_style( $this->plugin_name . '-admin-notice', plugin_dir_url( __FILE__ ) . 'css/admin-notice.css', array(), $this->version );
 	}
 
 	/**
@@ -242,10 +254,115 @@ class Admin {
 	 * @return array
 	 */
 	public function plugin_action_links( $links ) {
-		$links[] = '<a href="https://www.cookieyes.com/accessibility-widget-support/" target="_blank">' . esc_html__( 'Support', 'accessibility-widget' ) . '</a>';
+		$links[] = '<a href="https://wordpress.org/support/plugin/accessibility-widget/#new-post" target="_blank">' . esc_html__( 'Support', 'accessibility-widget' ) . '</a>';
 		$links[] = '<a href="' . get_admin_url( null, 'admin.php?page=accessibility-widget' ) . '">' . esc_html__( 'Settings', 'accessibility-widget' ) . '</a>';
 		return array_reverse( $links );
 	}
+
+	/**
+	 * Display the review banner as a standard WordPress admin notice.
+	 */
+	public function admin_notices() {
+		// Do not show on the plugin's own settings page.
+		if ( function_exists( 'cya11y_is_admin_page' ) && cya11y_is_admin_page() ) {
+			return;
+		}
+
+		// Check if 7 days have passed since install.
+		$install_date = get_option( 'cya11y_review_install_date', time() );
+		if ( time() - $install_date < 7 * DAY_IN_SECONDS ) {
+			return;
+		}
+
+		// Check if dismissed in options
+		$banners = get_option( 'cya11y_banners', array() );
+		$review_banner = isset( $banners['review-banner'] ) ? $banners['review-banner'] : null;
+
+		// If status is false, banner is dismissed (permanently or temporarily).
+		if (
+			$review_banner &&
+			isset( $review_banner['status'] ) &&
+			false === $review_banner['status'] &&
+			( ! isset( $review_banner['until'] ) || time() < $review_banner['until'] )
+		) {
+			return;
+		}
+
+		// Build URLs for actions and strictly sanitize SERVER data to pass PHPCS
+		$http_host   = isset( $_SERVER['HTTP_HOST'] ) ? sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) : '';
+		$request_uri = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
+		$current_url = set_url_scheme( 'http://' . $http_host . $request_uri );
+		$permanent_url  = add_query_arg( array(
+			'cya11y_dismiss_review' => 'permanent',
+			'_wpnonce' => wp_create_nonce( 'cya11y_dismiss_review_nonce' )
+		), $current_url );
+		$temporary_url  = add_query_arg( array(
+			'cya11y_dismiss_review' => 'temporary',
+			'_wpnonce' => wp_create_nonce( 'cya11y_dismiss_review_nonce' )
+		), $current_url );
+
+		?>
+		<div class="notice cya11y-review-notice-wrap">
+			<div class="cya11y-review-notice">
+				<a href="<?php echo esc_url( $temporary_url ); ?>" class="cya11y-review-close" aria-label="<?php esc_attr_e( 'Dismiss review banner', 'accessibility-widget' ); ?>">
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</a>
+
+				<div class="cya11y-review-content">
+					<img src="<?php echo esc_url( plugin_dir_url( dirname( __FILE__ ) ) . 'admin/app/dist/assets/accessyes-logo.png' ); ?>" alt="AccessYes by CookieYes" class="cya11y-review-logo" />
+
+					<p class="cya11y-review-text">
+						<?php esc_html_e( 'Hey, we at', 'accessibility-widget' ); ?> <strong><?php esc_html_e( 'AccessYes', 'accessibility-widget' ); ?></strong> <?php esc_html_e( 'would like to thank you for using our plugin. We would really appreciate if you could take a moment to drop a quick review that will inspire us to keep going.', 'accessibility-widget' ); ?>
+					</p>
+
+					<div class="cya11y-review-actions">
+						<a href="https://wordpress.org/support/plugin/accessibility-widget/reviews/#new-post" class="cya11y-btn cya11y-btn-primary" target="_blank" rel="noopener noreferrer" onclick="window.location.href='<?php echo esc_url( $permanent_url ); ?>'; return true;">
+							<?php esc_html_e( 'Review now', 'accessibility-widget' ); ?>
+						</a>
+						<a href="<?php echo esc_url( $permanent_url ); ?>" class="cya11y-btn cya11y-btn-outline">
+							<?php esc_html_e( 'Never show again', 'accessibility-widget' ); ?>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php
+	}
+
+	/**
+	 * Handle admin notice dismiss actions for the review banner.
+	 */
+	public function handle_review_notice_actions() {
+		if ( ! isset( $_GET['cya11y_dismiss_review'] ) || ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+
+		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_GET['_wpnonce'] ) ), 'cya11y_dismiss_review_nonce' ) ) {
+			return;
+		}
+
+		$dismiss_type = sanitize_text_field( wp_unslash( $_GET['cya11y_dismiss_review'] ) );
+		$banners      = get_option( 'cya11y_banners', array() );
+
+		if ( 'permanent' === $dismiss_type ) {
+			$banners['review-banner'] = array(
+				'status' => false,
+			);
+		} elseif ( 'temporary' === $dismiss_type ) {
+			$banners['review-banner'] = array(
+				'status' => false,
+				'until'  => time() + ( 60 * DAY_IN_SECONDS ),
+			);
+		}
+
+		update_option( 'cya11y_banners', $banners );
+
+		// Redirect cleanly
+		$redirect_url = remove_query_arg( array( 'cya11y_dismiss_review', '_wpnonce' ) );
+		wp_safe_redirect( $redirect_url );
+		exit;
+	}
+
 	/**
 	 * Hide all the unrelated notices from plugin page.
 	 *

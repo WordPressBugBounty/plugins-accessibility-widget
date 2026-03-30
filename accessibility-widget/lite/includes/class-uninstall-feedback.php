@@ -66,7 +66,7 @@ class Uninstall_Feedback {
 				'banner' => array(
 					'message'   => __( 'Test didn\'t go as planned? Tell us what features would make us a better fit.', 'accessibility-widget' ),
 					'link_text' => __( 'Suggest a feature', 'accessibility-widget' ),
-					'link_url'  => 'https://www.cookieyes.com/accessibility-widget-support/',
+					'link_url'  => 'https://wordpress.org/support/plugin/accessibility-widget/#new-post',
 				),
 			),
 			array(
@@ -82,7 +82,7 @@ class Uninstall_Feedback {
 				'banner' => array(
 					'message'   => __( 'Need quick help? Our team can guide you step-by-step.', 'accessibility-widget' ),
 					'link_text' => __( 'Connect with support', 'accessibility-widget' ),
-					'link_url'  => 'https://www.cookieyes.com/accessibility-widget-support/',
+					'link_url'  => 'https://wordpress.org/support/plugin/accessibility-widget/#new-post',
 				),
 			),
 			array(
@@ -98,7 +98,7 @@ class Uninstall_Feedback {
 				'banner' => array(
 					'message'   => __( 'We can usually resolve compatibility issues quickly.', 'accessibility-widget' ),
 					'link_text' => __( 'Contact support', 'accessibility-widget' ),
-					'link_url'  => 'https://www.cookieyes.com/accessibility-widget-support/',
+					'link_url'  => 'https://wordpress.org/support/plugin/accessibility-widget/#new-post',
 				),
 			),
 			array(
@@ -125,7 +125,7 @@ class Uninstall_Feedback {
 				'banner' => array(
 					'message'   => __( 'We\'re actively improving AccessYes and prioritizing feature requests.', 'accessibility-widget' ),
 					'link_text' => __( 'Submit feature request', 'accessibility-widget' ),
-					'link_url'  => 'https://www.cookieyes.com/accessibility-widget-support/',
+					'link_url'  => 'https://wordpress.org/support/plugin/accessibility-widget/#new-post',
 				),
 			),
 			array(
@@ -141,7 +141,7 @@ class Uninstall_Feedback {
 				'banner' => array(
 					'message'   => __( 'If there\'s something missing, let us know — we may already support it.', 'accessibility-widget' ),
 					'link_text' => __( 'Tell us what’s missing', 'accessibility-widget' ),
-					'link_url'  => 'https://www.cookieyes.com/accessibility-widget-support/',
+					'link_url'  => 'https://wordpress.org/support/plugin/accessibility-widget/#new-post',
 				),
 			),
 		);
@@ -166,6 +166,7 @@ class Uninstall_Feedback {
 				<div class="cya11y-modal-wrap">
 					<div class="cya11y-modal-header">
 						<h2 id="cya11y-modal-title"><?php esc_html_e( 'Before you deactivate, help us improve', 'accessibility-widget' ); ?></h2>
+						<button class="cya11y-modal-close" aria-label="<?php esc_attr_e( 'Close dialog', 'accessibility-widget' ); ?>">&times;</button>
 					</div>
 					<div class="cya11y-modal-body">
 						<p class="cya11y-feedback-caption"><?php echo esc_html__( 'Your feedback helps us make AccessYes better.', 'accessibility-widget' ); ?></p>
@@ -224,8 +225,6 @@ class Uninstall_Feedback {
 							<?php endforeach; ?>
 						</ul>
 
-						<div id="cya11y-feedback-error" class="cya11y-error-message" role="alert" style="display:none;"><?php echo esc_html__( 'Please select a reason.', 'accessibility-widget' ); ?></div>
-
 						<div class="cya11y-uninstall-feedback-privacy">
 							<?php 
 								printf(
@@ -237,17 +236,18 @@ class Uninstall_Feedback {
 						</div>
 					</div>
 					<div class="cya11y-modal-footer">
+						<div class="cya11y-footer-left">
+							<button class="button button-primary cya11y-modal-submit">
+								<?php echo esc_html__( 'Submit & Deactivate', 'accessibility-widget' ); ?>
+							</button>
+							<a href="https://wordpress.org/support/plugin/accessibility-widget/#new-post" target="_blank" class="cya11y-goto-support">
+								<span class="dashicons dashicons-external"></span>
+								<?php echo esc_html__( 'Go to support', 'accessibility-widget' ); ?>
+							</a>
+						</div>
 						<button class="button-link cya11y-modal-skip">
 							<?php echo esc_html__( 'Skip & Deactivate', 'accessibility-widget' ); ?>
 						</button>
-						<div class="cya11y-footer-actions">
-							<button class="button-link cya11y-modal-cancel">
-								<?php echo esc_html__( 'Cancel', 'accessibility-widget' ); ?>
-							</button>
-							<button class="button button-primary cya11y-modal-submit">
-								<?php echo esc_html__( 'Deactivate & Submit', 'accessibility-widget' ); ?>
-							</button>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -281,6 +281,23 @@ class Uninstall_Feedback {
 				}
 				.cya11y-modal-header {
 					padding: 24px 30px 0 30px;
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-between;
+				}
+				.cya11y-modal-close {
+					background: none;
+					border: none;
+					cursor: pointer;
+					font-size: 22px;
+					line-height: 1;
+					color: #787c82;
+					padding: 0 0 0 12px;
+					margin: -2px 0 0 0;
+					flex-shrink: 0;
+				}
+				.cya11y-modal-close:hover {
+					color: #1e1e1e;
 				}
 				.cya11y-modal-header h2 {
 					margin: 0;
@@ -390,19 +407,20 @@ class Uninstall_Feedback {
 					justify-content: space-between;
 					align-items: center;
 				}
-				.cya11y-footer-actions {
+				.cya11y-footer-left {
 					display: flex;
 					gap: 12px;
 					align-items: center;
 				}
 				.cya11y-modal-skip {
 					color: #2271b1;
-					text-decoration: underline;
+					text-decoration: none;
 					font-size: 13px;
 					padding: 0;
 					background: none;
 					border: none;
 					cursor: pointer;
+					opacity: 0.6;
 				}
 				.cya11y-goto-support {
 					font-size: 13px;
@@ -410,16 +428,11 @@ class Uninstall_Feedback {
 					text-decoration: none;
 					display: flex;
 					align-items: center;
-					margin-right: 15px;
+					gap: 4px;
 				}
 				.cya11y-goto-support .dashicons {
 					font-size: 14px;
 					line-height: 1.5;
-					margin-right: 2px;
-				}
-				.cya11y-modal-cancel {
-					color: #2271b1;
-					font-size: 13px;
 				}
 				.cya11y-modal-submit {
 					background-color: #2271b1;
@@ -484,17 +497,17 @@ class Uninstall_Feedback {
 
 						modal.addClass('modal-active').attr('aria-hidden', 'false');
 						modal.on('keydown', trapFocus);
-						// Focus on the first radio button/header for accessibility
-						modal.find('input[type="radio"]').first().focus(); 
+						// Focus on the close button so no radio button gets highlighted by default
+						modal.find('.cya11y-modal-close').focus(); 
 					});
 
-					// Close Modal Logic (Cancel, Skip, Escape)
+					// Close Modal Logic (Close button, Escape)
 					function closeModal() {
 						modal.removeClass('modal-active').attr('aria-hidden', 'true');
 						modal.off('keydown', trapFocus);
 					}
 
-					modal.on('click', '.cya11y-modal-cancel', function(e) {
+					modal.on('click', '.cya11y-modal-close', function(e) {
 						e.preventDefault();
 						closeModal();
 					});
@@ -540,21 +553,14 @@ class Uninstall_Feedback {
 						if (button.hasClass('disabled')) { return; }
 
 						const $radio = $('input[type="radio"]:checked', modal);
-						
-						// Validate reason selection
-						if ($radio.length === 0) {
-							$('#cya11y-feedback-error').show();
-							return;
-						}
-						$('#cya11y-feedback-error').hide();
+						const reason_id = $radio.length ? $radio.val() : 'none';
 
-						const reason_id = $radio.val();
-						// Get info from the specifically active textarea/input based on structure
-						// Since we use distinct IDs/Names in logic but shared class, let's find the visible one
-						const $visibleContent = modal.find(`.cya11y-feedback-dynamic-content[data-reason="${reason_id}"]`);
 						let reason_info = '';
-						if ($visibleContent.length) {
-							reason_info = $visibleContent.find('.cya11y-feedback-input-field').val();
+						if ($radio.length) {
+							const $visibleContent = modal.find(`.cya11y-feedback-dynamic-content[data-reason="${reason_id}"]`);
+							if ($visibleContent.length) {
+								reason_info = $visibleContent.find('.cya11y-feedback-input-field').val();
+							}
 						}
 
 						$.ajax({

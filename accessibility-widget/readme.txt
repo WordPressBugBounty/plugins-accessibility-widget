@@ -4,51 +4,58 @@ Tags: web accessibility, wp accessibility, accessibility widget, wcag, ada
 Requires at least: 5.0.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 3.1.2
+Stable tag: 3.1.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Free accessibility widget to support WCAG, ADA & EAA. Includes text resize, high contrast, dyslexia-friendly font, spacing, and more tools.
+Free WordPress accessibility widget to improve accessibility for your website visitors. Supports efforts towards meeting WCAG, ADA & EAA requirements.
 
 == Description ==
 
-AccessYes Accessibility Widget is a free, lightweight and user-friendly plugin that adds an accessibility widget to your WordPress website.
+AccessYes Accessibility Widget is a free, lightweight, and user-friendly plugin that adds an accessibility overlay to your WordPress website.
 
-The Accessibility Widget plugin provides tools to help your site better align with accessibility standards such as **WCAG 2.1 AA**, the **Americans with Disabilities Act (ADA)**, and the European Accessibility Act (EAA). With just a few clicks, you can offer visitors the ability to adjust font size, colour contrast, spacing, and more.
+The accessibility widget provides tools to help your site better align with accessibility standards such as the Web Content Accessibility Guidelines (WCAG) 2.1 AA, as well as accessibility laws like the Americans with Disabilities Act (ADA) and the European Accessibility Act (EAA).
+
+With just a few clicks, your website visitors can customise font size, color contrast, spacing, and more to create a browsing experience that fits their accessibility needs.
 
 **Disclaimer:**
 
-AccessYes Accessibility Widget is intended to support your accessibility efforts. It does not guarantee legal compliance with ADA, WCAG, EAA, EN 301 549 or other standards. For full compliance, a comprehensive audit and remediation may still be required.
+AccessYes Accessibility Widget is intended to support your accessibility efforts. It does not guarantee conformance with WCAG or compliance with laws such as the ADA, EAA, or other regulations. Full compliance may still require a comprehensive audit and remediation.
 
 
 == Why accessibility matters ==
 
-Over 1 billion people globally live with some form of disability. Web accessibility helps ensure that your content is usable for everyone, including those with visual, cognitive, motor, and neurological impairments.
+Over 1 billion people globally live with some form of disability. This makes web accessibility essential to ensure your content is usable for everyone, including those with visual, cognitive, motor, and neurological impairments.
 
-This plugin helps your site move in the right direction with tools designed to support inclusive browsing experiences.
+With WordPress powering over 43% of all websites in 2026, improving accessibility on WordPress sites can make a big difference in creating a more inclusive web.
+
+AccessYes Accessibility Widget helps you take a step in that direction by giving visitors simple tools to adjust how your WordPress website looks and behaves based on their needs.
 
 == Features ==
 
-= Content Adjustments =
-* **Font Size Controls:** Enable users to adjust the font size for enhanced readability.
-* **Highlight Title:** Emphasise page titles to aid scanning and comprehension.
-* **Highlight Features:** Highlight all links and/or page titles for easier scanning and focus.
-* **Dyslexia-Friendly Fonts:** Let users switch to high-legibility fonts for better cognitive accessibility.
-* **Font Weight Control:** Bolden text across your site to increase contrast and visibility.
-* **Letter Spacing & Line Height Adjustments:** Enable precise control over text layout to support users with dyslexia or reading challenges.
-* **Align Left:** Align all content to the left for a consistent reading experience.
+= Content adjustments =
+* **Font size controls:** Enable users to adjust the font size for enhanced readability.
+* **Highlight title:** Emphasise page titles to aid scanning and comprehension.
+* **Highlight features:** Highlight all links and/or page titles for easier scanning and focus.
+* **Dyslexia-friendly fonts:** Let users switch to high-legibility fonts for better cognitive accessibility.
+* **Font weight control:** Bolden text across your site to increase contrast and visibility.
+* **Letter spacing & line height adjustments:** Enable precise control over text layout to support users with dyslexia or reading challenges.
+* **Align left:** Align all content to the left for a consistent reading experience.
 
-= Colour adjustments =
-* **Contrast Modes:** Includes Dark Mode, Light Mode, and High Contrast for visual comfort.
-* **Saturation Options:** Allow users to toggle between low saturation, high saturation, and monochrome (grayscale) views.
+= Color adjustments =
+* **Contrast modes:** Includes Dark Mode, Light Mode, and High Contrast for visual comfort.
+* **Saturation options:** Allow users to toggle between low saturation, high saturation, and monochrome (grayscale) views.
 
 
 = Navigation adjustments =
-* Reading Guide: A horizontal guide that helps users track lines of text while reading.
-* Pause Animations: Let users pause animations or motions that could be distracting or trigger discomfort.
-* Big Cursor: Increase cursor size and contrast for better navigation visibility.
+* **Reading guide:** A horizontal guide that helps users track lines of text while reading.
+* **Pause animations:** Let users pause animations or motions that could be distracting or trigger discomfort.
+* **Big cursor:** Increase cursor size and contrast for better navigation visibility.
 
-**Accessibility statement:** Add a link to your public accessibility statement or VPAT page.
+= Accessibility statement =
+* **Create an accessibility statement:** Generate your website accessibility statement inside the tool and display it in the widget.
+* **Link an existing statement:** Connect your existing accessibility statement or VPAT and display it within the widget.
+
 
 **Need help?** Write to us at support@cookieyes.com with a quick note in the subject line: CookieYes Accessibility Widget
 
@@ -81,11 +88,20 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Screenshots ==
 
-1. Content Adjustments
-2. Customise Options
-3. Assistive Tools
+1. Accessibility options within the widget.
+2. Customise widget color, size, and position.
+3. Create or link accessibility statement in widget.
+4. Accessibility overlay general settings.
 
 == Changelog ==
+
+= 3.1.3 2026-03-30 =
+
+[Fix] - Resolved missing pointer cursors on various interactive UI elements within the plugin settings dashboard.
+[Fix] - Fixed translation issue for the "Reset settings" button in the accessibility widget.
+[Add] - Global WordPress admin notice for the review banner to improve visibility.
+[Enhancement] - Refactored uninstall feedback modal layout and removed the mandatory option selection requirement.
+[Enhancement] - Updated plugin support links to point directly to the WordPress.org support forum.
 
 = 3.1.2 2026-03-13 =
 
@@ -158,9 +174,11 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Upgrade Notice ==
 
-= 3.1.2 2026-03-13 =
+= 3.1.3 2026-03-30 =
 
-[Add] - Accessibility statement generator.
-[Fix] - Ensure 'disableContrast()' removes the class from '<body>' instead of 'documentElement'.
-[Enhancement] - Add 'cya11y-dark-contrast' body class when Dark Contrast mode is active to allow site CSS overrides.
-[Enhancement] - Add 'nav' to 'DARK_CONTRAST_SELECTORS' to support pagination elements in Dark Contrast mode.
+[Fix] - Resolved missing pointer cursors on various interactive UI elements within the plugin settings dashboard.
+[Fix] - Fixed translation issue for the "Reset settings" button in the accessibility widget.
+[Add] - Global WordPress admin notice for the review banner to improve visibility.
+[Enhancement] - Refactored uninstall feedback modal layout and removed the mandatory option selection requirement.
+[Enhancement] - Updated plugin support links to point directly to the WordPress.org support forum.
+

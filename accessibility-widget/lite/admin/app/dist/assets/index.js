@@ -19152,7 +19152,7 @@ const cva = (base, config) => (props) => {
   return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
 };
 const buttonVariants = cva(
-  "cy:inline-flex cy:items-center cy:justify-center cy:gap-2 cy:whitespace-nowrap cy:rounded-md cy:text-sm cy:font-medium cy:transition-all cy:disabled:pointer-events-none cy:disabled:opacity-50 cy:[&_svg]:pointer-events-none cy:[&_svg:not([class*=size-])]:size-4 cy:shrink-0 cy:[&_svg]:shrink-0 cy:outline-none cy:focus-visible:border-ring cy:focus-visible:ring-ring/50 cy:focus-visible:ring-[3px] cy:aria-invalid:ring-destructive/20 cy:dark:aria-invalid:ring-destructive/40 cy:aria-invalid:border-destructive",
+  "cy:inline-flex cy:items-center cy:justify-center cy:gap-2 cy:whitespace-nowrap cy:rounded-md cy:text-sm cy:font-medium cy:transition-all cy:cursor-pointer cy:disabled:pointer-events-none cy:disabled:opacity-50 cy:[&_svg]:pointer-events-none cy:[&_svg:not([class*=size-])]:size-4 cy:shrink-0 cy:[&_svg]:shrink-0 cy:outline-none cy:focus-visible:border-ring cy:focus-visible:ring-ring/50 cy:focus-visible:ring-[3px] cy:aria-invalid:ring-destructive/20 cy:dark:aria-invalid:ring-destructive/40 cy:aria-invalid:border-destructive",
   {
     variants: {
       variant: {
@@ -19193,7 +19193,7 @@ function Button({
     }
   );
 }
-const webyesPromoBanner = "/wp-content/plugins/accessibility-widget-plugin/lite/admin/app/dist/assets/webyes-promo-banner.webp";
+const webyesPromoBanner = "/wp-content/plugins/accessibility-widget/lite/admin/app/dist/assets/webyes-promo-banner.webp";
 const createStoreImpl = (createState) => {
   let state;
   const listeners = /* @__PURE__ */ new Set();
@@ -19233,7 +19233,7 @@ const createImpl = (createState) => {
   return useBoundStore;
 };
 const create = (createState) => createImpl;
-const __vite_import_meta_env__ = { "BASE_URL": "/wp-content/plugins/accessibility-widget-plugin/lite/admin/app/dist", "DEV": false, "MODE": "production", "PROD": true, "SSR": false };
+const __vite_import_meta_env__ = { "BASE_URL": "/wp-content/plugins/accessibility-widget/lite/admin/app/dist", "DEV": false, "MODE": "production", "PROD": true, "SSR": false };
 const trackedConnections = /* @__PURE__ */ new Map();
 const getTrackedConnectionState = (name) => {
   const api2 = trackedConnections.get(name);
@@ -21300,7 +21300,7 @@ const Banner = () => {
     }
   ) });
 };
-const accessYesLogo = "/wp-content/plugins/accessibility-widget-plugin/lite/admin/app/dist/assets/accessyes-logo.png";
+const accessYesLogo = "/wp-content/plugins/accessibility-widget/lite/admin/app/dist/assets/accessyes-logo.png";
 const REVIEW_BANNER_ID = "review-banner";
 const REVIEW_DELAY_DAYS = 7;
 function hasReachedReviewDelay(installDate) {
@@ -21410,7 +21410,7 @@ const ReviewBanner = () => {
             type: "button",
             variant: "outline",
             onClick: hidePermanently,
-            className: "cy:h-8 cy:min-w-[124px] cy:rounded-[3px] cy:border-[#baafaf] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-[#756f6f] hover:cy:bg-[#f6f7f7]",
+            className: "cy:h-8 cy:min-w-[124px] cy:rounded-[3px] cy:border-[#baafaf] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-[#756f6f] cy:opacity-50 hover:cy:bg-[#f6f7f7]",
             children: "Never show again"
           }
         )
@@ -22814,7 +22814,7 @@ function Header() {
       /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "a",
         {
-          href: "https://www.cookieyes.com/accessibility-widget-support/",
+          href: "https://wordpress.org/support/plugin/accessibility-widget/#new-post",
           target: "_blank",
           className: "cy:inline-flex cy:items-center cy:justify-center cy:whitespace-nowrap cy:text-sm cy:transition-all cy:disabled:pointer-events-none cy:disabled:opacity-50 cy:[&_svg]:pointer-events-none  cy:shrink-0 cy:[&_svg]:shrink-0 cy:outline-none cy:focus-visible:border-ring cy:focus-visible:ring-ring/50 cy:focus-visible:ring-[3px] cy:aria-invalid:ring-destructive/20 cy:dark:aria-invalid:ring-destructive/40 cy:aria-invalid:border-destructive cy:bg-transparent cy:h-8 cy:rounded-md cy:gap-1.5 cy:px-3 cy:border-1 cy:border-white cy:text-white! cy:hover:bg-white cy:hover:text-black!",
           children: [
@@ -26999,7 +26999,7 @@ function Switch({
     {
       "data-slot": "switch",
       className: cn$1(
-        "cy:peer cy:data-[state=checked]:bg-primary cy:data-[state=unchecked]:bg-input cy:focus-visible:border-ring cy:focus-visible:ring-ring/50 cy:dark:data-[state=unchecked]:bg-input/80 cy:inline-flex cy:h-[28px] cy:w-[56px] cy:shrink-0 cy:items-center cy:rounded-full cy:border cy:border-transparent cy:shadow-xs cy:transition-all cy:outline-none cy:focus-visible:ring-[3px] cy:disabled:cursor-not-allowed cy:disabled:opacity-50",
+        "cy:peer cy:data-[state=checked]:bg-primary cy:data-[state=unchecked]:bg-input cy:focus-visible:border-ring cy:focus-visible:ring-ring/50 cy:dark:data-[state=unchecked]:bg-input/80 cy:inline-flex cy:h-[28px] cy:w-[56px] cy:shrink-0 cy:items-center cy:rounded-full cy:border cy:border-transparent cy:shadow-xs cy:transition-all cy:outline-none cy:focus-visible:ring-[3px] cy:cursor-pointer cy:disabled:cursor-not-allowed cy:disabled:opacity-50",
         className
       ),
       ...props,
@@ -28486,7 +28486,7 @@ function App() {
         " ",
         "to help us spread the word. Thank you from the team AccessYes!"
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.1.2" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.1.3" })
     ] })
   ] }) }) });
 }
