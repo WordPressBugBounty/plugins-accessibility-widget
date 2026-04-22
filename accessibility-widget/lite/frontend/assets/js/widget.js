@@ -40,7 +40,6 @@
     "src/locales/am.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u12E8\u1270\u12F0\u122B\u123D\u1290\u1275 \u121D\u1293\u120C",
-        "Reset settings": "\u1245\u1295\u1265\u122E\u127D\u1295 \u12F3\u130D\u121D \u12A0\u1235\u1300\u121D\u122D",
         Close: "\u12DD\u130B",
         "Content adjustments": "\u12E8\u12ED\u12D8\u1275 \u121B\u1235\u1270\u12AB\u12A8\u12EB\u12CE\u127D",
         "Navigation adjustments": "\u12E8\u12A0\u12F0\u122B\u12F3\u122A \u121B\u1235\u1270\u12AB\u12A8\u12EB\u12CE\u127D",
@@ -58,7 +57,6 @@
         Monochrome: "\u1290\u1320\u120B \u1240\u1208\u121D",
         Tools: "\u1218\u1233\u122A\u12EB\u12CE\u127D",
         "Reading Guide": "\u12E8\u1295\u1263\u1265 \u1218\u1218\u122A\u12EB",
-        "Stop Animations": "\u12A0\u1292\u121C\u123D\u1296\u127D\u1295 \u12A0\u1241\u121D",
         "Big Cursor": "\u1275\u120D\u120D\u1245 \u12A0\u121D\u1233\u12EB",
         "Increase Font Size": "\u12E8\u134A\u12F0\u120D \u1218\u1320\u1295 \u1328\u121D\u122D",
         "Decrease Font Size": "\u12E8\u134A\u12F0\u120D \u1218\u1320\u1295 \u12A0\u1233\u1295\u1235",
@@ -71,7 +69,12 @@
         "Accessibility Profiles": "\u12E8\u1270\u12F0\u122B\u123D\u1290\u1275 \u1218\u1308\u1208\u132B\u12CE\u127D",
         "Cognitive Disability": "\u12E8\u12A0\u12A5\u121D\u122E \u12A0\u12AB\u120D \u1309\u12F5\u1208\u1275",
         "Seizure Safe": "\u12E8\u121D\u1273\u1295\u1235 \u12E8\u121B\u12ED\u1290\u12AB",
-        "Accessibility statement": "\u12E8\u1270\u12F0\u122B\u123D\u1290\u1275 \u1218\u130D\u1208\u132B"
+        "Accessibility statement": "\u12E8\u1270\u12F0\u122B\u123D\u1290\u1275 \u1218\u130D\u1208\u132B",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u12A0\u1292\u121C\u123D\u1296\u127D\u1295 \u12A0\u1241\u121D",
+        "Reset all settings": "\u1245\u1295\u1265\u122E\u127D\u1295 \u12F3\u130D\u121D \u12A0\u1235\u1300\u121D\u122D",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -81,7 +84,6 @@
     "src/locales/ar.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0642\u0627\u0626\u0645\u0629 \u0625\u0645\u0643\u0627\u0646\u064A\u0629 \u0627\u0644\u0648\u0635\u0648\u0644",
-        "Reset settings": "\u0625\u0639\u0627\u062F\u0629 \u062A\u0639\u064A\u064A\u0646 \u0627\u0644\u0625\u0639\u062F\u0627\u062F\u0627\u062A",
         Close: "\u0625\u063A\u0644\u0627\u0642",
         "Content adjustments": "\u062A\u0639\u062F\u064A\u0644\u0627\u062A \u0627\u0644\u0645\u062D\u062A\u0648\u0649",
         "Navigation adjustments": "\u062A\u0639\u062F\u064A\u0644\u0627\u062A \u0627\u0644\u062A\u0646\u0642\u0644",
@@ -99,7 +101,6 @@
         Monochrome: "\u0623\u062D\u0627\u062F\u064A \u0627\u0644\u0644\u0648\u0646",
         Tools: "\u0627\u0644\u0623\u062F\u0648\u0627\u062A",
         "Reading Guide": "\u062F\u0644\u064A\u0644 \u0627\u0644\u0642\u0631\u0627\u0621\u0629",
-        "Stop Animations": "\u0625\u064A\u0642\u0627\u0641 \u0627\u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0645\u062A\u062D\u0631\u0643\u0629",
         "Big Cursor": "\u0645\u0624\u0634\u0631 \u0643\u0628\u064A\u0631",
         "Increase Font Size": "\u0632\u064A\u0627\u062F\u0629 \u062D\u062C\u0645 \u0627\u0644\u062E\u0637",
         "Decrease Font Size": "\u062A\u0642\u0644\u064A\u0644 \u062D\u062C\u0645 \u0627\u0644\u062E\u0637",
@@ -112,7 +113,12 @@
         "Accessibility Profiles": "\u0645\u0644\u0641\u0627\u062A \u0625\u0645\u0643\u0627\u0646\u064A\u0629 \u0627\u0644\u0648\u0635\u0648\u0644",
         "Cognitive Disability": "\u0627\u0644\u0625\u0639\u0627\u0642\u0629 \u0627\u0644\u0645\u0639\u0631\u0641\u064A\u0629",
         "Seizure Safe": "\u0622\u0645\u0646 \u0645\u0646 \u0627\u0644\u0646\u0648\u0628\u0627\u062A",
-        "Accessibility statement": "\u0628\u064A\u0627\u0646 \u0625\u0645\u0643\u0627\u0646\u064A\u0629 \u0627\u0644\u0648\u0635\u0648\u0644"
+        "Accessibility statement": "\u0628\u064A\u0627\u0646 \u0625\u0645\u0643\u0627\u0646\u064A\u0629 \u0627\u0644\u0648\u0635\u0648\u0644",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0625\u064A\u0642\u0627\u0641 \u0627\u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0645\u062A\u062D\u0631\u0643\u0629",
+        "Reset all settings": "\u0625\u0639\u0627\u062F\u0629 \u062A\u0639\u064A\u064A\u0646 \u0627\u0644\u0625\u0639\u062F\u0627\u062F\u0627\u062A",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -122,7 +128,6 @@
     "src/locales/bg.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u044E \u0437\u0430 \u0434\u043E\u0441\u0442\u044A\u043F\u043D\u043E\u0441\u0442",
-        "Reset settings": "\u041D\u0443\u043B\u0438\u0440\u0430\u043D\u0435 \u043D\u0430 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438\u0442\u0435",
         Close: "\u0417\u0430\u0442\u0432\u043E\u0440\u0438",
         "Content adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430\u043D\u0438\u0435\u0442\u043E",
         "Navigation adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044F\u0442\u0430",
@@ -140,7 +145,6 @@
         Monochrome: "\u041C\u043E\u043D\u043E\u0445\u0440\u043E\u043C\u0435\u043D",
         Tools: "\u0418\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0438",
         "Reading Guide": "\u0420\u044A\u043A\u043E\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u0437\u0430 \u0447\u0435\u0442\u0435\u043D\u0435",
-        "Stop Animations": "\u0421\u043F\u0440\u0438 \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438\u0442\u0435",
         "Big Cursor": "\u0413\u043E\u043B\u044F\u043C \u043A\u0443\u0440\u0441\u043E\u0440",
         "Increase Font Size": "\u0423\u0432\u0435\u043B\u0438\u0447\u0438 \u0440\u0430\u0437\u043C\u0435\u0440\u0430 \u043D\u0430 \u0448\u0440\u0438\u0444\u0442\u0430",
         "Decrease Font Size": "\u041D\u0430\u043C\u0430\u043B\u0438 \u0440\u0430\u0437\u043C\u0435\u0440\u0430 \u043D\u0430 \u0448\u0440\u0438\u0444\u0442\u0430",
@@ -153,7 +157,12 @@
         "Accessibility Profiles": "\u041F\u0440\u043E\u0444\u0438\u043B\u0438 \u0437\u0430 \u0434\u043E\u0441\u0442\u044A\u043F\u043D\u043E\u0441\u0442",
         "Cognitive Disability": "\u041A\u043E\u0433\u043D\u0438\u0442\u0438\u0432\u043D\u0430 \u0443\u0432\u0440\u0435\u0434\u0435\u043D\u043E\u0441\u0442",
         "Seizure Safe": "\u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E \u0437\u0430 \u0435\u043F\u0438\u043B\u0435\u043F\u0441\u0438\u044F",
-        "Accessibility statement": "\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0446\u0438\u044F \u0437\u0430 \u0434\u043E\u0441\u0442\u044A\u043F\u043D\u043E\u0441\u0442"
+        "Accessibility statement": "\u0414\u0435\u043A\u043B\u0430\u0440\u0430\u0446\u0438\u044F \u0437\u0430 \u0434\u043E\u0441\u0442\u044A\u043F\u043D\u043E\u0441\u0442",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0421\u043F\u0440\u0438 \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438\u0442\u0435",
+        "Reset all settings": "\u041D\u0443\u043B\u0438\u0440\u0430\u043D\u0435 \u043D\u0430 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438\u0442\u0435",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -163,7 +172,6 @@
     "src/locales/bn.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0985\u09AD\u09BF\u0997\u09AE\u09CD\u09AF\u09A4\u09BE \u09AE\u09C7\u09A8\u09C1",
-        "Reset settings": "\u09A8\u09BF\u09B0\u09CD\u09A7\u09BE\u09B0\u09A3 \u09AA\u09C1\u09A8\u09B0\u09BE\u09AF\u09BC \u09B8\u09C7\u099F \u0995\u09B0\u09C1\u09A8",
         Close: "\u09AC\u09A8\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
         "Content adjustments": "\u0995\u09A8\u09CD\u099F\u09C7\u09A8\u09CD\u099F \u09B8\u0982\u09B6\u09CB\u09A7\u09A8",
         "Navigation adjustments": "\u09A8\u09C7\u09AD\u09BF\u0997\u09C7\u09B6\u09A8 \u09B8\u0982\u09B6\u09CB\u09A7\u09A8",
@@ -181,7 +189,6 @@
         Monochrome: "\u098F\u0995\u09B0\u0999",
         Tools: "\u09B8\u09B0\u099E\u09CD\u099C\u09BE\u09AE",
         "Reading Guide": "\u09AA\u09A1\u09BC\u09BE\u09B0 \u0997\u09BE\u0987\u09A1",
-        "Stop Animations": "\u0985\u09CD\u09AF\u09BE\u09A8\u09BF\u09AE\u09C7\u09B6\u09A8 \u09AC\u09A8\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
         "Big Cursor": "\u09AC\u09A1\u09BC \u0995\u09BE\u09B0\u09CD\u09B8\u09B0",
         "Increase Font Size": "\u09AB\u09A8\u09CD\u099F \u09B8\u09BE\u0987\u099C \u09AC\u09BE\u09A1\u09BC\u09BE\u09A8",
         "Decrease Font Size": "\u09AB\u09A8\u09CD\u099F \u09B8\u09BE\u0987\u099C \u0995\u09AE\u09BE\u09A8",
@@ -194,7 +201,12 @@
         "Accessibility Profiles": "\u0985\u09AD\u09BF\u0997\u09AE\u09CD\u09AF\u09A4\u09BE \u09AA\u09CD\u09B0\u09CB\u09AB\u09BE\u0987\u09B2",
         "Cognitive Disability": "\u099C\u09CD\u099E\u09BE\u09A8\u09C0\u09AF\u09BC \u0985\u0995\u09CD\u09B7\u09AE\u09A4\u09BE",
         "Seizure Safe": "\u09AE\u09C3\u0997\u09C0\u09B0\u09CB\u0997\u09C0\u09A6\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u09A8\u09BF\u09B0\u09BE\u09AA\u09A6",
-        "Accessibility statement": "\u0985\u09AD\u09BF\u0997\u09AE\u09CD\u09AF\u09A4\u09BE \u09AC\u09BF\u09AC\u09C3\u09A4\u09BF"
+        "Accessibility statement": "\u0985\u09AD\u09BF\u0997\u09AE\u09CD\u09AF\u09A4\u09BE \u09AC\u09BF\u09AC\u09C3\u09A4\u09BF",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0985\u09CD\u09AF\u09BE\u09A8\u09BF\u09AE\u09C7\u09B6\u09A8 \u09AC\u09A8\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
+        "Reset all settings": "\u09A8\u09BF\u09B0\u09CD\u09A7\u09BE\u09B0\u09A3 \u09AA\u09C1\u09A8\u09B0\u09BE\u09AF\u09BC \u09B8\u09C7\u099F \u0995\u09B0\u09C1\u09A8",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -204,7 +216,6 @@
     "src/locales/ca.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Men\xFA d'accessibilitat",
-        "Reset settings": "Restablir configuraci\xF3",
         Close: "Tancar",
         "Content adjustments": "Ajustos de contingut",
         "Navigation adjustments": "Ajustos de navegaci\xF3",
@@ -222,7 +233,6 @@
         Monochrome: "Monocrom",
         Tools: "Eines",
         "Reading Guide": "Guia de lectura",
-        "Stop Animations": "Aturar animacions",
         "Big Cursor": "Cursor gran",
         "Increase Font Size": "Augmentar mida de la font",
         "Decrease Font Size": "Reduir mida de la font",
@@ -235,7 +245,12 @@
         "Accessibility Profiles": "Perfils d'accessibilitat",
         "Cognitive Disability": "Discapacitat cognitiva",
         "Seizure Safe": "Segur per a epil\xE8psia",
-        "Accessibility statement": "Declaraci\xF3 d'accessibilitat"
+        "Accessibility statement": "Declaraci\xF3 d'accessibilitat",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Aturar animacions",
+        "Reset all settings": "Restablir configuraci\xF3",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -245,7 +260,6 @@
     "src/locales/cs.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "P\u0159\xEDstupnostn\xED menu",
-        "Reset settings": "Obnovit nastaven\xED",
         Close: "Zav\u0159\xEDt",
         "Content adjustments": "\xDApravy obsahu",
         "Navigation adjustments": "\xDApravy navigace",
@@ -263,7 +277,6 @@
         Monochrome: "Monochromatick\xFD",
         Tools: "N\xE1stroje",
         "Reading Guide": "Pr\u016Fvodce \u010Dten\xEDm",
-        "Stop Animations": "Zastavit animace",
         "Big Cursor": "Velk\xFD kurzor",
         "Increase Font Size": "Zv\u011Bt\u0161it velikost p\xEDsma",
         "Decrease Font Size": "Zmen\u0161it velikost p\xEDsma",
@@ -276,7 +289,12 @@
         "Accessibility Profiles": "P\u0159\xEDstupnostn\xED profily",
         "Cognitive Disability": "Kognitivn\xED posti\u017Een\xED",
         "Seizure Safe": "Bezpe\u010Dn\xE9 pro epilepsii",
-        "Accessibility statement": "Prohl\xE1\u0161en\xED o p\u0159\xEDstupnosti"
+        "Accessibility statement": "Prohl\xE1\u0161en\xED o p\u0159\xEDstupnosti",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Zastavit animace",
+        "Reset all settings": "Obnovit nastaven\xED",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -286,7 +304,6 @@
     "src/locales/da.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Tilg\xE6ngelighedsmenu",
-        "Reset settings": "Nulstil indstillinger",
         Close: "Luk",
         "Content adjustments": "Indholdsjusteringer",
         "Navigation adjustments": "Navigationsjusteringer",
@@ -304,7 +321,6 @@
         Monochrome: "Monokrom",
         Tools: "V\xE6rkt\xF8jer",
         "Reading Guide": "L\xE6seguide",
-        "Stop Animations": "Stop animationer",
         "Big Cursor": "Stor mark\xF8r",
         "Increase Font Size": "For\xF8g skriftst\xF8rrelse",
         "Decrease Font Size": "Formindsk skriftst\xF8rrelse",
@@ -317,7 +333,12 @@
         "Accessibility Profiles": "Tilg\xE6ngelighedsprofiler",
         "Cognitive Disability": "Kognitiv handicap",
         "Seizure Safe": "Anfaldsikker",
-        "Accessibility statement": "Tilg\xE6ngelighedserkl\xE6ring"
+        "Accessibility statement": "Tilg\xE6ngelighedserkl\xE6ring",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Stop animationer",
+        "Reset all settings": "Nulstil indstillinger",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -327,7 +348,6 @@
     "src/locales/de.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Barrierefreiheits-Men\xFC",
-        "Reset settings": "Einstellungen Zur\xFCcksetzen",
         Close: "Schlie\xDFen",
         "Content adjustments": "Inhaltsanpassungen",
         "Navigation adjustments": "Navigationsanpassungen",
@@ -345,7 +365,6 @@
         Monochrome: "Monochrom",
         Tools: "Werkzeuge",
         "Reading Guide": "Lesef\xFChrung",
-        "Stop Animations": "Animationen stoppen",
         "Big Cursor": "Gro\xDFer Cursor",
         "Increase Font Size": "Schriftgr\xF6\xDFe vergr\xF6\xDFern",
         "Decrease Font Size": "Schriftgr\xF6\xDFe verkleinern",
@@ -358,7 +377,12 @@
         "Accessibility Profiles": "Barrierefreiheits-Profile",
         "Cognitive Disability": "Kognitive Beeintr\xE4chtigung",
         "Seizure Safe": "Anfallssicher",
-        "Accessibility statement": "Barrierefreiheits-Erkl\xE4rung"
+        "Accessibility statement": "Barrierefreiheits-Erkl\xE4rung",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Animationen stoppen",
+        "Reset all settings": "Einstellungen Zur\xFCcksetzen",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -368,7 +392,6 @@
     "src/locales/el.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u039C\u03B5\u03BD\u03BF\u03CD \u03A0\u03C1\u03BF\u03C3\u03B2\u03B1\u03C3\u03B9\u03BC\u03CC\u03C4\u03B7\u03C4\u03B1\u03C2",
-        "Reset settings": "\u0395\u03C0\u03B1\u03BD\u03B1\u03C6\u03BF\u03C1\u03AC \u03C1\u03C5\u03B8\u03BC\u03AF\u03C3\u03B5\u03C9\u03BD",
         Close: "\u039A\u03BB\u03B5\u03AF\u03C3\u03B9\u03BC\u03BF",
         "Content adjustments": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03A0\u03B5\u03C1\u03B9\u03B5\u03C7\u03BF\u03BC\u03AD\u03BD\u03BF\u03C5",
         "Navigation adjustments": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03A0\u03BB\u03BF\u03AE\u03B3\u03B7\u03C3\u03B7\u03C2",
@@ -386,7 +409,6 @@
         Monochrome: "\u039C\u03BF\u03BD\u03CC\u03C7\u03C1\u03C9\u03BC\u03BF",
         Tools: "\u0395\u03C1\u03B3\u03B1\u03BB\u03B5\u03AF\u03B1",
         "Reading Guide": "\u039F\u03B4\u03B7\u03B3\u03CC\u03C2 \u0391\u03BD\u03AC\u03B3\u03BD\u03C9\u03C3\u03B7\u03C2",
-        "Stop Animations": "\u0394\u03B9\u03B1\u03BA\u03BF\u03C0\u03AE \u039A\u03B9\u03BD\u03BF\u03CD\u03BC\u03B5\u03BD\u03C9\u03BD \u0395\u03B9\u03BA\u03CC\u03BD\u03C9\u03BD",
         "Big Cursor": "\u039C\u03B5\u03B3\u03AC\u03BB\u03BF\u03C2 \u0394\u03C1\u03BF\u03BC\u03AD\u03B1\u03C2",
         "Increase Font Size": "\u0391\u03CD\u03BE\u03B7\u03C3\u03B7 \u039C\u03B5\u03B3\u03AD\u03B8\u03BF\u03C5\u03C2 \u0393\u03C1\u03B1\u03BC\u03BC\u03B1\u03C4\u03BF\u03C3\u03B5\u03B9\u03C1\u03AC\u03C2",
         "Decrease Font Size": "\u039C\u03B5\u03AF\u03C9\u03C3\u03B7 \u039C\u03B5\u03B3\u03AD\u03B8\u03BF\u03C5\u03C2 \u0393\u03C1\u03B1\u03BC\u03BC\u03B1\u03C4\u03BF\u03C3\u03B5\u03B9\u03C1\u03AC\u03C2",
@@ -399,7 +421,12 @@
         "Accessibility Profiles": "\u03A0\u03C1\u03BF\u03C6\u03AF\u03BB \u03A0\u03C1\u03BF\u03C3\u03B2\u03B1\u03C3\u03B9\u03BC\u03CC\u03C4\u03B7\u03C4\u03B1\u03C2",
         "Cognitive Disability": "\u0393\u03BD\u03C9\u03C3\u03C4\u03B9\u03BA\u03AE \u0391\u03BD\u03B1\u03C0\u03B7\u03C1\u03AF\u03B1",
         "Seizure Safe": "\u0391\u03C3\u03C6\u03B1\u03BB\u03AD\u03C2 \u03B3\u03B9\u03B1 \u0395\u03C0\u03B9\u03BB\u03B7\u03C8\u03AF\u03B1",
-        "Accessibility statement": "\u0394\u03AE\u03BB\u03C9\u03C3\u03B7 \u03A0\u03C1\u03BF\u03C3\u03B2\u03B1\u03C3\u03B9\u03BC\u03CC\u03C4\u03B7\u03C4\u03B1\u03C2"
+        "Accessibility statement": "\u0394\u03AE\u03BB\u03C9\u03C3\u03B7 \u03A0\u03C1\u03BF\u03C3\u03B2\u03B1\u03C3\u03B9\u03BC\u03CC\u03C4\u03B7\u03C4\u03B1\u03C2",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0394\u03B9\u03B1\u03BA\u03BF\u03C0\u03AE \u039A\u03B9\u03BD\u03BF\u03CD\u03BC\u03B5\u03BD\u03C9\u03BD \u0395\u03B9\u03BA\u03CC\u03BD\u03C9\u03BD",
+        "Reset all settings": "\u0395\u03C0\u03B1\u03BD\u03B1\u03C6\u03BF\u03C1\u03AC \u03C1\u03C5\u03B8\u03BC\u03AF\u03C3\u03B5\u03C9\u03BD",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -409,7 +436,6 @@
     "src/locales/en.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Accessibility menu",
-        "Reset settings": "Reset settings",
         Close: "Close",
         "Content adjustments": "Content adjustments",
         "Navigation adjustments": "Navigation adjustments",
@@ -427,7 +453,6 @@
         Monochrome: "Monochrome",
         Tools: "Tools",
         "Reading Guide": "Reading Guide",
-        "Stop Animations": "Stop Animations",
         "Big Cursor": "Big Cursor",
         "Increase Font Size": "Increase Font Size",
         "Decrease Font Size": "Decrease Font Size",
@@ -440,7 +465,12 @@
         "Accessibility Profiles": "Accessibility Profiles",
         "Cognitive Disability": "Cognitive Disability",
         "Seizure Safe": "Seizure Safe",
-        "Accessibility statement": "Accessibility statement"
+        "Accessibility statement": "Accessibility statement",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Pause Animations",
+        "Reset all settings": "Reset all settings",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -450,7 +480,6 @@
     "src/locales/es.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Men\xFA de accesibilidad",
-        "Reset settings": "Restablecer Configuraci\xF3n",
         Close: "Cerrar",
         "Content adjustments": "Ajustes de Contenido",
         "Navigation adjustments": "Ajustes de Navegaci\xF3n",
@@ -468,7 +497,6 @@
         Monochrome: "Monocromo",
         Tools: "Herramientas",
         "Reading Guide": "Gu\xEDa de Lectura",
-        "Stop Animations": "Detener Animaciones",
         "Big Cursor": "Cursor Grande",
         "Increase Font Size": "Aumentar Tama\xF1o de Fuente",
         "Decrease Font Size": "Disminuir Tama\xF1o de Fuente",
@@ -481,7 +509,12 @@
         "Accessibility Profiles": "Perfiles de Accesibilidad",
         "Cognitive Disability": "Discapacidad Cognitiva",
         "Seizure Safe": "Seguro para Epilepsia",
-        "Accessibility statement": "Declaraci\xF3n de Accesibilidad"
+        "Accessibility statement": "Declaraci\xF3n de Accesibilidad",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Detener Animaciones",
+        "Reset all settings": "Restablecer Configuraci\xF3n",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -491,7 +524,6 @@
     "src/locales/fa.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0645\u0646\u0648\u06CC \u062F\u0633\u062A\u0631\u0633\u06CC",
-        "Reset settings": "\u0628\u0627\u0632\u0646\u0634\u0627\u0646\u06CC \u062A\u0646\u0638\u06CC\u0645\u0627\u062A",
         Close: "\u0628\u0633\u062A\u0646",
         "Content adjustments": "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0645\u062D\u062A\u0648\u0627",
         "Navigation adjustments": "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0646\u0627\u0648\u0628\u0631\u06CC",
@@ -509,7 +541,6 @@
         Monochrome: "\u062A\u06A9\u200C\u0631\u0646\u06AF",
         Tools: "\u0627\u0628\u0632\u0627\u0631\u0647\u0627",
         "Reading Guide": "\u0631\u0627\u0647\u0646\u0645\u0627\u06CC \u062E\u0648\u0627\u0646\u062F\u0646",
-        "Stop Animations": "\u062A\u0648\u0642\u0641 \u0627\u0646\u06CC\u0645\u06CC\u0634\u0646\u200C\u0647\u0627",
         "Big Cursor": "\u0645\u0624\u0634\u0631 \u0628\u0632\u0631\u06AF",
         "Increase Font Size": "\u0627\u0641\u0632\u0627\u06CC\u0634 \u0627\u0646\u062F\u0627\u0632\u0647 \u0641\u0648\u0646\u062A",
         "Decrease Font Size": "\u06A9\u0627\u0647\u0634 \u0627\u0646\u062F\u0627\u0632\u0647 \u0641\u0648\u0646\u062A",
@@ -522,7 +553,12 @@
         "Accessibility Profiles": "\u067E\u0631\u0648\u0641\u0627\u06CC\u0644\u200C\u0647\u0627\u06CC \u062F\u0633\u062A\u0631\u0633\u06CC",
         "Cognitive Disability": "\u0646\u0627\u062A\u0648\u0627\u0646\u06CC \u0634\u0646\u0627\u062E\u062A\u06CC",
         "Seizure Safe": "\u0627\u06CC\u0645\u0646 \u0628\u0631\u0627\u06CC \u0635\u0631\u0639",
-        "Accessibility statement": "\u0628\u06CC\u0627\u0646\u06CC\u0647 \u062F\u0633\u062A\u0631\u0633\u06CC"
+        "Accessibility statement": "\u0628\u06CC\u0627\u0646\u06CC\u0647 \u062F\u0633\u062A\u0631\u0633\u06CC",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u062A\u0648\u0642\u0641 \u0627\u0646\u06CC\u0645\u06CC\u0634\u0646\u200C\u0647\u0627",
+        "Reset all settings": "\u0628\u0627\u0632\u0646\u0634\u0627\u0646\u06CC \u062A\u0646\u0638\u06CC\u0645\u0627\u062A",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -532,7 +568,6 @@
     "src/locales/fi.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Saavutettavuusvalikko",
-        "Reset settings": "Palauta asetukset",
         Close: "Sulje",
         "Content adjustments": "Sis\xE4ll\xF6n s\xE4\xE4d\xF6t",
         "Navigation adjustments": "Navigoinnin s\xE4\xE4d\xF6t",
@@ -550,7 +585,6 @@
         Monochrome: "Yksiv\xE4rinen",
         Tools: "Ty\xF6kalut",
         "Reading Guide": "Lukemisopas",
-        "Stop Animations": "Pys\xE4yt\xE4 animaatiot",
         "Big Cursor": "Iso kohdistin",
         "Increase Font Size": "Suurenna fonttikokoa",
         "Decrease Font Size": "Pienenn\xE4 fonttikokoa",
@@ -563,7 +597,12 @@
         "Accessibility Profiles": "Saavutettavuusprofiilit",
         "Cognitive Disability": "Kognitiivinen vamma",
         "Seizure Safe": "Turvallinen epilepsialle",
-        "Accessibility statement": "Saavutettavuusseloste"
+        "Accessibility statement": "Saavutettavuusseloste",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Pys\xE4yt\xE4 animaatiot",
+        "Reset all settings": "Palauta asetukset",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -573,7 +612,6 @@
     "src/locales/fil.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu ng Accessibility",
-        "Reset settings": "I-reset ang mga setting",
         Close: "Isara",
         "Content adjustments": "Ayusin ang Nilalaman",
         "Navigation adjustments": "Ayusin ang Pag-navigate",
@@ -591,7 +629,6 @@
         Monochrome: "Monokrom",
         Tools: "Mga Kasangkapan",
         "Reading Guide": "Gabay sa Pagbabasa",
-        "Stop Animations": "Itigil ang Mga Animasyon",
         "Big Cursor": "Malaking Cursor",
         "Increase Font Size": "Palakihin ang Laki ng Font",
         "Decrease Font Size": "Bawasan ang Laki ng Font",
@@ -604,7 +641,12 @@
         "Accessibility Profiles": "Mga Profile ng Accessibility",
         "Cognitive Disability": "Kapansanan sa Kognitibo",
         "Seizure Safe": "Ligtas sa Seizure",
-        "Accessibility statement": "Pahayag ng Accessibility"
+        "Accessibility statement": "Pahayag ng Accessibility",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Itigil ang Mga Animasyon",
+        "Reset all settings": "I-reset ang mga setting",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -614,7 +656,6 @@
     "src/locales/fr.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "menu d'accessibilit\xE9",
-        "Reset settings": "R\xE9initialiser les Param\xE8tres",
         Close: "Fermer",
         "Content adjustments": "Ajustements du Contenu",
         "Navigation adjustments": "Ajustements de Navigation",
@@ -632,7 +673,6 @@
         Monochrome: "Monochrome",
         Tools: "Outils",
         "Reading Guide": "Guide de Lecture",
-        "Stop Animations": "Arr\xEAter les Animations",
         "Big Cursor": "Curseur Agrandi",
         "Increase Font Size": "Augmenter la Taille de Police",
         "Decrease Font Size": "Diminuer la Taille de Police",
@@ -645,7 +685,12 @@
         "Accessibility Profiles": "Profils d'Accessibilit\xE9",
         "Cognitive Disability": "Handicap Cognitif",
         "Seizure Safe": "S\xFBr pour l'\xC9pilepsie",
-        "Accessibility statement": "D\xE9claration d'Accessibilit\xE9"
+        "Accessibility statement": "D\xE9claration d'Accessibilit\xE9",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Arr\xEAter les Animations",
+        "Reset all settings": "R\xE9initialiser les Param\xE8tres",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -655,7 +700,6 @@
     "src/locales/he.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u05EA\u05E4\u05E8\u05D9\u05D8 \u05E0\u05D2\u05D9\u05E9\u05D5\u05EA",
-        "Reset settings": "\u05D0\u05D9\u05E4\u05D5\u05E1 \u05D4\u05D2\u05D3\u05E8\u05D5\u05EA",
         Close: "\u05E1\u05D2\u05D5\u05E8",
         "Content adjustments": "\u05D4\u05EA\u05D0\u05DE\u05D5\u05EA \u05EA\u05D5\u05DB\u05DF",
         "Navigation adjustments": "\u05D4\u05EA\u05D0\u05DE\u05D5\u05EA \u05E0\u05D9\u05D5\u05D5\u05D8",
@@ -673,7 +717,6 @@
         Monochrome: "\u05DE\u05D5\u05E0\u05D5\u05DB\u05E8\u05D5\u05DD",
         Tools: "\u05DB\u05DC\u05D9\u05DD",
         "Reading Guide": "\u05DE\u05D3\u05E8\u05D9\u05DA \u05E7\u05E8\u05D9\u05D0\u05D4",
-        "Stop Animations": "\u05E2\u05E6\u05D9\u05E8\u05EA \u05D0\u05E0\u05D9\u05DE\u05E6\u05D9\u05D5\u05EA",
         "Big Cursor": "\u05E1\u05DE\u05DF \u05D2\u05D3\u05D5\u05DC",
         "Increase Font Size": "\u05D4\u05D2\u05D3\u05DC \u05D2\u05D5\u05D3\u05DC \u05E4\u05D5\u05E0\u05D8",
         "Decrease Font Size": "\u05D4\u05E7\u05D8\u05DF \u05D2\u05D5\u05D3\u05DC \u05E4\u05D5\u05E0\u05D8",
@@ -686,7 +729,12 @@
         "Accessibility Profiles": "\u05E4\u05E8\u05D5\u05E4\u05D9\u05DC\u05D9 \u05E0\u05D2\u05D9\u05E9\u05D5\u05EA",
         "Cognitive Disability": "\u05DE\u05D5\u05D2\u05D1\u05DC\u05D5\u05EA \u05E7\u05D5\u05D2\u05E0\u05D9\u05D8\u05D9\u05D1\u05D9\u05EA",
         "Seizure Safe": "\u05D1\u05D8\u05D5\u05D7 \u05DC\u05D0\u05E4\u05D9\u05DC\u05E4\u05E1\u05D9\u05D4",
-        "Accessibility statement": "\u05D4\u05E6\u05D4\u05E8\u05EA \u05E0\u05D2\u05D9\u05E9\u05D5\u05EA"
+        "Accessibility statement": "\u05D4\u05E6\u05D4\u05E8\u05EA \u05E0\u05D2\u05D9\u05E9\u05D5\u05EA",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u05E2\u05E6\u05D9\u05E8\u05EA \u05D0\u05E0\u05D9\u05DE\u05E6\u05D9\u05D5\u05EA",
+        "Reset all settings": "\u05D0\u05D9\u05E4\u05D5\u05E1 \u05D4\u05D2\u05D3\u05E8\u05D5\u05EA",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -696,7 +744,6 @@
     "src/locales/hi.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u092A\u0939\u0941\u0902\u091A \u092E\u0947\u0928\u0942",
-        "Reset settings": "\u0938\u0947\u091F\u093F\u0902\u0917\u094D\u0938 \u0930\u0940\u0938\u0947\u091F \u0915\u0930\u0947\u0902",
         Close: "\u092C\u0902\u0926 \u0915\u0930\u0947\u0902",
         "Content adjustments": "\u0938\u093E\u092E\u0917\u094D\u0930\u0940 \u0938\u092E\u093E\u092F\u094B\u091C\u0928",
         "Navigation adjustments": "\u0928\u0947\u0935\u093F\u0917\u0947\u0936\u0928 \u0938\u092E\u093E\u092F\u094B\u091C\u0928",
@@ -714,7 +761,6 @@
         Monochrome: "\u092E\u094B\u0928\u094B\u0915\u094D\u0930\u094B\u092E",
         Tools: "\u0909\u092A\u0915\u0930\u0923",
         "Reading Guide": "\u092A\u0920\u0928 \u092E\u093E\u0930\u094D\u0917\u0926\u0930\u094D\u0936\u093F\u0915\u093E",
-        "Stop Animations": "\u090F\u0928\u093F\u092E\u0947\u0936\u0928 \u0930\u094B\u0915\u0947\u0902",
         "Big Cursor": "\u092C\u0921\u093C\u093E \u0915\u0930\u094D\u0938\u0930",
         "Increase Font Size": "\u092B\u0949\u0928\u094D\u091F \u0906\u0915\u093E\u0930 \u092C\u0922\u093C\u093E\u090F\u0902",
         "Decrease Font Size": "\u092B\u0949\u0928\u094D\u091F \u0906\u0915\u093E\u0930 \u0918\u091F\u093E\u090F\u0902",
@@ -727,7 +773,12 @@
         "Accessibility Profiles": "\u092A\u0939\u0941\u0902\u091A \u092A\u094D\u0930\u094B\u092B\u093E\u0907\u0932",
         "Cognitive Disability": "\u0938\u0902\u091C\u094D\u091E\u093E\u0928\u093E\u0924\u094D\u092E\u0915 \u0935\u093F\u0915\u0932\u093E\u0902\u0917\u0924\u093E",
         "Seizure Safe": "\u092E\u093F\u0930\u094D\u0917\u0940 \u0938\u0941\u0930\u0915\u094D\u0937\u093F\u0924",
-        "Accessibility statement": "\u092A\u0939\u0941\u0902\u091A \u0935\u093F\u0935\u0930\u0923"
+        "Accessibility statement": "\u092A\u0939\u0941\u0902\u091A \u0935\u093F\u0935\u0930\u0923",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u090F\u0928\u093F\u092E\u0947\u0936\u0928 \u0930\u094B\u0915\u0947\u0902",
+        "Reset all settings": "\u0938\u0947\u091F\u093F\u0902\u0917\u094D\u0938 \u0930\u0940\u0938\u0947\u091F \u0915\u0930\u0947\u0902",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -737,7 +788,6 @@
     "src/locales/hr.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Izbornik Pristupa\u010Dnosti",
-        "Reset settings": "Resetiraj postavke",
         Close: "Zatvori",
         "Content adjustments": "Prilagodbe Sadr\u017Eaja",
         "Navigation adjustments": "Prilagodbe Navigacije",
@@ -755,7 +805,6 @@
         Monochrome: "Jednobojno",
         Tools: "Alati",
         "Reading Guide": "Vodi\u010D Za \u010Citanje",
-        "Stop Animations": "Zaustavi Animacije",
         "Big Cursor": "Veliki Kursor",
         "Increase Font Size": "Pove\u0107aj Veli\u010Dinu Fonta",
         "Decrease Font Size": "Smanji Veli\u010Dinu Fonta",
@@ -768,7 +817,12 @@
         "Accessibility Profiles": "Profil Pristupa\u010Dnosti",
         "Cognitive Disability": "Kognitivni Invaliditet",
         "Seizure Safe": "Sigurno Za Epilepsiju",
-        "Accessibility statement": "Izjava O Pristupa\u010Dnosti"
+        "Accessibility statement": "Izjava O Pristupa\u010Dnosti",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Zaustavi Animacije",
+        "Reset all settings": "Resetiraj postavke",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -778,7 +832,6 @@
     "src/locales/hu.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Hozz\xE1f\xE9rhet\u0151s\xE9gi men\xFC",
-        "Reset settings": "Be\xE1ll\xEDt\xE1sok vissza\xE1ll\xEDt\xE1sa",
         Close: "Bez\xE1r\xE1s",
         "Content adjustments": "Tartalom be\xE1ll\xEDt\xE1sai",
         "Navigation adjustments": "Navig\xE1ci\xF3 be\xE1ll\xEDt\xE1sai",
@@ -796,7 +849,6 @@
         Monochrome: "Monokr\xF3m",
         Tools: "Eszk\xF6z\xF6k",
         "Reading Guide": "Olvas\xE1si \xFAtmutat\xF3",
-        "Stop Animations": "Anim\xE1ci\xF3k le\xE1ll\xEDt\xE1sa",
         "Big Cursor": "Nagy kurzor",
         "Increase Font Size": "Bet\u0171m\xE9ret n\xF6vel\xE9se",
         "Decrease Font Size": "Bet\u0171m\xE9ret cs\xF6kkent\xE9se",
@@ -809,7 +861,12 @@
         "Accessibility Profiles": "Hozz\xE1f\xE9rhet\u0151s\xE9gi profilok",
         "Cognitive Disability": "Kognit\xEDv fogyat\xE9koss\xE1g",
         "Seizure Safe": "Epilepszi\xE1s rohamokra biztons\xE1gos",
-        "Accessibility statement": "Hozz\xE1f\xE9rhet\u0151s\xE9gi nyilatkozat"
+        "Accessibility statement": "Hozz\xE1f\xE9rhet\u0151s\xE9gi nyilatkozat",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Anim\xE1ci\xF3k le\xE1ll\xEDt\xE1sa",
+        "Reset all settings": "Be\xE1ll\xEDt\xE1sok vissza\xE1ll\xEDt\xE1sa",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -819,7 +876,6 @@
     "src/locales/id.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu Aksesibilitas",
-        "Reset settings": "Atur Ulang Pengaturan",
         Close: "Tutup",
         "Content adjustments": "Penyesuaian Konten",
         "Navigation adjustments": "Penyesuaian Navigasi",
@@ -837,7 +893,6 @@
         Monochrome: "Monokrom",
         Tools: "Alat",
         "Reading Guide": "Panduan Membaca",
-        "Stop Animations": "Hentikan Animasi",
         "Big Cursor": "Kursor Besar",
         "Increase Font Size": "Perbesar Ukuran Font",
         "Decrease Font Size": "Perkecil Ukuran Font",
@@ -850,7 +905,12 @@
         "Accessibility Profiles": "Profil Aksesibilitas",
         "Cognitive Disability": "Disabilitas Kognitif",
         "Seizure Safe": "Aman untuk Epilepsi",
-        "Accessibility statement": "Pernyataan Aksesibilitas"
+        "Accessibility statement": "Pernyataan Aksesibilitas",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Hentikan Animasi",
+        "Reset all settings": "Atur Ulang Pengaturan",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -860,7 +920,6 @@
     "src/locales/it.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu accessibilit\xE0",
-        "Reset settings": "Ripristina impostazioni",
         Close: "Chiudi",
         "Content adjustments": "Regolazioni Contenuto",
         "Navigation adjustments": "Regolazioni Navigazione",
@@ -878,7 +937,6 @@
         Monochrome: "Monocromatico",
         Tools: "Strumenti",
         "Reading Guide": "Guida alla Lettura",
-        "Stop Animations": "Ferma Animazioni",
         "Big Cursor": "Cursore Grande",
         "Increase Font Size": "Aumenta Dimensione Carattere",
         "Decrease Font Size": "Diminuisci Dimensione Carattere",
@@ -891,7 +949,12 @@
         "Accessibility Profiles": "Profili di Accessibilit\xE0",
         "Cognitive Disability": "Disabilit\xE0 Cognitiva",
         "Seizure Safe": "Sicuro per Epilessia",
-        "Accessibility statement": "Dichiarazione di Accessibilit\xE0"
+        "Accessibility statement": "Dichiarazione di Accessibilit\xE0",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Ferma Animazioni",
+        "Reset all settings": "Ripristina impostazioni",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -901,7 +964,6 @@
     "src/locales/ja.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u30A2\u30AF\u30BB\u30B7\u30D3\u30EA\u30C6\u30A3\u30E1\u30CB\u30E5\u30FC",
-        "Reset settings": "\u8A2D\u5B9A\u3092\u30EA\u30BB\u30C3\u30C8",
         Close: "\u9589\u3058\u308B",
         "Content adjustments": "\u30B3\u30F3\u30C6\u30F3\u30C4\u8ABF\u6574",
         "Navigation adjustments": "\u30CA\u30D3\u30B2\u30FC\u30B7\u30E7\u30F3\u8ABF\u6574",
@@ -919,7 +981,6 @@
         Monochrome: "\u30E2\u30CE\u30AF\u30ED",
         Tools: "\u30C4\u30FC\u30EB",
         "Reading Guide": "\u30EA\u30FC\u30C7\u30A3\u30F3\u30B0\u30AC\u30A4\u30C9",
-        "Stop Animations": "\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u505C\u6B62",
         "Big Cursor": "\u5927\u304D\u306A\u30AB\u30FC\u30BD\u30EB",
         "Increase Font Size": "\u30D5\u30A9\u30F3\u30C8\u30B5\u30A4\u30BA\u62E1\u5927",
         "Decrease Font Size": "\u30D5\u30A9\u30F3\u30C8\u30B5\u30A4\u30BA\u7E2E\u5C0F",
@@ -932,7 +993,12 @@
         "Accessibility Profiles": "\u30A2\u30AF\u30BB\u30B7\u30D3\u30EA\u30C6\u30A3\u30D7\u30ED\u30D5\u30A1\u30A4\u30EB",
         "Cognitive Disability": "\u8A8D\u77E5\u969C\u5BB3",
         "Seizure Safe": "\u767A\u4F5C\u5B89\u5168",
-        "Accessibility statement": "\u30A2\u30AF\u30BB\u30B7\u30D3\u30EA\u30C6\u30A3\u30B9\u30C6\u30FC\u30C8\u30E1\u30F3\u30C8"
+        "Accessibility statement": "\u30A2\u30AF\u30BB\u30B7\u30D3\u30EA\u30C6\u30A3\u30B9\u30C6\u30FC\u30C8\u30E1\u30F3\u30C8",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u505C\u6B62",
+        "Reset all settings": "\u8A2D\u5B9A\u3092\u30EA\u30BB\u30C3\u30C8",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -942,7 +1008,6 @@
     "src/locales/ka.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u10D0\u10D3\u10D0\u10DE\u10E2\u10D8\u10E0\u10D4\u10D1\u10E3\u10DA\u10D8 \u10DB\u10D4\u10DC\u10D8\u10E3",
-        "Reset settings": "\u10DE\u10D0\u10E0\u10D0\u10DB\u10D4\u10E2\u10E0\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D0\u10D1\u10E0\u10E3\u10DC\u10D4\u10D1\u10D0",
         Close: "\u10D3\u10D0\u10EE\u10E3\u10E0\u10D5\u10D0",
         "Content adjustments": "\u10E8\u10D8\u10D2\u10D7\u10D0\u10D5\u10E1\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
         "Navigation adjustments": "\u10DC\u10D0\u10D5\u10D8\u10D2\u10D0\u10EA\u10D8\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
@@ -960,7 +1025,6 @@
         Monochrome: "\u10D4\u10E0\u10D7\u10E4\u10D4\u10E0\u10DD\u10D5\u10D0\u10DC\u10D8 \u10D2\u10D0\u10DB\u10DD\u10E1\u10D0\u10EE\u10E3\u10DA\u10D4\u10D1\u10D0",
         Tools: "\u10EE\u10D4\u10DA\u10E1\u10D0\u10EC\u10E7\u10DD\u10D4\u10D1\u10D8",
         "Reading Guide": "\u10D9\u10D8\u10D7\u10EE\u10D5\u10D8\u10E1 \u10D2\u10D0\u10DB\u10E7\u10DD\u10DA\u10D8 \u10D6\u10DD\u10DA\u10D8",
-        "Stop Animations": "\u10D0\u10DC\u10D8\u10DB\u10D0\u10EA\u10D8\u10D4\u10D1\u10D8\u10E1 \u10D2\u10D0\u10E9\u10D4\u10E0\u10D4\u10D1\u10D0",
         "Big Cursor": "\u10D3\u10D8\u10D3\u10D8 \u10D9\u10E3\u10E0\u10E1\u10DD\u10E0\u10D8",
         "Increase Font Size": "\u10E4\u10DD\u10DC\u10E2\u10D8\u10E1 \u10D6\u10DD\u10DB\u10D8\u10E1 \u10D2\u10D0\u10D6\u10E0\u10D3\u10D0",
         "Decrease Font Size": "\u10E4\u10DD\u10DC\u10E2\u10D8\u10E1 \u10D6\u10DD\u10DB\u10D8\u10E1 \u10E8\u10D4\u10DB\u10EA\u10D8\u10E0\u10D4\u10D1\u10D0",
@@ -973,7 +1037,12 @@
         "Accessibility Profiles": "\u10D0\u10D3\u10D0\u10DE\u10E2\u10D8\u10E0\u10D4\u10D1\u10E3\u10DA\u10D8 \u10DE\u10E0\u10DD\u10E4\u10D8\u10DA\u10D4\u10D1\u10D8",
         "Cognitive Disability": "\u10D9\u10DD\u10D2\u10DC\u10D8\u10E2\u10D8\u10E3\u10E0\u10D8 \u10E8\u10D4\u10D6\u10E6\u10E3\u10D3\u10D5\u10D0",
         "Seizure Safe": "\u10E3\u10E1\u10D0\u10E4\u10E0\u10D7\u10EE\u10DD \u10D4\u10DE\u10D8\u10DA\u10D4\u10E4\u10E1\u10D8\u10D8\u10E1\u10D7\u10D5\u10D8\u10E1",
-        "Accessibility statement": "\u10D0\u10D3\u10D0\u10DE\u10E2\u10D8\u10E0\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D4\u10D9\u10DA\u10D0\u10E0\u10D0\u10EA\u10D8\u10D0"
+        "Accessibility statement": "\u10D0\u10D3\u10D0\u10DE\u10E2\u10D8\u10E0\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D4\u10D9\u10DA\u10D0\u10E0\u10D0\u10EA\u10D8\u10D0",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u10D0\u10DC\u10D8\u10DB\u10D0\u10EA\u10D8\u10D4\u10D1\u10D8\u10E1 \u10D2\u10D0\u10E9\u10D4\u10E0\u10D4\u10D1\u10D0",
+        "Reset all settings": "\u10DE\u10D0\u10E0\u10D0\u10DB\u10D4\u10E2\u10E0\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D0\u10D1\u10E0\u10E3\u10DC\u10D4\u10D1\u10D0",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -983,7 +1052,6 @@
     "src/locales/kn.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0CAA\u0CCD\u0CB0\u0CB5\u0CC7\u0CB6\u0CAE\u0CBE\u0CA1\u0CC1\u0CB5\u0CBF\u0C95\u0CC6 \u0CAE\u0CC6\u0CA8\u0CC1",
-        "Reset settings": "\u0CB8\u0CC6\u0C9F\u0CCD\u0C9F\u0CBF\u0C82\u0C97\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CAE\u0CB0\u0CC1\u0CB9\u0CCA\u0C82\u0CA6\u0CBF\u0CB8\u0CBF",
         Close: "\u0CAE\u0CC1\u0C9A\u0CCD\u0C9A\u0CBF",
         "Content adjustments": "\u0CB5\u0CBF\u0CB7\u0CAF\u0CA6 \u0CB9\u0CCA\u0C82\u0CA6\u0CBE\u0CA3\u0CBF\u0C95\u0CC6\u0C97\u0CB3\u0CC1",
         "Navigation adjustments": "\u0CA8\u0CCD\u0CAF\u0CBE\u0CB5\u0CBF\u0C97\u0CC7\u0CB6\u0CA8\u0CCD \u0CB9\u0CCA\u0C82\u0CA6\u0CBE\u0CA3\u0CBF\u0C95\u0CC6\u0C97\u0CB3\u0CC1",
@@ -1001,7 +1069,6 @@
         Monochrome: "\u0C8F\u0C95\u0CB5\u0CB0\u0CCD\u0CA3",
         Tools: "\u0C89\u0CAA\u0C95\u0CB0\u0CA3\u0C97\u0CB3\u0CC1",
         "Reading Guide": "\u0C93\u0CA6\u0CC1\u0CB5 \u0CAE\u0CBE\u0CB0\u0CCD\u0C97\u0CA6\u0CB0\u0CCD\u0CB6\u0CBF",
-        "Stop Animations": "\u0C85\u0CA8\u0CBF\u0CAE\u0CC7\u0CB6\u0CA8\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CA8\u0CBF\u0CB2\u0CCD\u0CB2\u0CBF\u0CB8\u0CBF",
         "Big Cursor": "\u0CA6\u0CCA\u0CA1\u0CCD\u0CA1 \u0C95\u0CB0\u0CCD\u0CB8\u0CB0\u0CCD",
         "Increase Font Size": "\u0C85\u0C95\u0CCD\u0CB7\u0CB0\u0CA6 \u0C97\u0CBE\u0CA4\u0CCD\u0CB0\u0CB5\u0CA8\u0CCD\u0CA8\u0CC1 \u0CB9\u0CC6\u0C9A\u0CCD\u0C9A\u0CBF\u0CB8\u0CBF",
         "Decrease Font Size": "\u0C85\u0C95\u0CCD\u0CB7\u0CB0\u0CA6 \u0C97\u0CBE\u0CA4\u0CCD\u0CB0\u0CB5\u0CA8\u0CCD\u0CA8\u0CC1 \u0C95\u0CA1\u0CBF\u0CAE\u0CC6 \u0CAE\u0CBE\u0CA1\u0CBF",
@@ -1014,7 +1081,12 @@
         "Accessibility Profiles": "\u0CAA\u0CCD\u0CB0\u0CB5\u0CC7\u0CB6\u0CAE\u0CBE\u0CA1\u0CC1\u0CB5\u0CBF\u0C95\u0CC6 \u0CAA\u0CCD\u0CB0\u0CCA\u0CAB\u0CC8\u0CB2\u0CCD\u200C\u0C97\u0CB3\u0CC1",
         "Cognitive Disability": "\u0C9C\u0CCD\u0C9E\u0CBE\u0CA8\u0CBE\u0CA4\u0CCD\u0CAE\u0C95 \u0C85\u0C82\u0C97\u0CB5\u0CC8\u0C95\u0CB2\u0CCD\u0CAF",
         "Seizure Safe": "\u0C85\u0CAA\u0CB8\u0CCD\u0CAE\u0CBE\u0CB0\u0C95\u0CCD\u0C95\u0CC6 \u0CB8\u0CC1\u0CB0\u0C95\u0CCD\u0CB7\u0CBF\u0CA4",
-        "Accessibility statement": "\u0CAA\u0CCD\u0CB0\u0CB5\u0CC7\u0CB6\u0CAE\u0CBE\u0CA1\u0CC1\u0CB5\u0CBF\u0C95\u0CC6 \u0CB9\u0CC7\u0CB3\u0CBF\u0C95\u0CC6"
+        "Accessibility statement": "\u0CAA\u0CCD\u0CB0\u0CB5\u0CC7\u0CB6\u0CAE\u0CBE\u0CA1\u0CC1\u0CB5\u0CBF\u0C95\u0CC6 \u0CB9\u0CC7\u0CB3\u0CBF\u0C95\u0CC6",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0C85\u0CA8\u0CBF\u0CAE\u0CC7\u0CB6\u0CA8\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CA8\u0CBF\u0CB2\u0CCD\u0CB2\u0CBF\u0CB8\u0CBF",
+        "Reset all settings": "\u0CB8\u0CC6\u0C9F\u0CCD\u0C9F\u0CBF\u0C82\u0C97\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CAE\u0CB0\u0CC1\u0CB9\u0CCA\u0C82\u0CA6\u0CBF\u0CB8\u0CBF",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1024,7 +1096,6 @@
     "src/locales/ko.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\uC811\uADFC\uC131 \uBA54\uB274",
-        "Reset settings": "\uC124\uC815 \uCD08\uAE30\uD654",
         Close: "\uB2EB\uAE30",
         "Content adjustments": "\uCF58\uD150\uCE20 \uC870\uC815",
         "Navigation adjustments": "\uD0D0\uC0C9 \uC870\uC815",
@@ -1042,7 +1113,6 @@
         Monochrome: "\uB2E8\uC0C9",
         Tools: "\uB3C4\uAD6C",
         "Reading Guide": "\uC77D\uAE30 \uAC00\uC774\uB4DC",
-        "Stop Animations": "\uC560\uB2C8\uBA54\uC774\uC158 \uC911\uC9C0",
         "Big Cursor": "\uD070 \uCEE4\uC11C",
         "Increase Font Size": "\uAE00\uAF34 \uD06C\uAE30 \uC99D\uAC00",
         "Decrease Font Size": "\uAE00\uAF34 \uD06C\uAE30 \uAC10\uC18C",
@@ -1055,7 +1125,12 @@
         "Accessibility Profiles": "\uC811\uADFC\uC131 \uD504\uB85C\uD544",
         "Cognitive Disability": "\uC778\uC9C0 \uC7A5\uC560",
         "Seizure Safe": "\uBC1C\uC791 \uC548\uC804",
-        "Accessibility statement": "\uC811\uADFC\uC131 \uC131\uBA85"
+        "Accessibility statement": "\uC811\uADFC\uC131 \uC131\uBA85",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\uC560\uB2C8\uBA54\uC774\uC158 \uC911\uC9C0",
+        "Reset all settings": "\uC124\uC815 \uCD08\uAE30\uD654",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1065,7 +1140,6 @@
     "src/locales/ku.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menuya Gih\xEE\u015Ftin\xEA",
-        "Reset settings": "M\xEEheng\xEAn vegerandin\xEA",
         Close: "Bigire",
         "Content adjustments": "Guhertin\xEAn Naverok\xEA",
         "Navigation adjustments": "Guhertin\xEAn Nav\xEEgasyon\xEA",
@@ -1083,7 +1157,6 @@
         Monochrome: "Reng\xEA Yekane",
         Tools: "Am\xFBr",
         "Reading Guide": "Rehbera Xwendin\xEA",
-        "Stop Animations": "An\xEEmasyonan Rawest\xEEne",
         "Big Cursor": "Kursor\xEA Mezin",
         "Increase Font Size": "Mezinahiya Font\xEA Mezinkirin",
         "Decrease Font Size": "Mezinahiya Font\xEA K\xEAmkirin",
@@ -1096,7 +1169,12 @@
         "Accessibility Profiles": "Prof\xEEl\xEAn Gih\xEE\u015Ftin\xEA",
         "Cognitive Disability": "Seqetiya Zan\xEEn\xEE",
         "Seizure Safe": "Ji bo Epileps\xEE Ewle",
-        "Accessibility statement": "Daxuyaniya Gih\xEE\u015Ftin\xEA"
+        "Accessibility statement": "Daxuyaniya Gih\xEE\u015Ftin\xEA",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "An\xEEmasyonan Rawest\xEEne",
+        "Reset all settings": "M\xEEheng\xEAn vegerandin\xEA",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1106,7 +1184,6 @@
     "src/locales/lb.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Accessibility menu",
-        "Reset settings": "Astellungen zr\xE9cksetzen",
         Close: "Zoumaachen",
         "Content adjustments": "Inhalt Unpassungen",
         "Navigation adjustments": "Navigatioun Unpassungen",
@@ -1124,7 +1201,6 @@
         Monochrome: "Monochrom",
         Tools: "Tools",
         "Reading Guide": "Guide fir ze liesen",
-        "Stop Animations": "Animatiounen stoppen",
         "Big Cursor": "Groussen Cursor",
         "Increase Font Size": "Schr\xEBftgr\xE9isst erh\xE9ijen",
         "Decrease Font Size": "Schr\xEBftgr\xE9isst ernidderegen",
@@ -1137,7 +1213,12 @@
         "Accessibility Profiles": "Accessibility Profiler",
         "Cognitive Disability": "Kognitiv Beh\xEBnnerung",
         "Seizure Safe": "S\xE9cher fir Epilepsie",
-        "Accessibility statement": "Accessibility Erkl\xE4rung"
+        "Accessibility statement": "Accessibility Erkl\xE4rung",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Animatiounen stoppen",
+        "Reset all settings": "Astellungen zr\xE9cksetzen",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1147,7 +1228,6 @@
     "src/locales/lt.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Prieinamumo meniu",
-        "Reset settings": "Atkurti nustatymus",
         Close: "U\u017Edaryti",
         "Content adjustments": "Turinio koregavimai",
         "Navigation adjustments": "Navigacijos koregavimai",
@@ -1165,7 +1245,6 @@
         Monochrome: "Vienaspalv\u0117",
         Tools: "\u012Erankiai",
         "Reading Guide": "Skaitymo gidas",
-        "Stop Animations": "Sustabdyti animacijas",
         "Big Cursor": "Didelis \u017Eymeklis",
         "Increase Font Size": "Padidinti \u0161rifto dyd\u012F",
         "Decrease Font Size": "Suma\u017Einti \u0161rifto dyd\u012F",
@@ -1178,7 +1257,12 @@
         "Accessibility Profiles": "Prieinamumo profiliai",
         "Cognitive Disability": "Kognityvinis negalavimas",
         "Seizure Safe": "Saugus nuo priepuoli\u0173",
-        "Accessibility statement": "Prieinamumo parei\u0161kimas"
+        "Accessibility statement": "Prieinamumo parei\u0161kimas",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Sustabdyti animacijas",
+        "Reset all settings": "Atkurti nustatymus",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1188,7 +1272,6 @@
     "src/locales/lv.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Pieejam\u012Bbas izv\u0113lne",
-        "Reset settings": "Atiestat\u012Bt iestat\u012Bjumus",
         Close: "Aizv\u0113rt",
         "Content adjustments": "Satura piel\u0101gojumi",
         "Navigation adjustments": "Navig\u0101cijas piel\u0101gojumi",
@@ -1206,7 +1289,6 @@
         Monochrome: "Vienkr\u0101sains",
         Tools: "R\u012Bki",
         "Reading Guide": "Las\u012B\u0161anas vad\u012Bkla",
-        "Stop Animations": "Aptur\u0113t anim\u0101cijas",
         "Big Cursor": "Liels kursors",
         "Increase Font Size": "Palielin\u0101t fonta izm\u0113ru",
         "Decrease Font Size": "Samazin\u0101t fonta izm\u0113ru",
@@ -1219,7 +1301,12 @@
         "Accessibility Profiles": "Pieejam\u012Bbas profili",
         "Cognitive Disability": "Kognit\u012Bvie trauc\u0113jumi",
         "Seizure Safe": "Dro\u0161s pret l\u0113km\u0113m",
-        "Accessibility statement": "Pieejam\u012Bbas pazi\u0146ojums"
+        "Accessibility statement": "Pieejam\u012Bbas pazi\u0146ojums",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Aptur\u0113t anim\u0101cijas",
+        "Reset all settings": "Atiestat\u012Bt iestat\u012Bjumus",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1229,7 +1316,6 @@
     "src/locales/ml.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0D2A\u0D4D\u0D30\u0D35\u0D47\u0D36\u0D2F\u0D4B\u0D17\u0D4D\u0D2F\u0D24 \u0D2E\u0D46\u0D28\u0D41",
-        "Reset settings": "\u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E \u0D2A\u0D41\u0D28\u0D03\u0D38\u0D1C\u0D4D\u0D1C\u0D2E\u0D3E\u0D15\u0D4D\u0D15\u0D41\u0D15",
         Close: "\u0D05\u0D1F\u0D2F\u0D4D\u0D15\u0D4D\u0D15\u0D41\u0D15",
         "Content adjustments": "\u0D09\u0D33\u0D4D\u0D33\u0D1F\u0D15\u0D4D\u0D15 \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
         "Navigation adjustments": "\u0D28\u0D3E\u0D35\u0D3F\u0D17\u0D47\u0D37\u0D7B \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
@@ -1247,7 +1333,6 @@
         Monochrome: "\u0D2E\u0D4B\u0D28\u0D4B\u0D15\u0D4D\u0D30\u0D4B\u0D02",
         Tools: "\u0D09\u0D2A\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
         "Reading Guide": "\u0D35\u0D3E\u0D2F\u0D28\u0D3E \u0D17\u0D48\u0D21\u0D4D",
-        "Stop Animations": "\u0D06\u0D28\u0D3F\u0D2E\u0D47\u0D37\u0D28\u0D41\u0D15\u0D7E \u0D28\u0D3F\u0D7C\u0D24\u0D4D\u0D24\u0D41\u0D15",
         "Big Cursor": "\u0D35\u0D32\u0D3F\u0D2F \u0D15\u0D7C\u0D38\u0D7C",
         "Increase Font Size": "\u0D2B\u0D4B\u0D23\u0D4D\u0D1F\u0D4D \u0D35\u0D32\u0D41\u0D2A\u0D4D\u0D2A\u0D02 \u0D35\u0D7C\u0D26\u0D4D\u0D27\u0D3F\u0D2A\u0D4D\u0D2A\u0D3F\u0D15\u0D4D\u0D15\u0D41\u0D15",
         "Decrease Font Size": "\u0D2B\u0D4B\u0D23\u0D4D\u0D1F\u0D4D \u0D35\u0D32\u0D41\u0D2A\u0D4D\u0D2A\u0D02 \u0D15\u0D41\u0D31\u0D2F\u0D4D\u0D15\u0D4D\u0D15\u0D41\u0D15",
@@ -1260,7 +1345,12 @@
         "Accessibility Profiles": "\u0D2A\u0D4D\u0D30\u0D35\u0D47\u0D36\u0D2F\u0D4B\u0D17\u0D4D\u0D2F\u0D24 \u0D2A\u0D4D\u0D30\u0D4A\u0D2B\u0D48\u0D32\u0D41\u0D15\u0D7E",
         "Cognitive Disability": "\u0D1C\u0D4D\u0D1E\u0D3E\u0D28\u0D2A\u0D30\u0D2E\u0D3E\u0D2F \u0D35\u0D48\u0D15\u0D32\u0D4D\u0D2F\u0D02",
         "Seizure Safe": "\u0D05\u0D2A\u0D38\u0D4D\u0D2E\u0D3E\u0D30\u0D24\u0D4D\u0D24\u0D3F\u0D28\u0D4D \u0D38\u0D41\u0D30\u0D15\u0D4D\u0D37\u0D3F\u0D24\u0D02",
-        "Accessibility statement": "\u0D2A\u0D4D\u0D30\u0D35\u0D47\u0D36\u0D2F\u0D4B\u0D17\u0D4D\u0D2F\u0D24 \u0D2A\u0D4D\u0D30\u0D38\u0D4D\u0D24\u0D3E\u0D35\u0D28"
+        "Accessibility statement": "\u0D2A\u0D4D\u0D30\u0D35\u0D47\u0D36\u0D2F\u0D4B\u0D17\u0D4D\u0D2F\u0D24 \u0D2A\u0D4D\u0D30\u0D38\u0D4D\u0D24\u0D3E\u0D35\u0D28",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0D06\u0D28\u0D3F\u0D2E\u0D47\u0D37\u0D28\u0D41\u0D15\u0D7E \u0D28\u0D3F\u0D7C\u0D24\u0D4D\u0D24\u0D41\u0D15",
+        "Reset all settings": "\u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E \u0D2A\u0D41\u0D28\u0D03\u0D38\u0D1C\u0D4D\u0D1C\u0D2E\u0D3E\u0D15\u0D4D\u0D15\u0D41\u0D15",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1270,7 +1360,6 @@
     "src/locales/mn.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0425\u0430\u043D\u0434\u0430\u043B\u0442\u044B\u043D \u0446\u044D\u0441",
-        "Reset settings": "\u0422\u043E\u0445\u0438\u0440\u0433\u043E\u043E\u0433 \u0434\u0430\u0445\u0438\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0430\u0445",
         Close: "\u0425\u0430\u0430\u0445",
         "Content adjustments": "\u0410\u0433\u0443\u0443\u043B\u0433\u044B\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0433\u0430",
         "Navigation adjustments": "\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0439\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0433\u0430",
@@ -1288,7 +1377,6 @@
         Monochrome: "\u041D\u044D\u0433 \u04E9\u043D\u0433\u04E9",
         Tools: "\u0425\u044D\u0440\u044D\u0433\u0441\u043B\u04AF\u04AF\u0434",
         "Reading Guide": "\u0423\u043D\u0448\u0438\u0445 \u0433\u0430\u0440\u044B\u043D \u0430\u0432\u043B\u0430\u0433\u0430",
-        "Stop Animations": "\u0410\u043D\u0438\u043C\u0430\u0446\u0438\u0439\u0433 \u0437\u043E\u0433\u0441\u043E\u043E\u0445",
         "Big Cursor": "\u0422\u043E\u043C \u043A\u0443\u0440\u0441\u043E\u0440",
         "Increase Font Size": "\u0424\u043E\u043D\u0442\u044B\u043D \u0445\u044D\u043C\u0436\u044D\u044D\u0433 \u043D\u044D\u043C\u044D\u0433\u0434\u04AF\u04AF\u043B\u044D\u0445",
         "Decrease Font Size": "\u0424\u043E\u043D\u0442\u044B\u043D \u0445\u044D\u043C\u0436\u044D\u044D\u0433 \u0431\u0430\u0433\u0430\u0441\u0433\u0430\u0445",
@@ -1301,7 +1389,12 @@
         "Accessibility Profiles": "\u0425\u0430\u043D\u0434\u0430\u043B\u0442\u044B\u043D \u043F\u0440\u043E\u0444\u0430\u0439\u043B\u0443\u0443\u0434",
         "Cognitive Disability": "\u0422\u0430\u043D\u0438\u043D \u043C\u044D\u0434\u044D\u0445\u04AF\u0439\u043D \u0445\u04E9\u0433\u0436\u043B\u0438\u0439\u043D \u0431\u044D\u0440\u0445\u0448\u044D\u044D\u043B",
         "Seizure Safe": "\u0422\u0430\u0440\u0445\u0438\u043D\u044B \u0446\u043E\u0447\u0440\u043E\u043B\u0434 \u0430\u044E\u0443\u043B\u0433\u04AF\u0439",
-        "Accessibility statement": "\u0425\u0430\u043D\u0434\u0430\u043B\u0442\u044B\u043D \u043C\u044D\u0434\u044D\u0433\u0434\u044D\u043B"
+        "Accessibility statement": "\u0425\u0430\u043D\u0434\u0430\u043B\u0442\u044B\u043D \u043C\u044D\u0434\u044D\u0433\u0434\u044D\u043B",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0410\u043D\u0438\u043C\u0430\u0446\u0438\u0439\u0433 \u0437\u043E\u0433\u0441\u043E\u043E\u0445",
+        "Reset all settings": "\u0422\u043E\u0445\u0438\u0440\u0433\u043E\u043E\u0433 \u0434\u0430\u0445\u0438\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0430\u0445",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1311,7 +1404,6 @@
     "src/locales/ms.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu Aksesibiliti",
-        "Reset settings": "Tetapkan semula tetapan",
         Close: "Tutup",
         "Content adjustments": "Penyesuaian Kandungan",
         "Navigation adjustments": "Penyesuaian Navigasi",
@@ -1329,7 +1421,6 @@
         Monochrome: "Monokrom",
         Tools: "Peralatan",
         "Reading Guide": "Panduan Membaca",
-        "Stop Animations": "Hentikan Animasi",
         "Big Cursor": "Kursor Besar",
         "Increase Font Size": "Besarkan Saiz Fon",
         "Decrease Font Size": "Kecilkan Saiz Fon",
@@ -1342,7 +1433,12 @@
         "Accessibility Profiles": "Profil Kebolehcapaian",
         "Cognitive Disability": "Kecacatan Kognitif",
         "Seizure Safe": "Selamat untuk Epilepsi",
-        "Accessibility statement": "Pernyataan Kebolehcapaian"
+        "Accessibility statement": "Pernyataan Kebolehcapaian",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Hentikan Animasi",
+        "Reset all settings": "Tetapkan semula tetapan",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1352,7 +1448,6 @@
     "src/locales/my.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u1019\u100A\u103A\u101E\u1030\u1019\u1006\u102D\u102F \u1021\u101E\u102F\u1036\u1038\u1015\u103C\u102F\u1014\u102D\u102F\u1004\u103A\u101E\u1031\u102C \u1019\u102E\u1014\u1030\u1038",
-        "Reset settings": "\u1006\u1000\u103A\u1010\u1004\u103A\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u1015\u103C\u1014\u103A\u101C\u100A\u103A\u101E\u1010\u103A\u1019\u103E\u1010\u103A\u1015\u102B",
         Close: "\u1015\u102D\u1010\u103A\u1015\u102B",
         "Content adjustments": "\u1021\u1000\u103C\u1031\u102C\u1004\u103A\u1038\u1021\u101B\u102C \u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1019\u103E\u102F\u1019\u103B\u102C\u1038",
         "Navigation adjustments": "\u101C\u1019\u103A\u1038\u100A\u103D\u103E\u1014\u103A\u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1019\u103E\u102F\u1019\u103B\u102C\u1038",
@@ -1370,7 +1465,6 @@
         Monochrome: "\u1010\u1005\u103A\u101B\u1031\u102C\u1004\u103A\u1010\u100A\u103A\u1038",
         Tools: "\u1000\u102D\u101B\u102D\u101A\u102C\u1019\u103B\u102C\u1038",
         "Reading Guide": "\u1016\u1010\u103A\u101B\u103E\u102F\u101B\u1014\u103A \u101C\u1019\u103A\u1038\u100A\u103D\u103E\u1014\u103A",
-        "Stop Animations": "\u1021\u1014\u103A\u1014\u102E\u1019\u1031\u1038\u101B\u103E\u1004\u103A\u1038\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u101B\u1015\u103A\u1015\u102B",
         "Big Cursor": "\u1000\u103C\u102E\u1038\u1019\u102C\u1038\u101E\u1031\u102C \u1000\u102C\u1006\u102C",
         "Increase Font Size": "\u1016\u1031\u102C\u1004\u1037\u103A\u1021\u101B\u103D\u101A\u103A\u1021\u1005\u102C\u1038\u1000\u102D\u102F \u1010\u102D\u102F\u1038\u1001\u103B\u1032\u1037\u1015\u102B",
         "Decrease Font Size": "\u1016\u1031\u102C\u1004\u1037\u103A\u1021\u101B\u103D\u101A\u103A\u1021\u1005\u102C\u1038\u1000\u102D\u102F \u101C\u103B\u103E\u1031\u102C\u1037\u1001\u103B\u1015\u102B",
@@ -1383,7 +1477,12 @@
         "Accessibility Profiles": "\u1019\u100A\u103A\u101E\u1030\u1019\u1006\u102D\u102F \u1021\u101E\u102F\u1036\u1038\u1015\u103C\u102F\u1014\u102D\u102F\u1004\u103A\u101E\u1031\u102C \u1015\u101B\u102D\u102F\u1016\u102D\u102F\u1004\u103A\u1019\u103B\u102C\u1038",
         "Cognitive Disability": "\u101E\u102D\u1019\u103C\u1004\u103A\u1019\u103E\u102F\u1006\u102D\u102F\u1004\u103A\u101B\u102C \u1019\u101E\u1014\u103A\u1005\u103D\u1019\u103A\u1038\u1019\u103E\u102F",
         "Seizure Safe": "\u1021\u1010\u1000\u103A\u101B\u1031\u102C\u1002\u102B\u1021\u1010\u103D\u1000\u103A \u1018\u1031\u1038\u1000\u1004\u103A\u1038\u101C\u102F\u1036\u1001\u103C\u102F\u1036\u101E\u1031\u102C",
-        "Accessibility statement": "\u1019\u100A\u103A\u101E\u1030\u1019\u1006\u102D\u102F \u1021\u101E\u102F\u1036\u1038\u1015\u103C\u102F\u1014\u102D\u102F\u1004\u103A\u101E\u1031\u102C \u1000\u103C\u1031\u100A\u102C\u1001\u103B\u1000\u103A"
+        "Accessibility statement": "\u1019\u100A\u103A\u101E\u1030\u1019\u1006\u102D\u102F \u1021\u101E\u102F\u1036\u1038\u1015\u103C\u102F\u1014\u102D\u102F\u1004\u103A\u101E\u1031\u102C \u1000\u103C\u1031\u100A\u102C\u1001\u103B\u1000\u103A",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u1021\u1014\u103A\u1014\u102E\u1019\u1031\u1038\u101B\u103E\u1004\u103A\u1038\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u101B\u1015\u103A\u1015\u102B",
+        "Reset all settings": "\u1006\u1000\u103A\u1010\u1004\u103A\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u1015\u103C\u1014\u103A\u101C\u100A\u103A\u101E\u1010\u103A\u1019\u103E\u1010\u103A\u1015\u102B",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1393,7 +1492,6 @@
     "src/locales/nb.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Tilgjengelighetsmeny",
-        "Reset settings": "Tilbakestill innstillinger",
         Close: "Lukk",
         "Content adjustments": "Innholdsjusteringer",
         "Navigation adjustments": "Navigasjonsjusteringer",
@@ -1411,7 +1509,6 @@
         Monochrome: "Monokrom",
         Tools: "Verkt\xF8y",
         "Reading Guide": "Leseguide",
-        "Stop Animations": "Stopp animasjoner",
         "Big Cursor": "Stor mark\xF8r",
         "Increase Font Size": "\xD8k skriftst\xF8rrelse",
         "Decrease Font Size": "Reduser skriftst\xF8rrelse",
@@ -1424,7 +1521,12 @@
         "Accessibility Profiles": "Tilgjengelighetsprofiler",
         "Cognitive Disability": "Kognitiv funksjonshemming",
         "Seizure Safe": "Epilepsisikker",
-        "Accessibility statement": "Tilgjengelighetserkl\xE6ring"
+        "Accessibility statement": "Tilgjengelighetserkl\xE6ring",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Stopp animasjoner",
+        "Reset all settings": "Tilbakestill innstillinger",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1434,7 +1536,6 @@
     "src/locales/nl.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Toegankelijkheidsmenu",
-        "Reset settings": "Instellingen resetten",
         Close: "Sluiten",
         "Content adjustments": "Inhoudsaanpassingen",
         "Navigation adjustments": "Navigatieaanpassingen",
@@ -1452,7 +1553,6 @@
         Monochrome: "Monochroom",
         Tools: "Hulpmiddelen",
         "Reading Guide": "Leesgids",
-        "Stop Animations": "Stop animaties",
         "Big Cursor": "Grote cursor",
         "Increase Font Size": "Lettergrootte vergroten",
         "Decrease Font Size": "Lettergrootte verkleinen",
@@ -1465,7 +1565,12 @@
         "Accessibility Profiles": "Toegankelijkheidsprofielen",
         "Cognitive Disability": "Cognitieve beperking",
         "Seizure Safe": "Epilepsie veilig",
-        "Accessibility statement": "Toegankelijkheidsverklaring"
+        "Accessibility statement": "Toegankelijkheidsverklaring",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Stop animaties",
+        "Reset all settings": "Instellingen resetten",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1475,7 +1580,6 @@
     "src/locales/no.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Tilgjengelighetsmeny",
-        "Reset settings": "Tilbakestill innstillinger",
         Close: "Lukk",
         "Content adjustments": "Innholdsjusteringer",
         "Navigation adjustments": "Navigasjonsjusteringer",
@@ -1493,7 +1597,6 @@
         Monochrome: "Monokrom",
         Tools: "Verkt\xF8y",
         "Reading Guide": "Leseguide",
-        "Stop Animations": "Stopp animasjoner",
         "Big Cursor": "Stor mark\xF8r",
         "Increase Font Size": "\xD8k tekstst\xF8rrelse",
         "Decrease Font Size": "Reduser tekstst\xF8rrelse",
@@ -1506,7 +1609,12 @@
         "Accessibility Profiles": "Tilgjengelighetsprofiler",
         "Cognitive Disability": "Kognitiv funksjonshemming",
         "Seizure Safe": "Anfallssikker",
-        "Accessibility statement": "Tilgjengelighetserkl\xE6ring"
+        "Accessibility statement": "Tilgjengelighetserkl\xE6ring",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Stopp animasjoner",
+        "Reset all settings": "Tilbakestill innstillinger",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1516,7 +1624,6 @@
     "src/locales/pa.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0A2A\u0A39\u0A41\u0A70\u0A1A \u0A2E\u0A47\u0A28\u0A42",
-        "Reset settings": "\u0A38\u0A48\u0A1F\u0A3F\u0A70\u0A17\u0A3E\u0A02 \u0A30\u0A40\u0A38\u0A48\u0A1F \u0A15\u0A30\u0A4B",
         Close: "\u0A2C\u0A70\u0A26 \u0A15\u0A30\u0A4B",
         "Content adjustments": "\u0A38\u0A2E\u0A71\u0A17\u0A30\u0A40 \u0A38\u0A70\u0A38\u0A3C\u0A4B\u0A27\u0A28",
         "Navigation adjustments": "\u0A28\u0A47\u0A35\u0A40\u0A17\u0A47\u0A38\u0A3C\u0A28 \u0A38\u0A70\u0A38\u0A3C\u0A4B\u0A27\u0A28",
@@ -1534,7 +1641,6 @@
         Monochrome: "\u0A07\u0A15 \u0A30\u0A70\u0A17\u0A40",
         Tools: "\u0A09\u0A2A\u0A15\u0A30\u0A28",
         "Reading Guide": "\u0A2A\u0A5C\u0A4D\u0A39\u0A28 \u0A17\u0A3E\u0A08\u0A21",
-        "Stop Animations": "\u0A10\u0A28\u0A40\u0A2E\u0A47\u0A38\u0A3C\u0A28 \u0A30\u0A4B\u0A15\u0A4B",
         "Big Cursor": "\u0A35\u0A71\u0A21\u0A3E \u0A15\u0A30\u0A38\u0A30",
         "Increase Font Size": "\u0A2B\u0A4B\u0A02\u0A1F \u0A06\u0A15\u0A3E\u0A30 \u0A35\u0A27\u0A3E\u0A13",
         "Decrease Font Size": "\u0A2B\u0A4B\u0A02\u0A1F \u0A06\u0A15\u0A3E\u0A30 \u0A18\u0A1F\u0A3E\u0A13",
@@ -1547,7 +1653,12 @@
         "Accessibility Profiles": "\u0A2A\u0A39\u0A41\u0A70\u0A1A \u0A2A\u0A4D\u0A30\u0A4B\u0A2B\u0A3E\u0A08\u0A32",
         "Cognitive Disability": "\u0A1C\u0A3E\u0A23\u0A15\u0A3E\u0A30\u0A40 \u0A38\u0A70\u0A2C\u0A70\u0A27\u0A40 \u0A05\u0A38\u0A2E\u0A30\u0A71\u0A25\u0A3E",
         "Seizure Safe": "\u0A26\u0A4C\u0A30\u0A3E \u0A38\u0A41\u0A30\u0A71\u0A16\u0A3F\u0A05\u0A24",
-        "Accessibility statement": "\u0A2A\u0A39\u0A41\u0A70\u0A1A \u0A2C\u0A3F\u0A06\u0A28"
+        "Accessibility statement": "\u0A2A\u0A39\u0A41\u0A70\u0A1A \u0A2C\u0A3F\u0A06\u0A28",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0A10\u0A28\u0A40\u0A2E\u0A47\u0A38\u0A3C\u0A28 \u0A30\u0A4B\u0A15\u0A4B",
+        "Reset all settings": "\u0A38\u0A48\u0A1F\u0A3F\u0A70\u0A17\u0A3E\u0A02 \u0A30\u0A40\u0A38\u0A48\u0A1F \u0A15\u0A30\u0A4B",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1557,7 +1668,6 @@
     "src/locales/pl.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu dost\u0119pno\u015Bci",
-        "Reset settings": "Resetuj ustawienia",
         Close: "Zamknij",
         "Content adjustments": "Dostosowania Tre\u015Bci",
         "Navigation adjustments": "Dostosowania Nawigacji",
@@ -1575,7 +1685,6 @@
         Monochrome: "Monochromatyczny",
         Tools: "Narz\u0119dzia",
         "Reading Guide": "Przewodnik Czytania",
-        "Stop Animations": "Zatrzymaj Animacje",
         "Big Cursor": "Du\u017Cy Kursor",
         "Increase Font Size": "Zwi\u0119ksz Rozmiar Czcionki",
         "Decrease Font Size": "Zmniejsz Rozmiar Czcionki",
@@ -1588,7 +1697,12 @@
         "Accessibility Profiles": "Profile Dost\u0119pno\u015Bci",
         "Cognitive Disability": "Niepe\u0142nosprawno\u015B\u0107 Poznawcza",
         "Seizure Safe": "Bezpieczny dla Padaczki",
-        "Accessibility statement": "O\u015Bwiadczenie o Dost\u0119pno\u015Bci"
+        "Accessibility statement": "O\u015Bwiadczenie o Dost\u0119pno\u015Bci",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Zatrzymaj Animacje",
+        "Reset all settings": "Resetuj ustawienia",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1598,7 +1712,6 @@
     "src/locales/pt.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu de acessibilidade",
-        "Reset settings": "Redefinir configura\xE7\xF5es",
         Close: "Fechar",
         "Content adjustments": "Ajustes de Conte\xFAdo",
         "Navigation adjustments": "Ajustes de Navega\xE7\xE3o",
@@ -1616,7 +1729,6 @@
         Monochrome: "Monocrom\xE1tico",
         Tools: "Ferramentas",
         "Reading Guide": "Guia de Leitura",
-        "Stop Animations": "Parar Anima\xE7\xF5es",
         "Big Cursor": "Cursor Grande",
         "Increase Font Size": "Aumentar Tamanho da Fonte",
         "Decrease Font Size": "Diminuir Tamanho da Fonte",
@@ -1629,7 +1741,12 @@
         "Accessibility Profiles": "Perfis de Acessibilidade",
         "Cognitive Disability": "Defici\xEAncia Cognitiva",
         "Seizure Safe": "Seguro para Epilepsia",
-        "Accessibility statement": "Declara\xE7\xE3o de Acessibilidade"
+        "Accessibility statement": "Declara\xE7\xE3o de Acessibilidade",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Parar Anima\xE7\xF5es",
+        "Reset all settings": "Redefinir configura\xE7\xF5es",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1639,7 +1756,6 @@
     "src/locales/ro.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Meniu Accesibilitate",
-        "Reset settings": "Reseteaz\u0103 set\u0103rile",
         Close: "\xCEnchide",
         "Content adjustments": "Ajust\u0103ri Con\u021Binut",
         "Navigation adjustments": "Ajust\u0103ri Navigare",
@@ -1657,7 +1773,6 @@
         Monochrome: "Monocrom",
         Tools: "Instrumente",
         "Reading Guide": "Ghid de Citire",
-        "Stop Animations": "Opre\u0219te Anima\u021Biile",
         "Big Cursor": "Cursor Mare",
         "Increase Font Size": "M\u0103re\u0219te Dimensiunea Fontului",
         "Decrease Font Size": "Mic\u0219oreaz\u0103 Dimensiunea Fontului",
@@ -1670,7 +1785,12 @@
         "Accessibility Profiles": "Profiluri de Accesibilitate",
         "Cognitive Disability": "Dizabilitate Cognitiv\u0103",
         "Seizure Safe": "Sigur pentru Epilepsie",
-        "Accessibility statement": "Declara\u021Bie de Accesibilitate"
+        "Accessibility statement": "Declara\u021Bie de Accesibilitate",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Opre\u0219te Anima\u021Biile",
+        "Reset all settings": "Reseteaz\u0103 set\u0103rile",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1680,7 +1800,6 @@
     "src/locales/ru.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u044E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0438",
-        "Reset settings": "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
         Close: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C",
         "Content adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043A\u043E\u043D\u0442\u0435\u043D\u0442\u0430",
         "Navigation adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0438",
@@ -1698,7 +1817,6 @@
         Monochrome: "\u041C\u043E\u043D\u043E\u0445\u0440\u043E\u043C\u043D\u044B\u0439",
         Tools: "\u0418\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u044B",
         "Reading Guide": "\u0420\u0443\u043A\u043E\u0432\u043E\u0434\u0441\u0442\u0432\u043E \u043F\u043E \u0447\u0442\u0435\u043D\u0438\u044E",
-        "Stop Animations": "\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438",
         "Big Cursor": "\u0411\u043E\u043B\u044C\u0448\u043E\u0439 \u043A\u0443\u0440\u0441\u043E\u0440",
         "Increase Font Size": "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u0440\u0430\u0437\u043C\u0435\u0440 \u0448\u0440\u0438\u0444\u0442\u0430",
         "Decrease Font Size": "\u0423\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u0440\u0430\u0437\u043C\u0435\u0440 \u0448\u0440\u0438\u0444\u0442\u0430",
@@ -1711,7 +1829,12 @@
         "Accessibility Profiles": "\u041F\u0440\u043E\u0444\u0438\u043B\u0438 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0438",
         "Cognitive Disability": "\u041A\u043E\u0433\u043D\u0438\u0442\u0438\u0432\u043D\u044B\u0435 \u043D\u0430\u0440\u0443\u0448\u0435\u043D\u0438\u044F",
         "Seizure Safe": "\u0411\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E \u043F\u0440\u0438 \u044D\u043F\u0438\u043B\u0435\u043F\u0441\u0438\u0438",
-        "Accessibility statement": "\u0417\u0430\u044F\u0432\u043B\u0435\u043D\u0438\u0435 \u043E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0438"
+        "Accessibility statement": "\u0417\u0430\u044F\u0432\u043B\u0435\u043D\u0438\u0435 \u043E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0438",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438",
+        "Reset all settings": "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1721,7 +1844,6 @@
     "src/locales/si.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0DB4\u0DCA\u200D\u0DBB\u0DC0\u0DDA\u0DC1\u0DB1\u0DD3\u0DBA \u0DB8\u0DD9\u0DB1\u0DD4\u0DC0",
-        "Reset settings": "\u0DC3\u0DD0\u0D9A\u0DC3\u0DD4\u0DB8\u0DCA \u0DBA\u0DC5\u0DD2 \u0DB4\u0DD2\u0DC4\u0DD2\u0DA7\u0DD4\u0DC0\u0DB1\u0DCA\u0DB1",
         Close: "\u0DC0\u0DC3\u0DB1\u0DCA\u0DB1",
         "Content adjustments": "\u0D85\u0DB1\u0DCA\u0DAD\u0DBB\u0DCA\u0D9C\u0DAD \u0DC3\u0D9A\u0DC3\u0DCA\u0D9A\u0DD2\u0DBB\u0DD3\u0DB8\u0DCA",
         "Navigation adjustments": "\u0DBA\u0DCF\u0DAD\u0DCA\u200D\u0DBB\u0DAB \u0DC3\u0D9A\u0DC3\u0DCA\u0D9A\u0DD2\u0DBB\u0DD3\u0DB8\u0DCA",
@@ -1739,7 +1861,6 @@
         Monochrome: "\u0D92\u0D9A\u0DC0\u0DBB\u0DCA\u0DAB",
         Tools: "\u0DB8\u0DD9\u0DC0\u0DBD\u0DB8\u0DCA",
         "Reading Guide": "\u0D9A\u0DD2\u0DBA\u0DC0\u0DD3\u0DB8\u0DDA \u0DB8\u0DCF\u0DBB\u0DCA\u0D9C\u0DDD\u0DB4\u0DAF\u0DDA\u0DC1\u0D9A\u0DBA",
-        "Stop Animations": "\u0DC3\u0DA2\u0DD3\u0DC0\u0DD2\u0D9A\u0DBB\u0DAB \u0DB1\u0DC0\u0DAD\u0DCA\u0DC0\u0DB1\u0DCA\u0DB1",
         "Big Cursor": "\u0DC0\u0DD2\u0DC1\u0DCF\u0DBD \u0D9A\u0DBB\u0DCA\u0DC3\u0DBB\u0DBA",
         "Increase Font Size": "\u0D85\u0D9A\u0DD4\u0DBB\u0DD4 \u0DB4\u0DCA\u200D\u0DBB\u0DB8\u0DCF\u0DAB\u0DBA \u0DC0\u0DD0\u0DA9\u0DD2 \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
         "Decrease Font Size": "\u0D85\u0D9A\u0DD4\u0DBB\u0DD4 \u0DB4\u0DCA\u200D\u0DBB\u0DB8\u0DCF\u0DAB\u0DBA \u0D85\u0DA9\u0DD4 \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
@@ -1752,7 +1873,12 @@
         "Accessibility Profiles": "\u0DB4\u0DCA\u200D\u0DBB\u0DC0\u0DDA\u0DC1\u0DB1\u0DD3\u0DBA \u0DB4\u0DD0\u0DAD\u0DD2\u0D9A\u0DA9",
         "Cognitive Disability": "\u0DA5\u0DCF\u0DB1\u0DCF\u0DAD\u0DCA\u0DB8\u0D9A \u0D86\u0DB6\u0DCF\u0DB0\u0DBA",
         "Seizure Safe": "\u0D86\u0D9A\u0DCA\u200D\u0DBB\u0DB8\u0DAB\u0DD2\u0D9A \u0D86\u0DBB\u0D9A\u0DCA\u0DC2\u0DD2\u0DAD",
-        "Accessibility statement": "\u0DB4\u0DCA\u200D\u0DBB\u0DC0\u0DDA\u0DC1\u0DB1\u0DD3\u0DBA \u0DB4\u0DCA\u200D\u0DBB\u0D9A\u0DCF\u0DC1\u0DB1\u0DBA"
+        "Accessibility statement": "\u0DB4\u0DCA\u200D\u0DBB\u0DC0\u0DDA\u0DC1\u0DB1\u0DD3\u0DBA \u0DB4\u0DCA\u200D\u0DBB\u0D9A\u0DCF\u0DC1\u0DB1\u0DBA",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0DC3\u0DA2\u0DD3\u0DC0\u0DD2\u0D9A\u0DBB\u0DAB \u0DB1\u0DC0\u0DAD\u0DCA\u0DC0\u0DB1\u0DCA\u0DB1",
+        "Reset all settings": "\u0DC3\u0DD0\u0D9A\u0DC3\u0DD4\u0DB8\u0DCA \u0DBA\u0DC5\u0DD2 \u0DB4\u0DD2\u0DC4\u0DD2\u0DA7\u0DD4\u0DC0\u0DB1\u0DCA\u0DB1",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1762,7 +1888,6 @@
     "src/locales/sk.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu pr\xEDstupnosti",
-        "Reset settings": "Obnovi\u0165 nastavenia",
         Close: "Zavrie\u0165",
         "Content adjustments": "\xDApravy obsahu",
         "Navigation adjustments": "\xDApravy navig\xE1cie",
@@ -1780,7 +1905,6 @@
         Monochrome: "Monochr\xF3m",
         Tools: "N\xE1stroje",
         "Reading Guide": "\u010C\xEDta\u010Dsk\xFD sprievodca",
-        "Stop Animations": "Zastavi\u0165 anim\xE1cie",
         "Big Cursor": "Ve\u013Ek\xFD kurzor",
         "Increase Font Size": "Zv\xE4\u010D\u0161i\u0165 p\xEDsmo",
         "Decrease Font Size": "Zmen\u0161i\u0165 p\xEDsmo",
@@ -1793,7 +1917,12 @@
         "Accessibility Profiles": "Profil pr\xEDstupnosti",
         "Cognitive Disability": "Kognit\xEDvne postihnutie",
         "Seizure Safe": "Bezpe\u010Dn\xE9 pre z\xE1chvaty",
-        "Accessibility statement": "Vyhl\xE1senie o pr\xEDstupnosti"
+        "Accessibility statement": "Vyhl\xE1senie o pr\xEDstupnosti",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Zastavi\u0165 anim\xE1cie",
+        "Reset all settings": "Obnovi\u0165 nastavenia",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1803,7 +1932,6 @@
     "src/locales/sl.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Meni dostopnosti",
-        "Reset settings": "Ponastavi nastavitve",
         Close: "Zapri",
         "Content adjustments": "Prilagoditve vsebine",
         "Navigation adjustments": "Prilagoditve navigacije",
@@ -1821,7 +1949,6 @@
         Monochrome: "Monokromno",
         Tools: "Orodja",
         "Reading Guide": "Bralni vodnik",
-        "Stop Animations": "Ustavi animacije",
         "Big Cursor": "Velik kazalec",
         "Increase Font Size": "Pove\u010Daj velikost pisave",
         "Decrease Font Size": "Zmanj\u0161aj velikost pisave",
@@ -1834,7 +1961,12 @@
         "Accessibility Profiles": "Profili dostopnosti",
         "Cognitive Disability": "Kognitivna oviranost",
         "Seizure Safe": "Varno za napade",
-        "Accessibility statement": "Izjava o dostopnosti"
+        "Accessibility statement": "Izjava o dostopnosti",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Ustavi animacije",
+        "Reset all settings": "Ponastavi nastavitve",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1844,7 +1976,6 @@
     "src/locales/sr.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u0438 \u043F\u0440\u0438\u0441\u0442\u0443\u043F\u0430\u0447\u043D\u043E\u0441\u0442\u0438",
-        "Reset settings": "\u0420\u0435\u0441\u0435\u0442\u0443\u0458 \u043F\u043E\u0434\u0435\u0448\u0430\u0432\u0430\u045A\u0430",
         Close: "\u0417\u0430\u0442\u0432\u043E\u0440\u0438",
         "Content adjustments": "\u041F\u0440\u0438\u043B\u0430\u0433\u043E\u0452\u0430\u0432\u0430\u045A\u0430 \u0441\u0430\u0434\u0440\u0436\u0430\u0458\u0430",
         "Navigation adjustments": "\u041F\u0440\u0438\u043B\u0430\u0433\u043E\u0452\u0430\u0432\u0430\u045A\u0430 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0458\u0435",
@@ -1862,7 +1993,6 @@
         Monochrome: "\u041C\u043E\u043D\u043E\u0445\u0440\u043E\u043C\u0430\u0442\u0441\u043A\u0438",
         Tools: "\u0410\u043B\u0430\u0442\u0438",
         "Reading Guide": "\u0412\u043E\u0434\u0438\u0447 \u0437\u0430 \u0447\u0438\u0442\u0430\u045A\u0435",
-        "Stop Animations": "\u0417\u0430\u0443\u0441\u0442\u0430\u0432\u0438 \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0458\u0435",
         "Big Cursor": "\u0412\u0435\u043B\u0438\u043A\u0438 \u043A\u0443\u0440\u0441\u043E\u0440",
         "Increase Font Size": "\u041F\u043E\u0432\u0435\u045B\u0430\u0458 \u0432\u0435\u043B\u0438\u0447\u0438\u043D\u0443 \u0444\u043E\u043D\u0442\u0430",
         "Decrease Font Size": "\u0421\u043C\u0430\u045A\u0438 \u0432\u0435\u043B\u0438\u0447\u0438\u043D\u0443 \u0444\u043E\u043D\u0442\u0430",
@@ -1875,7 +2005,12 @@
         "Accessibility Profiles": "\u041F\u0440\u043E\u0444\u0438\u043B\u0438 \u043F\u0440\u0438\u0441\u0442\u0443\u043F\u0430\u0447\u043D\u043E\u0441\u0442\u0438",
         "Cognitive Disability": "\u041A\u043E\u0433\u043D\u0438\u0442\u0438\u0432\u043D\u0430 \u0438\u043D\u0432\u0430\u043B\u0438\u0434\u043D\u043E\u0441\u0442",
         "Seizure Safe": "\u0411\u0435\u0437\u0431\u0435\u0434\u043D\u043E \u0437\u0430 \u043D\u0430\u043F\u0430\u0434\u0435",
-        "Accessibility statement": "\u0418\u0437\u0458\u0430\u0432\u0430 \u043E \u043F\u0440\u0438\u0441\u0442\u0443\u043F\u0430\u0447\u043D\u043E\u0441\u0442\u0438"
+        "Accessibility statement": "\u0418\u0437\u0458\u0430\u0432\u0430 \u043E \u043F\u0440\u0438\u0441\u0442\u0443\u043F\u0430\u0447\u043D\u043E\u0441\u0442\u0438",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0417\u0430\u0443\u0441\u0442\u0430\u0432\u0438 \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0458\u0435",
+        "Reset all settings": "\u0420\u0435\u0441\u0435\u0442\u0443\u0458 \u043F\u043E\u0434\u0435\u0448\u0430\u0432\u0430\u045A\u0430",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1885,7 +2020,6 @@
     "src/locales/sv.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Tillg\xE4nglighetsmeny",
-        "Reset settings": "Nollst\xE4ll inst\xE4llningar",
         Close: "St\xE4ng",
         "Content adjustments": "Anpassa inneh\xE5ll",
         "Navigation adjustments": "Anpassa navigering",
@@ -1903,7 +2037,6 @@
         Monochrome: "Monokrom",
         Tools: "Verktyg",
         "Reading Guide": "L\xE4slinjal",
-        "Stop Animations": "Hindra animationer",
         "Big Cursor": "Stor muspekare",
         "Increase Font Size": "\xD6ka textstorlek",
         "Decrease Font Size": "Minska textstorlek",
@@ -1916,7 +2049,12 @@
         "Accessibility Profiles": "Tillg\xE4nglighetsprofiler",
         "Cognitive Disability": "Kognitiv funktionsneds\xE4ttning",
         "Seizure Safe": "Anfallss\xE4ker",
-        "Accessibility statement": "Tillg\xE4nglighetsutl\xE5tande"
+        "Accessibility statement": "Tillg\xE4nglighetsutl\xE5tande",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Hindra animationer",
+        "Reset all settings": "Nollst\xE4ll inst\xE4llningar",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1926,7 +2064,6 @@
     "src/locales/sw.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menyu ya Ufikivu",
-        "Reset settings": "Weka upya mipangilio",
         Close: "Funga",
         "Content adjustments": "Marekebisho ya Maudhui",
         "Navigation adjustments": "Marekebisho ya Uelekezaji",
@@ -1944,7 +2081,6 @@
         Monochrome: "Rangi Moja",
         Tools: "Vifaa",
         "Reading Guide": "Mwongozo wa Kusoma",
-        "Stop Animations": "Simamisha Animations",
         "Big Cursor": "Kishika Mkubwa",
         "Increase Font Size": "Ongeza Ukubwa wa Herufi",
         "Decrease Font Size": "Punguza Ukubwa wa Herufi",
@@ -1957,7 +2093,12 @@
         "Accessibility Profiles": "Wasifu wa Ufikivu",
         "Cognitive Disability": "Ulemavu wa Akili",
         "Seizure Safe": "Salama kwa Mashambulizi",
-        "Accessibility statement": "Taarifa ya Ufikivu"
+        "Accessibility statement": "Taarifa ya Ufikivu",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Simamisha Animations",
+        "Reset all settings": "Weka upya mipangilio",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -1967,7 +2108,6 @@
     "src/locales/ta.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0B85\u0BA3\u0BC1\u0B95\u0BB2\u0BCD \u0BAE\u0BC6\u0BA9\u0BC1",
-        "Reset settings": "\u0B85\u0BAE\u0BC8\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BC8 \u0BAE\u0BC0\u0B9F\u0BCD\u0B9F\u0BAE\u0BC8",
         Close: "\u0BAE\u0BC2\u0B9F\u0BC1",
         "Content adjustments": "\u0B89\u0BB3\u0BCD\u0BB3\u0B9F\u0B95\u0BCD\u0B95 \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BB2\u0BCD\u0B95\u0BB3\u0BCD",
         "Navigation adjustments": "\u0BB5\u0BB4\u0BBF\u0B9A\u0BC6\u0BB2\u0BC1\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BB2\u0BCD\u0B95\u0BB3\u0BCD",
@@ -1985,7 +2125,6 @@
         Monochrome: "\u0B92\u0BB1\u0BCD\u0BB1\u0BC8 \u0BA8\u0BBF\u0BB1\u0BAE\u0BCD",
         Tools: "\u0B95\u0BB0\u0BC1\u0BB5\u0BBF\u0B95\u0BB3\u0BCD",
         "Reading Guide": "\u0BAA\u0B9F\u0BBF\u0BAA\u0BCD\u0BAA\u0BC1 \u0BB5\u0BB4\u0BBF\u0B95\u0BBE\u0B9F\u0BCD\u0B9F\u0BBF",
-        "Stop Animations": "\u0B85\u0BA9\u0BBF\u0BAE\u0BC7\u0BB7\u0BA9\u0BCD\u0B95\u0BB3\u0BC8 \u0BA8\u0BBF\u0BB1\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
         "Big Cursor": "\u0BAA\u0BC6\u0BB0\u0BBF\u0BAF \u0B95\u0BB0\u0BCD\u0B9A\u0BB0\u0BCD",
         "Increase Font Size": "\u0B8E\u0BB4\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1 \u0B85\u0BB3\u0BB5\u0BC8 \u0B85\u0BA4\u0BBF\u0B95\u0BB0\u0BBF",
         "Decrease Font Size": "\u0B8E\u0BB4\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1 \u0B85\u0BB3\u0BB5\u0BC8 \u0B95\u0BC1\u0BB1\u0BC8",
@@ -1998,7 +2137,12 @@
         "Accessibility Profiles": "\u0B85\u0BA3\u0BC1\u0B95\u0BB2\u0BCD \u0B9A\u0BC1\u0BAF\u0BB5\u0BBF\u0BB5\u0BB0\u0B99\u0BCD\u0B95\u0BB3\u0BCD",
         "Cognitive Disability": "\u0B85\u0BB1\u0BBF\u0BB5\u0BBE\u0BB1\u0BCD\u0BB1\u0BB2\u0BCD \u0B95\u0BC1\u0BB1\u0BC8\u0BAA\u0BBE\u0B9F\u0BC1",
         "Seizure Safe": "\u0BB5\u0BB2\u0BBF\u0BAA\u0BCD\u0BAA\u0BC1 \u0BAA\u0BBE\u0BA4\u0BC1\u0B95\u0BBE\u0BAA\u0BCD\u0BAA\u0BC1",
-        "Accessibility statement": "\u0B85\u0BA3\u0BC1\u0B95\u0BB2\u0BCD \u0B85\u0BB1\u0BBF\u0B95\u0BCD\u0B95\u0BC8"
+        "Accessibility statement": "\u0B85\u0BA3\u0BC1\u0B95\u0BB2\u0BCD \u0B85\u0BB1\u0BBF\u0B95\u0BCD\u0B95\u0BC8",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0B85\u0BA9\u0BBF\u0BAE\u0BC7\u0BB7\u0BA9\u0BCD\u0B95\u0BB3\u0BC8 \u0BA8\u0BBF\u0BB1\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
+        "Reset all settings": "\u0B85\u0BAE\u0BC8\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BC8 \u0BAE\u0BC0\u0B9F\u0BCD\u0B9F\u0BAE\u0BC8",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2008,7 +2152,6 @@
     "src/locales/te.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0C05\u0C02\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C41 \u0C2E\u0C46\u0C28\u0C42",
-        "Reset settings": "\u0C38\u0C46\u0C1F\u0C4D\u0C1F\u0C3F\u0C02\u0C17\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C30\u0C40\u0C38\u0C46\u0C1F\u0C4D \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
         Close: "\u0C2E\u0C42\u0C38\u0C3F\u0C35\u0C47\u0C2F\u0C02\u0C21\u0C3F",
         "Content adjustments": "\u0C35\u0C3F\u0C37\u0C2F \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C4D\u0C32\u0C41",
         "Navigation adjustments": "\u0C28\u0C3E\u0C35\u0C3F\u0C17\u0C47\u0C37\u0C28\u0C4D \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C4D\u0C32\u0C41",
@@ -2026,7 +2169,6 @@
         Monochrome: "\u0C0F\u0C15\u0C30\u0C02\u0C17\u0C41",
         Tools: "\u0C38\u0C3E\u0C27\u0C28\u0C3E\u0C32\u0C41",
         "Reading Guide": "\u0C1A\u0C26\u0C35\u0C21\u0C02 \u0C17\u0C48\u0C21\u0C4D",
-        "Stop Animations": "\u0C2F\u0C3E\u0C28\u0C3F\u0C2E\u0C47\u0C37\u0C28\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C06\u0C2A\u0C02\u0C21\u0C3F",
         "Big Cursor": "\u0C2A\u0C46\u0C26\u0C4D\u0C26 \u0C15\u0C30\u0C4D\u0C38\u0C30\u0C4D",
         "Increase Font Size": "\u0C2B\u0C3E\u0C02\u0C1F\u0C4D \u0C2A\u0C30\u0C3F\u0C2E\u0C3E\u0C23\u0C3E\u0C28\u0C4D\u0C28\u0C3F \u0C2A\u0C46\u0C02\u0C1A\u0C02\u0C21\u0C3F",
         "Decrease Font Size": "\u0C2B\u0C3E\u0C02\u0C1F\u0C4D \u0C2A\u0C30\u0C3F\u0C2E\u0C3E\u0C23\u0C3E\u0C28\u0C4D\u0C28\u0C3F \u0C24\u0C17\u0C4D\u0C17\u0C3F\u0C02\u0C1A\u0C02\u0C21\u0C3F",
@@ -2039,7 +2181,12 @@
         "Accessibility Profiles": "\u0C05\u0C02\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C41 \u0C2A\u0C4D\u0C30\u0C4A\u0C2B\u0C48\u0C32\u0C4D\u200C\u0C32\u0C41",
         "Cognitive Disability": "\u0C1C\u0C4D\u0C1E\u0C3E\u0C28 \u0C38\u0C02\u0C2C\u0C02\u0C27\u0C3F\u0C24 \u0C35\u0C48\u0C15\u0C32\u0C4D\u0C2F\u0C02",
         "Seizure Safe": "\u0C2A\u0C1F\u0C4D\u0C1F\u0C41 \u0C38\u0C41\u0C30\u0C15\u0C4D\u0C37\u0C3F\u0C24\u0C02",
-        "Accessibility statement": "\u0C05\u0C02\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C41 \u0C2A\u0C4D\u0C30\u0C15\u0C1F\u0C28"
+        "Accessibility statement": "\u0C05\u0C02\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C41 \u0C2A\u0C4D\u0C30\u0C15\u0C1F\u0C28",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0C2F\u0C3E\u0C28\u0C3F\u0C2E\u0C47\u0C37\u0C28\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C06\u0C2A\u0C02\u0C21\u0C3F",
+        "Reset all settings": "\u0C38\u0C46\u0C1F\u0C4D\u0C1F\u0C3F\u0C02\u0C17\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C30\u0C40\u0C38\u0C46\u0C1F\u0C4D \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2049,7 +2196,6 @@
     "src/locales/th.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0E40\u0E21\u0E19\u0E39\u0E01\u0E32\u0E23\u0E0A\u0E48\u0E27\u0E22\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E16\u0E36\u0E07",
-        "Reset settings": "\u0E23\u0E35\u0E40\u0E0B\u0E47\u0E15\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32",
         Close: "\u0E1B\u0E34\u0E14",
         "Content adjustments": "\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32",
         "Navigation adjustments": "\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E19\u0E33\u0E17\u0E32\u0E07",
@@ -2066,7 +2212,6 @@
         Monochrome: "\u0E42\u0E21\u0E42\u0E19\u0E42\u0E04\u0E23\u0E21",
         Tools: "\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D",
         "Reading Guide": "\u0E04\u0E39\u0E48\u0E21\u0E37\u0E2D\u0E01\u0E32\u0E23\u0E2D\u0E48\u0E32\u0E19",
-        "Stop Animations": "\u0E2B\u0E22\u0E38\u0E14\u0E01\u0E32\u0E23\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E44\u0E2B\u0E27",
         "Big Cursor": "\u0E40\u0E04\u0E2D\u0E23\u0E4C\u0E40\u0E0B\u0E2D\u0E23\u0E4C\u0E02\u0E19\u0E32\u0E14\u0E43\u0E2B\u0E0D\u0E48",
         "Increase Font Size": "\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E02\u0E19\u0E32\u0E14\u0E15\u0E31\u0E27\u0E2D\u0E31\u0E01\u0E29\u0E23",
         "Decrease Font Size": "\u0E25\u0E14\u0E02\u0E19\u0E32\u0E14\u0E15\u0E31\u0E27\u0E2D\u0E31\u0E01\u0E29\u0E23",
@@ -2079,7 +2224,12 @@
         "Accessibility Profiles": "\u0E42\u0E1B\u0E23\u0E44\u0E1F\u0E25\u0E4C\u0E01\u0E32\u0E23\u0E0A\u0E48\u0E27\u0E22\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E16\u0E36\u0E07",
         "Cognitive Disability": "\u0E04\u0E27\u0E32\u0E21\u0E1A\u0E01\u0E1E\u0E23\u0E48\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E2A\u0E15\u0E34\u0E1B\u0E31\u0E0D\u0E0D\u0E32",
         "Seizure Safe": "\u0E1B\u0E25\u0E2D\u0E14\u0E20\u0E31\u0E22\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E42\u0E23\u0E04\u0E25\u0E21\u0E0A\u0E31\u0E01",
-        "Accessibility statement": "\u0E04\u0E33\u0E41\u0E16\u0E25\u0E07\u0E01\u0E32\u0E23\u0E0A\u0E48\u0E27\u0E22\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E16\u0E36\u0E07"
+        "Accessibility statement": "\u0E04\u0E33\u0E41\u0E16\u0E25\u0E07\u0E01\u0E32\u0E23\u0E0A\u0E48\u0E27\u0E22\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E16\u0E36\u0E07",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0E2B\u0E22\u0E38\u0E14\u0E01\u0E32\u0E23\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E44\u0E2B\u0E27",
+        "Reset all settings": "\u0E23\u0E35\u0E40\u0E0B\u0E47\u0E15\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2089,7 +2239,6 @@
     "src/locales/tr.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Eri\u015Filebilirlik Men\xFCs\xFC",
-        "Reset settings": "Ayarlar\u0131 S\u0131f\u0131rla",
         Close: "Kapat",
         "Content adjustments": "\u0130\xE7erik Ayarlar\u0131",
         "Navigation adjustments": "Gezinme Ayarlar\u0131",
@@ -2107,7 +2256,6 @@
         Monochrome: "Tek Renkli",
         Tools: "Ara\xE7lar",
         "Reading Guide": "Okuma Rehberi",
-        "Stop Animations": "Animasyonlar\u0131 Durdur",
         "Big Cursor": "B\xFCy\xFCk \u0130mle\xE7",
         "Increase Font Size": "Yaz\u0131 Tipi Boyutunu Art\u0131r",
         "Decrease Font Size": "Yaz\u0131 Tipi Boyutunu Azalt",
@@ -2120,7 +2268,12 @@
         "Accessibility Profiles": "Eri\u015Filebilirlik Profilleri",
         "Cognitive Disability": "Bili\u015Fsel Engellilik",
         "Seizure Safe": "N\xF6bet G\xFCvenli",
-        "Accessibility statement": "Eri\u015Filebilirlik Beyan\u0131"
+        "Accessibility statement": "Eri\u015Filebilirlik Beyan\u0131",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "Animasyonlar\u0131 Durdur",
+        "Reset all settings": "Ayarlar\u0131 S\u0131f\u0131rla",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2130,7 +2283,6 @@
     "src/locales/uk.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u044E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0456",
-        "Reset settings": "\u0421\u043A\u0438\u043D\u0443\u0442\u0438 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
         Close: "\u0417\u0430\u043A\u0440\u0438\u0442\u0438",
         "Content adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u0432\u043C\u0456\u0441\u0442\u0443",
         "Navigation adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u043D\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457",
@@ -2148,7 +2300,6 @@
         Monochrome: "\u041C\u043E\u043D\u043E\u0445\u0440\u043E\u043C\u043D\u0438\u0439 \u0440\u0435\u0436\u0438\u043C",
         Tools: "\u0406\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0438",
         "Reading Guide": "\u041B\u0456\u043D\u0456\u0439\u043A\u0430 \u0434\u043B\u044F \u0447\u0438\u0442\u0430\u043D\u043D\u044F",
-        "Stop Animations": "\u0417\u0443\u043F\u0438\u043D\u0438\u0442\u0438 \u0430\u043D\u0456\u043C\u0430\u0446\u0456\u0457",
         "Big Cursor": "\u0412\u0435\u043B\u0438\u043A\u0438\u0439 \u043A\u0443\u0440\u0441\u043E\u0440",
         "Increase Font Size": "\u0417\u0431\u0456\u043B\u044C\u0448\u0438\u0442\u0438 \u0448\u0440\u0438\u0444\u0442",
         "Decrease Font Size": "\u0417\u043C\u0435\u043D\u0448\u0438\u0442\u0438 \u0448\u0440\u0438\u0444\u0442",
@@ -2161,7 +2312,12 @@
         "Accessibility Profiles": "\u041F\u0440\u043E\u0444\u0456\u043B\u0456 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0456",
         "Cognitive Disability": "\u041A\u043E\u0433\u043D\u0456\u0442\u0438\u0432\u043D\u0456 \u043F\u043E\u0440\u0443\u0448\u0435\u043D\u043D\u044F",
         "Seizure Safe": "\u0411\u0435\u0437\u043F\u0435\u0447\u043D\u043E \u043F\u0440\u0438 \u0435\u043F\u0456\u043B\u0435\u043F\u0441\u0456\u0457",
-        "Accessibility statement": "\u0417\u0430\u044F\u0432\u0430 \u043F\u0440\u043E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0456\u0441\u0442\u044C"
+        "Accessibility statement": "\u0417\u0430\u044F\u0432\u0430 \u043F\u0440\u043E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0456\u0441\u0442\u044C",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u0417\u0443\u043F\u0438\u043D\u0438\u0442\u0438 \u0430\u043D\u0456\u043C\u0430\u0446\u0456\u0457",
+        "Reset all settings": "\u0421\u043A\u0438\u043D\u0443\u0442\u0438 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2171,7 +2327,6 @@
     "src/locales/ur.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u0631\u0633\u0627\u0626\u06CC \u0645\u06CC\u0646\u0648",
-        "Reset settings": "\u062A\u0631\u062A\u06CC\u0628\u0627\u062A \u0631\u06CC \u0633\u06CC\u0679 \u06A9\u0631\u06CC\u06BA",
         Close: "\u0628\u0646\u062F \u06A9\u0631\u06CC\u06BA",
         "Content adjustments": "\u0645\u0648\u0627\u062F \u06A9\u06CC \u0627\u06CC\u0688\u062C\u0633\u0679\u0645\u0646\u0679",
         "Navigation adjustments": "\u0646\u06CC\u0648\u06CC\u06AF\u06CC\u0634\u0646 \u06A9\u06CC \u0627\u06CC\u0688\u062C\u0633\u0679\u0645\u0646\u0679",
@@ -2189,7 +2344,6 @@
         Monochrome: "\u0645\u0648\u0646\u0648\u06A9\u0631\u0648\u0645",
         Tools: "\u0627\u0648\u0632\u0627\u0631",
         "Reading Guide": "\u0645\u0637\u0627\u0644\u0639\u06C1 \u06AF\u0627\u0626\u06CC\u0688",
-        "Stop Animations": "\u062D\u0631\u06A9\u0627\u062A \u0631\u0648\u06A9\u06CC\u06BA",
         "Big Cursor": "\u0628\u0691\u0627 \u06A9\u0631\u0633\u0631",
         "Increase Font Size": "\u0641\u0648\u0646\u0679 \u0633\u0627\u0626\u0632 \u0628\u0691\u06BE\u0627\u0626\u06CC\u06BA",
         "Decrease Font Size": "\u0641\u0648\u0646\u0679 \u0633\u0627\u0626\u0632 \u06A9\u0645 \u06A9\u0631\u06CC\u06BA",
@@ -2202,7 +2356,12 @@
         "Accessibility Profiles": "\u0631\u0633\u0627\u0626\u06CC \u067E\u0631\u0648\u0641\u0627\u0626\u0644\u0632",
         "Cognitive Disability": "\u0627\u062F\u0631\u0627\u06A9\u06CC \u0645\u0639\u0630\u0648\u0631\u06CC",
         "Seizure Safe": "\u062F\u0648\u0631\u06D2 \u0633\u06D2 \u0645\u062D\u0641\u0648\u0638",
-        "Accessibility statement": "\u0631\u0633\u0627\u0626\u06CC \u06A9\u0627 \u0628\u06CC\u0627\u0646"
+        "Accessibility statement": "\u0631\u0633\u0627\u0626\u06CC \u06A9\u0627 \u0628\u06CC\u0627\u0646",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u062D\u0631\u06A9\u0627\u062A \u0631\u0648\u06A9\u06CC\u06BA",
+        "Reset all settings": "\u062A\u0631\u062A\u06CC\u0628\u0627\u062A \u0631\u06CC \u0633\u06CC\u0679 \u06A9\u0631\u06CC\u06BA",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2212,7 +2371,6 @@
     "src/locales/vi.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "Menu Tr\u1EE3 N\u0103ng",
-        "Reset settings": "\u0110\u1EB7t l\u1EA1i c\xE0i \u0111\u1EB7t",
         Close: "\u0110\xF3ng",
         "Content adjustments": "\u0110i\u1EC1u Ch\u1EC9nh N\u1ED9i Dung",
         "Navigation adjustments": "\u0110i\u1EC1u Ch\u1EC9nh \u0110i\u1EC1u H\u01B0\u1EDBng",
@@ -2230,7 +2388,6 @@
         Monochrome: "\u0110\u01A1n S\u1EAFc",
         Tools: "C\xF4ng C\u1EE5",
         "Reading Guide": "H\u01B0\u1EDBng D\u1EABn \u0110\u1ECDc",
-        "Stop Animations": "D\u1EEBng Ho\u1EA1t \u1EA2nh",
         "Big Cursor": "Con Tr\u1ECF L\u1EDBn",
         "Increase Font Size": "T\u0103ng C\u1EE1 Ch\u1EEF",
         "Decrease Font Size": "Gi\u1EA3m C\u1EE1 Ch\u1EEF",
@@ -2243,7 +2400,12 @@
         "Accessibility Profiles": "H\u1ED3 S\u01A1 Tr\u1EE3 N\u0103ng",
         "Cognitive Disability": "Khuy\u1EBFt T\u1EADt Nh\u1EADn Th\u1EE9c",
         "Seizure Safe": "An To\xE0n Cho \u0110\u1ED9ng Kinh",
-        "Accessibility statement": "Tuy\xEAn B\u1ED1 Tr\u1EE3 N\u0103ng"
+        "Accessibility statement": "Tuy\xEAn B\u1ED1 Tr\u1EE3 N\u0103ng",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "D\u1EEBng Ho\u1EA1t \u1EA2nh",
+        "Reset all settings": "\u0110\u1EB7t l\u1EA1i c\xE0i \u0111\u1EB7t",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2253,7 +2415,6 @@
     "src/locales/zh.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u65E0\u969C\u788D\u83DC\u5355",
-        "Reset settings": "\u91CD\u7F6E\u8BBE\u7F6E",
         Close: "\u5173\u95ED",
         "Content adjustments": "\u5185\u5BB9\u8C03\u6574",
         "Navigation adjustments": "\u5BFC\u822A\u8C03\u6574",
@@ -2271,7 +2432,6 @@
         Monochrome: "\u5355\u8272",
         Tools: "\u5DE5\u5177",
         "Reading Guide": "\u9605\u8BFB\u6307\u5357",
-        "Stop Animations": "\u505C\u6B62\u52A8\u753B",
         "Big Cursor": "\u5927\u5149\u6807",
         "Increase Font Size": "\u589E\u5927\u5B57\u4F53",
         "Decrease Font Size": "\u51CF\u5C0F\u5B57\u4F53",
@@ -2284,7 +2444,12 @@
         "Accessibility Profiles": "\u65E0\u969C\u788D\u914D\u7F6E\u6587\u4EF6",
         "Cognitive Disability": "\u8BA4\u77E5\u969C\u788D",
         "Seizure Safe": "\u766B\u75EB\u5B89\u5168",
-        "Accessibility statement": "\u65E0\u969C\u788D\u58F0\u660E"
+        "Accessibility statement": "\u65E0\u969C\u788D\u58F0\u660E",
+        ADHD: "ADHD",
+        "Low Vision": "Low Vision",
+        "Pause Animations": "\u505C\u6B62\u52A8\u753B",
+        "Reset all settings": "\u91CD\u7F6E\u8BBE\u7F6E",
+        "Shortcut:": "Shortcut:"
       };
     }
   });
@@ -2890,10 +3055,10 @@
   }
 
   // src/views/widget/widget.css
-  var widget_default = ".cya11y-widget,.cya11y-menu{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:400;-webkit-font-smoothing:antialiased}.cya11y-widget *,.cya11y-menu *{box-sizing:border-box!important}.cya11y-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.cya11y-menu-title-container{display:flex;align-items:center;gap:5px}.cya11y-menu-btn{position:fixed;z-index:500000;right:30px;bottom:30px;box-shadow:0 5px 15px #252c6126,0 2px 4px #5d649433;transition:transform .2s ease,box-shadow .2s ease;border-radius:50%;align-items:center;justify-content:center;width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);display:flex;cursor:pointer;text-decoration:none!important;background:var(--cya11y-primary-color, #1863DC);border:3px solid white!important;outline:none;color:#fff;outline:5px solid var(--cya11y-primary-color, #1863DC)}button.cya11y-menu-btn:focus-visible{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--cya11y-primary-color),0 0 0 8px color-mix(in srgb,var(--cya11y-primary-color),transparent 70%);transition:box-shadow .25s cubic-bezier(.4,0,.2,1)}.cya11y-menu-btn svg{width:85%;max-width:85%;background:transparent!important}.cya11y-menu-btn:hover{transform:scale(1.05)}.cya11y-menu-btn:active{transform:scale(.98)}.cya11y-widget-icon{width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);position:fixed;z-index:500000}@media (prefers-contrast: high){.cya11y-menu-btn{border:3px solid white!important;box-shadow:0 0 0 2px #000,0 5px 15px #252c614d}button.cya11y-menu-btn:focus-visible{box-shadow:0 0 0 2px #fff,0 0 0 4px var(--cya11y-primary-color),0 0 0 8px color-mix(in srgb,var(--cya11y-primary-color),transparent 70%);transition:box-shadow .25s cubic-bezier(.4,0,.2,1)}}@media (prefers-reduced-motion: reduce){.cya11y-menu-btn{transition:none}.cya11y-menu-btn:hover{transform:none}}@media only screen and (max-width: 768px){.cya11y-menu-btn{width:42px;height:42px}.cya11y-menu-btn svg{width:26px;height:26px;min-height:26px;min-width:26px;max-width:26px;max-height:26px}}\n";
+  var widget_default = ".cya11y-widget,.cya11y-menu{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:400;-webkit-font-smoothing:antialiased}.cya11y-widget *,.cya11y-menu *{box-sizing:border-box!important}.cya11y-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.cya11y-menu-title-container{display:flex;align-items:center;gap:5px}.cya11y-menu-btn{position:fixed;z-index:500000;right:30px;bottom:30px;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433;transition:transform .2s ease,box-shadow .2s ease;border-radius:50%;align-items:center;justify-content:center;width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);display:flex;cursor:pointer;text-decoration:none!important;background:var(--cya11y-primary-color, #1863DC);border:3px solid transparent!important;background-clip:padding-box;outline:none;color:#fff}button.cya11y-menu-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433}.cya11y-menu-btn svg{width:85%;max-width:85%;background:transparent!important}.cya11y-menu-btn:hover{transform:scale(1.05)}.cya11y-menu-btn:active{transform:scale(.98)}.cya11y-widget-icon{width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);position:fixed;z-index:500000}@media (prefers-contrast: high){.cya11y-menu-btn{border:3px solid transparent!important;background-clip:padding-box;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c614d}button.cya11y-menu-btn:focus-visible{outline:3px solid #000000;outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c6126}}@media (prefers-reduced-motion: reduce){.cya11y-menu-btn{transition:none}.cya11y-menu-btn:hover{transform:none}}@media only screen and (max-width: 768px){.cya11y-menu-btn{width:42px;height:42px}.cya11y-menu-btn svg{width:26px;height:26px;min-height:26px;min-width:26px;max-width:26px;max-height:26px}}\n";
 
   // src/views/menu/menu.html
-  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class="cya11y-menu-title cya11y-translate" id=cya11y-menu-title>Accessibility menu</h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Content adjustments</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Colour adjustments</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation adjustments</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn cya11y-translate" title="Reset all settings" type=button>Reset settings</button><a aria-label="View accessibility statement (opens in new window)" class="cya11y-menu-reset-footer-link cya11y-translate cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> Accessibility statement </a></div></section></main><footer class=cya11y-footer><div style="text-align:right;color:#293c5b;direction:ltr;border-radius:0 0 6px 6px;justify-content:center;align-items:center;font-size:12px;font-weight:400;line-height:20px;display:flex"><a aria-label="Visit CookieYes website (opens in new window)" href="https://www.cookieyes.com/product/accessibility-widget/?ref=cypbcyaw&utm_source=accessibility-widget&utm_medium=powered-by-cookieyes" rel=noopener style=margin-left:5px;line-height:0 target=_blank> <svg viewbox="0 0 150 18" fill=none height=18 width=150 xmlns=http://www.w3.org/2000/svg><path d="M6.86769 5.92616C8.00649 5.92616 8.9295 5.0079 8.9295 3.87521V3.81181C8.9295 2.67913 8.00649 1.76086 6.86769 1.76086C5.7289 1.76086 4.80591 2.67913 4.80591 3.81181V3.87521C4.80591 5.0079 5.7289 5.92616 6.86769 5.92616Z" fill=#14142A /><path d="M4.38398 10.6696L0.914338 14.0332C0.599512 14.3371 0.592972 14.8386 0.899392 15.1519L1.73083 16.0012C2.03539 16.3125 2.53518 16.3191 2.84813 16.0161L6.414 12.5584L4.38398 10.6696Z" fill=#1863DC /><path d="M12.8122 6.33273C13.1242 6.02883 13.1298 5.53008 12.8262 5.21777L11.9966 4.36569C11.6911 4.05152 11.1885 4.04592 10.8746 4.35171L6.65201 8.47692L4.30062 6.24698C4.02969 5.9906 3.6009 5.99993 3.34212 6.26935L2.37895 7.27339C2.11644 7.54559 2.12952 7.98003 2.40698 8.23826L6.55951 12.0987C6.65107 12.1835 6.794 12.1817 6.88276 12.094L8.45316 10.5586L7.07615 12.5788L10.7877 16.0272C11.1063 16.3237 11.6052 16.3069 11.9041 15.9909L12.6879 15.1593C12.9878 14.8405 12.9719 14.3389 12.6515 14.0406L8.67737 10.3396L12.8094 6.3318H12.8103L12.8122 6.33273Z" fill=#1863DC /><path d="M17.549 5.45477L14.781 13.1478H16.4021L16.9096 11.6844H19.9755L20.483 13.1478H22.1155L19.3475 5.45477H17.5499H17.549ZM17.3289 10.451L18.4426 7.23722L19.5562 10.451H17.3289Z" fill=black /><path d="M25.4225 8.2606C25.7316 8.2606 25.9907 8.33632 26.2002 8.4859C26.4099 8.63641 26.5589 8.84372 26.6469 9.10781H28.3128C28.1438 8.4253 27.8109 7.89522 27.3148 7.51752C26.8186 7.13982 26.1917 6.9505 25.4347 6.9505C24.8465 6.9505 24.3248 7.08113 23.8687 7.34146C23.4123 7.60176 23.0556 7.96905 22.7985 8.44236C22.5415 8.91566 22.4125 9.46752 22.4125 10.0989C22.4125 10.7303 22.5415 11.2822 22.7985 11.7555C23.0556 12.2288 23.4123 12.596 23.8687 12.8564C24.3239 13.1167 24.8465 13.2473 25.4347 13.2473C26.185 13.2473 26.8093 13.0533 27.3092 12.6642C27.8091 12.2752 28.1438 11.7507 28.3128 11.091H26.6469C26.4555 11.6485 26.0476 11.9278 25.4234 11.9278C24.9822 11.9278 24.6332 11.7678 24.3761 11.4488C24.1191 11.1298 23.9901 10.6801 23.9901 10.1008C23.9901 9.52149 24.1191 9.06144 24.3761 8.74147C24.6332 8.42248 24.9822 8.26249 25.4234 8.26249L25.4225 8.2606Z" fill=black /><path d="M31.7211 8.2606C32.0304 8.2606 32.2893 8.33632 32.499 8.4859C32.7087 8.63641 32.8575 8.84372 32.9458 9.10781H34.6114C34.4426 8.4253 34.1097 7.89522 33.6136 7.51752C33.1174 7.13982 32.4905 6.9505 31.7335 6.9505C31.1453 6.9505 30.6236 7.08113 30.1673 7.34146C29.7112 7.60176 29.3544 7.96905 29.0974 8.44236C28.8403 8.91566 28.7113 9.46752 28.7113 10.0989C28.7113 10.7303 28.8403 11.2822 29.0974 11.7555C29.3544 12.2288 29.7112 12.596 30.1673 12.8564C30.6227 13.1167 31.1453 13.2473 31.7335 13.2473C32.4839 13.2473 33.1079 13.0533 33.6078 12.6642C34.1077 12.2752 34.4426 11.7507 34.6114 11.091H32.9458C32.7541 11.6485 32.3462 11.9278 31.7222 11.9278C31.281 11.9278 30.9318 11.7678 30.6748 11.4488C30.4177 11.1298 30.2887 10.6801 30.2887 10.1008C30.2887 9.52149 30.4177 9.06144 30.6748 8.74147C30.9318 8.42248 31.281 8.26249 31.7222 8.26249L31.7211 8.2606Z" fill=black /><path d="M39.633 7.32531C39.1738 7.07635 38.6532 6.95142 38.0725 6.95142C37.4921 6.95142 36.937 7.08016 36.4731 7.33668C36.0103 7.5932 35.6499 7.96049 35.3928 8.43758C35.1357 8.91467 35.0067 9.46843 35.0067 10.0989C35.0067 10.7293 35.1366 11.2727 35.3986 11.7498C35.6594 12.2268 36.0237 12.5951 36.4903 12.8554C36.957 13.1157 37.4843 13.2463 38.0725 13.2463C38.8002 13.2463 39.4137 13.058 39.9148 12.6793C40.4147 12.3016 40.7532 11.8189 40.9298 11.232H39.265C39.0221 11.7233 38.6143 11.9694 38.0412 11.9694C37.6438 11.9694 37.31 11.8444 37.0375 11.5954C36.7653 11.3456 36.6117 11.001 36.5748 10.5608H41.0407C41.0701 10.3848 41.0843 10.1869 41.0843 9.96635C41.0843 9.37187 40.9571 8.84557 40.704 8.38741C40.4507 7.92925 40.094 7.57523 39.6339 7.32531H39.633ZM36.5843 9.52618C36.643 9.11535 36.8034 8.79444 37.0642 8.56347C37.3251 8.3325 37.6467 8.21702 38.0289 8.21702C38.433 8.21702 38.7755 8.33628 39.0544 8.57484C39.3332 8.81339 39.4773 9.13049 39.484 9.52712H36.5832L36.5843 9.52618Z" fill=black /><path d="M45.5385 9.88957C45.252 9.7722 44.8878 9.6586 44.4465 9.54881C44.0131 9.439 43.6933 9.33109 43.4876 9.22413C43.2817 9.11809 43.1783 8.96191 43.1783 8.75649C43.1783 8.57285 43.2532 8.42992 43.404 8.32769C43.555 8.22546 43.7703 8.17339 44.0491 8.17339C44.3507 8.17339 44.5918 8.24534 44.7719 8.38826C44.9522 8.53121 45.0528 8.72431 45.0755 8.96569H46.5534C46.5098 8.34946 46.2708 7.86005 45.8362 7.49656C45.4028 7.13307 44.8221 6.95227 44.0936 6.95227C43.6004 6.95227 43.1727 7.03273 42.8084 7.19461C42.4442 7.35646 42.1653 7.57609 41.9698 7.85438C41.7743 8.13363 41.6776 8.44128 41.6776 8.77922C41.6776 9.19003 41.7819 9.51663 41.9916 9.75894C42.2013 10.0013 42.4508 10.1811 42.7419 10.2985C43.0322 10.4159 43.4051 10.5295 43.8612 10.6393C44.3024 10.7567 44.624 10.8646 44.8259 10.964C45.0281 11.0634 45.1295 11.212 45.1295 11.4098C45.1295 11.5935 45.047 11.744 44.882 11.8614C44.7161 11.9787 44.4863 12.0374 44.1924 12.0374C43.8984 12.0374 43.6393 11.9607 43.4373 11.8065C43.2352 11.6522 43.1196 11.4581 43.0902 11.2234H41.5353C41.5573 11.5973 41.6843 11.939 41.9158 12.2466C42.1473 12.5543 42.4613 12.7985 42.8587 12.9784C43.2561 13.1582 43.7038 13.2481 44.2048 13.2481C44.7056 13.2481 45.1144 13.1696 45.4786 13.0115C45.8429 12.8534 46.1218 12.6357 46.3173 12.3564C46.5116 12.0781 46.6095 11.762 46.6095 11.4098C46.6017 11.0066 46.4936 10.6819 46.2841 10.4358C46.0744 10.1897 45.8269 10.0089 45.5393 9.89149L45.5385 9.88957Z" fill=black /><path d="M51.2045 9.88957C50.9181 9.7722 50.5538 9.6586 50.1128 9.54881C49.6791 9.439 49.3596 9.33109 49.1536 9.22413C48.9479 9.11809 48.8445 8.96191 48.8445 8.75649C48.8445 8.57285 48.9195 8.42992 49.0703 8.32769C49.221 8.22546 49.4363 8.17339 49.7152 8.17339C50.017 8.17339 50.2578 8.24534 50.4382 8.38826C50.6183 8.53121 50.7199 8.72431 50.7417 8.96569H52.2195C52.175 8.34946 51.9368 7.86005 51.5025 7.49656C51.0679 7.13307 50.4884 6.95227 49.7599 6.95227C49.2675 6.95227 48.8387 7.03273 48.4745 7.19461C48.1102 7.35646 47.8313 7.57609 47.6359 7.85438C47.4415 8.13363 47.3439 8.44128 47.3439 8.77922C47.3439 9.19003 47.4491 9.51663 47.6588 9.75894C47.8683 10.0013 48.1178 10.1811 48.4091 10.2985C48.6993 10.4159 49.072 10.5295 49.5284 10.6393C49.9696 10.7567 50.2912 10.8646 50.4931 10.964C50.6952 11.0634 50.7966 11.212 50.7966 11.4098C50.7966 11.5935 50.7141 11.744 50.548 11.8614C50.383 11.9787 50.1526 12.0374 49.8584 12.0374C49.5644 12.0374 49.3055 11.9607 49.1034 11.8065C48.9015 11.6522 48.7856 11.4581 48.7562 11.2234H47.2015C47.2233 11.5973 47.3503 11.939 47.5818 12.2466C47.8133 12.5552 48.1273 12.7985 48.5247 12.9784C48.9221 13.1582 49.37 13.2481 49.87 13.2481C50.3699 13.2481 50.7795 13.1696 51.1438 13.0115C51.5081 12.8534 51.7869 12.6357 51.9824 12.3564C52.1768 12.0781 52.2746 11.762 52.2746 11.4098C52.2671 11.0066 52.1588 10.6819 51.9493 10.4358C51.7396 10.1897 51.492 10.0089 51.2045 9.89149V9.88957Z" fill=black /><path d="M57.158 5.46527L55.5152 8.97622L53.8609 5.46527H52.1183L54.7327 10.4728V13.147H56.276V10.4728L58.8788 5.46527H57.158Z" fill=black /><path d="M62.645 7.32534C62.1849 7.07637 61.6652 6.95142 61.0845 6.95142C60.5041 6.95142 59.949 7.08016 59.4851 7.33668C59.0223 7.59322 58.6619 7.96049 58.4039 8.43758C58.1468 8.91469 58.0178 9.46845 58.0178 10.0998C58.0178 10.7312 58.1486 11.2736 58.4094 11.7507C58.6703 12.2278 59.0346 12.596 59.5014 12.8563C59.9681 13.1167 60.4954 13.2473 61.0836 13.2473C61.8111 13.2473 62.4249 13.0589 62.9257 12.6803C63.4256 12.3026 63.7643 11.8198 63.9409 11.2329H62.2761C62.0332 11.7242 61.6252 11.9703 61.0523 11.9703C60.6549 11.9703 60.3209 11.8454 60.0487 11.5964C59.7765 11.3475 59.6228 11.0019 59.5859 10.5618H64.0518C64.0812 10.3857 64.0954 10.1879 64.0954 9.96731C64.0954 9.37283 63.9682 8.84653 63.7149 8.38837C63.4616 7.93021 63.1051 7.57619 62.645 7.32627V7.32534ZM59.5963 9.52618C59.655 9.11535 59.8145 8.79447 60.0762 8.5635C60.3371 8.33252 60.6587 8.21704 61.0409 8.21704C61.445 8.21704 61.7875 8.33631 62.0664 8.57484C62.3461 8.81339 62.4893 9.13051 62.4969 9.52714H59.5963V9.52618Z" fill=black /><path d="M69.2994 10.4339C69.0899 10.1878 68.8422 10.007 68.5549 9.88957C68.2685 9.7722 67.9042 9.6586 67.463 9.54881C67.0295 9.439 66.7089 9.33109 66.5031 9.22413C66.2972 9.11809 66.1938 8.96191 66.1938 8.75649C66.1938 8.57285 66.2687 8.42992 66.4195 8.32769C66.5705 8.22546 66.7858 8.17339 67.0647 8.17339C67.3662 8.17339 67.6073 8.24534 67.7874 8.38826C67.9678 8.53121 68.0683 8.72431 68.091 8.96569H69.569C69.5243 8.34946 69.2852 7.86005 68.8518 7.49656C68.4183 7.13307 67.8377 6.95227 67.1091 6.95227C66.617 6.95227 66.188 7.03273 65.824 7.19461C65.4597 7.35646 65.1808 7.57609 64.9854 7.85438C64.7908 8.13363 64.6931 8.44128 64.6931 8.77922C64.6931 9.19003 64.7986 9.51663 65.0072 9.75894C65.2169 10.0013 65.4662 10.1811 65.7575 10.2985C66.0477 10.4159 66.4206 10.5295 66.8768 10.6393C67.318 10.7567 67.6395 10.8646 67.8415 10.964C68.0436 11.0634 68.145 11.212 68.145 11.4098C68.145 11.5935 68.0625 11.744 67.8966 11.8614C67.7314 11.9787 67.501 12.0374 67.207 12.0374C66.9128 12.0374 66.6539 11.9607 66.4518 11.8065C66.2498 11.6522 66.134 11.4581 66.1046 11.2234H64.5499C64.5717 11.5973 64.6989 11.939 64.9302 12.2466C65.1617 12.5552 65.4757 12.7985 65.8731 12.9784C66.2707 13.1582 66.7184 13.2481 67.2183 13.2481C67.7183 13.2481 68.1279 13.1696 68.4922 13.0115C68.8564 12.8534 69.1353 12.6357 69.3308 12.3564C69.5254 12.0772 69.623 11.762 69.623 11.4098C69.6154 11.0066 69.5071 10.6819 69.2977 10.4358L69.2994 10.4339Z" fill=black /><path d="M75.8396 8.325C76.1036 7.907 76.4666 7.566 76.9286 7.302C77.3906 7.038 77.9002 6.906 78.4576 6.906C79.1836 6.906 79.7629 7.12233 80.1956 7.555C80.6356 7.98033 80.8556 8.55967 80.8556 9.293C80.8556 9.513 80.8336 9.744 80.7896 9.986C80.6796 10.602 80.4596 11.1447 80.1296 11.614C79.7996 12.0833 79.3926 12.4463 78.9086 12.703C78.4319 12.9597 77.9186 13.088 77.3686 13.088C76.8039 13.088 76.3382 12.9597 75.9716 12.703C75.6049 12.439 75.3592 12.098 75.2346 11.68L75.0036 13H74.2446L75.6856 4.86H76.4446L75.8396 8.325ZM80.0086 9.986C80.0452 9.766 80.0636 9.579 80.0636 9.425C80.0636 8.84567 79.8912 8.39467 79.5466 8.072C79.2092 7.742 78.7619 7.577 78.2046 7.577C77.7939 7.577 77.4016 7.676 77.0276 7.874C76.6536 8.072 76.3346 8.35433 76.0706 8.721C75.8066 9.08767 75.6306 9.513 75.5426 9.997C75.5059 10.2023 75.4876 10.3857 75.4876 10.547C75.4876 11.119 75.6599 11.5737 76.0046 11.911C76.3492 12.2483 76.7966 12.417 77.3466 12.417C77.7719 12.417 78.1679 12.3217 78.5346 12.131C78.9086 11.933 79.2239 11.6507 79.4806 11.284C79.7446 10.91 79.9206 10.4773 80.0086 9.986ZM82.8664 6.994L83.9994 12.087L86.8704 6.994H87.6734L82.5584 15.827H81.7444L83.4164 12.956L82.0084 6.994H82.8664Z" fill=#525363 /><g clip-path=url(#clip0_3_25)><path d="M95.6822 5.20178C97.605 5.20178 99.0423 6.30539 99.5084 8.1113H97.3525C97.0224 7.38893 96.4009 7.04782 95.6628 7.04782C94.4587 7.04782 93.6235 7.97082 93.6235 9.45569C93.6235 10.9405 94.4587 11.8635 95.6628 11.8635C96.4009 11.8635 97.0224 11.5024 97.3525 10.8001H99.5084C99.0423 12.606 97.605 13.7096 95.6822 13.7096C93.2933 13.6895 91.623 11.9438 91.623 9.43563C91.623 6.92742 93.2933 5.20178 95.6822 5.20178Z" fill=#404041 /><path d="M103.432 13.7297C101.549 13.7297 100.131 12.4254 100.131 10.3185C100.131 8.21161 101.587 6.90735 103.471 6.90735C105.355 6.90735 106.812 8.21161 106.812 10.3185C106.812 12.4254 105.316 13.7297 103.432 13.7297ZM103.432 11.9639C104.132 11.9639 104.792 11.4221 104.792 10.3185C104.792 9.19483 104.151 8.67311 103.452 8.67311C102.733 8.67311 102.112 9.19483 102.112 10.3185C102.131 11.4221 102.714 11.9639 103.432 11.9639Z" fill=#404041 /><path d="M110.714 13.7297C108.83 13.7297 107.413 12.4254 107.413 10.3185C107.413 8.21161 108.869 6.90735 110.753 6.90735C112.637 6.90735 114.094 8.21161 114.094 10.3185C114.094 12.4254 112.598 13.7297 110.714 13.7297ZM110.714 11.9639C111.414 11.9639 112.074 11.4221 112.074 10.3185C112.074 9.19483 111.433 8.67311 110.734 8.67311C110.015 8.67311 109.394 9.19483 109.394 10.3185C109.394 11.4221 109.996 11.9639 110.714 11.9639Z" fill=#404041 /><path d="M114.793 5.20178H116.755V9.69646L118.697 7.00769H121.125L118.464 10.3185L121.164 13.6293H118.736L116.774 10.8402V13.6293H114.813V5.20178H114.793Z" fill=#404041 /><path d="M121.592 5.22183C121.592 4.5998 122.058 4.11823 122.757 4.11823C123.457 4.11823 123.923 4.5998 123.923 5.22183C123.923 5.8238 123.457 6.30537 122.757 6.30537C122.058 6.30537 121.592 5.8238 121.592 5.22183ZM121.786 6.9876H123.748V13.6093H121.786V6.9876Z" fill=#404041 /><path d="M127.708 13.7297C125.824 13.7297 124.464 12.4254 124.464 10.3185C124.464 8.21161 125.805 6.90735 127.708 6.90735C129.572 6.90735 130.912 8.19155 130.912 10.2182C130.912 10.3988 130.893 10.6195 130.874 10.8201H126.426C126.504 11.683 127.009 12.0843 127.65 12.0843C128.194 12.0843 128.504 11.8034 128.679 11.4422H130.777C130.447 12.7264 129.32 13.7297 127.708 13.7297ZM126.446 9.67641H128.912C128.912 8.95405 128.368 8.53266 127.708 8.53266C127.048 8.53266 126.562 8.93397 126.446 9.67641Z" fill=#404041 /><path d="M139.984 13.7297C138.1 13.7297 136.741 12.4254 136.741 10.3185C136.741 8.21161 138.081 6.90735 139.984 6.90735C141.849 6.90735 143.189 8.19155 143.189 10.2182C143.189 10.3988 143.17 10.6195 143.15 10.8201H138.703C138.78 11.683 139.285 12.0843 139.926 12.0843C140.47 12.0843 140.781 11.8034 140.956 11.4422H143.053C142.723 12.7264 141.577 13.7297 139.984 13.7297ZM138.703 9.67641H141.169C141.169 8.95405 140.626 8.53266 139.965 8.53266C139.324 8.53266 138.819 8.93397 138.703 9.67641Z" fill=#404041 /><path d="M146.745 13.7297C145.036 13.7297 143.889 12.7464 143.792 11.4622H145.735C145.773 11.9237 146.181 12.2247 146.725 12.2247C147.23 12.2247 147.502 11.9839 147.502 11.683C147.502 10.6195 144.006 11.382 144.006 8.95405C144.006 7.83036 144.938 6.90735 146.609 6.90735C148.26 6.90735 149.192 7.85044 149.308 9.15469H147.483C147.424 8.71325 147.094 8.41227 146.531 8.41227C146.065 8.41227 145.812 8.59286 145.812 8.91391C145.812 9.97739 149.289 9.21488 149.328 11.703C149.347 12.8468 148.357 13.7297 146.745 13.7297Z" fill=#404041 /><path d="M132.952 7.10803H130.912L132.777 10.6797H134.816L132.952 7.10803Z" fill=#0056A7 /><path d="M132.738 10.5794L132.796 10.6798H134.835L133.495 8.17157L132.738 10.5794Z" fill=#2E3191 /><path d="M136.467 4.09808L132.797 10.6796H134.836L138.507 4.09808H136.467Z" fill=#0056A7 /><path d="M132.797 11.6629H134.778V13.7297H132.797V11.6629Z" fill=#0056A7 /></g><defs><clippath id=clip0_3_25><rect transform="translate(91.623 4.2702)" fill=white height=9.45953 width=57.7031 /></clippath></defs></svg> </a></div></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
+  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class=cya11y-menu-title id=cya11y-menu-title><span class=cya11y-translate>Accessibility menu</span></h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Content adjustments</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Colour adjustments</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation adjustments</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn" title="Reset all settings" type=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-translate>Reset all settings</span></button><a aria-label="View accessibility statement (opens in new window)" class="cya11y-menu-reset-footer-link cya11y-translate cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> Accessibility statement </a></div></section></main><footer class=cya11y-footer><div style="text-align:right;color:#293c5b;direction:ltr;border-radius:0 0 6px 6px;justify-content:center;align-items:center;font-size:12px;font-weight:400;line-height:20px;display:flex"><a aria-label="Visit CookieYes website (opens in new window)" href="https://www.cookieyes.com/product/accessibility-widget/?ref=cypbcyaw&utm_source=accessibility-widget&utm_medium=powered-by-cookieyes" rel=noopener style=margin-left:5px;line-height:0 target=_blank> <svg viewbox="0 0 150 18" fill=none height=18 width=150 xmlns=http://www.w3.org/2000/svg><path d="M6.86769 5.92616C8.00649 5.92616 8.9295 5.0079 8.9295 3.87521V3.81181C8.9295 2.67913 8.00649 1.76086 6.86769 1.76086C5.7289 1.76086 4.80591 2.67913 4.80591 3.81181V3.87521C4.80591 5.0079 5.7289 5.92616 6.86769 5.92616Z" fill=#14142A /><path d="M4.38398 10.6696L0.914338 14.0332C0.599512 14.3371 0.592972 14.8386 0.899392 15.1519L1.73083 16.0012C2.03539 16.3125 2.53518 16.3191 2.84813 16.0161L6.414 12.5584L4.38398 10.6696Z" fill=#1863DC /><path d="M12.8122 6.33273C13.1242 6.02883 13.1298 5.53008 12.8262 5.21777L11.9966 4.36569C11.6911 4.05152 11.1885 4.04592 10.8746 4.35171L6.65201 8.47692L4.30062 6.24698C4.02969 5.9906 3.6009 5.99993 3.34212 6.26935L2.37895 7.27339C2.11644 7.54559 2.12952 7.98003 2.40698 8.23826L6.55951 12.0987C6.65107 12.1835 6.794 12.1817 6.88276 12.094L8.45316 10.5586L7.07615 12.5788L10.7877 16.0272C11.1063 16.3237 11.6052 16.3069 11.9041 15.9909L12.6879 15.1593C12.9878 14.8405 12.9719 14.3389 12.6515 14.0406L8.67737 10.3396L12.8094 6.3318H12.8103L12.8122 6.33273Z" fill=#1863DC /><path d="M17.549 5.45477L14.781 13.1478H16.4021L16.9096 11.6844H19.9755L20.483 13.1478H22.1155L19.3475 5.45477H17.5499H17.549ZM17.3289 10.451L18.4426 7.23722L19.5562 10.451H17.3289Z" fill=black /><path d="M25.4225 8.2606C25.7316 8.2606 25.9907 8.33632 26.2002 8.4859C26.4099 8.63641 26.5589 8.84372 26.6469 9.10781H28.3128C28.1438 8.4253 27.8109 7.89522 27.3148 7.51752C26.8186 7.13982 26.1917 6.9505 25.4347 6.9505C24.8465 6.9505 24.3248 7.08113 23.8687 7.34146C23.4123 7.60176 23.0556 7.96905 22.7985 8.44236C22.5415 8.91566 22.4125 9.46752 22.4125 10.0989C22.4125 10.7303 22.5415 11.2822 22.7985 11.7555C23.0556 12.2288 23.4123 12.596 23.8687 12.8564C24.3239 13.1167 24.8465 13.2473 25.4347 13.2473C26.185 13.2473 26.8093 13.0533 27.3092 12.6642C27.8091 12.2752 28.1438 11.7507 28.3128 11.091H26.6469C26.4555 11.6485 26.0476 11.9278 25.4234 11.9278C24.9822 11.9278 24.6332 11.7678 24.3761 11.4488C24.1191 11.1298 23.9901 10.6801 23.9901 10.1008C23.9901 9.52149 24.1191 9.06144 24.3761 8.74147C24.6332 8.42248 24.9822 8.26249 25.4234 8.26249L25.4225 8.2606Z" fill=black /><path d="M31.7211 8.2606C32.0304 8.2606 32.2893 8.33632 32.499 8.4859C32.7087 8.63641 32.8575 8.84372 32.9458 9.10781H34.6114C34.4426 8.4253 34.1097 7.89522 33.6136 7.51752C33.1174 7.13982 32.4905 6.9505 31.7335 6.9505C31.1453 6.9505 30.6236 7.08113 30.1673 7.34146C29.7112 7.60176 29.3544 7.96905 29.0974 8.44236C28.8403 8.91566 28.7113 9.46752 28.7113 10.0989C28.7113 10.7303 28.8403 11.2822 29.0974 11.7555C29.3544 12.2288 29.7112 12.596 30.1673 12.8564C30.6227 13.1167 31.1453 13.2473 31.7335 13.2473C32.4839 13.2473 33.1079 13.0533 33.6078 12.6642C34.1077 12.2752 34.4426 11.7507 34.6114 11.091H32.9458C32.7541 11.6485 32.3462 11.9278 31.7222 11.9278C31.281 11.9278 30.9318 11.7678 30.6748 11.4488C30.4177 11.1298 30.2887 10.6801 30.2887 10.1008C30.2887 9.52149 30.4177 9.06144 30.6748 8.74147C30.9318 8.42248 31.281 8.26249 31.7222 8.26249L31.7211 8.2606Z" fill=black /><path d="M39.633 7.32531C39.1738 7.07635 38.6532 6.95142 38.0725 6.95142C37.4921 6.95142 36.937 7.08016 36.4731 7.33668C36.0103 7.5932 35.6499 7.96049 35.3928 8.43758C35.1357 8.91467 35.0067 9.46843 35.0067 10.0989C35.0067 10.7293 35.1366 11.2727 35.3986 11.7498C35.6594 12.2268 36.0237 12.5951 36.4903 12.8554C36.957 13.1157 37.4843 13.2463 38.0725 13.2463C38.8002 13.2463 39.4137 13.058 39.9148 12.6793C40.4147 12.3016 40.7532 11.8189 40.9298 11.232H39.265C39.0221 11.7233 38.6143 11.9694 38.0412 11.9694C37.6438 11.9694 37.31 11.8444 37.0375 11.5954C36.7653 11.3456 36.6117 11.001 36.5748 10.5608H41.0407C41.0701 10.3848 41.0843 10.1869 41.0843 9.96635C41.0843 9.37187 40.9571 8.84557 40.704 8.38741C40.4507 7.92925 40.094 7.57523 39.6339 7.32531H39.633ZM36.5843 9.52618C36.643 9.11535 36.8034 8.79444 37.0642 8.56347C37.3251 8.3325 37.6467 8.21702 38.0289 8.21702C38.433 8.21702 38.7755 8.33628 39.0544 8.57484C39.3332 8.81339 39.4773 9.13049 39.484 9.52712H36.5832L36.5843 9.52618Z" fill=black /><path d="M45.5385 9.88957C45.252 9.7722 44.8878 9.6586 44.4465 9.54881C44.0131 9.439 43.6933 9.33109 43.4876 9.22413C43.2817 9.11809 43.1783 8.96191 43.1783 8.75649C43.1783 8.57285 43.2532 8.42992 43.404 8.32769C43.555 8.22546 43.7703 8.17339 44.0491 8.17339C44.3507 8.17339 44.5918 8.24534 44.7719 8.38826C44.9522 8.53121 45.0528 8.72431 45.0755 8.96569H46.5534C46.5098 8.34946 46.2708 7.86005 45.8362 7.49656C45.4028 7.13307 44.8221 6.95227 44.0936 6.95227C43.6004 6.95227 43.1727 7.03273 42.8084 7.19461C42.4442 7.35646 42.1653 7.57609 41.9698 7.85438C41.7743 8.13363 41.6776 8.44128 41.6776 8.77922C41.6776 9.19003 41.7819 9.51663 41.9916 9.75894C42.2013 10.0013 42.4508 10.1811 42.7419 10.2985C43.0322 10.4159 43.4051 10.5295 43.8612 10.6393C44.3024 10.7567 44.624 10.8646 44.8259 10.964C45.0281 11.0634 45.1295 11.212 45.1295 11.4098C45.1295 11.5935 45.047 11.744 44.882 11.8614C44.7161 11.9787 44.4863 12.0374 44.1924 12.0374C43.8984 12.0374 43.6393 11.9607 43.4373 11.8065C43.2352 11.6522 43.1196 11.4581 43.0902 11.2234H41.5353C41.5573 11.5973 41.6843 11.939 41.9158 12.2466C42.1473 12.5543 42.4613 12.7985 42.8587 12.9784C43.2561 13.1582 43.7038 13.2481 44.2048 13.2481C44.7056 13.2481 45.1144 13.1696 45.4786 13.0115C45.8429 12.8534 46.1218 12.6357 46.3173 12.3564C46.5116 12.0781 46.6095 11.762 46.6095 11.4098C46.6017 11.0066 46.4936 10.6819 46.2841 10.4358C46.0744 10.1897 45.8269 10.0089 45.5393 9.89149L45.5385 9.88957Z" fill=black /><path d="M51.2045 9.88957C50.9181 9.7722 50.5538 9.6586 50.1128 9.54881C49.6791 9.439 49.3596 9.33109 49.1536 9.22413C48.9479 9.11809 48.8445 8.96191 48.8445 8.75649C48.8445 8.57285 48.9195 8.42992 49.0703 8.32769C49.221 8.22546 49.4363 8.17339 49.7152 8.17339C50.017 8.17339 50.2578 8.24534 50.4382 8.38826C50.6183 8.53121 50.7199 8.72431 50.7417 8.96569H52.2195C52.175 8.34946 51.9368 7.86005 51.5025 7.49656C51.0679 7.13307 50.4884 6.95227 49.7599 6.95227C49.2675 6.95227 48.8387 7.03273 48.4745 7.19461C48.1102 7.35646 47.8313 7.57609 47.6359 7.85438C47.4415 8.13363 47.3439 8.44128 47.3439 8.77922C47.3439 9.19003 47.4491 9.51663 47.6588 9.75894C47.8683 10.0013 48.1178 10.1811 48.4091 10.2985C48.6993 10.4159 49.072 10.5295 49.5284 10.6393C49.9696 10.7567 50.2912 10.8646 50.4931 10.964C50.6952 11.0634 50.7966 11.212 50.7966 11.4098C50.7966 11.5935 50.7141 11.744 50.548 11.8614C50.383 11.9787 50.1526 12.0374 49.8584 12.0374C49.5644 12.0374 49.3055 11.9607 49.1034 11.8065C48.9015 11.6522 48.7856 11.4581 48.7562 11.2234H47.2015C47.2233 11.5973 47.3503 11.939 47.5818 12.2466C47.8133 12.5552 48.1273 12.7985 48.5247 12.9784C48.9221 13.1582 49.37 13.2481 49.87 13.2481C50.3699 13.2481 50.7795 13.1696 51.1438 13.0115C51.5081 12.8534 51.7869 12.6357 51.9824 12.3564C52.1768 12.0781 52.2746 11.762 52.2746 11.4098C52.2671 11.0066 52.1588 10.6819 51.9493 10.4358C51.7396 10.1897 51.492 10.0089 51.2045 9.89149V9.88957Z" fill=black /><path d="M57.158 5.46527L55.5152 8.97622L53.8609 5.46527H52.1183L54.7327 10.4728V13.147H56.276V10.4728L58.8788 5.46527H57.158Z" fill=black /><path d="M62.645 7.32534C62.1849 7.07637 61.6652 6.95142 61.0845 6.95142C60.5041 6.95142 59.949 7.08016 59.4851 7.33668C59.0223 7.59322 58.6619 7.96049 58.4039 8.43758C58.1468 8.91469 58.0178 9.46845 58.0178 10.0998C58.0178 10.7312 58.1486 11.2736 58.4094 11.7507C58.6703 12.2278 59.0346 12.596 59.5014 12.8563C59.9681 13.1167 60.4954 13.2473 61.0836 13.2473C61.8111 13.2473 62.4249 13.0589 62.9257 12.6803C63.4256 12.3026 63.7643 11.8198 63.9409 11.2329H62.2761C62.0332 11.7242 61.6252 11.9703 61.0523 11.9703C60.6549 11.9703 60.3209 11.8454 60.0487 11.5964C59.7765 11.3475 59.6228 11.0019 59.5859 10.5618H64.0518C64.0812 10.3857 64.0954 10.1879 64.0954 9.96731C64.0954 9.37283 63.9682 8.84653 63.7149 8.38837C63.4616 7.93021 63.1051 7.57619 62.645 7.32627V7.32534ZM59.5963 9.52618C59.655 9.11535 59.8145 8.79447 60.0762 8.5635C60.3371 8.33252 60.6587 8.21704 61.0409 8.21704C61.445 8.21704 61.7875 8.33631 62.0664 8.57484C62.3461 8.81339 62.4893 9.13051 62.4969 9.52714H59.5963V9.52618Z" fill=black /><path d="M69.2994 10.4339C69.0899 10.1878 68.8422 10.007 68.5549 9.88957C68.2685 9.7722 67.9042 9.6586 67.463 9.54881C67.0295 9.439 66.7089 9.33109 66.5031 9.22413C66.2972 9.11809 66.1938 8.96191 66.1938 8.75649C66.1938 8.57285 66.2687 8.42992 66.4195 8.32769C66.5705 8.22546 66.7858 8.17339 67.0647 8.17339C67.3662 8.17339 67.6073 8.24534 67.7874 8.38826C67.9678 8.53121 68.0683 8.72431 68.091 8.96569H69.569C69.5243 8.34946 69.2852 7.86005 68.8518 7.49656C68.4183 7.13307 67.8377 6.95227 67.1091 6.95227C66.617 6.95227 66.188 7.03273 65.824 7.19461C65.4597 7.35646 65.1808 7.57609 64.9854 7.85438C64.7908 8.13363 64.6931 8.44128 64.6931 8.77922C64.6931 9.19003 64.7986 9.51663 65.0072 9.75894C65.2169 10.0013 65.4662 10.1811 65.7575 10.2985C66.0477 10.4159 66.4206 10.5295 66.8768 10.6393C67.318 10.7567 67.6395 10.8646 67.8415 10.964C68.0436 11.0634 68.145 11.212 68.145 11.4098C68.145 11.5935 68.0625 11.744 67.8966 11.8614C67.7314 11.9787 67.501 12.0374 67.207 12.0374C66.9128 12.0374 66.6539 11.9607 66.4518 11.8065C66.2498 11.6522 66.134 11.4581 66.1046 11.2234H64.5499C64.5717 11.5973 64.6989 11.939 64.9302 12.2466C65.1617 12.5552 65.4757 12.7985 65.8731 12.9784C66.2707 13.1582 66.7184 13.2481 67.2183 13.2481C67.7183 13.2481 68.1279 13.1696 68.4922 13.0115C68.8564 12.8534 69.1353 12.6357 69.3308 12.3564C69.5254 12.0772 69.623 11.762 69.623 11.4098C69.6154 11.0066 69.5071 10.6819 69.2977 10.4358L69.2994 10.4339Z" fill=black /><path d="M75.8396 8.325C76.1036 7.907 76.4666 7.566 76.9286 7.302C77.3906 7.038 77.9002 6.906 78.4576 6.906C79.1836 6.906 79.7629 7.12233 80.1956 7.555C80.6356 7.98033 80.8556 8.55967 80.8556 9.293C80.8556 9.513 80.8336 9.744 80.7896 9.986C80.6796 10.602 80.4596 11.1447 80.1296 11.614C79.7996 12.0833 79.3926 12.4463 78.9086 12.703C78.4319 12.9597 77.9186 13.088 77.3686 13.088C76.8039 13.088 76.3382 12.9597 75.9716 12.703C75.6049 12.439 75.3592 12.098 75.2346 11.68L75.0036 13H74.2446L75.6856 4.86H76.4446L75.8396 8.325ZM80.0086 9.986C80.0452 9.766 80.0636 9.579 80.0636 9.425C80.0636 8.84567 79.8912 8.39467 79.5466 8.072C79.2092 7.742 78.7619 7.577 78.2046 7.577C77.7939 7.577 77.4016 7.676 77.0276 7.874C76.6536 8.072 76.3346 8.35433 76.0706 8.721C75.8066 9.08767 75.6306 9.513 75.5426 9.997C75.5059 10.2023 75.4876 10.3857 75.4876 10.547C75.4876 11.119 75.6599 11.5737 76.0046 11.911C76.3492 12.2483 76.7966 12.417 77.3466 12.417C77.7719 12.417 78.1679 12.3217 78.5346 12.131C78.9086 11.933 79.2239 11.6507 79.4806 11.284C79.7446 10.91 79.9206 10.4773 80.0086 9.986ZM82.8664 6.994L83.9994 12.087L86.8704 6.994H87.6734L82.5584 15.827H81.7444L83.4164 12.956L82.0084 6.994H82.8664Z" fill=#525363 /><g clip-path=url(#clip0_3_25)><path d="M95.6822 5.20178C97.605 5.20178 99.0423 6.30539 99.5084 8.1113H97.3525C97.0224 7.38893 96.4009 7.04782 95.6628 7.04782C94.4587 7.04782 93.6235 7.97082 93.6235 9.45569C93.6235 10.9405 94.4587 11.8635 95.6628 11.8635C96.4009 11.8635 97.0224 11.5024 97.3525 10.8001H99.5084C99.0423 12.606 97.605 13.7096 95.6822 13.7096C93.2933 13.6895 91.623 11.9438 91.623 9.43563C91.623 6.92742 93.2933 5.20178 95.6822 5.20178Z" fill=#404041 /><path d="M103.432 13.7297C101.549 13.7297 100.131 12.4254 100.131 10.3185C100.131 8.21161 101.587 6.90735 103.471 6.90735C105.355 6.90735 106.812 8.21161 106.812 10.3185C106.812 12.4254 105.316 13.7297 103.432 13.7297ZM103.432 11.9639C104.132 11.9639 104.792 11.4221 104.792 10.3185C104.792 9.19483 104.151 8.67311 103.452 8.67311C102.733 8.67311 102.112 9.19483 102.112 10.3185C102.131 11.4221 102.714 11.9639 103.432 11.9639Z" fill=#404041 /><path d="M110.714 13.7297C108.83 13.7297 107.413 12.4254 107.413 10.3185C107.413 8.21161 108.869 6.90735 110.753 6.90735C112.637 6.90735 114.094 8.21161 114.094 10.3185C114.094 12.4254 112.598 13.7297 110.714 13.7297ZM110.714 11.9639C111.414 11.9639 112.074 11.4221 112.074 10.3185C112.074 9.19483 111.433 8.67311 110.734 8.67311C110.015 8.67311 109.394 9.19483 109.394 10.3185C109.394 11.4221 109.996 11.9639 110.714 11.9639Z" fill=#404041 /><path d="M114.793 5.20178H116.755V9.69646L118.697 7.00769H121.125L118.464 10.3185L121.164 13.6293H118.736L116.774 10.8402V13.6293H114.813V5.20178H114.793Z" fill=#404041 /><path d="M121.592 5.22183C121.592 4.5998 122.058 4.11823 122.757 4.11823C123.457 4.11823 123.923 4.5998 123.923 5.22183C123.923 5.8238 123.457 6.30537 122.757 6.30537C122.058 6.30537 121.592 5.8238 121.592 5.22183ZM121.786 6.9876H123.748V13.6093H121.786V6.9876Z" fill=#404041 /><path d="M127.708 13.7297C125.824 13.7297 124.464 12.4254 124.464 10.3185C124.464 8.21161 125.805 6.90735 127.708 6.90735C129.572 6.90735 130.912 8.19155 130.912 10.2182C130.912 10.3988 130.893 10.6195 130.874 10.8201H126.426C126.504 11.683 127.009 12.0843 127.65 12.0843C128.194 12.0843 128.504 11.8034 128.679 11.4422H130.777C130.447 12.7264 129.32 13.7297 127.708 13.7297ZM126.446 9.67641H128.912C128.912 8.95405 128.368 8.53266 127.708 8.53266C127.048 8.53266 126.562 8.93397 126.446 9.67641Z" fill=#404041 /><path d="M139.984 13.7297C138.1 13.7297 136.741 12.4254 136.741 10.3185C136.741 8.21161 138.081 6.90735 139.984 6.90735C141.849 6.90735 143.189 8.19155 143.189 10.2182C143.189 10.3988 143.17 10.6195 143.15 10.8201H138.703C138.78 11.683 139.285 12.0843 139.926 12.0843C140.47 12.0843 140.781 11.8034 140.956 11.4422H143.053C142.723 12.7264 141.577 13.7297 139.984 13.7297ZM138.703 9.67641H141.169C141.169 8.95405 140.626 8.53266 139.965 8.53266C139.324 8.53266 138.819 8.93397 138.703 9.67641Z" fill=#404041 /><path d="M146.745 13.7297C145.036 13.7297 143.889 12.7464 143.792 11.4622H145.735C145.773 11.9237 146.181 12.2247 146.725 12.2247C147.23 12.2247 147.502 11.9839 147.502 11.683C147.502 10.6195 144.006 11.382 144.006 8.95405C144.006 7.83036 144.938 6.90735 146.609 6.90735C148.26 6.90735 149.192 7.85044 149.308 9.15469H147.483C147.424 8.71325 147.094 8.41227 146.531 8.41227C146.065 8.41227 145.812 8.59286 145.812 8.91391C145.812 9.97739 149.289 9.21488 149.328 11.703C149.347 12.8468 148.357 13.7297 146.745 13.7297Z" fill=#404041 /><path d="M132.952 7.10803H130.912L132.777 10.6797H134.816L132.952 7.10803Z" fill=#0056A7 /><path d="M132.738 10.5794L132.796 10.6798H134.835L133.495 8.17157L132.738 10.5794Z" fill=#2E3191 /><path d="M136.467 4.09808L132.797 10.6796H134.836L138.507 4.09808H136.467Z" fill=#0056A7 /><path d="M132.797 11.6629H134.778V13.7297H132.797V11.6629Z" fill=#0056A7 /></g><defs><clippath id=clip0_3_25><rect transform="translate(91.623 4.2702)" fill=white height=9.45953 width=57.7031 /></clippath></defs></svg> </a></div></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
 
   // src/globals/pluginConfig.ts
   var defaultConfig = {
@@ -2928,22 +3093,33 @@
       }
     },
     primaryColor: "#1863DC",
+    keyboard: {
+      enabled: false,
+      shortcut: "alt+a"
+    },
     modules: {
       color: {
-        darkContrast: { enabled: false },
-        lightContrast: { enabled: false },
-        highContrast: { enabled: false },
-        highSaturation: { enabled: false },
-        lightSaturation: { enabled: false },
-        monochrome: { enabled: false }
+        darkContrast: { enabled: true },
+        lightContrast: { enabled: true },
+        highContrast: { enabled: true },
+        highSaturation: { enabled: true },
+        lowSaturation: { enabled: true },
+        monochrome: { enabled: true }
       },
       content: {
-        highlightText: { enabled: false },
-        highlightLinks: { enabled: false },
+        adjustFontSizing: { enabled: true },
+        highlightTitle: { enabled: true },
+        highlightLinks: { enabled: true },
         dyslexicFont: { enabled: true },
-        letterSpacing: { enabled: false },
+        letterSpacing: { enabled: true },
         lineHeight: { enabled: true },
-        fontWeight: { enabled: false }
+        fontWeight: { enabled: true },
+        alignLeft: { enabled: true }
+      },
+      navigation: {
+        readingGuide: { enabled: true },
+        pauseAnimations: { enabled: true },
+        bigCursor: { enabled: true }
       },
       statement: {
         enabled: false,
@@ -2951,7 +3127,33 @@
       }
     }
   };
-  var pluginConfig = Object.assign(defaultConfig, window._cyA11yConfig);
+  var _remote = window._cyA11yConfig;
+  var pluginConfig = {
+    ...defaultConfig,
+    ..._remote,
+    keyboard: {
+      ...defaultConfig.keyboard,
+      ..._remote?.keyboard || {}
+    },
+    modules: {
+      color: {
+        ...defaultConfig.modules.color,
+        ..._remote?.modules?.color || {}
+      },
+      content: {
+        ...defaultConfig.modules.content,
+        ..._remote?.modules?.content || {}
+      },
+      navigation: {
+        ...defaultConfig.modules.navigation,
+        ..._remote?.modules?.navigation || {}
+      },
+      statement: {
+        ...defaultConfig.modules.statement,
+        ..._remote?.modules?.statement || {}
+      }
+    }
+  };
 
   // src/views/statement/renderStatement.ts
   function getTemplateData(lang) {
@@ -3313,7 +3515,7 @@
       icon: bigCursorIcon_default
     },
     {
-      label: "Stop Animations",
+      label: "Pause Animations",
       key: "stop-animations",
       icon: stopAnimationsIcon_default
     },
@@ -3334,8 +3536,21 @@
   // src/icons/cognitiveDisabilityIcon.svg
   var cognitiveDisabilityIcon_default = '<svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><g clip-path=url(#clip0_66_1494)><path d="M15.9701 12.6494H15.475C15.2623 12.6494 15.0899 12.4854 15.0899 12.2831V10.6486C15.0899 9.22499 13.9081 8.0314 12.4119 8.00066C11.2154 7.9761 10.1897 8.68201 9.79124 9.68164C9.70813 9.89024 9.50003 10.0315 9.2655 10.0292C6.84473 10.0054 5.02222 12.1202 5.46852 14.3493C5.51594 14.586 5.39432 14.8276 5.16491 14.9299C3.6891 15.5882 2.66663 17.0135 2.66663 18.6667H8.37904C8.59172 18.6667 8.76414 18.5027 8.76414 18.3004V17.8294C8.76414 17.1428 9.3255 16.5579 10.0469 16.5335C10.8043 16.508 11.4267 17.0844 11.4267 17.7991V18.3004C11.4267 18.5027 11.5991 18.6667 11.8118 18.6667H15.0899V15.5485C15.0899 15.3461 15.2623 15.1821 15.475 15.1821H16.002C16.7534 15.1821 17.3593 14.5901 17.3324 13.8696C17.3069 13.1834 16.692 12.6494 15.9701 12.6494Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M13.8163 23.1857H14.2945C14.5 23.1857 14.6665 23.0149 14.6665 22.8041V19.5561H11.5001C11.2947 19.5561 11.1282 19.3853 11.1282 19.1746V18.684C11.1282 17.9688 10.586 17.3597 9.88918 17.3342C9.15762 17.3076 8.55638 17.908 8.55638 18.6524V19.1746C8.55638 19.3853 8.38984 19.5561 8.18441 19.5561H2.66663C2.66663 21.2781 3.65425 22.7627 5.07988 23.4485C5.30147 23.5551 5.41889 23.8067 5.37314 24.0533C4.942 26.3755 6.70379 28.5776 9.04072 28.553C9.26725 28.5506 9.46821 28.6978 9.54854 28.9151C9.93336 29.9564 10.9241 30.6916 12.0799 30.6661C13.5251 30.6341 14.6666 29.3908 14.6666 27.908V26.2055C14.6666 25.9948 14.5001 25.8239 14.2947 25.8239H13.7856C13.0599 25.8239 12.4746 25.2072 12.5005 24.4568C12.5252 23.7419 13.119 23.1857 13.8163 23.1857Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M29.0017 11.3329C29.195 11.3329 29.3501 11.1616 29.3318 10.962C29.2043 9.57205 28.3671 8.39715 27.2006 7.82974C27.0033 7.73379 26.8987 7.50743 26.9395 7.28546C27.3233 5.19584 25.7562 3.21332 23.6747 3.23565C23.473 3.2378 23.2942 3.10535 23.2226 2.90979C22.8801 1.97268 21.9981 1.31093 20.9693 1.33396C19.6828 1.36272 18.6666 2.4817 18.6666 3.81626V5.34851C18.6666 5.53817 18.8149 5.69192 18.9977 5.69192H19.4235C20.0442 5.69192 20.5728 6.19251 20.5948 6.83585C20.618 7.51124 20.0969 8.0663 19.4509 8.0663H18.9977C18.8149 8.0663 18.6666 8.22005 18.6666 8.4097V10.9895C18.6666 11.1792 18.8149 11.3329 18.9977 11.3329H21.4853C21.6681 11.3329 21.8164 11.4867 21.8164 11.6763V12.1178C21.8164 12.7615 22.299 13.3097 22.9194 13.3326C23.5706 13.3566 24.1058 12.8162 24.1058 12.1462V11.6763C24.1058 11.4866 24.254 11.3329 24.4369 11.3329L29.0017 11.3329Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M24.7718 26.3109C25.2075 25.4976 25.3902 24.5213 25.2125 23.5239C25.1651 23.2575 25.2868 22.9859 25.5165 22.8707C26.8749 22.1898 27.8497 20.7799 27.9982 19.1119C28.0196 18.8723 27.8389 18.6667 27.6138 18.6667H22.2985C22.0856 18.6667 21.913 18.8512 21.913 19.0788V19.6086C21.913 20.3811 21.351 21.039 20.6287 21.0665C19.8704 21.0953 19.2472 20.4468 19.2472 19.6428V19.0788C19.2472 18.8512 19.0745 18.6667 18.8616 18.6667H15.5794V22.1747C15.5794 22.4023 15.4068 22.5869 15.1939 22.5869H14.6981C13.9753 22.5869 13.3598 23.1876 13.3342 23.9596C13.3072 24.7701 13.9139 25.4362 14.6662 25.4362H15.1939C15.4068 25.4362 15.5794 25.6207 15.5794 25.8483V27.6871C15.5794 29.2886 16.7627 30.6315 18.2608 30.666C19.4587 30.6936 20.4858 29.8995 20.8847 28.7748C20.9679 28.5402 21.1762 28.3813 21.411 28.3838C22.0889 28.3912 22.7199 28.2101 23.2677 27.8907" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></g><defs><clippath id=clip0_66_1494><rect fill=white height=32 width=32 /></clippath></defs></svg>';
 
+  // src/icons/lowVisionIcon.svg
+  var lowVisionIcon_default = '<svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M2.66667 16C2.66667 16 7.33333 9.33333 16 9.33333C24.6667 9.33333 29.3333 16 29.3333 16C29.3333 16 24.6667 22.6667 16 22.6667C7.33333 22.6667 2.66667 16 2.66667 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 19.3333C17.8409 19.3333 19.3333 17.8409 19.3333 16C19.3333 14.1591 17.8409 12.6667 16 12.6667C14.1591 12.6667 12.6667 14.1591 12.6667 16C12.6667 17.8409 14.1591 19.3333 16 19.3333Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><circle cx=25.3333 cy=7.33333 r=3.33333 stroke=#27283C stroke-width=1.5 /><path d="M27.6903 9.69037L29.3333 11.3334" stroke=#27283C stroke-linecap=round stroke-width=1.5 /></svg>';
+
   // src/views/menu/ProfileButtons.ts
   var ProfileButtons_default = [
+    {
+      label: "Cognitive Disability",
+      key: "cognitive-disabilities-profile",
+      icon: cognitiveDisabilityIcon_default
+    },
+    {
+      label: "Low Vision",
+      key: "low-vision-profile",
+      icon: lowVisionIcon_default
+    },
     {
       label: "Seizure Safe",
       key: "seizure-safe-profile",
@@ -3345,11 +3560,6 @@
       label: "ADHD",
       key: "adhd-profile",
       icon: adhdIcon_default
-    },
-    {
-      label: "Cognitive Disability",
-      key: "cognitive-disabilities-profile",
-      icon: cognitiveDisabilityIcon_default
     }
   ];
 
@@ -3400,7 +3610,7 @@
   }
 
   // src/views/menu/menu.css
-  var menu_default2 = `:root{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #27283C;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #3D3E50;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-widget{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #333;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #000000 ;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-menu *{color:inherit;font-family:inherit;padding:0;margin:0;letter-spacing:normal}.cya11y-menu{position:fixed;display:flex;flex-direction:column;top:30px;width:462px;height:calc(100% - 30px);background:var(--cya11y-bg-primary, #eff1f5);box-shadow:var(--cya11y-shadow-sm, 0px 8px 26px -4px #27283C33);opacity:1;transition:var(--cya11y-transition-slow, .3s);z-index:var(--cya11y-z-menu, 500000);overflow:auto;line-height:1;font-size:16px;letter-spacing:.015em;color:#000}.cya11y-menu[data-position=bottom-right],.cya11y-menu[data-position=top-right]{right:0;left:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu[data-position=bottom-left],.cya11y-menu[data-position=top-left]{left:0;right:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu-header{display:flex;align-items:center;justify-content:space-between;padding:var(--cya11y-spacing-md, 16px) 15px;font-weight:700;background-color:var(--cya11y-primary-color, #1863DC)}.cya11y-menu-title{font-size:20px;font-weight:500;color:var(--cya11y-text-white, #fff)!important}.cya11y-menu-header>div{display:flex}.cya11y-menu-reset,.cya11y-menu-close{width:32px;height:32px;display:flex;padding:10px;align-items:center;justify-content:center;margin:0;background:var(--cya11y-bg-overlay, rgba(0, 0, 0, .3));cursor:pointer;border-radius:var(--cya11y-radius-full, 50%);transition:opacity var(--cya11y-transition-slow, .3s) ease;border:0;box-shadow:none;outline:none}.cya11y-menu-reset{padding:7px}.cya11y-menu-reset-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px 0}.cya11y-menu-reset-footer-btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--cya11y-radius-md, 12px);width:100%;height:48px;font-size:15px;font-weight:500;color:var(--cya11y-text-white, #fff);background:var(--cya11y-primary-color);border:2px solid transparent;cursor:pointer;transition:all var(--cya11y-transition-normal, .2s) ease;padding:0 20px;text-decoration:none;outline:none}.cya11y-menu-reset-footer-btn:hover{background:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--cya11y-primary-color) 30%,transparent)}.cya11y-menu-reset-footer-btn:focus{outline:3px solid color-mix(in srgb,var(--cya11y-primary-color) 40%,transparent);outline-offset:2px}.cya11y-menu-reset-footer-btn:active{transform:translateY(0);box-shadow:0 2px 6px color-mix(in srgb,var(--cya11y-primary-color) 20%,transparent)}.cya11y-menu-reset-footer-btn svg{width:20px;height:20px;flex-shrink:0}.cya11y-reset-text{font-weight:500;white-space:nowrap}.cya11y-menu-reset-footer-link{font-size:14px;font-weight:500;color:var(--cya11y-primary-color, #1863DC);text-decoration:underline;text-align:center;transition:color var(--cya11y-transition-normal, .2s) ease}.cya11y-menu-reset-footer-link:hover{color:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);text-decoration:underline}.cya11y-menu-reset:hover:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:hover,.cya11y-menu-reset:focus:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:focus{outline:3px solid hsla(0,0%,100%,.4)}.cya11y-menu-content{flex:1;overflow-y:scroll;overflow-x:auto;padding:var(--cya11y-spacing-xl, 30px) 0 15px;background-color:var(--cya11y-bg-secondary, #f2f2f4);max-height:calc(100vh - 146px)}.cya11y-card{margin:0 15px var(--cya11y-spacing-lg, 20px)}.cya11y-card-title{font-size:16px;padding:15px 0;font-weight:600;opacity:.8}.cya11y-profile-card{background-color:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px)}.cya11y-profile-card .cya11y-card-title{font-size:16px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);background-color:var(--cya11y-bg-white, #fff);border:none;text-align:left}.cya11y-profile-items{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;padding:0 var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px);margin-top:var(--cya11y-spacing-md, 16px)}.cya11y-profile-items .cya11y-btn{display:flex;gap:10px;align-items:center;flex-direction:row;justify-content:start;text-align:left;width:190px;height:64px;padding:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC)}.cya11y-profile-items .cya11y-btn.cya11y-selected{background:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-text-white, #fff);fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-items .cya11y-btn.cya11y-selected:after{content:"";display:inline-block;background-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23D1E0F8'/%3E%3C/svg%3E%0A");fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff);position:absolute;top:10px;right:10px;color:var(--cya11y-text-white, #fff);font-size:10px;width:20px;height:20px;line-height:6px}.cya11y-profile-items .cya11y-btn.cya11y-selected span,.cya11y-profile-items .cya11y-btn.cya11y-selected svg path{color:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-title-container{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding-left:var(--cya11y-spacing-md, 16px);padding-right:var(--cya11y-spacing-md, 16px);gap:var(--cya11y-spacing-sm, 12px)}.cya11y-profile-title{width:100%;height:64px;border-radius:var(--cya11y-radius-md, 12px)}.cya11y-arrow{margin-left:auto;font-size:18px;color:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transition:transform var(--cya11y-transition-normal, .2s) ease-in-out;rotate:270deg}.cya11y-arrow-rotate{transform:rotate(90deg)}.cya11y-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}.cya11y-btn{aspect-ratio:6 / 5;border-radius:var(--cya11y-radius-md, 12px);padding:0 12px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--cya11y-text-primary, #333);font-size:16px;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:border-color var(--cya11y-transition-normal, .2s) ease;cursor:pointer;word-break:break-word;gap:10px;position:relative;width:auto;height:auto}.cya11y-btn .cya11y-translate,.cya11y-adjust-font .cya11y-label div{font-size:14px;font-weight:500;line-height:22px}.cya11y-btn svg{width:34px;height:34px;min-width:34px;min-height:34px;max-width:34px;max-height:34px}.cya11y-btn:hover,.cya11y-btn.cya11y-selected{border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected{box-shadow:var(--cya11y-shadow-focus, 0px 0px 0px 6px #1863DC24)}.cya11y-btn.cya11y-selected svg,.cya11y-btn.cya11y-selected svg path,.cya11y-btn.cya11y-selected span{stroke:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected:after{content:"";display:inline-block;background-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%231863DC'/%3E%3C/svg%3E%0A");background-repeat:no-repeat;fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff);position:absolute;top:10px;right:10px;color:var(--cya11y-text-white, #fff);font-size:10px;width:20px;height:20px;line-height:6px}.cya11y-adjust-font{background:var(--cya11y-bg-white, #fff);padding-top:10px;padding-bottom:13px;border:1px solid var(--cya11y-border-light, #E9EAEC);border-radius:var(--cya11y-radius-md, 12px);box-shadow:none;transition:outline var(--cya11y-transition-normal, .2s) ease;grid-column:span 2}.cya11y-adjust-font .cya11y-label{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);margin-bottom:10px}.cya11y-adjust-font .cya11y-label svg{margin-right:var(--cya11y-spacing-sm, 12px);width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;max-height:36px;fill:var(--cya11y-text-secondary, #293C5B)}.cya11y-adjust-font>div:last-child{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:var(--cya11y-spacing-sm, 12px)}.cya11y-adjust-font svg{width:24px;height:24px;min-width:24px;min-height:24px;max-width:24px;max-height:24px}.cya11y-plus,.cya11y-minus{background-color:var(--cya11y-bg-primary, #eff1f5);border:2px solid transparent;transition:border var(--cya11y-transition-normal, .2s) ease}.cya11y-plus:hover,.cya11y-minus:hover{border-color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-minus,.cya11y-adjust-font .cya11y-plus{background:var(--cya11y-primary-color, #1863DC);border-radius:var(--cya11y-radius-full, 50%);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:none;transition:background var(--cya11y-transition-normal, .2s)}.cya11y-adjust-font .cya11y-minus svg,.cya11y-adjust-font .cya11y-plus svg{fill:var(--cya11y-text-white, #fff);width:38px;height:38px}.cya11y-adjust-font .cya11y-minus:hover,.cya11y-adjust-font .cya11y-plus:hover{background:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font:hover{outline:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-amount{font-size:14px;font-weight:400;color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-amount{background:#e9eaec;color:var(--cya11y-primary-color, #1863DC);font-size:14px;font-weight:400;border-radius:40px;min-width:100px;min-height:40px;display:flex;align-items:center;justify-content:center;margin:0 10px;box-shadow:none;letter-spacing:.01em}.cya11y-footer{bottom:0;left:0;right:0;background:var(--cya11y-bg-white, #fff);padding:14px;text-align:center;border-top:2px solid var(--cya11y-bg-primary, #eff1f5)}.cya11y-footer a{font-size:16px;text-decoration:none;color:var(--cya11y-text-primary, #333);background:transparent;font-weight:600}.cya11y-footer a:hover,.cya11y-footer a:hover span{color:var(--cya11y-primary-color, #1863DC)}.cya11y-custom-select{position:relative;width:100%;font-family:inherit;font-size:16px}.cya11y-selected-lang{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);background:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px);padding:15px;cursor:pointer;user-select:none;transition:border var(--cya11y-transition-normal, .2s);border:1.5px solid transparent}.cya11y-selected-lang:focus,.cya11y-selected-lang:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-lang-code{display:inline-flex;align-items:center;justify-content:center;background:var(--cya11y-border-light, #E9EAEC);color:var(--cya11y-text-muted, #3D3E50);font-weight:400;border-radius:var(--cya11y-radius-full, 50%);width:32px;height:32px;font-size:14px;text-transform:uppercase}.cya11y-dropdown-list{position:absolute;top:110%;left:0;width:100%;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:var(--cya11y-radius-md, 12px);box-shadow:var(--cya11y-shadow-md, 0 8px 24px rgba(41, 60, 91, .08));z-index:var(--cya11y-z-dropdown, 100);padding:var(--cya11y-spacing-xs, 8px) 0 0 0;max-height:320px;overflow:auto;transition:box-shadow var(--cya11y-transition-normal, .2s)}.cya11y-lang-search{height:48px;width:80%;margin:0 5%;margin-bottom:var(--cya11y-spacing-xs, 8px);padding:0 var(--cya11y-spacing-md, 16px);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:4px;font-size:15px;outline:none}.cya11y-lang-options{max-height:240px;overflow-y:auto}.cya11y-lang-option{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);padding:var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-md, 16px);cursor:pointer;transition:background var(--cya11y-transition-fast, .15s)}.cya11y-lang-option.selected{background:var(--cya11y-primary-light, #D1E0F8)}.cya11y-lang-option:hover{background:#f1f6fd}.cya11y-lang-label{color:inherit;font-size:15px;font-weight:500}.cya11y-menu .cya11y-select{width:100%;padding:0 15px;font-size:16px;font-family:inherit;font-weight:600;border-radius:var(--cya11y-radius-lg, 45px);background:var(--cya11y-bg-white, #fff);border:none;min-height:45px;max-height:45px;height:45px;color:inherit}.cya11y-overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:var(--cya11y-z-overlay, 10000)}@media only screen and (max-width: 560px){.cya11y-menu{width:100%}.cya11y-profile-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;padding:0 var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px)}}@media only screen and (max-width: 420px){.cya11y-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.cya11y-profile-items{grid-template-columns:1fr;gap:.5rem;padding:0 var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px);justify-items:center}}
+  var menu_default2 = `:root{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #27283C;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #3D3E50;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-widget{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #333;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #000000 ;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-menu *{color:inherit;font-family:inherit;padding:0;margin:0;letter-spacing:normal}.cya11y-menu{position:fixed;display:flex;flex-direction:column;top:30px;width:462px;height:calc(100% - 30px);background:var(--cya11y-bg-primary, #eff1f5);box-shadow:var(--cya11y-shadow-sm, 0px 8px 26px -4px #27283C33);opacity:1;transition:var(--cya11y-transition-slow, .3s);z-index:var(--cya11y-z-menu, 500000);overflow:auto;line-height:1;font-size:16px;letter-spacing:.015em;color:#000}.cya11y-menu[data-position=bottom-right],.cya11y-menu[data-position=top-right]{right:0;left:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu[data-position=bottom-left],.cya11y-menu[data-position=top-left]{left:0;right:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu-header{display:flex;align-items:center;justify-content:space-between;padding:var(--cya11y-spacing-md, 16px) 15px;font-weight:700;background-color:var(--cya11y-primary-color, #1863DC)}.cya11y-menu-title{font-size:20px;font-weight:500;color:var(--cya11y-text-white, #fff)!important}.cya11y-menu-header>div{display:flex}.cya11y-menu-reset,.cya11y-menu-close{width:32px;height:32px;display:flex;padding:10px;align-items:center;justify-content:center;margin:0;background:var(--cya11y-bg-overlay, rgba(0, 0, 0, .3));cursor:pointer;border-radius:var(--cya11y-radius-full, 50%);transition:opacity var(--cya11y-transition-slow, .3s) ease;border:0;box-shadow:none;outline:none}.cya11y-menu-reset{padding:7px}.cya11y-menu-reset-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px 0}.cya11y-menu-title-shortcut{font-size:13px;font-weight:400;opacity:.75}.cya11y-menu-reset-footer-btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--cya11y-radius-md, 12px);width:100%;height:48px;font-size:15px;font-weight:500;color:var(--cya11y-text-white, #fff);background:var(--cya11y-primary-color);border:2px solid transparent;cursor:pointer;transition:all var(--cya11y-transition-normal, .2s) ease;padding:0 20px;text-decoration:none;outline:none}.cya11y-menu-reset-footer-btn:hover{background:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--cya11y-primary-color) 30%,transparent)}.cya11y-menu-reset-footer-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-menu-reset-footer-btn:active{transform:translateY(0);box-shadow:0 2px 6px color-mix(in srgb,var(--cya11y-primary-color) 20%,transparent)}.cya11y-menu-reset-footer-btn svg{width:20px;height:20px;flex-shrink:0}.cya11y-reset-text{font-weight:500;white-space:nowrap}.cya11y-menu-reset-footer-link{font-size:14px;font-weight:400;color:#4d4e5e;text-decoration:underline;text-align:center;transition:color var(--cya11y-transition-normal, .2s) ease}.cya11y-menu-reset-footer-link:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-menu-reset-footer-link:hover{color:var(--cya11y-primary-color, #1863DC);text-decoration:underline}.cya11y-menu-reset:hover:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:hover,.cya11y-menu-reset:focus-visible:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:focus-visible{outline:3px solid var(--cya11y-focus-color-on-primary, #ffffff);outline-offset:2px}.cya11y-menu-content{flex:1;overflow-y:scroll;overflow-x:auto;padding:var(--cya11y-spacing-lg, 20px) 0 12px;background-color:var(--cya11y-bg-secondary, #f2f2f4);max-height:calc(100vh - 146px)}.cya11y-card{margin:0 var(--cya11y-spacing-lg, 20px) var(--cya11y-spacing-lg, 20px)}.cya11y-card-title{font-size:16px;padding:15px 0;font-weight:500;color:var(--cya11y-text-primary, #27283C)}.cya11y-profile-card{background-color:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px)}.cya11y-profile-card .cya11y-card-title{font-size:16px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);background-color:var(--cya11y-bg-white, #fff);border:none;text-align:left}.cya11y-profile-items{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;padding:0 var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px);margin-top:var(--cya11y-spacing-md, 16px)}.cya11y-profile-items .cya11y-btn{display:flex;gap:10px;align-items:center;flex-direction:row;justify-content:start;text-align:left;width:190px;height:64px;padding:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC)}.cya11y-profile-items .cya11y-btn.cya11y-selected{background:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-text-white, #fff);fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-items .cya11y-btn.cya11y-selected:after{content:"";display:inline-block;background-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23D1E0F8'/%3E%3C/svg%3E%0A");fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff);position:absolute;top:10px;right:10px;color:var(--cya11y-text-white, #fff);font-size:10px;width:20px;height:20px;line-height:6px}.cya11y-profile-items .cya11y-btn.cya11y-selected span,.cya11y-profile-items .cya11y-btn.cya11y-selected svg path{color:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-title-container{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding-left:var(--cya11y-spacing-md, 16px);padding-right:var(--cya11y-spacing-md, 16px);gap:var(--cya11y-spacing-sm, 12px)}.cya11y-profile-title{width:100%;height:64px;border-radius:var(--cya11y-radius-md, 12px)}.cya11y-arrow{margin-left:auto;font-size:18px;color:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transition:transform var(--cya11y-transition-normal, .2s) ease-in-out;rotate:270deg}.cya11y-arrow-rotate{transform:rotate(90deg)}.cya11y-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}.cya11y-btn{aspect-ratio:6 / 5;border-radius:var(--cya11y-radius-md, 12px);padding:0 12px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--cya11y-text-primary, #333);font-size:16px;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:border-color var(--cya11y-transition-normal, .2s) ease;cursor:pointer;word-break:break-word;gap:10px;position:relative;width:auto;height:auto}.cya11y-btn .cya11y-translate,.cya11y-adjust-font .cya11y-label div{font-size:14px;font-weight:500;line-height:22px}.cya11y-btn svg{width:34px;height:34px;min-width:34px;min-height:34px;max-width:34px;max-height:34px}.cya11y-btn:hover{border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected{border:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-btn.cya11y-selected{box-shadow:var(--cya11y-shadow-focus, 0px 0px 0px 6px rgba(24, 99, 220, .14))}.cya11y-btn.cya11y-selected svg,.cya11y-btn.cya11y-selected svg path,.cya11y-btn.cya11y-selected span{stroke:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-adjust-font{background:var(--cya11y-bg-white, #fff);padding-top:10px;padding-bottom:13px;border:1px solid var(--cya11y-border-light, #E9EAEC);border-radius:var(--cya11y-radius-md, 12px);box-shadow:none;transition:outline var(--cya11y-transition-normal, .2s) ease;grid-column:span 2}.cya11y-adjust-font .cya11y-label{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);margin-bottom:10px}.cya11y-adjust-font .cya11y-label svg{margin-right:var(--cya11y-spacing-sm, 12px);width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;max-height:36px;fill:var(--cya11y-text-secondary, #293C5B)}.cya11y-adjust-font>div:last-child{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:var(--cya11y-spacing-sm, 12px)}.cya11y-adjust-font svg{width:24px;height:24px;min-width:24px;min-height:24px;max-width:24px;max-height:24px}.cya11y-plus,.cya11y-minus{background-color:var(--cya11y-bg-primary, #eff1f5);border:2px solid transparent;transition:border var(--cya11y-transition-normal, .2s) ease}.cya11y-plus:hover,.cya11y-minus:hover{border-color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-minus:focus-visible,.cya11y-adjust-font .cya11y-plus:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:3px}.cya11y-adjust-font .cya11y-minus,.cya11y-adjust-font .cya11y-plus{background:var(--cya11y-primary-color, #1863DC);border-radius:var(--cya11y-radius-full, 50%);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:none;transition:background var(--cya11y-transition-normal, .2s)}.cya11y-adjust-font .cya11y-minus svg,.cya11y-adjust-font .cya11y-plus svg{fill:var(--cya11y-text-white, #fff);width:38px;height:38px}.cya11y-adjust-font .cya11y-minus:hover,.cya11y-adjust-font .cya11y-plus:hover{background:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font:hover{outline:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-amount{font-size:14px;font-weight:400;color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-amount{background:#e9eaec;color:var(--cya11y-primary-color, #1863DC);font-size:14px;font-weight:400;border-radius:40px;min-width:100px;min-height:40px;display:flex;align-items:center;justify-content:center;margin:0 10px;box-shadow:none;letter-spacing:.01em}.cya11y-footer{bottom:0;left:0;right:0;background:var(--cya11y-bg-white, #fff);padding:14px;text-align:center;border-top:2px solid var(--cya11y-bg-primary, #eff1f5)}.cya11y-footer a{font-size:16px;text-decoration:none;color:var(--cya11y-text-primary, #333);background:transparent;font-weight:600}.cya11y-footer a:hover,.cya11y-footer a:hover span,.cya11y-footer a:focus-visible,.cya11y-footer a:focus-visible span{color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-footer a:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-custom-select{position:relative;width:100%;font-family:inherit;font-size:16px}.cya11y-selected-lang{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);background:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px);padding:15px;cursor:pointer;user-select:none;transition:border var(--cya11y-transition-normal, .2s);border:1.5px solid transparent}.cya11y-selected-lang:focus{outline:none}.cya11y-selected-lang:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-selected-lang:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border:1.5px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-code{display:inline-flex;align-items:center;justify-content:center;background:var(--cya11y-border-light, #E9EAEC);color:var(--cya11y-text-muted, #3D3E50);font-weight:400;border-radius:var(--cya11y-radius-full, 50%);width:32px;height:32px;font-size:14px;text-transform:uppercase}.cya11y-dropdown-list{position:absolute;top:110%;left:0;width:100%;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:var(--cya11y-radius-md, 12px);box-shadow:var(--cya11y-shadow-md, 0 8px 24px rgba(41, 60, 91, .08));z-index:var(--cya11y-z-dropdown, 100);padding:var(--cya11y-spacing-xs, 8px) 0 0 0;max-height:320px;overflow:auto;transition:box-shadow var(--cya11y-transition-normal, .2s)}.cya11y-lang-search{height:48px;width:80%;margin:0 5%;margin-bottom:var(--cya11y-spacing-xs, 8px);padding:0 var(--cya11y-spacing-md, 16px);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:4px;font-size:15px}.cya11y-lang-search:focus{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:0px;border-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-options{max-height:240px;overflow-y:auto}.cya11y-lang-option{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);padding:var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-md, 16px);cursor:pointer;transition:background var(--cya11y-transition-fast, .15s)}.cya11y-lang-option.selected{background:var(--cya11y-primary-light, #D1E0F8)}.cya11y-lang-option:hover,.cya11y-lang-option:focus-visible{background:#f1f6fd}.cya11y-lang-option:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:-2px}.cya11y-lang-label{color:inherit;font-size:15px;font-weight:500}.cya11y-menu .cya11y-select{width:100%;padding:0 15px;font-size:16px;font-family:inherit;font-weight:600;border-radius:var(--cya11y-radius-lg, 45px);background:var(--cya11y-bg-white, #fff);border:none;min-height:45px;max-height:45px;height:45px;color:inherit}.cya11y-overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:var(--cya11y-z-overlay, 10000)}@media only screen and (max-width: 560px){.cya11y-menu{width:100%}.cya11y-profile-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;padding:0 var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px)}}@media only screen and (max-width: 420px){.cya11y-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.cya11y-profile-items{grid-template-columns:1fr;gap:.5rem;padding:0 var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px);justify-items:center}}
 `;
 
   // src/views/menu/toggleMenu.ts
@@ -3422,12 +3632,23 @@
           const widgetButton = widgetShadowRoot.querySelector(".cya11y-menu-btn");
           if (widgetButton) {
             widgetButton.setAttribute("aria-expanded", "false");
+            widgetButton.focus();
           }
         }
       }
     } else {
       $menu.style.display = "block";
       $overlay.style.display = "block";
+      const handleEscapeKey = (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          event.stopPropagation();
+          toggleMenu();
+          document.removeEventListener("keydown", handleEscapeKey);
+        }
+      };
+      document.addEventListener("keydown", handleEscapeKey);
+      $menu._escapeKeyHandler = handleEscapeKey;
       const widgetContainer = document.querySelector("#cya11y-container");
       if (widgetContainer) {
         const widgetShadowRoot = widgetContainer.shadowRoot;
@@ -3453,6 +3674,10 @@
     },
     "cognitive-disabilities-profile": {
       "tools": ["stop-animations", "highlight-links", "highlight-title"]
+    },
+    "low-vision-profile": {
+      "contrast": "high-contrast",
+      "tools": ["big-cursor"]
     }
   };
 
@@ -3666,7 +3891,7 @@
           changeLanguage($option.dataset.code, $menu2);
           closeDropdown($langDropdown);
           renderLanguageDropdown($menu2);
-          $selected.focus();
+          $langDropdown.querySelector(".cya11y-selected-lang")?.focus();
         };
       });
     });
@@ -3694,7 +3919,7 @@
               changeLanguage(option.dataset.code, $menu2);
               closeDropdown($langDropdown);
               renderLanguageDropdown($menu2);
-              $selected.focus();
+              $langDropdown.querySelector(".cya11y-selected-lang")?.focus();
             } else if (e2.key === "Escape") {
               closeDropdown($langDropdown);
               $selected.focus();
@@ -3717,7 +3942,7 @@
         changeLanguage($option.dataset.code, $menu2);
         closeDropdown($langDropdown);
         renderLanguageDropdown($menu2);
-        $selected.focus();
+        $langDropdown.querySelector(".cya11y-selected-lang")?.focus();
       });
       $option.addEventListener("keydown", (e) => {
         if (e.key === "ArrowDown") {
@@ -3737,15 +3962,24 @@
           changeLanguage($option.dataset.code, $menu2);
           closeDropdown($langDropdown);
           renderLanguageDropdown($menu2);
-          $selected.focus();
+          $langDropdown.querySelector(".cya11y-selected-lang")?.focus();
         } else if (e.key === "Escape") {
           closeDropdown($langDropdown);
-          $selected.focus();
+          $langDropdown.querySelector(".cya11y-selected-lang")?.focus();
         }
       });
     });
     $search?.addEventListener("focus", () => {
       openDropdown($langDropdown);
+    });
+    $langDropdown.addEventListener("focusout", () => {
+      setTimeout(() => {
+        const root = $langDropdown.getRootNode();
+        const active = root.activeElement;
+        if (!active || !$langDropdown.contains(active)) {
+          closeDropdown($langDropdown);
+        }
+      }, 0);
     });
   }
   function closeDropdown($langDropdown) {
@@ -3768,6 +4002,7 @@
     if (!outsideClickHandler) {
       outsideClickHandler = (e) => {
         if (!$langDropdown.contains(e.target)) {
+          closeDropdown($langDropdown);
         }
       };
       document.addEventListener("mousedown", outsideClickHandler);
@@ -3813,6 +4048,26 @@
         }
       }
     });
+  }
+
+  // src/utils/getShortcutLabel.ts
+  var MODIFIER_LABELS = {
+    alt: { win: "Alt", mac: "Option" },
+    shift: { win: "Shift", mac: "Shift" },
+    ctrl: { win: "Ctrl", mac: "Ctrl" }
+  };
+  function isMac() {
+    if (typeof navigator === "undefined") return false;
+    const platform = navigator.userAgentData?.platform ?? navigator.platform;
+    return platform.toLowerCase().includes("mac");
+  }
+  function getShortcutLabel(shortcut) {
+    const parts = shortcut.toLowerCase().split("+");
+    const key = parts[parts.length - 1].toUpperCase();
+    const modifiers = parts.slice(0, -1);
+    const mac = isMac();
+    const labels = modifiers.map((mod) => MODIFIER_LABELS[mod]?.[mac ? "mac" : "win"] ?? mod);
+    return [...labels, key].join("+");
   }
 
   // src/views/menu/renderMenu.ts
@@ -3874,6 +4129,38 @@
     $menuContent.appendChild($statementWrapper);
     $menuContent.scrollTop = 0;
   }
+  var CONTENT_KEY_MAP = {
+    "font-size": "adjustFontSizing",
+    "highlight-title": "highlightTitle",
+    "highlight-links": "highlightLinks",
+    "readable-font": "dyslexicFont",
+    "letter-spacing": "letterSpacing",
+    "line-height": "lineHeight",
+    "font-weight": "fontWeight",
+    "align-left": "alignLeft"
+  };
+  var COLOR_KEY_MAP = {
+    "dark-contrast": "darkContrast",
+    "light-contrast": "lightContrast",
+    "high-contrast": "highContrast",
+    "high-saturation": "highSaturation",
+    "low-saturation": "lowSaturation",
+    "monochrome": "monochrome"
+  };
+  var NAV_KEY_MAP = {
+    "big-cursor": "bigCursor",
+    "stop-animations": "pauseAnimations",
+    "readable-guide": "readingGuide"
+  };
+  function filterByModule(buttons, moduleSection, keyMap) {
+    if (!moduleSection) return buttons;
+    return buttons.filter((btn) => {
+      const configKey = keyMap[btn.key];
+      if (!configKey) return true;
+      const mod = moduleSection[configKey];
+      return mod === void 0 || mod.enabled !== false;
+    });
+  }
   function renderMenu() {
     const device = getCurrentDevice();
     const $container = document.createElement("div");
@@ -3890,34 +4177,33 @@
         $menu2.style.right = "auto";
       }
     }
-    const handleEscapeKey = (event) => {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        event.stopPropagation();
-        toggleMenu();
-        document.removeEventListener("keydown", handleEscapeKey);
-      }
-    };
-    document.addEventListener("keydown", handleEscapeKey);
-    $menu2._escapeKeyHandler = handleEscapeKey;
     const contentElement = $menu2.querySelector(".content");
     const toolsElement = $menu2.querySelector(".tools");
     const contrastElement = $menu2.querySelector(".contrast");
     const profilesElement = $menu2.querySelector(".profiles");
+    const visibleContent = filterByModule(ContentButtons_default, pluginConfig.modules?.content, CONTENT_KEY_MAP);
+    const visibleTools = filterByModule(TOOL_PRESETS_default, pluginConfig.modules?.navigation, NAV_KEY_MAP);
+    const visibleFilters = filterByModule(FilterButtons_default, pluginConfig.modules?.color, COLOR_KEY_MAP);
     if (contentElement) {
-      contentElement.innerHTML = renderButtons(ContentButtons_default);
+      if (visibleContent.length > 0) {
+        contentElement.innerHTML = renderButtons(visibleContent);
+      } else {
+        (contentElement.closest("section") || contentElement.parentElement)?.remove();
+      }
     }
     if (toolsElement) {
-      toolsElement.innerHTML = renderButtons(
-        TOOL_PRESETS_default,
-        "cya11y-tools"
-      );
+      if (visibleTools.length > 0) {
+        toolsElement.innerHTML = renderButtons(visibleTools, "cya11y-tools");
+      } else {
+        (toolsElement.closest("section") || toolsElement.parentElement)?.remove();
+      }
     }
     if (contrastElement) {
-      contrastElement.innerHTML = renderButtons(
-        FilterButtons_default,
-        "cya11y-filter"
-      );
+      if (visibleFilters.length > 0) {
+        contrastElement.innerHTML = renderButtons(visibleFilters, "cya11y-filter");
+      } else {
+        (contrastElement.closest("section") || contrastElement.parentElement)?.remove();
+      }
     }
     if (profilesElement) {
       profilesElement.innerHTML = renderButtons(
@@ -3958,17 +4244,38 @@
       if (statementModule.displayInWidget && statementModule.formData?.companyName) {
         $statementLink.removeAttribute("href");
         $statementLink.setAttribute("role", "button");
+        $statementLink.setAttribute("tabindex", "0");
         $statementLink.style.display = "block";
         $statementLink.style.cursor = "pointer";
-        $statementLink.addEventListener("click", (e) => {
+        const openStatement = (e) => {
           e.preventDefault();
           showStatementPanel($container, $menu2);
+        };
+        $statementLink.addEventListener("click", openStatement);
+        $statementLink.addEventListener("keydown", (e) => {
+          if (e.key === " " || e.key === "Enter") openStatement(e);
         });
       } else if (statementModule.enabled) {
         $statementLink.href = statementModule.url || "#";
         $statementLink.style.display = "block";
+        $statementLink.addEventListener("keydown", (e) => {
+          if (e.key === " ") {
+            e.preventDefault();
+            $statementLink.click();
+          }
+        });
       } else {
         $statementLink.style.display = "none";
+      }
+    }
+    if (pluginConfig.keyboard?.enabled && pluginConfig.keyboard.shortcut) {
+      const $title = $menu2.querySelector(".cya11y-menu-title");
+      if ($title) {
+        const $shortcut = document.createElement("span");
+        $shortcut.className = "cya11y-menu-title-shortcut";
+        $shortcut.setAttribute("aria-hidden", "true");
+        $shortcut.textContent = ` (${getShortcutLabel(pluginConfig.keyboard.shortcut)})`;
+        $title.appendChild($shortcut);
       }
     }
     $container.querySelectorAll(".cya11y-menu-close, .cya11y-overlay").forEach((el) => el.addEventListener("click", toggleMenu));
@@ -4071,6 +4378,14 @@
         announceToScreenReader(`${settingLabel} ${isSelected ? "enabled" : "disabled"}`);
       });
     });
+    $container.querySelectorAll(".cya11y-footer a").forEach((el) => {
+      el.addEventListener("keydown", (e) => {
+        if (e.key === " ") {
+          e.preventDefault();
+          el.click();
+        }
+      });
+    });
     if ($widget) {
       $widget.appendChild($container);
     }
@@ -4085,6 +4400,9 @@
       toggleMenu();
     } else {
       $menu = renderMenu();
+      const widgetContainer = document.querySelector("#cya11y-container");
+      const btn = widgetContainer?.shadowRoot?.querySelector(".cya11y-menu-btn");
+      btn?.setAttribute("aria-controls", "cya11y-accessibility-menu");
     }
     translateWidget($menu);
   }
@@ -4141,6 +4459,32 @@
     { id: "wheel", icon: wheel }
   ];
   var $widget = null;
+  function hexToRgb(hex) {
+    const cleaned = hex.replace("#", "");
+    if (!/^[0-9a-fA-F]{6}$/.test(cleaned)) return null;
+    return [
+      parseInt(cleaned.slice(0, 2), 16),
+      parseInt(cleaned.slice(2, 4), 16),
+      parseInt(cleaned.slice(4, 6), 16)
+    ];
+  }
+  function getRelativeLuminance(r, g, b) {
+    const toLinear = (c) => {
+      const s = c / 255;
+      return s <= 0.04045 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4);
+    };
+    return 0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
+  }
+  function getContrastRatio(hex1, hex2) {
+    const rgb1 = hexToRgb(hex1);
+    const rgb2 = hexToRgb(hex2);
+    if (!rgb1 || !rgb2) return 1;
+    const l1 = getRelativeLuminance(...rgb1);
+    const l2 = getRelativeLuminance(...rgb2);
+    const lighter = Math.max(l1, l2);
+    const darker = Math.min(l1, l2);
+    return (lighter + 0.05) / (darker + 0.05);
+  }
   var POSITION_STYLES = {
     "bottom-right": (margins) => ({
       bottom: `${margins.bottom}px`,
@@ -4214,24 +4558,26 @@
         (icon) => icon.id === pluginConfig.iconId
       );
       const defaultLanguage = getDefaultLanguage();
-      const label = LANGUAGE_DICTIONARY[defaultLanguage][pluginConfig.label];
+      const baseLabel = LANGUAGE_DICTIONARY[defaultLanguage][pluginConfig.label] || "Accessibility menu";
+      const shortcutHint = pluginConfig.keyboard?.enabled && pluginConfig.keyboard.shortcut ? ` \u2014 Press ${getShortcutLabel(pluginConfig.keyboard.shortcut)} to open/close` : "";
+      const buttonLabel = `${baseLabel}${shortcutHint}`;
       shadow.innerHTML = `
       <style id="cya11y-widget-css">${widget_default}</style>
       <div class="cya11y-widget" data-position="${currentPosition}">
         <div class="cya11y-widget-icon">
-          <button 
-             class="cya11y-menu-btn" 
-             aria-label="${label || "Accessibility menu"}"
+          <button
+             class="cya11y-menu-btn"
+             aria-label="${buttonLabel}"
+             title="${buttonLabel}"
              aria-expanded="false"
              aria-haspopup="dialog"
-             aria-controls="cya11y-accessibility-menu"
-             role="button" 
+             role="button"
              type="button"
              tabindex="0">
             <span class="cya11y-btn-content" aria-hidden="true">
               ${selectedIcon?.icon || DefaultIcon}
             </span>
-            <span class="cya11y-sr-only">Open accessibility menu</span>
+            <span class="cya11y-sr-only" aria-hidden="true">Open accessibility menu</span>
           </button>
         </div>
       </div>
@@ -4242,6 +4588,14 @@
       }
       $widget.style.setProperty("--cya11y-primary-color", pluginConfig.primaryColor);
       $widget.style.setProperty("--cya11y-size", `${pluginConfig.iconSize}px`);
+      const contrastWithWhite = getContrastRatio(pluginConfig.primaryColor, "#ffffff");
+      const primaryVisibleOnWhite = contrastWithWhite >= 3;
+      $widget.style.setProperty("--cya11y-focus-color-on-primary", primaryVisibleOnWhite ? "#ffffff" : "#000000");
+      $widget.style.setProperty("--cya11y-focus-color-on-white", primaryVisibleOnWhite ? pluginConfig.primaryColor : "#000000");
+      $widget.style.setProperty("--cya11y-focus-ring-color", primaryVisibleOnWhite ? pluginConfig.primaryColor : "#000000");
+      const rgb = hexToRgb(pluginConfig.primaryColor);
+      const shadowColor = primaryVisibleOnWhite && rgb ? `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.14)` : "rgba(0, 0, 0, 0.14)";
+      $widget.style.setProperty("--cya11y-shadow-focus", `0px 0px 0px 6px ${shadowColor}`);
       const $btn = $widget.querySelector(".cya11y-menu-btn");
       const $icon = $widget.querySelector(".cya11y-widget-icon");
       if ($btn && $icon) {
@@ -4284,6 +4638,50 @@
     }
   }
 
+  // src/utils/keyboardShortcut.ts
+  function parseShortcut(shortcut) {
+    const parts = shortcut.toLowerCase().split("+");
+    const rawKey = parts[parts.length - 1];
+    let code;
+    if (/^\d$/.test(rawKey)) {
+      code = `digit${rawKey}`;
+    } else if (/^f\d{1,2}$/.test(rawKey)) {
+      code = rawKey;
+    } else if (rawKey === "space") {
+      code = "space";
+    } else if (/^[a-z]$/.test(rawKey)) {
+      code = `key${rawKey}`;
+    } else {
+      code = rawKey;
+    }
+    return {
+      alt: parts.includes("alt"),
+      shift: parts.includes("shift"),
+      ctrl: parts.includes("ctrl"),
+      code
+    };
+  }
+  function isTypingContext(target) {
+    if (!(target instanceof Element)) return false;
+    const tag = target.tagName.toLowerCase();
+    return ["input", "textarea", "select"].includes(tag) || (target.getAttribute("contenteditable") ?? "false") !== "false";
+  }
+  var registered = false;
+  function registerKeyboardShortcut() {
+    if (registered) return;
+    const keyboard = pluginConfig.keyboard;
+    if (!keyboard?.enabled || !keyboard.shortcut) return;
+    const parsed = parseShortcut(keyboard.shortcut);
+    document.addEventListener("keydown", (event) => {
+      if (isTypingContext(event.target)) return;
+      if (event.altKey === parsed.alt && event.shiftKey === parsed.shift && event.ctrlKey === parsed.ctrl && event.code.toLowerCase() === parsed.code) {
+        event.preventDefault();
+        openMenu();
+      }
+    });
+    registered = true;
+  }
+
   // src/widget.ts
   async function accessibilityWidget() {
     try {
@@ -4295,6 +4693,7 @@
       }
       runAccessibility();
       renderWidget();
+      registerKeyboardShortcut();
       return {
         changeLanguage
       };

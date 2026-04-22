@@ -92,57 +92,47 @@ class Settings {
 				),
 			),
 			'primaryColor' => '#1863DC',
-			'modules'      => array(
-				'color'     => array(
-					'darkContrast'    => array(
-						'enabled' => true,
-					),
-					'lightContrast'   => array(
-						'enabled' => true,
-					),
-					'highContrast'    => array(
-						'enabled' => true,
-					),
-					'highSaturation'  => array(
-						'enabled' => true,
-					),
-					'lightSaturation' => array(
-						'monochrome' => true,
-					),
-					'content'         => array(
-						'highlightText'  => array(
-							'enabled' => true,
-						),
-						'highlightLinks' => array(
-							'enabled' => true,
-						),
-						'dyslexicFont'   => array(
-							'enabled' => true,
-						),
-						'letterSpacing'  => array(
-							'enabled' => true,
-						),
-						'lineHeight'     => array(
-							'enabled' => true,
-						),
-						'fontWeight'     => array(
-							'enabled' => true,
-						),
-					),
-				),
-			'statement' => array(
-				'enabled'         => false,
-				'url'             => '',
-				'displayInWidget' => false,
-				'generatedDate'   => '',
-				'formData'        => array(
-					'companyName'       => '',
-					'businessEmail'     => '',
-					'website'           => '',
-					'wcagStandard'      => 'WCAG 2.2 Level AA',
-					'conformanceStatus' => 'fully-conformant',
-				),
+			'keyboard'     => array(
+				'enabled'  => false,
+				'shortcut' => 'alt+a',
 			),
+			'modules'      => array(
+				'color'      => array(
+					'darkContrast'   => array( 'enabled' => true ),
+					'lightContrast'  => array( 'enabled' => true ),
+					'highContrast'   => array( 'enabled' => true ),
+					'highSaturation' => array( 'enabled' => true ),
+					'lowSaturation'  => array( 'enabled' => true ),
+					'monochrome'     => array( 'enabled' => true ),
+				),
+				'content'    => array(
+					'adjustFontSizing' => array( 'enabled' => true ),
+					'highlightTitle'   => array( 'enabled' => true ),
+					'highlightLinks'   => array( 'enabled' => true ),
+					'dyslexicFont'     => array( 'enabled' => true ),
+					'letterSpacing'    => array( 'enabled' => true ),
+					'lineHeight'       => array( 'enabled' => true ),
+					'fontWeight'       => array( 'enabled' => true ),
+					'alignLeft'        => array( 'enabled' => true ),
+				),
+				'navigation' => array(
+					'readingGuide'    => array( 'enabled' => true ),
+					'pauseAnimations' => array( 'enabled' => true ),
+					'bigCursor'       => array( 'enabled' => true ),
+				),
+				'statement'  => array(
+					'enabled'         => false,
+					'url'             => '',
+					'displayInWidget' => false,
+					'generatedDate'   => '',
+					'formData'        => array(
+						'companyName'       => '',
+						'businessEmail'     => '',
+						'website'           => '',
+						'wcagStandard'      => 'WCAG 2.2 Level AA',
+						'conformanceStatus' => 'fully-conformant',
+					),
+				),
 			),
 		);
 	}

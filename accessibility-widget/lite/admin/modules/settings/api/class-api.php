@@ -74,29 +74,37 @@ class Api extends Rest_Controller {
 			)
 		);
 		register_rest_route(
-		$this->namespace,
-		'/' . $this->rest_base . '/banners',
-		array(
+			$this->namespace,
+			'/' . $this->rest_base . '/banners',
 			array(
-				'methods'             => WP_REST_Server::CREATABLE,
-				'callback'            => array( $this, 'update_banner' ),
-				'permission_callback' => array( $this, 'create_item_permissions_check' ),
-				'args'                => array(
-					'banner_id' => array(
-						'required'          => true,
-						'type'              => 'string',
-						'sanitize_callback' => 'sanitize_text_field',
-						'description'       => __( 'Banner identifier.', 'accessibility-widget' ),
-					),
-					'data' => array(
-						'required'    => true,
-						'type'        => 'object',
-						'description' => __( 'Banner data to store (status, expiry, etc).', 'accessibility-widget' ),
+				array(
+					'methods'             => WP_REST_Server::CREATABLE,
+					'callback'            => array( $this, 'update_banner' ),
+					'permission_callback' => array( $this, 'create_item_permissions_check' ),
+					'args'                => array(
+						'banner_id' => array(
+							'required'          => true,
+							'type'              => 'string',
+							'sanitize_callback' => 'sanitize_text_field',
+							'description'       => __( 'Banner identifier.', 'accessibility-widget' ),
+						),
+						'data' => array(
+							'required'    => true,
+							'type'        => 'object',
+							'description' => __( 'Banner data to store (status, expiry, etc).', 'accessibility-widget' ),
+							'properties'  => array(
+								'status' => array(
+									'type' => 'boolean',
+								),
+								'until'  => array(
+									'type' => 'integer',
+								),
+							),
+						),
 					),
 				),
-			),
-		)
-	);
+			)
+		);
 	}
 	/**
 	 * Get a collection of items.
@@ -192,6 +200,10 @@ class Api extends Rest_Controller {
 				$value        = isset( $request[ $key ] ) ? $request[ $key ] : '';
 				$data[ $key ] = $value;
 			}
+		}
+		// keyboard.shortcut is server-controlled; strip it even though 'keyboard' itself is writable.
+		if ( isset( $data['keyboard'] ) && is_array( $data['keyboard'] ) ) {
+			unset( $data['keyboard']['shortcut'] );
 		}
 		$object->update( $data, $clear );
 		return $object->get();
@@ -354,6 +366,18 @@ class Api extends Rest_Controller {
 				'type'        => 'string',
 				'context'     => array( 'view', 'edit' ),
 			),
+			'keyboard'         => array(
+				'description' => __( 'Keyboard shortcut configuration.', 'accessibility-widget' ),
+				'type'        => 'object',
+				'context'     => array( 'view', 'edit' ),
+				'properties'  => array(
+					'enabled'  => array( 'type' => 'boolean' ),
+					'shortcut' => array(
+						'type'     => 'string',
+						'readonly' => true,
+					),
+				),
+			),
 			'dismissedBanners' => array(
 					'description' => __( 'List of dismissed banner IDs.', 'accessibility-widget' ),
 					'type'        => 'array',
@@ -363,159 +387,64 @@ class Api extends Rest_Controller {
 						'type' => 'string',
 					),
 				),
-				'modules'      => array(
-					'description' => __( 'Widget modules configuration.', 'accessibility-widget' ),
-					'type'        => 'object',
-					'context'     => array( 'view', 'edit' ),
-					'properties'  => array(
-						'color'     => array(
-							'type'       => 'object',
-							'properties' => array(
-								'darkContrast'    => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-										'value'   => array(
-											'type' => 'number',
-										),
-									),
-								),
-								'lightContrast'   => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'highContrast'    => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'highSaturation'  => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'lightSaturation' => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'monochrome'      => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-							),
-						),
-						'content'   => array(
-							'type'       => 'object',
-							'properties' => array(
-								'highlightText'  => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'highlightLinks' => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'lineHeight'     => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'dyslexicFont'   => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'letterSpacing'  => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-								'fontWeight'     => array(
-									'type'       => 'object',
-									'properties' => array(
-										'enabled' => array(
-											'type' => 'boolean',
-										),
-									),
-								),
-							),
-						),
-					'statement' => array(
+			'modules'      => array(
+				'description' => __( 'Widget modules configuration.', 'accessibility-widget' ),
+				'type'        => 'object',
+				'context'     => array( 'view', 'edit' ),
+				'properties'  => array(
+					'color'      => array(
 						'type'       => 'object',
 						'properties' => array(
-							'enabled'         => array(
-								'type' => 'boolean',
-							),
-							'url'             => array(
-								'type' => 'string',
-							),
-							'displayInWidget' => array(
-								'type' => 'boolean',
-							),
-							'generatedDate'   => array(
-								'type' => 'string',
-							),
+							'darkContrast'   => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'lightContrast'  => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'highContrast'   => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'highSaturation' => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'lowSaturation'  => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'monochrome'     => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+						),
+					),
+					'content'    => array(
+						'type'       => 'object',
+						'properties' => array(
+							'adjustFontSizing' => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'highlightTitle'   => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'highlightLinks'   => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'dyslexicFont'     => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'letterSpacing'    => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'lineHeight'       => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'fontWeight'       => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'alignLeft'        => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+						),
+					),
+					'navigation' => array(
+						'type'       => 'object',
+						'properties' => array(
+							'readingGuide'    => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'pauseAnimations' => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'bigCursor'       => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+						),
+					),
+					'statement'  => array(
+						'type'       => 'object',
+						'properties' => array(
+							'enabled'         => array( 'type' => 'boolean' ),
+							'url'             => array( 'type' => 'string' ),
+							'displayInWidget' => array( 'type' => 'boolean' ),
+							'generatedDate'   => array( 'type' => 'string' ),
 							'formData'        => array(
 								'type'       => 'object',
 								'properties' => array(
-									'companyName'       => array(
-										'type' => 'string',
-									),
-									'businessEmail'     => array(
-										'type' => 'string',
-									),
-									'website'           => array(
-										'type' => 'string',
-									),
-									'wcagStandard'      => array(
-										'type' => 'string',
-									),
-									'conformanceStatus' => array(
-										'type' => 'string',
-									),
+									'companyName'       => array( 'type' => 'string' ),
+									'businessEmail'     => array( 'type' => 'string' ),
+									'website'           => array( 'type' => 'string' ),
+									'wcagStandard'      => array( 'type' => 'string' ),
+									'conformanceStatus' => array( 'type' => 'string' ),
 								),
 							),
 						),
 					),
-					),
 				),
+			),
 			),
 		);
 		return $this->add_additional_fields_schema( $schema );

@@ -187,6 +187,19 @@ class Frontend {
 	 * @return array
 	 */
 	public function get_store_data() {
-		return Settings::get_instance()->get();
+		$settings = Settings::get_instance()->get();
+		if ( isset( $settings['keyboard'] ) ) {
+			/**
+			 * Filters the keyboard shortcut for the accessibility widget.
+			 *
+			 * Use this to change the shortcut without touching admin settings.
+			 * Format: modifier+key, e.g. "alt+a", "shift+alt+w".
+			 * Takes effect immediately — no re-save required.
+			 *
+			 * @param string $shortcut Default shortcut value.
+			 */
+			$settings['keyboard']['shortcut'] = apply_filters( 'cya11y_keyboard_shortcut', 'alt+a' );
+		}
+		return $settings;
 	}
 }

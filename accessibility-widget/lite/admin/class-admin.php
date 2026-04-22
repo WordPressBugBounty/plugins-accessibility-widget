@@ -164,7 +164,32 @@ class Admin {
 	 * @since    3.0.0
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( $this->plugin_name . '-app', plugin_dir_url( __FILE__ ) . 'app/dist/assets/index.js', array(), $this->version, true );
+		wp_enqueue_script( $this->plugin_name . '-app', plugin_dir_url( __FILE__ ) . 'app/dist/assets/index.js', array( 'wp-i18n' ), $this->version, true );
+
+		// Primary: Inject translations from the MO file directly as an inline script.
+		// This is more reliable than wp_set_script_translations because it does not
+		// depend on a JSON file with a site-specific MD5 filename hash.
+		$locale_data = $this->get_jed_locale_data( 'accessibility-widget' );
+		if ( ! empty( $locale_data ) ) {
+			wp_add_inline_script(
+				$this->plugin_name . '-app',
+				sprintf(
+					'wp.i18n.setLocaleData(%s,"accessibility-widget");',
+					wp_json_encode( $locale_data )
+				),
+				'before'
+			);
+		}
+
+		// Fallback: also register for wp_set_script_translations so Loco Translate
+		// can detect the handle and generate JSON files automatically.
+		// Path corrected: plugin root languages/ (2 levels up from lite/admin/).
+		wp_set_script_translations(
+			$this->plugin_name . '-app',
+			'accessibility-widget',
+			plugin_dir_path( dirname( dirname( __FILE__ ) ) ) . 'languages'
+		);
+
 		wp_localize_script(
 			$this->plugin_name . '-app',
 			'cyA11yGlobals',
@@ -176,6 +201,9 @@ class Admin {
 				'site' => array(
 					'url' => home_url( '/' ),
 				),
+				'version'           => CY_A11Y_VERSION,
+				/** @see cya11y_keyboard_shortcut filter in class-frontend.php */
+				'keyboardShortcut'  => apply_filters( 'cya11y_keyboard_shortcut', 'alt+a' ),
 				'reviewBanner' => array(
 					'installDate' => absint( get_option( 'cya11y_review_install_date', 0 ) ),
 					'reviewUrl'   => 'https://wordpress.org/support/plugin/accessibility-widget/reviews/#new-post',
@@ -234,8 +262,16 @@ class Admin {
 			$locale['']['plural_forms'] = $translations->headers['Plural-Forms'];
 		}
 
-		foreach ( $translations->entries as $msgid => $entry ) {
-			$locale[ $msgid ] = $entry->translations;
+		foreach ( $translations->entries as $entry ) {
+			$key = is_object( $entry ) && method_exists( $entry, 'key' ) ? $entry->key() : false;
+			if ( false !== $key ) {
+				$locale[ $key ] = $entry->translations;
+				// Also register under the plain singular key so __() lookups work
+				// even when the translator accidentally set a msgctxt in Loco Translate.
+				if ( ! empty( $entry->context ) && ! empty( $entry->singular ) ) {
+					$locale[ $entry->singular ] = $entry->translations;
+				}
+			}
 		}
 
 		// If any of the translated strings incorrectly contains HTML line breaks, we need to return or else the admin is no longer accessible.

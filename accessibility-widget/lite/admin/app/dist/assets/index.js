@@ -1,3 +1,7 @@
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+var _a, _b;
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {
     const e = m[i];
@@ -12102,6 +12106,14 @@ function requireClient() {
   return client.exports;
 }
 var clientExports = requireClient();
+function wpI18n() {
+  var _a2;
+  return (_a2 = window == null ? void 0 : window.wp) == null ? void 0 : _a2.i18n;
+}
+function __$1(text, domain) {
+  var _a2, _b2;
+  return ((_b2 = (_a2 = wpI18n()) == null ? void 0 : _a2.__) == null ? void 0 : _b2.call(_a2, text, domain)) ?? text;
+}
 function composeEventHandlers(originalEventHandler, ourEventHandler, { checkForDefaultPrevented = true } = {}) {
   return function handleEvent(event) {
     originalEventHandler == null ? void 0 : originalEventHandler(event);
@@ -12167,16 +12179,16 @@ function createContextScope(scopeName, createContextScopeDeps = []) {
     const index2 = defaultContexts.length;
     defaultContexts = [...defaultContexts, defaultContext];
     const Provider2 = (props) => {
-      var _a;
+      var _a2;
       const { scope, children, ...context } = props;
-      const Context = ((_a = scope == null ? void 0 : scope[scopeName]) == null ? void 0 : _a[index2]) || BaseContext;
+      const Context = ((_a2 = scope == null ? void 0 : scope[scopeName]) == null ? void 0 : _a2[index2]) || BaseContext;
       const value = reactExports.useMemo(() => context, Object.values(context));
       return /* @__PURE__ */ jsxRuntimeExports.jsx(Context.Provider, { value, children });
     };
     Provider2.displayName = rootComponentName + "Provider";
     function useContext2(consumerName, scope) {
-      var _a;
-      const Context = ((_a = scope == null ? void 0 : scope[scopeName]) == null ? void 0 : _a[index2]) || BaseContext;
+      var _a2;
+      const Context = ((_a2 = scope == null ? void 0 : scope[scopeName]) == null ? void 0 : _a2[index2]) || BaseContext;
       const context = reactExports.useContext(Context);
       if (context) return context;
       if (defaultContext !== void 0) return defaultContext;
@@ -12301,13 +12313,13 @@ function mergeProps(slotProps, childProps) {
   return { ...slotProps, ...overrideProps };
 }
 function getElementRef$1(element) {
-  var _a, _b;
-  let getter = (_a = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a.get;
+  var _a2, _b2;
+  let getter = (_a2 = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a2.get;
   let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
   if (mayWarn) {
     return element.ref;
   }
-  getter = (_b = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b.get;
+  getter = (_b2 = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b2.get;
   mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
   if (mayWarn) {
     return element.props.ref;
@@ -12355,8 +12367,8 @@ function useCallbackRef$1(callback) {
     callbackRef.current = callback;
   });
   return reactExports.useMemo(() => (...args) => {
-    var _a;
-    return (_a = callbackRef.current) == null ? void 0 : _a.call(callbackRef, ...args);
+    var _a2;
+    return (_a2 = callbackRef.current) == null ? void 0 : _a2.call(callbackRef, ...args);
   }, []);
 }
 function useEscapeKeydown(onEscapeKeyDownProp, ownerDocument = globalThis == null ? void 0 : globalThis.document) {
@@ -14521,7 +14533,7 @@ var CONTENT_NAME$4 = "PopperContent";
 var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$4);
 var PopperContent = reactExports.forwardRef(
   (props, forwardedRef) => {
-    var _a, _b, _c, _d, _e, _f;
+    var _a2, _b2, _c, _d, _e, _f;
     const {
       __scopePopper,
       side = "bottom",
@@ -14600,8 +14612,8 @@ var PopperContent = reactExports.forwardRef(
         handlePlaced == null ? void 0 : handlePlaced();
       }
     }, [isPositioned, handlePlaced]);
-    const arrowX = (_a = middlewareData.arrow) == null ? void 0 : _a.x;
-    const arrowY = (_b = middlewareData.arrow) == null ? void 0 : _b.y;
+    const arrowX = (_a2 = middlewareData.arrow) == null ? void 0 : _a2.x;
+    const arrowY = (_b2 = middlewareData.arrow) == null ? void 0 : _b2.y;
     const cannotCenterArrow = ((_c = middlewareData.arrow) == null ? void 0 : _c.centerOffset) !== 0;
     const [contentZIndex, setContentZIndex] = reactExports.useState();
     useLayoutEffect2(() => {
@@ -14724,15 +14736,15 @@ var transformOrigin = (options) => ({
   name: "transformOrigin",
   options,
   fn(data) {
-    var _a, _b, _c;
+    var _a2, _b2, _c;
     const { placement, rects, middlewareData } = data;
-    const cannotCenterArrow = ((_a = middlewareData.arrow) == null ? void 0 : _a.centerOffset) !== 0;
+    const cannotCenterArrow = ((_a2 = middlewareData.arrow) == null ? void 0 : _a2.centerOffset) !== 0;
     const isArrowHidden = cannotCenterArrow;
     const arrowWidth = isArrowHidden ? 0 : options.arrowWidth;
     const arrowHeight = isArrowHidden ? 0 : options.arrowHeight;
     const [placedSide, placedAlign] = getSideAndAlignFromPlacement(placement);
     const noArrowAlign = { start: "0%", center: "50%", end: "100%" }[placedAlign];
-    const arrowXCenter = (((_b = middlewareData.arrow) == null ? void 0 : _b.x) ?? 0) + arrowWidth / 2;
+    const arrowXCenter = (((_b2 = middlewareData.arrow) == null ? void 0 : _b2.x) ?? 0) + arrowWidth / 2;
     const arrowYCenter = (((_c = middlewareData.arrow) == null ? void 0 : _c.y) ?? 0) + arrowHeight / 2;
     let x = "";
     let y = "";
@@ -14762,11 +14774,11 @@ var Content$2 = PopperContent;
 var Arrow = PopperArrow;
 var PORTAL_NAME$3 = "Portal";
 var Portal$2 = reactExports.forwardRef((props, forwardedRef) => {
-  var _a;
+  var _a2;
   const { container: containerProp, ...portalProps } = props;
   const [mounted, setMounted] = reactExports.useState(false);
   useLayoutEffect2(() => setMounted(true), []);
-  const container = containerProp || mounted && ((_a = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a.body);
+  const container = containerProp || mounted && ((_a2 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a2.body);
   return container ? ReactDOM.createPortal(/* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.div, { ...portalProps, ref: forwardedRef }), container) : null;
 });
 Portal$2.displayName = PORTAL_NAME$3;
@@ -14880,13 +14892,13 @@ function getAnimationName(styles) {
   return (styles == null ? void 0 : styles.animationName) || "none";
 }
 function getElementRef(element) {
-  var _a, _b;
-  let getter = (_a = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a.get;
+  var _a2, _b2;
+  let getter = (_a2 = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a2.get;
   let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
   if (mayWarn) {
     return element.ref;
   }
-  getter = (_b = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b.get;
+  getter = (_b2 = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b2.get;
   mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
   if (mayWarn) {
     return element.props.ref;
@@ -14923,11 +14935,11 @@ function useControllableState({
   }
   const setValue = reactExports.useCallback(
     (nextValue) => {
-      var _a;
+      var _a2;
       if (isControlled) {
         const value2 = isFunction(nextValue) ? nextValue(prop) : nextValue;
         if (value2 !== prop) {
-          (_a = onChangeRef.current) == null ? void 0 : _a.call(onChangeRef, value2);
+          (_a2 = onChangeRef.current) == null ? void 0 : _a2.call(onChangeRef, value2);
         }
       } else {
         setUncontrolledProp(nextValue);
@@ -14948,9 +14960,9 @@ function useUncontrolledState({
     onChangeRef.current = onChange;
   }, [onChange]);
   reactExports.useEffect(() => {
-    var _a;
+    var _a2;
     if (prevValueRef.current !== value) {
-      (_a = onChangeRef.current) == null ? void 0 : _a.call(onChangeRef, value);
+      (_a2 = onChangeRef.current) == null ? void 0 : _a2.call(onChangeRef, value);
       prevValueRef.current = value;
     }
   }, [value, prevValueRef]);
@@ -15399,7 +15411,7 @@ const createClassGroupUtils = (config) => {
   };
 };
 const getGroupRecursive = (classParts, classPartObject) => {
-  var _a;
+  var _a2;
   if (classParts.length === 0) {
     return classPartObject.classGroupId;
   }
@@ -15413,9 +15425,9 @@ const getGroupRecursive = (classParts, classPartObject) => {
     return void 0;
   }
   const classRest = classParts.join(CLASS_PART_SEPARATOR);
-  return (_a = classPartObject.validators.find(({
+  return (_a2 = classPartObject.validators.find(({
     validator
-  }) => validator(classRest))) == null ? void 0 : _a.classGroupId;
+  }) => validator(classRest))) == null ? void 0 : _a2.classGroupId;
 };
 const arbitraryPropertyRegex = /^\[(.+)\]$/;
 const getGroupIdForArbitraryProperty = (className) => {
@@ -19233,7 +19245,7 @@ const createImpl = (createState) => {
   return useBoundStore;
 };
 const create = (createState) => createImpl;
-const __vite_import_meta_env__ = { "BASE_URL": "/wp-content/plugins/accessibility-widget/lite/admin/app/dist", "DEV": false, "MODE": "production", "PROD": true, "SSR": false };
+const __vite_import_meta_env__ = { "BASE_URL": "/wp-content/plugins/accessibility-widget/lite/admin/app/dist/", "DEV": false, "MODE": "production", "PROD": true, "SSR": false };
 const trackedConnections = /* @__PURE__ */ new Map();
 const getTrackedConnectionState = (name) => {
   const api2 = trackedConnections.get(name);
@@ -19270,15 +19282,15 @@ const removeStoreFromTrackedConnections = (name, store) => {
   }
 };
 const findCallerName = (stack) => {
-  var _a, _b;
+  var _a2, _b2;
   if (!stack) return void 0;
   const traceLines = stack.split("\n");
   const apiSetStateLineIndex = traceLines.findIndex(
     (traceLine) => traceLine.includes("api.setState")
   );
   if (apiSetStateLineIndex < 0) return void 0;
-  const callerLine = ((_a = traceLines[apiSetStateLineIndex + 1]) == null ? void 0 : _a.trim()) || "";
-  return (_b = /.+ (.+) .+/.exec(callerLine)) == null ? void 0 : _b[1];
+  const callerLine = ((_a2 = traceLines[apiSetStateLineIndex + 1]) == null ? void 0 : _a2.trim()) || "";
+  return (_b2 = /.+ (.+) .+/.exec(callerLine)) == null ? void 0 : _b2[1];
 };
 const devtoolsImpl = (fn, devtoolsOptions = {}) => (set, get, api2) => {
   const { enabled, anonymousActionType, store, ...options } = devtoolsOptions;
@@ -19356,7 +19368,7 @@ const devtoolsImpl = (fn, devtoolsOptions = {}) => (set, get, api2) => {
     };
   }
   connection.subscribe((message) => {
-    var _a;
+    var _a2;
     switch (message.type) {
       case "ACTION":
         if (typeof message.payload !== "string") {
@@ -19433,7 +19445,7 @@ const devtoolsImpl = (fn, devtoolsOptions = {}) => (set, get, api2) => {
             });
           case "IMPORT_STATE": {
             const { nextLiftedState } = message.payload;
-            const lastComputedState = (_a = nextLiftedState.computedStates.slice(-1)[0]) == null ? void 0 : _a.state;
+            const lastComputedState = (_a2 = nextLiftedState.computedStates.slice(-1)[0]) == null ? void 0 : _a2.state;
             if (!lastComputedState) return;
             if (store === void 0) {
               setStateFromDevtools(lastComputedState);
@@ -19625,22 +19637,33 @@ const DEFAULT_WIDGET_CONFIG = {
     }
   },
   primaryColor: "#1863DC",
+  keyboard: {
+    enabled: false,
+    shortcut: "alt+a"
+  },
   modules: {
     color: {
-      darkContrast: { enabled: false },
-      lightContrast: { enabled: false },
-      highContrast: { enabled: false },
-      highSaturation: { enabled: false },
-      lightSaturation: { enabled: false },
-      monochrome: { enabled: false }
+      darkContrast: { enabled: true },
+      lightContrast: { enabled: true },
+      highContrast: { enabled: true },
+      highSaturation: { enabled: true },
+      lowSaturation: { enabled: true },
+      monochrome: { enabled: true }
     },
     content: {
-      highlightText: { enabled: false },
-      highlightLinks: { enabled: false },
+      adjustFontSizing: { enabled: true },
+      highlightTitle: { enabled: true },
+      highlightLinks: { enabled: true },
       dyslexicFont: { enabled: true },
-      letterSpacing: { enabled: false },
+      letterSpacing: { enabled: true },
       lineHeight: { enabled: true },
-      fontWeight: { enabled: false }
+      fontWeight: { enabled: true },
+      alignLeft: { enabled: true }
+    },
+    navigation: {
+      readingGuide: { enabled: true },
+      pauseAnimations: { enabled: true },
+      bigCursor: { enabled: true }
     },
     statement: {
       enabled: false,
@@ -20081,14 +20104,14 @@ const createI18n = (initialData, initialDomain, hooks) => {
   };
   const getLocaleData = (domain = "default") => tannin.data[domain];
   const doSetLocaleData = (data, domain = "default") => {
-    var _a;
+    var _a2;
     tannin.data[domain] = {
       ...tannin.data[domain],
       ...data
     };
     tannin.data[domain][""] = {
       ...DEFAULT_LOCALE_DATA[""],
-      ...(_a = tannin.data[domain]) == null ? void 0 : _a[""]
+      ...(_a2 = tannin.data[domain]) == null ? void 0 : _a2[""]
     };
     delete tannin.pluralForms[domain];
   };
@@ -20097,7 +20120,7 @@ const createI18n = (initialData, initialDomain, hooks) => {
     notifyListeners();
   };
   const addLocaleData = (data, domain = "default") => {
-    var _a;
+    var _a2;
     tannin.data[domain] = {
       ...tannin.data[domain],
       ...data,
@@ -20105,7 +20128,7 @@ const createI18n = (initialData, initialDomain, hooks) => {
       // a plural forms expression).
       "": {
         ...DEFAULT_LOCALE_DATA[""],
-        ...(_a = tannin.data[domain]) == null ? void 0 : _a[""],
+        ...(_a2 = tannin.data[domain]) == null ? void 0 : _a2[""],
         ...data == null ? void 0 : data[""]
       }
     };
@@ -20184,9 +20207,9 @@ const createI18n = (initialData, initialDomain, hooks) => {
     return "rtl" === _x("ltr", "text direction");
   };
   const hasTranslation = (single, context, domain) => {
-    var _a, _b;
+    var _a2, _b2;
     const key = context ? context + "" + single : single;
-    let result = !!((_b = (_a = tannin.data) == null ? void 0 : _a[domain !== null && domain !== void 0 ? domain : "default"]) == null ? void 0 : _b[key]);
+    let result = !!((_b2 = (_a2 = tannin.data) == null ? void 0 : _a2[domain !== null && domain !== void 0 ? domain : "default"]) == null ? void 0 : _b2[key]);
     if (hooks) {
       result = /** @type { boolean } */
       /** @type {*} */
@@ -20226,11 +20249,14 @@ function validateNamespace(namespace) {
     return false;
   }
   if (!/^[a-zA-Z][a-zA-Z0-9_.\-\/]*$/.test(namespace)) {
-    console.error("The namespace can only contain numbers, letters, dashes, periods, underscores and slashes.");
+    console.error(
+      "The namespace can only contain numbers, letters, dashes, periods, underscores and slashes."
+    );
     return false;
   }
   return true;
 }
+var validateNamespace_default = validateNamespace;
 function validateHookName(hookName) {
   if ("string" !== typeof hookName || "" === hookName) {
     console.error("The hook name must be a non-empty string.");
@@ -20241,18 +20267,21 @@ function validateHookName(hookName) {
     return false;
   }
   if (!/^[a-zA-Z][a-zA-Z0-9_.-]*$/.test(hookName)) {
-    console.error("The hook name can only contain numbers, letters, dashes, periods and underscores.");
+    console.error(
+      "The hook name can only contain numbers, letters, dashes, periods and underscores."
+    );
     return false;
   }
   return true;
 }
+var validateHookName_default = validateHookName;
 function createAddHook(hooks, storeKey) {
   return function addHook(hookName, namespace, callback, priority = 10) {
     const hooksStore = hooks[storeKey];
-    if (!validateHookName(hookName)) {
+    if (!validateHookName_default(hookName)) {
       return;
     }
-    if (!validateNamespace(namespace)) {
+    if (!validateNamespace_default(namespace)) {
       return;
     }
     if ("function" !== typeof callback) {
@@ -20260,14 +20289,12 @@ function createAddHook(hooks, storeKey) {
       return;
     }
     if ("number" !== typeof priority) {
-      console.error("If specified, the hook priority must be a number.");
+      console.error(
+        "If specified, the hook priority must be a number."
+      );
       return;
     }
-    const handler = {
-      callback,
-      priority,
-      namespace
-    };
+    const handler = { callback, priority, namespace };
     if (hooksStore[hookName]) {
       const handlers = hooksStore[hookName].handlers;
       let i;
@@ -20293,17 +20320,24 @@ function createAddHook(hooks, storeKey) {
       };
     }
     if (hookName !== "hookAdded") {
-      hooks.doAction("hookAdded", hookName, namespace, callback, priority);
+      hooks.doAction(
+        "hookAdded",
+        hookName,
+        namespace,
+        callback,
+        priority
+      );
     }
   };
 }
+var createAddHook_default = createAddHook;
 function createRemoveHook(hooks, storeKey, removeAll = false) {
   return function removeHook(hookName, namespace) {
     const hooksStore = hooks[storeKey];
-    if (!validateHookName(hookName)) {
+    if (!validateHookName_default(hookName)) {
       return;
     }
-    if (!removeAll && !validateNamespace(namespace)) {
+    if (!removeAll && !validateNamespace_default(namespace)) {
       return;
     }
     if (!hooksStore[hookName]) {
@@ -20336,15 +20370,19 @@ function createRemoveHook(hooks, storeKey, removeAll = false) {
     return handlersRemoved;
   };
 }
+var createRemoveHook_default = createRemoveHook;
 function createHasHook(hooks, storeKey) {
   return function hasHook(hookName, namespace) {
     const hooksStore = hooks[storeKey];
     if ("undefined" !== typeof namespace) {
-      return hookName in hooksStore && hooksStore[hookName].handlers.some((hook) => hook.namespace === namespace);
+      return hookName in hooksStore && hooksStore[hookName].handlers.some(
+        (hook) => hook.namespace === namespace
+      );
     }
     return hookName in hooksStore;
   };
 }
+var createHasHook_default = createHasHook;
 function createRunHook(hooks, storeKey, returnFirstArg, async) {
   return function runHook(hookName, ...args) {
     const hooksStore = hooks[storeKey];
@@ -20400,64 +20438,90 @@ function createRunHook(hooks, storeKey, returnFirstArg, async) {
     return (async ? asyncRunner : syncRunner)();
   };
 }
+var createRunHook_default = createRunHook;
 function createCurrentHook(hooks, storeKey) {
   return function currentHook() {
-    var _a;
-    var _currentArray$at$name;
+    var _a2;
     const hooksStore = hooks[storeKey];
     const currentArray = Array.from(hooksStore.__current);
-    return (_currentArray$at$name = (_a = currentArray.at(-1)) == null ? void 0 : _a.name) !== null && _currentArray$at$name !== void 0 ? _currentArray$at$name : null;
+    return ((_a2 = currentArray.at(-1)) == null ? void 0 : _a2.name) ?? null;
   };
 }
+var createCurrentHook_default = createCurrentHook;
 function createDoingHook(hooks, storeKey) {
   return function doingHook(hookName) {
     const hooksStore = hooks[storeKey];
     if ("undefined" === typeof hookName) {
       return hooksStore.__current.size > 0;
     }
-    return Array.from(hooksStore.__current).some((hook) => hook.name === hookName);
+    return Array.from(hooksStore.__current).some(
+      (hook) => hook.name === hookName
+    );
   };
 }
+var createDoingHook_default = createDoingHook;
 function createDidHook(hooks, storeKey) {
   return function didHook(hookName) {
     const hooksStore = hooks[storeKey];
-    if (!validateHookName(hookName)) {
+    if (!validateHookName_default(hookName)) {
       return;
     }
     return hooksStore[hookName] && hooksStore[hookName].runs ? hooksStore[hookName].runs : 0;
   };
 }
-class _Hooks {
+var createDidHook_default = createDidHook;
+var _Hooks = class {
   constructor() {
+    __publicField(this, "actions");
+    __publicField(this, "filters");
+    __publicField(this, "addAction");
+    __publicField(this, "addFilter");
+    __publicField(this, "removeAction");
+    __publicField(this, "removeFilter");
+    __publicField(this, "hasAction");
+    __publicField(this, "hasFilter");
+    __publicField(this, "removeAllActions");
+    __publicField(this, "removeAllFilters");
+    __publicField(this, "doAction");
+    __publicField(this, "doActionAsync");
+    __publicField(this, "applyFilters");
+    __publicField(this, "applyFiltersAsync");
+    __publicField(this, "currentAction");
+    __publicField(this, "currentFilter");
+    __publicField(this, "doingAction");
+    __publicField(this, "doingFilter");
+    __publicField(this, "didAction");
+    __publicField(this, "didFilter");
     this.actions = /* @__PURE__ */ Object.create(null);
     this.actions.__current = /* @__PURE__ */ new Set();
     this.filters = /* @__PURE__ */ Object.create(null);
     this.filters.__current = /* @__PURE__ */ new Set();
-    this.addAction = createAddHook(this, "actions");
-    this.addFilter = createAddHook(this, "filters");
-    this.removeAction = createRemoveHook(this, "actions");
-    this.removeFilter = createRemoveHook(this, "filters");
-    this.hasAction = createHasHook(this, "actions");
-    this.hasFilter = createHasHook(this, "filters");
-    this.removeAllActions = createRemoveHook(this, "actions", true);
-    this.removeAllFilters = createRemoveHook(this, "filters", true);
-    this.doAction = createRunHook(this, "actions", false, false);
-    this.doActionAsync = createRunHook(this, "actions", false, true);
-    this.applyFilters = createRunHook(this, "filters", true, false);
-    this.applyFiltersAsync = createRunHook(this, "filters", true, true);
-    this.currentAction = createCurrentHook(this, "actions");
-    this.currentFilter = createCurrentHook(this, "filters");
-    this.doingAction = createDoingHook(this, "actions");
-    this.doingFilter = createDoingHook(this, "filters");
-    this.didAction = createDidHook(this, "actions");
-    this.didFilter = createDidHook(this, "filters");
+    this.addAction = createAddHook_default(this, "actions");
+    this.addFilter = createAddHook_default(this, "filters");
+    this.removeAction = createRemoveHook_default(this, "actions");
+    this.removeFilter = createRemoveHook_default(this, "filters");
+    this.hasAction = createHasHook_default(this, "actions");
+    this.hasFilter = createHasHook_default(this, "filters");
+    this.removeAllActions = createRemoveHook_default(this, "actions", true);
+    this.removeAllFilters = createRemoveHook_default(this, "filters", true);
+    this.doAction = createRunHook_default(this, "actions", false, false);
+    this.doActionAsync = createRunHook_default(this, "actions", false, true);
+    this.applyFilters = createRunHook_default(this, "filters", true, false);
+    this.applyFiltersAsync = createRunHook_default(this, "filters", true, true);
+    this.currentAction = createCurrentHook_default(this, "actions");
+    this.currentFilter = createCurrentHook_default(this, "filters");
+    this.doingAction = createDoingHook_default(this, "actions");
+    this.doingFilter = createDoingHook_default(this, "filters");
+    this.didAction = createDidHook_default(this, "actions");
+    this.didFilter = createDidHook_default(this, "filters");
   }
-}
+};
 function createHooks() {
   return new _Hooks();
 }
-const defaultHooks = createHooks();
-const {
+var createHooks_default = createHooks;
+var defaultHooks = createHooks_default();
+var {
   addAction,
   addFilter,
   removeAction,
@@ -21118,7 +21182,37 @@ const useWidgetStore = create()(
         set({ isLoading: true, error: null });
         try {
           const response = await getWidgetConfig();
-          set({ config: response });
+          set((state) => {
+            var _a2, _b2, _c, _d;
+            return {
+              config: {
+                ...state.config,
+                ...response,
+                keyboard: {
+                  ...DEFAULT_WIDGET_CONFIG.keyboard,
+                  ...response.keyboard || {}
+                },
+                modules: {
+                  color: {
+                    ...DEFAULT_WIDGET_CONFIG.modules.color,
+                    ...((_a2 = response.modules) == null ? void 0 : _a2.color) || {}
+                  },
+                  content: {
+                    ...DEFAULT_WIDGET_CONFIG.modules.content,
+                    ...((_b2 = response.modules) == null ? void 0 : _b2.content) || {}
+                  },
+                  navigation: {
+                    ...DEFAULT_WIDGET_CONFIG.modules.navigation,
+                    ...((_c = response.modules) == null ? void 0 : _c.navigation) || {}
+                  },
+                  statement: {
+                    ...DEFAULT_WIDGET_CONFIG.modules.statement,
+                    ...((_d = response.modules) == null ? void 0 : _d.statement) || {}
+                  }
+                }
+              }
+            };
+          });
         } catch (error) {
           console.error(error);
           set({ error: "An unexpected error occurred" });
@@ -21133,6 +21227,27 @@ const useWidgetStore = create()(
       setLabel: (label) => set((state) => ({ config: { ...state.config, label } }), false, "setLabel"),
       setHeading: (heading) => set((state) => ({ config: { ...state.config, heading } }), false, "setHeading"),
       setStatus: (status) => set((state) => ({ config: { ...state.config, status } }), false, "setStatus"),
+      setKeyboard: (keyboard) => set((state) => ({ config: { ...state.config, keyboard } }), false, "setKeyboard"),
+      setModuleEnabled: (section, key, enabled) => set(
+        (state) => {
+          const VALID_SECTIONS = ["color", "content", "navigation"];
+          if (!VALID_SECTIONS.includes(section)) return state;
+          return {
+            config: {
+              ...state.config,
+              modules: {
+                ...state.config.modules,
+                [section]: {
+                  ...state.config.modules[section],
+                  [key]: { enabled }
+                }
+              }
+            }
+          };
+        },
+        false,
+        "setModuleEnabled"
+      ),
       setStatementEnabled: (enabled) => set((state) => ({ config: { ...state.config, modules: { ...state.config.modules, statement: { ...state.config.modules.statement, enabled } } } }), false, "setStatementEnabled"),
       setStatementUrl: (url) => set((state) => ({ config: { ...state.config, modules: { ...state.config.modules, statement: { ...state.config.modules.statement, url } } } }), false, "setStatementUrl"),
       setStatementDisplayInWidget: (displayInWidget) => set((state) => ({ config: { ...state.config, modules: { ...state.config.modules, statement: { ...state.config.modules.statement, displayInWidget } } } }), false, "setStatementDisplayInWidget"),
@@ -21191,25 +21306,30 @@ const useWidgetStore = create()(
       loadConfig: (newConfig) => {
         set(
           (state) => {
-            var _a, _b, _c;
+            var _a2, _b2, _c, _d;
             return {
               config: {
                 ...state.config,
                 ...newConfig,
                 position: newConfig.position ? { ...state.config.position, ...newConfig.position } : state.config.position,
                 margins: newConfig.margins ? { ...state.config.margins, ...newConfig.margins } : state.config.margins,
+                keyboard: newConfig.keyboard ? { ...state.config.keyboard, ...newConfig.keyboard } : state.config.keyboard,
                 modules: {
                   color: {
                     ...state.config.modules.color,
-                    ...((_a = newConfig.modules) == null ? void 0 : _a.color) || {}
+                    ...((_a2 = newConfig.modules) == null ? void 0 : _a2.color) || {}
                   },
                   content: {
                     ...state.config.modules.content,
-                    ...((_b = newConfig.modules) == null ? void 0 : _b.content) || {}
+                    ...((_b2 = newConfig.modules) == null ? void 0 : _b2.content) || {}
+                  },
+                  navigation: {
+                    ...state.config.modules.navigation,
+                    ...((_c = newConfig.modules) == null ? void 0 : _c.navigation) || {}
                   },
                   statement: {
                     ...state.config.modules.statement,
-                    ...((_c = newConfig.modules) == null ? void 0 : _c.statement) || {}
+                    ...((_d = newConfig.modules) == null ? void 0 : _d.statement) || {}
                   }
                 }
               }
@@ -21226,23 +21346,24 @@ const useWidgetStore = create()(
 const useBannerVisibility = (bannerId) => {
   const banners = useWidgetStore((state) => state.config.banners || {});
   const fetchConfig = useWidgetStore((state) => state.fetchConfig);
-  const checkVisibility = () => {
+  const checkVisibility = reactExports.useCallback(() => {
     const bannerData = banners[bannerId];
-    if (!bannerData) {
-      return true;
-    }
+    if (!bannerData) return true;
+    if (bannerData.status === false) return false;
+    if (bannerData.until && Date.now() < bannerData.until) return false;
     return bannerData.status;
-  };
+  }, [banners, bannerId]);
   const [isVisible, setIsVisible] = reactExports.useState(checkVisibility());
   reactExports.useEffect(() => {
     setIsVisible(checkVisibility());
-  }, [banners, bannerId]);
+  }, [checkVisibility]);
   const hide2 = async () => {
+    setIsVisible(false);
     try {
       await dismissBanner(bannerId);
-      setIsVisible(false);
       await fetchConfig();
     } catch (error) {
+      setIsVisible(true);
       console.error("Failed to dismiss banner:", error);
     }
   };
@@ -21251,12 +21372,17 @@ const useBannerVisibility = (bannerId) => {
     hide: hide2
   };
 };
+const WEBYES_SCAN_BASE_URL = "https://accessibility.webyes.com/accessibility/scan";
+const WEBYES_CONSULTATION_URL = "https://www.webyes.com/free-accessibility-consulting?utm_medium=banner&utm_source=wordpress_plugin&utm_campaign=accessyes";
 const Banner = () => {
+  var _a2;
   const { isVisible, hide: hide2 } = useBannerVisibility("webyes-promo");
+  const banners = useWidgetStore((state) => state.config.banners || {});
   const siteUrl = window.cyA11yGlobals.site.url;
-  const scanUrl = `https://accessibility.webyes.com/accessibility/scan?website_url=${encodeURIComponent(siteUrl)}`;
-  if (!isVisible) return null;
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl  cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8 ", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  const scanUrl = `${WEBYES_SCAN_BASE_URL}?website_url=${encodeURIComponent(siteUrl)}&utm_medium=banner&utm_source=wordpress_plugin&utm_campaign=accessyes`;
+  const consultationDismissed = ((_a2 = banners["consultation-banner"]) == null ? void 0 : _a2.status) === false;
+  if (!isVisible || !consultationDismissed) return null;
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
       className: "cy:relative cy:bg-[#0B66E4] cy:rounded-xl cy:shadow-sm cy:flex cy:flex-col cy:lg:flex-row cy:items-stretch cy:min-h-[266px]",
@@ -21270,31 +21396,31 @@ const Banner = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "button",
           {
-            onClick: () => hide2(),
+            onClick: hide2,
             className: "cy:absolute cy:top-6 cy:right-4 cy:z-50 cy:p-1 cy:text-white/70 cy:hover:text-white cy:hover:bg-white/10 cy:rounded-full cy:transition-colors",
-            "aria-label": "Dismiss banner",
+            "aria-label": __$1("Dismiss banner", "accessibility-widget"),
             children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 24 })
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:w-[60%] cy:p-8 cy:flex cy:flex-col cy:relative cy:z-10", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-[12px] ", children: "Sponsored recommendation" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-[18px] cy:font-bold cy:text-white!", children: "Beyond Widgets. Continue Your Accessibility Journey." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-[12px]", children: __$1("Sponsored recommendation", "accessibility-widget") }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-[18px] cy:font-bold cy:text-white!", children: __$1("Beyond Widgets. Continue Your Accessibility Journey.", "accessibility-widget") }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-white cy:pb-4 cy:pr-10 cy:text-[14px] cy:leading-relaxed", children: [
-            "You have taken the first step towards accessibility. Now level up with deeper audits, ongoing monitoring for accessibility issues, and detailed reporting with AI- assisted solutions.",
+            __$1("You have taken the first step towards accessibility. Now level up with deeper audits, ongoing monitoring for accessibility issues, and detailed reporting with AI-assisted solutions.", "accessibility-widget"),
             /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-            "Explore WebYes. One platform, better fixes."
+            __$1("Explore WebYes. One platform, better fixes.", "accessibility-widget")
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-blue-500", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Button,
             {
               onClick: () => window.open(scanUrl, "_blank", "noopener,noreferrer"),
-              className: "cy:bg-white cy:text-[#0B66E4] cy:hover:bg-white/90 cy:font-semibold cy:px-6 cy:py-5 cy:rounded-md cy:flex cy:items-center cy:gap-2 cy:text-[16]",
+              className: "cy:self-start cy:bg-white cy:text-[#0B66E4] cy:hover:bg-white/90 cy:font-bold! cy:px-6 cy:py-5 cy:rounded-md cy:flex cy:items-center cy:gap-2 cy:text-[16px]",
               children: [
-                "Run a scan with WebYes",
+                __$1("Run a scan with WebYes", "accessibility-widget"),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { size: 16 })
               ]
             }
-          ) })
+          )
         ] })
       ]
     }
@@ -21311,11 +21437,11 @@ function hasReachedReviewDelay(installDate) {
   return elapsedMs >= REVIEW_DELAY_DAYS * 24 * 60 * 60 * 1e3;
 }
 const useReviewBannerVisibility = () => {
-  var _a;
+  var _a2;
   const banners = useWidgetStore((state) => state.config.banners || {});
   const fetchConfig = useWidgetStore((state) => state.fetchConfig);
-  const installDate = ((_a = window.cyA11yGlobals.reviewBanner) == null ? void 0 : _a.installDate) ?? 0;
-  const checkVisibility = () => {
+  const installDate = ((_a2 = window.cyA11yGlobals.reviewBanner) == null ? void 0 : _a2.installDate) ?? 0;
+  const checkVisibility = reactExports.useCallback(() => {
     if (!hasReachedReviewDelay(installDate)) {
       return false;
     }
@@ -21330,11 +21456,11 @@ const useReviewBannerVisibility = () => {
       return bannerData.until <= Math.floor(Date.now() / 1e3);
     }
     return false;
-  };
+  }, [banners, installDate]);
   const [isVisible, setIsVisible] = reactExports.useState(checkVisibility());
   reactExports.useEffect(() => {
     setIsVisible(checkVisibility());
-  }, [banners, installDate]);
+  }, [checkVisibility]);
   const hideTemporarily = async () => {
     await updateBanner(REVIEW_BANNER_ID, {
       status: false,
@@ -21361,13 +21487,8 @@ const ReviewBanner = () => {
   if (!isVisible) return null;
   const reviewUrl = window.cyA11yGlobals.reviewBanner.reviewUrl;
   const handleReviewNow = async () => {
-    const reviewWindow = window.open("", "_blank", "noopener,noreferrer");
+    window.open(reviewUrl, "_blank", "noopener,noreferrer");
     await hidePermanently();
-    if (reviewWindow) {
-      reviewWindow.location.href = reviewUrl;
-    } else {
-      window.open(reviewUrl, "_blank", "noopener,noreferrer");
-    }
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:relative cy:rounded-[5px] cy:border cy:border-[#d7e1f2] cy:bg-white cy:px-4 cy:py-4 cy:shadow-sm", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -21375,7 +21496,7 @@ const ReviewBanner = () => {
       {
         onClick: hideTemporarily,
         className: "cy:absolute cy:right-4 cy:top-4 cy:flex cy:h-8 cy:w-8 cy:items-center cy:justify-center cy:rounded-full cy:text-[#7e7e7e] cy:transition-colors hover:cy:bg-black/5 hover:cy:text-[#555d66]",
-        "aria-label": "Dismiss review banner",
+        "aria-label": __$1("Dismiss review banner", "accessibility-widget"),
         type: "button",
         children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 18 })
       }
@@ -21390,9 +21511,11 @@ const ReviewBanner = () => {
         }
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:mb-3 cy:text-[14px] cy:font-[400] cy:leading-5 cy:text-[#000000] cy:pb-3 cy:pt-1", children: [
-        "Hey, we at ",
+        __$1("Hey, we at", "accessibility-widget"),
+        " ",
         /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "AccessYes" }),
-        " would like to thank you for using our plugin. We would really appreciate if you could take a moment to drop a quick review that will inspire us to keep going."
+        " ",
+        __$1("would like to thank you for using our plugin. We would really appreciate if you could take a moment to drop a quick review that will inspire us to keep going.", "accessibility-widget")
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-wrap cy:gap-3", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -21401,7 +21524,7 @@ const ReviewBanner = () => {
             type: "button",
             onClick: handleReviewNow,
             className: "cy:h-8 cy:min-w-[94px] cy:rounded-[3px] cy:bg-[#1578F7] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-white hover:cy:bg-[#1558c7]",
-            children: "Review now"
+            children: __$1("Review now", "accessibility-widget")
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -21411,11 +21534,119 @@ const ReviewBanner = () => {
             variant: "outline",
             onClick: hidePermanently,
             className: "cy:h-8 cy:min-w-[124px] cy:rounded-[3px] cy:border-[#baafaf] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-[#756f6f] cy:opacity-50 hover:cy:bg-[#f6f7f7]",
-            children: "Never show again"
+            children: __$1("Never show again", "accessibility-widget")
           }
         )
       ] })
     ] })
+  ] }) });
+};
+const CONSULTATION_BANNER_ID = "consultation-banner";
+const PROMO_BANNER_ID = "webyes-promo";
+const ONE_DAY_MS = 24 * 60 * 60 * 1e3;
+const StarSVG = () => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { width: "28", height: "28", viewBox: "0 0 35 35", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": "true", children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M16.8073 3.34686C16.8712 3.21774 16.9699 3.10906 17.0923 3.03307C17.2147 2.95708 17.3559 2.91681 17.5 2.91681C17.6441 2.91681 17.7853 2.95708 17.9077 3.03307C18.0301 3.10906 18.1288 3.21774 18.1927 3.34686L21.5615 10.1704C21.7834 10.6195 22.111 11.0081 22.5161 11.3027C22.9213 11.5974 23.3919 11.7893 23.8875 11.8621L31.4213 12.9646C31.564 12.9853 31.6981 13.0455 31.8084 13.1384C31.9188 13.2313 32.0009 13.3533 32.0455 13.4905C32.0901 13.6276 32.0954 13.7745 32.0609 13.9146C32.0263 14.0546 31.9533 14.1822 31.85 14.2829L26.4017 19.5883C26.0424 19.9385 25.7735 20.3707 25.6183 20.8478C25.4631 21.3249 25.4261 21.8325 25.5106 22.3271L26.7969 29.8229C26.8221 29.9656 26.8067 30.1125 26.7524 30.2468C26.6981 30.3812 26.6072 30.4975 26.49 30.5827C26.3727 30.6678 26.2339 30.7183 26.0894 30.7284C25.9449 30.7384 25.8004 30.7077 25.6725 30.6396L18.9379 27.0987C18.4942 26.8657 18.0005 26.744 17.4993 26.744C16.9981 26.744 16.5044 26.8657 16.0606 27.0987L9.32752 30.6396C9.19967 30.7073 9.05539 30.7377 8.91109 30.7274C8.7668 30.7172 8.62828 30.6666 8.51128 30.5816C8.39429 30.4965 8.30353 30.3803 8.24931 30.2461C8.19509 30.112 8.1796 29.9654 8.2046 29.8229L9.48939 22.3285C9.57426 21.8338 9.5375 21.3258 9.38226 20.8484C9.22703 20.371 8.95799 19.9385 8.59835 19.5883L3.15002 14.2844C3.04589 14.1838 2.97209 14.056 2.93705 13.9155C2.902 13.775 2.90712 13.6276 2.9518 13.4898C2.99649 13.3521 3.07895 13.2298 3.1898 13.1366C3.30065 13.0435 3.43542 12.9834 3.57877 12.9631L11.1111 11.8621C11.6073 11.7899 12.0785 11.5982 12.4842 11.3035C12.8899 11.0088 13.2179 10.62 13.44 10.1704L16.8073 3.34686Z", fill: "#FFB700" }) });
+const AccessibilityIcon = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("svg", { width: "12", height: "14", viewBox: "0 0 14 16", fill: "none", xmlns: "http://www.w3.org/2000/svg", "aria-hidden": "true", children: [
+  /* @__PURE__ */ jsxRuntimeExports.jsx("circle", { cx: "7", cy: "2.5", r: "2", fill: "white" }),
+  /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M3.5 5.5L7 6.5L10.5 5.5M7 6.5V10M5 14L7 10L9 14", stroke: "white", strokeWidth: "1.4", strokeLinecap: "round", strokeLinejoin: "round" })
+] });
+const ConsultationBanner = () => {
+  const { isVisible, hide: hide2 } = useBannerVisibility(CONSULTATION_BANNER_ID);
+  const banners = useWidgetStore((state) => state.config.banners || {});
+  const [isClosing, setIsClosing] = reactExports.useState(false);
+  if (!isVisible) return null;
+  const handleClose = async () => {
+    if (isClosing) return;
+    setIsClosing(true);
+    try {
+      const promoBanner = banners[PROMO_BANNER_ID];
+      const promoNotDismissed = !promoBanner || promoBanner.status !== false;
+      if (promoNotDismissed) {
+        await updateBanner(PROMO_BANNER_ID, { status: true, until: Date.now() + ONE_DAY_MS });
+      }
+      await hide2();
+    } catch (error) {
+      setIsClosing(false);
+      console.error("Failed to close banner:", error);
+    }
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:min-h-[112px] cy:relative cy:bg-gradient-to-br cy:from-blue-600 cy:to-sky-500 cy:overflow-hidden cy:rounded-xl cy:flex cy:items-center cy:pl-[267px] cy:pr-10 cy:py-4", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        "aria-hidden": "true",
+        className: "cy:w-12 cy:h-48 cy:absolute cy:origin-top-left cy:bg-blue-800 cy:blur-[50px]",
+        style: {
+          left: "calc(100% - 115px)",
+          top: "-52.16px",
+          transform: "rotate(-50.18deg)",
+          boxShadow: "-24px 4px 28px 0px rgba(0,0,0,0.25)"
+        }
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        "aria-hidden": "true",
+        className: "cy:w-28 cy:h-32 cy:left-[30px] cy:top-[15px] cy:absolute cy:bg-white cy:rounded-2xl cy:outline cy:outline-2 cy:outline-white/30 cy:overflow-hidden",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-12 cy:h-10 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 59, top: 17.29 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-24 cy:h-5 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 8.81, top: 74.17 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-8 cy:h-6 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 8.81, top: 88.06 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-8 cy:h-6 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 43.15, top: 88.06 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-8 cy:h-6 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 77.49, top: 88.06 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-11 cy:h-1.5 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 8.81, top: 23.02 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-4 cy:h-1.5 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 8.81, top: 47.67 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-4 cy:h-1.5 cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { left: 27.74, top: 47.67 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { width: 40, height: 2.64, left: 8.81, top: 32.26 } }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:absolute cy:bg-indigo-100 cy:rounded-sm", style: { width: 28, height: 2.64, left: 8.81, top: 37.55 } })
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        "aria-hidden": "true",
+        className: "cy:px-2.5 cy:py-1.5 cy:left-[70px] cy:top-[32px] cy:absolute cy:bg-white cy:rounded-xl cy:inline-flex cy:justify-start cy:items-center cy:gap-2",
+        style: { boxShadow: "0px 16px 24px 0px rgba(33,15,111,0.37)" },
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-6 cy:h-6 cy:bg-[#0B66E4] cy:rounded-full cy:flex cy:items-center cy:justify-center cy:shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(AccessibilityIcon, {}) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-zinc-800 cy:text-xs cy:font-medium cy:leading-4 cy:whitespace-nowrap", children: __$1("Accessibility Expert", "accessibility-widget") })
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-1 cy:items-center cy:justify-between cy:gap-4 cy:min-w-0", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:justify-center cy:items-start cy:gap-1.5 cy:min-w-0", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-xl cy:font-bold cy:leading-8 cy:text-white", children: __$1("You've unlocked a free 45-min accessibility consultation!", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-sm cy:font-normal cy:leading-5", children: __$1("Get a live site review + a clear, prioritised plan for ", "accessibility-widget") }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-sm cy:font-bold cy:leading-5", children: __$1("WCAG 2.2, ADA & EAA.", "accessibility-widget") })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        Button,
+        {
+          type: "button",
+          onClick: () => window.open(WEBYES_CONSULTATION_URL, "_blank", "noopener,noreferrer"),
+          className: "cy:px-9 cy:py-3 cy:bg-white cy:rounded cy:inline-flex cy:justify-center cy:items-center cy:gap-2.5 cy:text-[#0B66E4] cy:text-base cy:font-bold! cy:leading-6 cy:hover:bg-white/90",
+          children: [
+            __$1("Book a call", "accessibility-widget"),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:sr-only", children: __$1("(opens in a new tab)", "accessibility-widget") })
+          ]
+        }
+      ) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-9 cy:h-9 cy:left-[12px] cy:top-[7px] cy:absolute cy:overflow-hidden cy:flex cy:items-center cy:justify-center cy:z-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx(StarSVG, {}) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "button",
+      {
+        onClick: handleClose,
+        disabled: isClosing,
+        className: "cy:w-6 cy:h-6 cy:absolute cy:top-[9px] cy:right-[9px] cy:z-50 cy:flex cy:items-center cy:justify-center cy:text-white/70 cy:hover:text-white cy:transition-colors cy:rounded-full cy:hover:bg-white/10 cy:disabled:opacity-50 cy:disabled:cursor-not-allowed",
+        "aria-label": __$1("Dismiss banner", "accessibility-widget"),
+        type: "button",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
+      }
+    )
   ] }) });
 };
 const Logo = (props) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -22769,12 +23000,12 @@ function Header() {
         status: newStatus
       });
       toast2({
-        title: `Widget ${!isEnabled ? "enabled" : "disabled"} successfully`,
+        title: !isEnabled ? __$1("Widget enabled successfully", "accessibility-widget") : __$1("Widget disabled successfully", "accessibility-widget"),
         variant: "success"
       });
     } catch {
       toast2({
-        title: "Failed to save changes",
+        title: __$1("Failed to save changes", "accessibility-widget"),
         variant: "destructive"
       });
       setStatus(status);
@@ -22787,10 +23018,10 @@ function Header() {
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:space-x-12", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:bg-[#00000045] cy:rounded-lg cy:px-4 cy:py-2", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:mr-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-white", children: "Widget status" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-white", children: __$1("Widget status", "accessibility-widget") }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:space-x-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `cy:w-5 cy:h-5 cy:rounded-full cy:flex cy:items-center cy:justify-center ${isEnabled ? "cy:bg-[#2DAD70]" : "cy:bg-[#DD425A]"}`, children: isEnabled ? /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "cy:w-3.5 cy:h-3.5 cy:text-white" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "cy:w-3.5 cy:h-3.5 cy:text-white" }) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-base cy:font-medium cy:text-white", children: isEnabled ? "Enabled" : "Disabled" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-base cy:font-medium cy:text-white", children: isEnabled ? __$1("Enabled", "accessibility-widget") : __$1("Disabled", "accessibility-widget") })
           ] })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -22819,7 +23050,8 @@ function Header() {
           className: "cy:inline-flex cy:items-center cy:justify-center cy:whitespace-nowrap cy:text-sm cy:transition-all cy:disabled:pointer-events-none cy:disabled:opacity-50 cy:[&_svg]:pointer-events-none  cy:shrink-0 cy:[&_svg]:shrink-0 cy:outline-none cy:focus-visible:border-ring cy:focus-visible:ring-ring/50 cy:focus-visible:ring-[3px] cy:aria-invalid:ring-destructive/20 cy:dark:aria-invalid:ring-destructive/40 cy:aria-invalid:border-destructive cy:bg-transparent cy:h-8 cy:rounded-md cy:gap-1.5 cy:px-3 cy:border-1 cy:border-white cy:text-white! cy:hover:bg-white cy:hover:text-black!",
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(LifeBuoy, { className: "cy:h-4 cy:w-4" }),
-            " Help"
+            " ",
+            __$1("Help", "accessibility-widget")
           ]
         }
       )
@@ -22919,10 +23151,10 @@ var Label$2 = reactExports.forwardRef((props, forwardedRef) => {
       ...props,
       ref: forwardedRef,
       onMouseDown: (event) => {
-        var _a;
+        var _a2;
         const target = event.target;
         if (target.closest("button, input, select, textarea")) return;
-        (_a = props.onMouseDown) == null ? void 0 : _a.call(props, event);
+        (_a2 = props.onMouseDown) == null ? void 0 : _a2.call(props, event);
         if (!event.defaultPrevented && event.detail > 1) event.preventDefault();
       }
     }
@@ -22950,7 +23182,7 @@ function IconSelector() {
   const iconId = useWidgetStore((state) => state.config.iconId);
   const setIconId = useWidgetStore((state) => state.setIconId);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: "Shape" }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: __$1("Shape", "accessibility-widget") }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex-1 cy:space-x-2", children: ICON_LIBRARY.map((iconItem) => {
       const IconComponent = iconItem.icon;
       return /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -22999,8 +23231,8 @@ function ColorPicker() {
   const setPrimaryColor = useWidgetStore((state) => state.setPrimaryColor);
   const colorInputRef = reactExports.useRef(null);
   const handleEyedropperClick = () => {
-    var _a;
-    (_a = colorInputRef.current) == null ? void 0 : _a.click();
+    var _a2;
+    (_a2 = colorInputRef.current) == null ? void 0 : _a2.click();
   };
   const handleColorChange = (e) => {
     const color = e.target.value;
@@ -23055,7 +23287,7 @@ function ColorPicker() {
           {
             type: "button",
             className: "cy:w-10 cy:h-10 cy:rounded-full cy:border-4 cy:border-[#E3E6F0] cy:flex cy:items-center cy:justify-center cy:bg-[#ECF3FC]",
-            "aria-label": "Pick custom color",
+            "aria-label": __$1("Pick custom color", "accessibility-widget"),
             onClick: handleEyedropperClick,
             children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pipette, { className: "cy:w-4 cy:h-4 text-[#4E4B66]" })
           }
@@ -23067,12 +23299,12 @@ function ColorPicker() {
             type: "color",
             className: "cy:absolute cy:top-0 cy:left-0 cy:w-0 cy:h-0",
             onChange: handleColorChange,
-            "aria-label": "Color picker"
+            "aria-label": __$1("Color picker", "accessibility-widget")
           }
         )
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:mt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[10px] cy:text-[#535276]", children: [
-        "Heads up: We recommend checking your colour choice against WCAG AA contrast guidelines to ensure accessibility. ",
+        __$1("Heads up: We recommend checking your colour choice against WCAG AA contrast guidelines to ensure accessibility.", "accessibility-widget"),
         " ",
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "a",
@@ -23080,7 +23312,7 @@ function ColorPicker() {
             href: "https://www.wcagcontrastchecker.com/",
             target: "_blank",
             className: "cy:text-blue-600 cy:underline cy:hover:text-blue-800",
-            children: "Check contrast here →"
+            children: __$1("Check contrast here →", "accessibility-widget")
           }
         )
       ] }) })
@@ -23298,9 +23530,9 @@ function createFocusScopesStack() {
       stack.unshift(focusScope);
     },
     remove(focusScope) {
-      var _a;
+      var _a2;
       stack = arrayRemove(stack, focusScope);
-      (_a = stack[0]) == null ? void 0 : _a.resume();
+      (_a2 = stack[0]) == null ? void 0 : _a2.resume();
     }
   };
 }
@@ -23628,8 +23860,8 @@ function createSidecarMedium(options) {
   medium.options = __assign({ async: true, ssr: false }, options);
   return medium;
 }
-var SideCar$1 = function(_a) {
-  var sideCar = _a.sideCar, rest = __rest(_a, ["sideCar"]);
+var SideCar$1 = function(_a2) {
+  var sideCar = _a2.sideCar, rest = __rest(_a2, ["sideCar"]);
   if (!sideCar) {
     throw new Error("Sidecar: please provide `sideCar` property to import the right car");
   }
@@ -23650,12 +23882,12 @@ var nothing = function() {
 };
 var RemoveScroll = reactExports.forwardRef(function(props, parentRef) {
   var ref = reactExports.useRef(null);
-  var _a = reactExports.useState({
+  var _a2 = reactExports.useState({
     onScrollCapture: nothing,
     onWheelCapture: nothing,
     onTouchMoveCapture: nothing
-  }), callbacks = _a[0], setCallbacks = _a[1];
-  var forwardProps = props.forwardProps, children = props.children, className = props.className, removeScrollBar = props.removeScrollBar, enabled = props.enabled, shards = props.shards, sideCar = props.sideCar, noRelative = props.noRelative, noIsolation = props.noIsolation, inert = props.inert, allowPinchZoom = props.allowPinchZoom, _b = props.as, Container = _b === void 0 ? "div" : _b, gapMode = props.gapMode, rest = __rest(props, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noRelative", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]);
+  }), callbacks = _a2[0], setCallbacks = _a2[1];
+  var forwardProps = props.forwardProps, children = props.children, className = props.className, removeScrollBar = props.removeScrollBar, enabled = props.enabled, shards = props.shards, sideCar = props.sideCar, noRelative = props.noRelative, noIsolation = props.noIsolation, inert = props.inert, allowPinchZoom = props.allowPinchZoom, _b2 = props.as, Container = _b2 === void 0 ? "div" : _b2, gapMode = props.gapMode, rest = __rest(props, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noRelative", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]);
   var SideCar2 = sideCar;
   var containerRef = useMergeRefs([ref, parentRef]);
   var containerProps = __assign(__assign({}, rest), callbacks);
@@ -23738,8 +23970,8 @@ var styleHookSingleton = function() {
 };
 var styleSingleton = function() {
   var useStyle = styleHookSingleton();
-  var Sheet = function(_a) {
-    var styles = _a.styles, dynamic = _a.dynamic;
+  var Sheet = function(_a2) {
+    var styles = _a2.styles, dynamic = _a2.dynamic;
     useStyle(styles, dynamic);
     return null;
   };
@@ -23780,8 +24012,8 @@ var getGapWidth = function(gapMode) {
 };
 var Style = styleSingleton();
 var lockAttribute = "data-scroll-locked";
-var getStyles = function(_a, allowRelative, gapMode, important) {
-  var left = _a.left, top = _a.top, right = _a.right, gap = _a.gap;
+var getStyles = function(_a2, allowRelative, gapMode, important) {
+  var left = _a2.left, top = _a2.top, right = _a2.right, gap = _a2.gap;
   if (gapMode === void 0) {
     gapMode = "margin";
   }
@@ -23808,8 +24040,8 @@ var useLockAttribute = function() {
     };
   }, []);
 };
-var RemoveScrollBar = function(_a) {
-  var noRelative = _a.noRelative, noImportant = _a.noImportant, _b = _a.gapMode, gapMode = _b === void 0 ? "margin" : _b;
+var RemoveScrollBar = function(_a2) {
+  var noRelative = _a2.noRelative, noImportant = _a2.noImportant, _b2 = _a2.gapMode, gapMode = _b2 === void 0 ? "margin" : _b2;
   useLockAttribute();
   var gap = reactExports.useMemo(function() {
     return getGapWidth(gapMode);
@@ -23861,7 +24093,7 @@ var locationCouldBeScrolled = function(axis, node) {
     }
     var isScrollable = elementCouldBeScrolled(axis, current);
     if (isScrollable) {
-      var _a = getScrollVariables(axis, current), scrollHeight = _a[1], clientHeight = _a[2];
+      var _a2 = getScrollVariables(axis, current), scrollHeight = _a2[1], clientHeight = _a2[2];
       if (scrollHeight > clientHeight) {
         return true;
       }
@@ -23870,16 +24102,16 @@ var locationCouldBeScrolled = function(axis, node) {
   } while (current && current !== ownerDocument.body);
   return false;
 };
-var getVScrollVariables = function(_a) {
-  var scrollTop = _a.scrollTop, scrollHeight = _a.scrollHeight, clientHeight = _a.clientHeight;
+var getVScrollVariables = function(_a2) {
+  var scrollTop = _a2.scrollTop, scrollHeight = _a2.scrollHeight, clientHeight = _a2.clientHeight;
   return [
     scrollTop,
     scrollHeight,
     clientHeight
   ];
 };
-var getHScrollVariables = function(_a) {
-  var scrollLeft = _a.scrollLeft, scrollWidth = _a.scrollWidth, clientWidth = _a.clientWidth;
+var getHScrollVariables = function(_a2) {
+  var scrollLeft = _a2.scrollLeft, scrollWidth = _a2.scrollWidth, clientWidth = _a2.clientWidth;
   return [
     scrollLeft,
     scrollWidth,
@@ -23908,7 +24140,7 @@ var handleScroll = function(axis, endTarget, event, sourceDelta, noOverscroll) {
     if (!target) {
       break;
     }
-    var _a = getScrollVariables(axis, target), position = _a[0], scroll_1 = _a[1], capacity = _a[2];
+    var _a2 = getScrollVariables(axis, target), position = _a2[0], scroll_1 = _a2[1], capacity = _a2[2];
     var elementScroll = scroll_1 - capacity - directionFactor * position;
     if (position || elementScroll) {
       if (elementCouldBeScrolled(axis, target)) {
@@ -24413,10 +24645,10 @@ var SelectContentImpl = reactExports.forwardRef(
       if (content) {
         let pointerMoveDelta = { x: 0, y: 0 };
         const handlePointerMove = (event) => {
-          var _a, _b;
+          var _a2, _b2;
           pointerMoveDelta = {
-            x: Math.abs(Math.round(event.pageX) - (((_a = triggerPointerDownPosRef.current) == null ? void 0 : _a.x) ?? 0)),
-            y: Math.abs(Math.round(event.pageY) - (((_b = triggerPointerDownPosRef.current) == null ? void 0 : _b.y) ?? 0))
+            x: Math.abs(Math.round(event.pageX) - (((_a2 = triggerPointerDownPosRef.current) == null ? void 0 : _a2.x) ?? 0)),
+            y: Math.abs(Math.round(event.pageY) - (((_b2 = triggerPointerDownPosRef.current) == null ? void 0 : _b2.y) ?? 0))
           };
         };
         const handlePointerUp = (event) => {
@@ -24517,8 +24749,8 @@ var SelectContentImpl = reactExports.forwardRef(
               event.preventDefault();
             },
             onUnmountAutoFocus: composeEventHandlers(onCloseAutoFocus, (event) => {
-              var _a;
-              (_a = context.trigger) == null ? void 0 : _a.focus({ preventScroll: true });
+              var _a2;
+              (_a2 = context.trigger) == null ? void 0 : _a2.focus({ preventScroll: true });
               event.preventDefault();
             }),
             children: /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -24885,8 +25117,8 @@ var SelectItem$1 = reactExports.forwardRef(
     const composedRefs = useComposedRefs(
       forwardedRef,
       (node) => {
-        var _a;
-        return (_a = contentContext.itemRefCallback) == null ? void 0 : _a.call(contentContext, node, value, disabled);
+        var _a2;
+        return (_a2 = contentContext.itemRefCallback) == null ? void 0 : _a2.call(contentContext, node, value, disabled);
       }
     );
     const textId = useId();
@@ -24945,23 +25177,23 @@ var SelectItem$1 = reactExports.forwardRef(
                   pointerTypeRef.current = event.pointerType;
                 }),
                 onPointerMove: composeEventHandlers(itemProps.onPointerMove, (event) => {
-                  var _a;
+                  var _a2;
                   pointerTypeRef.current = event.pointerType;
                   if (disabled) {
-                    (_a = contentContext.onItemLeave) == null ? void 0 : _a.call(contentContext);
+                    (_a2 = contentContext.onItemLeave) == null ? void 0 : _a2.call(contentContext);
                   } else if (pointerTypeRef.current === "mouse") {
                     event.currentTarget.focus({ preventScroll: true });
                   }
                 }),
                 onPointerLeave: composeEventHandlers(itemProps.onPointerLeave, (event) => {
-                  var _a;
+                  var _a2;
                   if (event.currentTarget === document.activeElement) {
-                    (_a = contentContext.onItemLeave) == null ? void 0 : _a.call(contentContext);
+                    (_a2 = contentContext.onItemLeave) == null ? void 0 : _a2.call(contentContext);
                   }
                 }),
                 onKeyDown: composeEventHandlers(itemProps.onKeyDown, (event) => {
-                  var _a;
-                  const isTypingAhead = ((_a = contentContext.searchRef) == null ? void 0 : _a.current) !== "";
+                  var _a2;
+                  const isTypingAhead = ((_a2 = contentContext.searchRef) == null ? void 0 : _a2.current) !== "";
                   if (isTypingAhead && event.key === " ") return;
                   if (SELECTION_KEYS.includes(event.key)) handleSelect();
                   if (event.key === " ") event.preventDefault();
@@ -24989,8 +25221,8 @@ var SelectItemText = reactExports.forwardRef(
       (node) => setItemTextNode(node),
       itemContext.onItemTextChange,
       (node) => {
-        var _a;
-        return (_a = contentContext.itemTextRefCallback) == null ? void 0 : _a.call(contentContext, node, itemContext.value, itemContext.disabled);
+        var _a2;
+        return (_a2 = contentContext.itemTextRefCallback) == null ? void 0 : _a2.call(contentContext, node, itemContext.value, itemContext.disabled);
       }
     );
     const textContent = itemTextNode == null ? void 0 : itemTextNode.textContent;
@@ -25101,9 +25333,9 @@ var SelectScrollButtonImpl = reactExports.forwardRef((props, forwardedRef) => {
     return () => clearAutoScrollTimer();
   }, [clearAutoScrollTimer]);
   useLayoutEffect2(() => {
-    var _a;
+    var _a2;
     const activeItem = getItems().find((item) => item.ref.current === document.activeElement);
-    (_a = activeItem == null ? void 0 : activeItem.ref.current) == null ? void 0 : _a.scrollIntoView({ block: "nearest" });
+    (_a2 = activeItem == null ? void 0 : activeItem.ref.current) == null ? void 0 : _a2.scrollIntoView({ block: "nearest" });
   }, [getItems]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Primitive.div,
@@ -25118,8 +25350,8 @@ var SelectScrollButtonImpl = reactExports.forwardRef((props, forwardedRef) => {
         }
       }),
       onPointerMove: composeEventHandlers(scrollIndicatorProps.onPointerMove, () => {
-        var _a;
-        (_a = contentContext.onItemLeave) == null ? void 0 : _a.call(contentContext);
+        var _a2;
+        (_a2 = contentContext.onItemLeave) == null ? void 0 : _a2.call(contentContext);
         if (autoScrollTimerRef.current === null) {
           autoScrollTimerRef.current = window.setInterval(onAutoScroll, 50);
         }
@@ -25441,13 +25673,13 @@ function LanguageSelector() {
     setLanguage(language);
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(Select, { value: defaultLanguage, onValueChange: handleLanguageChange, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "cy:w-[296px] cy:rounded cy:py-5.5 cy:shadow-none cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select Language" }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "cy:w-[296px] cy:rounded cy:py-5.5 cy:shadow-none cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: __$1("Select Language", "accessibility-widget") }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContent, { className: "cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectGroup, { children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectLabel, { children: "Languages" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectLabel, { children: __$1("Languages", "accessibility-widget") }),
       LANGUAGES.map((lang) => /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: lang.code, className: "cy:text-base!", children: lang.code === defaultLanguage ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
         lang.label,
         " ",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[#1578F7]", children: "Default" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[#1578F7]", children: __$1("Default", "accessibility-widget") })
       ] }) : lang.label }, lang.code))
     ] }) })
   ] });
@@ -25461,7 +25693,7 @@ function SizeSelector() {
   const iconSize = useWidgetStore((state) => state.config.iconSize);
   const setIconSize = useWidgetStore((state) => state.setIconSize);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: "Size" }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: __$1("Size", "accessibility-widget") }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex-1 cy:space-x-2", children: SIZES.map((size2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
       "button",
       {
@@ -25475,21 +25707,21 @@ function SizeSelector() {
 }
 function getSizeLabel(pixelValue) {
   const found = SIZES.find((size2) => size2.value === pixelValue);
-  return found ? found.label : pixelValue + "px";
+  return found ? __$1(found.label, "accessibility-widget") : pixelValue + "px";
 }
 function WidgetAppearance() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-4", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6 cy:pb-6 cy:border-b cy:border-gray-200", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: "Widget language" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget language", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(LanguageSelector, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:-mt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[10px] cy:text-[#535276]", children: "Note: The widget will appear in the visitor's browser language. If it's not in our supported list, it will show in the language you've selected." }) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:-mt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[10px] cy:text-[#535276]", children: __$1("Note: The widget will appear in the visitor's browser language. If it's not in our supported list, it will show in the language you've selected.", "accessibility-widget") }) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6 cy:pb-6 cy:border-b cy:border-gray-200", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: "Widget colour" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget colour", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(ColorPicker, {})
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6 cy:pb-6 cy:border-b cy:border-gray-200", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: "Widget icon" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget icon", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(IconSelector, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(SizeSelector, {})
     ] })
@@ -25559,9 +25791,9 @@ var Slider$1 = reactExports.forwardRef(
       prop: value,
       defaultProp: defaultValue,
       onChange: (value2) => {
-        var _a;
+        var _a2;
         const thumbs = [...thumbRefs.current];
-        (_a = thumbs[valueIndexToChangeRef.current]) == null ? void 0 : _a.focus();
+        (_a2 = thumbs[valueIndexToChangeRef.current]) == null ? void 0 : _a2.focus();
         onValueChange(value2);
       }
     });
@@ -26123,12 +26355,12 @@ function PositionControls() {
   const devices = [
     {
       key: "desktop",
-      label: "Desktop",
+      label: __$1("Desktop", "accessibility-widget"),
       icon: Monitor
     },
     {
       key: "mobile",
-      label: "Mobile",
+      label: __$1("Mobile", "accessibility-widget"),
       icon: Smartphone
     }
   ];
@@ -26170,16 +26402,16 @@ function PositionControls() {
                 }
               ) }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-4 cy:ml-12", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-base", children: "Margin(px)" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-base", children: __$1("Margin(px)", "accessibility-widget") }),
                 [
-                  { key: "vertical", label: "Vertical" },
-                  { key: "horizontal", label: "Horizontal" }
+                  { key: "vertical", label: __$1("Vertical", "accessibility-widget") },
+                  { key: "horizontal", label: __$1("Horizontal", "accessibility-widget") }
                 ].map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-end cy:mb-8 cy:w-[330px]", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex-1", children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:text-sm", children: [
                       item.label,
                       " ",
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-gray-400 cy:text-sm", children: "(Max 80px)" })
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-gray-400 cy:text-sm", children: __$1("(Max 80px)", "accessibility-widget") })
                     ] }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx(
                       Slider,
@@ -26235,7 +26467,7 @@ function PositionControls() {
 }
 function WidgetPositioning() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-4", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: "Widget position" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget position", "accessibility-widget") }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(PositionControls, {})
   ] });
 }
@@ -26616,7 +26848,7 @@ const MobilePreview = (props) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
   }
 );
 function LivePreview() {
-  var _a;
+  var _a2;
   const iconId = useWidgetStore((state) => state.config.iconId);
   const iconSize = useWidgetStore((state) => state.config.iconSize);
   const primaryColor = useWidgetStore((state) => state.config.primaryColor);
@@ -26624,9 +26856,9 @@ function LivePreview() {
   const margins = useWidgetStore((state) => state.config.margins);
   const activeDevice = useWidgetStore((state) => state.activeDevice);
   const setActiveDevice = useWidgetStore((state) => state.setActiveDevice);
-  const selectedIconComponent = (_a = ICON_LIBRARY.find(
+  const selectedIconComponent = (_a2 = ICON_LIBRARY.find(
     (icon) => icon.id === iconId
-  )) == null ? void 0 : _a.icon;
+  )) == null ? void 0 : _a2.icon;
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:sticky cy:top-14", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:space-y-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Tabs, { defaultValue: "desktop", value: activeDevice, onValueChange: (value) => setActiveDevice(value), children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsList, { className: "cy:w-full cy:flex cy:justify-start cy:bg-white cy:border cy:rounded-md cy:p-0", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -26636,7 +26868,7 @@ function LivePreview() {
           value: "desktop",
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Monitor, { className: "cy:h-4 cy:w-4" }),
-            "Desktop"
+            __$1("Desktop", "accessibility-widget")
           ]
         }
       ),
@@ -26647,7 +26879,7 @@ function LivePreview() {
           value: "mobile",
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Smartphone, { className: "cy:h-4 cy:w-4" }),
-            "Mobile"
+            __$1("Mobile", "accessibility-widget")
           ]
         }
       )
@@ -26809,12 +27041,12 @@ const WidgetPublish = () => {
       setIsPublishing(true);
       await saveWidgetConfig(widgetConfig);
       toast2({
-        title: "Changes published successfully",
+        title: __$1("Changes published successfully", "accessibility-widget"),
         variant: "success"
       });
     } catch {
       toast2({
-        title: "Failed to publish changes",
+        title: __$1("Failed to publish changes", "accessibility-widget"),
         variant: "destructive"
       });
     } finally {
@@ -26827,15 +27059,15 @@ const WidgetPublish = () => {
       className: "cy:rounded cy:text-base!",
       onClick: handlePublish,
       disabled: isPublishing,
-      children: isPublishing ? "Applying..." : "Apply changes"
+      children: isPublishing ? __$1("Applying...", "accessibility-widget") : __$1("Apply changes", "accessibility-widget")
     }
   );
 };
 const CustomizeTab = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:shadow-none!", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: "Widget customisation" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: "Set the look and feel of your accessibility widget to align with your website." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("Widget customisation", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Set the look and feel of your accessibility widget to align with your website.", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(CardAction, { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}),
         " "
@@ -27015,12 +27247,27 @@ function Switch({
     }
   );
 }
+const IS_MAC = typeof navigator !== "undefined" && (((_b = (_a = navigator.userAgentData) == null ? void 0 : _a.platform) == null ? void 0 : _b.toLowerCase().includes("mac")) ?? /mac/i.test(navigator.platform));
+const MODIFIER_LABELS = {
+  alt: IS_MAC ? "Option" : "Alt",
+  shift: "Shift",
+  ctrl: "Ctrl"
+};
+function formatShortcut(shortcut) {
+  const parts = shortcut.toLowerCase().split("+");
+  const key = parts[parts.length - 1].toUpperCase();
+  const modifiers = parts.slice(0, -1).map((m) => MODIFIER_LABELS[m] ?? m);
+  return [...modifiers, key].join("+");
+}
 const SettingsTab = () => {
-  const { config, setStatus } = useWidgetStore();
+  var _a2;
+  const { config, setStatus, setKeyboard } = useWidgetStore();
+  const keyboard = config.keyboard ?? { enabled: false, shortcut: "alt+a" };
+  const effectiveShortcut = formatShortcut(((_a2 = window.cyA11yGlobals) == null ? void 0 : _a2.keyboardShortcut) ?? "alt+a");
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: "General settings" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: "Control your widget's visibility on desktop and mobile devices." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("General settings", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Control your widget's visibility on desktop and mobile devices.", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(CardAction, { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}),
         " "
@@ -27028,12 +27275,31 @@ const SettingsTab = () => {
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:border-b cy:border-gray-200 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-desktop", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Enable widget on desktop" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-desktop", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: __$1("Enable widget on desktop", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-desktop", checked: config.status.desktop, onCheckedChange: (checked) => setStatus({ ...config.status, desktop: checked }) })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-mobile", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: "Enable widget on mobile layouts" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:border-b cy:border-gray-200 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-mobile", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: __$1("Enable widget on mobile layouts", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-mobile", checked: config.status.mobile, onCheckedChange: (checked) => setStatus({ ...config.status, mobile: checked }) })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "cy-keyboard-shortcut-enable", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: [
+          __$1("Enable keyboard shortcut", "accessibility-widget"),
+          " ",
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "cy:text-muted-foreground cy:font-normal", children: [
+            "(",
+            effectiveShortcut,
+            ")"
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Switch,
+          {
+            id: "cy-keyboard-shortcut-enable",
+            checked: keyboard.enabled,
+            onCheckedChange: (checked) => setKeyboard({ ...keyboard, enabled: checked })
+          }
+        )
       ] }) })
     ] }) })
   ] }) });
@@ -27077,7 +27343,7 @@ function Stepper({ step }) {
           "cy:flex cy:items-center cy:justify-center cy:h-7 cy:px-3 cy:rounded-full cy:text-xs cy:font-semibold cy:border cy:flex-shrink-0",
           step === 2 ? "cy:bg-primary cy:text-white cy:border-primary" : "cy:bg-transparent cy:text-muted-foreground cy:border-gray-300"
         ),
-        children: "Conformance status"
+        children: __$1("Conformance status", "accessibility-widget")
       }
     )
   ] });
@@ -27085,13 +27351,13 @@ function Stepper({ step }) {
 function StatementStep1({ step1, onChange, onNext }) {
   const isValid = step1.companyName.trim() !== "" && step1.businessEmail.trim() !== "" && step1.website.trim() !== "";
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: "Generate statement" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: __$1("Generate statement", "accessibility-widget") }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mb-6" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stepper, { step: 1 }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-4 cy:max-w-lg", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "company-name", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-          "Company Name",
+          __$1("Company Name", "accessibility-widget"),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27100,14 +27366,14 @@ function StatementStep1({ step1, onChange, onNext }) {
             id: "company-name",
             value: step1.companyName,
             onChange: (e) => onChange({ ...step1, companyName: e.target.value }),
-            placeholder: "Company Inc.",
+            placeholder: __$1("Company Inc.", "accessibility-widget"),
             className: "cy:h-[48px] cy:border! cy:rounded!"
           }
         )
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "business-email", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-          "Business E-mail",
+          __$1("Business E-mail", "accessibility-widget"),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27117,14 +27383,14 @@ function StatementStep1({ step1, onChange, onNext }) {
             type: "email",
             value: step1.businessEmail,
             onChange: (e) => onChange({ ...step1, businessEmail: e.target.value }),
-            placeholder: "info@company.com",
+            placeholder: __$1("info@company.com", "accessibility-widget"),
             className: "cy:h-[48px] cy:border! cy:rounded!"
           }
         )
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "website", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-          "Website",
+          __$1("Website", "accessibility-widget"),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27134,14 +27400,14 @@ function StatementStep1({ step1, onChange, onNext }) {
             type: "url",
             value: step1.website,
             onChange: (e) => onChange({ ...step1, website: e.target.value }),
-            placeholder: "https://company.com",
+            placeholder: __$1("https://company.com", "accessibility-widget"),
             className: "cy:h-[48px] cy:border! cy:rounded!"
           }
         )
       ] })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mt-6" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mt-6 cy:flex cy:justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onNext, disabled: !isValid, className: "cy:rounded", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px]", children: "Next" }) }) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mt-6 cy:flex cy:justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onNext, disabled: !isValid, className: "cy:rounded", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px]", children: __$1("Next", "accessibility-widget") }) }) })
   ] });
 }
 var RADIO_NAME = "Radio";
@@ -27390,8 +27656,8 @@ var RadioGroupItem = reactExports.forwardRef(
               if (event.key === "Enter") event.preventDefault();
             }),
             onFocus: composeEventHandlers(itemProps.onFocus, () => {
-              var _a;
-              if (isArrowKeyPressedRef.current) (_a = ref.current) == null ? void 0 : _a.click();
+              var _a2;
+              if (isArrowKeyPressedRef.current) (_a2 = ref.current) == null ? void 0 : _a2.click();
             })
           }
         )
@@ -27447,64 +27713,72 @@ const DEFAULT_STEP2 = {
   wcagStandard: "WCAG 2.2 Level AA",
   conformanceStatus: "fully-conformant"
 };
-const WCAG_OPTIONS = [
-  { value: "WCAG 2.2 Level AA", label: "WCAG 2.2 Level AA" },
-  { value: "WCAG 2.1 Level AA", label: "WCAG 2.1 Level AA" },
-  { value: "WCAG 2.0 Level AA", label: "WCAG 2.0 Level AA" },
-  { value: "Other", label: "Other" }
-];
-const STATEMENT_TEMPLATE = `<h2>Accessibility Commitment</h2>
-<p>{{company_name}} is committed to improving the accessibility and usability of {{website_url}} for all users, including people with disabilities. We aim to provide an inclusive digital experience and continuously work toward enhancing accessibility across our website.</p>
-<h2>Accessibility Target Standard</h2>
-<p>We aim to align our website with <strong>{{accessibility_standard}}</strong> accessibility standards.</p>
-<p>This target standard guides our accessibility efforts and ongoing improvements.</p>
-<h2>Current Conformance Status</h2>
-<p>Based on our internal review, this website is <strong>{{conformance_status}}</strong> with <strong>{{accessibility_standard}}</strong>.</p>
-<p>This status reflects our evaluation at the time of publication and is based on our internal review and available information. Accessibility is an ongoing process, and conformance levels may evolve as updates are implemented.</p>
-<h2>Accessibility Features</h2>
-<p>To support accessibility, this website includes the AccessYes accessibility interface. This interface allows users to adjust certain visual and usability settings according to their individual needs, such as:</p>
-<ul>
-<li>Text size and spacing adjustments</li>
-<li>Contrast and color settings</li>
-<li>Highlighting tools</li>
-<li>Other assistive viewing options</li>
-</ul>
-<p>These tools are intended to improve user experience, but do not replace the need for accessible content and proper underlying website structure.</p>
-<h2>Limitations and Technical Considerations</h2>
-<p>Please note the following:</p>
-<p>The availability and effectiveness of accessibility features depend on the website's configuration and ongoing maintenance.</p>
-<p>While we strive to ensure accessibility across <strong>{{website_url}}</strong>, some content or features may not yet fully meet the selected accessibility standards. Some content may be provided by third parties or affected by technical constraints beyond our immediate control.</p>
-<p>Additionally, there may be certain legacy content or integrations that may not yet fully align with the selected accessibility standard. We are actively working to identify and address accessibility barriers within our control.</p>
-<h2>Feedback and Contact</h2>
-<p>If you experience any difficulty accessing content on this website or would like to report an accessibility issue, please contact us:</p>
-<p>Email: <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>
-<p>When contacting us, please include the specific page URL and a description of the issue so we can investigate and respond appropriately.</p>
-<h2>Continuous Improvement</h2>
-<p>Accessibility is an ongoing effort. We regularly review our website and evaluate opportunities to improve accessibility and usability.</p>
-<p><em>Last updated: {{last_updated}}</em></p>`;
-const CONFORMANCE_OPTIONS = [
-  {
-    value: "fully-conformant",
-    label: "Fully conformant",
-    description: "The content fully conforms to the selected accessibility standard."
-  },
-  {
-    value: "partially-conformant",
-    label: "Partially conformant",
-    description: "Some parts of the content do not fully conform to the selected accessibility standard."
-  },
-  {
-    value: "non-conformant",
-    label: "Non conformant",
-    description: "The content does not conform to the selected accessibility standard."
-  },
-  {
-    value: "not-assessed",
-    label: "Not assessed",
-    description: "The content has not been evaluated or results are not available."
-  }
-];
-const PREDEFINED_WCAG = WCAG_OPTIONS.filter((o) => o.value !== "Other").map((o) => o.value);
+function getWcagOptions() {
+  return [
+    { value: "WCAG 2.2 Level AA", label: __$1("WCAG 2.2 Level AA", "accessibility-widget") },
+    { value: "WCAG 2.1 Level AA", label: __$1("WCAG 2.1 Level AA", "accessibility-widget") },
+    { value: "WCAG 2.0 Level AA", label: __$1("WCAG 2.0 Level AA", "accessibility-widget") },
+    { value: "Other", label: __$1("Other", "accessibility-widget") }
+  ];
+}
+function getConformanceOptions() {
+  return [
+    {
+      value: "fully-conformant",
+      label: __$1("Fully conformant", "accessibility-widget"),
+      description: __$1("The content fully conforms to the selected accessibility standard.", "accessibility-widget")
+    },
+    {
+      value: "partially-conformant",
+      label: __$1("Partially conformant", "accessibility-widget"),
+      description: __$1("Some parts of the content do not fully conform to the selected accessibility standard.", "accessibility-widget")
+    },
+    {
+      value: "non-conformant",
+      label: __$1("Non conformant", "accessibility-widget"),
+      description: __$1("The content does not conform to the selected accessibility standard.", "accessibility-widget")
+    },
+    {
+      value: "not-assessed",
+      label: __$1("Not assessed", "accessibility-widget"),
+      description: __$1("The content has not been evaluated or results are not available.", "accessibility-widget")
+    }
+  ];
+}
+function getStatementTemplate() {
+  return [
+    `<h2>${__$1("Accessibility Commitment", "accessibility-widget")}</h2>`,
+    `<p>${__$1("{{company_name}} is committed to improving the accessibility and usability of {{website_url}} for all users, including people with disabilities. We aim to provide an inclusive digital experience and continuously work toward enhancing accessibility across our website.", "accessibility-widget")}</p>`,
+    `<h2>${__$1("Accessibility Target Standard", "accessibility-widget")}</h2>`,
+    `<p>${__$1("We aim to align our website with <strong>{{accessibility_standard}}</strong> accessibility standards.", "accessibility-widget")}</p>`,
+    `<p>${__$1("This target standard guides our accessibility efforts and ongoing improvements.", "accessibility-widget")}</p>`,
+    `<h2>${__$1("Current Conformance Status", "accessibility-widget")}</h2>`,
+    `<p>${__$1("Based on our internal review, this website is <strong>{{conformance_status}}</strong> with <strong>{{accessibility_standard}}</strong>.", "accessibility-widget")}</p>`,
+    `<p>${__$1("This status reflects our evaluation at the time of publication and is based on our internal review and available information. Accessibility is an ongoing process, and conformance levels may evolve as updates are implemented.", "accessibility-widget")}</p>`,
+    `<h2>${__$1("Accessibility Features", "accessibility-widget")}</h2>`,
+    `<p>${__$1("To support accessibility, this website includes the AccessYes accessibility interface. This interface allows users to adjust certain visual and usability settings according to their individual needs, such as:", "accessibility-widget")}</p>`,
+    `<ul>`,
+    `<li>${__$1("Text size and spacing adjustments", "accessibility-widget")}</li>`,
+    `<li>${__$1("Contrast and color settings", "accessibility-widget")}</li>`,
+    `<li>${__$1("Highlighting tools", "accessibility-widget")}</li>`,
+    `<li>${__$1("Other assistive viewing options", "accessibility-widget")}</li>`,
+    `</ul>`,
+    `<p>${__$1("These tools are intended to improve user experience, but do not replace the need for accessible content and proper underlying website structure.", "accessibility-widget")}</p>`,
+    `<h2>${__$1("Limitations and Technical Considerations", "accessibility-widget")}</h2>`,
+    `<p>${__$1("Please note the following:", "accessibility-widget")}</p>`,
+    `<p>${__$1("The availability and effectiveness of accessibility features depend on the website's configuration and ongoing maintenance.", "accessibility-widget")}</p>`,
+    `<p>${__$1("While we strive to ensure accessibility across <strong>{{website_url}}</strong>, some content or features may not yet fully meet the selected accessibility standards. Some content may be provided by third parties or affected by technical constraints beyond our immediate control.", "accessibility-widget")}</p>`,
+    `<p>${__$1("Additionally, there may be certain legacy content or integrations that may not yet fully align with the selected accessibility standard. We are actively working to identify and address accessibility barriers within our control.", "accessibility-widget")}</p>`,
+    `<h2>${__$1("Feedback and Contact", "accessibility-widget")}</h2>`,
+    `<p>${__$1("If you experience any difficulty accessing content on this website or would like to report an accessibility issue, please contact us:", "accessibility-widget")}</p>`,
+    `<p>${__$1("Email:", "accessibility-widget")} <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>`,
+    `<p>${__$1("When contacting us, please include the specific page URL and a description of the issue so we can investigate and respond appropriately.", "accessibility-widget")}</p>`,
+    `<h2>${__$1("Continuous Improvement", "accessibility-widget")}</h2>`,
+    `<p>${__$1("Accessibility is an ongoing effort. We regularly review our website and evaluate opportunities to improve accessibility and usability.", "accessibility-widget")}</p>`,
+    `<p><em>${__$1("Last updated: {{last_updated}}", "accessibility-widget")}</em></p>`
+  ].join("\n");
+}
+const PREDEFINED_WCAG = ["WCAG 2.2 Level AA", "WCAG 2.1 Level AA", "WCAG 2.0 Level AA"];
 function StatementStep2({ step2, onChange, onBack, onGenerate }) {
   const isOtherWcag = !PREDEFINED_WCAG.includes(step2.wcagStandard);
   const radioWcagValue = isOtherWcag ? "Other" : step2.wcagStandard;
@@ -27523,14 +27797,14 @@ function StatementStep2({ step2, onChange, onBack, onGenerate }) {
     onChange({ ...step2, wcagStandard: text || "Other" });
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: "Generate statement" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: __$1("Generate statement", "accessibility-widget") }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mb-6" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stepper, { step: 2 }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-6 cy:max-w-lg", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mb-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: "Conformance status" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mb-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: __$1("Conformance status", "accessibility-widget") }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-          "1. Select the accessibility standards you follow.",
+          __$1("1. Select the accessibility standards you follow.", "accessibility-widget"),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27539,7 +27813,7 @@ function StatementStep2({ step2, onChange, onBack, onGenerate }) {
             value: radioWcagValue,
             onValueChange: handleWcagRadioChange,
             className: "cy:space-y-2.5 cy:text-[16px] cy:text-black-600",
-            children: WCAG_OPTIONS.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+            children: getWcagOptions().map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
               RadioOption,
               {
                 value: o.value,
@@ -27555,7 +27829,7 @@ function StatementStep2({ step2, onChange, onBack, onGenerate }) {
           {
             value: otherWcagText,
             onChange: (e) => handleOtherWcagInput(e.target.value),
-            placeholder: "Please specify the standard",
+            placeholder: __$1("Please specify the standard", "accessibility-widget"),
             className: "cy:h-[40px] cy:border! cy:rounded! cy:max-w-xs",
             autoFocus: true
           }
@@ -27563,7 +27837,7 @@ function StatementStep2({ step2, onChange, onBack, onGenerate }) {
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-          "2. Conformance status",
+          __$1("2. Conformance status", "accessibility-widget"),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27572,7 +27846,7 @@ function StatementStep2({ step2, onChange, onBack, onGenerate }) {
             value: step2.conformanceStatus,
             onValueChange: (v) => onChange({ ...step2, conformanceStatus: v }),
             className: "cy:space-y-3 cy:text-[16px] cy:text-black-600",
-            children: CONFORMANCE_OPTIONS.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+            children: getConformanceOptions().map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
               RadioOption,
               {
                 value: o.value,
@@ -27588,7 +27862,7 @@ function StatementStep2({ step2, onChange, onBack, onGenerate }) {
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:mt-6 cy:flex cy:gap-3 cy:rounded-lg cy:border cy:border-blue-200 cy:bg-blue-50 cy:p-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { className: "cy:w-4 cy:h-4 cy:text-blue-600 cy:flex-shrink-0 cy:mt-0.5" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:tex-black-600 cy:leading-relaxed", children: "The statement will be generated based on the information you provide and your own assessment. Please ensure that the details entered accurately reflect your website's accessibility status and applicable requirements." })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:tex-black-600 cy:leading-relaxed", children: __$1("The statement will be generated based on the information you provide and your own assessment. Please ensure that the details entered accurately reflect your website's accessibility status and applicable requirements.", "accessibility-widget") })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mt-6" }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:mt-6 cy:flex cy:justify-between", children: [
@@ -27598,10 +27872,10 @@ function StatementStep2({ step2, onChange, onBack, onGenerate }) {
           variant: "outline",
           onClick: onBack,
           className: "cy:rounded cy:border-primary! cy:text-primary!",
-          children: "Back"
+          children: __$1("Back", "accessibility-widget")
         }
       ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onGenerate, className: "cy:rounded", children: "Generate statement" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onGenerate, className: "cy:rounded", children: __$1("Generate statement", "accessibility-widget") })
     ] })
   ] });
 }
@@ -27732,9 +28006,9 @@ var DialogContentModal = reactExports.forwardRef(
         trapFocus: context.open,
         disableOutsidePointerEvents: true,
         onCloseAutoFocus: composeEventHandlers(props.onCloseAutoFocus, (event) => {
-          var _a;
+          var _a2;
           event.preventDefault();
-          (_a = context.triggerRef.current) == null ? void 0 : _a.focus();
+          (_a2 = context.triggerRef.current) == null ? void 0 : _a2.focus();
         }),
         onPointerDownOutside: composeEventHandlers(props.onPointerDownOutside, (event) => {
           const originalEvent = event.detail.originalEvent;
@@ -27763,18 +28037,18 @@ var DialogContentNonModal = reactExports.forwardRef(
         trapFocus: false,
         disableOutsidePointerEvents: false,
         onCloseAutoFocus: (event) => {
-          var _a, _b;
-          (_a = props.onCloseAutoFocus) == null ? void 0 : _a.call(props, event);
+          var _a2, _b2;
+          (_a2 = props.onCloseAutoFocus) == null ? void 0 : _a2.call(props, event);
           if (!event.defaultPrevented) {
-            if (!hasInteractedOutsideRef.current) (_b = context.triggerRef.current) == null ? void 0 : _b.focus();
+            if (!hasInteractedOutsideRef.current) (_b2 = context.triggerRef.current) == null ? void 0 : _b2.focus();
             event.preventDefault();
           }
           hasInteractedOutsideRef.current = false;
           hasPointerDownOutsideRef.current = false;
         },
         onInteractOutside: (event) => {
-          var _a, _b;
-          (_a = props.onInteractOutside) == null ? void 0 : _a.call(props, event);
+          var _a2, _b2;
+          (_a2 = props.onInteractOutside) == null ? void 0 : _a2.call(props, event);
           if (!event.defaultPrevented) {
             hasInteractedOutsideRef.current = true;
             if (event.detail.originalEvent.type === "pointerdown") {
@@ -27782,7 +28056,7 @@ var DialogContentNonModal = reactExports.forwardRef(
             }
           }
           const target = event.target;
-          const targetIsTrigger = (_b = context.triggerRef.current) == null ? void 0 : _b.contains(target);
+          const targetIsTrigger = (_b2 = context.triggerRef.current) == null ? void 0 : _b2.contains(target);
           if (targetIsTrigger) event.preventDefault();
           if (event.detail.originalEvent.type === "focusin" && hasPointerDownOutsideRef.current) {
             event.preventDefault();
@@ -27894,8 +28168,8 @@ var DescriptionWarning = ({ contentRef, descriptionId }) => {
   const descriptionWarningContext = useWarningContext(DESCRIPTION_WARNING_NAME);
   const MESSAGE = `Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${descriptionWarningContext.contentName}}.`;
   reactExports.useEffect(() => {
-    var _a;
-    const describedById = (_a = contentRef.current) == null ? void 0 : _a.getAttribute("aria-describedby");
+    var _a2;
+    const describedById = (_a2 = contentRef.current) == null ? void 0 : _a2.getAttribute("aria-describedby");
     if (descriptionId && describedById) {
       const hasDescription = document.getElementById(descriptionId);
       if (!hasDescription) console.warn(MESSAGE);
@@ -27999,13 +28273,13 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 function fillStatementTemplate(template, step1, step2, generatedDate) {
-  var _a;
+  var _a2;
   const e = escapeHtml;
   const companyName = e(step1.companyName || "This organisation");
   const websiteUrl = e(step1.website || "this website");
   const contactEmail = e(step1.businessEmail);
   const standard = e(step2.wcagStandard);
-  const conformanceLabel = ((_a = CONFORMANCE_OPTIONS.find((o) => o.value === step2.conformanceStatus)) == null ? void 0 : _a.label) ?? step2.conformanceStatus;
+  const conformanceLabel = ((_a2 = getConformanceOptions().find((o) => o.value === step2.conformanceStatus)) == null ? void 0 : _a2.label) ?? step2.conformanceStatus;
   const conformance = e(conformanceLabel);
   const lastUpdated = generatedDate ? new Date(generatedDate).toLocaleDateString(void 0, {
     year: "numeric",
@@ -28058,25 +28332,36 @@ function StatementGenerated({
   onToggleDisplay
 }) {
   const [previewOpen, setPreviewOpen] = reactExports.useState(false);
-  const statementHtml = fillStatementTemplate(
-    STATEMENT_TEMPLATE,
-    {
-      companyName: (formData == null ? void 0 : formData.companyName) ?? "",
-      businessEmail: (formData == null ? void 0 : formData.businessEmail) ?? "",
-      website: (formData == null ? void 0 : formData.website) ?? ""
-    },
-    {
-      wcagStandard: (formData == null ? void 0 : formData.wcagStandard) ?? "",
-      conformanceStatus: (formData == null ? void 0 : formData.conformanceStatus) ?? ""
-    },
-    generatedDate
+  const statementHtml = reactExports.useMemo(
+    () => fillStatementTemplate(
+      getStatementTemplate(),
+      {
+        companyName: (formData == null ? void 0 : formData.companyName) ?? "",
+        businessEmail: (formData == null ? void 0 : formData.businessEmail) ?? "",
+        website: (formData == null ? void 0 : formData.website) ?? ""
+      },
+      {
+        wcagStandard: (formData == null ? void 0 : formData.wcagStandard) ?? "",
+        conformanceStatus: (formData == null ? void 0 : formData.conformanceStatus) ?? ""
+      },
+      generatedDate
+    ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [
+      formData == null ? void 0 : formData.companyName,
+      formData == null ? void 0 : formData.businessEmail,
+      formData == null ? void 0 : formData.website,
+      formData == null ? void 0 : formData.wcagStandard,
+      formData == null ? void 0 : formData.conformanceStatus,
+      generatedDate
+    ]
   );
   const handleCopy = async () => {
     try {
       await copyToClipboard(statementHtml);
-      toast.success("Statement copied to clipboard.");
+      toast.success(__$1("Statement copied to clipboard.", "accessibility-widget"));
     } catch {
-      toast.error("Could not copy to clipboard.");
+      toast.error(__$1("Could not copy to clipboard.", "accessibility-widget"));
     }
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
@@ -28085,9 +28370,10 @@ function StatementGenerated({
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "cy:w-12 cy:h-12 cy:text-green-500 cy:flex-shrink-0", strokeWidth: 1 }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-0.5", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: "Statement generated" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: __$1("Statement generated", "accessibility-widget") }),
             generatedDate && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-sm cy:text-muted-foreground", children: [
-              "Last updated: ",
+              __$1("Last updated:", "accessibility-widget"),
+              " ",
               formatDate(generatedDate)
             ] })
           ] })
@@ -28101,8 +28387,8 @@ function StatementGenerated({
               className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:bg-white cy:text-primary! cy:text-sm",
               onClick: () => setPreviewOpen(true),
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Eye, { className: "cy:w-4 cy:h-4" }),
-                "Preview"
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Eye, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
+                __$1("Preview", "accessibility-widget")
               ]
             }
           ),
@@ -28114,8 +28400,8 @@ function StatementGenerated({
               className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:bg-white cy:text-primary! cy:text-sm",
               onClick: handleCopy,
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4" }),
-                "Copy statement"
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
+                __$1("Copy statement", "accessibility-widget")
               ]
             }
           ),
@@ -28127,8 +28413,8 @@ function StatementGenerated({
               className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:bg-white cy:text-primary! cy:text-sm",
               onClick: onEdit,
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "cy:w-4 cy:h-4" }),
-                "Edit"
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
+                __$1("Edit", "accessibility-widget")
               ]
             }
           )
@@ -28136,8 +28422,15 @@ function StatementGenerated({
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mt-4 cy:rounded-lg cy:bg-[#D8E8FF] cy:p-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-start cy:justify-between cy:gap-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-0.5", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:block cy:text-base cy:font-semibold cy:text-foreground", children: "Display in widget overlay" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:block cy:text-sm cy:text-muted-foreground", children: "Show this generated statement directly inside the AccessYes widget." })
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "label",
+            {
+              htmlFor: "cy-display-in-widget",
+              className: "cy:block cy:text-base cy:font-semibold cy:text-foreground cy:cursor-pointer",
+              children: __$1("Display in widget overlay", "accessibility-widget")
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:block cy:text-sm cy:text-muted-foreground", children: __$1("Show this generated statement directly inside the AccessYes widget.", "accessibility-widget") })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           Switch,
@@ -28151,7 +28444,7 @@ function StatementGenerated({
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Dialog, { open: previewOpen, onOpenChange: setPreviewOpen, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogContent, { showCloseButton: false, className: "cy:max-w-2xl cy:max-h-[85vh] cy:flex cy:flex-col cy:gap-0 cy:p-0", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogHeader, { className: "cy:flex cy:flex-row cy:items-center cy:justify-between cy:px-6 cy:py-4 cy:border-b cy:border-gray-200", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "cy:text-base cy:font-semibold", children: "Preview" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "cy:text-base cy:font-semibold", children: __$1("Preview", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Button,
@@ -28161,8 +28454,8 @@ function StatementGenerated({
               className: "cy:gap-1.5 cy:rounded cy:border-primary! cy:text-primary! cy:text-sm",
               onClick: handleCopy,
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4" }),
-                "Copy statement"
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
+                __$1("Copy statement", "accessibility-widget")
               ]
             }
           ),
@@ -28171,7 +28464,7 @@ function StatementGenerated({
             {
               onClick: () => setPreviewOpen(false),
               className: "cy:rounded cy:p-1 cy:text-muted-foreground cy:hover:text-foreground cy:hover:bg-gray-100 cy:transition-colors",
-              "aria-label": "Close preview",
+              "aria-label": __$1("Close preview", "accessibility-widget"),
               children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "cy:w-5 cy:h-5" })
             }
           )
@@ -28181,6 +28474,9 @@ function StatementGenerated({
         "div",
         {
           className: "cy:overflow-y-auto cy:px-8 cy:py-6 cy:prose cy:prose-sm cy:max-w-none",
+          role: "document",
+          "aria-label": __$1("Accessibility statement content", "accessibility-widget"),
+          tabIndex: 0,
           dangerouslySetInnerHTML: { __html: statementHtml }
         }
       )
@@ -28190,11 +28486,11 @@ function StatementGenerated({
 function StatementLink({ enabled, url, onToggle, onUrlChange }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1 cy:mb-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: "Link your statement" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: "Already have an accessibility statement page? Link it here to make it accessible through the widget." })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: __$1("Link your statement", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: __$1("Already have an accessibility statement page? Link it here to make it accessible through the widget.", "accessibility-widget") })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:gap-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px] cy:text-foreground", children: "Link statement on widget" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px] cy:text-foreground", children: __$1("Link statement on widget", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         Switch,
         {
@@ -28210,7 +28506,7 @@ function StatementLink({ enabled, url, onToggle, onUrlChange }) {
         {
           htmlFor: "cy-statement-url",
           className: "cy:text-[16px] cy:font-medium cy:text-foreground",
-          children: "Accessibility statement URL"
+          children: __$1("Accessibility statement URL", "accessibility-widget")
         }
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:relative cy:max-w-xl", children: [
@@ -28220,7 +28516,7 @@ function StatementLink({ enabled, url, onToggle, onUrlChange }) {
             id: "cy-statement-url",
             value: url,
             onChange: (e) => onUrlChange(e.target.value),
-            placeholder: "E.g., yoursite.com/accessibility",
+            placeholder: __$1("E.g., yoursite.com/accessibility", "accessibility-widget"),
             className: "cy:w-full cy:border! cy:rounded! cy:h-[48px] cy:pl-10"
           }
         ),
@@ -28230,7 +28526,7 @@ function StatementLink({ enabled, url, onToggle, onUrlChange }) {
   ] });
 }
 function StatementGeneratorTab() {
-  var _a;
+  var _a2;
   const {
     config,
     setStatementEnabled,
@@ -28240,7 +28536,7 @@ function StatementGeneratorTab() {
     setStatementFormData
   } = useWidgetStore();
   const statement = config.modules.statement;
-  const hasStatement = !!(((_a = statement.formData) == null ? void 0 : _a.companyName) || statement.generatedDate);
+  const hasStatement = !!(((_a2 = statement.formData) == null ? void 0 : _a2.companyName) || statement.generatedDate);
   const [tabState, setTabState] = reactExports.useState(hasStatement ? "generated" : "idle");
   const [isSaving, setIsSaving] = reactExports.useState(false);
   const savedFormData = statement.formData;
@@ -28270,9 +28566,9 @@ function StatementGeneratorTab() {
     setIsSaving(true);
     try {
       await saveWidgetConfig(config);
-      toast.success("Changes saved successfully.");
+      toast.success(__$1("Changes saved successfully.", "accessibility-widget"));
     } catch {
-      toast.error("Failed to save changes.");
+      toast.error(__$1("Failed to save changes.", "accessibility-widget"));
     } finally {
       setIsSaving(false);
     }
@@ -28301,38 +28597,38 @@ function StatementGeneratorTab() {
           }
         }
       });
-      toast.success("Statement generated and saved.");
+      toast.success(__$1("Statement generated and saved.", "accessibility-widget"));
     } catch {
-      toast.error("Statement generated but could not be saved. Use Save changes.");
+      toast.error(__$1("Statement generated but could not be saved. Use Save changes.", "accessibility-widget"));
     }
     setTabState("generated");
   }, [step1, step2, config, statement, setStatementGeneratedDate, setStatementFormData]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: "Accessibility statement" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: "Generate and manage your website's accessibility statement." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("Accessibility statement", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Generate and manage your website's accessibility statement.", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(CardAction, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         Button,
         {
           onClick: handleSave,
           disabled: isSaving,
           className: "cy:rounded cy:text-base!",
-          children: isSaving ? "Saving..." : "Save changes"
+          children: isSaving ? __$1("Saving...", "accessibility-widget") : __$1("Save changes", "accessibility-widget")
         }
       ) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:py-6 cy:space-y-4", children: [
       tabState === "idle" && /* @__PURE__ */ jsxRuntimeExports.jsx(SectionCard, { className: "cy:border cy:border-gray-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-start cy:justify-between cy:gap-6", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-base cy:font-semibold cy:text-foreground", children: "Generate statement" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: "Don't have an accessibility statement? Use our generator to create a professional statement." })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-base cy:font-semibold cy:text-foreground", children: __$1("Generate statement", "accessibility-widget") }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: __$1("Don't have an accessibility statement? Use our generator to create a professional statement.", "accessibility-widget") })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           Button,
           {
             onClick: () => setTabState("step1"),
             className: "cy:rounded cy:flex-shrink-0",
-            children: "Get started"
+            children: __$1("Get started", "accessibility-widget")
           }
         )
       ] }) }),
@@ -28384,7 +28680,7 @@ function StatementGeneratorTab() {
             ]
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-muted-foreground", children: "Generating statement..." })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-muted-foreground", children: __$1("Generating statement...", "accessibility-widget") })
       ] }) }),
       tabState === "generated" && /* @__PURE__ */ jsxRuntimeExports.jsx(
         StatementGenerated,
@@ -28414,7 +28710,248 @@ function StatementGeneratorTab() {
     ] }) })
   ] }) });
 }
+const FontSizeIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 27 22", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M1.66663 4.33329V1.66663H19V4.33329M11 1.66663V20.3333M13.6666 20.3333H8.33329M17.6666 12.3333V11H25.6666V12.3333M21.6666 11V20.3333M20.3333 20.3333H23", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const HighlightTitleIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M12.2223 10.4445H16.6667M16.6667 10.4445H21.1112M16.6667 10.4445V22.2963M3.33337 12.1482C3.33337 8.82968 3.33337 7.17042 3.9793 5.90227C4.54743 4.78729 5.45394 3.88077 6.56893 3.31264C7.83708 2.66672 9.49634 2.66672 12.8149 2.66672H20.5186C23.8371 2.66672 25.4963 2.66672 26.7645 3.31264C27.8795 3.88077 28.786 4.78729 29.3541 5.90227C30 7.17042 30 8.82968 30 12.1482V19.8519C30 23.1704 30 24.8297 29.3541 26.0978C28.786 27.2128 27.8795 28.1193 26.7645 28.6875C25.4963 29.3334 23.8371 29.3334 20.5186 29.3334H12.8149C9.49634 29.3334 7.83708 29.3334 6.56893 28.6875C5.45394 28.1193 4.54743 27.2128 3.9793 26.0978C3.33337 24.8297 3.33337 23.1704 3.33337 19.8519V12.1482Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const HighlightLinksIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M11.8335 20.4995L20.8336 11.4983M14.8335 6.99767L15.528 6.19356C16.9348 4.78687 18.8426 3.99667 20.8319 3.99681C22.8212 3.99695 24.7289 4.78742 26.1354 6.19431C27.5419 7.60121 28.3321 9.50929 28.3319 11.4988C28.3318 13.4883 27.5414 15.3963 26.1347 16.803L25.3337 17.4991M17.8336 25.0001L17.2381 25.8012C15.8145 27.2079 13.894 27.9968 11.8927 27.9968C9.89152 27.9968 7.97094 27.2079 6.54742 25.8012C5.84558 25.1077 5.28836 24.2818 4.90805 23.3713C4.52774 22.4608 4.33191 21.4839 4.33191 20.4972C4.33191 19.5105 4.52774 18.5336 4.90805 17.6231C5.28836 16.7127 5.84558 15.8867 6.54742 15.1933L7.33343 14.4987", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const DyslexiaFontIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsxs("svg", { viewBox: "0 0 32 32", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", ...props, children: [
+  /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M1.33337 3.87083V28.0001H8.25371C14.9222 28.0001 19.5761 23.0288 19.5761 15.9116C19.5761 8.79443 14.9121 3.87083 8.25371 3.87083H1.33337ZM17.8435 14.636C17.8435 20.0842 13.9854 23.756 8.25371 23.756H3.03576V5.56369H8.25371C13.9955 5.56369 17.8435 9.21169 17.8435 14.6479V14.636Z" }),
+  /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M26.5367 7.03002C26.5367 6.18359 26.7784 5.43254 27.2216 4.89606C28.0074 3.96618 29.2867 4.10924 30.0925 4.74108L30.6667 3.54893C29.9515 2.97669 29.1356 2.66673 28.3398 2.66673C26.4359 2.66673 25.0559 4.46689 24.9854 7.04195L24.8947 10.0581H22.326V11.6079H24.7839L24.24 28.0001H27.0202L26.5467 11.6079H30.5861V10.0581H26.5467V7.03002H26.5367Z" })
+] });
+const FontWeightIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M16.6667 2.66673V22.3158M16.6667 22.3158H13.2099M16.6667 22.3158H20.1235M27.0371 5.94158V2.66673H6.29634V5.94158M30 25.8246L3.33337 25.8246M30 25.8246L25.4023 29.3334M30 25.8246L25.4023 22.3158M3.33337 25.8246L7.01153 29.3334M3.33337 25.8246L7.01153 22.3158", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const LetterSpacingIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M4.33337 16.0001V6.83338C4.33337 5.72832 4.7849 4.66851 5.58863 3.88711C6.39236 3.1057 7.48245 2.66672 8.61909 2.66672C9.75573 2.66672 10.8458 3.1057 11.6495 3.88711C12.4533 4.66851 12.9048 5.72832 12.9048 6.83338V16.0001M12.9048 9.33338H4.33337M18.0477 2.66672L23.1905 16.0001L28.3334 2.66672M4.33337 26.0001H28.3334M4.33337 26.0001L7.76195 22.6667M4.33337 26.0001L7.76195 29.3334M28.3334 26.0001L24.9048 29.3334M28.3334 26.0001L24.9048 22.6667", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const LineHeightIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 32 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M2.66663 9.90481L7.37251 5.33338M7.37251 5.33338L12.0784 9.90481M7.37251 5.33338V26.6667M2.66663 22.0953L7.37251 26.6667M7.37251 26.6667L12.0784 22.0953M18.3529 6.85719H29.3333M18.3529 16.0001H29.3333M18.3529 25.1429H29.3333", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const AlignLeftIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 29 23", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M1.33337 1.33338H28M1.33337 11.3334H28M1.33337 21.3334H21.3334", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const DarkContrastIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M29.6667 18.9166C27.3948 20.129 24.7933 20.579 22.2462 20.2003C19.699 19.8216 17.341 18.6342 15.5201 16.8133C13.6992 14.9924 12.5118 12.6344 12.1331 10.0872C11.7544 7.54007 12.2044 4.93863 13.4168 2.66673C7.44632 4.06603 3 9.42463 3 15.8218C3 19.4053 4.42354 22.842 6.95745 25.3759C9.49136 27.9099 12.9281 29.3334 16.5116 29.3334C22.9088 29.3334 28.2674 24.8871 29.6667 18.9166Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const LightContrastIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 32 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M29.3334 16.0001H30.6667M16 2.66672V1.33339M16 30.6667V29.3334M26.6667 26.6667L25.3334 25.3334M26.6667 5.33339L25.3334 6.66672M5.33337 26.6667L6.66671 25.3334M5.33337 5.33339L6.66671 6.66672M1.33337 16.0001H2.66671M16 24.0001C18.1218 24.0001 20.1566 23.1572 21.6569 21.6569C23.1572 20.1566 24 18.1218 24 16.0001C24 13.8783 23.1572 11.8435 21.6569 10.3432C20.1566 8.84291 18.1218 8.00006 16 8.00006C13.8783 8.00006 11.8435 8.84291 10.3432 10.3432C8.8429 11.8435 8.00004 13.8783 8.00004 16.0001C8.00004 18.1218 8.8429 20.1566 10.3432 21.6569C11.8435 23.1572 13.8783 24.0001 16 24.0001Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const HighContrastIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M16.6667 2.66673C9.30271 2.66673 3.33337 8.63607 3.33337 16.0001C3.33337 23.3641 9.30271 29.3334 16.6667 29.3334M16.6667 2.66673V29.3334M16.6667 2.66673C24.0307 2.66673 30 8.63607 30 16.0001C30 23.3641 24.0307 29.3334 16.6667 29.3334M16.6667 24.0001H6.66671M16.6667 18.6667H4.00004M16.6667 13.3334H4.00004M16.6667 8.00007H6.66671", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const HighSaturationIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M25.3645 13.3045L24.6986 13.6495C24.7367 13.723 24.7867 13.7897 24.8465 13.8469L25.3645 13.3045ZM21.889 8.20208L21.3132 8.68265L21.3143 8.68401L21.889 8.20208ZM16.8667 3.10816L17.3585 2.54185C17.354 2.53798 17.3495 2.53417 17.345 2.53041L16.8667 3.10816ZM16.3334 2.66669L16.8117 2.08894C16.536 1.86073 16.1374 1.85911 15.8599 2.08508L16.3334 2.66669ZM15.7912 3.10816L16.2583 3.69501L16.2647 3.68976L15.7912 3.10816ZM10.7601 8.12567L11.3336 8.60897L11.3338 8.60868L10.7601 8.12567ZM7.28453 13.2281L7.95187 13.5704L7.95338 13.5674L7.28453 13.2281ZM25.3734 13.313L26.039 12.9674C26.001 12.8941 25.9511 12.8276 25.8914 12.7706L25.3734 13.313ZM9.86968 13.7457L10.0428 13.0159L9.47997 12.8824L9.20784 13.3929L9.86968 13.7457ZM9.55098 14.3355L10.2205 14.6736L10.2239 14.6667L9.55098 14.3355ZM23.1158 14.3993L22.447 14.7385L22.447 14.7387L23.1158 14.3993ZM21.694 12.0638L22.3092 11.6349L22.1083 11.3467L21.7583 11.3166L21.694 12.0638ZM25.3645 13.3045L26.0305 12.9595C25.1567 11.2728 23.9595 9.50392 22.4636 7.72015L21.889 8.20208L21.3143 8.68401C22.7517 10.3981 23.8835 12.0761 24.6986 13.6495L25.3645 13.3045ZM21.889 8.20208L22.4648 7.72151C21.2021 6.20865 19.9504 4.9356 19.0025 4.0303C18.5282 3.57724 18.1289 3.21531 17.8411 2.96051C17.6972 2.83308 17.5812 2.73247 17.4977 2.66072C17.456 2.62484 17.4225 2.59629 17.398 2.57543C17.3866 2.56574 17.375 2.55589 17.3686 2.55045C17.3601 2.54322 17.358 2.54142 17.3585 2.54185L16.8667 3.10816L16.375 3.67447C16.4724 3.75898 18.8756 5.76204 21.3132 8.68265L21.889 8.20208ZM16.8667 3.10816L17.345 2.53041L16.8117 2.08894L16.3334 2.66669L15.8552 3.24443L16.3885 3.68591L16.8667 3.10816ZM16.3334 2.66669L15.8599 2.08508L15.3177 2.52656L15.7912 3.10816L16.2647 3.68976L16.807 3.24829L16.3334 2.66669ZM15.7912 3.10816L15.3241 2.52134C15.1947 2.62434 12.7094 4.64553 10.1863 7.64266L10.7601 8.12567L11.3338 8.60868C13.7708 5.71385 16.1743 3.76178 16.2583 3.69498L15.7912 3.10816ZM10.7601 8.12567L10.1866 7.64237C8.69204 9.41585 7.4832 11.1787 6.61567 12.8888L7.28453 13.2281L7.95338 13.5674C8.75696 11.9834 9.89479 10.3163 11.3336 8.60897L10.7601 8.12567ZM7.28453 13.2281L6.61718 12.8858C5.50216 15.0598 4.91675 17.1639 4.91675 19.1455H5.66675H6.41675C6.41675 17.4595 6.91578 15.5904 7.95187 13.5704L7.28453 13.2281ZM5.66675 19.1455H4.91675C4.91675 25.2121 10.0676 30.0834 16.3334 30.0834V29.3334V28.5834C10.8303 28.5834 6.41675 24.3195 6.41675 19.1455H5.66675ZM16.3334 29.3334V30.0834C22.5992 30.0834 27.7501 25.2121 27.7501 19.1455H27.0001H26.2501C26.2501 24.3195 21.8365 28.5834 16.3334 28.5834V29.3334ZM27.0001 19.1455H27.7501C27.7501 17.2116 27.1628 15.1315 26.039 12.9674L25.3734 13.313L24.7078 13.6586C25.7529 15.6714 26.2501 17.5137 26.2501 19.1455H27.0001ZM25.3734 13.313L25.8914 12.7706L25.8825 12.7621L25.3645 13.3045L24.8465 13.8469L24.8554 13.8554L25.3734 13.313ZM20.5826 12V11.25C18.303 11.25 17.1263 11.7971 16.0237 12.3131C15.0057 12.7895 14.0619 13.2348 12.1005 13.2348V13.9848V14.7348C14.3802 14.7348 15.5569 14.1877 16.6595 13.6717C17.6774 13.1953 18.6213 12.75 20.5826 12.75V12ZM12.1005 13.9848V13.2348C11.2404 13.2348 10.5877 13.1452 10.0428 13.0159L9.86968 13.7457L9.69653 14.4754C10.361 14.6331 11.1302 14.7348 12.1005 14.7348V13.9848ZM9.86968 13.7457L9.20784 13.3929C9.12867 13.5414 8.97958 13.798 8.87804 14.0044L9.55098 14.3355L10.2239 14.6667C10.3185 14.4745 10.3982 14.3485 10.5315 14.0985L9.86968 13.7457ZM9.55098 14.3355L8.88149 13.9975C8.03354 15.6768 7.58341 17.3232 7.58341 18.8631H8.33341H9.08341C9.08341 17.6131 9.45045 16.1986 10.2205 14.6736L9.55098 14.3355ZM8.33341 18.8631H7.58341C7.58341 23.5991 11.5242 27.4167 16.3334 27.4167V26.6667V25.9167C12.3173 25.9167 9.08341 22.7357 9.08341 18.8631H8.33341ZM16.3334 26.6667V27.4167C21.1426 27.4167 25.0834 23.5991 25.0834 18.8631H24.3334H23.5834C23.5834 22.7357 20.3495 25.9167 16.3334 25.9167V26.6667ZM24.3334 18.8631H25.0834C25.0834 17.3522 24.6316 15.7289 23.7847 14.0599L23.1158 14.3993L22.447 14.7387C23.2181 16.2581 23.5834 17.6479 23.5834 18.8631H24.3334ZM23.1158 14.3993L23.7847 14.06C23.381 13.2639 22.8792 12.4524 22.3092 11.6349L21.694 12.0638L21.0787 12.4927C21.6202 13.2694 22.0826 14.0202 22.447 14.7385L23.1158 14.3993ZM21.694 12.0638C21.7583 11.3166 21.7583 11.3166 21.7583 11.3166C21.7583 11.3166 21.7583 11.3165 21.7583 11.3165C21.7582 11.3165 21.7582 11.3165 21.7581 11.3165C21.758 11.3165 21.7578 11.3165 21.7576 11.3165C21.7571 11.3164 21.7565 11.3164 21.7557 11.3163C21.7541 11.3162 21.7518 11.316 21.7489 11.3157C21.743 11.3153 21.7345 11.3145 21.7236 11.3136C21.7018 11.3118 21.6706 11.3093 21.6319 11.3062C21.5548 11.3001 21.448 11.2919 21.329 11.2837C21.0983 11.2678 20.7969 11.25 20.5826 11.25V12V12.75C20.7394 12.75 20.9937 12.7641 21.2259 12.7801C21.3384 12.7879 21.4398 12.7956 21.5131 12.8015C21.5497 12.8044 21.5791 12.8068 21.5993 12.8085C21.6094 12.8093 21.6171 12.81 21.6223 12.8104C21.6248 12.8106 21.6268 12.8108 21.628 12.8109C21.6286 12.8109 21.6291 12.811 21.6293 12.811C21.6295 12.811 21.6296 12.811 21.6296 12.811C21.6296 12.811 21.6296 12.811 21.6297 12.811C21.6297 12.811 21.6296 12.811 21.6296 12.811C21.6296 12.811 21.6296 12.811 21.694 12.0638Z" }) });
+const LowSaturationIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsxs("svg", { viewBox: "0 0 32 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: [
+  /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M25.0312 13.3045C24.1867 11.6744 23.0223 9.95099 21.5556 8.20208C19.0756 5.23063 16.6312 3.19306 16.5334 3.10816L16 2.66669L15.4578 3.10816C15.3512 3.19306 12.9067 5.17969 10.4267 8.12567C8.96004 9.86609 7.78671 11.581 6.95115 13.2281C5.8756 15.3251 5.33337 17.3117 5.33337 19.1455C5.33337 24.7658 10.1156 29.3334 16 29.3334C21.8845 29.3334 26.6667 24.7658 26.6667 19.1455C26.6667 17.3626 26.1245 15.4015 25.04 13.313L25.0312 13.3045Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
+  /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M22.2765 20C15.9739 20 15.9739 23.157 9.67976 23.157C9.55304 23.157 9.45165 23.157 9.33337 23.1482C10.8372 25.2734 13.2535 26.6667 15.9824 26.6667C19.8603 26.6667 23.1129 23.8625 24 20.097C23.4762 20.0353 22.9186 20 22.2765 20Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })
+] });
+const MonochromeIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsxs("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: [
+  /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M25.6979 13.3045C24.8535 11.6744 23.689 9.95099 22.2223 8.20208C19.7423 5.23063 17.2979 3.19306 17.2001 3.10816L16.6668 2.66669L16.1246 3.10816C16.0179 3.19306 13.5735 5.17969 11.0935 8.12567C9.62678 9.86609 8.45345 11.581 7.6179 13.2281C6.54234 15.3251 6.00012 17.3117 6.00012 19.1455C6.00012 24.7658 10.7823 29.3334 16.6668 29.3334C22.5512 29.3334 27.3335 24.7658 27.3335 19.1455C27.3335 17.3626 26.7912 15.4015 25.7068 13.313L25.6979 13.3045Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }),
+  /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M24.6668 19.0242C24.6668 17.6893 24.2578 16.2139 23.448 14.6526C22.8181 13.427 21.9347 12.139 20.8386 10.8197C18.9817 8.59487 17.1412 7.06481 17.0676 7.00236L16.6668 6.66669V26.6667C21.0758 26.6667 24.6668 23.2397 24.6668 19.0242Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })
+] });
+const BigCursorIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M28.5311 11.3834C30.4853 12.1771 30.336 14.9931 28.3087 15.5758L18.0752 18.5185L13.4007 28.0865C12.4739 29.9823 9.6741 29.6398 9.231 27.5769L4.46724 5.35687C4.38211 4.96192 4.40628 4.55123 4.53714 4.16899C4.668 3.78675 4.90061 3.44742 5.20993 3.18751C5.51925 2.9276 5.89358 2.75694 6.29266 2.6939C6.69173 2.63086 7.10044 2.67782 7.47482 2.82973L28.5311 11.3834Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const StopAnimationsIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 30 29", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M17.1333 16.6V8.06669M12.8666 16.6V8.06669M1.66663 26.0476H6.66663M6.66663 26.0476H28.3333M6.66663 26.0476V24.3334M6.66663 26.0476V27.7619M25.6666 12.3334C25.6666 18.2244 20.891 23 15 23C9.10892 23 4.33329 18.2244 4.33329 12.3334C4.33329 6.44232 9.10892 1.66669 15 1.66669C20.891 1.66669 25.6666 6.44232 25.6666 12.3334Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+const ReadingGuideIcon = (props) => /* @__PURE__ */ jsxRuntimeExports.jsx("svg", { viewBox: "0 0 33 32", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M5.66667 12.2667V2.66669H27L26.9998 12.2667M5.66667 20V29.3334H26.9998V20M13.6667 20H3V13.3334H29.6667V20H22.3333M22.493 20.3842C23.2083 20.662 23.1536 21.6476 22.4116 21.8515L18.6658 22.8815L16.9548 26.2303C16.6156 26.8938 15.5908 26.774 15.4286 26.0519L13.6849 18.2749C13.6538 18.1367 13.6626 17.9929 13.7105 17.8592C13.7584 17.7254 13.8435 17.6066 13.9568 17.5156C14.07 17.4247 14.207 17.3649 14.3531 17.3429C14.4992 17.3208 14.6488 17.3373 14.7858 17.3904L22.493 20.3842Z", stroke: "currentColor", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" }) });
+function ModuleRow({ id, label, icon: Icon2, checked, onChange }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:px-4 cy:py-5 cy:border-t", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-3", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { width: 20, height: 20, className: "cy:text-gray-500 cy:shrink-0" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "label",
+        {
+          htmlFor: id,
+          className: "cy:text-sm! cy:font-normal! cy:text-gray-800! cy:cursor-pointer",
+          children: label
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id, checked, onCheckedChange: onChange })
+  ] });
+}
+function ModuleSection({ title, children }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:py-0 cy:shadow-none! cy:overflow-hidden", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:bg-gray-50 cy:px-4 cy:py-3 cy:border-b", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-sm cy:font-semibold cy:text-gray-900", children: title }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children })
+  ] });
+}
+const ModulesTab = () => {
+  var _a2, _b2, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t;
+  const { config, setModuleEnabled } = useWidgetStore();
+  const color = ((_a2 = config.modules) == null ? void 0 : _a2.color) ?? DEFAULT_WIDGET_CONFIG.modules.color;
+  const content = ((_b2 = config.modules) == null ? void 0 : _b2.content) ?? DEFAULT_WIDGET_CONFIG.modules.content;
+  const navigation = ((_c = config.modules) == null ? void 0 : _c.navigation) ?? DEFAULT_WIDGET_CONFIG.modules.navigation;
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:pb-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("Modules section", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Enable or disable individual accessibility features for your users.", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardAction, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: __$1("Content adjustments", "accessibility-widget"), children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-adjust-font-sizing",
+            label: __$1("Adjust Font Sizing", "accessibility-widget"),
+            icon: FontSizeIcon,
+            checked: ((_d = content.adjustFontSizing) == null ? void 0 : _d.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "adjustFontSizing", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-highlight-title",
+            label: __$1("Highlight Title", "accessibility-widget"),
+            icon: HighlightTitleIcon,
+            checked: ((_e = content.highlightTitle) == null ? void 0 : _e.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "highlightTitle", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-highlight-links",
+            label: __$1("Highlight Links", "accessibility-widget"),
+            icon: HighlightLinksIcon,
+            checked: ((_f = content.highlightLinks) == null ? void 0 : _f.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "highlightLinks", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-dyslexic-font",
+            label: __$1("Dyslexia Friendly Font", "accessibility-widget"),
+            icon: DyslexiaFontIcon,
+            checked: ((_g = content.dyslexicFont) == null ? void 0 : _g.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "dyslexicFont", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-font-weight",
+            label: __$1("Font Weight", "accessibility-widget"),
+            icon: FontWeightIcon,
+            checked: ((_h = content.fontWeight) == null ? void 0 : _h.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "fontWeight", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-letter-spacing",
+            label: __$1("Letter Spacing", "accessibility-widget"),
+            icon: LetterSpacingIcon,
+            checked: ((_i = content.letterSpacing) == null ? void 0 : _i.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "letterSpacing", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-line-height",
+            label: __$1("Line Height", "accessibility-widget"),
+            icon: LineHeightIcon,
+            checked: ((_j = content.lineHeight) == null ? void 0 : _j.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "lineHeight", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-align-left",
+            label: __$1("Align Left", "accessibility-widget"),
+            icon: AlignLeftIcon,
+            checked: ((_k = content.alignLeft) == null ? void 0 : _k.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("content", "alignLeft", v)
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: __$1("Colour adjustments", "accessibility-widget"), children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-dark-contrast",
+            label: __$1("Dark Contrast", "accessibility-widget"),
+            icon: DarkContrastIcon,
+            checked: ((_l = color.darkContrast) == null ? void 0 : _l.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("color", "darkContrast", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-light-contrast",
+            label: __$1("Light Contrast", "accessibility-widget"),
+            icon: LightContrastIcon,
+            checked: ((_m = color.lightContrast) == null ? void 0 : _m.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("color", "lightContrast", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-high-contrast",
+            label: __$1("High Contrast", "accessibility-widget"),
+            icon: HighContrastIcon,
+            checked: ((_n = color.highContrast) == null ? void 0 : _n.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("color", "highContrast", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-high-saturation",
+            label: __$1("High Saturation", "accessibility-widget"),
+            icon: HighSaturationIcon,
+            checked: ((_o = color.highSaturation) == null ? void 0 : _o.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("color", "highSaturation", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-low-saturation",
+            label: __$1("Low Saturation", "accessibility-widget"),
+            icon: LowSaturationIcon,
+            checked: ((_p = color.lowSaturation) == null ? void 0 : _p.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("color", "lowSaturation", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-monochrome",
+            label: __$1("Monochrome", "accessibility-widget"),
+            icon: MonochromeIcon,
+            checked: ((_q = color.monochrome) == null ? void 0 : _q.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("color", "monochrome", v)
+          }
+        )
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: __$1("Navigation adjustments", "accessibility-widget"), children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-reading-guide",
+            label: __$1("Reading Guide", "accessibility-widget"),
+            icon: ReadingGuideIcon,
+            checked: ((_r = navigation == null ? void 0 : navigation.readingGuide) == null ? void 0 : _r.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("navigation", "readingGuide", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-pause-animations",
+            label: __$1("Pause Animations", "accessibility-widget"),
+            icon: StopAnimationsIcon,
+            checked: ((_s = navigation == null ? void 0 : navigation.pauseAnimations) == null ? void 0 : _s.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("navigation", "pauseAnimations", v)
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          ModuleRow,
+          {
+            id: "module-big-cursor",
+            label: __$1("Big Cursor", "accessibility-widget"),
+            icon: BigCursorIcon,
+            checked: ((_t = navigation == null ? void 0 : navigation.bigCursor) == null ? void 0 : _t.enabled) ?? true,
+            onChange: (v) => setModuleEnabled("navigation", "bigCursor", v)
+          }
+        )
+      ] })
+    ] }) })
+  ] }) });
+};
 function App() {
+  var _a2;
   const { isLoading, fetchConfig } = useWidgetStore();
   reactExports.useEffect(() => {
     fetchConfig();
@@ -28428,7 +28965,7 @@ function App() {
           {
             value: "customize",
             className: "cy:-mb-1 cy:flex-none  cy:border-0 cy:border-b-3 cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:ml-0 cy:mr-4 cy:text-base! cy:font-medium",
-            children: "Customise widget"
+            children: __$1("Customise widget", "accessibility-widget")
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -28436,7 +28973,7 @@ function App() {
           {
             value: "statement",
             className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3 cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
-            children: "Statement"
+            children: __$1("Statement", "accessibility-widget")
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -28444,21 +28981,31 @@ function App() {
           {
             value: "settings",
             className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3  cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
-            children: "Settings"
+            children: __$1("Settings", "accessibility-widget")
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          TabsTrigger,
+          {
+            value: "modules",
+            className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3  cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
+            children: __$1("Modules", "accessibility-widget")
           }
         )
       ] }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:w-full", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ConsultationBanner, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(ReviewBanner, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Banner, {})
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "customize", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CustomizeTab, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "statement", children: /* @__PURE__ */ jsxRuntimeExports.jsx(StatementGeneratorTab, {}) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "settings", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SettingsTab, {}) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "settings", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SettingsTab, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "modules", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ModulesTab, {}) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:px-4 cy:py-4 cy:sm:px-6 cy:lg:px-8 cy:max-w-7xl cy:mx-auto cy:flex cy:justify-between", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: [
-        "Please rate AccessYes",
+        __$1("Please rate AccessYes", "accessibility-widget"),
         " ",
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "a",
@@ -28471,7 +29018,7 @@ function App() {
           }
         ),
         " ",
-        "on",
+        __$1("on", "accessibility-widget"),
         " ",
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "a",
@@ -28484,9 +29031,12 @@ function App() {
           }
         ),
         " ",
-        "to help us spread the word. Thank you from the team AccessYes!"
+        __$1("to help us spread the word. Thank you from the team AccessYes!", "accessibility-widget")
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: "Version 3.1.3" })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: [
+        "Version ",
+        ((_a2 = window.cyA11yGlobals) == null ? void 0 : _a2.version) ?? ""
+      ] })
     ] })
   ] }) }) });
 }

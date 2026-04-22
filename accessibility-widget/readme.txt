@@ -1,10 +1,10 @@
 === AccessYes Accessibility Widget for ADA, EAA & WCAG Readiness ===
 Contributors: cookieyesdev
-Tags: web accessibility, wp accessibility, accessibility widget, wcag, ada
+Tags: web accessibility, wp accessibility, accessibility widget, accessibility toolbar, accessibility overlay
 Requires at least: 5.0.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 3.1.3
+Stable tag: 3.2.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,10 +51,14 @@ AccessYes Accessibility Widget helps you take a step in that direction by giving
 * **Reading guide:** A horizontal guide that helps users track lines of text while reading.
 * **Pause animations:** Let users pause animations or motions that could be distracting or trigger discomfort.
 * **Big cursor:** Increase cursor size and contrast for better navigation visibility.
+* **Keyboard shortcut:** Let visitors open the accessibility widget with the Option+A keyboard shortcut for quicker, mouse-free access.
 
 = Accessibility statement =
 * **Create an accessibility statement:** Generate your website accessibility statement inside the tool and display it in the widget.
 * **Link an existing statement:** Connect your existing accessibility statement or VPAT and display it within the widget.
+
+= Widget customisation =
+* **Customise widget options:** Choose which accessibility features appear in the widget for your front-end visitors. Enable or disable individual modules across Content, Colour, and Navigation adjustments from the new Modules tab, so the widget only surfaces the options that matter to your audience.
 
 
 **Need help?** Write to us at support@cookieyes.com with a quick note in the subject line: CookieYes Accessibility Widget
@@ -86,14 +90,24 @@ Yes. A "Reset Settings" button is provided to quickly revert all changes.
 = Can the plugin be used on multilingual websites? =
 Absolutely. The plugin supports over 50 languages and adapts based on the selected language.
 
+= Can I choose which accessibility features appear in the widget? =
+Yes. From the Modules tab in the plugin settings, you can enable or disable individual accessibility features across Content, Colour, and Navigation adjustments. Only the modules you enable will be shown to front-end users in the widget.
+
 == Screenshots ==
 
 1. Accessibility options within the widget.
 2. Customise widget color, size, and position.
 3. Create or link accessibility statement in widget.
 4. Accessibility overlay general settings.
+5. Customise individual accessibility features for front-end users.
 
 == Changelog ==
+
+= 3.2.0 2026-04-22 =
+
+[Add] - New Modules tab in admin settings to enable or disable individual accessibility features.
+[Add] - Keyboard shortcut support to open and close the accessibility widget (default: Alt+A/Option+A).
+[Enhancement] - Focus indicators on widget interactive elements are now dynamic for improved keyboard navigation visibility.
 
 = 3.1.3 2026-03-30 =
 
@@ -174,11 +188,8 @@ Absolutely. The plugin supports over 50 languages and adapts based on the select
 
 == Upgrade Notice ==
 
-= 3.1.3 2026-03-30 =
+= 3.2.0 2026-04-22 =
 
-[Fix] - Resolved missing pointer cursors on various interactive UI elements within the plugin settings dashboard.
-[Fix] - Fixed translation issue for the "Reset settings" button in the accessibility widget.
-[Add] - Global WordPress admin notice for the review banner to improve visibility.
-[Enhancement] - Refactored uninstall feedback modal layout and removed the mandatory option selection requirement.
-[Enhancement] - Updated plugin support links to point directly to the WordPress.org support forum.
-
+[Add] - New Modules tab in admin settings to enable or disable individual accessibility features.
+[Add] - Keyboard shortcut support to open and close the accessibility widget (default: Alt+A/Option+A).
+[Enhancement] - Focus indicators on widget interactive elements are now dynamic for improved keyboard navigation visibility.
