@@ -200,6 +200,27 @@ class Frontend {
 			 */
 			$settings['keyboard']['shortcut'] = apply_filters( 'cya11y_keyboard_shortcut', 'alt+a' );
 		}
+
+		/**
+		 * Filters the keyboard focus-ring colour used inside the widget panel.
+		 *
+		 * Return a 3, 6, or 8-digit hex string (e.g. "#FFD400") to override the
+		 * auto-computed focus colour. Return null/false/empty to keep the default
+		 * behaviour (primary brand colour, or black for low-contrast primaries).
+		 *
+		 * Notes:
+		 * - The widget renders inside a Shadow DOM, so site-wide :focus CSS does
+		 *   not cascade in. This filter is the supported way to recolour the
+		 *   focus ring on widget chrome.
+		 * - Width / offset / glow are unchanged; only the colour swaps.
+		 *
+		 * @param string|null $color Filter return value; null by default.
+		 */
+		$focus_color_raw = apply_filters( 'cya11y_focus_ring_color', null );
+		$settings['focusRingColor'] = ( is_string( $focus_color_raw ) && preg_match( '/^#([0-9a-f]{3}|[0-9a-f]{6}|[0-9a-f]{8})$/i', $focus_color_raw ) )
+			? $focus_color_raw
+			: null;
+
 		return $settings;
 	}
 }

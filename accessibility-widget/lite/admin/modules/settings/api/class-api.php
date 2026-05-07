@@ -413,7 +413,7 @@ class Api extends Rest_Controller {
 							'letterSpacing'    => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
 							'lineHeight'       => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
 							'fontWeight'       => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
-							'alignLeft'        => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
+							'textAlign'        => array( 'type' => 'object', 'properties' => array( 'enabled' => array( 'type' => 'boolean' ) ) ),
 						),
 					),
 					'navigation' => array(
@@ -443,6 +443,24 @@ class Api extends Rest_Controller {
 							),
 						),
 					),
+						'profiles'   => array(
+							'type'       => 'object',
+							'properties' => array(
+								'enabled' => array( 'type' => 'boolean' ),
+							),
+						),
+						'pageRead'   => array(
+							'type'       => 'object',
+							'properties' => array(
+								'enabled' => array( 'type' => 'boolean' ),
+							),
+						),
+						'muteSounds' => array(
+							'type'       => 'object',
+							'properties' => array(
+								'enabled' => array( 'type' => 'boolean' ),
+							),
+						),
 				),
 			),
 			),

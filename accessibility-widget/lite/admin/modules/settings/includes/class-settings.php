@@ -113,7 +113,7 @@ class Settings {
 					'letterSpacing'    => array( 'enabled' => true ),
 					'lineHeight'       => array( 'enabled' => true ),
 					'fontWeight'       => array( 'enabled' => true ),
-					'alignLeft'        => array( 'enabled' => true ),
+					'textAlign'        => array( 'enabled' => true ),
 				),
 				'navigation' => array(
 					'readingGuide'    => array( 'enabled' => true ),
@@ -132,6 +132,15 @@ class Settings {
 						'wcagStandard'      => 'WCAG 2.2 Level AA',
 						'conformanceStatus' => 'fully-conformant',
 					),
+				),
+				'profiles'   => array(
+					'enabled' => true,
+				),
+				'pageRead'   => array(
+					'enabled' => true,
+				),
+				'muteSounds' => array(
+					'enabled' => true,
 				),
 			),
 		);

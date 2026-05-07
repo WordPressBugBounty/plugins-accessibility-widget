@@ -1,10 +1,10 @@
-=== AccessYes Accessibility Widget for ADA, EAA & WCAG Readiness ===
+=== AccessiYes Accessibility Widget for ADA, EAA & WCAG Readiness ===
 Contributors: cookieyesdev
 Tags: web accessibility, wp accessibility, accessibility widget, accessibility toolbar, accessibility overlay
 Requires at least: 5.0.0
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 3.2.0
+Stable tag: 3.2.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Free WordPress accessibility widget to improve accessibility for your website vi
 
 == Description ==
 
-AccessYes Accessibility Widget is a free, lightweight, and user-friendly plugin that adds an accessibility overlay to your WordPress website.
+AccessiYes Accessibility Widget is a free, lightweight, and user-friendly plugin that adds an accessibility overlay to your WordPress website.
 
 The accessibility widget provides tools to help your site better align with accessibility standards such as the Web Content Accessibility Guidelines (WCAG) 2.1 AA, as well as accessibility laws like the Americans with Disabilities Act (ADA) and the European Accessibility Act (EAA).
 
@@ -20,7 +20,7 @@ With just a few clicks, your website visitors can customise font size, color con
 
 **Disclaimer:**
 
-AccessYes Accessibility Widget is intended to support your accessibility efforts. It does not guarantee conformance with WCAG or compliance with laws such as the ADA, EAA, or other regulations. Full compliance may still require a comprehensive audit and remediation.
+AccessiYes Accessibility Widget is intended to support your accessibility efforts. It does not guarantee conformance with WCAG or compliance with laws such as the ADA, EAA, or other regulations. Full compliance may still require a comprehensive audit and remediation.
 
 
 == Why accessibility matters ==
@@ -29,7 +29,7 @@ Over 1 billion people globally live with some form of disability. This makes web
 
 With WordPress powering over 43% of all websites in 2026, improving accessibility on WordPress sites can make a big difference in creating a more inclusive web.
 
-AccessYes Accessibility Widget helps you take a step in that direction by giving visitors simple tools to adjust how your WordPress website looks and behaves based on their needs.
+AccessiYes Accessibility Widget helps you take a step in that direction by giving visitors simple tools to adjust how your WordPress website looks and behaves based on their needs.
 
 == Features ==
 
@@ -40,7 +40,7 @@ AccessYes Accessibility Widget helps you take a step in that direction by giving
 * **Dyslexia-friendly fonts:** Let users switch to high-legibility fonts for better cognitive accessibility.
 * **Font weight control:** Bolden text across your site to increase contrast and visibility.
 * **Letter spacing & line height adjustments:** Enable precise control over text layout to support users with dyslexia or reading challenges.
-* **Align left:** Align all content to the left for a consistent reading experience.
+* **Text alignment:** Align all content to the left or right for a consistent reading experience.
 
 = Color adjustments =
 * **Contrast modes:** Includes Dark Mode, Light Mode, and High Contrast for visual comfort.
@@ -52,6 +52,11 @@ AccessYes Accessibility Widget helps you take a step in that direction by giving
 * **Pause animations:** Let users pause animations or motions that could be distracting or trigger discomfort.
 * **Big cursor:** Increase cursor size and contrast for better navigation visibility.
 * **Keyboard shortcut:** Let visitors open the accessibility widget with the Option+A keyboard shortcut for quicker, mouse-free access.
+* **Page reader:** Let visitors have page content read aloud for a more accessible browsing experience.
+* **Mute sounds:** Allow users to mute all sounds on the page to reduce distractions.
+
+= Accessibility profiles =
+* **Preset accessibility profiles:** Let visitors apply pre-configured combinations of accessibility settings tailored to common needs, such as visual, cognitive, or motor impairments, with a single click.
 
 = Accessibility statement =
 * **Create an accessibility statement:** Generate your website accessibility statement inside the tool and display it in the widget.
@@ -63,10 +68,10 @@ AccessYes Accessibility Widget helps you take a step in that direction by giving
 
 **Need help?** Write to us at support@cookieyes.com with a quick note in the subject line: CookieYes Accessibility Widget
 
-**Got feedback about the plugin?** We’d love to hear it! Drop us a line at accessyes@cookieyes.com.
+**Got feedback about the plugin?** We’d love to hear it! Drop us a line at support@accessiyes.com.
 
 
-*Note: AccessYes is a standalone accessibility widget developed by CookieYes. It’s a separate tool designed to work independently from the CookieYes platform.*
+*Note: AccessiYes is a standalone accessibility widget developed by CookieYes. It’s a separate tool designed to work independently from the CookieYes platform.*
 
 
 == Installation ==
@@ -79,7 +84,7 @@ AccessYes Accessibility Widget helps you take a step in that direction by giving
 == Frequently Asked Questions ==
 
 = Does this plugin help with accessibility law compliance? =
-Yes. It is designed to support compliance with WCAG, ADA, EAA, and EN 301 549 standards. However, the AccessYes Accessibility Widget does not ensure full legal compliance with ADA, WCAG, EAA, EN 301 549, or similar standards. A complete audit and remediation process may still be necessary.
+Yes. It is designed to support compliance with WCAG, ADA, EAA, and EN 301 549 standards. However, the AccessiYes Accessibility Widget does not ensure full legal compliance with ADA, WCAG, EAA, EN 301 549, or similar standards. A complete audit and remediation process may still be necessary.
 
 = Is user data collected by the plugin? =
 No. The plugin does not track or store any user data, ensuring GDPR compliance.
@@ -102,6 +107,13 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 5. Customise individual accessibility features for front-end users.
 
 == Changelog ==
+
+= 3.2.1 2026-05-06 =
+
+[Add] - Accessibility profile feature.
+[Add] - Add screen reader and mute sound features.
+[Enhancement] - Improve the low sturation and text alignment features.
+[Compatibility] - Tested OK with WordPress version 7.0.
 
 = 3.2.0 2026-04-22 =
 
@@ -188,8 +200,9 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Upgrade Notice ==
 
-= 3.2.0 2026-04-22 =
+= 3.2.1 2026-05-06 =
 
-[Add] - New Modules tab in admin settings to enable or disable individual accessibility features.
-[Add] - Keyboard shortcut support to open and close the accessibility widget (default: Alt+A/Option+A).
-[Enhancement] - Focus indicators on widget interactive elements are now dynamic for improved keyboard navigation visibility.
+[Add] - Add accessibility profile feature.
+[Add] - Add screen reader and mute sound features.
+[Enhancement] - Improve the low sturation and text alignment features.
+[Compatibility] - Tested OK with WordPress version 7.0.

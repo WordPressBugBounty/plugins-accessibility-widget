@@ -43,7 +43,10 @@
         Close: "\u12DD\u130B",
         "Content adjustments": "\u12E8\u12ED\u12D8\u1275 \u121B\u1235\u1270\u12AB\u12A8\u12EB\u12CE\u127D",
         "Navigation adjustments": "\u12E8\u12A0\u12F0\u122B\u12F3\u122A \u121B\u1235\u1270\u12AB\u12A8\u12EB\u12CE\u127D",
+        "Text Align": "Text Align",
         "Align Left": "\u130D\u122B \u12A0\u1230\u120B\u120D\u120D",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u12E8\u134A\u12F0\u120D \u1218\u1320\u1295 \u12A0\u1235\u1270\u12AB\u12AD\u120D",
         "Highlight Title": "\u122D\u12D5\u1235 \u12A0\u1309\u120D\u1270\u12CD \u12A0\u1233\u12ED",
         "Highlight Links": "\u12A0\u1308\u1293\u129E\u127D\u1295 \u12A0\u1309\u120D\u1270\u12CD \u12A0\u1233\u12ED",
@@ -74,7 +77,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u12A0\u1292\u121C\u123D\u1296\u127D\u1295 \u12A0\u1241\u121D",
         "Reset all settings": "\u1245\u1295\u1265\u122E\u127D\u1295 \u12F3\u130D\u121D \u12A0\u1235\u1300\u121D\u122D",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -87,7 +100,10 @@
         Close: "\u0625\u063A\u0644\u0627\u0642",
         "Content adjustments": "\u062A\u0639\u062F\u064A\u0644\u0627\u062A \u0627\u0644\u0645\u062D\u062A\u0648\u0649",
         "Navigation adjustments": "\u062A\u0639\u062F\u064A\u0644\u0627\u062A \u0627\u0644\u062A\u0646\u0642\u0644",
+        "Text Align": "Text Align",
         "Align Left": "\u0645\u062D\u0627\u0630\u0627\u0629 \u0644\u0644\u064A\u0633\u0627\u0631",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0636\u0628\u0637 \u062D\u062C\u0645 \u0627\u0644\u062E\u0637",
         "Highlight Title": "\u062A\u0645\u064A\u064A\u0632 \u0627\u0644\u0639\u0646\u0648\u0627\u0646",
         "Highlight Links": "\u062A\u0645\u064A\u064A\u0632 \u0627\u0644\u0631\u0648\u0627\u0628\u0637",
@@ -118,7 +134,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0625\u064A\u0642\u0627\u0641 \u0627\u0644\u0631\u0633\u0648\u0645 \u0627\u0644\u0645\u062A\u062D\u0631\u0643\u0629",
         "Reset all settings": "\u0625\u0639\u0627\u062F\u0629 \u062A\u0639\u064A\u064A\u0646 \u0627\u0644\u0625\u0639\u062F\u0627\u062F\u0627\u062A",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -131,7 +157,10 @@
         Close: "\u0417\u0430\u0442\u0432\u043E\u0440\u0438",
         "Content adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430\u043D\u0438\u0435\u0442\u043E",
         "Navigation adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044F\u0442\u0430",
+        "Text Align": "Text Align",
         "Align Left": "\u041F\u043E\u0434\u0440\u0430\u0432\u043D\u0438 \u0432\u043B\u044F\u0432\u043E",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430 \u043D\u0430 \u0440\u0430\u0437\u043C\u0435\u0440\u0430 \u043D\u0430 \u0448\u0440\u0438\u0444\u0442\u0430",
         "Highlight Title": "\u041E\u0442\u043A\u0440\u043E\u044F\u0432\u0430\u043D\u0435 \u043D\u0430 \u0437\u0430\u0433\u043B\u0430\u0432\u0438\u0435\u0442\u043E",
         "Highlight Links": "\u041E\u0442\u043A\u0440\u043E\u044F\u0432\u0430\u043D\u0435 \u043D\u0430 \u0432\u0440\u044A\u0437\u043A\u0438\u0442\u0435",
@@ -162,7 +191,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0421\u043F\u0440\u0438 \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438\u0442\u0435",
         "Reset all settings": "\u041D\u0443\u043B\u0438\u0440\u0430\u043D\u0435 \u043D\u0430 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438\u0442\u0435",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -175,7 +214,10 @@
         Close: "\u09AC\u09A8\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
         "Content adjustments": "\u0995\u09A8\u09CD\u099F\u09C7\u09A8\u09CD\u099F \u09B8\u0982\u09B6\u09CB\u09A7\u09A8",
         "Navigation adjustments": "\u09A8\u09C7\u09AD\u09BF\u0997\u09C7\u09B6\u09A8 \u09B8\u0982\u09B6\u09CB\u09A7\u09A8",
+        "Text Align": "Text Align",
         "Align Left": "\u09AC\u09BE\u09AE \u09A6\u09BF\u0995\u09C7 \u09B8\u09BE\u09B0\u09BF\u09AC\u09A6\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u09AB\u09A8\u09CD\u099F \u09B8\u09BE\u0987\u099C \u09B8\u0982\u09B6\u09CB\u09A7\u09A8",
         "Highlight Title": "\u09B6\u09BF\u09B0\u09CB\u09A8\u09BE\u09AE \u0989\u099C\u09CD\u099C\u09CD\u09AC\u09B2 \u0995\u09B0\u09C1\u09A8",
         "Highlight Links": "\u09B2\u09BF\u0999\u09CD\u0995\u0997\u09C1\u09B2\u09BF \u0989\u099C\u09CD\u099C\u09CD\u09AC\u09B2 \u0995\u09B0\u09C1\u09A8",
@@ -206,7 +248,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0985\u09CD\u09AF\u09BE\u09A8\u09BF\u09AE\u09C7\u09B6\u09A8 \u09AC\u09A8\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
         "Reset all settings": "\u09A8\u09BF\u09B0\u09CD\u09A7\u09BE\u09B0\u09A3 \u09AA\u09C1\u09A8\u09B0\u09BE\u09AF\u09BC \u09B8\u09C7\u099F \u0995\u09B0\u09C1\u09A8",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -219,7 +271,10 @@
         Close: "Tancar",
         "Content adjustments": "Ajustos de contingut",
         "Navigation adjustments": "Ajustos de navegaci\xF3",
+        "Text Align": "Text Align",
         "Align Left": "Alinea a l'esquerra",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Ajustar la mida de la font",
         "Highlight Title": "Destacar t\xEDtol",
         "Highlight Links": "Destacar enlla\xE7os",
@@ -250,7 +305,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Aturar animacions",
         "Reset all settings": "Restablir configuraci\xF3",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -263,7 +328,10 @@
         Close: "Zav\u0159\xEDt",
         "Content adjustments": "\xDApravy obsahu",
         "Navigation adjustments": "\xDApravy navigace",
+        "Text Align": "Text Align",
         "Align Left": "Zarovnat vlevo",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Nastavit velikost p\xEDsma",
         "Highlight Title": "Zv\xFDraznit nadpis",
         "Highlight Links": "Zv\xFDraznit odkazy",
@@ -294,7 +362,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Zastavit animace",
         "Reset all settings": "Obnovit nastaven\xED",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -307,7 +385,10 @@
         Close: "Luk",
         "Content adjustments": "Indholdsjusteringer",
         "Navigation adjustments": "Navigationsjusteringer",
+        "Text Align": "Text Align",
         "Align Left": "Venstrejuster",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Juster skriftst\xF8rrelse",
         "Highlight Title": "Fremh\xE6v titel",
         "Highlight Links": "Fremh\xE6v links",
@@ -338,7 +419,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Stop animationer",
         "Reset all settings": "Nulstil indstillinger",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -351,7 +442,10 @@
         Close: "Schlie\xDFen",
         "Content adjustments": "Inhaltsanpassungen",
         "Navigation adjustments": "Navigationsanpassungen",
+        "Text Align": "Text Align",
         "Align Left": "Links ausrichten",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Schriftgr\xF6\xDFe anpassen",
         "Highlight Title": "Titel hervorheben",
         "Highlight Links": "Links hervorheben",
@@ -382,7 +476,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Animationen stoppen",
         "Reset all settings": "Einstellungen Zur\xFCcksetzen",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -395,7 +499,10 @@
         Close: "\u039A\u03BB\u03B5\u03AF\u03C3\u03B9\u03BC\u03BF",
         "Content adjustments": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03A0\u03B5\u03C1\u03B9\u03B5\u03C7\u03BF\u03BC\u03AD\u03BD\u03BF\u03C5",
         "Navigation adjustments": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03A0\u03BB\u03BF\u03AE\u03B3\u03B7\u03C3\u03B7\u03C2",
+        "Text Align": "Text Align",
         "Align Left": "\u03A3\u03C4\u03BF\u03AF\u03C7\u03B9\u03C3\u03B7 \u0391\u03C1\u03B9\u03C3\u03C4\u03B5\u03C1\u03AC",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE \u039C\u03B5\u03B3\u03AD\u03B8\u03BF\u03C5\u03C2 \u0393\u03C1\u03B1\u03BC\u03BC\u03B1\u03C4\u03BF\u03C3\u03B5\u03B9\u03C1\u03AC\u03C2",
         "Highlight Title": "\u0395\u03C0\u03B9\u03C3\u03AE\u03BC\u03B1\u03BD\u03C3\u03B7 \u03A4\u03AF\u03C4\u03BB\u03BF\u03C5",
         "Highlight Links": "\u0395\u03C0\u03B9\u03C3\u03AE\u03BC\u03B1\u03BD\u03C3\u03B7 \u03A3\u03C5\u03BD\u03B4\u03AD\u03C3\u03BC\u03C9\u03BD",
@@ -426,7 +533,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0394\u03B9\u03B1\u03BA\u03BF\u03C0\u03AE \u039A\u03B9\u03BD\u03BF\u03CD\u03BC\u03B5\u03BD\u03C9\u03BD \u0395\u03B9\u03BA\u03CC\u03BD\u03C9\u03BD",
         "Reset all settings": "\u0395\u03C0\u03B1\u03BD\u03B1\u03C6\u03BF\u03C1\u03AC \u03C1\u03C5\u03B8\u03BC\u03AF\u03C3\u03B5\u03C9\u03BD",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -439,7 +556,10 @@
         Close: "Close",
         "Content adjustments": "Content adjustments",
         "Navigation adjustments": "Navigation adjustments",
+        "Text Align": "Text Align",
         "Align Left": "Align Left",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Adjust Font Size",
         "Highlight Title": "Highlight Title",
         "Highlight Links": "Highlight Links",
@@ -470,7 +590,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Pause Animations",
         "Reset all settings": "Reset all settings",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -483,7 +613,10 @@
         Close: "Cerrar",
         "Content adjustments": "Ajustes de Contenido",
         "Navigation adjustments": "Ajustes de Navegaci\xF3n",
+        "Text Align": "Text Align",
         "Align Left": "Alinear a la Izquierda",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Ajustar Tama\xF1o de Fuente",
         "Highlight Title": "Resaltar T\xEDtulo",
         "Highlight Links": "Resaltar Enlaces",
@@ -514,7 +647,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Detener Animaciones",
         "Reset all settings": "Restablecer Configuraci\xF3n",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -527,7 +670,10 @@
         Close: "\u0628\u0633\u062A\u0646",
         "Content adjustments": "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0645\u062D\u062A\u0648\u0627",
         "Navigation adjustments": "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0646\u0627\u0648\u0628\u0631\u06CC",
+        "Text Align": "Text Align",
         "Align Left": "\u062A\u0631\u0627\u0632 \u0628\u0647 \u0686\u067E",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u062A\u0646\u0638\u06CC\u0645 \u0627\u0646\u062F\u0627\u0632\u0647 \u0641\u0648\u0646\u062A",
         "Highlight Title": "\u0628\u0631\u062C\u0633\u062A\u0647 \u06A9\u0631\u062F\u0646 \u0639\u0646\u0648\u0627\u0646",
         "Highlight Links": "\u0628\u0631\u062C\u0633\u062A\u0647 \u06A9\u0631\u062F\u0646 \u0644\u06CC\u0646\u06A9\u200C\u0647\u0627",
@@ -558,7 +704,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u062A\u0648\u0642\u0641 \u0627\u0646\u06CC\u0645\u06CC\u0634\u0646\u200C\u0647\u0627",
         "Reset all settings": "\u0628\u0627\u0632\u0646\u0634\u0627\u0646\u06CC \u062A\u0646\u0638\u06CC\u0645\u0627\u062A",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -571,7 +727,10 @@
         Close: "Sulje",
         "Content adjustments": "Sis\xE4ll\xF6n s\xE4\xE4d\xF6t",
         "Navigation adjustments": "Navigoinnin s\xE4\xE4d\xF6t",
+        "Text Align": "Text Align",
         "Align Left": "Tasaa vasemmalle",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "S\xE4\xE4d\xE4 fonttikokoa",
         "Highlight Title": "Korosta otsikko",
         "Highlight Links": "Korosta linkit",
@@ -602,7 +761,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Pys\xE4yt\xE4 animaatiot",
         "Reset all settings": "Palauta asetukset",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -615,7 +784,10 @@
         Close: "Isara",
         "Content adjustments": "Ayusin ang Nilalaman",
         "Navigation adjustments": "Ayusin ang Pag-navigate",
+        "Text Align": "Text Align",
         "Align Left": "I-align sa Kaliwa",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "I-adjust ang Laki ng Font",
         "Highlight Title": "I-highlight ang Pamagat",
         "Highlight Links": "I-highlight ang mga Link",
@@ -646,7 +818,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Itigil ang Mga Animasyon",
         "Reset all settings": "I-reset ang mga setting",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -659,7 +841,10 @@
         Close: "Fermer",
         "Content adjustments": "Ajustements du Contenu",
         "Navigation adjustments": "Ajustements de Navigation",
+        "Text Align": "Text Align",
         "Align Left": "Aligner \xE0 Gauche",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Ajuster la Taille de Police",
         "Highlight Title": "Mettre en \xC9vidence le Titre",
         "Highlight Links": "Mettre en \xC9vidence les Liens",
@@ -690,7 +875,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Arr\xEAter les Animations",
         "Reset all settings": "R\xE9initialiser les Param\xE8tres",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -703,7 +898,10 @@
         Close: "\u05E1\u05D2\u05D5\u05E8",
         "Content adjustments": "\u05D4\u05EA\u05D0\u05DE\u05D5\u05EA \u05EA\u05D5\u05DB\u05DF",
         "Navigation adjustments": "\u05D4\u05EA\u05D0\u05DE\u05D5\u05EA \u05E0\u05D9\u05D5\u05D5\u05D8",
+        "Text Align": "Text Align",
         "Align Left": "\u05D9\u05D9\u05E9\u05D5\u05E8 \u05DC\u05E9\u05DE\u05D0\u05DC",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u05D4\u05EA\u05D0\u05DD \u05D2\u05D5\u05D3\u05DC \u05E4\u05D5\u05E0\u05D8",
         "Highlight Title": "\u05D4\u05D3\u05D2\u05E9 \u05DB\u05D5\u05EA\u05E8\u05EA",
         "Highlight Links": "\u05D4\u05D3\u05D2\u05E9 \u05E7\u05D9\u05E9\u05D5\u05E8\u05D9\u05DD",
@@ -734,7 +932,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u05E2\u05E6\u05D9\u05E8\u05EA \u05D0\u05E0\u05D9\u05DE\u05E6\u05D9\u05D5\u05EA",
         "Reset all settings": "\u05D0\u05D9\u05E4\u05D5\u05E1 \u05D4\u05D2\u05D3\u05E8\u05D5\u05EA",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -747,7 +955,10 @@
         Close: "\u092C\u0902\u0926 \u0915\u0930\u0947\u0902",
         "Content adjustments": "\u0938\u093E\u092E\u0917\u094D\u0930\u0940 \u0938\u092E\u093E\u092F\u094B\u091C\u0928",
         "Navigation adjustments": "\u0928\u0947\u0935\u093F\u0917\u0947\u0936\u0928 \u0938\u092E\u093E\u092F\u094B\u091C\u0928",
+        "Text Align": "Text Align",
         "Align Left": "\u092C\u093E\u0908\u0902 \u0913\u0930 \u0938\u0902\u0930\u0947\u0916\u093F\u0924 \u0915\u0930\u0947\u0902",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u092B\u0949\u0928\u094D\u091F \u0906\u0915\u093E\u0930 \u0938\u092E\u093E\u092F\u094B\u091C\u093F\u0924 \u0915\u0930\u0947\u0902",
         "Highlight Title": "\u0936\u0940\u0930\u094D\u0937\u0915 \u0939\u093E\u0907\u0932\u093E\u0907\u091F \u0915\u0930\u0947\u0902",
         "Highlight Links": "\u0932\u093F\u0902\u0915 \u0939\u093E\u0907\u0932\u093E\u0907\u091F \u0915\u0930\u0947\u0902",
@@ -778,7 +989,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u090F\u0928\u093F\u092E\u0947\u0936\u0928 \u0930\u094B\u0915\u0947\u0902",
         "Reset all settings": "\u0938\u0947\u091F\u093F\u0902\u0917\u094D\u0938 \u0930\u0940\u0938\u0947\u091F \u0915\u0930\u0947\u0902",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -791,7 +1012,10 @@
         Close: "Zatvori",
         "Content adjustments": "Prilagodbe Sadr\u017Eaja",
         "Navigation adjustments": "Prilagodbe Navigacije",
+        "Text Align": "Text Align",
         "Align Left": "Poravnaj Lijevo",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Prilagodi Veli\u010Dinu Fonta",
         "Highlight Title": "Istakni Naslove",
         "Highlight Links": "Istakni Poveznice",
@@ -822,7 +1046,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Zaustavi Animacije",
         "Reset all settings": "Resetiraj postavke",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -835,7 +1069,10 @@
         Close: "Bez\xE1r\xE1s",
         "Content adjustments": "Tartalom be\xE1ll\xEDt\xE1sai",
         "Navigation adjustments": "Navig\xE1ci\xF3 be\xE1ll\xEDt\xE1sai",
+        "Text Align": "Text Align",
         "Align Left": "Balra igaz\xEDt\xE1s",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Bet\u0171m\xE9ret be\xE1ll\xEDt\xE1sa",
         "Highlight Title": "C\xEDm kiemel\xE9se",
         "Highlight Links": "Linkek kiemel\xE9se",
@@ -866,7 +1103,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Anim\xE1ci\xF3k le\xE1ll\xEDt\xE1sa",
         "Reset all settings": "Be\xE1ll\xEDt\xE1sok vissza\xE1ll\xEDt\xE1sa",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -879,7 +1126,10 @@
         Close: "Tutup",
         "Content adjustments": "Penyesuaian Konten",
         "Navigation adjustments": "Penyesuaian Navigasi",
+        "Text Align": "Text Align",
         "Align Left": "Rata Kiri",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Sesuaikan Ukuran Font",
         "Highlight Title": "Sorot Judul",
         "Highlight Links": "Sorot Tautan",
@@ -910,7 +1160,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Hentikan Animasi",
         "Reset all settings": "Atur Ulang Pengaturan",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -923,7 +1183,10 @@
         Close: "Chiudi",
         "Content adjustments": "Regolazioni Contenuto",
         "Navigation adjustments": "Regolazioni Navigazione",
+        "Text Align": "Text Align",
         "Align Left": "Allinea a Sinistra",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Regola Dimensione Carattere",
         "Highlight Title": "Evidenzia Titolo",
         "Highlight Links": "Evidenzia Collegamenti",
@@ -954,7 +1217,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Ferma Animazioni",
         "Reset all settings": "Ripristina impostazioni",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -967,7 +1240,10 @@
         Close: "\u9589\u3058\u308B",
         "Content adjustments": "\u30B3\u30F3\u30C6\u30F3\u30C4\u8ABF\u6574",
         "Navigation adjustments": "\u30CA\u30D3\u30B2\u30FC\u30B7\u30E7\u30F3\u8ABF\u6574",
+        "Text Align": "Text Align",
         "Align Left": "\u5DE6\u63C3\u3048",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u30D5\u30A9\u30F3\u30C8\u30B5\u30A4\u30BA\u8ABF\u6574",
         "Highlight Title": "\u30BF\u30A4\u30C8\u30EB\u3092\u5F37\u8ABF",
         "Highlight Links": "\u30EA\u30F3\u30AF\u3092\u5F37\u8ABF",
@@ -998,7 +1274,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u505C\u6B62",
         "Reset all settings": "\u8A2D\u5B9A\u3092\u30EA\u30BB\u30C3\u30C8",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1011,7 +1297,10 @@
         Close: "\u10D3\u10D0\u10EE\u10E3\u10E0\u10D5\u10D0",
         "Content adjustments": "\u10E8\u10D8\u10D2\u10D7\u10D0\u10D5\u10E1\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
         "Navigation adjustments": "\u10DC\u10D0\u10D5\u10D8\u10D2\u10D0\u10EA\u10D8\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
+        "Text Align": "Text Align",
         "Align Left": "\u10DB\u10D0\u10E0\u10EA\u10EE\u10DC\u10D8\u10D5 \u10D2\u10D0\u10E1\u10EC\u10DD\u10E0\u10D4\u10D1\u10D0",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u10E4\u10DD\u10DC\u10E2\u10D8\u10E1 \u10D6\u10DD\u10DB\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
         "Highlight Title": "\u10E1\u10D0\u10D7\u10D0\u10E3\u10E0\u10D4\u10D1\u10D8\u10E1 \u10D2\u10D0\u10DB\u10DD\u10E7\u10DD\u10E4\u10D0",
         "Highlight Links": "\u10D1\u10DB\u10E3\u10DA\u10D4\u10D1\u10D8\u10E1 \u10D2\u10D0\u10DB\u10DD\u10E7\u10DD\u10E4\u10D0",
@@ -1042,7 +1331,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u10D0\u10DC\u10D8\u10DB\u10D0\u10EA\u10D8\u10D4\u10D1\u10D8\u10E1 \u10D2\u10D0\u10E9\u10D4\u10E0\u10D4\u10D1\u10D0",
         "Reset all settings": "\u10DE\u10D0\u10E0\u10D0\u10DB\u10D4\u10E2\u10E0\u10D4\u10D1\u10D8\u10E1 \u10D3\u10D0\u10D1\u10E0\u10E3\u10DC\u10D4\u10D1\u10D0",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1055,7 +1354,10 @@
         Close: "\u0CAE\u0CC1\u0C9A\u0CCD\u0C9A\u0CBF",
         "Content adjustments": "\u0CB5\u0CBF\u0CB7\u0CAF\u0CA6 \u0CB9\u0CCA\u0C82\u0CA6\u0CBE\u0CA3\u0CBF\u0C95\u0CC6\u0C97\u0CB3\u0CC1",
         "Navigation adjustments": "\u0CA8\u0CCD\u0CAF\u0CBE\u0CB5\u0CBF\u0C97\u0CC7\u0CB6\u0CA8\u0CCD \u0CB9\u0CCA\u0C82\u0CA6\u0CBE\u0CA3\u0CBF\u0C95\u0CC6\u0C97\u0CB3\u0CC1",
+        "Text Align": "Text Align",
         "Align Left": "\u0C8E\u0CA1\u0C95\u0CCD\u0C95\u0CC6 \u0C9C\u0CCB\u0CA1\u0CBF\u0CB8\u0CBF",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0C85\u0C95\u0CCD\u0CB7\u0CB0\u0CA6 \u0C97\u0CBE\u0CA4\u0CCD\u0CB0\u0CB5\u0CA8\u0CCD\u0CA8\u0CC1 \u0CB9\u0CCA\u0C82\u0CA6\u0CBF\u0CB8\u0CBF",
         "Highlight Title": "\u0CB6\u0CC0\u0CB0\u0CCD\u0CB7\u0CBF\u0C95\u0CC6\u0CAF\u0CA8\u0CCD\u0CA8\u0CC1 \u0CB9\u0CC8\u0CB2\u0CC8\u0C9F\u0CCD \u0CAE\u0CBE\u0CA1\u0CBF",
         "Highlight Links": "\u0CB2\u0CBF\u0C82\u0C95\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CB9\u0CC8\u0CB2\u0CC8\u0C9F\u0CCD \u0CAE\u0CBE\u0CA1\u0CBF",
@@ -1086,7 +1388,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0C85\u0CA8\u0CBF\u0CAE\u0CC7\u0CB6\u0CA8\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CA8\u0CBF\u0CB2\u0CCD\u0CB2\u0CBF\u0CB8\u0CBF",
         "Reset all settings": "\u0CB8\u0CC6\u0C9F\u0CCD\u0C9F\u0CBF\u0C82\u0C97\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CAE\u0CB0\u0CC1\u0CB9\u0CCA\u0C82\u0CA6\u0CBF\u0CB8\u0CBF",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1099,7 +1411,10 @@
         Close: "\uB2EB\uAE30",
         "Content adjustments": "\uCF58\uD150\uCE20 \uC870\uC815",
         "Navigation adjustments": "\uD0D0\uC0C9 \uC870\uC815",
+        "Text Align": "Text Align",
         "Align Left": "\uC67C\uCABD \uC815\uB82C",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\uAE00\uAF34 \uD06C\uAE30 \uC870\uC815",
         "Highlight Title": "\uC81C\uBAA9 \uAC15\uC870",
         "Highlight Links": "\uB9C1\uD06C \uAC15\uC870",
@@ -1130,7 +1445,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\uC560\uB2C8\uBA54\uC774\uC158 \uC911\uC9C0",
         "Reset all settings": "\uC124\uC815 \uCD08\uAE30\uD654",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1143,7 +1468,10 @@
         Close: "Bigire",
         "Content adjustments": "Guhertin\xEAn Naverok\xEA",
         "Navigation adjustments": "Guhertin\xEAn Nav\xEEgasyon\xEA",
+        "Text Align": "Text Align",
         "Align Left": "\xC7ep\xEA Rast Bike",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Mezinahiya Font\xEA biguher\xEEne",
         "Highlight Title": "Sernav\xEA n\xEE\u015Fan bide",
         "Highlight Links": "Gir\xEAdan\xEAn n\xEE\u015Fan bide",
@@ -1174,7 +1502,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "An\xEEmasyonan Rawest\xEEne",
         "Reset all settings": "M\xEEheng\xEAn vegerandin\xEA",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1187,7 +1525,10 @@
         Close: "Zoumaachen",
         "Content adjustments": "Inhalt Unpassungen",
         "Navigation adjustments": "Navigatioun Unpassungen",
+        "Text Align": "Text Align",
         "Align Left": "L\xE9nks ausriichten",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Schr\xEBftgr\xE9isst unpassen",
         "Highlight Title": "Titel mark\xE9ieren",
         "Highlight Links": "Links mark\xE9ieren",
@@ -1218,7 +1559,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Animatiounen stoppen",
         "Reset all settings": "Astellungen zr\xE9cksetzen",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1231,7 +1582,10 @@
         Close: "U\u017Edaryti",
         "Content adjustments": "Turinio koregavimai",
         "Navigation adjustments": "Navigacijos koregavimai",
+        "Text Align": "Text Align",
         "Align Left": "Lygiuoti kair\u0117je",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Koreguoti \u0161rifto dyd\u012F",
         "Highlight Title": "Pary\u0161kinti antra\u0161t\u0119",
         "Highlight Links": "Pary\u0161kinti nuorodas",
@@ -1262,7 +1616,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Sustabdyti animacijas",
         "Reset all settings": "Atkurti nustatymus",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1275,7 +1639,10 @@
         Close: "Aizv\u0113rt",
         "Content adjustments": "Satura piel\u0101gojumi",
         "Navigation adjustments": "Navig\u0101cijas piel\u0101gojumi",
+        "Text Align": "Text Align",
         "Align Left": "Izl\u012Bdzin\u0101t pa kreisi",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Piel\u0101got fonta izm\u0113ru",
         "Highlight Title": "Izcelt virsrakstu",
         "Highlight Links": "Izcelt saites",
@@ -1306,7 +1673,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Aptur\u0113t anim\u0101cijas",
         "Reset all settings": "Atiestat\u012Bt iestat\u012Bjumus",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1319,7 +1696,10 @@
         Close: "\u0D05\u0D1F\u0D2F\u0D4D\u0D15\u0D4D\u0D15\u0D41\u0D15",
         "Content adjustments": "\u0D09\u0D33\u0D4D\u0D33\u0D1F\u0D15\u0D4D\u0D15 \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
         "Navigation adjustments": "\u0D28\u0D3E\u0D35\u0D3F\u0D17\u0D47\u0D37\u0D7B \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
+        "Text Align": "Text Align",
         "Align Left": "\u0D07\u0D1F\u0D24\u0D4D \u0D35\u0D3F\u0D28\u0D4D\u0D2F\u0D38\u0D3F\u0D15\u0D4D\u0D15\u0D41\u0D15",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0D05\u0D15\u0D4D\u0D37\u0D30\u0D24\u0D4D\u0D24\u0D3F\u0D28\u0D4D\u0D31\u0D46 \u0D35\u0D32\u0D41\u0D2A\u0D4D\u0D2A\u0D02 \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D3F\u0D15\u0D4D\u0D15\u0D41\u0D15",
         "Highlight Title": "\u0D36\u0D40\u0D7C\u0D37\u0D15\u0D02 \u0D39\u0D48\u0D32\u0D48\u0D31\u0D4D\u0D31\u0D4D \u0D1A\u0D46\u0D2F\u0D4D\u0D2F\u0D41\u0D15",
         "Highlight Links": "\u0D32\u0D3F\u0D19\u0D4D\u0D15\u0D41\u0D15\u0D7E \u0D39\u0D48\u0D32\u0D48\u0D31\u0D4D\u0D31\u0D4D \u0D1A\u0D46\u0D2F\u0D4D\u0D2F\u0D41\u0D15",
@@ -1350,7 +1730,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0D06\u0D28\u0D3F\u0D2E\u0D47\u0D37\u0D28\u0D41\u0D15\u0D7E \u0D28\u0D3F\u0D7C\u0D24\u0D4D\u0D24\u0D41\u0D15",
         "Reset all settings": "\u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E \u0D2A\u0D41\u0D28\u0D03\u0D38\u0D1C\u0D4D\u0D1C\u0D2E\u0D3E\u0D15\u0D4D\u0D15\u0D41\u0D15",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1363,7 +1753,10 @@
         Close: "\u0425\u0430\u0430\u0445",
         "Content adjustments": "\u0410\u0433\u0443\u0443\u043B\u0433\u044B\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0433\u0430",
         "Navigation adjustments": "\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0439\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0433\u0430",
+        "Text Align": "Text Align",
         "Align Left": "\u0417\u04AF\u04AF\u043D \u0442\u0430\u043B\u0434 \u0437\u044D\u0440\u044D\u0433\u0446\u04AF\u04AF\u043B\u044D\u0445",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0424\u043E\u043D\u0442\u044B\u043D \u0445\u044D\u043C\u0436\u044D\u044D\u0433 \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0430\u0445",
         "Highlight Title": "\u0413\u0430\u0440\u0447\u0433\u0438\u0439\u0433 \u043E\u043D\u0446\u043B\u043E\u0445",
         "Highlight Links": "\u0425\u043E\u043B\u0431\u043E\u043E\u0441\u0443\u0443\u0434\u044B\u0433 \u043E\u043D\u0446\u043B\u043E\u0445",
@@ -1394,7 +1787,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0410\u043D\u0438\u043C\u0430\u0446\u0438\u0439\u0433 \u0437\u043E\u0433\u0441\u043E\u043E\u0445",
         "Reset all settings": "\u0422\u043E\u0445\u0438\u0440\u0433\u043E\u043E\u0433 \u0434\u0430\u0445\u0438\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0430\u0445",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1407,7 +1810,10 @@
         Close: "Tutup",
         "Content adjustments": "Penyesuaian Kandungan",
         "Navigation adjustments": "Penyesuaian Navigasi",
+        "Text Align": "Text Align",
         "Align Left": "Jajar ke Kiri",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Laraskan Saiz Fon",
         "Highlight Title": "Serlahkan Tajuk",
         "Highlight Links": "Serlahkan Pautan",
@@ -1438,7 +1844,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Hentikan Animasi",
         "Reset all settings": "Tetapkan semula tetapan",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1451,7 +1867,10 @@
         Close: "\u1015\u102D\u1010\u103A\u1015\u102B",
         "Content adjustments": "\u1021\u1000\u103C\u1031\u102C\u1004\u103A\u1038\u1021\u101B\u102C \u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1019\u103E\u102F\u1019\u103B\u102C\u1038",
         "Navigation adjustments": "\u101C\u1019\u103A\u1038\u100A\u103D\u103E\u1014\u103A\u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1019\u103E\u102F\u1019\u103B\u102C\u1038",
+        "Text Align": "Text Align",
         "Align Left": "\u1018\u101A\u103A\u1018\u1000\u103A\u101E\u102D\u102F\u1037 \u100A\u103E\u102D\u1015\u102B",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u1016\u1031\u102C\u1004\u1037\u103A\u1021\u101B\u103D\u101A\u103A\u1021\u1005\u102C\u1038\u1000\u102D\u102F \u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1015\u102B",
         "Highlight Title": "\u1001\u1031\u102B\u1004\u103A\u1038\u1005\u1009\u103A\u1000\u102D\u102F \u1021\u1011\u1030\u1038\u1015\u103C\u102F\u1015\u102B",
         "Highlight Links": "\u101C\u1004\u1037\u103A\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u1021\u1011\u1030\u1038\u1015\u103C\u102F\u1015\u102B",
@@ -1482,7 +1901,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u1021\u1014\u103A\u1014\u102E\u1019\u1031\u1038\u101B\u103E\u1004\u103A\u1038\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u101B\u1015\u103A\u1015\u102B",
         "Reset all settings": "\u1006\u1000\u103A\u1010\u1004\u103A\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u1015\u103C\u1014\u103A\u101C\u100A\u103A\u101E\u1010\u103A\u1019\u103E\u1010\u103A\u1015\u102B",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1495,7 +1924,10 @@
         Close: "Lukk",
         "Content adjustments": "Innholdsjusteringer",
         "Navigation adjustments": "Navigasjonsjusteringer",
+        "Text Align": "Text Align",
         "Align Left": "Venstrejuster",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Juster skriftst\xF8rrelse",
         "Highlight Title": "Fremhev tittel",
         "Highlight Links": "Fremhev lenker",
@@ -1526,7 +1958,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Stopp animasjoner",
         "Reset all settings": "Tilbakestill innstillinger",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1539,7 +1981,10 @@
         Close: "Sluiten",
         "Content adjustments": "Inhoudsaanpassingen",
         "Navigation adjustments": "Navigatieaanpassingen",
+        "Text Align": "Text Align",
         "Align Left": "Links uitlijnen",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Lettergrootte aanpassen",
         "Highlight Title": "Titel markeren",
         "Highlight Links": "Links markeren",
@@ -1570,7 +2015,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Stop animaties",
         "Reset all settings": "Instellingen resetten",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1583,7 +2038,10 @@
         Close: "Lukk",
         "Content adjustments": "Innholdsjusteringer",
         "Navigation adjustments": "Navigasjonsjusteringer",
+        "Text Align": "Text Align",
         "Align Left": "Venstrejuster",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Juster tekstst\xF8rrelse",
         "Highlight Title": "Fremhev tittel",
         "Highlight Links": "Fremhev lenker",
@@ -1614,7 +2072,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Stopp animasjoner",
         "Reset all settings": "Tilbakestill innstillinger",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1627,7 +2095,10 @@
         Close: "\u0A2C\u0A70\u0A26 \u0A15\u0A30\u0A4B",
         "Content adjustments": "\u0A38\u0A2E\u0A71\u0A17\u0A30\u0A40 \u0A38\u0A70\u0A38\u0A3C\u0A4B\u0A27\u0A28",
         "Navigation adjustments": "\u0A28\u0A47\u0A35\u0A40\u0A17\u0A47\u0A38\u0A3C\u0A28 \u0A38\u0A70\u0A38\u0A3C\u0A4B\u0A27\u0A28",
+        "Text Align": "Text Align",
         "Align Left": "\u0A16\u0A71\u0A2C\u0A47 \u0A2A\u0A3E\u0A38\u0A47 \u0A38\u0A70\u0A2F\u0A4B\u0A1C\u0A3F\u0A24 \u0A15\u0A30\u0A4B",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0A2B\u0A4B\u0A02\u0A1F \u0A06\u0A15\u0A3E\u0A30 \u0A05\u0A28\u0A41\u0A15\u0A42\u0A32\u0A3F\u0A24 \u0A15\u0A30\u0A4B",
         "Highlight Title": "\u0A38\u0A3F\u0A30\u0A32\u0A47\u0A16 \u0A39\u0A3E\u0A08\u0A32\u0A3E\u0A08\u0A1F \u0A15\u0A30\u0A4B",
         "Highlight Links": "\u0A32\u0A3F\u0A70\u0A15 \u0A39\u0A3E\u0A08\u0A32\u0A3E\u0A08\u0A1F \u0A15\u0A30\u0A4B",
@@ -1658,7 +2129,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0A10\u0A28\u0A40\u0A2E\u0A47\u0A38\u0A3C\u0A28 \u0A30\u0A4B\u0A15\u0A4B",
         "Reset all settings": "\u0A38\u0A48\u0A1F\u0A3F\u0A70\u0A17\u0A3E\u0A02 \u0A30\u0A40\u0A38\u0A48\u0A1F \u0A15\u0A30\u0A4B",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1671,7 +2152,10 @@
         Close: "Zamknij",
         "Content adjustments": "Dostosowania Tre\u015Bci",
         "Navigation adjustments": "Dostosowania Nawigacji",
+        "Text Align": "Text Align",
         "Align Left": "Wyr\xF3wnaj do Lewej",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Dostosuj Rozmiar Czcionki",
         "Highlight Title": "Pod\u015Bwietl Tytu\u0142",
         "Highlight Links": "Pod\u015Bwietl Linki",
@@ -1702,7 +2186,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Zatrzymaj Animacje",
         "Reset all settings": "Resetuj ustawienia",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1715,7 +2209,10 @@
         Close: "Fechar",
         "Content adjustments": "Ajustes de Conte\xFAdo",
         "Navigation adjustments": "Ajustes de Navega\xE7\xE3o",
+        "Text Align": "Text Align",
         "Align Left": "Alinhar \xE0 Esquerda",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Ajustar Tamanho da Fonte",
         "Highlight Title": "Destacar T\xEDtulo",
         "Highlight Links": "Destacar Links",
@@ -1746,7 +2243,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Parar Anima\xE7\xF5es",
         "Reset all settings": "Redefinir configura\xE7\xF5es",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1759,7 +2266,10 @@
         Close: "\xCEnchide",
         "Content adjustments": "Ajust\u0103ri Con\u021Binut",
         "Navigation adjustments": "Ajust\u0103ri Navigare",
+        "Text Align": "Text Align",
         "Align Left": "Aliniere la St\xE2nga",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Ajusteaz\u0103 Dimensiunea Fontului",
         "Highlight Title": "Eviden\u021Biaz\u0103 Titlul",
         "Highlight Links": "Eviden\u021Biaz\u0103 Link-urile",
@@ -1790,7 +2300,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Opre\u0219te Anima\u021Biile",
         "Reset all settings": "Reseteaz\u0103 set\u0103rile",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1803,7 +2323,10 @@
         Close: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C",
         "Content adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043A\u043E\u043D\u0442\u0435\u043D\u0442\u0430",
         "Navigation adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0438",
+        "Text Align": "Text Align",
         "Align Left": "\u0412\u044B\u0440\u043E\u0432\u043D\u044F\u0442\u044C \u043F\u043E \u043B\u0435\u0432\u043E\u043C\u0443 \u043A\u0440\u0430\u044E",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u041D\u0430\u0441\u0442\u0440\u043E\u0438\u0442\u044C \u0440\u0430\u0437\u043C\u0435\u0440 \u0448\u0440\u0438\u0444\u0442\u0430",
         "Highlight Title": "\u0412\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A",
         "Highlight Links": "\u0412\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0438",
@@ -1834,7 +2357,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u041E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438",
         "Reset all settings": "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1847,7 +2380,10 @@
         Close: "\u0DC0\u0DC3\u0DB1\u0DCA\u0DB1",
         "Content adjustments": "\u0D85\u0DB1\u0DCA\u0DAD\u0DBB\u0DCA\u0D9C\u0DAD \u0DC3\u0D9A\u0DC3\u0DCA\u0D9A\u0DD2\u0DBB\u0DD3\u0DB8\u0DCA",
         "Navigation adjustments": "\u0DBA\u0DCF\u0DAD\u0DCA\u200D\u0DBB\u0DAB \u0DC3\u0D9A\u0DC3\u0DCA\u0D9A\u0DD2\u0DBB\u0DD3\u0DB8\u0DCA",
+        "Text Align": "Text Align",
         "Align Left": "\u0DC0\u0DB8\u0DA7 \u0DC3\u0DB8\u0DB4\u0DCF\u0DAD \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0D85\u0D9A\u0DD4\u0DBB\u0DD4 \u0DB4\u0DCA\u200D\u0DBB\u0DB8\u0DCF\u0DAB\u0DBA \u0DC3\u0D9A\u0DC3\u0DCA \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
         "Highlight Title": "\u0DC1\u0DD3\u0DBB\u0DCA\u0DC2\u0DBA \u0D8B\u0DAF\u0DCA\u0DAF\u0DD3\u0DB4\u0DB1\u0DBA \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
         "Highlight Links": "\u0DC3\u0DB6\u0DD0\u0DB3\u0DD2 \u0D8B\u0DAF\u0DCA\u0DAF\u0DD3\u0DB4\u0DB1\u0DBA \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
@@ -1878,7 +2414,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0DC3\u0DA2\u0DD3\u0DC0\u0DD2\u0D9A\u0DBB\u0DAB \u0DB1\u0DC0\u0DAD\u0DCA\u0DC0\u0DB1\u0DCA\u0DB1",
         "Reset all settings": "\u0DC3\u0DD0\u0D9A\u0DC3\u0DD4\u0DB8\u0DCA \u0DBA\u0DC5\u0DD2 \u0DB4\u0DD2\u0DC4\u0DD2\u0DA7\u0DD4\u0DC0\u0DB1\u0DCA\u0DB1",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1891,7 +2437,10 @@
         Close: "Zavrie\u0165",
         "Content adjustments": "\xDApravy obsahu",
         "Navigation adjustments": "\xDApravy navig\xE1cie",
+        "Text Align": "Text Align",
         "Align Left": "Zarovna\u0165 do\u013Eava",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Upravi\u0165 ve\u013Ekos\u0165 p\xEDsma",
         "Highlight Title": "Zv\xFDrazni\u0165 nadpis",
         "Highlight Links": "Zv\xFDrazni\u0165 odkazy",
@@ -1922,7 +2471,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Zastavi\u0165 anim\xE1cie",
         "Reset all settings": "Obnovi\u0165 nastavenia",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1935,7 +2494,10 @@
         Close: "Zapri",
         "Content adjustments": "Prilagoditve vsebine",
         "Navigation adjustments": "Prilagoditve navigacije",
+        "Text Align": "Text Align",
         "Align Left": "Poravnaj levo",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Prilagodi velikost pisave",
         "Highlight Title": "Ozna\u010Di naslov",
         "Highlight Links": "Ozna\u010Di povezave",
@@ -1966,7 +2528,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Ustavi animacije",
         "Reset all settings": "Ponastavi nastavitve",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -1979,7 +2551,10 @@
         Close: "\u0417\u0430\u0442\u0432\u043E\u0440\u0438",
         "Content adjustments": "\u041F\u0440\u0438\u043B\u0430\u0433\u043E\u0452\u0430\u0432\u0430\u045A\u0430 \u0441\u0430\u0434\u0440\u0436\u0430\u0458\u0430",
         "Navigation adjustments": "\u041F\u0440\u0438\u043B\u0430\u0433\u043E\u0452\u0430\u0432\u0430\u045A\u0430 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0458\u0435",
+        "Text Align": "Text Align",
         "Align Left": "\u041F\u043E\u0440\u0430\u0432\u043D\u0430\u0458 \u043B\u0435\u0432\u043E",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u041F\u043E\u0434\u0435\u0441\u0438 \u0432\u0435\u043B\u0438\u0447\u0438\u043D\u0443 \u0444\u043E\u043D\u0442\u0430",
         "Highlight Title": "\u0418\u0441\u0442\u0430\u043A\u043D\u0438 \u043D\u0430\u0441\u043B\u043E\u0432",
         "Highlight Links": "\u0418\u0441\u0442\u0430\u043A\u043D\u0438 \u043B\u0438\u043D\u043A\u043E\u0432\u0435",
@@ -2010,7 +2585,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0417\u0430\u0443\u0441\u0442\u0430\u0432\u0438 \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0458\u0435",
         "Reset all settings": "\u0420\u0435\u0441\u0435\u0442\u0443\u0458 \u043F\u043E\u0434\u0435\u0448\u0430\u0432\u0430\u045A\u0430",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2023,7 +2608,10 @@
         Close: "St\xE4ng",
         "Content adjustments": "Anpassa inneh\xE5ll",
         "Navigation adjustments": "Anpassa navigering",
+        "Text Align": "Text Align",
         "Align Left": "V\xE4nsterjustera",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Justera textstorlek",
         "Highlight Title": "Framh\xE4v titel",
         "Highlight Links": "Framh\xE4v l\xE4nkar",
@@ -2054,7 +2642,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Hindra animationer",
         "Reset all settings": "Nollst\xE4ll inst\xE4llningar",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2067,7 +2665,10 @@
         Close: "Funga",
         "Content adjustments": "Marekebisho ya Maudhui",
         "Navigation adjustments": "Marekebisho ya Uelekezaji",
+        "Text Align": "Text Align",
         "Align Left": "Panga Kushoto",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Rekebisha Ukubwa wa Herufi",
         "Highlight Title": "Onesha Kichwa",
         "Highlight Links": "Onesha Viungo",
@@ -2098,7 +2699,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Simamisha Animations",
         "Reset all settings": "Weka upya mipangilio",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2111,7 +2722,10 @@
         Close: "\u0BAE\u0BC2\u0B9F\u0BC1",
         "Content adjustments": "\u0B89\u0BB3\u0BCD\u0BB3\u0B9F\u0B95\u0BCD\u0B95 \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BB2\u0BCD\u0B95\u0BB3\u0BCD",
         "Navigation adjustments": "\u0BB5\u0BB4\u0BBF\u0B9A\u0BC6\u0BB2\u0BC1\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BB2\u0BCD\u0B95\u0BB3\u0BCD",
+        "Text Align": "Text Align",
         "Align Left": "\u0B87\u0B9F\u0BA4\u0BC1 \u0B9A\u0BC0\u0BB0\u0BAE\u0BC8",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0B8E\u0BB4\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1 \u0B85\u0BB3\u0BB5\u0BC8 \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD",
         "Highlight Title": "\u0BA4\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0BC8 \u0BAE\u0BC1\u0BA9\u0BCD\u0BA9\u0BBF\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0B9F\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
         "Highlight Links": "\u0B87\u0BA3\u0BC8\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BC8 \u0BAE\u0BC1\u0BA9\u0BCD\u0BA9\u0BBF\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0B9F\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
@@ -2142,7 +2756,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0B85\u0BA9\u0BBF\u0BAE\u0BC7\u0BB7\u0BA9\u0BCD\u0B95\u0BB3\u0BC8 \u0BA8\u0BBF\u0BB1\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
         "Reset all settings": "\u0B85\u0BAE\u0BC8\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BC8 \u0BAE\u0BC0\u0B9F\u0BCD\u0B9F\u0BAE\u0BC8",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2155,7 +2779,10 @@
         Close: "\u0C2E\u0C42\u0C38\u0C3F\u0C35\u0C47\u0C2F\u0C02\u0C21\u0C3F",
         "Content adjustments": "\u0C35\u0C3F\u0C37\u0C2F \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C4D\u0C32\u0C41",
         "Navigation adjustments": "\u0C28\u0C3E\u0C35\u0C3F\u0C17\u0C47\u0C37\u0C28\u0C4D \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C4D\u0C32\u0C41",
+        "Text Align": "Text Align",
         "Align Left": "\u0C0E\u0C21\u0C2E\u0C35\u0C48\u0C2A\u0C41 \u0C38\u0C30\u0C3F\u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0C2B\u0C3E\u0C02\u0C1F\u0C4D \u0C2A\u0C30\u0C3F\u0C2E\u0C3E\u0C23\u0C3E\u0C28\u0C4D\u0C28\u0C3F \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C41 \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
         "Highlight Title": "\u0C36\u0C40\u0C30\u0C4D\u0C37\u0C3F\u0C15\u0C28\u0C41 \u0C39\u0C48\u0C32\u0C48\u0C1F\u0C4D \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
         "Highlight Links": "\u0C32\u0C3F\u0C02\u0C15\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C39\u0C48\u0C32\u0C48\u0C1F\u0C4D \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
@@ -2186,7 +2813,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0C2F\u0C3E\u0C28\u0C3F\u0C2E\u0C47\u0C37\u0C28\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C06\u0C2A\u0C02\u0C21\u0C3F",
         "Reset all settings": "\u0C38\u0C46\u0C1F\u0C4D\u0C1F\u0C3F\u0C02\u0C17\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C30\u0C40\u0C38\u0C46\u0C1F\u0C4D \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2199,6 +2836,10 @@
         Close: "\u0E1B\u0E34\u0E14",
         "Content adjustments": "\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32",
         "Navigation adjustments": "\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E19\u0E33\u0E17\u0E32\u0E07",
+        "Text Align": "Text Align",
+        "Align Left": "Align Left",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0E1B\u0E23\u0E31\u0E1A\u0E02\u0E19\u0E32\u0E14\u0E15\u0E31\u0E27\u0E2D\u0E31\u0E01\u0E29\u0E23",
         "Highlight Title": "\u0E40\u0E19\u0E49\u0E19\u0E2B\u0E31\u0E27\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07",
         "Highlight Links": "\u0E40\u0E19\u0E49\u0E19\u0E25\u0E34\u0E07\u0E01\u0E4C",
@@ -2229,7 +2870,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0E2B\u0E22\u0E38\u0E14\u0E01\u0E32\u0E23\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E44\u0E2B\u0E27",
         "Reset all settings": "\u0E23\u0E35\u0E40\u0E0B\u0E47\u0E15\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2242,7 +2893,10 @@
         Close: "Kapat",
         "Content adjustments": "\u0130\xE7erik Ayarlar\u0131",
         "Navigation adjustments": "Gezinme Ayarlar\u0131",
+        "Text Align": "Text Align",
         "Align Left": "Sola Hizala",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "Yaz\u0131 Tipi Boyutunu Ayarla",
         "Highlight Title": "Ba\u015Fl\u0131\u011F\u0131 Vurgula",
         "Highlight Links": "Ba\u011Flant\u0131lar\u0131 Vurgula",
@@ -2273,7 +2927,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "Animasyonlar\u0131 Durdur",
         "Reset all settings": "Ayarlar\u0131 S\u0131f\u0131rla",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2286,7 +2950,10 @@
         Close: "\u0417\u0430\u043A\u0440\u0438\u0442\u0438",
         "Content adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u0432\u043C\u0456\u0441\u0442\u0443",
         "Navigation adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u043D\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457",
+        "Text Align": "Text Align",
         "Align Left": "\u0412\u0438\u0440\u0456\u0432\u043D\u044F\u0442\u0438 \u043B\u0456\u0432\u043E\u0440\u0443\u0447",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0417\u043C\u0456\u043D\u0438\u0442\u0438 \u0440\u043E\u0437\u043C\u0456\u0440 \u0448\u0440\u0438\u0444\u0442\u0443",
         "Highlight Title": "\u041F\u0456\u0434\u0441\u0432\u0456\u0442\u0438\u0442\u0438 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A",
         "Highlight Links": "\u041F\u0456\u0434\u0441\u0432\u0456\u0442\u0438\u0442\u0438 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F",
@@ -2317,7 +2984,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u0417\u0443\u043F\u0438\u043D\u0438\u0442\u0438 \u0430\u043D\u0456\u043C\u0430\u0446\u0456\u0457",
         "Reset all settings": "\u0421\u043A\u0438\u043D\u0443\u0442\u0438 \u043D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2330,7 +3007,10 @@
         Close: "\u0628\u0646\u062F \u06A9\u0631\u06CC\u06BA",
         "Content adjustments": "\u0645\u0648\u0627\u062F \u06A9\u06CC \u0627\u06CC\u0688\u062C\u0633\u0679\u0645\u0646\u0679",
         "Navigation adjustments": "\u0646\u06CC\u0648\u06CC\u06AF\u06CC\u0634\u0646 \u06A9\u06CC \u0627\u06CC\u0688\u062C\u0633\u0679\u0645\u0646\u0679",
+        "Text Align": "Text Align",
         "Align Left": "\u0628\u0627\u0626\u06CC\u06BA \u062C\u0627\u0646\u0628 \u062A\u0631\u062A\u06CC\u0628 \u062F\u06CC\u06BA",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0641\u0648\u0646\u0679 \u0633\u0627\u0626\u0632 \u0627\u06CC\u0688\u062C\u0633\u0679 \u06A9\u0631\u06CC\u06BA",
         "Highlight Title": "\u0639\u0646\u0648\u0627\u0646 \u06A9\u0648 \u0646\u0645\u0627\u06CC\u0627\u06BA \u06A9\u0631\u06CC\u06BA",
         "Highlight Links": "\u0644\u0646\u06A9\u0633 \u06A9\u0648 \u0646\u0645\u0627\u06CC\u0627\u06BA \u06A9\u0631\u06CC\u06BA",
@@ -2361,7 +3041,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u062D\u0631\u06A9\u0627\u062A \u0631\u0648\u06A9\u06CC\u06BA",
         "Reset all settings": "\u062A\u0631\u062A\u06CC\u0628\u0627\u062A \u0631\u06CC \u0633\u06CC\u0679 \u06A9\u0631\u06CC\u06BA",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2374,7 +3064,10 @@
         Close: "\u0110\xF3ng",
         "Content adjustments": "\u0110i\u1EC1u Ch\u1EC9nh N\u1ED9i Dung",
         "Navigation adjustments": "\u0110i\u1EC1u Ch\u1EC9nh \u0110i\u1EC1u H\u01B0\u1EDBng",
+        "Text Align": "Text Align",
         "Align Left": "C\u0103n Tr\xE1i",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u0110i\u1EC1u Ch\u1EC9nh C\u1EE1 Ch\u1EEF",
         "Highlight Title": "\u0110\xE1nh D\u1EA5u Ti\xEAu \u0110\u1EC1",
         "Highlight Links": "\u0110\xE1nh D\u1EA5u Li\xEAn K\u1EBFt",
@@ -2405,7 +3098,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "D\u1EEBng Ho\u1EA1t \u1EA2nh",
         "Reset all settings": "\u0110\u1EB7t l\u1EA1i c\xE0i \u0111\u1EB7t",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2418,7 +3121,10 @@
         Close: "\u5173\u95ED",
         "Content adjustments": "\u5185\u5BB9\u8C03\u6574",
         "Navigation adjustments": "\u5BFC\u822A\u8C03\u6574",
+        "Text Align": "Text Align",
         "Align Left": "\u5DE6\u5BF9\u9F50",
+        "Align Center": "Align Center",
+        "Align Right": "Align Right",
         "Adjust Font Size": "\u8C03\u6574\u5B57\u4F53\u5927\u5C0F",
         "Highlight Title": "\u7A81\u51FA\u663E\u793A\u6807\u9898",
         "Highlight Links": "\u7A81\u51FA\u663E\u793A\u94FE\u63A5",
@@ -2449,7 +3155,17 @@
         "Low Vision": "Low Vision",
         "Pause Animations": "\u505C\u6B62\u52A8\u753B",
         "Reset all settings": "\u91CD\u7F6E\u8BBE\u7F6E",
-        "Shortcut:": "Shortcut:"
+        "Shortcut:": "Shortcut:",
+        "Epilepsy Safe Mode": "Epilepsy Safe Mode",
+        "Mute sounds": "Mute sounds",
+        "Page read": "Page read",
+        "Page read controls": "Page read controls",
+        Pause: "Pause",
+        Resume: "Resume",
+        Stop: "Stop",
+        Settings: "Settings",
+        Speed: "Speed",
+        Voice: "Voice"
       };
     }
   });
@@ -2642,28 +3358,33 @@
           if (Array.from(element.classList).some((cls) => ICON_SELECTOR_SET.has(cls))) {
             return;
           }
-          const isFirstRun = !element.dataset[ORIGINAL_FONT_SIZE_ATTR];
-          if (isFirstRun) {
-            const originalInlineStyle = element.style.fontSize;
-            const computedFontSize = parseInt(window.getComputedStyle(element).fontSize);
-            if (isNaN(computedFontSize) || computedFontSize <= 0) {
-              console.warn("Invalid original font size for element:", element);
-              return;
-            }
-            element.dataset[ORIGINAL_FONT_SIZE_ATTR] = String(computedFontSize);
-            if (originalInlineStyle) {
-              element.dataset[ORIGINAL_INLINE_FONT_SIZE_ATTR] = originalInlineStyle;
-            }
+          if (element.dataset[ORIGINAL_FONT_SIZE_ATTR]) {
+            return;
+          }
+          const originalInlineStyle = element.style.fontSize;
+          const computedFontSize = parseInt(window.getComputedStyle(element).fontSize);
+          if (isNaN(computedFontSize) || computedFontSize <= 0) {
+            console.warn("Invalid original font size for element:", element);
+            return;
+          }
+          element.dataset[ORIGINAL_FONT_SIZE_ATTR] = String(computedFontSize);
+          if (originalInlineStyle) {
+            element.dataset[ORIGINAL_INLINE_FONT_SIZE_ATTR] = originalInlineStyle;
+          }
+        } catch (captureError) {
+          console.warn("Failed to capture original font size for element:", element, captureError);
+        }
+      });
+      elements.forEach((element) => {
+        try {
+          if (Array.from(element.classList).some((cls) => ICON_SELECTOR_SET.has(cls))) {
+            return;
           }
           const originalFontSize = Number(element.dataset[ORIGINAL_FONT_SIZE_ATTR]);
           if (isNaN(originalFontSize) || originalFontSize <= 0) {
-            console.warn("Invalid stored original font size for element:", element);
             return;
           }
           if (multiply === 1) {
-            if (isFirstRun) {
-              return;
-            }
             if (element.dataset[ORIGINAL_INLINE_FONT_SIZE_ATTR]) {
               element.style.fontSize = element.dataset[ORIGINAL_INLINE_FONT_SIZE_ATTR];
             } else {
@@ -2673,8 +3394,8 @@
           }
           const newFontSize = originalFontSize * multiply;
           element.style.fontSize = `${newFontSize.toFixed(0)}px`;
-        } catch (elementError) {
-          console.warn("Failed to adjust font size for element:", element, elementError);
+        } catch (applyError) {
+          console.warn("Failed to apply font size for element:", element, applyError);
         }
       });
     } catch (error) {
@@ -2951,20 +3672,380 @@
     });
   }
 
-  // src/tools/alignLeft.ts
-  var alignLeftConfig = {
-    id: "align-left",
-    selector: `html`,
-    childrenSelector: TEXT_SELECTORS,
-    styles: {
-      "text-align": "left"
-    }
-  };
-  function alignLeft(enable = false) {
+  // src/tools/textAlign.ts
+  function textAlign(value) {
+    const direction = value || "left";
+    const config = {
+      id: "text-align",
+      selector: `html`,
+      childrenSelector: TEXT_SELECTORS,
+      styles: {
+        "text-align": direction
+      }
+    };
     injectToolCSS({
-      ...alignLeftConfig,
-      enable
+      ...config,
+      enable: !!value
     });
+  }
+
+  // src/tools/pageRead.ts
+  var SKIP_SELECTOR = '.cya11y-menu, .cya11y-widget, .cya11y-overlay, input, textarea, [contenteditable="true"]';
+  var SELECTION_DEBOUNCE_MS = 300;
+  var SELECTION_MIN_CHARS = 3;
+  if (typeof window !== "undefined" && "speechSynthesis" in window) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch {
+    }
+    window.addEventListener("beforeunload", () => {
+      try {
+        window.speechSynthesis.cancel();
+      } catch {
+      }
+    });
+  }
+  var mouseupHandler = null;
+  var touchendHandler = null;
+  var keyupHandler = null;
+  var outlinedEl = null;
+  var outlinedOriginalOutline = null;
+  var outlinedOriginalOutlineOffset = null;
+  var isEnabled = false;
+  var chromeKeepalive = null;
+  var totalChunks = 0;
+  var finishedChunks = 0;
+  var selectionDebounce = null;
+  var lastSelectionText = "";
+  function clearOutline() {
+    if (outlinedEl) {
+      if (outlinedOriginalOutline !== null) outlinedEl.style.outline = outlinedOriginalOutline;
+      if (outlinedOriginalOutlineOffset !== null) outlinedEl.style.outlineOffset = outlinedOriginalOutlineOffset;
+    }
+    outlinedEl = null;
+    outlinedOriginalOutline = null;
+    outlinedOriginalOutlineOffset = null;
+  }
+  function langFromElement(node) {
+    if (!node) return null;
+    let el = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
+    while (el && el !== document.documentElement) {
+      const lang = el.getAttribute && el.getAttribute("lang");
+      if (lang && lang.trim()) return lang.toLowerCase().split("-")[0];
+      el = el.parentElement;
+    }
+    return null;
+  }
+  function detectLangFromText(text) {
+    if (/[\u3041-\u309F\u30A0-\u30FF]/.test(text)) return "ja";
+    if (/[\uAC00-\uD7AF]/.test(text)) return "ko";
+    if (/[\u4E00-\u9FFF]/.test(text)) return "zh";
+    if (/[\u0900-\u097F]/.test(text)) return "hi";
+    if (/[\u0D00-\u0D7F]/.test(text)) return "ml";
+    if (/[\u0B80-\u0BFF]/.test(text)) return "ta";
+    if (/[\u0C80-\u0CFF]/.test(text)) return "kn";
+    if (/[\u0C00-\u0C7F]/.test(text)) return "te";
+    if (/[\u0980-\u09FF]/.test(text)) return "bn";
+    if (/[\u0A00-\u0A7F]/.test(text)) return "pa";
+    if (/[\u0A80-\u0AFF]/.test(text)) return "gu";
+    if (/[\u0B00-\u0B7F]/.test(text)) return "or";
+    if (/[\u0D80-\u0DFF]/.test(text)) return "si";
+    if (/[\u0E00-\u0E7F]/.test(text)) return "th";
+    if (/[\u0E80-\u0EFF]/.test(text)) return "lo";
+    if (/[\u1000-\u109F]/.test(text)) return "my";
+    if (/[\u1780-\u17FF]/.test(text)) return "km";
+    if (/[\u0F00-\u0FFF]/.test(text)) return "bo";
+    if (/[\u1800-\u18AF]/.test(text)) return "mn";
+    if (/[\u10A0-\u10FF]/.test(text)) return "ka";
+    if (/[\u0530-\u058F]/.test(text)) return "hy";
+    if (/[\u1200-\u137F]/.test(text)) return "am";
+    if (/[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/.test(text)) return "ar";
+    if (/[\u0590-\u05FF]/.test(text)) return "he";
+    if (/[\u0400-\u04FF]/.test(text)) return "ru";
+    if (/[\u0370-\u03FF]/.test(text)) return "el";
+    return null;
+  }
+  function pickVoiceForText(text, anchor) {
+    const elementLang = langFromElement(anchor);
+    const scriptLang = elementLang ? null : detectLangFromText(text);
+    const pageLang = (document.documentElement.lang || "").toLowerCase().split("-")[0];
+    const targetLang = elementLang || scriptLang || pageLang || "en";
+    const voices = window.speechSynthesis.getVoices();
+    if (!voices.length) return { voice: null, lang: targetLang };
+    const voice = voices.find((v) => /google/i.test(v.name) && v.lang.toLowerCase().startsWith(targetLang)) || voices.find((v) => v.lang.toLowerCase().startsWith(targetLang)) || voices.find((v) => /google/i.test(v.name)) || voices.find((v) => v.default) || null;
+    return { voice, lang: targetLang };
+  }
+  function chunkText(text) {
+    const matches = text.match(/[^.!?\n]+(?:[.!?]+|\n+|$)/g);
+    if (!matches) return [text];
+    const out = [];
+    for (const raw of matches) {
+      const trimmed = raw.trim();
+      if (!trimmed) continue;
+      if (trimmed.length <= 220) {
+        out.push(trimmed);
+      } else {
+        for (let i = 0; i < trimmed.length; i += 200) {
+          out.push(trimmed.slice(i, i + 200));
+        }
+      }
+    }
+    return out.length ? out : [text];
+  }
+  function startKeepalive() {
+    if (chromeKeepalive !== null) return;
+    chromeKeepalive = window.setInterval(() => {
+      const synth = window.speechSynthesis;
+      if (!synth.speaking && !synth.pending) {
+        stopKeepalive();
+        return;
+      }
+      synth.pause();
+      synth.resume();
+    }, 1e4);
+  }
+  function stopKeepalive() {
+    if (chromeKeepalive !== null) {
+      clearInterval(chromeKeepalive);
+      chromeKeepalive = null;
+    }
+  }
+  function speakChunked(text, anchor = null) {
+    const synth = window.speechSynthesis;
+    synth.cancel();
+    stopKeepalive();
+    const chunks = chunkText(text);
+    totalChunks = chunks.length;
+    finishedChunks = 0;
+    const { voice, lang } = pickVoiceForText(text, anchor);
+    chunks.forEach((chunk) => {
+      const u = new SpeechSynthesisUtterance(chunk);
+      u.lang = lang;
+      u.rate = 1;
+      if (voice) u.voice = voice;
+      u.onend = () => {
+        finishedChunks += 1;
+        if (finishedChunks >= totalChunks) {
+          stopKeepalive();
+          clearOutline();
+        }
+      };
+      u.onerror = () => {
+        finishedChunks += 1;
+        if (finishedChunks >= totalChunks) {
+          stopKeepalive();
+          clearOutline();
+        }
+      };
+      synth.speak(u);
+    });
+    if (chunks.length > 0) startKeepalive();
+  }
+  function isInsideSkippedZone(node) {
+    if (!node) return false;
+    const el = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
+    if (!el) return false;
+    return !!el.closest(SKIP_SELECTOR);
+  }
+  function readSelectionDebounced() {
+    if (selectionDebounce !== null) clearTimeout(selectionDebounce);
+    selectionDebounce = window.setTimeout(() => {
+      selectionDebounce = null;
+      const sel = window.getSelection();
+      if (!sel || sel.rangeCount === 0) return;
+      if (isInsideSkippedZone(sel.anchorNode) || isInsideSkippedZone(sel.focusNode)) return;
+      const text = sel.toString().trim();
+      if (text.length < SELECTION_MIN_CHARS) return;
+      if (text === lastSelectionText) return;
+      lastSelectionText = text;
+      clearOutline();
+      speakChunked(text, sel.anchorNode);
+    }, SELECTION_DEBOUNCE_MS);
+  }
+  function handleMouseup(_e) {
+    readSelectionDebounced();
+  }
+  function handleTouchend(_e) {
+    readSelectionDebounced();
+  }
+  function handleKeyup(e) {
+    const isCmdA = (e.ctrlKey || e.metaKey) && (e.key === "a" || e.key === "A");
+    const isShiftSel = e.shiftKey && (e.key === "ArrowUp" || e.key === "ArrowDown" || e.key === "ArrowLeft" || e.key === "ArrowRight" || e.key === "Home" || e.key === "End");
+    if (!isCmdA && !isShiftSel) return;
+    readSelectionDebounced();
+  }
+  function pageRead(enable = false) {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    if (enable && !isEnabled) {
+      mouseupHandler = handleMouseup;
+      touchendHandler = handleTouchend;
+      keyupHandler = handleKeyup;
+      document.addEventListener("mouseup", mouseupHandler);
+      document.addEventListener("touchend", touchendHandler);
+      document.addEventListener("keyup", keyupHandler);
+      isEnabled = true;
+    } else if (!enable && isEnabled) {
+      if (mouseupHandler) document.removeEventListener("mouseup", mouseupHandler);
+      if (touchendHandler) document.removeEventListener("touchend", touchendHandler);
+      if (keyupHandler) document.removeEventListener("keyup", keyupHandler);
+      mouseupHandler = null;
+      touchendHandler = null;
+      keyupHandler = null;
+      if (selectionDebounce !== null) {
+        clearTimeout(selectionDebounce);
+        selectionDebounce = null;
+      }
+      window.speechSynthesis.cancel();
+      stopKeepalive();
+      clearOutline();
+      lastSelectionText = "";
+      isEnabled = false;
+    }
+  }
+
+  // src/tools/muteSounds.ts
+  var originalMuted = /* @__PURE__ */ new WeakMap();
+  var originalIframeSrc = /* @__PURE__ */ new WeakMap();
+  var observer = null;
+  var isEnabled2 = false;
+  function muteEl(el) {
+    if (!originalMuted.has(el)) {
+      originalMuted.set(el, el.muted);
+    }
+    el.muted = true;
+  }
+  function unmuteEl(el) {
+    if (originalMuted.has(el)) {
+      el.muted = originalMuted.get(el);
+      originalMuted.delete(el);
+    }
+  }
+  function isYouTubeEmbed(src) {
+    return /^https?:\/\/(www\.)?(youtube|youtube-nocookie)\.com\/embed\//i.test(src);
+  }
+  function isVimeoEmbed(src) {
+    return /^https?:\/\/player\.vimeo\.com\/video\//i.test(src);
+  }
+  function postMessageMute(iframe) {
+    const src = iframe.src || "";
+    try {
+      if (isYouTubeEmbed(src)) {
+        iframe.contentWindow?.postMessage(
+          JSON.stringify({ event: "command", func: "mute", args: [] }),
+          "*"
+        );
+      } else if (isVimeoEmbed(src)) {
+        iframe.contentWindow?.postMessage(
+          JSON.stringify({ method: "setVolume", value: 0 }),
+          "*"
+        );
+      }
+    } catch {
+    }
+  }
+  function postMessageUnmute(iframe) {
+    const src = iframe.src || "";
+    try {
+      if (isYouTubeEmbed(src)) {
+        iframe.contentWindow?.postMessage(
+          JSON.stringify({ event: "command", func: "unMute", args: [] }),
+          "*"
+        );
+      } else if (isVimeoEmbed(src)) {
+        iframe.contentWindow?.postMessage(
+          JSON.stringify({ method: "setVolume", value: 1 }),
+          "*"
+        );
+      }
+    } catch {
+    }
+  }
+  function muteIframe(iframe) {
+    const src = iframe.src;
+    if (!src) return;
+    postMessageMute(iframe);
+    let url;
+    try {
+      url = new URL(src);
+    } catch {
+      return;
+    }
+    let needsReload = false;
+    if (isYouTubeEmbed(src)) {
+      if (url.searchParams.get("mute") !== "1") {
+        url.searchParams.set("mute", "1");
+        needsReload = true;
+      }
+      if (url.searchParams.get("enablejsapi") !== "1") {
+        url.searchParams.set("enablejsapi", "1");
+        needsReload = true;
+      }
+    } else if (isVimeoEmbed(src)) {
+      if (url.searchParams.get("muted") !== "1") {
+        url.searchParams.set("muted", "1");
+        needsReload = true;
+      }
+    } else {
+      return;
+    }
+    if (needsReload) {
+      if (!originalIframeSrc.has(iframe)) {
+        originalIframeSrc.set(iframe, src);
+      }
+      iframe.src = url.toString();
+    }
+  }
+  function unmuteIframe(iframe) {
+    if (originalIframeSrc.has(iframe)) {
+      iframe.src = originalIframeSrc.get(iframe);
+      originalIframeSrc.delete(iframe);
+      return;
+    }
+    postMessageUnmute(iframe);
+  }
+  function muteAllExisting() {
+    document.querySelectorAll("audio, video").forEach(muteEl);
+    document.querySelectorAll("iframe").forEach(muteIframe);
+  }
+  function unmuteAllTracked() {
+    document.querySelectorAll("audio, video").forEach(unmuteEl);
+    document.querySelectorAll("iframe").forEach(unmuteIframe);
+  }
+  function startObserver() {
+    if (observer) return;
+    observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        m.addedNodes.forEach((node) => {
+          if (!(node instanceof HTMLElement)) return;
+          if (node instanceof HTMLMediaElement) {
+            muteEl(node);
+          } else if (node instanceof HTMLIFrameElement) {
+            muteIframe(node);
+          } else {
+            node.querySelectorAll("audio, video").forEach(muteEl);
+            node.querySelectorAll("iframe").forEach(muteIframe);
+          }
+        });
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+  function stopObserver() {
+    if (observer) {
+      observer.disconnect();
+      observer = null;
+    }
+  }
+  function muteSounds(enable = false) {
+    if (enable && !isEnabled2) {
+      muteAllExisting();
+      startObserver();
+      isEnabled2 = true;
+    } else if (!enable && isEnabled2) {
+      stopObserver();
+      unmuteAllTracked();
+      isEnabled2 = false;
+    }
   }
 
   // src/views/menu/renderTools.ts
@@ -2981,7 +4062,9 @@
     readingGuide(states["readable-guide"]);
     stopAnimations(states["stop-animations"]);
     bigCursor(states["big-cursor"]);
-    alignLeft(states["align-left"]);
+    textAlign(states["text-align"] || false);
+    pageRead(!!states["page-read"]);
+    muteSounds(!!states["mute-sounds"]);
   }
 
   // src/enum/Filters.ts
@@ -3006,19 +4089,19 @@
     },
     "high-contrast": {
       styles: {
-        "filter": "contrast(125%)"
+        "filter": "contrast(110%)"
       },
       mainSelector: ":not(html):not(body)"
     },
     "high-saturation": {
       styles: {
-        "filter": "saturate(150%)"
+        "filter": "saturate(110%)"
       },
       mainSelector: ":not(html):not(body)"
     },
     "low-saturation": {
       styles: {
-        "filter": "saturate(50%)"
+        "filter": "saturate(87%)"
       },
       mainSelector: ":not(html):not(body)"
     },
@@ -3055,10 +4138,10 @@
   }
 
   // src/views/widget/widget.css
-  var widget_default = ".cya11y-widget,.cya11y-menu{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:400;-webkit-font-smoothing:antialiased}.cya11y-widget *,.cya11y-menu *{box-sizing:border-box!important}.cya11y-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.cya11y-menu-title-container{display:flex;align-items:center;gap:5px}.cya11y-menu-btn{position:fixed;z-index:500000;right:30px;bottom:30px;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433;transition:transform .2s ease,box-shadow .2s ease;border-radius:50%;align-items:center;justify-content:center;width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);display:flex;cursor:pointer;text-decoration:none!important;background:var(--cya11y-primary-color, #1863DC);border:3px solid transparent!important;background-clip:padding-box;outline:none;color:#fff}button.cya11y-menu-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433}.cya11y-menu-btn svg{width:85%;max-width:85%;background:transparent!important}.cya11y-menu-btn:hover{transform:scale(1.05)}.cya11y-menu-btn:active{transform:scale(.98)}.cya11y-widget-icon{width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);position:fixed;z-index:500000}@media (prefers-contrast: high){.cya11y-menu-btn{border:3px solid transparent!important;background-clip:padding-box;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c614d}button.cya11y-menu-btn:focus-visible{outline:3px solid #000000;outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c6126}}@media (prefers-reduced-motion: reduce){.cya11y-menu-btn{transition:none}.cya11y-menu-btn:hover{transform:none}}@media only screen and (max-width: 768px){.cya11y-menu-btn{width:42px;height:42px}.cya11y-menu-btn svg{width:26px;height:26px;min-height:26px;min-width:26px;max-width:26px;max-height:26px}}\n";
+  var widget_default = ".cya11y-widget,.cya11y-menu{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:400;-webkit-font-smoothing:antialiased}.cya11y-widget *,.cya11y-menu *{box-sizing:border-box!important}.cya11y-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.cya11y-menu-title-container{display:flex;align-items:center;gap:5px}.cya11y-menu-btn{position:fixed;z-index:500000;right:30px;bottom:30px;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433;transition:transform .2s ease,box-shadow .2s ease;border-radius:50%;align-items:center;justify-content:center;width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);display:flex;cursor:pointer;text-decoration:none!important;background:var(--cya11y-primary-color, #1863DC);border:3px solid #ffffff!important;background-clip:padding-box;outline:none;color:#fff}button.cya11y-menu-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433}.cya11y-menu-btn svg{width:85%;max-width:85%;background:transparent!important}.cya11y-menu-btn:hover{transform:scale(1.05)}.cya11y-menu-btn:active{transform:scale(.98)}.cya11y-widget-icon{width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);position:fixed;z-index:500000}@media (prefers-contrast: high){.cya11y-menu-btn{border:3px solid transparent!important;background-clip:padding-box;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c614d}button.cya11y-menu-btn:focus-visible{outline:3px solid #000000;outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c6126}}@media (prefers-reduced-motion: reduce){.cya11y-menu-btn{transition:none}.cya11y-menu-btn:hover{transform:none}}@media only screen and (max-width: 768px){.cya11y-menu-btn{width:42px;height:42px}.cya11y-menu-btn svg{width:26px;height:26px;min-height:26px;min-width:26px;max-width:26px;max-height:26px}}\n";
 
   // src/views/menu/menu.html
-  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class=cya11y-menu-title id=cya11y-menu-title><span class=cya11y-translate>Accessibility menu</span></h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Content adjustments</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Colour adjustments</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation adjustments</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn" title="Reset all settings" type=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-translate>Reset all settings</span></button><a aria-label="View accessibility statement (opens in new window)" class="cya11y-menu-reset-footer-link cya11y-translate cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> Accessibility statement </a></div></section></main><footer class=cya11y-footer><div style="text-align:right;color:#293c5b;direction:ltr;border-radius:0 0 6px 6px;justify-content:center;align-items:center;font-size:12px;font-weight:400;line-height:20px;display:flex"><a aria-label="Visit CookieYes website (opens in new window)" href="https://www.cookieyes.com/product/accessibility-widget/?ref=cypbcyaw&utm_source=accessibility-widget&utm_medium=powered-by-cookieyes" rel=noopener style=margin-left:5px;line-height:0 target=_blank> <svg viewbox="0 0 150 18" fill=none height=18 width=150 xmlns=http://www.w3.org/2000/svg><path d="M6.86769 5.92616C8.00649 5.92616 8.9295 5.0079 8.9295 3.87521V3.81181C8.9295 2.67913 8.00649 1.76086 6.86769 1.76086C5.7289 1.76086 4.80591 2.67913 4.80591 3.81181V3.87521C4.80591 5.0079 5.7289 5.92616 6.86769 5.92616Z" fill=#14142A /><path d="M4.38398 10.6696L0.914338 14.0332C0.599512 14.3371 0.592972 14.8386 0.899392 15.1519L1.73083 16.0012C2.03539 16.3125 2.53518 16.3191 2.84813 16.0161L6.414 12.5584L4.38398 10.6696Z" fill=#1863DC /><path d="M12.8122 6.33273C13.1242 6.02883 13.1298 5.53008 12.8262 5.21777L11.9966 4.36569C11.6911 4.05152 11.1885 4.04592 10.8746 4.35171L6.65201 8.47692L4.30062 6.24698C4.02969 5.9906 3.6009 5.99993 3.34212 6.26935L2.37895 7.27339C2.11644 7.54559 2.12952 7.98003 2.40698 8.23826L6.55951 12.0987C6.65107 12.1835 6.794 12.1817 6.88276 12.094L8.45316 10.5586L7.07615 12.5788L10.7877 16.0272C11.1063 16.3237 11.6052 16.3069 11.9041 15.9909L12.6879 15.1593C12.9878 14.8405 12.9719 14.3389 12.6515 14.0406L8.67737 10.3396L12.8094 6.3318H12.8103L12.8122 6.33273Z" fill=#1863DC /><path d="M17.549 5.45477L14.781 13.1478H16.4021L16.9096 11.6844H19.9755L20.483 13.1478H22.1155L19.3475 5.45477H17.5499H17.549ZM17.3289 10.451L18.4426 7.23722L19.5562 10.451H17.3289Z" fill=black /><path d="M25.4225 8.2606C25.7316 8.2606 25.9907 8.33632 26.2002 8.4859C26.4099 8.63641 26.5589 8.84372 26.6469 9.10781H28.3128C28.1438 8.4253 27.8109 7.89522 27.3148 7.51752C26.8186 7.13982 26.1917 6.9505 25.4347 6.9505C24.8465 6.9505 24.3248 7.08113 23.8687 7.34146C23.4123 7.60176 23.0556 7.96905 22.7985 8.44236C22.5415 8.91566 22.4125 9.46752 22.4125 10.0989C22.4125 10.7303 22.5415 11.2822 22.7985 11.7555C23.0556 12.2288 23.4123 12.596 23.8687 12.8564C24.3239 13.1167 24.8465 13.2473 25.4347 13.2473C26.185 13.2473 26.8093 13.0533 27.3092 12.6642C27.8091 12.2752 28.1438 11.7507 28.3128 11.091H26.6469C26.4555 11.6485 26.0476 11.9278 25.4234 11.9278C24.9822 11.9278 24.6332 11.7678 24.3761 11.4488C24.1191 11.1298 23.9901 10.6801 23.9901 10.1008C23.9901 9.52149 24.1191 9.06144 24.3761 8.74147C24.6332 8.42248 24.9822 8.26249 25.4234 8.26249L25.4225 8.2606Z" fill=black /><path d="M31.7211 8.2606C32.0304 8.2606 32.2893 8.33632 32.499 8.4859C32.7087 8.63641 32.8575 8.84372 32.9458 9.10781H34.6114C34.4426 8.4253 34.1097 7.89522 33.6136 7.51752C33.1174 7.13982 32.4905 6.9505 31.7335 6.9505C31.1453 6.9505 30.6236 7.08113 30.1673 7.34146C29.7112 7.60176 29.3544 7.96905 29.0974 8.44236C28.8403 8.91566 28.7113 9.46752 28.7113 10.0989C28.7113 10.7303 28.8403 11.2822 29.0974 11.7555C29.3544 12.2288 29.7112 12.596 30.1673 12.8564C30.6227 13.1167 31.1453 13.2473 31.7335 13.2473C32.4839 13.2473 33.1079 13.0533 33.6078 12.6642C34.1077 12.2752 34.4426 11.7507 34.6114 11.091H32.9458C32.7541 11.6485 32.3462 11.9278 31.7222 11.9278C31.281 11.9278 30.9318 11.7678 30.6748 11.4488C30.4177 11.1298 30.2887 10.6801 30.2887 10.1008C30.2887 9.52149 30.4177 9.06144 30.6748 8.74147C30.9318 8.42248 31.281 8.26249 31.7222 8.26249L31.7211 8.2606Z" fill=black /><path d="M39.633 7.32531C39.1738 7.07635 38.6532 6.95142 38.0725 6.95142C37.4921 6.95142 36.937 7.08016 36.4731 7.33668C36.0103 7.5932 35.6499 7.96049 35.3928 8.43758C35.1357 8.91467 35.0067 9.46843 35.0067 10.0989C35.0067 10.7293 35.1366 11.2727 35.3986 11.7498C35.6594 12.2268 36.0237 12.5951 36.4903 12.8554C36.957 13.1157 37.4843 13.2463 38.0725 13.2463C38.8002 13.2463 39.4137 13.058 39.9148 12.6793C40.4147 12.3016 40.7532 11.8189 40.9298 11.232H39.265C39.0221 11.7233 38.6143 11.9694 38.0412 11.9694C37.6438 11.9694 37.31 11.8444 37.0375 11.5954C36.7653 11.3456 36.6117 11.001 36.5748 10.5608H41.0407C41.0701 10.3848 41.0843 10.1869 41.0843 9.96635C41.0843 9.37187 40.9571 8.84557 40.704 8.38741C40.4507 7.92925 40.094 7.57523 39.6339 7.32531H39.633ZM36.5843 9.52618C36.643 9.11535 36.8034 8.79444 37.0642 8.56347C37.3251 8.3325 37.6467 8.21702 38.0289 8.21702C38.433 8.21702 38.7755 8.33628 39.0544 8.57484C39.3332 8.81339 39.4773 9.13049 39.484 9.52712H36.5832L36.5843 9.52618Z" fill=black /><path d="M45.5385 9.88957C45.252 9.7722 44.8878 9.6586 44.4465 9.54881C44.0131 9.439 43.6933 9.33109 43.4876 9.22413C43.2817 9.11809 43.1783 8.96191 43.1783 8.75649C43.1783 8.57285 43.2532 8.42992 43.404 8.32769C43.555 8.22546 43.7703 8.17339 44.0491 8.17339C44.3507 8.17339 44.5918 8.24534 44.7719 8.38826C44.9522 8.53121 45.0528 8.72431 45.0755 8.96569H46.5534C46.5098 8.34946 46.2708 7.86005 45.8362 7.49656C45.4028 7.13307 44.8221 6.95227 44.0936 6.95227C43.6004 6.95227 43.1727 7.03273 42.8084 7.19461C42.4442 7.35646 42.1653 7.57609 41.9698 7.85438C41.7743 8.13363 41.6776 8.44128 41.6776 8.77922C41.6776 9.19003 41.7819 9.51663 41.9916 9.75894C42.2013 10.0013 42.4508 10.1811 42.7419 10.2985C43.0322 10.4159 43.4051 10.5295 43.8612 10.6393C44.3024 10.7567 44.624 10.8646 44.8259 10.964C45.0281 11.0634 45.1295 11.212 45.1295 11.4098C45.1295 11.5935 45.047 11.744 44.882 11.8614C44.7161 11.9787 44.4863 12.0374 44.1924 12.0374C43.8984 12.0374 43.6393 11.9607 43.4373 11.8065C43.2352 11.6522 43.1196 11.4581 43.0902 11.2234H41.5353C41.5573 11.5973 41.6843 11.939 41.9158 12.2466C42.1473 12.5543 42.4613 12.7985 42.8587 12.9784C43.2561 13.1582 43.7038 13.2481 44.2048 13.2481C44.7056 13.2481 45.1144 13.1696 45.4786 13.0115C45.8429 12.8534 46.1218 12.6357 46.3173 12.3564C46.5116 12.0781 46.6095 11.762 46.6095 11.4098C46.6017 11.0066 46.4936 10.6819 46.2841 10.4358C46.0744 10.1897 45.8269 10.0089 45.5393 9.89149L45.5385 9.88957Z" fill=black /><path d="M51.2045 9.88957C50.9181 9.7722 50.5538 9.6586 50.1128 9.54881C49.6791 9.439 49.3596 9.33109 49.1536 9.22413C48.9479 9.11809 48.8445 8.96191 48.8445 8.75649C48.8445 8.57285 48.9195 8.42992 49.0703 8.32769C49.221 8.22546 49.4363 8.17339 49.7152 8.17339C50.017 8.17339 50.2578 8.24534 50.4382 8.38826C50.6183 8.53121 50.7199 8.72431 50.7417 8.96569H52.2195C52.175 8.34946 51.9368 7.86005 51.5025 7.49656C51.0679 7.13307 50.4884 6.95227 49.7599 6.95227C49.2675 6.95227 48.8387 7.03273 48.4745 7.19461C48.1102 7.35646 47.8313 7.57609 47.6359 7.85438C47.4415 8.13363 47.3439 8.44128 47.3439 8.77922C47.3439 9.19003 47.4491 9.51663 47.6588 9.75894C47.8683 10.0013 48.1178 10.1811 48.4091 10.2985C48.6993 10.4159 49.072 10.5295 49.5284 10.6393C49.9696 10.7567 50.2912 10.8646 50.4931 10.964C50.6952 11.0634 50.7966 11.212 50.7966 11.4098C50.7966 11.5935 50.7141 11.744 50.548 11.8614C50.383 11.9787 50.1526 12.0374 49.8584 12.0374C49.5644 12.0374 49.3055 11.9607 49.1034 11.8065C48.9015 11.6522 48.7856 11.4581 48.7562 11.2234H47.2015C47.2233 11.5973 47.3503 11.939 47.5818 12.2466C47.8133 12.5552 48.1273 12.7985 48.5247 12.9784C48.9221 13.1582 49.37 13.2481 49.87 13.2481C50.3699 13.2481 50.7795 13.1696 51.1438 13.0115C51.5081 12.8534 51.7869 12.6357 51.9824 12.3564C52.1768 12.0781 52.2746 11.762 52.2746 11.4098C52.2671 11.0066 52.1588 10.6819 51.9493 10.4358C51.7396 10.1897 51.492 10.0089 51.2045 9.89149V9.88957Z" fill=black /><path d="M57.158 5.46527L55.5152 8.97622L53.8609 5.46527H52.1183L54.7327 10.4728V13.147H56.276V10.4728L58.8788 5.46527H57.158Z" fill=black /><path d="M62.645 7.32534C62.1849 7.07637 61.6652 6.95142 61.0845 6.95142C60.5041 6.95142 59.949 7.08016 59.4851 7.33668C59.0223 7.59322 58.6619 7.96049 58.4039 8.43758C58.1468 8.91469 58.0178 9.46845 58.0178 10.0998C58.0178 10.7312 58.1486 11.2736 58.4094 11.7507C58.6703 12.2278 59.0346 12.596 59.5014 12.8563C59.9681 13.1167 60.4954 13.2473 61.0836 13.2473C61.8111 13.2473 62.4249 13.0589 62.9257 12.6803C63.4256 12.3026 63.7643 11.8198 63.9409 11.2329H62.2761C62.0332 11.7242 61.6252 11.9703 61.0523 11.9703C60.6549 11.9703 60.3209 11.8454 60.0487 11.5964C59.7765 11.3475 59.6228 11.0019 59.5859 10.5618H64.0518C64.0812 10.3857 64.0954 10.1879 64.0954 9.96731C64.0954 9.37283 63.9682 8.84653 63.7149 8.38837C63.4616 7.93021 63.1051 7.57619 62.645 7.32627V7.32534ZM59.5963 9.52618C59.655 9.11535 59.8145 8.79447 60.0762 8.5635C60.3371 8.33252 60.6587 8.21704 61.0409 8.21704C61.445 8.21704 61.7875 8.33631 62.0664 8.57484C62.3461 8.81339 62.4893 9.13051 62.4969 9.52714H59.5963V9.52618Z" fill=black /><path d="M69.2994 10.4339C69.0899 10.1878 68.8422 10.007 68.5549 9.88957C68.2685 9.7722 67.9042 9.6586 67.463 9.54881C67.0295 9.439 66.7089 9.33109 66.5031 9.22413C66.2972 9.11809 66.1938 8.96191 66.1938 8.75649C66.1938 8.57285 66.2687 8.42992 66.4195 8.32769C66.5705 8.22546 66.7858 8.17339 67.0647 8.17339C67.3662 8.17339 67.6073 8.24534 67.7874 8.38826C67.9678 8.53121 68.0683 8.72431 68.091 8.96569H69.569C69.5243 8.34946 69.2852 7.86005 68.8518 7.49656C68.4183 7.13307 67.8377 6.95227 67.1091 6.95227C66.617 6.95227 66.188 7.03273 65.824 7.19461C65.4597 7.35646 65.1808 7.57609 64.9854 7.85438C64.7908 8.13363 64.6931 8.44128 64.6931 8.77922C64.6931 9.19003 64.7986 9.51663 65.0072 9.75894C65.2169 10.0013 65.4662 10.1811 65.7575 10.2985C66.0477 10.4159 66.4206 10.5295 66.8768 10.6393C67.318 10.7567 67.6395 10.8646 67.8415 10.964C68.0436 11.0634 68.145 11.212 68.145 11.4098C68.145 11.5935 68.0625 11.744 67.8966 11.8614C67.7314 11.9787 67.501 12.0374 67.207 12.0374C66.9128 12.0374 66.6539 11.9607 66.4518 11.8065C66.2498 11.6522 66.134 11.4581 66.1046 11.2234H64.5499C64.5717 11.5973 64.6989 11.939 64.9302 12.2466C65.1617 12.5552 65.4757 12.7985 65.8731 12.9784C66.2707 13.1582 66.7184 13.2481 67.2183 13.2481C67.7183 13.2481 68.1279 13.1696 68.4922 13.0115C68.8564 12.8534 69.1353 12.6357 69.3308 12.3564C69.5254 12.0772 69.623 11.762 69.623 11.4098C69.6154 11.0066 69.5071 10.6819 69.2977 10.4358L69.2994 10.4339Z" fill=black /><path d="M75.8396 8.325C76.1036 7.907 76.4666 7.566 76.9286 7.302C77.3906 7.038 77.9002 6.906 78.4576 6.906C79.1836 6.906 79.7629 7.12233 80.1956 7.555C80.6356 7.98033 80.8556 8.55967 80.8556 9.293C80.8556 9.513 80.8336 9.744 80.7896 9.986C80.6796 10.602 80.4596 11.1447 80.1296 11.614C79.7996 12.0833 79.3926 12.4463 78.9086 12.703C78.4319 12.9597 77.9186 13.088 77.3686 13.088C76.8039 13.088 76.3382 12.9597 75.9716 12.703C75.6049 12.439 75.3592 12.098 75.2346 11.68L75.0036 13H74.2446L75.6856 4.86H76.4446L75.8396 8.325ZM80.0086 9.986C80.0452 9.766 80.0636 9.579 80.0636 9.425C80.0636 8.84567 79.8912 8.39467 79.5466 8.072C79.2092 7.742 78.7619 7.577 78.2046 7.577C77.7939 7.577 77.4016 7.676 77.0276 7.874C76.6536 8.072 76.3346 8.35433 76.0706 8.721C75.8066 9.08767 75.6306 9.513 75.5426 9.997C75.5059 10.2023 75.4876 10.3857 75.4876 10.547C75.4876 11.119 75.6599 11.5737 76.0046 11.911C76.3492 12.2483 76.7966 12.417 77.3466 12.417C77.7719 12.417 78.1679 12.3217 78.5346 12.131C78.9086 11.933 79.2239 11.6507 79.4806 11.284C79.7446 10.91 79.9206 10.4773 80.0086 9.986ZM82.8664 6.994L83.9994 12.087L86.8704 6.994H87.6734L82.5584 15.827H81.7444L83.4164 12.956L82.0084 6.994H82.8664Z" fill=#525363 /><g clip-path=url(#clip0_3_25)><path d="M95.6822 5.20178C97.605 5.20178 99.0423 6.30539 99.5084 8.1113H97.3525C97.0224 7.38893 96.4009 7.04782 95.6628 7.04782C94.4587 7.04782 93.6235 7.97082 93.6235 9.45569C93.6235 10.9405 94.4587 11.8635 95.6628 11.8635C96.4009 11.8635 97.0224 11.5024 97.3525 10.8001H99.5084C99.0423 12.606 97.605 13.7096 95.6822 13.7096C93.2933 13.6895 91.623 11.9438 91.623 9.43563C91.623 6.92742 93.2933 5.20178 95.6822 5.20178Z" fill=#404041 /><path d="M103.432 13.7297C101.549 13.7297 100.131 12.4254 100.131 10.3185C100.131 8.21161 101.587 6.90735 103.471 6.90735C105.355 6.90735 106.812 8.21161 106.812 10.3185C106.812 12.4254 105.316 13.7297 103.432 13.7297ZM103.432 11.9639C104.132 11.9639 104.792 11.4221 104.792 10.3185C104.792 9.19483 104.151 8.67311 103.452 8.67311C102.733 8.67311 102.112 9.19483 102.112 10.3185C102.131 11.4221 102.714 11.9639 103.432 11.9639Z" fill=#404041 /><path d="M110.714 13.7297C108.83 13.7297 107.413 12.4254 107.413 10.3185C107.413 8.21161 108.869 6.90735 110.753 6.90735C112.637 6.90735 114.094 8.21161 114.094 10.3185C114.094 12.4254 112.598 13.7297 110.714 13.7297ZM110.714 11.9639C111.414 11.9639 112.074 11.4221 112.074 10.3185C112.074 9.19483 111.433 8.67311 110.734 8.67311C110.015 8.67311 109.394 9.19483 109.394 10.3185C109.394 11.4221 109.996 11.9639 110.714 11.9639Z" fill=#404041 /><path d="M114.793 5.20178H116.755V9.69646L118.697 7.00769H121.125L118.464 10.3185L121.164 13.6293H118.736L116.774 10.8402V13.6293H114.813V5.20178H114.793Z" fill=#404041 /><path d="M121.592 5.22183C121.592 4.5998 122.058 4.11823 122.757 4.11823C123.457 4.11823 123.923 4.5998 123.923 5.22183C123.923 5.8238 123.457 6.30537 122.757 6.30537C122.058 6.30537 121.592 5.8238 121.592 5.22183ZM121.786 6.9876H123.748V13.6093H121.786V6.9876Z" fill=#404041 /><path d="M127.708 13.7297C125.824 13.7297 124.464 12.4254 124.464 10.3185C124.464 8.21161 125.805 6.90735 127.708 6.90735C129.572 6.90735 130.912 8.19155 130.912 10.2182C130.912 10.3988 130.893 10.6195 130.874 10.8201H126.426C126.504 11.683 127.009 12.0843 127.65 12.0843C128.194 12.0843 128.504 11.8034 128.679 11.4422H130.777C130.447 12.7264 129.32 13.7297 127.708 13.7297ZM126.446 9.67641H128.912C128.912 8.95405 128.368 8.53266 127.708 8.53266C127.048 8.53266 126.562 8.93397 126.446 9.67641Z" fill=#404041 /><path d="M139.984 13.7297C138.1 13.7297 136.741 12.4254 136.741 10.3185C136.741 8.21161 138.081 6.90735 139.984 6.90735C141.849 6.90735 143.189 8.19155 143.189 10.2182C143.189 10.3988 143.17 10.6195 143.15 10.8201H138.703C138.78 11.683 139.285 12.0843 139.926 12.0843C140.47 12.0843 140.781 11.8034 140.956 11.4422H143.053C142.723 12.7264 141.577 13.7297 139.984 13.7297ZM138.703 9.67641H141.169C141.169 8.95405 140.626 8.53266 139.965 8.53266C139.324 8.53266 138.819 8.93397 138.703 9.67641Z" fill=#404041 /><path d="M146.745 13.7297C145.036 13.7297 143.889 12.7464 143.792 11.4622H145.735C145.773 11.9237 146.181 12.2247 146.725 12.2247C147.23 12.2247 147.502 11.9839 147.502 11.683C147.502 10.6195 144.006 11.382 144.006 8.95405C144.006 7.83036 144.938 6.90735 146.609 6.90735C148.26 6.90735 149.192 7.85044 149.308 9.15469H147.483C147.424 8.71325 147.094 8.41227 146.531 8.41227C146.065 8.41227 145.812 8.59286 145.812 8.91391C145.812 9.97739 149.289 9.21488 149.328 11.703C149.347 12.8468 148.357 13.7297 146.745 13.7297Z" fill=#404041 /><path d="M132.952 7.10803H130.912L132.777 10.6797H134.816L132.952 7.10803Z" fill=#0056A7 /><path d="M132.738 10.5794L132.796 10.6798H134.835L133.495 8.17157L132.738 10.5794Z" fill=#2E3191 /><path d="M136.467 4.09808L132.797 10.6796H134.836L138.507 4.09808H136.467Z" fill=#0056A7 /><path d="M132.797 11.6629H134.778V13.7297H132.797V11.6629Z" fill=#0056A7 /></g><defs><clippath id=clip0_3_25><rect transform="translate(91.623 4.2702)" fill=white height=9.45953 width=57.7031 /></clippath></defs></svg> </a></div></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
+  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class=cya11y-menu-title id=cya11y-menu-title><span class=cya11y-translate>Accessibility menu</span></h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Content adjustments</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Colour adjustments</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation adjustments</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn" title="Reset all settings" type=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-translate>Reset all settings</span></button><a aria-label="View accessibility statement (opens in new window)" class="cya11y-menu-reset-footer-link cya11y-translate cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> Accessibility statement </a></div></section></main><footer class=cya11y-footer><div style="text-align:right;color:#293c5b;direction:ltr;border-radius:0 0 6px 6px;justify-content:center;align-items:center;font-size:12px;font-weight:400;line-height:20px;display:flex"><a aria-label="Visit CookieYes website (opens in new window)" href="https://www.cookieyes.com/product/accessibility-widget/?ref=cypbcyaw&utm_source=accessibility-widget&utm_medium=powered-by-cookieyes" rel=noopener style=margin-left:5px;line-height:0 target=_blank> <svg viewbox="0 0 847 109" aria-hidden=true class=cya11y-footer-logo fill=none focusable=false xmlns=http://www.w3.org/2000/svg><path d="M118.623 67.1911H100.495L97.495 75.8639H87.909L104.277 30.283H114.905L131.273 75.8639H121.622L118.623 67.1911ZM116.144 59.8878L109.559 40.8468L102.972 59.8878H116.144ZM132.435 57.8011C132.435 54.0625 133.196 50.802 134.717 48.0198C136.239 45.1941 138.347 43.0205 141.042 41.4989C143.738 39.9339 146.825 39.1514 150.303 39.1514C154.78 39.1514 158.475 40.2817 161.388 42.5422C164.344 44.7593 166.322 47.8894 167.322 51.9323H157.476C156.954 50.3673 156.063 49.1501 154.802 48.2806C153.584 47.3677 152.063 46.9112 150.237 46.9112C147.629 46.9112 145.564 47.8676 144.042 49.7804C142.521 51.6497 141.76 54.3233 141.76 57.8011C141.76 61.2354 142.521 63.909 144.042 65.8218C145.564 67.6911 147.629 68.6257 150.237 68.6257C153.932 68.6257 156.345 66.9738 157.476 63.6699H167.322C166.322 67.5824 164.344 70.6906 161.388 72.995C158.432 75.2988 154.737 76.4507 150.303 76.4507C146.825 76.4507 143.738 75.6899 141.042 74.1685C138.347 72.6032 136.239 70.4296 134.717 67.6476C133.196 64.8219 132.435 61.5398 132.435 57.8011ZM169.054 57.8011C169.054 54.0625 169.815 50.802 171.336 48.0198C172.858 45.1941 174.966 43.0205 177.662 41.4989C180.357 39.9339 183.443 39.1514 186.921 39.1514C191.399 39.1514 195.094 40.2817 198.006 42.5422C200.963 44.7593 202.94 47.8894 203.941 51.9323H194.094C193.572 50.3673 192.681 49.1501 191.42 48.2806C190.204 47.3677 188.681 46.9112 186.856 46.9112C184.247 46.9112 182.183 47.8676 180.661 49.7804C179.139 51.6497 178.379 54.3233 178.379 57.8011C178.379 61.2354 179.139 63.909 180.661 65.8218C182.183 67.6911 184.247 68.6257 186.856 68.6257C190.551 68.6257 192.964 66.9738 194.094 63.6699H203.941C202.94 67.5824 200.963 70.6906 198.006 72.995C195.051 75.2988 191.355 76.4507 186.921 76.4507C183.443 76.4507 180.357 75.6899 177.662 74.1685C174.966 72.6032 172.858 70.4296 171.336 67.6476C169.815 64.8219 169.054 61.5398 169.054 57.8011ZM241.602 57.0186C241.602 58.3228 241.515 59.4965 241.342 60.5399H214.932C215.15 63.1482 216.063 65.1914 217.671 66.6695C219.28 68.1476 221.258 68.8866 223.605 68.8866C226.996 68.8866 229.409 67.4303 230.843 64.5176H240.69C239.647 67.9954 237.646 70.8646 234.69 73.1252C231.735 75.3419 228.104 76.4507 223.801 76.4507C220.323 76.4507 217.193 75.6899 214.41 74.1685C211.672 72.6032 209.52 70.408 207.955 67.5824C206.434 64.7567 205.673 61.4963 205.673 57.8011C205.673 54.0625 206.434 50.7803 207.955 47.9545C209.477 45.1288 211.607 42.9552 214.346 41.4337C217.084 39.9122 220.236 39.1514 223.801 39.1514C227.235 39.1514 230.3 39.8904 232.995 41.3685C235.734 42.8465 237.842 44.955 239.32 47.6937C240.842 50.389 241.602 53.4973 241.602 57.0186ZM232.147 54.4102C232.104 52.0627 231.256 50.1934 229.604 48.8023C227.953 47.3677 225.931 46.6504 223.54 46.6504C221.279 46.6504 219.367 47.346 217.801 48.737C216.28 50.0847 215.345 51.9757 214.997 54.4102H232.147ZM259.482 76.4507C256.526 76.4507 253.874 75.9294 251.527 74.886C249.179 73.7989 247.31 72.3429 245.918 70.5166C244.571 68.691 243.832 66.6695 243.702 64.4524H252.896C253.07 65.8435 253.743 66.9956 254.918 67.9084C256.135 68.8214 257.635 69.2778 259.417 69.2778C261.156 69.2778 262.503 68.93 263.46 68.2345C264.46 67.5389 264.96 66.6478 264.96 65.561C264.96 64.3872 264.351 63.5177 263.134 62.9526C261.96 62.344 260.069 61.6919 257.461 60.9963C254.765 60.3442 252.548 59.6704 250.809 58.9749C249.114 58.2793 247.636 57.2142 246.375 55.7796C245.158 54.345 244.549 52.4105 244.549 49.9761C244.549 47.9763 245.114 46.1504 246.245 44.4985C247.418 42.8465 249.071 41.5424 251.2 40.586C253.374 39.6296 255.917 39.1514 258.83 39.1514C263.134 39.1514 266.568 40.2382 269.133 42.4118C271.698 44.542 273.111 47.4329 273.371 51.0846H264.634C264.503 49.65 263.895 48.5197 262.807 47.6937C261.764 46.8243 260.351 46.3896 258.57 46.3896C256.917 46.3896 255.635 46.6939 254.722 47.3025C253.853 47.9111 253.418 48.7588 253.418 49.8456C253.418 51.0629 254.026 51.9975 255.243 52.6496C256.461 53.2582 258.352 53.8886 260.916 54.5406C263.525 55.1927 265.677 55.8666 267.373 56.5621C269.068 57.2577 270.524 58.3445 271.741 59.8226C273.002 61.2572 273.654 63.1699 273.698 65.561C273.698 67.6476 273.111 69.517 271.937 71.1687C270.807 72.821 269.155 74.1253 266.981 75.0816C264.851 75.9941 262.352 76.4507 259.482 76.4507ZM292.408 76.4507C289.451 76.4507 286.799 75.9294 284.452 74.886C282.105 73.7989 280.235 72.3429 278.844 70.5166C277.497 68.691 276.757 66.6695 276.627 64.4524H285.821C285.995 65.8435 286.669 66.9956 287.843 67.9084C289.06 68.8214 290.56 69.2778 292.342 69.2778C294.081 69.2778 295.429 68.93 296.385 68.2345C297.385 67.5389 297.885 66.6478 297.885 65.561C297.885 64.3872 297.276 63.5177 296.059 62.9526C294.885 62.344 292.994 61.6919 290.386 60.9963C287.691 60.3442 285.473 59.6704 283.735 58.9749C282.039 58.2793 280.561 57.2142 279.301 55.7796C278.083 54.345 277.475 52.4105 277.475 49.9761C277.475 47.9763 278.039 46.1504 279.17 44.4985C280.344 42.8465 281.996 41.5424 284.126 40.586C286.3 39.6296 288.843 39.1514 291.756 39.1514C296.059 39.1514 299.494 40.2382 302.058 42.4118C304.623 44.542 306.036 47.4329 306.297 51.0846H297.559C297.429 49.65 296.82 48.5197 295.733 47.6937C294.69 46.8243 293.277 46.3896 291.495 46.3896C289.843 46.3896 288.56 46.6939 287.647 47.3025C286.778 47.9111 286.343 48.7588 286.343 49.8456C286.343 51.0629 286.952 51.9975 288.169 52.6496C289.386 53.2582 291.277 53.8886 293.842 54.5406C296.451 55.1927 298.602 55.8666 300.298 56.5621C301.993 57.2577 303.45 58.3445 304.667 59.8226C305.927 61.2572 306.58 63.1699 306.623 65.561C306.623 67.6476 306.036 69.517 304.863 71.1687C303.732 72.821 302.08 74.1253 299.906 75.0816C297.777 75.9941 295.277 76.4507 292.408 76.4507ZM363.24 30.3482L347.851 60.0182V75.8639H338.722V60.0182L323.267 30.3482H333.57L343.351 51.1498L353.068 30.3482H363.24ZM399.479 57.0186C399.479 58.3228 399.393 59.4965 399.219 60.5399H372.809C373.026 63.1482 373.939 65.1914 375.548 66.6695C377.156 68.1476 379.134 68.8866 381.482 68.8866C384.873 68.8866 387.285 67.4303 388.719 64.5176H398.566C397.523 67.9954 395.524 70.8646 392.567 73.1252C389.611 75.3419 385.981 76.4507 381.677 76.4507C378.199 76.4507 375.07 75.6899 372.287 74.1685C369.548 72.6032 367.397 70.408 365.832 67.5824C364.31 64.7567 363.549 61.4963 363.549 57.8011C363.549 54.0625 364.31 50.7803 365.832 47.9545C367.353 45.1288 369.483 42.9552 372.222 41.4337C374.961 39.9122 378.112 39.1514 381.677 39.1514C385.111 39.1514 388.177 39.8904 390.871 41.3685C393.61 42.8465 395.719 44.955 397.197 47.6937C398.718 50.389 399.479 53.4973 399.479 57.0186ZM390.024 54.4102C389.981 52.0627 389.133 50.1934 387.481 48.8023C385.829 47.3677 383.807 46.6504 381.416 46.6504C379.156 46.6504 377.243 47.346 375.678 48.737C374.156 50.0847 373.222 51.9757 372.874 54.4102H390.024ZM417.358 76.4507C414.403 76.4507 411.751 75.9294 409.403 74.886C407.056 73.7989 405.186 72.3429 403.796 70.5166C402.447 68.691 401.708 66.6695 401.578 64.4524H410.773C410.946 65.8435 411.62 66.9956 412.794 67.9084C414.011 68.8214 415.511 69.2778 417.294 69.2778C419.032 69.2778 420.38 68.93 421.336 68.2345C422.336 67.5389 422.836 66.6478 422.836 65.561C422.836 64.3872 422.228 63.5177 421.01 62.9526C419.837 62.344 417.945 61.6919 415.337 60.9963C412.642 60.3442 410.425 59.6704 408.686 58.9749C406.99 58.2793 405.513 57.2142 404.251 55.7796C403.035 54.345 402.426 52.4105 402.426 49.9761C402.426 47.9763 402.991 46.1504 404.121 44.4985C405.295 42.8465 406.947 41.5424 409.077 40.586C411.251 39.6296 413.794 39.1514 416.706 39.1514C421.01 39.1514 424.444 40.2382 427.01 42.4118C429.575 44.542 430.988 47.4329 431.248 51.0846H422.51C422.379 49.65 421.771 48.5197 420.685 47.6937C419.641 46.8243 418.228 46.3896 416.446 46.3896C414.794 46.3896 413.512 46.6939 412.599 47.3025C411.729 47.9111 411.294 48.7588 411.294 49.8456C411.294 51.0629 411.903 51.9975 413.12 52.6496C414.337 53.2582 416.228 53.8886 418.793 54.5406C421.402 55.1927 423.554 55.8666 425.249 56.5621C426.944 57.2577 428.401 58.3445 429.618 59.8226C430.878 61.2572 431.53 63.1699 431.574 65.561C431.574 67.6476 430.988 69.517 429.813 71.1687C428.683 72.821 427.031 74.1253 424.858 75.0816C422.727 75.9941 420.228 76.4507 417.358 76.4507Z" fill=black /><path d="M316.139 35.4345C314.53 35.4345 313.182 34.9345 312.095 33.9347C311.052 32.8914 310.53 31.6089 310.53 30.0874C310.53 28.5659 311.052 27.3051 312.095 26.3053C313.182 25.262 314.53 24.7402 316.139 24.7402C317.747 24.7402 319.073 25.262 320.116 26.3053C321.203 27.3051 321.746 28.5659 321.746 30.0874C321.746 31.6089 321.203 32.8914 320.116 33.9347C319.073 34.9345 317.747 35.4345 316.139 35.4345ZM320.637 39.7383V75.8639H311.509V39.7383H320.637Z" fill=white /><path d="M315.279 42.3944C313.67 42.3944 312.323 41.8945 311.236 40.8946C310.193 39.8513 309.671 38.5688 309.671 37.0473C309.671 35.5258 310.193 34.2651 311.236 33.2652C312.323 32.2218 313.67 31.7002 315.279 31.7002C316.887 31.7002 318.213 32.2218 319.257 33.2652C320.344 34.2651 320.887 35.5258 320.887 37.0473C320.887 38.5688 320.344 39.8513 319.257 40.8946C318.213 41.8945 316.887 42.3944 315.279 42.3944ZM319.779 46.6982V75.8639H310.649V46.6982H319.779Z" fill=black /><path d="M63.9552 20.5745C65.8756 18.6985 68.9518 18.7294 70.834 20.6438L76.1159 26.0165C78.0035 27.936 77.9764 31.0222 76.0554 32.9083L40.3103 68.0109C39.5134 68.7934 38.2419 68.8103 37.4245 68.0493L12.4094 44.7593C10.351 42.843 10.3382 39.5868 12.3812 37.6542L18.0434 32.2982C19.9598 30.4853 22.9711 30.527 24.8364 32.3925L36.7304 44.2865C37.5391 45.0952 38.8479 45.1028 39.666 44.3036L63.9552 20.5745Z" fill=#1863DC /><path d="M15.1705 92.6348C13.5412 94.2669 10.8971 94.2697 9.26474 92.6404L2.95578 86.3436C1.32339 84.7143 1.32086 82.0702 2.95012 80.4374L24.7242 58.6218L36.9446 70.8187L15.1705 92.6348Z" fill=#1863DC /><path d="M64.1495 92.4518C65.8508 94.0158 68.4984 93.9002 70.0573 92.195L76.0784 85.6095C77.629 83.9133 77.5184 81.2824 75.8299 79.7234L50.7178 56.5339L40.9738 71.1501L64.1495 92.4518Z" fill=#1863DC /><path d="M39.5818 30.624C46.8852 30.624 52.8058 24.7034 52.8058 17.4C52.8058 10.0966 46.8852 4.17603 39.5818 4.17603C32.2784 4.17603 26.3578 10.0966 26.3578 17.4C26.3578 24.7034 32.2784 30.624 39.5818 30.624Z" fill=black /><path d="M495.545 41.0259L500.596 64.9965L514.127 41.0259H519.228L493.586 84.7359H488.417L496.846 70.4244L490.055 41.0259H495.545Z" fill=#14142A /><path d="M460.24 46.5551C461.575 44.7851 463.314 43.3354 465.46 42.2228C467.605 41.1103 469.919 40.5371 472.419 40.5371C475.967 40.5371 478.822 41.5991 480.95 43.74C483.129 45.8808 484.21 48.7633 484.21 52.4213C484.21 53.4664 484.109 54.5958 483.889 55.7758C483.349 58.7764 482.251 61.4566 480.578 63.7997C478.957 66.1428 476.93 67.9802 474.548 69.2782C472.2 70.5762 469.7 71.2336 467.048 71.2336C464.396 71.2336 462.318 70.6774 460.578 69.548C458.838 68.4354 457.622 67.0026 456.929 65.2663L455.949 70.7448H451L458.112 30.6084H463.061L460.24 46.5551ZM478.822 55.7758C478.974 55.0173 479.041 54.1913 479.041 53.281C479.041 50.6345 478.264 48.5779 476.71 47.0945C475.156 45.5774 473.146 44.8188 470.68 44.8188C468.872 44.8188 467.115 45.274 465.409 46.1674C463.703 47.0271 462.233 48.3251 461.017 50.0108C459.818 51.6796 459.024 53.6013 458.618 55.8096C458.466 56.5681 458.399 57.3941 458.399 58.3044C458.399 60.9509 459.176 63.0412 460.73 64.592C462.318 66.1091 464.328 66.8677 466.761 66.8677C468.602 66.8677 470.375 66.4294 472.031 65.5697C473.737 64.6594 475.19 63.3783 476.389 61.7263C477.622 60.0238 478.433 58.0347 478.838 55.759L478.822 55.7758Z" fill=#14142A /><path d="M548.84 31.3494C558.874 31.3494 566.391 37.0976 568.824 46.5206H557.557C555.834 42.7615 552.59 40.9747 548.739 40.9747C542.455 40.9747 538.097 45.7789 538.097 53.5163C538.097 61.2536 542.455 66.0578 548.739 66.0578C552.59 66.0578 555.834 64.1698 557.557 60.5119H568.824C566.391 69.9181 558.874 75.6831 548.84 75.6831C536.357 75.582 527.64 66.4793 527.64 53.4151C527.64 40.351 536.374 31.3494 548.84 31.3494Z" fill=#404041 /><path d="M589.314 75.8025C579.483 75.8025 572.067 69.0092 572.067 58.0185C572.067 47.0277 579.668 40.2344 589.517 40.2344C599.365 40.2344 606.966 47.0277 606.966 58.0185C606.966 69.0092 599.162 75.8025 589.314 75.8025ZM589.314 66.5986C592.963 66.5986 596.409 63.7667 596.409 58.0185C596.409 52.2702 593.064 49.4383 589.415 49.4383C585.767 49.4383 582.422 52.1522 582.422 58.0185C582.523 63.7667 585.564 66.5986 589.314 66.5986Z" fill=#404041 /><path d="M627.356 75.8025C617.524 75.8025 610.108 69.0092 610.108 58.0185C610.108 47.0277 617.71 40.2344 627.558 40.2344C637.406 40.2344 645.008 47.0277 645.008 58.0185C645.008 69.0092 637.204 75.8025 627.356 75.8025ZM627.356 66.5986C631.004 66.5986 634.45 63.7667 634.45 58.0185C634.45 52.2702 631.106 49.4383 627.457 49.4383C623.808 49.4383 620.463 52.1522 620.463 58.0185C620.463 63.8847 623.605 66.5986 627.356 66.5986Z" fill=#404041 /><path d="M648.657 31.3494H658.91V54.7805L669.046 40.7724H681.732L667.829 58.0339L681.934 75.2954H669.248L658.995 60.7647V75.2954H648.741V31.3831H648.64L648.657 31.3494Z" fill=#404041 /><path d="M684.147 31.4513C684.147 28.2148 686.58 25.7031 690.228 25.7031C693.877 25.7031 696.31 28.2148 696.31 31.4513C696.31 34.6879 693.877 37.0984 690.228 37.0984C686.58 37.0984 684.147 34.5867 684.147 31.4513ZM685.161 40.6552H695.414V75.1614H685.161V40.6552Z" fill=#404041 /><path d="M716.108 75.8025C706.276 75.8025 699.165 69.0092 699.165 58.0185C699.165 47.0277 706.158 40.2344 716.108 40.2344C726.057 40.2344 732.848 46.9266 732.848 57.4959C732.848 58.4399 732.746 59.5862 732.645 60.6313H709.418C709.824 65.1321 712.459 67.2223 715.804 67.2223C718.641 67.2223 720.263 65.7558 721.175 63.8678H732.121C730.398 70.56 724.52 75.7857 716.091 75.7857L716.108 75.8025ZM709.52 54.6639H722.408C722.408 50.9048 719.571 48.6966 716.108 48.6966C712.645 48.6966 710.128 50.7868 709.52 54.6639Z" fill=#404041 /><path d="M780.214 75.8025C770.365 75.8025 763.271 69.0092 763.271 58.0185C763.271 47.0277 770.264 40.2344 780.214 40.2344C790.163 40.2344 796.937 46.9266 796.937 57.4959C796.937 58.4399 796.836 59.5862 796.734 60.6313H773.507C773.913 65.1321 776.548 67.2223 779.893 67.2223C782.731 67.2223 784.352 65.7558 785.264 63.8678H796.211C794.488 70.56 788.508 75.7857 780.18 75.7857L780.214 75.8025ZM773.507 54.6639H786.396C786.396 50.9048 783.558 48.6966 780.112 48.6966C776.666 48.6966 774.132 50.7868 773.524 54.6639H773.507Z" fill=#404041 /><path d="M815.502 75.802C806.583 75.802 800.586 70.6775 800.079 63.9853H810.231C810.434 66.3959 812.563 67.9635 815.4 67.9635C818.036 67.9635 819.454 66.7161 819.454 65.1484C819.454 59.6025 801.194 63.5807 801.194 50.9212C801.194 45.0718 806.059 40.2507 814.792 40.2507C823.526 40.2507 828.272 45.173 828.88 51.9663H819.353C819.049 49.6738 817.326 48.0892 814.387 48.0892C811.954 48.0892 810.637 49.0332 810.637 50.7021C810.637 56.248 828.796 52.2697 828.999 65.2327C829.1 71.2001 823.931 75.802 815.502 75.802Z" fill=#404041 /><path d="M743.49 41.2786H732.831L742.561 59.8886H753.22L743.49 41.2786Z" fill=#0056A7 /><path d="M742.375 59.3829L742.679 59.9054H753.338L746.345 46.8413L742.392 59.3829H742.375Z" fill=#2E3191 /><path d="M761.852 25.6016L742.679 59.9054H753.338L772.511 25.6016H761.869H761.852Z" fill=#0056A7 /><path d="M742.679 65.03H753.034V75.8016H742.679V65.03Z" fill=#0056A7 /></svg> </a></div></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
 
   // src/globals/pluginConfig.ts
   var defaultConfig = {
@@ -3114,7 +4197,7 @@
         letterSpacing: { enabled: true },
         lineHeight: { enabled: true },
         fontWeight: { enabled: true },
-        alignLeft: { enabled: true }
+        textAlign: { enabled: true }
       },
       navigation: {
         readingGuide: { enabled: true },
@@ -3124,6 +4207,15 @@
       statement: {
         enabled: false,
         url: ""
+      },
+      profiles: {
+        enabled: true
+      },
+      pageRead: {
+        enabled: true
+      },
+      muteSounds: {
+        enabled: true
       }
     }
   };
@@ -3151,6 +4243,18 @@
       statement: {
         ...defaultConfig.modules.statement,
         ..._remote?.modules?.statement || {}
+      },
+      profiles: {
+        ...defaultConfig.modules.profiles,
+        ..._remote?.modules?.profiles || {}
+      },
+      pageRead: {
+        ...defaultConfig.modules.pageRead,
+        ..._remote?.modules?.pageRead || {}
+      },
+      muteSounds: {
+        ...defaultConfig.modules.muteSounds,
+        ..._remote?.modules?.muteSounds || {}
       }
     }
   };
@@ -3452,14 +4556,22 @@
   var fontSizeIcon_default = '<svg viewbox="0 0 27 22" fill=none height=22 width=27 xmlns=http://www.w3.org/2000/svg><path d="M1.66663 4.33329V1.66663H19V4.33329M11 1.66663V20.3333M13.6666 20.3333H8.33329M17.6666 12.3333V11H25.6666V12.3333M21.6666 11V20.3333M20.3333 20.3333H23" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg>';
 
   // src/icons/alignLeftIcon.svg
-  var alignLeftIcon_default = '<svg viewbox="0 0 29 23" fill=none height=23 width=29 xmlns=http://www.w3.org/2000/svg><path d="M1.33337 1.33338H28M1.33337 11.3334H28M1.33337 21.3334H21.3334" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
+  var alignLeftIcon_default = '<svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M2 4H22M2 11.5H22M2 19H17" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
+
+  // src/icons/alignRightIcon.svg
+  var alignRightIcon_default = '<svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M2 4H22M9.5 11.5H22M4.5 19H22" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
+
+  // src/icons/alignCenterIcon.svg
+  var alignCenterIcon_default = '<svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M2 4H22M7 11.5H17M4.5 19H19.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
 
   // src/views/menu/ContentButtons.ts
   var ContentButtons_default = [
     {
-      label: "Align Left",
-      key: "align-left",
-      icon: alignLeftIcon_default
+      label: "Text Align",
+      key: "text-align",
+      icon: alignLeftIcon_default,
+      // Multi-state cycler: off → left → center → right → off
+      altIcons: { left: alignLeftIcon_default, right: alignRightIcon_default, center: alignCenterIcon_default }
     },
     {
       label: "Font Weight",
@@ -3507,6 +4619,12 @@
   // src/icons/readingGuideIcon.svg
   var readingGuideIcon_default = '<svg viewbox="0 0 33 32" fill=none height=32 width=33 xmlns=http://www.w3.org/2000/svg><path d="M5.66667 12.2667V2.66669H27L26.9998 12.2667M5.66667 20V29.3334H26.9998V20M13.6667 20H3V13.3334H29.6667V20H22.3333M22.493 20.3842C23.2083 20.662 23.1536 21.6476 22.4116 21.8515L18.6658 22.8815L16.9548 26.2303C16.6156 26.8938 15.5908 26.774 15.4286 26.0519L13.6849 18.2749C13.6538 18.1367 13.6626 17.9929 13.7105 17.8592C13.7584 17.7254 13.8435 17.6066 13.9568 17.5156C14.07 17.4247 14.207 17.3649 14.3531 17.3429C14.4992 17.3208 14.6488 17.3373 14.7858 17.3904L22.493 20.3842Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
 
+  // src/icons/pageReadIcon.svg
+  var pageReadIcon_default = '<svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M16.5 5C16.5 3.89543 15.6046 3 14.5 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H16M5.5 8H12.5M5.5 12H10M5.5 16H8M19.3 18.8C20.7059 17.394 21.4959 15.4874 21.4964 13.4991C21.497 11.5109 20.7081 9.6038 19.303 8.19702M16.5001 15.9999C16.8273 15.6728 17.0863 15.2841 17.2623 14.8562C17.4383 14.4283 17.5278 13.9698 17.5254 13.5072C17.5231 13.0445 17.4291 12.587 17.2488 12.1609C17.0685 11.7348 16.8055 11.3487 16.4751 11.0249" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
+
+  // src/icons/muteSoundsIcon.svg
+  var muteSoundsIcon_default = '<svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M16 9C16.5044 9.67234 16.8311 10.461 16.95 11.293M19.364 5.63599C20.643 6.91425 21.5073 8.54814 21.8442 10.3247C22.1812 12.1013 21.9752 13.9382 21.253 15.596M2 2L22 22M7 7L6.413 7.587C6.2824 7.71838 6.12703 7.82253 5.95589 7.89342C5.78475 7.96432 5.60124 8.00054 5.416 8H3C2.73478 8 2.48043 8.10536 2.29289 8.29289C2.10536 8.48043 2 8.73478 2 9V15C2 15.2652 2.10536 15.5196 2.29289 15.7071C2.48043 15.8946 2.73478 16 3 16H5.416C5.60124 15.9995 5.78475 16.0357 5.95589 16.1066C6.12703 16.1775 6.2824 16.2816 6.413 16.413L9.796 19.797C9.8946 19.8958 10.0203 19.9631 10.1572 19.9904C10.2941 20.0177 10.436 20.0037 10.5649 19.9503C10.6939 19.8968 10.804 19.8063 10.8815 19.6902C10.959 19.5741 11.0002 19.4376 11 19.298V11M9.82788 4.17207C9.92377 4.07581 10.0461 4.0102 10.1793 3.98355C10.3125 3.95689 10.4507 3.9704 10.5762 4.02235C10.7017 4.0743 10.809 4.16235 10.8844 4.27535C10.9599 4.38835 11 4.52121 10.9999 4.65707V5.34307" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
+
   // src/enum/TOOL_PRESETS.ts
   var TOOL_PRESETS = [
     {
@@ -3523,6 +4641,16 @@
       label: "Reading Guide",
       key: "readable-guide",
       icon: readingGuideIcon_default
+    },
+    {
+      label: "Page read",
+      key: "page-read",
+      icon: pageReadIcon_default
+    },
+    {
+      label: "Mute sounds",
+      key: "mute-sounds",
+      icon: muteSoundsIcon_default
     }
   ];
   var TOOL_PRESETS_default = TOOL_PRESETS;
@@ -3533,23 +4661,23 @@
   // src/icons/adhdIcon.svg
   var adhdIcon_default = '<svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M14.5185 16.0001C14.5185 16.393 14.6746 16.7698 14.9524 17.0477C15.2302 17.3255 15.6071 17.4816 16 17.4816C16.3929 17.4816 16.7697 17.3255 17.0475 17.0477C17.3254 16.7698 17.4815 16.393 17.4815 16.0001C17.4815 15.6072 17.3254 15.2304 17.0475 14.9525C16.7697 14.6747 16.3929 14.5186 16 14.5186C15.6071 14.5186 15.2302 14.6747 14.9524 14.9525C14.6746 15.2304 14.5185 15.6072 14.5185 16.0001Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M8.59248 16C8.59248 17.9646 9.3729 19.8487 10.7621 21.2378C12.1512 22.627 14.0353 23.4074 15.9999 23.4074C17.9645 23.4074 19.8486 22.627 21.2377 21.2378C22.6269 19.8487 23.4073 17.9646 23.4073 16C23.4073 14.0354 22.6269 12.1513 21.2377 10.7622C19.8486 9.37302 17.9645 8.5926 15.9999 8.5926C14.0353 8.5926 12.1512 9.37302 10.7621 10.7622C9.3729 12.1513 8.59248 14.0354 8.59248 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M2.66663 16.0001C2.66663 17.751 3.0115 19.4849 3.68157 21.1025C4.35163 22.7202 5.33375 24.1901 6.57187 25.4282C7.80998 26.6663 9.27984 27.6484 10.8975 28.3185C12.5152 28.9885 14.249 29.3334 16 29.3334C17.7509 29.3334 19.4847 28.9885 21.1024 28.3185C22.7201 27.6484 24.1899 26.6663 25.4281 25.4282C26.6662 24.1901 27.6483 22.7202 28.3184 21.1025C28.9884 19.4849 29.3333 17.751 29.3333 16.0001C29.3333 14.2491 28.9884 12.5153 28.3184 10.8976C27.6483 9.27996 26.6662 7.81011 25.4281 6.57199C24.1899 5.33388 22.7201 4.35175 21.1024 3.68169C19.4847 3.01163 17.7509 2.66675 16 2.66675C14.249 2.66675 12.5152 3.01163 10.8975 3.68169C9.27984 4.35175 7.80998 5.33388 6.57187 6.57199C5.33375 7.81011 4.35163 9.27996 3.68157 10.8976C3.0115 12.5153 2.66663 14.2491 2.66663 16.0001Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
 
-  // src/icons/cognitiveDisabilityIcon.svg
-  var cognitiveDisabilityIcon_default = '<svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><g clip-path=url(#clip0_66_1494)><path d="M15.9701 12.6494H15.475C15.2623 12.6494 15.0899 12.4854 15.0899 12.2831V10.6486C15.0899 9.22499 13.9081 8.0314 12.4119 8.00066C11.2154 7.9761 10.1897 8.68201 9.79124 9.68164C9.70813 9.89024 9.50003 10.0315 9.2655 10.0292C6.84473 10.0054 5.02222 12.1202 5.46852 14.3493C5.51594 14.586 5.39432 14.8276 5.16491 14.9299C3.6891 15.5882 2.66663 17.0135 2.66663 18.6667H8.37904C8.59172 18.6667 8.76414 18.5027 8.76414 18.3004V17.8294C8.76414 17.1428 9.3255 16.5579 10.0469 16.5335C10.8043 16.508 11.4267 17.0844 11.4267 17.7991V18.3004C11.4267 18.5027 11.5991 18.6667 11.8118 18.6667H15.0899V15.5485C15.0899 15.3461 15.2623 15.1821 15.475 15.1821H16.002C16.7534 15.1821 17.3593 14.5901 17.3324 13.8696C17.3069 13.1834 16.692 12.6494 15.9701 12.6494Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M13.8163 23.1857H14.2945C14.5 23.1857 14.6665 23.0149 14.6665 22.8041V19.5561H11.5001C11.2947 19.5561 11.1282 19.3853 11.1282 19.1746V18.684C11.1282 17.9688 10.586 17.3597 9.88918 17.3342C9.15762 17.3076 8.55638 17.908 8.55638 18.6524V19.1746C8.55638 19.3853 8.38984 19.5561 8.18441 19.5561H2.66663C2.66663 21.2781 3.65425 22.7627 5.07988 23.4485C5.30147 23.5551 5.41889 23.8067 5.37314 24.0533C4.942 26.3755 6.70379 28.5776 9.04072 28.553C9.26725 28.5506 9.46821 28.6978 9.54854 28.9151C9.93336 29.9564 10.9241 30.6916 12.0799 30.6661C13.5251 30.6341 14.6666 29.3908 14.6666 27.908V26.2055C14.6666 25.9948 14.5001 25.8239 14.2947 25.8239H13.7856C13.0599 25.8239 12.4746 25.2072 12.5005 24.4568C12.5252 23.7419 13.119 23.1857 13.8163 23.1857Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M29.0017 11.3329C29.195 11.3329 29.3501 11.1616 29.3318 10.962C29.2043 9.57205 28.3671 8.39715 27.2006 7.82974C27.0033 7.73379 26.8987 7.50743 26.9395 7.28546C27.3233 5.19584 25.7562 3.21332 23.6747 3.23565C23.473 3.2378 23.2942 3.10535 23.2226 2.90979C22.8801 1.97268 21.9981 1.31093 20.9693 1.33396C19.6828 1.36272 18.6666 2.4817 18.6666 3.81626V5.34851C18.6666 5.53817 18.8149 5.69192 18.9977 5.69192H19.4235C20.0442 5.69192 20.5728 6.19251 20.5948 6.83585C20.618 7.51124 20.0969 8.0663 19.4509 8.0663H18.9977C18.8149 8.0663 18.6666 8.22005 18.6666 8.4097V10.9895C18.6666 11.1792 18.8149 11.3329 18.9977 11.3329H21.4853C21.6681 11.3329 21.8164 11.4867 21.8164 11.6763V12.1178C21.8164 12.7615 22.299 13.3097 22.9194 13.3326C23.5706 13.3566 24.1058 12.8162 24.1058 12.1462V11.6763C24.1058 11.4866 24.254 11.3329 24.4369 11.3329L29.0017 11.3329Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M24.7718 26.3109C25.2075 25.4976 25.3902 24.5213 25.2125 23.5239C25.1651 23.2575 25.2868 22.9859 25.5165 22.8707C26.8749 22.1898 27.8497 20.7799 27.9982 19.1119C28.0196 18.8723 27.8389 18.6667 27.6138 18.6667H22.2985C22.0856 18.6667 21.913 18.8512 21.913 19.0788V19.6086C21.913 20.3811 21.351 21.039 20.6287 21.0665C19.8704 21.0953 19.2472 20.4468 19.2472 19.6428V19.0788C19.2472 18.8512 19.0745 18.6667 18.8616 18.6667H15.5794V22.1747C15.5794 22.4023 15.4068 22.5869 15.1939 22.5869H14.6981C13.9753 22.5869 13.3598 23.1876 13.3342 23.9596C13.3072 24.7701 13.9139 25.4362 14.6662 25.4362H15.1939C15.4068 25.4362 15.5794 25.6207 15.5794 25.8483V27.6871C15.5794 29.2886 16.7627 30.6315 18.2608 30.666C19.4587 30.6936 20.4858 29.8995 20.8847 28.7748C20.9679 28.5402 21.1762 28.3813 21.411 28.3838C22.0889 28.3912 22.7199 28.2101 23.2677 27.8907" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></g><defs><clippath id=clip0_66_1494><rect fill=white height=32 width=32 /></clippath></defs></svg>';
-
   // src/icons/lowVisionIcon.svg
-  var lowVisionIcon_default = '<svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M2.66667 16C2.66667 16 7.33333 9.33333 16 9.33333C24.6667 9.33333 29.3333 16 29.3333 16C29.3333 16 24.6667 22.6667 16 22.6667C7.33333 22.6667 2.66667 16 2.66667 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 19.3333C17.8409 19.3333 19.3333 17.8409 19.3333 16C19.3333 14.1591 17.8409 12.6667 16 12.6667C14.1591 12.6667 12.6667 14.1591 12.6667 16C12.6667 17.8409 14.1591 19.3333 16 19.3333Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><circle cx=25.3333 cy=7.33333 r=3.33333 stroke=#27283C stroke-width=1.5 /><path d="M27.6903 9.69037L29.3333 11.3334" stroke=#27283C stroke-linecap=round stroke-width=1.5 /></svg>';
+  var lowVisionIcon_default = '<svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M16.0372 22.1457C10.6889 22.1457 6.2321 19.1214 2.66663 13.0729C6.2321 7.02429 10.6889 4 16.0372 4C21.3854 4 25.8422 7.02429 29.4077 13.0729C29.274 13.2987 29.1403 13.5199 29.0066 13.7367M26.4364 19.1214L26.4365 28.1943M26.4365 28.1943L21.9796 23.6579M26.4365 28.1943L30.8933 23.6579M13.0659 13.0729C13.0659 13.8749 13.379 14.6442 13.9362 15.2114C14.4934 15.7785 15.2491 16.0971 16.0372 16.0971C16.8252 16.0971 17.5809 15.7785 18.1381 15.2114C18.6953 14.6442 19.0084 13.8749 19.0084 13.0729C19.0084 12.2708 18.6953 11.5015 18.1381 10.9344C17.5809 10.3672 16.8252 10.0486 16.0372 10.0486C15.2491 10.0486 14.4934 10.3672 13.9362 10.9344C13.379 11.5015 13.0659 12.2708 13.0659 13.0729Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
+
+  // src/icons/epilepsySafeIcon.svg
+  var epilepsySafeIcon_default = '<svg viewbox="0 0 30 29" fill=none height=29 width=30 xmlns=http://www.w3.org/2000/svg><path d="M15 2L4 6V14C4 19.5 8.5 24.5 15 27C21.5 24.5 26 19.5 26 14V6L15 2Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M15 9V14L18 17" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg>';
 
   // src/views/menu/ProfileButtons.ts
   var ProfileButtons_default = [
     {
-      label: "Cognitive Disability",
-      key: "cognitive-disabilities-profile",
-      icon: cognitiveDisabilityIcon_default
-    },
-    {
       label: "Low Vision",
       key: "low-vision-profile",
       icon: lowVisionIcon_default
+    },
+    {
+      label: "ADHD",
+      key: "adhd-profile",
+      icon: adhdIcon_default
     },
     {
       label: "Seizure Safe",
@@ -3557,9 +4685,9 @@
       icon: seizureSafeIcon_default
     },
     {
-      label: "ADHD",
-      key: "adhd-profile",
-      icon: adhdIcon_default
+      label: "Epilepsy Safe Mode",
+      key: "epilepsy-safe-profile",
+      icon: epilepsySafeIcon_default
     }
   ];
 
@@ -3593,6 +4721,8 @@
                 </div>
             </div>
             `;
+      } else if (x.key === "text-align" && x.altIcons) {
+        _html += `<button class="cya11y-btn cya11y-text-align ${btnClass || ""}" type="button" data-key="${x.key}" data-state="off" title="${x.label}" aria-pressed="false" aria-describedby="${x.key}-description"><span class="cya11y-text-align-icon" data-icon="left">${x.altIcons.left}</span><span class="cya11y-text-align-icon" data-icon="right">${x.altIcons.right}</span><span class="cya11y-text-align-icon" data-icon="center">${x.altIcons.center}</span><span class="cya11y-translate">${x.label}</span><span class="cya11y-sr-only" id="${x.key}-description">Cycle text alignment: left, right, center</span><span class="cya11y-text-align-progress" aria-hidden="true"><span class="cya11y-text-align-segment" data-pos="left"></span><span class="cya11y-text-align-segment" data-pos="center"></span><span class="cya11y-text-align-segment" data-pos="right"></span></span></button>`;
       } else {
         _html += `<button class="cya11y-btn ${btnClass || ""}" type="button" data-key="${x.key}" title="${x.label}" aria-pressed="false" aria-describedby="${x.key}-description">${x.icon}<span class="cya11y-translate">${x.label}</span><span class="cya11y-sr-only" id="${x.key}-description">Toggle ${x.label.toLowerCase()} setting</span></button>`;
       }
@@ -3610,7 +4740,7 @@
   }
 
   // src/views/menu/menu.css
-  var menu_default2 = `:root{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #27283C;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #3D3E50;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-widget{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #333;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #000000 ;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-menu *{color:inherit;font-family:inherit;padding:0;margin:0;letter-spacing:normal}.cya11y-menu{position:fixed;display:flex;flex-direction:column;top:30px;width:462px;height:calc(100% - 30px);background:var(--cya11y-bg-primary, #eff1f5);box-shadow:var(--cya11y-shadow-sm, 0px 8px 26px -4px #27283C33);opacity:1;transition:var(--cya11y-transition-slow, .3s);z-index:var(--cya11y-z-menu, 500000);overflow:auto;line-height:1;font-size:16px;letter-spacing:.015em;color:#000}.cya11y-menu[data-position=bottom-right],.cya11y-menu[data-position=top-right]{right:0;left:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu[data-position=bottom-left],.cya11y-menu[data-position=top-left]{left:0;right:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu-header{display:flex;align-items:center;justify-content:space-between;padding:var(--cya11y-spacing-md, 16px) 15px;font-weight:700;background-color:var(--cya11y-primary-color, #1863DC)}.cya11y-menu-title{font-size:20px;font-weight:500;color:var(--cya11y-text-white, #fff)!important}.cya11y-menu-header>div{display:flex}.cya11y-menu-reset,.cya11y-menu-close{width:32px;height:32px;display:flex;padding:10px;align-items:center;justify-content:center;margin:0;background:var(--cya11y-bg-overlay, rgba(0, 0, 0, .3));cursor:pointer;border-radius:var(--cya11y-radius-full, 50%);transition:opacity var(--cya11y-transition-slow, .3s) ease;border:0;box-shadow:none;outline:none}.cya11y-menu-reset{padding:7px}.cya11y-menu-reset-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px 0}.cya11y-menu-title-shortcut{font-size:13px;font-weight:400;opacity:.75}.cya11y-menu-reset-footer-btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--cya11y-radius-md, 12px);width:100%;height:48px;font-size:15px;font-weight:500;color:var(--cya11y-text-white, #fff);background:var(--cya11y-primary-color);border:2px solid transparent;cursor:pointer;transition:all var(--cya11y-transition-normal, .2s) ease;padding:0 20px;text-decoration:none;outline:none}.cya11y-menu-reset-footer-btn:hover{background:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--cya11y-primary-color) 30%,transparent)}.cya11y-menu-reset-footer-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-menu-reset-footer-btn:active{transform:translateY(0);box-shadow:0 2px 6px color-mix(in srgb,var(--cya11y-primary-color) 20%,transparent)}.cya11y-menu-reset-footer-btn svg{width:20px;height:20px;flex-shrink:0}.cya11y-reset-text{font-weight:500;white-space:nowrap}.cya11y-menu-reset-footer-link{font-size:14px;font-weight:400;color:#4d4e5e;text-decoration:underline;text-align:center;transition:color var(--cya11y-transition-normal, .2s) ease}.cya11y-menu-reset-footer-link:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-menu-reset-footer-link:hover{color:var(--cya11y-primary-color, #1863DC);text-decoration:underline}.cya11y-menu-reset:hover:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:hover,.cya11y-menu-reset:focus-visible:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:focus-visible{outline:3px solid var(--cya11y-focus-color-on-primary, #ffffff);outline-offset:2px}.cya11y-menu-content{flex:1;overflow-y:scroll;overflow-x:auto;padding:var(--cya11y-spacing-lg, 20px) 0 12px;background-color:var(--cya11y-bg-secondary, #f2f2f4);max-height:calc(100vh - 146px)}.cya11y-card{margin:0 var(--cya11y-spacing-lg, 20px) var(--cya11y-spacing-lg, 20px)}.cya11y-card-title{font-size:16px;padding:15px 0;font-weight:500;color:var(--cya11y-text-primary, #27283C)}.cya11y-profile-card{background-color:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px)}.cya11y-profile-card .cya11y-card-title{font-size:16px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);background-color:var(--cya11y-bg-white, #fff);border:none;text-align:left}.cya11y-profile-items{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;padding:0 var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px);margin-top:var(--cya11y-spacing-md, 16px)}.cya11y-profile-items .cya11y-btn{display:flex;gap:10px;align-items:center;flex-direction:row;justify-content:start;text-align:left;width:190px;height:64px;padding:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC)}.cya11y-profile-items .cya11y-btn.cya11y-selected{background:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-text-white, #fff);fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-items .cya11y-btn.cya11y-selected:after{content:"";display:inline-block;background-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23D1E0F8'/%3E%3C/svg%3E%0A");fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff);position:absolute;top:10px;right:10px;color:var(--cya11y-text-white, #fff);font-size:10px;width:20px;height:20px;line-height:6px}.cya11y-profile-items .cya11y-btn.cya11y-selected span,.cya11y-profile-items .cya11y-btn.cya11y-selected svg path{color:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-title-container{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding-left:var(--cya11y-spacing-md, 16px);padding-right:var(--cya11y-spacing-md, 16px);gap:var(--cya11y-spacing-sm, 12px)}.cya11y-profile-title{width:100%;height:64px;border-radius:var(--cya11y-radius-md, 12px)}.cya11y-arrow{margin-left:auto;font-size:18px;color:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transition:transform var(--cya11y-transition-normal, .2s) ease-in-out;rotate:270deg}.cya11y-arrow-rotate{transform:rotate(90deg)}.cya11y-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}.cya11y-btn{aspect-ratio:6 / 5;border-radius:var(--cya11y-radius-md, 12px);padding:0 12px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--cya11y-text-primary, #333);font-size:16px;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:border-color var(--cya11y-transition-normal, .2s) ease;cursor:pointer;word-break:break-word;gap:10px;position:relative;width:auto;height:auto}.cya11y-btn .cya11y-translate,.cya11y-adjust-font .cya11y-label div{font-size:14px;font-weight:500;line-height:22px}.cya11y-btn svg{width:34px;height:34px;min-width:34px;min-height:34px;max-width:34px;max-height:34px}.cya11y-btn:hover{border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected{border:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-btn.cya11y-selected{box-shadow:var(--cya11y-shadow-focus, 0px 0px 0px 6px rgba(24, 99, 220, .14))}.cya11y-btn.cya11y-selected svg,.cya11y-btn.cya11y-selected svg path,.cya11y-btn.cya11y-selected span{stroke:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-adjust-font{background:var(--cya11y-bg-white, #fff);padding-top:10px;padding-bottom:13px;border:1px solid var(--cya11y-border-light, #E9EAEC);border-radius:var(--cya11y-radius-md, 12px);box-shadow:none;transition:outline var(--cya11y-transition-normal, .2s) ease;grid-column:span 2}.cya11y-adjust-font .cya11y-label{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);margin-bottom:10px}.cya11y-adjust-font .cya11y-label svg{margin-right:var(--cya11y-spacing-sm, 12px);width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;max-height:36px;fill:var(--cya11y-text-secondary, #293C5B)}.cya11y-adjust-font>div:last-child{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:var(--cya11y-spacing-sm, 12px)}.cya11y-adjust-font svg{width:24px;height:24px;min-width:24px;min-height:24px;max-width:24px;max-height:24px}.cya11y-plus,.cya11y-minus{background-color:var(--cya11y-bg-primary, #eff1f5);border:2px solid transparent;transition:border var(--cya11y-transition-normal, .2s) ease}.cya11y-plus:hover,.cya11y-minus:hover{border-color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-minus:focus-visible,.cya11y-adjust-font .cya11y-plus:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:3px}.cya11y-adjust-font .cya11y-minus,.cya11y-adjust-font .cya11y-plus{background:var(--cya11y-primary-color, #1863DC);border-radius:var(--cya11y-radius-full, 50%);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:none;transition:background var(--cya11y-transition-normal, .2s)}.cya11y-adjust-font .cya11y-minus svg,.cya11y-adjust-font .cya11y-plus svg{fill:var(--cya11y-text-white, #fff);width:38px;height:38px}.cya11y-adjust-font .cya11y-minus:hover,.cya11y-adjust-font .cya11y-plus:hover{background:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font:hover{outline:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-amount{font-size:14px;font-weight:400;color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-amount{background:#e9eaec;color:var(--cya11y-primary-color, #1863DC);font-size:14px;font-weight:400;border-radius:40px;min-width:100px;min-height:40px;display:flex;align-items:center;justify-content:center;margin:0 10px;box-shadow:none;letter-spacing:.01em}.cya11y-footer{bottom:0;left:0;right:0;background:var(--cya11y-bg-white, #fff);padding:14px;text-align:center;border-top:2px solid var(--cya11y-bg-primary, #eff1f5)}.cya11y-footer a{font-size:16px;text-decoration:none;color:var(--cya11y-text-primary, #333);background:transparent;font-weight:600}.cya11y-footer a:hover,.cya11y-footer a:hover span,.cya11y-footer a:focus-visible,.cya11y-footer a:focus-visible span{color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-footer a:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-custom-select{position:relative;width:100%;font-family:inherit;font-size:16px}.cya11y-selected-lang{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);background:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px);padding:15px;cursor:pointer;user-select:none;transition:border var(--cya11y-transition-normal, .2s);border:1.5px solid transparent}.cya11y-selected-lang:focus{outline:none}.cya11y-selected-lang:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-selected-lang:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border:1.5px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-code{display:inline-flex;align-items:center;justify-content:center;background:var(--cya11y-border-light, #E9EAEC);color:var(--cya11y-text-muted, #3D3E50);font-weight:400;border-radius:var(--cya11y-radius-full, 50%);width:32px;height:32px;font-size:14px;text-transform:uppercase}.cya11y-dropdown-list{position:absolute;top:110%;left:0;width:100%;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:var(--cya11y-radius-md, 12px);box-shadow:var(--cya11y-shadow-md, 0 8px 24px rgba(41, 60, 91, .08));z-index:var(--cya11y-z-dropdown, 100);padding:var(--cya11y-spacing-xs, 8px) 0 0 0;max-height:320px;overflow:auto;transition:box-shadow var(--cya11y-transition-normal, .2s)}.cya11y-lang-search{height:48px;width:80%;margin:0 5%;margin-bottom:var(--cya11y-spacing-xs, 8px);padding:0 var(--cya11y-spacing-md, 16px);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:4px;font-size:15px}.cya11y-lang-search:focus{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:0px;border-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-options{max-height:240px;overflow-y:auto}.cya11y-lang-option{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);padding:var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-md, 16px);cursor:pointer;transition:background var(--cya11y-transition-fast, .15s)}.cya11y-lang-option.selected{background:var(--cya11y-primary-light, #D1E0F8)}.cya11y-lang-option:hover,.cya11y-lang-option:focus-visible{background:#f1f6fd}.cya11y-lang-option:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:-2px}.cya11y-lang-label{color:inherit;font-size:15px;font-weight:500}.cya11y-menu .cya11y-select{width:100%;padding:0 15px;font-size:16px;font-family:inherit;font-weight:600;border-radius:var(--cya11y-radius-lg, 45px);background:var(--cya11y-bg-white, #fff);border:none;min-height:45px;max-height:45px;height:45px;color:inherit}.cya11y-overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:var(--cya11y-z-overlay, 10000)}@media only screen and (max-width: 560px){.cya11y-menu{width:100%}.cya11y-profile-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;padding:0 var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px)}}@media only screen and (max-width: 420px){.cya11y-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.cya11y-profile-items{grid-template-columns:1fr;gap:.5rem;padding:0 var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px);justify-items:center}}
+  var menu_default2 = `:root{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #27283C;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #3D3E50;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-widget{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #333;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #000000 ;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-menu *{color:inherit;font-family:inherit;padding:0;margin:0;letter-spacing:normal}.cya11y-menu{position:fixed;display:flex;flex-direction:column;top:30px;width:462px;height:calc(100% - 30px);background:var(--cya11y-bg-primary, #eff1f5);box-shadow:var(--cya11y-shadow-sm, 0px 8px 26px -4px #27283C33);opacity:1;transition:var(--cya11y-transition-slow, .3s);z-index:var(--cya11y-z-menu, 500000);overflow:auto;line-height:1;font-size:16px;letter-spacing:.015em;color:#000}.cya11y-menu[data-position=bottom-right],.cya11y-menu[data-position=top-right]{right:0;left:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu[data-position=bottom-left],.cya11y-menu[data-position=top-left]{left:0;right:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu-header{display:flex;align-items:center;justify-content:space-between;padding:var(--cya11y-spacing-md, 16px) 15px;font-weight:700;background-color:var(--cya11y-primary-color, #1863DC)}.cya11y-menu-title{font-size:20px;font-weight:500;color:var(--cya11y-text-white, #fff)!important}.cya11y-menu-header>div{display:flex}.cya11y-menu-reset,.cya11y-menu-close{width:32px;height:32px;display:flex;padding:10px;align-items:center;justify-content:center;margin:0;background:var(--cya11y-bg-overlay, rgba(0, 0, 0, .3));cursor:pointer;border-radius:var(--cya11y-radius-full, 50%);transition:opacity var(--cya11y-transition-slow, .3s) ease;border:0;box-shadow:none;outline:none}.cya11y-menu-reset{padding:7px}.cya11y-menu-reset-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px 0}.cya11y-menu-title-shortcut{font-size:13px;font-weight:400;opacity:.75}.cya11y-menu-reset-footer-btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--cya11y-radius-md, 12px);width:100%;height:48px;font-size:15px;font-weight:500;color:var(--cya11y-text-white, #fff);background:var(--cya11y-primary-color);border:2px solid transparent;cursor:pointer;transition:all var(--cya11y-transition-normal, .2s) ease;padding:0 20px;text-decoration:none;outline:none}.cya11y-menu-reset-footer-btn:hover{background:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--cya11y-primary-color) 30%,transparent)}.cya11y-menu-reset-footer-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-menu-reset-footer-btn:active{transform:translateY(0);box-shadow:0 2px 6px color-mix(in srgb,var(--cya11y-primary-color) 20%,transparent)}.cya11y-menu-reset-footer-btn svg{width:20px;height:20px;flex-shrink:0}.cya11y-reset-text{font-weight:500;white-space:nowrap}.cya11y-menu-reset-footer-link{font-size:14px;font-weight:400;color:#4d4e5e;text-decoration:underline;text-align:center;transition:color var(--cya11y-transition-normal, .2s) ease}.cya11y-menu-reset-footer-link:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-menu-reset-footer-link:hover{color:var(--cya11y-primary-color, #1863DC);text-decoration:underline}.cya11y-menu-reset:hover:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:hover,.cya11y-menu-reset:focus-visible:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:focus-visible{outline:3px solid var(--cya11y-focus-color-on-primary, #ffffff);outline-offset:2px}.cya11y-menu-content{flex:1;overflow-y:scroll;overflow-x:auto;padding:var(--cya11y-spacing-lg, 20px) 0 12px;background-color:var(--cya11y-bg-secondary, #f2f2f4);max-height:calc(100vh - 146px)}.cya11y-card{margin:0 var(--cya11y-spacing-lg, 20px) var(--cya11y-spacing-lg, 20px)}.cya11y-card-title{font-size:16px;padding:15px 0;font-weight:500;color:var(--cya11y-text-primary, #27283C)}.cya11y-profile-card{background-color:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px)}.cya11y-profile-card .cya11y-card-title{font-size:16px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);background-color:var(--cya11y-bg-white, #fff);border:none;text-align:left}.cya11y-profile-items{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;padding:0 var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px);margin-top:var(--cya11y-spacing-md, 16px)}.cya11y-profile-items .cya11y-btn{display:flex;gap:10px;align-items:center;flex-direction:row;justify-content:start;text-align:left;width:190px;height:64px;padding:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:background var(--cya11y-transition-normal, .2s) ease,border-color var(--cya11y-transition-normal, .2s) ease}.cya11y-profile-items .cya11y-btn:hover:not(.cya11y-selected){background:color-mix(in srgb,var(--cya11y-primary-color, #1863DC) 8%,var(--cya11y-bg-white, #fff));border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-profile-items .cya11y-btn.cya11y-selected{background:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-text-white, #fff);fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-items .cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:color-mix(in srgb,var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC)) 25%,var(--cya11y-bg-white, #fff));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-profile-items .cya11y-btn.cya11y-selected span,.cya11y-profile-items .cya11y-btn.cya11y-selected svg path{color:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-title-container{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding-left:var(--cya11y-spacing-md, 16px);padding-right:var(--cya11y-spacing-md, 16px);gap:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);border:1.5px solid transparent;transition:border var(--cya11y-transition-normal, .2s)}.cya11y-profile-title-container:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-profile-title{width:100%;height:64px;border-radius:var(--cya11y-radius-md, 12px)}.cya11y-profile-title:focus,.cya11y-profile-title:focus-visible{outline:none}.cya11y-profile-title-container:has(.cya11y-profile-title:focus-visible){outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:var(--cya11y-radius-md, 12px)}.cya11y-arrow{margin-left:auto;font-size:18px;color:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transition:transform var(--cya11y-transition-normal, .2s) ease-in-out;rotate:270deg}.cya11y-arrow-rotate{transform:rotate(90deg)}.cya11y-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}.cya11y-btn{aspect-ratio:6 / 5;border-radius:var(--cya11y-radius-md, 12px);padding:0 12px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--cya11y-text-primary, #333);font-size:16px;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:border-color var(--cya11y-transition-normal, .2s) ease;cursor:pointer;word-break:break-word;gap:10px;position:relative;width:auto;height:auto}.cya11y-btn .cya11y-translate,.cya11y-adjust-font .cya11y-label div{font-size:14px;font-weight:500;line-height:22px}.cya11y-btn svg{width:34px;height:34px;min-width:34px;min-height:34px;max-width:34px;max-height:34px}.cya11y-btn:hover{border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected{border:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-btn.cya11y-selected{box-shadow:var(--cya11y-shadow-focus, 0px 0px 0px 6px rgba(24, 99, 220, .14))}.cya11y-btn.cya11y-selected svg,.cya11y-btn.cya11y-selected svg path,.cya11y-btn.cya11y-selected span{stroke:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-adjust-font{background:var(--cya11y-bg-white, #fff);padding-top:10px;padding-bottom:13px;border:1px solid var(--cya11y-border-light, #E9EAEC);border-radius:var(--cya11y-radius-md, 12px);box-shadow:none;transition:outline var(--cya11y-transition-normal, .2s) ease;grid-column:span 2}.cya11y-adjust-font .cya11y-label{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);margin-bottom:10px}.cya11y-adjust-font .cya11y-label svg{margin-right:var(--cya11y-spacing-sm, 12px);width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;max-height:36px;fill:var(--cya11y-text-secondary, #293C5B)}.cya11y-adjust-font>div:last-child{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:var(--cya11y-spacing-sm, 12px)}.cya11y-adjust-font svg{width:24px;height:24px;min-width:24px;min-height:24px;max-width:24px;max-height:24px}.cya11y-plus,.cya11y-minus{background-color:var(--cya11y-bg-primary, #eff1f5);border:2px solid transparent;transition:border var(--cya11y-transition-normal, .2s) ease}.cya11y-plus:hover,.cya11y-minus:hover{border-color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-minus:focus-visible,.cya11y-adjust-font .cya11y-plus:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:3px}.cya11y-adjust-font .cya11y-minus,.cya11y-adjust-font .cya11y-plus{background:var(--cya11y-primary-color, #1863DC);border-radius:var(--cya11y-radius-full, 50%);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:none;transition:background var(--cya11y-transition-normal, .2s)}.cya11y-adjust-font .cya11y-minus svg,.cya11y-adjust-font .cya11y-plus svg{fill:var(--cya11y-text-white, #fff);width:38px;height:38px}.cya11y-adjust-font .cya11y-minus:hover,.cya11y-adjust-font .cya11y-plus:hover{background:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font:hover{outline:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-amount{font-size:14px;font-weight:400;color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-amount{background:#e9eaec;color:var(--cya11y-primary-color, #1863DC);font-size:14px;font-weight:400;border-radius:40px;min-width:100px;min-height:40px;display:flex;align-items:center;justify-content:center;margin:0 10px;box-shadow:none;letter-spacing:.01em}.cya11y-footer{bottom:0;left:0;right:0;background:var(--cya11y-bg-white, #fff);padding:14px;text-align:center;border-top:2px solid var(--cya11y-bg-primary, #eff1f5)}.cya11y-footer a{font-size:16px;text-decoration:none;color:var(--cya11y-text-primary, #333);background:transparent;font-weight:600}.cya11y-footer a:hover,.cya11y-footer a:hover span,.cya11y-footer a:focus-visible,.cya11y-footer a:focus-visible span{color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-footer a:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-footer-logo{height:22px;width:auto;display:block;max-width:100%}.cya11y-custom-select{position:relative;width:100%;font-family:inherit;font-size:16px}.cya11y-selected-lang{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);background:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px);padding:15px;cursor:pointer;user-select:none;transition:border var(--cya11y-transition-normal, .2s);border:1.5px solid transparent}.cya11y-selected-lang:focus{outline:none}.cya11y-selected-lang:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-selected-lang:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border:1.5px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-code{display:inline-flex;align-items:center;justify-content:center;background:var(--cya11y-border-light, #E9EAEC);color:var(--cya11y-text-muted, #3D3E50);font-weight:400;border-radius:var(--cya11y-radius-full, 50%);width:32px;height:32px;font-size:14px;text-transform:uppercase}.cya11y-dropdown-list{position:absolute;top:110%;left:0;width:100%;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:var(--cya11y-radius-md, 12px);box-shadow:var(--cya11y-shadow-md, 0 8px 24px rgba(41, 60, 91, .08));z-index:var(--cya11y-z-dropdown, 100);padding:var(--cya11y-spacing-xs, 8px) 0 0 0;max-height:320px;overflow:auto;transition:box-shadow var(--cya11y-transition-normal, .2s)}.cya11y-lang-search{height:48px;width:80%;margin:0 5%;margin-bottom:var(--cya11y-spacing-xs, 8px);padding:0 var(--cya11y-spacing-md, 16px);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:4px;font-size:15px}.cya11y-lang-search:focus{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:0px;border-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-options{max-height:240px;overflow-y:auto}.cya11y-lang-option{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);padding:var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-md, 16px);cursor:pointer;transition:background var(--cya11y-transition-fast, .15s)}.cya11y-lang-option.selected{background:var(--cya11y-primary-light, #D1E0F8)}.cya11y-lang-option:hover,.cya11y-lang-option:focus-visible{background:#f1f6fd}.cya11y-lang-option:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:-2px}.cya11y-lang-label{color:inherit;font-size:15px;font-weight:500}.cya11y-menu .cya11y-select{width:100%;padding:0 15px;font-size:16px;font-family:inherit;font-weight:600;border-radius:var(--cya11y-radius-lg, 45px);background:var(--cya11y-bg-white, #fff);border:none;min-height:45px;max-height:45px;height:45px;color:inherit}.cya11y-overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:var(--cya11y-z-overlay, 10000)}@media only screen and (max-width: 560px){.cya11y-menu{width:100%}.cya11y-profile-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;padding:0 var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px)}}@media only screen and (max-width: 420px){.cya11y-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.cya11y-profile-items{grid-template-columns:1fr;gap:.5rem;padding:0 var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px);justify-items:center}}.cya11y-text-align .cya11y-text-align-icon{display:none}.cya11y-text-align[data-state=off] .cya11y-text-align-icon[data-icon=left],.cya11y-text-align[data-state=left] .cya11y-text-align-icon[data-icon=left],.cya11y-text-align[data-state=right] .cya11y-text-align-icon[data-icon=right],.cya11y-text-align[data-state=center] .cya11y-text-align-icon[data-icon=center]{display:inline-flex}.cya11y-text-align .cya11y-text-align-progress{display:none;position:absolute;bottom:6px;left:50%;transform:translate(-50%);gap:4px;pointer-events:none}.cya11y-text-align:not([data-state=off]) .cya11y-text-align-progress{display:inline-flex}.cya11y-text-align .cya11y-text-align-segment{width:14px;height:3px;border-radius:2px;background:var(--cya11y-border-light, #E9EAEC);transition:background-color var(--cya11y-transition-normal, .2s) ease}.cya11y-text-align[data-state=left] .cya11y-text-align-segment[data-pos=left],.cya11y-text-align[data-state=center] .cya11y-text-align-segment[data-pos=center],.cya11y-text-align[data-state=right] .cya11y-text-align-segment[data-pos=right]{background:var(--cya11y-primary-color, #1863DC)}
 `;
 
   // src/views/menu/toggleMenu.ts
@@ -3664,20 +4794,21 @@
 
   // src/enum/Profiles.ts
   var PROFILES = {
-    "seizure-safe-profile": {
-      "contrast": "low-saturation",
-      "tools": ["stop-animations"]
+    "low-vision-profile": {
+      "contrast": "high-contrast",
+      "tools": ["font-size", "page-read"]
     },
     "adhd-profile": {
       "contrast": "high-saturation",
       "tools": ["stop-animations", "readable-guide"]
     },
-    "cognitive-disabilities-profile": {
-      "tools": ["stop-animations", "highlight-links", "highlight-title"]
+    "seizure-safe-profile": {
+      "contrast": "monochrome",
+      "tools": ["stop-animations"]
     },
-    "low-vision-profile": {
-      "contrast": "high-contrast",
-      "tools": ["big-cursor"]
+    "epilepsy-safe-profile": {
+      "contrast": "monochrome",
+      "tools": ["stop-animations", "mute-sounds"]
     }
   };
 
@@ -3708,6 +4839,7 @@
   }
 
   // src/tools/enableProfile.ts
+  var FONT_SIZE_PROFILE_DEFAULT = 1.2;
   function enableProfile(profile, $menu2) {
     const profileConfig = PROFILES[profile];
     if (!profileConfig) {
@@ -3716,11 +4848,23 @@
     userSettings.states.contrast = profileConfig.contrast;
     enableContrast(profileConfig.contrast);
     profileConfig.tools.forEach((tool) => {
-      userSettings.states[tool] = true;
+      if (tool === "font-size") {
+        const current = Number(userSettings.states.fontSize) || 1;
+        if (current === 1) {
+          userSettings.states.fontSize = FONT_SIZE_PROFILE_DEFAULT;
+        }
+      } else {
+        userSettings.states[tool] = true;
+      }
     });
     saveUserSettings();
     renderTools();
     selectButtons($menu2);
+    const newFontSize = Number(userSettings.states.fontSize) || 1;
+    const amountElement = $menu2.querySelector(".cya11y-amount");
+    if (amountElement) {
+      amountElement.textContent = `${(newFontSize * 100).toFixed(0)}%`;
+    }
   }
 
   // src/tools/disableContrast.ts
@@ -3732,14 +4876,24 @@
   // src/tools/disableProfile.ts
   function disableProfile(profile, $menu2) {
     const profileConfig = PROFILES[profile];
+    if (!profileConfig) return;
     disableContrast();
     userSettings.states.contrast = false;
     profileConfig.tools.forEach((tool) => {
-      userSettings.states[tool] = false;
+      if (tool === "font-size") {
+        userSettings.states.fontSize = 1;
+      } else {
+        userSettings.states[tool] = false;
+      }
       saveUserSettings();
     });
     renderTools();
     selectButtons($menu2);
+    const newFontSize = Number(userSettings.states.fontSize) || 1;
+    const amountElement = $menu2.querySelector(".cya11y-amount");
+    if (amountElement) {
+      amountElement.textContent = `${(newFontSize * 100).toFixed(0)}%`;
+    }
   }
 
   // src/views/menu/translateWidget.ts
@@ -4001,7 +5155,8 @@
     dropdownOpen = true;
     if (!outsideClickHandler) {
       outsideClickHandler = (e) => {
-        if (!$langDropdown.contains(e.target)) {
+        const path = typeof e.composedPath === "function" ? e.composedPath() : [];
+        if (!path.includes($langDropdown)) {
           closeDropdown($langDropdown);
         }
       };
@@ -4137,7 +5292,7 @@
     "letter-spacing": "letterSpacing",
     "line-height": "lineHeight",
     "font-weight": "fontWeight",
-    "align-left": "alignLeft"
+    "text-align": "textAlign"
   };
   var COLOR_KEY_MAP = {
     "dark-contrast": "darkContrast",
@@ -4182,7 +5337,12 @@
     const contrastElement = $menu2.querySelector(".contrast");
     const profilesElement = $menu2.querySelector(".profiles");
     const visibleContent = filterByModule(ContentButtons_default, pluginConfig.modules?.content, CONTENT_KEY_MAP);
-    const visibleTools = filterByModule(TOOL_PRESETS_default, pluginConfig.modules?.navigation, NAV_KEY_MAP);
+    const visibleToolsRaw = filterByModule(TOOL_PRESETS_default, pluginConfig.modules?.navigation, NAV_KEY_MAP);
+    const visibleTools = visibleToolsRaw.filter((btn) => {
+      if (btn.key === "page-read" && pluginConfig.modules?.pageRead?.enabled === false) return false;
+      if (btn.key === "mute-sounds" && pluginConfig.modules?.muteSounds?.enabled === false) return false;
+      return true;
+    });
     const visibleFilters = filterByModule(FilterButtons_default, pluginConfig.modules?.color, COLOR_KEY_MAP);
     if (contentElement) {
       if (visibleContent.length > 0) {
@@ -4212,13 +5372,14 @@
       );
     }
     const $profileCard = $menu2.querySelector(".cya11y-profile-card");
+    const $profileTitleContainer = $menu2.querySelector(".cya11y-profile-title-container");
     const $profileTitle = $menu2.querySelector(".cya11y-profile-title");
     const $profileItems = $menu2.querySelector(".cya11y-profile-items");
     if ($profileItems) {
       $profileItems.style.display = "none";
     }
-    if ($profileTitle) {
-      $profileTitle.addEventListener("click", () => {
+    if ($profileTitleContainer && $profileTitle) {
+      $profileTitleContainer.addEventListener("click", () => {
         const $profileItems2 = $menu2.querySelector(".cya11y-profile-items");
         const isExpanded = $profileItems2.style.display !== "none";
         $profileItems2.style.display = isExpanded ? "none" : "grid";
@@ -4227,7 +5388,9 @@
         announceToScreenReader(isExpanded ? "Accessibility profiles collapsed" : "Accessibility profiles expanded");
       });
     }
-    $profileCard.remove();
+    if (pluginConfig.modules?.profiles?.enabled === false) {
+      $profileCard.remove();
+    }
     const states = userSettings?.states;
     const fontSize = Number(states?.fontSize) || 1;
     if (fontSize != 1) {
@@ -4237,6 +5400,18 @@
       }
     }
     selectButtons($menu2);
+    const $textAlignBtn = $menu2.querySelector(".cya11y-text-align");
+    if ($textAlignBtn) {
+      const ta = states?.["text-align"] || false;
+      $textAlignBtn.dataset.state = ta || "off";
+      const taLabelKey = ta === "left" ? "Align Left" : ta === "center" ? "Align Center" : ta === "right" ? "Align Right" : "Text Align";
+      const $taLabel = $textAlignBtn.querySelector(".cya11y-translate");
+      if ($taLabel) {
+        $taLabel.textContent = taLabelKey;
+        $taLabel.innerHTML = t(taLabelKey);
+      }
+      $textAlignBtn.setAttribute("title", t(taLabelKey));
+    }
     renderLanguageDropdown($menu2);
     const $statementLink = $container.querySelector(".cya11y-accessibility-statement-link");
     const statementModule = pluginConfig.modules.statement;
@@ -4315,6 +5490,31 @@
         const key = element.dataset.key;
         if (!key) return;
         const isSelected = !element.classList.contains("cya11y-selected");
+        if (key === "text-align") {
+          const cycle = [false, "left", "center", "right"];
+          const current = userSettings.states["text-align"] || false;
+          const next = cycle[(cycle.indexOf(current) + 1) % cycle.length];
+          userSettings.states["text-align"] = next;
+          element.dataset.state = next || "off";
+          const labelKey = next === "left" ? "Align Left" : next === "center" ? "Align Center" : next === "right" ? "Align Right" : "Text Align";
+          const labelEl = element.querySelector(".cya11y-translate");
+          if (labelEl) {
+            labelEl.textContent = labelKey;
+            labelEl.innerHTML = t(labelKey);
+          }
+          element.setAttribute("title", t(labelKey));
+          if (next) {
+            element.classList.add("cya11y-selected");
+            updateButtonAriaState(element, true);
+          } else {
+            element.classList.remove("cya11y-selected");
+            updateButtonAriaState(element, false);
+          }
+          renderTools();
+          saveUserSettings();
+          announceToScreenReader(next ? `Text alignment: ${next}` : "Text alignment cleared");
+          return;
+        }
         if (element.classList.contains("cya11y-filter")) {
           $menu2.querySelectorAll(".cya11y-filter").forEach((el2) => {
             const filterElement = el2;
@@ -4590,11 +5790,17 @@
       $widget.style.setProperty("--cya11y-size", `${pluginConfig.iconSize}px`);
       const contrastWithWhite = getContrastRatio(pluginConfig.primaryColor, "#ffffff");
       const primaryVisibleOnWhite = contrastWithWhite >= 3;
-      $widget.style.setProperty("--cya11y-focus-color-on-primary", primaryVisibleOnWhite ? "#ffffff" : "#000000");
+      const customFocusRing = pluginConfig.focusRingColor;
+      $widget.style.setProperty(
+        "--cya11y-focus-color-on-primary",
+        customFocusRing || (primaryVisibleOnWhite ? "#ffffff" : "#000000")
+      );
       $widget.style.setProperty("--cya11y-focus-color-on-white", primaryVisibleOnWhite ? pluginConfig.primaryColor : "#000000");
-      $widget.style.setProperty("--cya11y-focus-ring-color", primaryVisibleOnWhite ? pluginConfig.primaryColor : "#000000");
-      const rgb = hexToRgb(pluginConfig.primaryColor);
-      const shadowColor = primaryVisibleOnWhite && rgb ? `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.14)` : "rgba(0, 0, 0, 0.14)";
+      const focusRingColor = customFocusRing || (primaryVisibleOnWhite ? pluginConfig.primaryColor : "#000000");
+      $widget.style.setProperty("--cya11y-focus-ring-color", focusRingColor);
+      const shadowSourceColor = customFocusRing || pluginConfig.primaryColor;
+      const rgb = hexToRgb(shadowSourceColor);
+      const shadowColor = rgb && (customFocusRing || primaryVisibleOnWhite) ? `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.14)` : "rgba(0, 0, 0, 0.14)";
       $widget.style.setProperty("--cya11y-shadow-focus", `0px 0px 0px 6px ${shadowColor}`);
       const $btn = $widget.querySelector(".cya11y-menu-btn");
       const $icon = $widget.querySelector(".cya11y-widget-icon");
@@ -4713,7 +5919,7 @@
         console.warn("HTML element not found, cannot observe lang attribute");
         return;
       }
-      const observer = new MutationObserver((mutations) => {
+      const observer2 = new MutationObserver((mutations) => {
         try {
           for (const mutation of mutations) {
             if (mutation.type === "attributes" && mutation.attributeName === "lang") {
@@ -4725,11 +5931,11 @@
           console.error("Error handling lang attribute mutation:", error);
         }
       });
-      observer.observe(htmlElement, {
+      observer2.observe(htmlElement, {
         attributes: true,
         attributeFilter: ["lang"]
       });
-      window.__cya11y__langObserver = observer;
+      window.__cya11y__langObserver = observer2;
     } catch (error) {
       console.error("Failed to observe HTML lang attribute:", error);
     }
