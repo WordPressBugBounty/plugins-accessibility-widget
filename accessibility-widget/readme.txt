@@ -4,7 +4,7 @@ Tags: web accessibility, wp accessibility, accessibility widget, accessibility t
 Requires at least: 5.0.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 3.2.1
+Stable tag: 3.2.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -108,6 +108,10 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Changelog ==
 
+= 3.2.2 2026-05-21 =
+
+[Fix] - Admin settings UI conflict with other plugins declaring `React` globally.
+
 = 3.2.1 2026-05-06 =
 
 [Add] - Accessibility profile feature.
@@ -200,9 +204,6 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Upgrade Notice ==
 
-= 3.2.1 2026-05-06 =
+= 3.2.2 2026-05-21 =
 
-[Add] - Add accessibility profile feature.
-[Add] - Add screen reader and mute sound features.
-[Enhancement] - Improve the low sturation and text alignment features.
-[Compatibility] - Tested OK with WordPress version 7.0.
+[Fix] - Admin settings UI conflict with other plugins declaring `React` globally.
