@@ -491,16 +491,16 @@
     top: 50%;
   }
 
+  .cy\:top-3 {
+    top: calc(var(--cy-spacing) * 3);
+  }
+
   .cy\:top-3\.5 {
     top: calc(var(--cy-spacing) * 3.5);
   }
 
   .cy\:top-4 {
     top: calc(var(--cy-spacing) * 4);
-  }
-
-  .cy\:top-6 {
-    top: calc(var(--cy-spacing) * 6);
   }
 
   .cy\:top-14 {
@@ -2152,8 +2152,14 @@
     background-color: #0000;
   }
 
-  .cy\:bg-white {
+  .cy\:bg-white, .cy\:bg-white\/10 {
     background-color: var(--cy-color-white);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .cy\:bg-white\/10 {
+      background-color: color-mix(in oklab, var(--cy-color-white) 10%, transparent);
+    }
   }
 
   .cy\:bg-gradient-to-br {
@@ -2595,20 +2601,16 @@
     color: #7e7e7e;
   }
 
-  .cy\:text-\[\#756f6f\] {
-    color: #756f6f;
-  }
-
-  .cy\:text-\[\#1578F7\] {
-    color: #1578f7;
-  }
-
   .cy\:text-\[\#1863DC\] {
     color: #1863dc;
   }
 
   .cy\:text-\[\#535276\] {
     color: #535276;
+  }
+
+  .cy\:text-\[\#797676\] {
+    color: #797676;
   }
 
   .cy\:text-accent-foreground {
@@ -3397,6 +3399,16 @@
     @supports (color: color-mix(in lab, red, red)) {
       .cy\:hover\:bg-white\/10:hover {
         background-color: color-mix(in oklab, var(--cy-color-white) 10%, transparent);
+      }
+    }
+
+    .cy\:hover\:bg-white\/20:hover {
+      background-color: var(--cy-color-white);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .cy\:hover\:bg-white\/20:hover {
+        background-color: color-mix(in oklab, var(--cy-color-white) 20%, transparent);
       }
     }
 

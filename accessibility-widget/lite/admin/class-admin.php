@@ -155,7 +155,9 @@ class Admin {
 	 * @since    3.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'app/dist/assets/index.css', array(), $this->version );
+		$css_path = plugin_dir_path( __FILE__ ) . 'app/dist/assets/index.css';
+		$css_ver  = file_exists( $css_path ) ? (string) filemtime( $css_path ) : $this->version;
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'app/dist/assets/index.css', array(), $css_ver );
 	}
 
 	/**
@@ -164,7 +166,9 @@ class Admin {
 	 * @since    3.0.0
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( $this->plugin_name . '-app', plugin_dir_url( __FILE__ ) . 'app/dist/assets/index.js', array( 'wp-i18n' ), $this->version, true );
+		$js_path = plugin_dir_path( __FILE__ ) . 'app/dist/assets/index.js';
+		$js_ver  = file_exists( $js_path ) ? (string) filemtime( $js_path ) : $this->version;
+		wp_enqueue_script( $this->plugin_name . '-app', plugin_dir_url( __FILE__ ) . 'app/dist/assets/index.js', array( 'wp-i18n' ), $js_ver, true );
 
 		// Primary: Inject translations from the MO file directly as an inline script.
 		// This is more reliable than wp_set_script_translations because it does not

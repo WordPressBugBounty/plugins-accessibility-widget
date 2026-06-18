@@ -1,10 +1,10 @@
 === AccessiYes Accessibility Widget for ADA, EAA & WCAG Readiness ===
-Contributors: cookieyesdev
+Contributors: cookieyesdev, webtoffee
 Tags: web accessibility, wp accessibility, accessibility widget, accessibility toolbar, accessibility overlay
 Requires at least: 5.0.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 3.2.2
+Stable tag: 3.2.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -108,6 +108,10 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Changelog ==
 
+= 3.2.3 2026-06-18 =
+
+[Add] - Additional widget language support: Simplified Chinese and Traditional Chinese.
+
 = 3.2.2 2026-05-21 =
 
 [Fix] - Admin settings UI conflict with other plugins declaring `React` globally.
@@ -204,6 +208,7 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Upgrade Notice ==
 
-= 3.2.2 2026-05-21 =
+= 3.2.3 2026-06-18 =
 
-[Fix] - Admin settings UI conflict with other plugins declaring `React` globally.
+[Add] - Additional widget language support: Simplified Chinese and Traditional Chinese.
+

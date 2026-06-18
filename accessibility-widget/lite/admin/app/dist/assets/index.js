@@ -21463,9 +21463,9 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             {
               onClick: handleClose,
               disabled: isClosing,
-              className: "cy:absolute cy:top-6 cy:right-4 cy:z-50 cy:p-1 cy:text-white/70 cy:hover:text-white cy:hover:bg-white/10 cy:rounded-full cy:transition-colors cy:disabled:opacity-50 cy:disabled:cursor-not-allowed",
+              className: "cy:absolute cy:top-3 cy:right-3 cy:z-50 cy:p-1 cy:cursor-pointer cy:text-white cy:bg-white/10 cy:hover:bg-white/20 cy:rounded-full cy:transition-colors cy:disabled:opacity-50 cy:disabled:cursor-not-allowed",
               "aria-label": __$1("Dismiss banner", "accessibility-widget"),
-              children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 24 })
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 24, strokeWidth: 2.75 })
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:w-[60%] cy:p-8 cy:flex cy:flex-col cy:relative cy:z-10", children: [
@@ -21568,7 +21568,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
         "button",
         {
           onClick: hideTemporarily,
-          className: "cy:absolute cy:right-4 cy:top-4 cy:flex cy:h-8 cy:w-8 cy:items-center cy:justify-center cy:rounded-full cy:text-[#7e7e7e] cy:transition-colors hover:cy:bg-black/5 hover:cy:text-[#555d66]",
+          className: "cy:absolute cy:right-4 cy:top-4 cy:flex cy:h-8 cy:w-8 cy:cursor-pointer cy:items-center cy:justify-center cy:rounded-full cy:text-[#7e7e7e] cy:transition-colors hover:cy:bg-black/5 hover:cy:text-[#555d66]",
           "aria-label": __$1("Dismiss review banner", "accessibility-widget"),
           type: "button",
           children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 18 })
@@ -21606,7 +21606,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               type: "button",
               variant: "outline",
               onClick: hidePermanently,
-              className: "cy:h-8 cy:min-w-[124px] cy:rounded-[3px] cy:border-[#baafaf] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-[#756f6f] cy:opacity-50 hover:cy:bg-[#f6f7f7]",
+              className: "cy:h-8 cy:min-w-[124px] cy:rounded-[3px] cy:border-[#baafaf] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:text-[#797676] hover:cy:bg-[#f6f7f7]",
               children: __$1("Never show again", "accessibility-widget")
             }
           )
@@ -25515,7 +25515,10 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
     { code: "pt", label: "Português (Portuguese)" },
     { code: "ro", label: "Română (Romanian)" },
     { code: "ru", label: "Русский (Russian)" },
+    { code: "si", label: "සිංහල (Sinhala)" },
     { code: "sk", label: "slovenčina (Slovak)" },
+    { code: "sl", label: "slovenščina (Slovenian)" },
+    { code: "sr", label: "Srpski (Serbian)" },
     { code: "sv", label: "Svenska (Swedish)" },
     { code: "sw", label: "Kiswahili (Swahili)" },
     { code: "ta", label: "தமிழ் (Tamil)" },
@@ -25538,11 +25541,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
       /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "cy:w-[296px] cy:rounded cy:py-5.5 cy:shadow-none cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: __$1("Select Language", "accessibility-widget") }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContent, { className: "cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectGroup, { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(SelectLabel, { children: __$1("Languages", "accessibility-widget") }),
-        LANGUAGES.map((lang) => /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: lang.code, className: "cy:text-base!", children: lang.code === defaultLanguage ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-          lang.label,
-          " ",
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[#1578F7]", children: __$1("Default", "accessibility-widget") })
-        ] }) : lang.label }, lang.code))
+        LANGUAGES.map((lang) => /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: lang.code, className: "cy:text-base!", children: lang.label }, lang.code))
       ] }) })
     ] });
   }
@@ -28920,7 +28919,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "a",
             {
-              href: "https://wordpress.org/",
+              href: "https://wordpress.org/support/plugin/accessibility-widget/reviews/#new-post",
               target: "_blank",
               rel: "noopener noreferrer",
               className: "cy:text-[#1863DC] cy:no-underline hover:cy:underline",

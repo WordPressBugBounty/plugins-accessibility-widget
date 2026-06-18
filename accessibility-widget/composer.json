@@ -24,6 +24,10 @@
         {
             "name": "CookieYes",
             "email": "info@cookieyes.com"
+        },
+        {
+            "name": "WebToffee",
+            "homepage": "https://www.webtoffee.com/"
         }
     ],
     "require": {},
