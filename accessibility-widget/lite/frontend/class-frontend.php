@@ -141,8 +141,13 @@ class Frontend {
 	 * @return void
 	 */
 	public function enqueue_scripts() {
-		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/js/widget' . $suffix . '.js', array(), $this->version, true );
+		$suffix      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+		$widget_file = 'assets/js/widget' . $suffix . '.js';
+		$widget_path = plugin_dir_path( __FILE__ ) . $widget_file;
+		// Version by file mtime so a rebuilt bundle always busts the browser cache;
+		// a static plugin version would keep serving stale JS after an update.
+		$widget_ver = file_exists( $widget_path ) ? filemtime( $widget_path ) : $this->version;
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . $widget_file, array(), $widget_ver, true );
 		wp_localize_script( $this->plugin_name, '_cyA11yConfig', $this->get_store_data() );
 		wp_localize_script(
 			$this->plugin_name,

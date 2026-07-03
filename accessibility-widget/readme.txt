@@ -4,7 +4,7 @@ Tags: web accessibility, wp accessibility, accessibility widget, accessibility t
 Requires at least: 5.0.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 3.2.3
+Stable tag: 3.2.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -108,6 +108,11 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Changelog ==
 
+= 3.2.4 2026-06-30 =
+
+[Fix] - Pause Animations now also stops animated GIFs and autoplaying videos, not just CSS animations.
+[Fix] - Reading Guide no longer leaves a fixed dark overlay on mobile/touch devices; the reading band can be repositioned by tapping a line or dragging the handle.
+
 = 3.2.3 2026-06-18 =
 
 [Add] - Additional widget language support: Simplified Chinese and Traditional Chinese.
@@ -208,7 +213,7 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Upgrade Notice ==
 
-= 3.2.3 2026-06-18 =
+= 3.2.4 2026-06-30 =
 
-[Add] - Additional widget language support: Simplified Chinese and Traditional Chinese.
-
+[Fix] - Pause Animations now also stops animated GIFs and autoplaying videos, not just CSS animations.
+[Fix] - Reading Guide no longer leaves a fixed dark overlay on mobile/touch devices; the reading band can be repositioned by tapping a line or dragging the handle.
