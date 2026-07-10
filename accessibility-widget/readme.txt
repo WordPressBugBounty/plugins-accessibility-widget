@@ -4,7 +4,7 @@ Tags: web accessibility, wp accessibility, accessibility widget, accessibility t
 Requires at least: 5.0.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 3.2.4
+Stable tag: 3.2.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -107,6 +107,11 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 5. Customise individual accessibility features for front-end users.
 
 == Changelog ==
+
+= 3.2.5 2026-07-09 =
+
+[Fix] - Page reader now reads content on click and keyboard focus, in addition to text selection.
+[Fix] - Updated and corrected widget translations across all supported languages.
 
 = 3.2.4 2026-06-30 =
 
@@ -213,7 +218,7 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Upgrade Notice ==
 
-= 3.2.4 2026-06-30 =
+= 3.2.5 2026-07-09 =
 
-[Fix] - Pause Animations now also stops animated GIFs and autoplaying videos, not just CSS animations.
-[Fix] - Reading Guide no longer leaves a fixed dark overlay on mobile/touch devices; the reading band can be repositioned by tapping a line or dragging the handle.
+[Fix] - Page reader now reads content on click and keyboard focus, in addition to text selection.
+[Fix] - Updated and corrected widget translations across all supported languages.
