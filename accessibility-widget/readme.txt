@@ -4,7 +4,7 @@ Tags: web accessibility, wp accessibility, accessibility widget, accessibility t
 Requires at least: 5.0.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 3.2.5
+Stable tag: 3.2.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -107,6 +107,13 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 5. Customise individual accessibility features for front-end users.
 
 == Changelog ==
+
+= 3.2.6 2026-08-24 =
+
+[Add] - Renamed widget menu categories for clarity
+[Enhancement] - Improved color contrast in the widget's dark and light themes.
+[Fix] - Widget aria-labels are now translatable.
+[Fix] - Fixed translation function issue in the settings dashboard, backend strings can now be translated using translation plugins.
 
 = 3.2.5 2026-07-09 =
 
@@ -218,7 +225,9 @@ Yes. From the Modules tab in the plugin settings, you can enable or disable indi
 
 == Upgrade Notice ==
 
-= 3.2.5 2026-07-09 =
+= 3.2.6 2026-08-24 =
 
-[Fix] - Page reader now reads content on click and keyboard focus, in addition to text selection.
-[Fix] - Updated and corrected widget translations across all supported languages.
+[Add] - Renamed widget menu categories for clarity
+[Enhancement] - Improved color contrast in the widget's dark and light themes.
+[Fix] - Widget aria-labels are now translatable.
+[Fix] - Fixed translation function issue in the settings dashboard, backend strings can now be translated using translation plugins.

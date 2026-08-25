@@ -148,7 +148,8 @@ class Frontend {
 		// a static plugin version would keep serving stale JS after an update.
 		$widget_ver = file_exists( $widget_path ) ? filemtime( $widget_path ) : $this->version;
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . $widget_file, array(), $widget_ver, true );
-		wp_localize_script( $this->plugin_name, '_cyA11yConfig', $this->get_store_data() );
+		$config = $this->get_store_data();
+		wp_localize_script( $this->plugin_name, '_cyA11yConfig', $config );
 		wp_localize_script(
 			$this->plugin_name,
 			'_cyA11yAssets',
@@ -156,7 +157,14 @@ class Frontend {
 				'fonts' => plugin_dir_url( __FILE__ ) . 'assets/fonts/',
 			)
 		);
-		wp_localize_script( $this->plugin_name, '_cyA11yStatementTemplates', $this->get_statement_templates() );
+		// The statement templates (~140 KB inline, all languages) are only consumed
+		// by the in-widget statement panel, which the widget renders only when
+		// displayInWidget is on and a company name exists (renderMenu.ts). Sites
+		// using an external statement URL never read them, so skip the payload.
+		$statement = isset( $config['modules']['statement'] ) ? $config['modules']['statement'] : array();
+		if ( ! empty( $statement['displayInWidget'] ) && ! empty( $statement['formData']['companyName'] ) ) {
+			wp_localize_script( $this->plugin_name, '_cyA11yStatementTemplates', $this->get_statement_templates() );
+		}
 	}
 
 	/**

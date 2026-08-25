@@ -16,12 +16,13 @@
  * Plugin Name:       AccessiYes Accessibility Widget for ADA, EAA & WCAG Readiness
  * Plugin URI:        https://www.cookieyes.com/accessibility-widget/
  * Description:       A simple way to make your website more accessible.
- * Version:           3.2.5
+ * Version:           3.2.6
  * Author:            CookieYes
  * Author URI:        https://www.cookieyes.com/
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain:       accessibility-widget
+ * Domain Path:       /languages
  */
 
 /*
@@ -46,13 +47,24 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'CY_A11Y_VERSION', '3.2.5' );
+define( 'CY_A11Y_VERSION', '3.2.6' );
 define( 'CY_A11Y_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'CY_A11Y_PLUGIN_BASEPATH', plugin_dir_path( __FILE__ ) );
 // Previous version settings (deprecated from 0.9 onwards).
 define( 'CY_A11Y_PLUGIN_FILENAME', __FILE__ );
 define( 'CY_A11Y_DEFAULT_LANGUAGE', cya11y_set_default_language() );
 
+
+/**
+ * Load the plugin textdomain so translations bundled in /languages (or added
+ * via Loco Translate, WPML, Poedit, etc.) are picked up. Language packs from
+ * translate.wordpress.org load automatically, but locally stored .mo files
+ * require this call.
+ */
+function cya11y_load_textdomain() {
+	load_plugin_textdomain( 'accessibility-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+}
+add_action( 'init', 'cya11y_load_textdomain' );
 
 function cya11y_set_default_language() {
 	$default = get_option( 'WPLANG', 'en_US' );

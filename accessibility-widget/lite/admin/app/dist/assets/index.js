@@ -12111,10 +12111,24 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
     var _a2;
     return (_a2 = window == null ? void 0 : window.wp) == null ? void 0 : _a2.i18n;
   }
-  function __$1(text, domain) {
-    var _a2, _b2;
-    return ((_b2 = (_a2 = wpI18n()) == null ? void 0 : _a2.__) == null ? void 0 : _b2.call(_a2, text, domain)) ?? text;
-  }
+  const i18n$1 = {
+    __(text, domain) {
+      var _a2, _b2;
+      return ((_b2 = (_a2 = wpI18n()) == null ? void 0 : _a2.__) == null ? void 0 : _b2.call(_a2, text, domain)) ?? text;
+    },
+    _n(single, plural, count2, domain) {
+      var _a2, _b2;
+      return ((_b2 = (_a2 = wpI18n()) == null ? void 0 : _a2._n) == null ? void 0 : _b2.call(_a2, single, plural, count2, domain)) ?? (count2 === 1 ? single : plural);
+    },
+    _x(text, context, domain) {
+      var _a2, _b2;
+      return ((_b2 = (_a2 = wpI18n()) == null ? void 0 : _a2._x) == null ? void 0 : _b2.call(_a2, text, context, domain)) ?? text;
+    },
+    sprintf(format, ...args) {
+      var _a2, _b2;
+      return ((_b2 = (_a2 = wpI18n()) == null ? void 0 : _a2.sprintf) == null ? void 0 : _b2.call(_a2, format, ...args)) ?? format;
+    }
+  };
   function composeEventHandlers(originalEventHandler, ourEventHandler, { checkForDefaultPrevented = true } = {}) {
     return function handleEvent(event) {
       originalEventHandler == null ? void 0 : originalEventHandler(event);
@@ -21464,17 +21478,17 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               onClick: handleClose,
               disabled: isClosing,
               className: "cy:absolute cy:top-3 cy:right-3 cy:z-50 cy:p-1 cy:cursor-pointer cy:text-white cy:bg-white/10 cy:hover:bg-white/20 cy:rounded-full cy:transition-colors cy:disabled:opacity-50 cy:disabled:cursor-not-allowed",
-              "aria-label": __$1("Dismiss banner", "accessibility-widget"),
+              "aria-label": i18n$1.__("Dismiss banner", "accessibility-widget"),
               children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 24, strokeWidth: 2.75 })
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:w-[60%] cy:p-8 cy:flex cy:flex-col cy:relative cy:z-10", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-[12px]", children: __$1("Sponsored recommendation", "accessibility-widget") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-[18px] cy:font-bold cy:text-white!", children: __$1("Beyond Widgets. Continue Your Accessibility Journey.", "accessibility-widget") }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-[12px]", children: i18n$1.__("Sponsored recommendation", "accessibility-widget") }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-[18px] cy:font-bold cy:text-white!", children: i18n$1.__("Beyond Widgets. Continue Your Accessibility Journey.", "accessibility-widget") }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-white cy:pb-4 cy:pr-10 cy:text-[14px] cy:leading-relaxed", children: [
-              __$1("You have taken the first step towards accessibility. Now level up with deeper audits, ongoing monitoring for accessibility issues, and detailed reporting with AI-assisted solutions.", "accessibility-widget"),
+              i18n$1.__("You have taken the first step towards accessibility. Now level up with deeper audits, ongoing monitoring for accessibility issues, and detailed reporting with AI-assisted solutions.", "accessibility-widget"),
               /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-              __$1("Explore WebYes. One platform, better fixes.", "accessibility-widget")
+              i18n$1.__("Explore WebYes. One platform, better fixes.", "accessibility-widget")
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               Button,
@@ -21482,7 +21496,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
                 onClick: () => window.open(scanUrl, "_blank", "noopener,noreferrer"),
                 className: "cy:self-start cy:bg-white cy:text-[#0B66E4] cy:hover:bg-white/90 cy:font-bold! cy:px-6 cy:py-5 cy:rounded-md cy:flex cy:items-center cy:gap-2 cy:text-[16px]",
                 children: [
-                  __$1("Run a scan with WebYes", "accessibility-widget"),
+                  i18n$1.__("Run a scan with WebYes", "accessibility-widget"),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { size: 16 })
                 ]
               }
@@ -21569,7 +21583,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
         {
           onClick: hideTemporarily,
           className: "cy:absolute cy:right-4 cy:top-4 cy:flex cy:h-8 cy:w-8 cy:cursor-pointer cy:items-center cy:justify-center cy:rounded-full cy:text-[#7e7e7e] cy:transition-colors hover:cy:bg-black/5 hover:cy:text-[#555d66]",
-          "aria-label": __$1("Dismiss review banner", "accessibility-widget"),
+          "aria-label": i18n$1.__("Dismiss review banner", "accessibility-widget"),
           type: "button",
           children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 18 })
         }
@@ -21584,11 +21598,11 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:mb-3 cy:text-[14px] cy:font-[400] cy:leading-5 cy:text-[#000000] cy:pb-3 cy:pt-1", children: [
-          __$1("Hey, we at", "accessibility-widget"),
+          i18n$1.__("Hey, we at", "accessibility-widget"),
           " ",
           /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "AccessiYes" }),
           " ",
-          __$1("would like to thank you for using our plugin. We would really appreciate if you could take a moment to drop a quick review that will inspire us to keep going.", "accessibility-widget")
+          i18n$1.__("would like to thank you for using our plugin. We would really appreciate if you could take a moment to drop a quick review that will inspire us to keep going.", "accessibility-widget")
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-wrap cy:gap-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -21597,7 +21611,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               type: "button",
               onClick: handleReviewNow,
               className: "cy:h-8 cy:min-w-[94px] cy:rounded-[3px] cy:bg-[#1578F7] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:font-bold! cy:text-white hover:cy:bg-[#1558c7]",
-              children: __$1("Review now", "accessibility-widget")
+              children: i18n$1.__("Review now", "accessibility-widget")
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -21607,7 +21621,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               variant: "outline",
               onClick: hidePermanently,
               className: "cy:h-8 cy:min-w-[124px] cy:rounded-[3px] cy:border-[#baafaf] cy:px-[14px] cy:py-2 cy:text-[14px]! cy:text-[#797676] hover:cy:bg-[#f6f7f7]",
-              children: __$1("Never show again", "accessibility-widget")
+              children: i18n$1.__("Never show again", "accessibility-widget")
             }
           )
         ] })
@@ -21679,16 +21693,16 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
           style: { boxShadow: "0px 16px 24px 0px rgba(33,15,111,0.37)" },
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:w-6 cy:h-6 cy:bg-[#0B66E4] cy:rounded-full cy:flex cy:items-center cy:justify-center cy:shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(AccessibilityIcon, {}) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-zinc-800 cy:text-xs cy:font-medium cy:leading-4 cy:whitespace-nowrap", children: __$1("Accessibility Expert", "accessibility-widget") })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-zinc-800 cy:text-xs cy:font-medium cy:leading-4 cy:whitespace-nowrap", children: i18n$1.__("Accessibility Expert", "accessibility-widget") })
           ]
         }
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-1 cy:items-center cy:justify-between cy:gap-4 cy:min-w-0", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:justify-center cy:items-start cy:gap-1.5 cy:min-w-0", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-xl cy:font-bold cy:leading-8 cy:text-white", children: __$1("You've unlocked a free 45-min accessibility consultation!", "accessibility-widget") }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-xl cy:font-bold cy:leading-8 cy:text-white", children: i18n$1.__("You've unlocked a free 45-min accessibility consultation!", "accessibility-widget") }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-sm cy:font-normal cy:leading-5", children: __$1("Get a live site review + a clear, prioritised plan for ", "accessibility-widget") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-sm cy:font-bold cy:leading-5", children: __$1("WCAG 2.2, ADA & EAA.", "accessibility-widget") })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-sm cy:font-normal cy:leading-5", children: i18n$1.__("Get a live site review + a clear, prioritised plan for ", "accessibility-widget") }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-white cy:text-sm cy:font-bold cy:leading-5", children: i18n$1.__("WCAG 2.2, ADA & EAA.", "accessibility-widget") })
           ] })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -21698,8 +21712,8 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             onClick: () => window.open(WEBYES_CONSULTATION_URL, "_blank", "noopener,noreferrer"),
             className: "cy:px-9 cy:py-3 cy:bg-white cy:rounded cy:inline-flex cy:justify-center cy:items-center cy:gap-2.5 cy:text-[#0B66E4] cy:text-base cy:font-bold! cy:leading-6 cy:hover:bg-white/90",
             children: [
-              __$1("Book a call", "accessibility-widget"),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:sr-only", children: __$1("(opens in a new tab)", "accessibility-widget") })
+              i18n$1.__("Book a call", "accessibility-widget"),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:sr-only", children: i18n$1.__("(opens in a new tab)", "accessibility-widget") })
             ]
           }
         ) })
@@ -21711,7 +21725,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
           onClick: handleClose,
           disabled: isClosing,
           className: "cy:w-6 cy:h-6 cy:absolute cy:top-[9px] cy:right-[9px] cy:z-50 cy:flex cy:items-center cy:justify-center cy:text-white/70 cy:hover:text-white cy:transition-colors cy:rounded-full cy:hover:bg-white/10 cy:disabled:opacity-50 cy:disabled:cursor-not-allowed",
-          "aria-label": __$1("Dismiss banner", "accessibility-widget"),
+          "aria-label": i18n$1.__("Dismiss banner", "accessibility-widget"),
           type: "button",
           children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { size: 16 })
         }
@@ -22862,12 +22876,12 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
           status: newStatus
         });
         toast2({
-          title: !isEnabled ? __$1("Widget enabled successfully", "accessibility-widget") : __$1("Widget disabled successfully", "accessibility-widget"),
+          title: !isEnabled ? i18n$1.__("Widget enabled successfully", "accessibility-widget") : i18n$1.__("Widget disabled successfully", "accessibility-widget"),
           variant: "success"
         });
       } catch {
         toast2({
-          title: __$1("Failed to save changes", "accessibility-widget"),
+          title: i18n$1.__("Failed to save changes", "accessibility-widget"),
           variant: "destructive"
         });
         setStatus(status);
@@ -22880,10 +22894,10 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:space-x-12", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:bg-[#00000045] cy:rounded-lg cy:px-4 cy:py-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:mr-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-white", children: __$1("Widget status", "accessibility-widget") }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-white", children: i18n$1.__("Widget status", "accessibility-widget") }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:space-x-2", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `cy:w-5 cy:h-5 cy:rounded-full cy:flex cy:items-center cy:justify-center ${isEnabled ? "cy:bg-[#2DAD70]" : "cy:bg-[#DD425A]"}`, children: isEnabled ? /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "cy:w-3.5 cy:h-3.5 cy:text-white" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "cy:w-3.5 cy:h-3.5 cy:text-white" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-base cy:font-medium cy:text-white", children: isEnabled ? __$1("Enabled", "accessibility-widget") : __$1("Disabled", "accessibility-widget") })
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-base cy:font-medium cy:text-white", children: isEnabled ? i18n$1.__("Enabled", "accessibility-widget") : i18n$1.__("Disabled", "accessibility-widget") })
             ] })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -22913,7 +22927,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(LifeBuoy, { className: "cy:h-4 cy:w-4" }),
               " ",
-              __$1("Help", "accessibility-widget")
+              i18n$1.__("Help", "accessibility-widget")
             ]
           }
         )
@@ -23044,7 +23058,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
     const iconId = useWidgetStore((state) => state.config.iconId);
     const setIconId = useWidgetStore((state) => state.setIconId);
     return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: __$1("Shape", "accessibility-widget") }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: i18n$1.__("Shape", "accessibility-widget") }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex-1 cy:space-x-2", children: ICON_LIBRARY.map((iconItem) => {
         const IconComponent = iconItem.icon;
         return /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -23149,7 +23163,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             {
               type: "button",
               className: "cy:w-10 cy:h-10 cy:rounded-full cy:border-4 cy:border-[#E3E6F0] cy:flex cy:items-center cy:justify-center cy:bg-[#ECF3FC]",
-              "aria-label": __$1("Pick custom color", "accessibility-widget"),
+              "aria-label": i18n$1.__("Pick custom color", "accessibility-widget"),
               onClick: handleEyedropperClick,
               children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pipette, { className: "cy:w-4 cy:h-4 text-[#4E4B66]" })
             }
@@ -23161,12 +23175,12 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               type: "color",
               className: "cy:absolute cy:top-0 cy:left-0 cy:w-0 cy:h-0",
               onChange: handleColorChange,
-              "aria-label": __$1("Color picker", "accessibility-widget")
+              "aria-label": i18n$1.__("Color picker", "accessibility-widget")
             }
           )
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:mt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[10px] cy:text-[#535276]", children: [
-          __$1("Heads up: We recommend checking your colour choice against WCAG AA contrast guidelines to ensure accessibility.", "accessibility-widget"),
+          i18n$1.__("Heads up: We recommend checking your colour choice against WCAG AA contrast guidelines to ensure accessibility.", "accessibility-widget"),
           " ",
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "a",
@@ -23174,7 +23188,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               href: "https://www.wcagcontrastchecker.com/",
               target: "_blank",
               className: "cy:text-blue-600 cy:underline cy:hover:text-blue-800",
-              children: __$1("Check contrast here →", "accessibility-widget")
+              children: i18n$1.__("Check contrast here →", "accessibility-widget")
             }
           )
         ] }) })
@@ -25538,23 +25552,23 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
       setLanguage(language);
     };
     return /* @__PURE__ */ jsxRuntimeExports.jsxs(Select, { value: defaultLanguage, onValueChange: handleLanguageChange, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "cy:w-[296px] cy:rounded cy:py-5.5 cy:shadow-none cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: __$1("Select Language", "accessibility-widget") }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "cy:w-[296px] cy:rounded cy:py-5.5 cy:shadow-none cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: i18n$1.__("Select Language", "accessibility-widget") }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContent, { className: "cy:text-base!", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectGroup, { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(SelectLabel, { children: __$1("Languages", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(SelectLabel, { children: i18n$1.__("Languages", "accessibility-widget") }),
         LANGUAGES.map((lang) => /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: lang.code, className: "cy:text-base!", children: lang.label }, lang.code))
       ] }) })
     ] });
   }
   const SIZES = [
-    { label: "Small", value: 32 },
-    { label: "Medium", value: 48 },
-    { label: "Large", value: 64 }
+    { label: () => i18n$1.__("Small", "accessibility-widget"), value: 32 },
+    { label: () => i18n$1.__("Medium", "accessibility-widget"), value: 48 },
+    { label: () => i18n$1.__("Large", "accessibility-widget"), value: 64 }
   ];
   function SizeSelector() {
     const iconSize = useWidgetStore((state) => state.config.iconSize);
     const setIconSize = useWidgetStore((state) => state.setIconSize);
     return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: __$1("Size", "accessibility-widget") }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:items-center cy:space-x-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { children: i18n$1.__("Size", "accessibility-widget") }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex-1 cy:space-x-2", children: SIZES.map((size2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
         "button",
         {
@@ -25568,21 +25582,21 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
   }
   function getSizeLabel(pixelValue) {
     const found = SIZES.find((size2) => size2.value === pixelValue);
-    return found ? __$1(found.label, "accessibility-widget") : pixelValue + "px";
+    return found ? found.label() : pixelValue + "px";
   }
   function WidgetAppearance() {
     return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-4", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6 cy:pb-6 cy:border-b cy:border-gray-200", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget language", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: i18n$1.__("Widget language", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(LanguageSelector, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:-mt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[10px] cy:text-[#535276]", children: __$1("Note: The widget will appear in the visitor's browser language. If it's not in our supported list, it will show in the language you've selected.", "accessibility-widget") }) })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:-mt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-[10px] cy:text-[#535276]", children: i18n$1.__("Note: The widget will appear in the visitor's browser language. If it's not in our supported list, it will show in the language you've selected.", "accessibility-widget") }) })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6 cy:pb-6 cy:border-b cy:border-gray-200", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget colour", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: i18n$1.__("Widget colour", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(ColorPicker, {})
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6 cy:pb-6 cy:border-b cy:border-gray-200", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget icon", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: i18n$1.__("Widget icon", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(IconSelector, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(SizeSelector, {})
       ] })
@@ -26216,12 +26230,12 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
     const devices = [
       {
         key: "desktop",
-        label: __$1("Desktop", "accessibility-widget"),
+        label: i18n$1.__("Desktop", "accessibility-widget"),
         icon: Monitor
       },
       {
         key: "mobile",
-        label: __$1("Mobile", "accessibility-widget"),
+        label: i18n$1.__("Mobile", "accessibility-widget"),
         icon: Smartphone
       }
     ];
@@ -26263,16 +26277,16 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
                   }
                 ) }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-4 cy:ml-12", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-base", children: __$1("Margin(px)", "accessibility-widget") }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:text-base", children: i18n$1.__("Margin(px)", "accessibility-widget") }),
                   [
-                    { key: "vertical", label: __$1("Vertical", "accessibility-widget") },
-                    { key: "horizontal", label: __$1("Horizontal", "accessibility-widget") }
+                    { key: "vertical", label: i18n$1.__("Vertical", "accessibility-widget") },
+                    { key: "horizontal", label: i18n$1.__("Horizontal", "accessibility-widget") }
                   ].map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-end cy:mb-8 cy:w-[330px]", children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex-1", children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:text-sm", children: [
                         item.label,
                         " ",
-                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-gray-400 cy:text-sm", children: __$1("(Max 80px)", "accessibility-widget") })
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-gray-400 cy:text-sm", children: i18n$1.__("(Max 80px)", "accessibility-widget") })
                       ] }),
                       /* @__PURE__ */ jsxRuntimeExports.jsx(
                         Slider,
@@ -26328,7 +26342,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
   }
   function WidgetPositioning() {
     return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: __$1("Widget position", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "cy:text-lg! cy:font-bold cy:m-0!", children: i18n$1.__("Widget position", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(PositionControls, {})
     ] });
   }
@@ -26729,7 +26743,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             value: "desktop",
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Monitor, { className: "cy:h-4 cy:w-4" }),
-              __$1("Desktop", "accessibility-widget")
+              i18n$1.__("Desktop", "accessibility-widget")
             ]
           }
         ),
@@ -26740,7 +26754,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             value: "mobile",
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(Smartphone, { className: "cy:h-4 cy:w-4" }),
-              __$1("Mobile", "accessibility-widget")
+              i18n$1.__("Mobile", "accessibility-widget")
             ]
           }
         )
@@ -26902,12 +26916,12 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
         setIsPublishing(true);
         await saveWidgetConfig(widgetConfig);
         toast2({
-          title: __$1("Changes published successfully", "accessibility-widget"),
+          title: i18n$1.__("Changes published successfully", "accessibility-widget"),
           variant: "success"
         });
       } catch {
         toast2({
-          title: __$1("Failed to publish changes", "accessibility-widget"),
+          title: i18n$1.__("Failed to publish changes", "accessibility-widget"),
           variant: "destructive"
         });
       } finally {
@@ -26920,15 +26934,15 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
         className: "cy:rounded cy:text-base!",
         onClick: handlePublish,
         disabled: isPublishing,
-        children: isPublishing ? __$1("Applying...", "accessibility-widget") : __$1("Apply changes", "accessibility-widget")
+        children: isPublishing ? i18n$1.__("Applying...", "accessibility-widget") : i18n$1.__("Apply changes", "accessibility-widget")
       }
     );
   };
   const CustomizeTab = () => {
     return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:shadow-none!", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("Widget customisation", "accessibility-widget") }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Set the look and feel of your accessibility widget to align with your website.", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: i18n$1.__("Widget customisation", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: i18n$1.__("Set the look and feel of your accessibility widget to align with your website.", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(CardAction, { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}),
           " "
@@ -27127,8 +27141,8 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
     const effectiveShortcut = formatShortcut(((_a2 = window.cyA11yGlobals) == null ? void 0 : _a2.keyboardShortcut) ?? "alt+a");
     return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("General settings", "accessibility-widget") }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Control your widget's visibility on desktop and mobile devices.", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: i18n$1.__("General settings", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: i18n$1.__("Control your widget's visibility on desktop and mobile devices.", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(CardAction, { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}),
           " "
@@ -27136,16 +27150,16 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:border-b cy:border-gray-200 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-desktop", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: __$1("Enable widget on desktop", "accessibility-widget") }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-desktop", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: i18n$1.__("Enable widget on desktop", "accessibility-widget") }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-desktop", checked: config.status.desktop, onCheckedChange: (checked) => setStatus({ ...config.status, desktop: checked }) })
         ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:border-b cy:border-gray-200 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-mobile", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: __$1("Enable widget on mobile layouts", "accessibility-widget") }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Label$1, { htmlFor: "cy-toggle-widget-mobile", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: i18n$1.__("Enable widget on mobile layouts", "accessibility-widget") }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(Switch, { id: "cy-toggle-widget-mobile", checked: config.status.mobile, onCheckedChange: (checked) => setStatus({ ...config.status, mobile: checked }) })
         ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:flex cy:flex-col cy:gap-4 cy:py-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:space-x-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "cy-keyboard-shortcut-enable", className: "cy:text-base! cy:font-normal! cy:text-foreground!", children: [
-            __$1("Enable keyboard shortcut", "accessibility-widget"),
+            i18n$1.__("Enable keyboard shortcut", "accessibility-widget"),
             " ",
             /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "cy:text-muted-foreground cy:font-normal", children: [
               "(",
@@ -27204,7 +27218,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             "cy:flex cy:items-center cy:justify-center cy:h-7 cy:px-3 cy:rounded-full cy:text-xs cy:font-semibold cy:border cy:flex-shrink-0",
             step === 2 ? "cy:bg-primary cy:text-white cy:border-primary" : "cy:bg-transparent cy:text-muted-foreground cy:border-gray-300"
           ),
-          children: __$1("Conformance status", "accessibility-widget")
+          children: i18n$1.__("Conformance status", "accessibility-widget")
         }
       )
     ] });
@@ -27212,13 +27226,13 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
   function StatementStep1({ step1, onChange, onNext }) {
     const isValid = step1.companyName.trim() !== "" && step1.businessEmail.trim() !== "" && step1.website.trim() !== "";
     return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: __$1("Generate statement", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: i18n$1.__("Generate statement", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mb-6" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stepper, { step: 1 }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-4 cy:max-w-lg", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "company-name", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-            __$1("Company Name", "accessibility-widget"),
+            i18n$1.__("Company Name", "accessibility-widget"),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27227,14 +27241,14 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               id: "company-name",
               value: step1.companyName,
               onChange: (e) => onChange({ ...step1, companyName: e.target.value }),
-              placeholder: __$1("Company Inc.", "accessibility-widget"),
+              placeholder: i18n$1.__("Company Inc.", "accessibility-widget"),
               className: "cy:h-[48px] cy:border! cy:rounded!"
             }
           )
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "business-email", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-            __$1("Business E-mail", "accessibility-widget"),
+            i18n$1.__("Business E-mail", "accessibility-widget"),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27244,14 +27258,14 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               type: "email",
               value: step1.businessEmail,
               onChange: (e) => onChange({ ...step1, businessEmail: e.target.value }),
-              placeholder: __$1("info@company.com", "accessibility-widget"),
+              placeholder: i18n$1.__("info@company.com", "accessibility-widget"),
               className: "cy:h-[48px] cy:border! cy:rounded!"
             }
           )
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1.5", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Label$1, { htmlFor: "website", className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-            __$1("Website", "accessibility-widget"),
+            i18n$1.__("Website", "accessibility-widget"),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27261,14 +27275,14 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
               type: "url",
               value: step1.website,
               onChange: (e) => onChange({ ...step1, website: e.target.value }),
-              placeholder: __$1("https://company.com", "accessibility-widget"),
+              placeholder: i18n$1.__("https://company.com", "accessibility-widget"),
               className: "cy:h-[48px] cy:border! cy:rounded!"
             }
           )
         ] })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mt-6" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mt-6 cy:flex cy:justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onNext, disabled: !isValid, className: "cy:rounded", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px]", children: __$1("Next", "accessibility-widget") }) }) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mt-6 cy:flex cy:justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onNext, disabled: !isValid, className: "cy:rounded", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px]", children: i18n$1.__("Next", "accessibility-widget") }) }) })
     ] });
   }
   var RADIO_NAME = "Radio";
@@ -27576,67 +27590,67 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
   };
   function getWcagOptions() {
     return [
-      { value: "WCAG 2.2 Level AA", label: __$1("WCAG 2.2 Level AA", "accessibility-widget") },
-      { value: "WCAG 2.1 Level AA", label: __$1("WCAG 2.1 Level AA", "accessibility-widget") },
-      { value: "WCAG 2.0 Level AA", label: __$1("WCAG 2.0 Level AA", "accessibility-widget") },
-      { value: "Other", label: __$1("Other", "accessibility-widget") }
+      { value: "WCAG 2.2 Level AA", label: i18n$1.__("WCAG 2.2 Level AA", "accessibility-widget") },
+      { value: "WCAG 2.1 Level AA", label: i18n$1.__("WCAG 2.1 Level AA", "accessibility-widget") },
+      { value: "WCAG 2.0 Level AA", label: i18n$1.__("WCAG 2.0 Level AA", "accessibility-widget") },
+      { value: "Other", label: i18n$1.__("Other", "accessibility-widget") }
     ];
   }
   function getConformanceOptions() {
     return [
       {
         value: "fully-conformant",
-        label: __$1("Fully conformant", "accessibility-widget"),
-        description: __$1("The content fully conforms to the selected accessibility standard.", "accessibility-widget")
+        label: i18n$1.__("Fully conformant", "accessibility-widget"),
+        description: i18n$1.__("The content fully conforms to the selected accessibility standard.", "accessibility-widget")
       },
       {
         value: "partially-conformant",
-        label: __$1("Partially conformant", "accessibility-widget"),
-        description: __$1("Some parts of the content do not fully conform to the selected accessibility standard.", "accessibility-widget")
+        label: i18n$1.__("Partially conformant", "accessibility-widget"),
+        description: i18n$1.__("Some parts of the content do not fully conform to the selected accessibility standard.", "accessibility-widget")
       },
       {
         value: "non-conformant",
-        label: __$1("Non conformant", "accessibility-widget"),
-        description: __$1("The content does not conform to the selected accessibility standard.", "accessibility-widget")
+        label: i18n$1.__("Non conformant", "accessibility-widget"),
+        description: i18n$1.__("The content does not conform to the selected accessibility standard.", "accessibility-widget")
       },
       {
         value: "not-assessed",
-        label: __$1("Not assessed", "accessibility-widget"),
-        description: __$1("The content has not been evaluated or results are not available.", "accessibility-widget")
+        label: i18n$1.__("Not assessed", "accessibility-widget"),
+        description: i18n$1.__("The content has not been evaluated or results are not available.", "accessibility-widget")
       }
     ];
   }
   function getStatementTemplate() {
     return [
-      `<h2>${__$1("Accessibility Commitment", "accessibility-widget")}</h2>`,
-      `<p>${__$1("{{company_name}} is committed to improving the accessibility and usability of {{website_url}} for all users, including people with disabilities. We aim to provide an inclusive digital experience and continuously work toward enhancing accessibility across our website.", "accessibility-widget")}</p>`,
-      `<h2>${__$1("Accessibility Target Standard", "accessibility-widget")}</h2>`,
-      `<p>${__$1("We aim to align our website with <strong>{{accessibility_standard}}</strong> accessibility standards.", "accessibility-widget")}</p>`,
-      `<p>${__$1("This target standard guides our accessibility efforts and ongoing improvements.", "accessibility-widget")}</p>`,
-      `<h2>${__$1("Current Conformance Status", "accessibility-widget")}</h2>`,
-      `<p>${__$1("Based on our internal review, this website is <strong>{{conformance_status}}</strong> with <strong>{{accessibility_standard}}</strong>.", "accessibility-widget")}</p>`,
-      `<p>${__$1("This status reflects our evaluation at the time of publication and is based on our internal review and available information. Accessibility is an ongoing process, and conformance levels may evolve as updates are implemented.", "accessibility-widget")}</p>`,
-      `<h2>${__$1("Accessibility Features", "accessibility-widget")}</h2>`,
-      `<p>${__$1("To support accessibility, this website includes the AccessiYes accessibility interface. This interface allows users to adjust certain visual and usability settings according to their individual needs, such as:", "accessibility-widget")}</p>`,
+      `<h2>${i18n$1.__("Accessibility Commitment", "accessibility-widget")}</h2>`,
+      `<p>${i18n$1.__("{{company_name}} is committed to improving the accessibility and usability of {{website_url}} for all users, including people with disabilities. We aim to provide an inclusive digital experience and continuously work toward enhancing accessibility across our website.", "accessibility-widget")}</p>`,
+      `<h2>${i18n$1.__("Accessibility Target Standard", "accessibility-widget")}</h2>`,
+      `<p>${i18n$1.__("We aim to align our website with <strong>{{accessibility_standard}}</strong> accessibility standards.", "accessibility-widget")}</p>`,
+      `<p>${i18n$1.__("This target standard guides our accessibility efforts and ongoing improvements.", "accessibility-widget")}</p>`,
+      `<h2>${i18n$1.__("Current Conformance Status", "accessibility-widget")}</h2>`,
+      `<p>${i18n$1.__("Based on our internal review, this website is <strong>{{conformance_status}}</strong> with <strong>{{accessibility_standard}}</strong>.", "accessibility-widget")}</p>`,
+      `<p>${i18n$1.__("This status reflects our evaluation at the time of publication and is based on our internal review and available information. Accessibility is an ongoing process, and conformance levels may evolve as updates are implemented.", "accessibility-widget")}</p>`,
+      `<h2>${i18n$1.__("Accessibility Features", "accessibility-widget")}</h2>`,
+      `<p>${i18n$1.__("To support accessibility, this website includes the AccessiYes accessibility interface. This interface allows users to adjust certain visual and usability settings according to their individual needs, such as:", "accessibility-widget")}</p>`,
       `<ul>`,
-      `<li>${__$1("Text size and spacing adjustments", "accessibility-widget")}</li>`,
-      `<li>${__$1("Contrast and color settings", "accessibility-widget")}</li>`,
-      `<li>${__$1("Highlighting tools", "accessibility-widget")}</li>`,
-      `<li>${__$1("Other assistive viewing options", "accessibility-widget")}</li>`,
+      `<li>${i18n$1.__("Text size and spacing adjustments", "accessibility-widget")}</li>`,
+      `<li>${i18n$1.__("Contrast and color settings", "accessibility-widget")}</li>`,
+      `<li>${i18n$1.__("Highlighting tools", "accessibility-widget")}</li>`,
+      `<li>${i18n$1.__("Other assistive viewing options", "accessibility-widget")}</li>`,
       `</ul>`,
-      `<p>${__$1("These tools are intended to improve user experience, but do not replace the need for accessible content and proper underlying website structure.", "accessibility-widget")}</p>`,
-      `<h2>${__$1("Limitations and Technical Considerations", "accessibility-widget")}</h2>`,
-      `<p>${__$1("Please note the following:", "accessibility-widget")}</p>`,
-      `<p>${__$1("The availability and effectiveness of accessibility features depend on the website's configuration and ongoing maintenance.", "accessibility-widget")}</p>`,
-      `<p>${__$1("While we strive to ensure accessibility across <strong>{{website_url}}</strong>, some content or features may not yet fully meet the selected accessibility standards. Some content may be provided by third parties or affected by technical constraints beyond our immediate control.", "accessibility-widget")}</p>`,
-      `<p>${__$1("Additionally, there may be certain legacy content or integrations that may not yet fully align with the selected accessibility standard. We are actively working to identify and address accessibility barriers within our control.", "accessibility-widget")}</p>`,
-      `<h2>${__$1("Feedback and Contact", "accessibility-widget")}</h2>`,
-      `<p>${__$1("If you experience any difficulty accessing content on this website or would like to report an accessibility issue, please contact us:", "accessibility-widget")}</p>`,
-      `<p>${__$1("Email:", "accessibility-widget")} <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>`,
-      `<p>${__$1("When contacting us, please include the specific page URL and a description of the issue so we can investigate and respond appropriately.", "accessibility-widget")}</p>`,
-      `<h2>${__$1("Continuous Improvement", "accessibility-widget")}</h2>`,
-      `<p>${__$1("Accessibility is an ongoing effort. We regularly review our website and evaluate opportunities to improve accessibility and usability.", "accessibility-widget")}</p>`,
-      `<p><em>${__$1("Last updated: {{last_updated}}", "accessibility-widget")}</em></p>`
+      `<p>${i18n$1.__("These tools are intended to improve user experience, but do not replace the need for accessible content and proper underlying website structure.", "accessibility-widget")}</p>`,
+      `<h2>${i18n$1.__("Limitations and Technical Considerations", "accessibility-widget")}</h2>`,
+      `<p>${i18n$1.__("Please note the following:", "accessibility-widget")}</p>`,
+      `<p>${i18n$1.__("The availability and effectiveness of accessibility features depend on the website's configuration and ongoing maintenance.", "accessibility-widget")}</p>`,
+      `<p>${i18n$1.__("While we strive to ensure accessibility across <strong>{{website_url}}</strong>, some content or features may not yet fully meet the selected accessibility standards. Some content may be provided by third parties or affected by technical constraints beyond our immediate control.", "accessibility-widget")}</p>`,
+      `<p>${i18n$1.__("Additionally, there may be certain legacy content or integrations that may not yet fully align with the selected accessibility standard. We are actively working to identify and address accessibility barriers within our control.", "accessibility-widget")}</p>`,
+      `<h2>${i18n$1.__("Feedback and Contact", "accessibility-widget")}</h2>`,
+      `<p>${i18n$1.__("If you experience any difficulty accessing content on this website or would like to report an accessibility issue, please contact us:", "accessibility-widget")}</p>`,
+      `<p>${i18n$1.__("Email:", "accessibility-widget")} <a href="mailto:{{contact_email}}">{{contact_email}}</a></p>`,
+      `<p>${i18n$1.__("When contacting us, please include the specific page URL and a description of the issue so we can investigate and respond appropriately.", "accessibility-widget")}</p>`,
+      `<h2>${i18n$1.__("Continuous Improvement", "accessibility-widget")}</h2>`,
+      `<p>${i18n$1.__("Accessibility is an ongoing effort. We regularly review our website and evaluate opportunities to improve accessibility and usability.", "accessibility-widget")}</p>`,
+      `<p><em>${i18n$1.__("Last updated: {{last_updated}}", "accessibility-widget")}</em></p>`
     ].join("\n");
   }
   const PREDEFINED_WCAG = ["WCAG 2.2 Level AA", "WCAG 2.1 Level AA", "WCAG 2.0 Level AA"];
@@ -27658,14 +27672,14 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
       onChange({ ...step2, wcagStandard: text || "Other" });
     };
     return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: __$1("Generate statement", "accessibility-widget") }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground cy:mb-1", children: i18n$1.__("Generate statement", "accessibility-widget") }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mb-6" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Stepper, { step: 2 }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-6 cy:max-w-lg", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mb-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: __$1("Conformance status", "accessibility-widget") }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:mb-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: i18n$1.__("Conformance status", "accessibility-widget") }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-            __$1("1. Select the accessibility standards you follow.", "accessibility-widget"),
+            i18n$1.__("1. Select the accessibility standards you follow.", "accessibility-widget"),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27690,7 +27704,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             {
               value: otherWcagText,
               onChange: (e) => handleOtherWcagInput(e.target.value),
-              placeholder: __$1("Please specify the standard", "accessibility-widget"),
+              placeholder: i18n$1.__("Please specify the standard", "accessibility-widget"),
               className: "cy:h-[40px] cy:border! cy:rounded! cy:max-w-xs",
               autoFocus: true
             }
@@ -27698,7 +27712,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[16px] cy:font-medium cy:text-foreground", children: [
-            __$1("2. Conformance status", "accessibility-widget"),
+            i18n$1.__("2. Conformance status", "accessibility-widget"),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-red-500 cy:ml-0.5", children: "*" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -27723,7 +27737,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:mt-6 cy:flex cy:gap-3 cy:rounded-lg cy:border cy:border-blue-200 cy:bg-blue-50 cy:p-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Info, { className: "cy:w-4 cy:h-4 cy:text-blue-600 cy:flex-shrink-0 cy:mt-0.5" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:tex-black-600 cy:leading-relaxed", children: __$1("The statement will be generated based on the information you provide and your own assessment. Please ensure that the details entered accurately reflect your website's accessibility status and applicable requirements.", "accessibility-widget") })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:tex-black-600 cy:leading-relaxed", children: i18n$1.__("The statement will be generated based on the information you provide and your own assessment. Please ensure that the details entered accurately reflect your website's accessibility status and applicable requirements.", "accessibility-widget") })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("hr", { className: "cy:border-gray-200 cy:mt-6" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:mt-6 cy:flex cy:justify-between", children: [
@@ -27733,10 +27747,10 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
             variant: "outline",
             onClick: onBack,
             className: "cy:rounded cy:border-primary! cy:text-primary!",
-            children: __$1("Back", "accessibility-widget")
+            children: i18n$1.__("Back", "accessibility-widget")
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onGenerate, className: "cy:rounded", children: __$1("Generate statement", "accessibility-widget") })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: onGenerate, className: "cy:rounded", children: i18n$1.__("Generate statement", "accessibility-widget") })
       ] })
     ] });
   }
@@ -28096,7 +28110,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
                 className: "cy:ring-offset-background cy:focus:ring-ring cy:data-[state=open]:bg-accent cy:data-[state=open]:text-muted-foreground cy:absolute cy:top-4 cy:right-4 cy:rounded-xs cy:opacity-70 cy:transition-opacity cy:hover:opacity-100 cy:focus:ring-2 cy:focus:ring-offset-2 cy:focus:outline-hidden cy:disabled:pointer-events-none cy:[&_svg]:pointer-events-none cy:[&_svg]:shrink-0 cy:[&_svg:not([class*=size-])]:size-4",
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(X, {}),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:sr-only", children: "Close" })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:sr-only", children: i18n$1.__("Close", "accessibility-widget") })
                 ]
               }
             )
@@ -28220,9 +28234,9 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
     const handleCopy = async () => {
       try {
         await copyToClipboard(statementHtml);
-        toast.success(__$1("Statement copied to clipboard.", "accessibility-widget"));
+        toast.success(i18n$1.__("Statement copied to clipboard.", "accessibility-widget"));
       } catch {
-        toast.error(__$1("Could not copy to clipboard.", "accessibility-widget"));
+        toast.error(i18n$1.__("Could not copy to clipboard.", "accessibility-widget"));
       }
     };
     return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
@@ -28231,9 +28245,9 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-3", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "cy:w-12 cy:h-12 cy:text-green-500 cy:flex-shrink-0", strokeWidth: 1 }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-0.5", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: __$1("Statement generated", "accessibility-widget") }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: i18n$1.__("Statement generated", "accessibility-widget") }),
               generatedDate && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-sm cy:text-muted-foreground", children: [
-                __$1("Last updated:", "accessibility-widget"),
+                i18n$1.__("Last updated:", "accessibility-widget"),
                 " ",
                 formatDate(generatedDate)
               ] })
@@ -28249,7 +28263,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
                 onClick: () => setPreviewOpen(true),
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(Eye, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
-                  __$1("Preview", "accessibility-widget")
+                  i18n$1.__("Preview", "accessibility-widget")
                 ]
               }
             ),
@@ -28262,7 +28276,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
                 onClick: handleCopy,
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
-                  __$1("Copy statement", "accessibility-widget")
+                  i18n$1.__("Copy statement", "accessibility-widget")
                 ]
               }
             ),
@@ -28275,7 +28289,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
                 onClick: onEdit,
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(Pencil, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
-                  __$1("Edit", "accessibility-widget")
+                  i18n$1.__("Edit", "accessibility-widget")
                 ]
               }
             )
@@ -28288,10 +28302,10 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
               {
                 htmlFor: "cy-display-in-widget",
                 className: "cy:block cy:text-base cy:font-semibold cy:text-foreground cy:cursor-pointer",
-                children: __$1("Display in widget overlay", "accessibility-widget")
+                children: i18n$1.__("Display in widget overlay", "accessibility-widget")
               }
             ),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:block cy:text-sm cy:text-muted-foreground", children: __$1("Show this generated statement directly inside the AccessiYes widget.", "accessibility-widget") })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:block cy:text-sm cy:text-muted-foreground", children: i18n$1.__("Show this generated statement directly inside the AccessiYes widget.", "accessibility-widget") })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             Switch,
@@ -28305,7 +28319,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Dialog, { open: previewOpen, onOpenChange: setPreviewOpen, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogContent, { showCloseButton: false, className: "cy:max-w-2xl cy:max-h-[85vh] cy:flex cy:flex-col cy:gap-0 cy:p-0", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogHeader, { className: "cy:flex cy:flex-row cy:items-center cy:justify-between cy:px-6 cy:py-4 cy:border-b cy:border-gray-200", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "cy:text-base cy:font-semibold", children: __$1("Preview", "accessibility-widget") }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "cy:text-base cy:font-semibold", children: i18n$1.__("Preview", "accessibility-widget") }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsxs(
               Button,
@@ -28316,7 +28330,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
                 onClick: handleCopy,
                 children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(Copy, { className: "cy:w-4 cy:h-4", "aria-hidden": "true" }),
-                  __$1("Copy statement", "accessibility-widget")
+                  i18n$1.__("Copy statement", "accessibility-widget")
                 ]
               }
             ),
@@ -28325,7 +28339,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
               {
                 onClick: () => setPreviewOpen(false),
                 className: "cy:rounded cy:p-1 cy:text-muted-foreground cy:hover:text-foreground cy:hover:bg-gray-100 cy:transition-colors",
-                "aria-label": __$1("Close preview", "accessibility-widget"),
+                "aria-label": i18n$1.__("Close preview", "accessibility-widget"),
                 children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "cy:w-5 cy:h-5" })
               }
             )
@@ -28336,7 +28350,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
           {
             className: "cy:overflow-y-auto cy:px-8 cy:py-6 cy:prose cy:prose-sm cy:max-w-none",
             role: "document",
-            "aria-label": __$1("Accessibility statement content", "accessibility-widget"),
+            "aria-label": i18n$1.__("Accessibility statement content", "accessibility-widget"),
             tabIndex: 0,
             dangerouslySetInnerHTML: { __html: statementHtml }
           }
@@ -28347,11 +28361,11 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
   function StatementLink({ enabled, url, onToggle, onUrlChange }) {
     return /* @__PURE__ */ jsxRuntimeExports.jsxs(SectionCard, { className: "cy:border cy:border-gray-200", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1 cy:mb-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: __$1("Link your statement", "accessibility-widget") }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: __$1("Already have an accessibility statement page? Link it here to make it accessible through the widget.", "accessibility-widget") })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-[18px] cy:font-semibold cy:text-foreground", children: i18n$1.__("Link your statement", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: i18n$1.__("Already have an accessibility statement page? Link it here to make it accessible through the widget.", "accessibility-widget") })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-center cy:justify-between cy:gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px] cy:text-foreground", children: __$1("Link statement on widget", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-[16px] cy:text-foreground", children: i18n$1.__("Link statement on widget", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           Switch,
           {
@@ -28367,7 +28381,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
           {
             htmlFor: "cy-statement-url",
             className: "cy:text-[16px] cy:font-medium cy:text-foreground",
-            children: __$1("Accessibility statement URL", "accessibility-widget")
+            children: i18n$1.__("Accessibility statement URL", "accessibility-widget")
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:relative cy:max-w-xl", children: [
@@ -28377,7 +28391,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
               id: "cy-statement-url",
               value: url,
               onChange: (e) => onUrlChange(e.target.value),
-              placeholder: __$1("E.g., yoursite.com/accessibility", "accessibility-widget"),
+              placeholder: i18n$1.__("E.g., yoursite.com/accessibility", "accessibility-widget"),
               className: "cy:w-full cy:border! cy:rounded! cy:h-[48px] cy:pl-10"
             }
           ),
@@ -28427,9 +28441,9 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
       setIsSaving(true);
       try {
         await saveWidgetConfig(config);
-        toast.success(__$1("Changes saved successfully.", "accessibility-widget"));
+        toast.success(i18n$1.__("Changes saved successfully.", "accessibility-widget"));
       } catch {
-        toast.error(__$1("Failed to save changes.", "accessibility-widget"));
+        toast.error(i18n$1.__("Failed to save changes.", "accessibility-widget"));
       } finally {
         setIsSaving(false);
       }
@@ -28458,38 +28472,38 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             }
           }
         });
-        toast.success(__$1("Statement generated and saved.", "accessibility-widget"));
+        toast.success(i18n$1.__("Statement generated and saved.", "accessibility-widget"));
       } catch {
-        toast.error(__$1("Statement generated but could not be saved. Use Save changes.", "accessibility-widget"));
+        toast.error(i18n$1.__("Statement generated but could not be saved. Use Save changes.", "accessibility-widget"));
       }
       setTabState("generated");
     }, [step1, step2, config, statement, setStatementGeneratedDate, setStatementFormData]);
     return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:border-gray-200 cy:pb-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("Accessibility statement", "accessibility-widget") }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Generate and manage your website's accessibility statement.", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: i18n$1.__("Accessibility statement", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: i18n$1.__("Generate and manage your website's accessibility statement.", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(CardAction, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           Button,
           {
             onClick: handleSave,
             disabled: isSaving,
             className: "cy:rounded cy:text-base!",
-            children: isSaving ? __$1("Saving...", "accessibility-widget") : __$1("Save changes", "accessibility-widget")
+            children: isSaving ? i18n$1.__("Saving...", "accessibility-widget") : i18n$1.__("Save changes", "accessibility-widget")
           }
         ) })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:py-6 cy:space-y-4", children: [
         tabState === "idle" && /* @__PURE__ */ jsxRuntimeExports.jsx(SectionCard, { className: "cy:border cy:border-gray-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:items-start cy:justify-between cy:gap-6", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:space-y-1", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-base cy:font-semibold cy:text-foreground", children: __$1("Generate statement", "accessibility-widget") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: __$1("Don't have an accessibility statement? Use our generator to create a professional statement.", "accessibility-widget") })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "cy:text-base cy:font-semibold cy:text-foreground", children: i18n$1.__("Generate statement", "accessibility-widget") }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "cy:text-sm cy:text-muted-foreground", children: i18n$1.__("Don't have an accessibility statement? Use our generator to create a professional statement.", "accessibility-widget") })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             Button,
             {
               onClick: () => setTabState("step1"),
               className: "cy:rounded cy:flex-shrink-0",
-              children: __$1("Get started", "accessibility-widget")
+              children: i18n$1.__("Get started", "accessibility-widget")
             }
           )
         ] }) }),
@@ -28541,7 +28555,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-muted-foreground", children: __$1("Generating statement...", "accessibility-widget") })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "cy:text-sm cy:text-muted-foreground", children: i18n$1.__("Generating statement...", "accessibility-widget") })
         ] }) }),
         tabState === "generated" && /* @__PURE__ */ jsxRuntimeExports.jsx(
           StatementGenerated,
@@ -28632,27 +28646,27 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
     const muteSounds = ((_f = config.modules) == null ? void 0 : _f.muteSounds) ?? DEFAULT_WIDGET_CONFIG.modules.muteSounds;
     return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "cy:max-w-7xl cy:mx-auto cy:px-4 cy:sm:px-6 cy:lg:px-8 cy:pt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "cy:rounded-lg cy:gap-0 cy:shadow-none!", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "cy:border-b cy:pb-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: __$1("Modules section", "accessibility-widget") }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: __$1("Enable or disable individual accessibility features for your users.", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "cy:text-xl", children: i18n$1.__("Modules section", "accessibility-widget") }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { children: i18n$1.__("Enable or disable individual accessibility features for your users.", "accessibility-widget") }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(CardAction, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(WidgetPublish, {}) })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "cy:p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:flex cy:flex-col cy:gap-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(ModuleSection, { title: __$1("Accessibility profile", "accessibility-widget"), children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        /* @__PURE__ */ jsxRuntimeExports.jsx(ModuleSection, { title: i18n$1.__("Accessibility profile", "accessibility-widget"), children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           ModuleRow,
           {
             id: "module-profiles",
-            label: __$1("Accessibility profile", "accessibility-widget"),
+            label: i18n$1.__("Accessibility profile", "accessibility-widget"),
             icon: Accessibility,
             checked: (profiles == null ? void 0 : profiles.enabled) ?? true,
             onChange: (v) => setModuleEnabled("profiles", "enabled", v)
           }
         ) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: __$1("Content adjustments", "accessibility-widget"), children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: i18n$1.__("Text and Reading", "accessibility-widget"), children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             ModuleRow,
             {
               id: "module-adjust-font-sizing",
-              label: __$1("Adjust Font Sizing", "accessibility-widget"),
+              label: i18n$1.__("Adjust Font Sizing", "accessibility-widget"),
               icon: FontSizeIcon,
               checked: ((_g = content.adjustFontSizing) == null ? void 0 : _g.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "adjustFontSizing", v)
@@ -28662,7 +28676,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-highlight-title",
-              label: __$1("Highlight Title", "accessibility-widget"),
+              label: i18n$1.__("Highlight Title", "accessibility-widget"),
               icon: HighlightTitleIcon,
               checked: ((_h = content.highlightTitle) == null ? void 0 : _h.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "highlightTitle", v)
@@ -28672,7 +28686,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-highlight-links",
-              label: __$1("Highlight Links", "accessibility-widget"),
+              label: i18n$1.__("Highlight Links", "accessibility-widget"),
               icon: HighlightLinksIcon,
               checked: ((_i = content.highlightLinks) == null ? void 0 : _i.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "highlightLinks", v)
@@ -28682,7 +28696,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-dyslexic-font",
-              label: __$1("Dyslexia Friendly Font", "accessibility-widget"),
+              label: i18n$1.__("Dyslexia Friendly Font", "accessibility-widget"),
               icon: DyslexiaFontIcon,
               checked: ((_j = content.dyslexicFont) == null ? void 0 : _j.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "dyslexicFont", v)
@@ -28692,7 +28706,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-font-weight",
-              label: __$1("Font Weight", "accessibility-widget"),
+              label: i18n$1.__("Font Weight", "accessibility-widget"),
               icon: FontWeightIcon,
               checked: ((_k = content.fontWeight) == null ? void 0 : _k.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "fontWeight", v)
@@ -28702,7 +28716,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-letter-spacing",
-              label: __$1("Letter Spacing", "accessibility-widget"),
+              label: i18n$1.__("Letter Spacing", "accessibility-widget"),
               icon: LetterSpacingIcon,
               checked: ((_l = content.letterSpacing) == null ? void 0 : _l.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "letterSpacing", v)
@@ -28712,7 +28726,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-line-height",
-              label: __$1("Line Height", "accessibility-widget"),
+              label: i18n$1.__("Line Height", "accessibility-widget"),
               icon: LineHeightIcon,
               checked: ((_m = content.lineHeight) == null ? void 0 : _m.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "lineHeight", v)
@@ -28722,19 +28736,19 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-text-align",
-              label: __$1("Text Align", "accessibility-widget"),
+              label: i18n$1.__("Text Align", "accessibility-widget"),
               icon: TextAlignIcon,
               checked: ((_n = content.textAlign) == null ? void 0 : _n.enabled) ?? true,
               onChange: (v) => setModuleEnabled("content", "textAlign", v)
             }
           )
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: __$1("Colour adjustments", "accessibility-widget"), children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: i18n$1.__("Color and Contrast", "accessibility-widget"), children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             ModuleRow,
             {
               id: "module-dark-contrast",
-              label: __$1("Dark Contrast", "accessibility-widget"),
+              label: i18n$1.__("Dark Contrast", "accessibility-widget"),
               icon: DarkContrastIcon,
               checked: ((_o = color.darkContrast) == null ? void 0 : _o.enabled) ?? true,
               onChange: (v) => setModuleEnabled("color", "darkContrast", v)
@@ -28744,7 +28758,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-light-contrast",
-              label: __$1("Light Contrast", "accessibility-widget"),
+              label: i18n$1.__("Light Contrast", "accessibility-widget"),
               icon: LightContrastIcon,
               checked: ((_p = color.lightContrast) == null ? void 0 : _p.enabled) ?? true,
               onChange: (v) => setModuleEnabled("color", "lightContrast", v)
@@ -28754,7 +28768,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-high-contrast",
-              label: __$1("High Contrast", "accessibility-widget"),
+              label: i18n$1.__("High Contrast", "accessibility-widget"),
               icon: HighContrastIcon,
               checked: ((_q = color.highContrast) == null ? void 0 : _q.enabled) ?? true,
               onChange: (v) => setModuleEnabled("color", "highContrast", v)
@@ -28764,7 +28778,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-high-saturation",
-              label: __$1("High Saturation", "accessibility-widget"),
+              label: i18n$1.__("High Saturation", "accessibility-widget"),
               icon: HighSaturationIcon,
               checked: ((_r = color.highSaturation) == null ? void 0 : _r.enabled) ?? true,
               onChange: (v) => setModuleEnabled("color", "highSaturation", v)
@@ -28774,7 +28788,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-low-saturation",
-              label: __$1("Low Saturation", "accessibility-widget"),
+              label: i18n$1.__("Low Saturation", "accessibility-widget"),
               icon: LowSaturationIcon,
               checked: ((_s = color.lowSaturation) == null ? void 0 : _s.enabled) ?? true,
               onChange: (v) => setModuleEnabled("color", "lowSaturation", v)
@@ -28784,19 +28798,19 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-monochrome",
-              label: __$1("Monochrome", "accessibility-widget"),
+              label: i18n$1.__("Monochrome", "accessibility-widget"),
               icon: MonochromeIcon,
               checked: ((_t = color.monochrome) == null ? void 0 : _t.enabled) ?? true,
               onChange: (v) => setModuleEnabled("color", "monochrome", v)
             }
           )
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: __$1("Navigation adjustments", "accessibility-widget"), children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(ModuleSection, { title: i18n$1.__("Navigation and Interaction", "accessibility-widget"), children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             ModuleRow,
             {
               id: "module-reading-guide",
-              label: __$1("Reading Guide", "accessibility-widget"),
+              label: i18n$1.__("Reading Guide", "accessibility-widget"),
               icon: ReadingGuideIcon,
               checked: ((_u = navigation == null ? void 0 : navigation.readingGuide) == null ? void 0 : _u.enabled) ?? true,
               onChange: (v) => setModuleEnabled("navigation", "readingGuide", v)
@@ -28806,7 +28820,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-pause-animations",
-              label: __$1("Pause Animations", "accessibility-widget"),
+              label: i18n$1.__("Pause Animations", "accessibility-widget"),
               icon: StopAnimationsIcon,
               checked: ((_v = navigation == null ? void 0 : navigation.pauseAnimations) == null ? void 0 : _v.enabled) ?? true,
               onChange: (v) => setModuleEnabled("navigation", "pauseAnimations", v)
@@ -28816,7 +28830,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-big-cursor",
-              label: __$1("Big Cursor", "accessibility-widget"),
+              label: i18n$1.__("Big Cursor", "accessibility-widget"),
               icon: BigCursorIcon,
               checked: ((_w = navigation == null ? void 0 : navigation.bigCursor) == null ? void 0 : _w.enabled) ?? true,
               onChange: (v) => setModuleEnabled("navigation", "bigCursor", v)
@@ -28826,7 +28840,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-page-read",
-              label: __$1("Page read", "accessibility-widget"),
+              label: i18n$1.__("Page read", "accessibility-widget"),
               icon: PageReadIcon,
               checked: (pageRead == null ? void 0 : pageRead.enabled) ?? true,
               onChange: (v) => setModuleEnabled("pageRead", "enabled", v)
@@ -28836,7 +28850,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             ModuleRow,
             {
               id: "module-mute-sounds",
-              label: __$1("Mute sounds", "accessibility-widget"),
+              label: i18n$1.__("Mute sounds", "accessibility-widget"),
               icon: MuteSoundsIcon,
               checked: (muteSounds == null ? void 0 : muteSounds.enabled) ?? true,
               onChange: (v) => setModuleEnabled("muteSounds", "enabled", v)
@@ -28861,7 +28875,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             {
               value: "customize",
               className: "cy:-mb-1 cy:flex-none  cy:border-0 cy:border-b-3 cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:ml-0 cy:mr-4 cy:text-base! cy:font-medium",
-              children: __$1("Customise widget", "accessibility-widget")
+              children: i18n$1.__("Customise widget", "accessibility-widget")
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -28869,7 +28883,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             {
               value: "statement",
               className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3 cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
-              children: __$1("Statement", "accessibility-widget")
+              children: i18n$1.__("Statement", "accessibility-widget")
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -28877,7 +28891,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             {
               value: "settings",
               className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3  cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
-              children: __$1("Settings", "accessibility-widget")
+              children: i18n$1.__("Settings", "accessibility-widget")
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -28885,7 +28899,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             {
               value: "modules",
               className: "cy:-mb-1 cy:flex-none cy:border-0 cy:border-b-3  cy:border-transparent cy:data-[state=active]:border-b-4 cy:data-[state=active]:border-primary cy:data-[state=active]:text-text-dark cy:rounded-none cy:shadow-none cy:data-[state=active]:shadow-none cy:p-0 cy:px-0 cy:mx-4 cy:text-base! cy:font-medium",
-              children: __$1("Modules", "accessibility-widget")
+              children: i18n$1.__("Modules", "accessibility-widget")
             }
           )
         ] }) }),
@@ -28901,7 +28915,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "cy:px-4 cy:py-4 cy:sm:px-6 cy:lg:px-8 cy:max-w-7xl cy:mx-auto cy:flex cy:justify-between", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: [
-          __$1("Please rate AccessiYes", "accessibility-widget"),
+          i18n$1.__("Please rate AccessiYes", "accessibility-widget"),
           " ",
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "a",
@@ -28914,7 +28928,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             }
           ),
           " ",
-          __$1("on", "accessibility-widget"),
+          i18n$1.__("on", "accessibility-widget"),
           " ",
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "a",
@@ -28927,7 +28941,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${titl
             }
           ),
           " ",
-          __$1("to help us spread the word. Thank you from the team AccessiYes!", "accessibility-widget")
+          i18n$1.__("to help us spread the word. Thank you from the team AccessiYes!", "accessibility-widget")
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "cy:text-[13px] cy:font-[300] cy:text-black", children: [
           "Version ",

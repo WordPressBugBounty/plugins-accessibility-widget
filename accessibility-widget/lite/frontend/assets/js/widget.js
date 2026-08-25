@@ -1,5 +1,5 @@
 /*!
-      * WebYes Accessibility Widget v2.0.0
+      * WebYes Accessibility Widget v1.0.0
       * (c) 2026 webyes
       */
 "use strict";
@@ -41,8 +41,8 @@
       module.exports = {
         "Accessibility menu": "\u12E8\u1270\u12F0\u122B\u123D\u1290\u1275 \u121D\u1293\u120C",
         Close: "\u12DD\u130B",
-        "Content adjustments": "\u12E8\u12ED\u12D8\u1275 \u121B\u1235\u1270\u12AB\u12A8\u12EB\u12CE\u127D",
-        "Navigation adjustments": "\u12E8\u12A0\u1230\u1233 \u121B\u1235\u1270\u12AB\u12A8\u12EB\u12CE\u127D",
+        "Text and Reading": "\u133D\u1211\u134D \u12A5\u1293 \u1295\u1263\u1265",
+        "Navigation and Interaction": "\u12A0\u1230\u1233 \u12A5\u1293 \u1218\u1235\u1270\u130B\u1265\u122D",
         "Text Align": "\u12E8\u133D\u1211\u134D \u12A0\u1230\u120B\u1208\u134D",
         "Align Left": "\u130D\u122B \u12A0\u1230\u120D\u134D",
         "Align Center": "\u1218\u1203\u120D \u12A0\u1230\u120D\u134D",
@@ -51,7 +51,7 @@
         "Highlight Title": "\u122D\u12D5\u1235 \u12A0\u1309\u120D\u1270\u12CD \u12A0\u1233\u12ED",
         "Highlight Links": "\u12A0\u1308\u1293\u129E\u127D\u1295 \u12A0\u1309\u120D\u1270\u12CD \u12A0\u1233\u12ED",
         "Readable Font": "\u1208\u121B\u1295\u1260\u1265 \u1240\u120B\u120D \u134A\u12F0\u120D",
-        "Colour adjustments": "\u12E8\u1240\u1208\u121D \u121B\u1235\u1270\u12AB\u12A8\u12EB\u12CE\u127D",
+        "Color and Contrast": "\u1240\u1208\u121D \u12A5\u1293 \u1295\u1345\u1345\u122D",
         "Dark Contrast": "\u1328\u1208\u121B \u1295\u133D\u133D\u122D",
         "Light Contrast": "\u1265\u122D\u1203\u1293\u12CA \u1295\u133D\u133D\u122D",
         "High Contrast": "\u12A8\u134D\u1270\u129B \u1295\u133D\u133D\u122D",
@@ -106,8 +106,8 @@
       module.exports = {
         "Accessibility menu": "\u0642\u0627\u0626\u0645\u0629 \u0625\u0645\u0643\u0627\u0646\u064A\u0629 \u0627\u0644\u0648\u0635\u0648\u0644",
         Close: "\u0625\u063A\u0644\u0627\u0642",
-        "Content adjustments": "\u062A\u0639\u062F\u064A\u0644\u0627\u062A \u0627\u0644\u0645\u062D\u062A\u0648\u0649",
-        "Navigation adjustments": "\u062A\u0639\u062F\u064A\u0644\u0627\u062A \u0627\u0644\u062A\u0646\u0642\u0644",
+        "Text and Reading": "\u0627\u0644\u0646\u0635 \u0648\u0627\u0644\u0642\u0631\u0627\u0621\u0629",
+        "Navigation and Interaction": "\u0627\u0644\u062A\u0646\u0642\u0644 \u0648\u0627\u0644\u062A\u0641\u0627\u0639\u0644",
         "Text Align": "\u0645\u062D\u0627\u0630\u0627\u0629 \u0627\u0644\u0646\u0635",
         "Align Left": "\u0645\u062D\u0627\u0630\u0627\u0629 \u0644\u0644\u064A\u0633\u0627\u0631",
         "Align Center": "\u062A\u0648\u0633\u064A\u0637",
@@ -116,7 +116,7 @@
         "Highlight Title": "\u062A\u0645\u064A\u064A\u0632 \u0627\u0644\u0639\u0646\u0648\u0627\u0646",
         "Highlight Links": "\u062A\u0645\u064A\u064A\u0632 \u0627\u0644\u0631\u0648\u0627\u0628\u0637",
         "Readable Font": "\u062E\u0637 \u0645\u0642\u0631\u0648\u0621",
-        "Colour adjustments": "\u062A\u0639\u062F\u064A\u0644\u0627\u062A \u0627\u0644\u0623\u0644\u0648\u0627\u0646",
+        "Color and Contrast": "\u0627\u0644\u0644\u0648\u0646 \u0648\u0627\u0644\u062A\u0628\u0627\u064A\u0646",
         "Dark Contrast": "\u062A\u0628\u0627\u064A\u0646 \u062F\u0627\u0643\u0646",
         "Light Contrast": "\u062A\u0628\u0627\u064A\u0646 \u0641\u0627\u062A\u062D",
         "High Contrast": "\u062A\u0628\u0627\u064A\u0646 \u0639\u0627\u0644\u064A",
@@ -171,8 +171,8 @@
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u044E \u0437\u0430 \u0434\u043E\u0441\u0442\u044A\u043F\u043D\u043E\u0441\u0442",
         Close: "\u0417\u0430\u0442\u0432\u043E\u0440\u0438",
-        "Content adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430 \u0441\u044A\u0434\u044A\u0440\u0436\u0430\u043D\u0438\u0435\u0442\u043E",
-        "Navigation adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044F\u0442\u0430",
+        "Text and Reading": "\u0422\u0435\u043A\u0441\u0442 \u0438 \u0447\u0435\u0442\u0435\u043D\u0435",
+        "Navigation and Interaction": "\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044F \u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435",
         "Text Align": "\u041F\u043E\u0434\u0440\u0430\u0432\u043D\u044F\u0432\u0430\u043D\u0435 \u043D\u0430 \u0442\u0435\u043A\u0441\u0442\u0430",
         "Align Left": "\u041F\u043E\u0434\u0440\u0430\u0432\u043D\u0438 \u0432\u043B\u044F\u0432\u043E",
         "Align Center": "\u041F\u043E\u0434\u0440\u0430\u0432\u043D\u0438 \u0432 \u0446\u0435\u043D\u0442\u044A\u0440\u0430",
@@ -181,7 +181,7 @@
         "Highlight Title": "\u041E\u0442\u043A\u0440\u043E\u044F\u0432\u0430\u043D\u0435 \u043D\u0430 \u0437\u0430\u0433\u043B\u0430\u0432\u0438\u0435\u0442\u043E",
         "Highlight Links": "\u041E\u0442\u043A\u0440\u043E\u044F\u0432\u0430\u043D\u0435 \u043D\u0430 \u0432\u0440\u044A\u0437\u043A\u0438\u0442\u0435",
         "Readable Font": "\u0427\u0435\u0442\u0438\u043C \u0448\u0440\u0438\u0444\u0442",
-        "Colour adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430 \u0446\u0432\u0435\u0442\u043E\u0432\u0435\u0442\u0435",
+        "Color and Contrast": "\u0426\u0432\u044F\u0442 \u0438 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "Dark Contrast": "\u0422\u044A\u043C\u0435\u043D \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "Light Contrast": "\u0421\u0432\u0435\u0442\u044A\u043B \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "High Contrast": "\u0412\u0438\u0441\u043E\u043A \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
@@ -236,8 +236,8 @@
       module.exports = {
         "Accessibility menu": "\u0985\u09AD\u09BF\u0997\u09AE\u09CD\u09AF\u09A4\u09BE \u09AE\u09C7\u09A8\u09C1",
         Close: "\u09AC\u09A8\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
-        "Content adjustments": "\u0995\u09A8\u09CD\u099F\u09C7\u09A8\u09CD\u099F \u09B8\u09BE\u09AE\u099E\u09CD\u099C\u09B8\u09CD\u09AF",
-        "Navigation adjustments": "\u09A8\u09C7\u09AD\u09BF\u0997\u09C7\u09B6\u09A8 \u09B8\u09BE\u09AE\u099E\u09CD\u099C\u09B8\u09CD\u09AF",
+        "Text and Reading": "\u099F\u09C7\u0995\u09CD\u09B8\u099F \u098F\u09AC\u0982 \u09AA\u09A1\u09BC\u09BE",
+        "Navigation and Interaction": "\u09A8\u09C7\u09AD\u09BF\u0997\u09C7\u09B6\u09A8 \u098F\u09AC\u0982 \u09AE\u09BF\u09A5\u09B8\u09CD\u0995\u09CD\u09B0\u09BF\u09AF\u09BC\u09BE",
         "Text Align": "\u099F\u09C7\u0995\u09CD\u09B8\u099F \u09AA\u09CD\u09B0\u09BE\u09A8\u09CD\u09A4\u09BF\u0995\u0995\u09B0\u09A3",
         "Align Left": "\u09AC\u09BE\u09AE \u09A6\u09BF\u0995\u09C7 \u09B8\u09BE\u09B0\u09BF\u09AC\u09A6\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
         "Align Center": "\u09AE\u09BE\u099D\u09C7 \u09B8\u09BE\u09B0\u09BF\u09AC\u09A6\u09CD\u09A7 \u0995\u09B0\u09C1\u09A8",
@@ -246,7 +246,7 @@
         "Highlight Title": "\u09B6\u09BF\u09B0\u09CB\u09A8\u09BE\u09AE \u0989\u099C\u09CD\u099C\u09CD\u09AC\u09B2 \u0995\u09B0\u09C1\u09A8",
         "Highlight Links": "\u09B2\u09BF\u0999\u09CD\u0995\u0997\u09C1\u09B2\u09BF \u0989\u099C\u09CD\u099C\u09CD\u09AC\u09B2 \u0995\u09B0\u09C1\u09A8",
         "Readable Font": "\u09AA\u09A0\u09A8\u09C0\u09AF\u09BC \u09AB\u09A8\u09CD\u099F",
-        "Colour adjustments": "\u09B0\u0999 \u09B8\u09BE\u09AE\u099E\u09CD\u099C\u09B8\u09CD\u09AF",
+        "Color and Contrast": "\u09B0\u0982 \u098F\u09AC\u0982 \u0995\u09A8\u099F\u09CD\u09B0\u09BE\u09B8\u09CD\u099F",
         "Dark Contrast": "\u0997\u09BE\u09A2\u09BC \u09AC\u09C8\u09B8\u09BE\u09A6\u09C3\u09B6\u09CD\u09AF",
         "Light Contrast": "\u09B9\u09BE\u09B2\u0995\u09BE \u09AC\u09C8\u09B8\u09BE\u09A6\u09C3\u09B6\u09CD\u09AF",
         "High Contrast": "\u0989\u099A\u09CD\u099A \u09AC\u09C8\u09B8\u09BE\u09A6\u09C3\u09B6\u09CD\u09AF",
@@ -301,8 +301,8 @@
       module.exports = {
         "Accessibility menu": "Men\xFA d'accessibilitat",
         Close: "Tancar",
-        "Content adjustments": "Ajustos de contingut",
-        "Navigation adjustments": "Ajustos de navegaci\xF3",
+        "Text and Reading": "Text i lectura",
+        "Navigation and Interaction": "Navegaci\xF3 i interacci\xF3",
         "Text Align": "Alineaci\xF3 del text",
         "Align Left": "Alinear a l'esquerra",
         "Align Center": "Centrar",
@@ -311,7 +311,7 @@
         "Highlight Title": "Destacar t\xEDtol",
         "Highlight Links": "Destacar enlla\xE7os",
         "Readable Font": "Font llegible",
-        "Colour adjustments": "Ajustos de color",
+        "Color and Contrast": "Color i contrast",
         "Dark Contrast": "Contrast fosc",
         "Light Contrast": "Contrast clar",
         "High Contrast": "Alt contrast",
@@ -366,8 +366,8 @@
       module.exports = {
         "Accessibility menu": "P\u0159\xEDstupnostn\xED menu",
         Close: "Zav\u0159\xEDt",
-        "Content adjustments": "\xDApravy obsahu",
-        "Navigation adjustments": "\xDApravy navigace",
+        "Text and Reading": "Text a \u010Dten\xED",
+        "Navigation and Interaction": "Navigace a interakce",
         "Text Align": "Zarovn\xE1n\xED textu",
         "Align Left": "Zarovnat vlevo",
         "Align Center": "Zarovnat na st\u0159ed",
@@ -376,7 +376,7 @@
         "Highlight Title": "Zv\xFDraznit nadpis",
         "Highlight Links": "Zv\xFDraznit odkazy",
         "Readable Font": "\u010Citeln\xFD font",
-        "Colour adjustments": "Nastaven\xED barev",
+        "Color and Contrast": "Barva a kontrast",
         "Dark Contrast": "Tmav\xFD kontrast",
         "Light Contrast": "Sv\u011Btl\xFD kontrast",
         "High Contrast": "Vysok\xFD kontrast",
@@ -431,8 +431,8 @@
       module.exports = {
         "Accessibility menu": "Tilg\xE6ngelighedsmenu",
         Close: "Luk",
-        "Content adjustments": "Indholdsjusteringer",
-        "Navigation adjustments": "Navigationsjusteringer",
+        "Text and Reading": "Tekst og l\xE6sning",
+        "Navigation and Interaction": "Navigation og interaktion",
         "Text Align": "Tekstjustering",
         "Align Left": "Venstrejuster",
         "Align Center": "Centrer",
@@ -441,7 +441,7 @@
         "Highlight Title": "Fremh\xE6v titel",
         "Highlight Links": "Fremh\xE6v links",
         "Readable Font": "L\xE6sbar skrifttype",
-        "Colour adjustments": "Farvejusteringer",
+        "Color and Contrast": "Farve og kontrast",
         "Dark Contrast": "M\xF8rk kontrast",
         "Light Contrast": "Lys kontrast",
         "High Contrast": "H\xF8j kontrast",
@@ -496,8 +496,8 @@
       module.exports = {
         "Accessibility menu": "Barrierefreiheits-Men\xFC",
         Close: "Schlie\xDFen",
-        "Content adjustments": "Inhaltsanpassungen",
-        "Navigation adjustments": "Navigationsanpassungen",
+        "Text and Reading": "Text und Lesen",
+        "Navigation and Interaction": "Navigation und Interaktion",
         "Text Align": "Textausrichtung",
         "Align Left": "Links ausrichten",
         "Align Center": "Zentrieren",
@@ -506,7 +506,7 @@
         "Highlight Title": "Titel hervorheben",
         "Highlight Links": "Links hervorheben",
         "Readable Font": "Lesbare Schriftart",
-        "Colour adjustments": "Farbanpassungen",
+        "Color and Contrast": "Farbe und Kontrast",
         "Dark Contrast": "Dunkler Kontrast",
         "Light Contrast": "Heller Kontrast",
         "High Contrast": "Hoher Kontrast",
@@ -561,8 +561,8 @@
       module.exports = {
         "Accessibility menu": "\u039C\u03B5\u03BD\u03BF\u03CD \u03A0\u03C1\u03BF\u03C3\u03B2\u03B1\u03C3\u03B9\u03BC\u03CC\u03C4\u03B7\u03C4\u03B1\u03C2",
         Close: "\u039A\u03BB\u03B5\u03AF\u03C3\u03B9\u03BC\u03BF",
-        "Content adjustments": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03A0\u03B5\u03C1\u03B9\u03B5\u03C7\u03BF\u03BC\u03AD\u03BD\u03BF\u03C5",
-        "Navigation adjustments": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03A0\u03BB\u03BF\u03AE\u03B3\u03B7\u03C3\u03B7\u03C2",
+        "Text and Reading": "\u039A\u03B5\u03AF\u03BC\u03B5\u03BD\u03BF \u03BA\u03B1\u03B9 \u03B1\u03BD\u03AC\u03B3\u03BD\u03C9\u03C3\u03B7",
+        "Navigation and Interaction": "\u03A0\u03BB\u03BF\u03AE\u03B3\u03B7\u03C3\u03B7 \u03BA\u03B1\u03B9 \u03B1\u03BB\u03BB\u03B7\u03BB\u03B5\u03C0\u03AF\u03B4\u03C1\u03B1\u03C3\u03B7",
         "Text Align": "\u03A3\u03C4\u03BF\u03AF\u03C7\u03B9\u03C3\u03B7 \u03BA\u03B5\u03B9\u03BC\u03AD\u03BD\u03BF\u03C5",
         "Align Left": "\u03A3\u03C4\u03BF\u03AF\u03C7\u03B9\u03C3\u03B7 \u0391\u03C1\u03B9\u03C3\u03C4\u03B5\u03C1\u03AC",
         "Align Center": "\u03A3\u03C4\u03BF\u03AF\u03C7\u03B9\u03C3\u03B7 \u03C3\u03C4\u03BF \u03BA\u03AD\u03BD\u03C4\u03C1\u03BF",
@@ -571,7 +571,7 @@
         "Highlight Title": "\u0395\u03C0\u03B9\u03C3\u03AE\u03BC\u03B1\u03BD\u03C3\u03B7 \u03A4\u03AF\u03C4\u03BB\u03BF\u03C5",
         "Highlight Links": "\u0395\u03C0\u03B9\u03C3\u03AE\u03BC\u03B1\u03BD\u03C3\u03B7 \u03A3\u03C5\u03BD\u03B4\u03AD\u03C3\u03BC\u03C9\u03BD",
         "Readable Font": "\u0391\u03BD\u03B1\u03B3\u03BD\u03CE\u03C3\u03B9\u03BC\u03B7 \u0393\u03C1\u03B1\u03BC\u03BC\u03B1\u03C4\u03BF\u03C3\u03B5\u03B9\u03C1\u03AC",
-        "Colour adjustments": "\u03A0\u03C1\u03BF\u03C3\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03A7\u03C1\u03CE\u03BC\u03B1\u03C4\u03BF\u03C2",
+        "Color and Contrast": "\u03A7\u03C1\u03CE\u03BC\u03B1 \u03BA\u03B1\u03B9 \u03B1\u03BD\u03C4\u03AF\u03B8\u03B5\u03C3\u03B7",
         "Dark Contrast": "\u03A3\u03BA\u03BF\u03CD\u03C1\u03B7 \u0391\u03BD\u03C4\u03AF\u03B8\u03B5\u03C3\u03B7",
         "Light Contrast": "\u0391\u03BD\u03BF\u03B9\u03C7\u03C4\u03AE \u0391\u03BD\u03C4\u03AF\u03B8\u03B5\u03C3\u03B7",
         "High Contrast": "\u03A5\u03C8\u03B7\u03BB\u03AE \u0391\u03BD\u03C4\u03AF\u03B8\u03B5\u03C3\u03B7",
@@ -626,8 +626,8 @@
       module.exports = {
         "Accessibility menu": "Accessibility menu",
         Close: "Close",
-        "Content adjustments": "Content adjustments",
-        "Navigation adjustments": "Navigation adjustments",
+        "Text and Reading": "Text and Reading",
+        "Navigation and Interaction": "Navigation and Interaction",
         "Text Align": "Text Align",
         "Align Left": "Align Left",
         "Align Center": "Align Center",
@@ -636,7 +636,7 @@
         "Highlight Title": "Highlight Title",
         "Highlight Links": "Highlight Links",
         "Readable Font": "Readable Font",
-        "Colour adjustments": "Colour adjustments",
+        "Color and Contrast": "Color and Contrast",
         "Dark Contrast": "Dark Contrast",
         "Light Contrast": "Light Contrast",
         "High Contrast": "High Contrast",
@@ -691,8 +691,8 @@
       module.exports = {
         "Accessibility menu": "Men\xFA de accesibilidad",
         Close: "Cerrar",
-        "Content adjustments": "Ajustes de Contenido",
-        "Navigation adjustments": "Ajustes de Navegaci\xF3n",
+        "Text and Reading": "Texto y lectura",
+        "Navigation and Interaction": "Navegaci\xF3n e interacci\xF3n",
         "Text Align": "Alineaci\xF3n del texto",
         "Align Left": "Alinear a la izquierda",
         "Align Center": "Centrar",
@@ -701,7 +701,7 @@
         "Highlight Title": "Resaltar T\xEDtulo",
         "Highlight Links": "Resaltar Enlaces",
         "Readable Font": "Fuente Legible",
-        "Colour adjustments": "Ajustes de Color",
+        "Color and Contrast": "Color y contraste",
         "Dark Contrast": "Contraste Oscuro",
         "Light Contrast": "Contraste Claro",
         "High Contrast": "Alto Contraste",
@@ -756,8 +756,8 @@
       module.exports = {
         "Accessibility menu": "\u0645\u0646\u0648\u06CC \u062F\u0633\u062A\u0631\u0633\u06CC",
         Close: "\u0628\u0633\u062A\u0646",
-        "Content adjustments": "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0645\u062D\u062A\u0648\u0627",
-        "Navigation adjustments": "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0646\u0627\u0648\u0628\u0631\u06CC",
+        "Text and Reading": "\u0645\u062A\u0646 \u0648 \u062E\u0648\u0627\u0646\u062F\u0646",
+        "Navigation and Interaction": "\u067E\u06CC\u0645\u0627\u06CC\u0634 \u0648 \u062A\u0639\u0627\u0645\u0644",
         "Text Align": "\u062A\u0631\u0627\u0632 \u0645\u062A\u0646",
         "Align Left": "\u062A\u0631\u0627\u0632 \u0628\u0647 \u0686\u067E",
         "Align Center": "\u062A\u0631\u0627\u0632 \u0648\u0633\u0637",
@@ -766,7 +766,7 @@
         "Highlight Title": "\u0628\u0631\u062C\u0633\u062A\u0647 \u06A9\u0631\u062F\u0646 \u0639\u0646\u0648\u0627\u0646",
         "Highlight Links": "\u0628\u0631\u062C\u0633\u062A\u0647 \u06A9\u0631\u062F\u0646 \u0644\u06CC\u0646\u06A9\u200C\u0647\u0627",
         "Readable Font": "\u0641\u0648\u0646\u062A \u062E\u0648\u0627\u0646\u0627",
-        "Colour adjustments": "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A \u0631\u0646\u06AF",
+        "Color and Contrast": "\u0631\u0646\u06AF \u0648 \u06A9\u0646\u062A\u0631\u0627\u0633\u062A",
         "Dark Contrast": "\u06A9\u0646\u062A\u0631\u0627\u0633\u062A \u062A\u06CC\u0631\u0647",
         "Light Contrast": "\u06A9\u0646\u062A\u0631\u0627\u0633\u062A \u0631\u0648\u0634\u0646",
         "High Contrast": "\u06A9\u0646\u062A\u0631\u0627\u0633\u062A \u0628\u0627\u0644\u0627",
@@ -821,8 +821,8 @@
       module.exports = {
         "Accessibility menu": "Saavutettavuusvalikko",
         Close: "Sulje",
-        "Content adjustments": "Sis\xE4ll\xF6n s\xE4\xE4d\xF6t",
-        "Navigation adjustments": "Navigoinnin s\xE4\xE4d\xF6t",
+        "Text and Reading": "Teksti ja lukeminen",
+        "Navigation and Interaction": "Navigointi ja vuorovaikutus",
         "Text Align": "Tekstin tasaus",
         "Align Left": "Tasaa vasemmalle",
         "Align Center": "Tasaa keskelle",
@@ -831,7 +831,7 @@
         "Highlight Title": "Korosta otsikko",
         "Highlight Links": "Korosta linkit",
         "Readable Font": "Helposti luettava fontti",
-        "Colour adjustments": "V\xE4rien s\xE4\xE4d\xF6t",
+        "Color and Contrast": "V\xE4ri ja kontrasti",
         "Dark Contrast": "Tumma kontrasti",
         "Light Contrast": "Vaalea kontrasti",
         "High Contrast": "Korkea kontrasti",
@@ -886,8 +886,8 @@
       module.exports = {
         "Accessibility menu": "Menu ng Accessibility",
         Close: "Isara",
-        "Content adjustments": "Ayusin ang Nilalaman",
-        "Navigation adjustments": "Ayusin ang Pag-navigate",
+        "Text and Reading": "Teksto at pagbabasa",
+        "Navigation and Interaction": "Nabigasyon at interaksyon",
         "Text Align": "Pag-align ng Teksto",
         "Align Left": "I-align sa Kaliwa",
         "Align Center": "I-align sa Gitna",
@@ -896,7 +896,7 @@
         "Highlight Title": "I-highlight ang Pamagat",
         "Highlight Links": "I-highlight ang mga Link",
         "Readable Font": "Madaling Basahing Font",
-        "Colour adjustments": "Ayusin ang Kulay",
+        "Color and Contrast": "Kulay at kontrast",
         "Dark Contrast": "Madilim na Kontrast",
         "Light Contrast": "Maliwanag na Kontrast",
         "High Contrast": "Mataas na Kontrast",
@@ -951,8 +951,8 @@
       module.exports = {
         "Accessibility menu": "Menu d'accessibilit\xE9",
         Close: "Fermer",
-        "Content adjustments": "Ajustements du Contenu",
-        "Navigation adjustments": "Ajustements de Navigation",
+        "Text and Reading": "Texte et lecture",
+        "Navigation and Interaction": "Navigation et interaction",
         "Text Align": "Alignement du texte",
         "Align Left": "Aligner \xE0 gauche",
         "Align Center": "Centrer",
@@ -961,7 +961,7 @@
         "Highlight Title": "Mettre en \xC9vidence le Titre",
         "Highlight Links": "Mettre en \xC9vidence les Liens",
         "Readable Font": "Police Lisible",
-        "Colour adjustments": "Ajustements de Couleur",
+        "Color and Contrast": "Couleur et contraste",
         "Dark Contrast": "Contraste Sombre",
         "Light Contrast": "Contraste Clair",
         "High Contrast": "Contraste \xC9lev\xE9",
@@ -1010,14 +1010,79 @@
     }
   });
 
+  // src/locales/gl.json
+  var require_gl = __commonJS({
+    "src/locales/gl.json"(exports, module) {
+      module.exports = {
+        "Accessibility menu": "Men\xFA de accesibilidade",
+        Close: "Pechar",
+        "Text and Reading": "Texto e lectura",
+        "Navigation and Interaction": "Navegaci\xF3n e interacci\xF3n",
+        "Text Align": "Ali\xF1amento do Texto",
+        "Align Left": "Ali\xF1ar \xE1 Esquerda",
+        "Align Center": "Centrar",
+        "Align Right": "Ali\xF1ar \xE1 Dereita",
+        "Adjust Font Size": "Axustar o Tama\xF1o da Fonte",
+        "Highlight Title": "Destacar T\xEDtulo",
+        "Highlight Links": "Destacar Ligaz\xF3ns",
+        "Readable Font": "Fonte Lexible",
+        "Color and Contrast": "Cor e contraste",
+        "Dark Contrast": "Contraste Escuro",
+        "Light Contrast": "Contraste Claro",
+        "High Contrast": "Alto Contraste",
+        "High Saturation": "Alta Saturaci\xF3n",
+        "Low Saturation": "Baixa Saturaci\xF3n",
+        Monochrome: "Monocromo",
+        Tools: "Ferramentas",
+        "Reading Guide": "Gu\xEDa de Lectura",
+        "Big Cursor": "Cursor Grande",
+        "Increase Font Size": "Aumentar o Tama\xF1o da Fonte",
+        "Decrease Font Size": "Diminu\xEDr o Tama\xF1o da Fonte",
+        "Letter Spacing": "Espazamento entre Letras",
+        "Line Height": "Altura da Li\xF1a",
+        "Font Weight": "Grosor da Fonte",
+        "Dyslexia Font": "Fonte para a Dislexia",
+        Language: "Idioma",
+        "Accessibility widget": "Abrir o men\xFA de accesibilidade",
+        "Accessibility Profiles": "Perf\xEDs de Accesibilidade",
+        "Cognitive Disability": "Discapacidade Cognitiva",
+        "Seizure Safe": "Protecci\xF3n Contra Crises Epil\xE9pticas",
+        "Accessibility statement": "Declaraci\xF3n de accesibilidade",
+        ADHD: "TDAH",
+        "Low Vision": "Baixa Visi\xF3n",
+        "Pause Animations": "Pausar Animaci\xF3ns",
+        "Animation paused": "Animaci\xF3n en pausa",
+        "Reset all settings": "Restablecer todos os axustes",
+        "Shortcut:": "Atallo:",
+        "Epilepsy Safe Mode": "Modo de Protecci\xF3n Contra Crises Epil\xE9pticas",
+        "Mute sounds": "Silenciar sons",
+        "Page read": "Lectura da p\xE1xina",
+        "Page read controls": "Controis de lectura da p\xE1xina",
+        Pause: "Pausar",
+        Resume: "Retomar",
+        Stop: "Deter",
+        Settings: "Axustes",
+        Speed: "Velocidade",
+        Voice: "Voz",
+        "Close accessibility menu": "Pechar o men\xFA de accesibilidade",
+        "Back to accessibility menu": "Volver ao men\xFA de accesibilidade",
+        "Search languages": "Buscar idiomas",
+        "Selected language": "Idioma seleccionado",
+        "View accessibility statement (opens in new window)": "Ver a declaraci\xF3n de accesibilidade (\xE1brese nunha nova xanela)",
+        "Visit CookieYes website (opens in new window)": "Visitar o sitio web de CookieYes (\xE1brese nunha nova xanela)",
+        "Reset all accessibility settings to default": "Restablecer todos os axustes de accesibilidade aos valores predeterminados"
+      };
+    }
+  });
+
   // src/locales/he.json
   var require_he = __commonJS({
     "src/locales/he.json"(exports, module) {
       module.exports = {
         "Accessibility menu": "\u05EA\u05E4\u05E8\u05D9\u05D8 \u05E0\u05D2\u05D9\u05E9\u05D5\u05EA",
         Close: "\u05E1\u05D2\u05D5\u05E8",
-        "Content adjustments": "\u05D4\u05EA\u05D0\u05DE\u05D5\u05EA \u05EA\u05D5\u05DB\u05DF",
-        "Navigation adjustments": "\u05D4\u05EA\u05D0\u05DE\u05D5\u05EA \u05E0\u05D9\u05D5\u05D5\u05D8",
+        "Text and Reading": "\u05D8\u05E7\u05E1\u05D8 \u05D5\u05E7\u05E8\u05D9\u05D0\u05D4",
+        "Navigation and Interaction": "\u05E0\u05D9\u05D5\u05D5\u05D8 \u05D5\u05D0\u05D9\u05E0\u05D8\u05E8\u05D0\u05E7\u05E6\u05D9\u05D4",
         "Text Align": "\u05D9\u05D9\u05E9\u05D5\u05E8 \u05D8\u05E7\u05E1\u05D8",
         "Align Left": "\u05D9\u05D9\u05E9\u05D5\u05E8 \u05DC\u05E9\u05DE\u05D0\u05DC",
         "Align Center": "\u05D9\u05D9\u05E9\u05D5\u05E8 \u05DC\u05DE\u05E8\u05DB\u05D6",
@@ -1026,7 +1091,7 @@
         "Highlight Title": "\u05D4\u05D3\u05D2\u05E9 \u05DB\u05D5\u05EA\u05E8\u05EA",
         "Highlight Links": "\u05D4\u05D3\u05D2\u05E9 \u05E7\u05D9\u05E9\u05D5\u05E8\u05D9\u05DD",
         "Readable Font": "\u05E4\u05D5\u05E0\u05D8 \u05E7\u05E8\u05D9\u05D0",
-        "Colour adjustments": "\u05D4\u05EA\u05D0\u05DE\u05D5\u05EA \u05E6\u05D1\u05E2",
+        "Color and Contrast": "\u05E6\u05D1\u05E2 \u05D5\u05E0\u05D9\u05D2\u05D5\u05D3\u05D9\u05D5\u05EA",
         "Dark Contrast": "\u05E0\u05D9\u05D2\u05D5\u05D3\u05D9\u05D5\u05EA \u05DB\u05D4\u05D4",
         "Light Contrast": "\u05E0\u05D9\u05D2\u05D5\u05D3\u05D9\u05D5\u05EA \u05D1\u05D4\u05D9\u05E8\u05D4",
         "High Contrast": "\u05E0\u05D9\u05D2\u05D5\u05D3\u05D9\u05D5\u05EA \u05D2\u05D1\u05D5\u05D4\u05D4",
@@ -1081,8 +1146,8 @@
       module.exports = {
         "Accessibility menu": "\u0938\u0941\u0932\u092D\u0924\u093E \u092E\u0947\u0928\u0942",
         Close: "\u092C\u0902\u0926 \u0915\u0930\u0947\u0902",
-        "Content adjustments": "\u0938\u093E\u092E\u0917\u094D\u0930\u0940 \u0938\u092E\u093E\u092F\u094B\u091C\u0928",
-        "Navigation adjustments": "\u0928\u0947\u0935\u093F\u0917\u0947\u0936\u0928 \u0938\u092E\u093E\u092F\u094B\u091C\u0928",
+        "Text and Reading": "\u091F\u0947\u0915\u094D\u0938\u094D\u091F \u0914\u0930 \u092A\u0922\u093C\u0928\u093E",
+        "Navigation and Interaction": "\u0928\u0947\u0935\u093F\u0917\u0947\u0936\u0928 \u0914\u0930 \u0907\u0902\u091F\u0930\u0948\u0915\u094D\u0936\u0928",
         "Text Align": "\u091F\u0947\u0915\u094D\u0938\u094D\u091F \u0938\u0902\u0930\u0947\u0916\u0923",
         "Align Left": "\u092C\u093E\u0908\u0902 \u0913\u0930 \u0938\u0902\u0930\u0947\u0916\u093F\u0924 \u0915\u0930\u0947\u0902",
         "Align Center": "\u0915\u0947\u0902\u0926\u094D\u0930 \u092E\u0947\u0902 \u0938\u0902\u0930\u0947\u0916\u093F\u0924 \u0915\u0930\u0947\u0902",
@@ -1091,7 +1156,7 @@
         "Highlight Title": "\u0936\u0940\u0930\u094D\u0937\u0915 \u0939\u093E\u0907\u0932\u093E\u0907\u091F \u0915\u0930\u0947\u0902",
         "Highlight Links": "\u0932\u093F\u0902\u0915 \u0939\u093E\u0907\u0932\u093E\u0907\u091F \u0915\u0930\u0947\u0902",
         "Readable Font": "\u092A\u0920\u0928\u0940\u092F \u092B\u0949\u0928\u094D\u091F",
-        "Colour adjustments": "\u0930\u0902\u0917 \u0938\u092E\u093E\u092F\u094B\u091C\u0928",
+        "Color and Contrast": "\u0930\u0902\u0917 \u0914\u0930 \u0915\u0902\u091F\u094D\u0930\u093E\u0938\u094D\u091F",
         "Dark Contrast": "\u0917\u0939\u0930\u093E \u0915\u0902\u091F\u094D\u0930\u093E\u0938\u094D\u091F",
         "Light Contrast": "\u0939\u0932\u094D\u0915\u093E \u0915\u0902\u091F\u094D\u0930\u093E\u0938\u094D\u091F",
         "High Contrast": "\u0909\u091A\u094D\u091A \u0915\u0902\u091F\u094D\u0930\u093E\u0938\u094D\u091F",
@@ -1146,8 +1211,8 @@
       module.exports = {
         "Accessibility menu": "Izbornik pristupa\u010Dnosti",
         Close: "Zatvori",
-        "Content adjustments": "Prilagodbe sadr\u017Eaja",
-        "Navigation adjustments": "Prilagodbe navigacije",
+        "Text and Reading": "Tekst i \u010Ditanje",
+        "Navigation and Interaction": "Navigacija i interakcija",
         "Text Align": "Poravnanje teksta",
         "Align Left": "Poravnaj lijevo",
         "Align Center": "Poravnaj na sredinu",
@@ -1156,7 +1221,7 @@
         "Highlight Title": "Istakni naslov",
         "Highlight Links": "Istakni poveznice",
         "Readable Font": "\u010Citljiv font",
-        "Colour adjustments": "Prilagodbe boja",
+        "Color and Contrast": "Boja i kontrast",
         "Dark Contrast": "Tamni kontrast",
         "Light Contrast": "Svijetli kontrast",
         "High Contrast": "Visoki kontrast",
@@ -1211,8 +1276,8 @@
       module.exports = {
         "Accessibility menu": "Hozz\xE1f\xE9rhet\u0151s\xE9gi men\xFC",
         Close: "Bez\xE1r\xE1s",
-        "Content adjustments": "Tartalom be\xE1ll\xEDt\xE1sai",
-        "Navigation adjustments": "Navig\xE1ci\xF3 be\xE1ll\xEDt\xE1sai",
+        "Text and Reading": "Sz\xF6veg \xE9s olvas\xE1s",
+        "Navigation and Interaction": "Navig\xE1ci\xF3 \xE9s interakci\xF3",
         "Text Align": "Sz\xF6veg igaz\xEDt\xE1sa",
         "Align Left": "Balra igaz\xEDt\xE1s",
         "Align Center": "K\xF6z\xE9pre igaz\xEDt\xE1s",
@@ -1221,7 +1286,7 @@
         "Highlight Title": "C\xEDm kiemel\xE9se",
         "Highlight Links": "Linkek kiemel\xE9se",
         "Readable Font": "Olvashat\xF3 bet\u0171t\xEDpus",
-        "Colour adjustments": "Sz\xEDnbe\xE1ll\xEDt\xE1sok",
+        "Color and Contrast": "Sz\xEDn \xE9s kontraszt",
         "Dark Contrast": "S\xF6t\xE9t kontraszt",
         "Light Contrast": "Vil\xE1gos kontraszt",
         "High Contrast": "Magas kontraszt",
@@ -1276,8 +1341,8 @@
       module.exports = {
         "Accessibility menu": "Menu Aksesibilitas",
         Close: "Tutup",
-        "Content adjustments": "Penyesuaian Konten",
-        "Navigation adjustments": "Penyesuaian Navigasi",
+        "Text and Reading": "Teks dan membaca",
+        "Navigation and Interaction": "Navigasi dan interaksi",
         "Text Align": "Perataan Teks",
         "Align Left": "Rata Kiri",
         "Align Center": "Rata Tengah",
@@ -1286,7 +1351,7 @@
         "Highlight Title": "Sorot Judul",
         "Highlight Links": "Sorot Tautan",
         "Readable Font": "Font Mudah Dibaca",
-        "Colour adjustments": "Penyesuaian Warna",
+        "Color and Contrast": "Warna dan kontras",
         "Dark Contrast": "Kontras Gelap",
         "Light Contrast": "Kontras Terang",
         "High Contrast": "Kontras Tinggi",
@@ -1341,8 +1406,8 @@
       module.exports = {
         "Accessibility menu": "Menu accessibilit\xE0",
         Close: "Chiudi",
-        "Content adjustments": "Regolazioni Contenuto",
-        "Navigation adjustments": "Regolazioni Navigazione",
+        "Text and Reading": "Testo e lettura",
+        "Navigation and Interaction": "Navigazione e interazione",
         "Text Align": "Allineamento del testo",
         "Align Left": "Allinea a sinistra",
         "Align Center": "Centra",
@@ -1351,7 +1416,7 @@
         "Highlight Title": "Evidenzia Titolo",
         "Highlight Links": "Evidenzia Collegamenti",
         "Readable Font": "Carattere Leggibile",
-        "Colour adjustments": "Regolazioni Colore",
+        "Color and Contrast": "Colore e contrasto",
         "Dark Contrast": "Contrasto Scuro",
         "Light Contrast": "Contrasto Chiaro",
         "High Contrast": "Alto Contrasto",
@@ -1406,8 +1471,8 @@
       module.exports = {
         "Accessibility menu": "\u30A2\u30AF\u30BB\u30B7\u30D3\u30EA\u30C6\u30A3\u30E1\u30CB\u30E5\u30FC",
         Close: "\u9589\u3058\u308B",
-        "Content adjustments": "\u30B3\u30F3\u30C6\u30F3\u30C4\u8ABF\u6574",
-        "Navigation adjustments": "\u30CA\u30D3\u30B2\u30FC\u30B7\u30E7\u30F3\u8ABF\u6574",
+        "Text and Reading": "\u30C6\u30AD\u30B9\u30C8\u3068\u8AAD\u307F\u3084\u3059\u3055",
+        "Navigation and Interaction": "\u30CA\u30D3\u30B2\u30FC\u30B7\u30E7\u30F3\u3068\u64CD\u4F5C",
         "Text Align": "\u30C6\u30AD\u30B9\u30C8\u306E\u914D\u7F6E",
         "Align Left": "\u5DE6\u63C3\u3048",
         "Align Center": "\u4E2D\u592E\u63C3\u3048",
@@ -1416,7 +1481,7 @@
         "Highlight Title": "\u30BF\u30A4\u30C8\u30EB\u3092\u5F37\u8ABF",
         "Highlight Links": "\u30EA\u30F3\u30AF\u3092\u5F37\u8ABF",
         "Readable Font": "\u8AAD\u307F\u3084\u3059\u3044\u30D5\u30A9\u30F3\u30C8",
-        "Colour adjustments": "\u8272\u8ABF\u6574",
+        "Color and Contrast": "\u8272\u3068\u30B3\u30F3\u30C8\u30E9\u30B9\u30C8",
         "Dark Contrast": "\u6697\u3044\u30B3\u30F3\u30C8\u30E9\u30B9\u30C8",
         "Light Contrast": "\u660E\u308B\u3044\u30B3\u30F3\u30C8\u30E9\u30B9\u30C8",
         "High Contrast": "\u9AD8\u30B3\u30F3\u30C8\u30E9\u30B9\u30C8",
@@ -1471,8 +1536,8 @@
       module.exports = {
         "Accessibility menu": "\u10D0\u10D3\u10D0\u10DE\u10E2\u10D8\u10E0\u10D4\u10D1\u10E3\u10DA\u10D8 \u10DB\u10D4\u10DC\u10D8\u10E3",
         Close: "\u10D3\u10D0\u10EE\u10E3\u10E0\u10D5\u10D0",
-        "Content adjustments": "\u10E8\u10D8\u10D2\u10D7\u10D0\u10D5\u10E1\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
-        "Navigation adjustments": "\u10DC\u10D0\u10D5\u10D8\u10D2\u10D0\u10EA\u10D8\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
+        "Text and Reading": "\u10E2\u10D4\u10E5\u10E1\u10E2\u10D8 \u10D3\u10D0 \u10D9\u10D8\u10D7\u10EE\u10D5\u10D0",
+        "Navigation and Interaction": "\u10DC\u10D0\u10D5\u10D8\u10D2\u10D0\u10EA\u10D8\u10D0 \u10D3\u10D0 \u10D8\u10DC\u10E2\u10D4\u10E0\u10D0\u10E5\u10EA\u10D8\u10D0",
         "Text Align": "\u10E2\u10D4\u10E5\u10E1\u10E2\u10D8\u10E1 \u10E1\u10EC\u10DD\u10E0\u10D4\u10D1\u10D0",
         "Align Left": "\u10DB\u10D0\u10E0\u10EA\u10EE\u10DC\u10D8\u10D5 \u10D2\u10D0\u10E1\u10EC\u10DD\u10E0\u10D4\u10D1\u10D0",
         "Align Center": "\u10EA\u10D4\u10DC\u10E2\u10E0\u10E8\u10D8 \u10E1\u10EC\u10DD\u10E0\u10D4\u10D1\u10D0",
@@ -1481,7 +1546,7 @@
         "Highlight Title": "\u10E1\u10D0\u10D7\u10D0\u10E3\u10E0\u10D4\u10D1\u10D8\u10E1 \u10D2\u10D0\u10DB\u10DD\u10E7\u10DD\u10E4\u10D0",
         "Highlight Links": "\u10D1\u10DB\u10E3\u10DA\u10D4\u10D1\u10D8\u10E1 \u10D2\u10D0\u10DB\u10DD\u10E7\u10DD\u10E4\u10D0",
         "Readable Font": "\u10EC\u10D0\u10D9\u10D8\u10D7\u10EE\u10D5\u10D0\u10D3\u10D8 \u10E4\u10DD\u10DC\u10E2\u10D8",
-        "Colour adjustments": "\u10E4\u10D4\u10E0\u10D4\u10D1\u10D8\u10E1 \u10DB\u10DD\u10E0\u10D2\u10D4\u10D1\u10D0",
+        "Color and Contrast": "\u10E4\u10D4\u10E0\u10D8 \u10D3\u10D0 \u10D9\u10DD\u10DC\u10E2\u10E0\u10D0\u10E1\u10E2\u10D8",
         "Dark Contrast": "\u10DB\u10E3\u10E5\u10D8 \u10D9\u10DD\u10DC\u10E2\u10E0\u10D0\u10E1\u10E2\u10D8",
         "Light Contrast": "\u10E6\u10D8\u10D0 \u10D9\u10DD\u10DC\u10E2\u10E0\u10D0\u10E1\u10E2\u10D8",
         "High Contrast": "\u10DB\u10D0\u10E6\u10D0\u10DA\u10D8 \u10D9\u10DD\u10DC\u10E2\u10E0\u10D0\u10E1\u10E2\u10D8",
@@ -1536,8 +1601,8 @@
       module.exports = {
         "Accessibility menu": "\u0CAA\u0CCD\u0CB0\u0CB5\u0CC7\u0CB6\u0CAE\u0CBE\u0CA1\u0CC1\u0CB5\u0CBF\u0C95\u0CC6 \u0CAE\u0CC6\u0CA8\u0CC1",
         Close: "\u0CAE\u0CC1\u0C9A\u0CCD\u0C9A\u0CBF",
-        "Content adjustments": "\u0CB5\u0CBF\u0CB7\u0CAF\u0CA6 \u0CB9\u0CCA\u0C82\u0CA6\u0CBE\u0CA3\u0CBF\u0C95\u0CC6\u0C97\u0CB3\u0CC1",
-        "Navigation adjustments": "\u0CA8\u0CCD\u0CAF\u0CBE\u0CB5\u0CBF\u0C97\u0CC7\u0CB6\u0CA8\u0CCD \u0CB9\u0CCA\u0C82\u0CA6\u0CBE\u0CA3\u0CBF\u0C95\u0CC6\u0C97\u0CB3\u0CC1",
+        "Text and Reading": "\u0CAA\u0CA0\u0CCD\u0CAF \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1 \u0C93\u0CA6\u0CC1\u0CB5\u0CBF\u0C95\u0CC6",
+        "Navigation and Interaction": "\u0CA8\u0CCD\u0CAF\u0CBE\u0CB5\u0CBF\u0C97\u0CC7\u0CB6\u0CA8\u0CCD \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1 \u0CB8\u0C82\u0CB5\u0CB9\u0CA8",
         "Text Align": "\u0CAA\u0CA0\u0CCD\u0CAF \u0C9C\u0CCB\u0CA1\u0CA3\u0CC6",
         "Align Left": "\u0C8E\u0CA1\u0C95\u0CCD\u0C95\u0CC6 \u0C9C\u0CCB\u0CA1\u0CBF\u0CB8\u0CBF",
         "Align Center": "\u0CAE\u0CA7\u0CCD\u0CAF\u0C95\u0CCD\u0C95\u0CC6 \u0C9C\u0CCB\u0CA1\u0CBF\u0CB8\u0CBF",
@@ -1546,7 +1611,7 @@
         "Highlight Title": "\u0CB6\u0CC0\u0CB0\u0CCD\u0CB7\u0CBF\u0C95\u0CC6\u0CAF\u0CA8\u0CCD\u0CA8\u0CC1 \u0CB9\u0CC8\u0CB2\u0CC8\u0C9F\u0CCD \u0CAE\u0CBE\u0CA1\u0CBF",
         "Highlight Links": "\u0CB2\u0CBF\u0C82\u0C95\u0CCD\u200C\u0C97\u0CB3\u0CA8\u0CCD\u0CA8\u0CC1 \u0CB9\u0CC8\u0CB2\u0CC8\u0C9F\u0CCD \u0CAE\u0CBE\u0CA1\u0CBF",
         "Readable Font": "\u0C93\u0CA6\u0CB2\u0CC1 \u0CB8\u0CC1\u0CB2\u0CAD\u0CB5\u0CBE\u0CA6 \u0C85\u0C95\u0CCD\u0CB7\u0CB0\u0CB6\u0CC8\u0CB2\u0CBF",
-        "Colour adjustments": "\u0CAC\u0CA3\u0CCD\u0CA3 \u0CB9\u0CCA\u0C82\u0CA6\u0CBE\u0CA3\u0CBF\u0C95\u0CC6\u0C97\u0CB3\u0CC1",
+        "Color and Contrast": "\u0CAC\u0CA3\u0CCD\u0CA3 \u0CAE\u0CA4\u0CCD\u0CA4\u0CC1 \u0C95\u0CBE\u0C82\u0C9F\u0CCD\u0CB0\u0CBE\u0CB8\u0CCD\u0C9F\u0CCD",
         "Dark Contrast": "\u0C97\u0CBE\u0CA2 \u0CB5\u0CCD\u0CAF\u0CA4\u0CCD\u0CAF\u0CBE\u0CB8",
         "Light Contrast": "\u0CA4\u0CBF\u0CB3\u0CBF \u0CB5\u0CCD\u0CAF\u0CA4\u0CCD\u0CAF\u0CBE\u0CB8",
         "High Contrast": "\u0CB9\u0CC6\u0C9A\u0CCD\u0C9A\u0CC1 \u0CB5\u0CCD\u0CAF\u0CA4\u0CCD\u0CAF\u0CBE\u0CB8",
@@ -1601,8 +1666,8 @@
       module.exports = {
         "Accessibility menu": "\uC811\uADFC\uC131 \uBA54\uB274",
         Close: "\uB2EB\uAE30",
-        "Content adjustments": "\uCF58\uD150\uCE20 \uC870\uC815",
-        "Navigation adjustments": "\uD0D0\uC0C9 \uC870\uC815",
+        "Text and Reading": "\uD14D\uC2A4\uD2B8 \uBC0F \uC77D\uAE30",
+        "Navigation and Interaction": "\uD0D0\uC0C9 \uBC0F \uC0C1\uD638\uC791\uC6A9",
         "Text Align": "\uD14D\uC2A4\uD2B8 \uC815\uB82C",
         "Align Left": "\uC67C\uCABD \uC815\uB82C",
         "Align Center": "\uAC00\uC6B4\uB370 \uC815\uB82C",
@@ -1611,7 +1676,7 @@
         "Highlight Title": "\uC81C\uBAA9 \uAC15\uC870",
         "Highlight Links": "\uB9C1\uD06C \uAC15\uC870",
         "Readable Font": "\uAC00\uB3C5\uC131 \uC88B\uC740 \uAE00\uAF34",
-        "Colour adjustments": "\uC0C9\uC0C1 \uC870\uC815",
+        "Color and Contrast": "\uC0C9\uC0C1 \uBC0F \uB300\uBE44",
         "Dark Contrast": "\uC5B4\uB450\uC6B4 \uB300\uBE44",
         "Light Contrast": "\uBC1D\uC740 \uB300\uBE44",
         "High Contrast": "\uB192\uC740 \uB300\uBE44",
@@ -1666,8 +1731,8 @@
       module.exports = {
         "Accessibility menu": "Menuya Gih\xEE\u015Ftin\xEA",
         Close: "Bigire",
-        "Content adjustments": "Guhertin\xEAn Naverok\xEA",
-        "Navigation adjustments": "Guhertin\xEAn Nav\xEEgasyon\xEA",
+        "Text and Reading": "Niv\xEEs \xFB xwendin",
+        "Navigation and Interaction": "R\xEAve\xE7\xFBn \xFB t\xEAkil\xEE",
         "Text Align": "H\xEEzakirina niv\xEEs\xEA",
         "Align Left": "H\xEEzakirina \xE7ep\xEA",
         "Align Center": "H\xEEzakirina navend\xEA",
@@ -1676,7 +1741,7 @@
         "Highlight Title": "Sernav\xEA n\xEE\u015Fan bide",
         "Highlight Links": "Gir\xEAdan\xEAn n\xEE\u015Fan bide",
         "Readable Font": "Fonta Xwendbar",
-        "Colour adjustments": "Guhertin\xEAn Reng\xEA",
+        "Color and Contrast": "Reng \xFB tezad",
         "Dark Contrast": "Kontrasta Tar\xEE",
         "Light Contrast": "Kontrasta Ronah\xEE",
         "High Contrast": "Kontrasta Bilind",
@@ -1731,8 +1796,8 @@
       module.exports = {
         "Accessibility menu": "Accessibilit\xE9itsmen\xFC",
         Close: "Zoumaachen",
-        "Content adjustments": "Inhaltsunpassungen",
-        "Navigation adjustments": "Navigatiounsunpassungen",
+        "Text and Reading": "Text a Liesen",
+        "Navigation and Interaction": "Navigatioun an Interaktioun",
         "Text Align": "Textausriichtung",
         "Align Left": "L\xE9nks ausriichten",
         "Align Center": "Zentr\xE9ieren",
@@ -1741,7 +1806,7 @@
         "Highlight Title": "Titel mark\xE9ieren",
         "Highlight Links": "Links mark\xE9ieren",
         "Readable Font": "Liesbar Schr\xEBft",
-        "Colour adjustments": "Faarwunpassungen",
+        "Color and Contrast": "Faarf a Kontrast",
         "Dark Contrast": "D\xE4ischteren Kontrast",
         "Light Contrast": "Hellen Kontrast",
         "High Contrast": "H\xE9ijen Kontrast",
@@ -1796,8 +1861,8 @@
       module.exports = {
         "Accessibility menu": "Prieinamumo meniu",
         Close: "U\u017Edaryti",
-        "Content adjustments": "Turinio koregavimai",
-        "Navigation adjustments": "Navigacijos koregavimai",
+        "Text and Reading": "Tekstas ir skaitymas",
+        "Navigation and Interaction": "Navigacija ir s\u0105veika",
         "Text Align": "Teksto lygiavimas",
         "Align Left": "Lygiuoti kair\u0117je",
         "Align Center": "Lygiuoti centre",
@@ -1806,7 +1871,7 @@
         "Highlight Title": "Pary\u0161kinti antra\u0161t\u0119",
         "Highlight Links": "Pary\u0161kinti nuorodas",
         "Readable Font": "\u012Eskaitomas \u0161riftas",
-        "Colour adjustments": "Spalv\u0173 koregavimai",
+        "Color and Contrast": "Spalva ir kontrastas",
         "Dark Contrast": "Tamsus kontrastas",
         "Light Contrast": "\u0160viesus kontrastas",
         "High Contrast": "Auk\u0161tas kontrastas",
@@ -1861,8 +1926,8 @@
       module.exports = {
         "Accessibility menu": "Pieejam\u012Bbas izv\u0113lne",
         Close: "Aizv\u0113rt",
-        "Content adjustments": "Satura piel\u0101gojumi",
-        "Navigation adjustments": "Navig\u0101cijas piel\u0101gojumi",
+        "Text and Reading": "Teksts un las\u012B\u0161ana",
+        "Navigation and Interaction": "Navig\u0101cija un mijiedarb\u012Bba",
         "Text Align": "Teksta l\u012Bdzin\u0101\u0161ana",
         "Align Left": "Izl\u012Bdzin\u0101t pa kreisi",
         "Align Center": "L\u012Bdzin\u0101t centr\u0101",
@@ -1871,7 +1936,7 @@
         "Highlight Title": "Izcelt virsrakstu",
         "Highlight Links": "Izcelt saites",
         "Readable Font": "Las\u0101ms fonts",
-        "Colour adjustments": "Kr\u0101su piel\u0101gojumi",
+        "Color and Contrast": "Kr\u0101sa un kontrasts",
         "Dark Contrast": "Tum\u0161s kontrasts",
         "Light Contrast": "Gai\u0161s kontrasts",
         "High Contrast": "Augsts kontrasts",
@@ -1926,8 +1991,8 @@
       module.exports = {
         "Accessibility menu": "\u0D2A\u0D4D\u0D30\u0D35\u0D47\u0D36\u0D2F\u0D4B\u0D17\u0D4D\u0D2F\u0D24 \u0D2E\u0D46\u0D28\u0D41",
         Close: "\u0D05\u0D1F\u0D2F\u0D4D\u0D15\u0D4D\u0D15\u0D41\u0D15",
-        "Content adjustments": "\u0D09\u0D33\u0D4D\u0D33\u0D1F\u0D15\u0D4D\u0D15 \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
-        "Navigation adjustments": "\u0D28\u0D3E\u0D35\u0D3F\u0D17\u0D47\u0D37\u0D7B \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
+        "Text and Reading": "\u0D1F\u0D46\u0D15\u0D4D\u0D38\u0D4D\u0D31\u0D4D\u0D31\u0D41\u0D02 \u0D35\u0D3E\u0D2F\u0D28\u0D2F\u0D41\u0D02",
+        "Navigation and Interaction": "\u0D28\u0D3E\u0D35\u0D3F\u0D17\u0D47\u0D37\u0D28\u0D41\u0D02 \u0D07\u0D1F\u0D2A\u0D46\u0D1F\u0D32\u0D41\u0D02",
         "Text Align": "\u0D1F\u0D46\u0D15\u0D4D\u200C\u0D38\u0D4D\u0D31\u0D4D\u0D31\u0D4D \u0D35\u0D3F\u0D28\u0D4D\u0D2F\u0D3E\u0D38\u0D02",
         "Align Left": "\u0D07\u0D1F\u0D24\u0D4D \u0D35\u0D3F\u0D28\u0D4D\u0D2F\u0D38\u0D3F\u0D15\u0D4D\u0D15\u0D41\u0D15",
         "Align Center": "\u0D2E\u0D27\u0D4D\u0D2F\u0D24\u0D4D\u0D24\u0D3F\u0D7D \u0D35\u0D3F\u0D28\u0D4D\u0D2F\u0D38\u0D3F\u0D15\u0D4D\u0D15\u0D41\u0D15",
@@ -1936,7 +2001,7 @@
         "Highlight Title": "\u0D36\u0D40\u0D7C\u0D37\u0D15\u0D02 \u0D39\u0D48\u0D32\u0D48\u0D31\u0D4D\u0D31\u0D4D \u0D1A\u0D46\u0D2F\u0D4D\u0D2F\u0D41\u0D15",
         "Highlight Links": "\u0D32\u0D3F\u0D19\u0D4D\u0D15\u0D41\u0D15\u0D7E \u0D39\u0D48\u0D32\u0D48\u0D31\u0D4D\u0D31\u0D4D \u0D1A\u0D46\u0D2F\u0D4D\u0D2F\u0D41\u0D15",
         "Readable Font": "\u0D35\u0D3E\u0D2F\u0D3F\u0D15\u0D4D\u0D15\u0D3E\u0D7B \u0D0E\u0D33\u0D41\u0D2A\u0D4D\u0D2A\u0D2E\u0D41\u0D33\u0D4D\u0D33 \u0D2B\u0D4B\u0D23\u0D4D\u0D1F\u0D4D",
-        "Colour adjustments": "\u0D28\u0D3F\u0D31 \u0D15\u0D4D\u0D30\u0D2E\u0D40\u0D15\u0D30\u0D23\u0D19\u0D4D\u0D19\u0D7E",
+        "Color and Contrast": "\u0D28\u0D3F\u0D31\u0D35\u0D41\u0D02 \u0D15\u0D4B\u0D7A\u0D1F\u0D4D\u0D30\u0D3E\u0D38\u0D4D\u0D31\u0D4D\u0D31\u0D41\u0D02",
         "Dark Contrast": "\u0D07\u0D30\u0D41\u0D23\u0D4D\u0D1F \u0D15\u0D4B\u0D7A\u0D1F\u0D4D\u0D30\u0D3E\u0D38\u0D4D\u0D31\u0D4D\u0D31\u0D4D",
         "Light Contrast": "\u0D07\u0D33\u0D02 \u0D15\u0D4B\u0D7A\u0D1F\u0D4D\u0D30\u0D3E\u0D38\u0D4D\u0D31\u0D4D\u0D31\u0D4D",
         "High Contrast": "\u0D09\u0D2F\u0D7C\u0D28\u0D4D\u0D28 \u0D15\u0D4B\u0D7A\u0D1F\u0D4D\u0D30\u0D3E\u0D38\u0D4D\u0D31\u0D4D\u0D31\u0D4D",
@@ -1991,8 +2056,8 @@
       module.exports = {
         "Accessibility menu": "\u0425\u04AF\u0440\u0442\u044D\u044D\u043C\u0436\u0438\u0439\u043D \u0446\u044D\u0441",
         Close: "\u0425\u0430\u0430\u0445",
-        "Content adjustments": "\u0410\u0433\u0443\u0443\u043B\u0433\u044B\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0433\u0430",
-        "Navigation adjustments": "\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0439\u043D \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0433\u0430",
+        "Text and Reading": "\u0422\u0435\u043A\u0441\u0442 \u0431\u0430 \u0443\u043D\u0448\u0438\u0445",
+        "Navigation and Interaction": "\u041D\u0430\u0432\u0438\u0433\u0430\u0446 \u0431\u0430 \u0445\u0430\u0440\u0438\u043B\u0446\u0430\u043D \u04AF\u0439\u043B\u0434\u044D\u043B",
         "Text Align": "\u0422\u0435\u043A\u0441\u0442\u0438\u0439\u043D \u0437\u044D\u0440\u044D\u0433\u0446\u04AF\u04AF\u043B\u044D\u043B\u0442",
         "Align Left": "\u0417\u04AF\u04AF\u043D \u0442\u0430\u043B\u0434 \u0437\u044D\u0440\u044D\u0433\u0446\u04AF\u04AF\u043B\u044D\u0445",
         "Align Center": "\u0413\u043E\u043B\u0434 \u0431\u0430\u0439\u0440\u043B\u0443\u0443\u043B\u0430\u0445",
@@ -2001,7 +2066,7 @@
         "Highlight Title": "\u0413\u0430\u0440\u0447\u0433\u0438\u0439\u0433 \u043E\u043D\u0446\u043B\u043E\u0445",
         "Highlight Links": "\u0425\u043E\u043B\u0431\u043E\u043E\u0441\u0443\u0443\u0434\u044B\u0433 \u043E\u043D\u0446\u043B\u043E\u0445",
         "Readable Font": "\u0423\u043D\u0448\u0438\u0445\u0430\u0434 \u0445\u044F\u043B\u0431\u0430\u0440 \u0444\u043E\u043D\u0442",
-        "Colour adjustments": "\u04E8\u043D\u0433\u04E9\u043D\u0438\u0439 \u0442\u043E\u0445\u0438\u0440\u0443\u0443\u043B\u0433\u0430",
+        "Color and Contrast": "\u04E8\u043D\u0433\u04E9 \u0431\u0430 \u044F\u043B\u0433\u0430\u0440\u0430\u043B",
         "Dark Contrast": "\u0425\u0430\u0440\u0430\u043D\u0445\u0443\u0439 \u044F\u043B\u0433\u0430\u0440\u0430\u043B",
         "Light Contrast": "\u0413\u044D\u0440\u044D\u043B\u0442\u044D\u0439 \u044F\u043B\u0433\u0430\u0440\u0430\u043B",
         "High Contrast": "\u04E8\u043D\u0434\u04E9\u0440 \u044F\u043B\u0433\u0430\u0440\u0430\u043B",
@@ -2056,8 +2121,8 @@
       module.exports = {
         "Accessibility menu": "Menu Aksesibiliti",
         Close: "Tutup",
-        "Content adjustments": "Penyesuaian Kandungan",
-        "Navigation adjustments": "Penyesuaian Navigasi",
+        "Text and Reading": "Teks dan pembacaan",
+        "Navigation and Interaction": "Navigasi dan interaksi",
         "Text Align": "Penjajaran Teks",
         "Align Left": "Jajar ke Kiri",
         "Align Center": "Jajar Tengah",
@@ -2066,7 +2131,7 @@
         "Highlight Title": "Serlahkan Tajuk",
         "Highlight Links": "Serlahkan Pautan",
         "Readable Font": "Fon Mudah Baca",
-        "Colour adjustments": "Penyesuaian Warna",
+        "Color and Contrast": "Warna dan kontras",
         "Dark Contrast": "Kontras Gelap",
         "Light Contrast": "Kontras Terang",
         "High Contrast": "Kontras Tinggi",
@@ -2121,8 +2186,8 @@
       module.exports = {
         "Accessibility menu": "\u1019\u100A\u103A\u101E\u1030\u1019\u1006\u102D\u102F \u1021\u101E\u102F\u1036\u1038\u1015\u103C\u102F\u1014\u102D\u102F\u1004\u103A\u101E\u1031\u102C \u1019\u102E\u1014\u1030\u1038",
         Close: "\u1015\u102D\u1010\u103A\u1015\u102B",
-        "Content adjustments": "\u1021\u1000\u103C\u1031\u102C\u1004\u103A\u1038\u1021\u101B\u102C \u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1019\u103E\u102F\u1019\u103B\u102C\u1038",
-        "Navigation adjustments": "\u101C\u1019\u103A\u1038\u100A\u103D\u103E\u1014\u103A\u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1019\u103E\u102F\u1019\u103B\u102C\u1038",
+        "Text and Reading": "\u1005\u102C\u101E\u102C\u1038\u1014\u103E\u1004\u1037\u103A \u1016\u1010\u103A\u101B\u103E\u102F\u1001\u103C\u1004\u103A\u1038",
+        "Navigation and Interaction": "\u101C\u1019\u103A\u1038\u100A\u103D\u103E\u1014\u103A\u1019\u103E\u102F\u1014\u103E\u1004\u1037\u103A \u1021\u1015\u103C\u1014\u103A\u1021\u101C\u103E\u1014\u103A\u1006\u1000\u103A\u101E\u103D\u101A\u103A\u1019\u103E\u102F",
         "Text Align": "\u1005\u102C\u101E\u102C\u1038\u1014\u1031\u101B\u102C\u1001\u103B",
         "Align Left": "\u1018\u101A\u103A\u1018\u1000\u103A\u101E\u102D\u102F\u1037 \u100A\u103E\u102D\u1015\u102B",
         "Align Center": "\u1021\u101C\u101A\u103A\u1010\u103D\u1004\u103A \u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D",
@@ -2131,7 +2196,7 @@
         "Highlight Title": "\u1001\u1031\u102B\u1004\u103A\u1038\u1005\u1009\u103A\u1000\u102D\u102F \u1021\u1011\u1030\u1038\u1015\u103C\u102F\u1015\u102B",
         "Highlight Links": "\u101C\u1004\u1037\u103A\u1019\u103B\u102C\u1038\u1000\u102D\u102F \u1021\u1011\u1030\u1038\u1015\u103C\u102F\u1015\u102B",
         "Readable Font": "\u1016\u1010\u103A\u101B\u1014\u103A\u101C\u103D\u101A\u103A\u1000\u1030\u101E\u1031\u102C \u1016\u1031\u102C\u1004\u1037\u103A",
-        "Colour adjustments": "\u1021\u101B\u1031\u102C\u1004\u103A \u1001\u103B\u102D\u1014\u103A\u100A\u103E\u102D\u1019\u103E\u102F\u1019\u103B\u102C\u1038",
+        "Color and Contrast": "\u1021\u101B\u1031\u102C\u1004\u103A\u1014\u103E\u1004\u1037\u103A \u1000\u103D\u102C\u1001\u103C\u102C\u1038\u1019\u103E\u102F",
         "Dark Contrast": "\u1019\u103E\u1031\u102C\u1004\u103A\u1019\u102D\u102F\u1000\u103A\u101E\u1031\u102C \u1000\u103D\u102C\u1001\u103C\u102C\u1038\u1019\u103E\u102F",
         "Light Contrast": "\u1021\u101C\u1004\u103A\u1038\u101B\u1031\u102C\u1004\u103A \u1000\u103D\u102C\u1001\u103C\u102C\u1038\u1019\u103E\u102F",
         "High Contrast": "\u1019\u103C\u1004\u1037\u103A\u1019\u102C\u1038\u101E\u1031\u102C \u1000\u103D\u102C\u1001\u103C\u102C\u1038\u1019\u103E\u102F",
@@ -2186,8 +2251,8 @@
       module.exports = {
         "Accessibility menu": "Tilgjengelighetsmeny",
         Close: "Lukk",
-        "Content adjustments": "Innholdsjusteringer",
-        "Navigation adjustments": "Navigasjonsjusteringer",
+        "Text and Reading": "Tekst og lesing",
+        "Navigation and Interaction": "Navigasjon og interaksjon",
         "Text Align": "Tekstjustering",
         "Align Left": "Venstrejuster",
         "Align Center": "Midtstill",
@@ -2196,7 +2261,7 @@
         "Highlight Title": "Fremhev tittel",
         "Highlight Links": "Fremhev lenker",
         "Readable Font": "Lesbar skrift",
-        "Colour adjustments": "Fargejusteringer",
+        "Color and Contrast": "Farge og kontrast",
         "Dark Contrast": "M\xF8rk kontrast",
         "Light Contrast": "Lys kontrast",
         "High Contrast": "H\xF8y kontrast",
@@ -2251,8 +2316,8 @@
       module.exports = {
         "Accessibility menu": "Toegankelijkheidsmenu",
         Close: "Sluiten",
-        "Content adjustments": "Inhoudsaanpassingen",
-        "Navigation adjustments": "Navigatieaanpassingen",
+        "Text and Reading": "Tekst en lezen",
+        "Navigation and Interaction": "Navigatie en interactie",
         "Text Align": "Tekstuitlijning",
         "Align Left": "Links uitlijnen",
         "Align Center": "Centreren",
@@ -2261,7 +2326,7 @@
         "Highlight Title": "Titel markeren",
         "Highlight Links": "Links markeren",
         "Readable Font": "Leesbaar lettertype",
-        "Colour adjustments": "Kleuraanpassingen",
+        "Color and Contrast": "Kleur en contrast",
         "Dark Contrast": "Donker contrast",
         "Light Contrast": "Licht contrast",
         "High Contrast": "Hoog contrast",
@@ -2316,8 +2381,8 @@
       module.exports = {
         "Accessibility menu": "Tilgjengelighetsmeny",
         Close: "Lukk",
-        "Content adjustments": "Innholdsjusteringer",
-        "Navigation adjustments": "Navigasjonsjusteringer",
+        "Text and Reading": "Tekst og lesing",
+        "Navigation and Interaction": "Navigasjon og interaksjon",
         "Text Align": "Tekstjustering",
         "Align Left": "Venstrejuster",
         "Align Center": "Midtstill",
@@ -2326,7 +2391,7 @@
         "Highlight Title": "Fremhev tittel",
         "Highlight Links": "Fremhev lenker",
         "Readable Font": "Lesbar skrift",
-        "Colour adjustments": "Fargejusteringer",
+        "Color and Contrast": "Farge og kontrast",
         "Dark Contrast": "M\xF8rk kontrast",
         "Light Contrast": "Lys kontrast",
         "High Contrast": "H\xF8y kontrast",
@@ -2381,8 +2446,8 @@
       module.exports = {
         "Accessibility menu": "\u0A2A\u0A39\u0A41\u0A70\u0A1A \u0A2E\u0A47\u0A28\u0A42",
         Close: "\u0A2C\u0A70\u0A26 \u0A15\u0A30\u0A4B",
-        "Content adjustments": "\u0A38\u0A2E\u0A71\u0A17\u0A30\u0A40 \u0A38\u0A70\u0A38\u0A3C\u0A4B\u0A27\u0A28",
-        "Navigation adjustments": "\u0A28\u0A47\u0A35\u0A40\u0A17\u0A47\u0A38\u0A3C\u0A28 \u0A38\u0A70\u0A38\u0A3C\u0A4B\u0A27\u0A28",
+        "Text and Reading": "\u0A1F\u0A48\u0A15\u0A38\u0A1F \u0A05\u0A24\u0A47 \u0A2A\u0A5C\u0A4D\u0A39\u0A28\u0A3E",
+        "Navigation and Interaction": "\u0A28\u0A48\u0A35\u0A40\u0A17\u0A47\u0A38\u0A3C\u0A28 \u0A05\u0A24\u0A47 \u0A07\u0A70\u0A1F\u0A30\u0A48\u0A15\u0A38\u0A3C\u0A28",
         "Text Align": "\u0A1F\u0A48\u0A15\u0A38\u0A1F \u0A07\u0A15\u0A38\u0A3E\u0A30\u0A24\u0A3E",
         "Align Left": "\u0A16\u0A71\u0A2C\u0A47 \u0A2A\u0A3E\u0A38\u0A47 \u0A07\u0A15\u0A38\u0A3E\u0A30 \u0A15\u0A30\u0A4B",
         "Align Center": "\u0A15\u0A47\u0A02\u0A26\u0A30 \u0A35\u0A3F\u0A71\u0A1A \u0A07\u0A15\u0A38\u0A3E\u0A30 \u0A15\u0A30\u0A4B",
@@ -2391,7 +2456,7 @@
         "Highlight Title": "\u0A38\u0A3F\u0A30\u0A32\u0A47\u0A16 \u0A39\u0A3E\u0A08\u0A32\u0A3E\u0A08\u0A1F \u0A15\u0A30\u0A4B",
         "Highlight Links": "\u0A32\u0A3F\u0A70\u0A15 \u0A39\u0A3E\u0A08\u0A32\u0A3E\u0A08\u0A1F \u0A15\u0A30\u0A4B",
         "Readable Font": "\u0A2A\u0A5C\u0A4D\u0A39\u0A28\u0A2F\u0A4B\u0A17 \u0A2B\u0A4B\u0A02\u0A1F",
-        "Colour adjustments": "\u0A30\u0A70\u0A17 \u0A38\u0A70\u0A38\u0A3C\u0A4B\u0A27\u0A28",
+        "Color and Contrast": "\u0A30\u0A70\u0A17 \u0A05\u0A24\u0A47 \u0A15\u0A70\u0A1F\u0A4D\u0A30\u0A3E\u0A38\u0A1F",
         "Dark Contrast": "\u0A17\u0A42\u0A5C\u0A4D\u0A39\u0A3E \u0A15\u0A70\u0A1F\u0A4D\u0A30\u0A3E\u0A38\u0A1F",
         "Light Contrast": "\u0A39\u0A32\u0A15\u0A3E \u0A15\u0A70\u0A1F\u0A4D\u0A30\u0A3E\u0A38\u0A1F",
         "High Contrast": "\u0A09\u0A71\u0A1A\u0A3E \u0A15\u0A70\u0A1F\u0A4D\u0A30\u0A3E\u0A38\u0A1F",
@@ -2446,8 +2511,8 @@
       module.exports = {
         "Accessibility menu": "Menu dost\u0119pno\u015Bci",
         Close: "Zamknij",
-        "Content adjustments": "Dostosowania tre\u015Bci",
-        "Navigation adjustments": "Dostosowania nawigacji",
+        "Text and Reading": "Tekst i czytanie",
+        "Navigation and Interaction": "Nawigacja i interakcja",
         "Text Align": "Wyr\xF3wnanie tekstu",
         "Align Left": "Wyr\xF3wnaj do lewej",
         "Align Center": "Wy\u015Brodkuj",
@@ -2456,7 +2521,7 @@
         "Highlight Title": "Pod\u015Bwietl tytu\u0142",
         "Highlight Links": "Pod\u015Bwietl linki",
         "Readable Font": "Czytelna czcionka",
-        "Colour adjustments": "Dostosowania kolor\xF3w",
+        "Color and Contrast": "Kolor i kontrast",
         "Dark Contrast": "Ciemny kontrast",
         "Light Contrast": "Jasny kontrast",
         "High Contrast": "Wysoki kontrast",
@@ -2464,7 +2529,7 @@
         "Low Saturation": "Niskie nasycenie",
         Monochrome: "Monochromatyczny",
         Tools: "Narz\u0119dzia",
-        "Reading Guide": "Przewodnik czytania",
+        "Reading Guide": "Obszar czytania",
         "Big Cursor": "Du\u017Cy kursor",
         "Increase Font Size": "Zwi\u0119ksz rozmiar czcionki",
         "Decrease Font Size": "Zmniejsz rozmiar czcionki",
@@ -2476,7 +2541,7 @@
         "Accessibility widget": "Otw\xF3rz menu dost\u0119pno\u015Bci",
         "Accessibility Profiles": "Profile dost\u0119pno\u015Bci",
         "Cognitive Disability": "Niepe\u0142nosprawno\u015B\u0107 poznawcza",
-        "Seizure Safe": "Bezpieczny do stosowania podczas napad\xF3w",
+        "Seizure Safe": "Tryb ograniczaj\u0105cy ryzyko napad\xF3w",
         "Accessibility statement": "O\u015Bwiadczenie o dost\u0119pno\u015Bci",
         ADHD: "ADHD",
         "Low Vision": "S\u0142abowzroczno\u015B\u0107",
@@ -2486,7 +2551,7 @@
         "Shortcut:": "Skr\xF3t:",
         "Epilepsy Safe Mode": "Tryb bezpieczny dla os\xF3b z padaczk\u0105",
         "Mute sounds": "Wycisz d\u017Awi\u0119ki",
-        "Page read": "Strona przeczytana",
+        "Page read": "Odczyt strony",
         "Page read controls": "Sterowanie czytaniem strony",
         Pause: "Wstrzymaj",
         Resume: "Wzn\xF3w",
@@ -2511,8 +2576,8 @@
       module.exports = {
         "Accessibility menu": "Menu de acessibilidade",
         Close: "Fechar",
-        "Content adjustments": "Ajustes de Conte\xFAdo",
-        "Navigation adjustments": "Ajustes de Navega\xE7\xE3o",
+        "Text and Reading": "Texto e leitura",
+        "Navigation and Interaction": "Navega\xE7\xE3o e intera\xE7\xE3o",
         "Text Align": "Alinhamento do texto",
         "Align Left": "Alinhar \xE0 esquerda",
         "Align Center": "Centralizar",
@@ -2521,7 +2586,7 @@
         "Highlight Title": "Destacar T\xEDtulo",
         "Highlight Links": "Destacar Links",
         "Readable Font": "Fonte Leg\xEDvel",
-        "Colour adjustments": "Ajustes de Cor",
+        "Color and Contrast": "Cor e contraste",
         "Dark Contrast": "Contraste Escuro",
         "Light Contrast": "Contraste Claro",
         "High Contrast": "Alto Contraste",
@@ -2576,8 +2641,8 @@
       module.exports = {
         "Accessibility menu": "Meniu Accesibilitate",
         Close: "\xCEnchide",
-        "Content adjustments": "Ajust\u0103ri Con\u021Binut",
-        "Navigation adjustments": "Ajust\u0103ri Navigare",
+        "Text and Reading": "Text \u0219i citire",
+        "Navigation and Interaction": "Navigare \u0219i interac\u021Biune",
         "Text Align": "Aliniere text",
         "Align Left": "Aliniere la st\xE2nga",
         "Align Center": "Aliniere la centru",
@@ -2586,7 +2651,7 @@
         "Highlight Title": "Eviden\u021Biaz\u0103 Titlul",
         "Highlight Links": "Eviden\u021Biaz\u0103 Link-urile",
         "Readable Font": "Font Lizibil",
-        "Colour adjustments": "Ajust\u0103ri Culoare",
+        "Color and Contrast": "Culoare \u0219i contrast",
         "Dark Contrast": "Contrast \xCEntunecat",
         "Light Contrast": "Contrast Deschis",
         "High Contrast": "Contrast Ridicat",
@@ -2641,8 +2706,8 @@
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u044E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0438",
         Close: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C",
-        "Content adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043A\u043E\u043D\u0442\u0435\u043D\u0442\u0430",
-        "Navigation adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0438",
+        "Text and Reading": "\u0422\u0435\u043A\u0441\u0442 \u0438 \u0447\u0442\u0435\u043D\u0438\u0435",
+        "Navigation and Interaction": "\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044F \u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435",
         "Text Align": "\u0412\u044B\u0440\u0430\u0432\u043D\u0438\u0432\u0430\u043D\u0438\u0435 \u0442\u0435\u043A\u0441\u0442\u0430",
         "Align Left": "\u0412\u044B\u0440\u043E\u0432\u043D\u044F\u0442\u044C \u043F\u043E \u043B\u0435\u0432\u043E\u043C\u0443 \u043A\u0440\u0430\u044E",
         "Align Center": "\u0412\u044B\u0440\u043E\u0432\u043D\u044F\u0442\u044C \u043F\u043E \u0446\u0435\u043D\u0442\u0440\u0443",
@@ -2651,7 +2716,7 @@
         "Highlight Title": "\u0412\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A",
         "Highlight Links": "\u0412\u044B\u0434\u0435\u043B\u0438\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0438",
         "Readable Font": "\u0427\u0438\u0442\u0430\u0435\u043C\u044B\u0439 \u0448\u0440\u0438\u0444\u0442",
-        "Colour adjustments": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u0446\u0432\u0435\u0442\u0430",
+        "Color and Contrast": "\u0426\u0432\u0435\u0442 \u0438 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "Dark Contrast": "\u0422\u0435\u043C\u043D\u044B\u0439 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "Light Contrast": "\u0421\u0432\u0435\u0442\u043B\u044B\u0439 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "High Contrast": "\u0412\u044B\u0441\u043E\u043A\u0438\u0439 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
@@ -2706,8 +2771,8 @@
       module.exports = {
         "Accessibility menu": "\u0DB4\u0DCA\u200D\u0DBB\u0DC0\u0DDA\u0DC1\u0DB1\u0DD3\u0DBA \u0DB8\u0DD9\u0DB1\u0DD4\u0DC0",
         Close: "\u0DC0\u0DC3\u0DB1\u0DCA\u0DB1",
-        "Content adjustments": "\u0D85\u0DB1\u0DCA\u0DAD\u0DBB\u0DCA\u0D9C\u0DAD \u0DC3\u0D9A\u0DC3\u0DCA\u0D9A\u0DD2\u0DBB\u0DD3\u0DB8\u0DCA",
-        "Navigation adjustments": "\u0DC3\u0D82\u0DA0\u0DCF\u0DBD\u0DB1 \u0DC3\u0D9A\u0DC3\u0DCA\u0D9A\u0DD2\u0DBB\u0DD3\u0DB8\u0DCA",
+        "Text and Reading": "\u0DB4\u0DD9\u0DC5 \u0DC3\u0DC4 \u0D9A\u0DD2\u0DBA\u0DC0\u0DD3\u0DB8",
+        "Navigation and Interaction": "\u0DC3\u0D82\u0DA0\u0DBD\u0DB1\u0DBA \u0DC3\u0DC4 \u0D85\u0DB1\u0DCA\u0DAD\u0DBB\u0DCA\u0D9A\u0DCA\u200D\u0DBB\u0DD2\u0DBA\u0DCF",
         "Text Align": "\u0DB4\u0DD9\u0DC5 \u0DB4\u0DD9\u0DC5\u0D9C\u0DD0\u0DC3\u0DCA\u0DB8",
         "Align Left": "\u0DC0\u0DB8\u0DA7 \u0DC3\u0DB8\u0DB4\u0DCF\u0DAD \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
         "Align Center": "\u0DB8\u0DB0\u0DCA\u200D\u0DBA\u0DBA\u0DA7 \u0DB4\u0DD9\u0DC5\u0D9C\u0DC3\u0DCA\u0DC0\u0DB1\u0DCA\u0DB1",
@@ -2716,7 +2781,7 @@
         "Highlight Title": "\u0DC1\u0DD3\u0DBB\u0DCA\u0DC2\u0DBA \u0D8B\u0DAF\u0DCA\u0DAF\u0DD3\u0DB4\u0DB1\u0DBA \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
         "Highlight Links": "\u0DC3\u0DB6\u0DD0\u0DB3\u0DD2 \u0D8B\u0DAF\u0DCA\u0DAF\u0DD3\u0DB4\u0DB1\u0DBA \u0D9A\u0DBB\u0DB1\u0DCA\u0DB1",
         "Readable Font": "\u0D9A\u0DD2\u0DBA\u0DC0\u0DD2\u0DBA \u0DC4\u0DD0\u0D9A\u0DD2 \u0D85\u0D9A\u0DD4\u0DBB\u0DD4",
-        "Colour adjustments": "\u0DC0\u0DBB\u0DCA\u0DAB \u0DC3\u0D9A\u0DC3\u0DCA\u0D9A\u0DD2\u0DBB\u0DD3\u0DB8\u0DCA",
+        "Color and Contrast": "\u0DC0\u0DBB\u0DCA\u0DAB\u0DBA \u0DC3\u0DC4 \u0DC0\u0DD2\u0DC2\u0DB8\u0DAD\u0DCF\u0DC0",
         "Dark Contrast": "\u0D85\u0DB3\u0DD4\u0DBB\u0DD4 \u0D9A\u0DB1\u0DCA\u0DA7\u0DCA\u200D\u0DBB\u0DCF\u0DC3\u0DCA\u0DA7\u0DCA",
         "Light Contrast": "\u0DBD\u0DCF \u0D9A\u0DB1\u0DCA\u0DA7\u0DCA\u200D\u0DBB\u0DCF\u0DC3\u0DCA\u0DA7\u0DCA",
         "High Contrast": "\u0D89\u0DC4\u0DC5 \u0D9A\u0DB1\u0DCA\u0DA7\u0DCA\u200D\u0DBB\u0DCF\u0DC3\u0DCA\u0DA7\u0DCA",
@@ -2771,8 +2836,8 @@
       module.exports = {
         "Accessibility menu": "Menu pr\xEDstupnosti",
         Close: "Zavrie\u0165",
-        "Content adjustments": "\xDApravy obsahu",
-        "Navigation adjustments": "\xDApravy navig\xE1cie",
+        "Text and Reading": "Text a \u010D\xEDtanie",
+        "Navigation and Interaction": "Navig\xE1cia a interakcia",
         "Text Align": "Zarovnanie textu",
         "Align Left": "Zarovna\u0165 do\u013Eava",
         "Align Center": "Zarovna\u0165 na stred",
@@ -2781,7 +2846,7 @@
         "Highlight Title": "Zv\xFDrazni\u0165 nadpis",
         "Highlight Links": "Zv\xFDrazni\u0165 odkazy",
         "Readable Font": "\u010Citate\u013En\xE9 p\xEDsmo",
-        "Colour adjustments": "\xDApravy farieb",
+        "Color and Contrast": "Farba a kontrast",
         "Dark Contrast": "Tmav\xFD kontrast",
         "Light Contrast": "Svetl\xFD kontrast",
         "High Contrast": "Vysok\xFD kontrast",
@@ -2836,8 +2901,8 @@
       module.exports = {
         "Accessibility menu": "Meni dostopnosti",
         Close: "Zapri",
-        "Content adjustments": "Prilagoditve vsebine",
-        "Navigation adjustments": "Prilagoditve navigacije",
+        "Text and Reading": "Besedilo in branje",
+        "Navigation and Interaction": "Navigacija in interakcija",
         "Text Align": "Poravnava besedila",
         "Align Left": "Poravnaj levo",
         "Align Center": "Sredinska poravnava",
@@ -2846,7 +2911,7 @@
         "Highlight Title": "Ozna\u010Di naslov",
         "Highlight Links": "Ozna\u010Di povezave",
         "Readable Font": "Bralna pisava",
-        "Colour adjustments": "Prilagoditve barv",
+        "Color and Contrast": "Barva in kontrast",
         "Dark Contrast": "Temni kontrast",
         "Light Contrast": "Svetli kontrast",
         "High Contrast": "Visoki kontrast",
@@ -2901,8 +2966,8 @@
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u0438 \u043F\u0440\u0438\u0441\u0442\u0443\u043F\u0430\u0447\u043D\u043E\u0441\u0442\u0438",
         Close: "\u0417\u0430\u0442\u0432\u043E\u0440\u0438",
-        "Content adjustments": "\u041F\u0440\u0438\u043B\u0430\u0433\u043E\u0452\u0430\u0432\u0430\u045A\u0430 \u0441\u0430\u0434\u0440\u0436\u0430\u0458\u0430",
-        "Navigation adjustments": "\u041F\u0440\u0438\u043B\u0430\u0433\u043E\u0452\u0430\u0432\u0430\u045A\u0430 \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0458\u0435",
+        "Text and Reading": "\u0422\u0435\u043A\u0441\u0442 \u0438 \u0447\u0438\u0442\u0430\u045A\u0435",
+        "Navigation and Interaction": "\u041D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u0458\u0430 \u0438 \u0438\u043D\u0442\u0435\u0440\u0430\u043A\u0446\u0438\u0458\u0430",
         "Text Align": "\u041F\u043E\u0440\u0430\u0432\u043D\u0430\u045A\u0435 \u0442\u0435\u043A\u0441\u0442\u0430",
         "Align Left": "\u041F\u043E\u0440\u0430\u0432\u043D\u0430\u0458 \u043B\u0435\u0432\u043E",
         "Align Center": "\u041F\u043E\u0440\u0430\u0432\u043D\u0430\u0458 \u043F\u043E \u0441\u0440\u0435\u0434\u0438\u043D\u0438",
@@ -2911,7 +2976,7 @@
         "Highlight Title": "\u0418\u0441\u0442\u0430\u043A\u043D\u0438 \u043D\u0430\u0441\u043B\u043E\u0432",
         "Highlight Links": "\u0418\u0441\u0442\u0430\u043A\u043D\u0438 \u043B\u0438\u043D\u043A\u043E\u0432\u0435",
         "Readable Font": "\u0427\u0438\u0442\u0459\u0438\u0432 \u0444\u043E\u043D\u0442",
-        "Colour adjustments": "\u041F\u0440\u0438\u043B\u0430\u0433\u043E\u0452\u0430\u0432\u0430\u045A\u0430 \u0431\u043E\u0458\u0430",
+        "Color and Contrast": "\u0411\u043E\u0458\u0430 \u0438 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "Dark Contrast": "\u0422\u0430\u043C\u043D\u0438 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "Light Contrast": "\u0421\u0432\u0435\u0442\u043B\u0438 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "High Contrast": "\u0412\u0438\u0441\u043E\u043A\u0438 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
@@ -2966,8 +3031,8 @@
       module.exports = {
         "Accessibility menu": "Meni pristupa\u010Dnosti",
         Close: "Zatvori",
-        "Content adjustments": "Prilago\u0111avanja sadr\u017Eaja",
-        "Navigation adjustments": "Prilago\u0111avanja navigacije",
+        "Text and Reading": "Tekst i \u010Ditanje",
+        "Navigation and Interaction": "Navigacija i interakcija",
         "Text Align": "Poravnanje teksta",
         "Align Left": "Poravnaj levo",
         "Align Center": "Poravnaj po sredini",
@@ -2976,7 +3041,7 @@
         "Highlight Title": "Istakni naslov",
         "Highlight Links": "Istakni linkove",
         "Readable Font": "\u010Citljiv font",
-        "Colour adjustments": "Prilago\u0111avanja boja",
+        "Color and Contrast": "Boja i kontrast",
         "Dark Contrast": "Tamni kontrast",
         "Light Contrast": "Svetli kontrast",
         "High Contrast": "Visoki kontrast",
@@ -3031,8 +3096,8 @@
       module.exports = {
         "Accessibility menu": "Tillg\xE4nglighetsmeny",
         Close: "St\xE4ng",
-        "Content adjustments": "Anpassa inneh\xE5ll",
-        "Navigation adjustments": "Anpassa navigering",
+        "Text and Reading": "Text och l\xE4sning",
+        "Navigation and Interaction": "Navigering och interaktion",
         "Text Align": "Textjustering",
         "Align Left": "V\xE4nsterjustera",
         "Align Center": "Centrera",
@@ -3041,7 +3106,7 @@
         "Highlight Title": "Framh\xE4v titel",
         "Highlight Links": "Framh\xE4v l\xE4nkar",
         "Readable Font": "L\xE4sbart teckensnitt",
-        "Colour adjustments": "Anpassa f\xE4rger",
+        "Color and Contrast": "F\xE4rg och kontrast",
         "Dark Contrast": "M\xF6rk kontrast",
         "Light Contrast": "Ljus kontrast",
         "High Contrast": "H\xF6g kontrast",
@@ -3096,8 +3161,8 @@
       module.exports = {
         "Accessibility menu": "Menyu ya Ufikivu",
         Close: "Funga",
-        "Content adjustments": "Marekebisho ya Maudhui",
-        "Navigation adjustments": "Marekebisho ya Uelekezaji",
+        "Text and Reading": "Maandishi na usomaji",
+        "Navigation and Interaction": "Usogezaji na mwingiliano",
         "Text Align": "Mpangilio wa Maandishi",
         "Align Left": "Panga Kushoto",
         "Align Center": "Pangilia Katikati",
@@ -3106,7 +3171,7 @@
         "Highlight Title": "Angazia Kichwa",
         "Highlight Links": "Angazia Viungo",
         "Readable Font": "Herufi Zinazosomeka",
-        "Colour adjustments": "Marekebisho ya Rangi",
+        "Color and Contrast": "Rangi na utofautishaji",
         "Dark Contrast": "Tofauti ya Giza",
         "Light Contrast": "Tofauti ya Mwangaza",
         "High Contrast": "Tofauti ya Juu",
@@ -3161,8 +3226,8 @@
       module.exports = {
         "Accessibility menu": "\u0B85\u0BA3\u0BC1\u0B95\u0BB2\u0BCD \u0BAE\u0BC6\u0BA9\u0BC1",
         Close: "\u0BAE\u0BC2\u0B9F\u0BC1",
-        "Content adjustments": "\u0B89\u0BB3\u0BCD\u0BB3\u0B9F\u0B95\u0BCD\u0B95 \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BB2\u0BCD\u0B95\u0BB3\u0BCD",
-        "Navigation adjustments": "\u0BB5\u0BB4\u0BBF\u0B9A\u0BC6\u0BB2\u0BC1\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BB2\u0BCD\u0B95\u0BB3\u0BCD",
+        "Text and Reading": "\u0B89\u0BB0\u0BC8 \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BB5\u0BBE\u0B9A\u0BBF\u0BAA\u0BCD\u0BAA\u0BC1",
+        "Navigation and Interaction": "\u0BB5\u0BB4\u0BBF\u0B9A\u0BC6\u0BB2\u0BC1\u0BA4\u0BCD\u0BA4\u0BB2\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0B8A\u0B9F\u0BBE\u0B9F\u0BB2\u0BCD",
         "Text Align": "\u0B89\u0BB0\u0BC8 \u0B9A\u0BC0\u0BB0\u0BAE\u0BC8\u0BAA\u0BCD\u0BAA\u0BC1",
         "Align Left": "\u0B87\u0B9F\u0BA4\u0BC1 \u0B9A\u0BC0\u0BB0\u0BAE\u0BC8",
         "Align Center": "\u0BA8\u0B9F\u0BC1\u0BB5\u0BBF\u0BB2\u0BCD \u0B9A\u0BC0\u0BB0\u0BAE\u0BC8",
@@ -3171,7 +3236,7 @@
         "Highlight Title": "\u0BA4\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0BC8 \u0BAE\u0BC1\u0BA9\u0BCD\u0BA9\u0BBF\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0B9F\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
         "Highlight Links": "\u0B87\u0BA3\u0BC8\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BB3\u0BC8 \u0BAE\u0BC1\u0BA9\u0BCD\u0BA9\u0BBF\u0BB2\u0BC8\u0BAA\u0BCD\u0BAA\u0B9F\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
         "Readable Font": "\u0BAA\u0B9F\u0BBF\u0B95\u0BCD\u0B95\u0B95\u0BCD\u0B95\u0BC2\u0B9F\u0BBF\u0BAF \u0B8E\u0BB4\u0BC1\u0BA4\u0BCD\u0BA4\u0BC1",
-        "Colour adjustments": "\u0BA8\u0BBF\u0BB1 \u0B9A\u0BB0\u0BBF\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BB2\u0BCD\u0B95\u0BB3\u0BCD",
+        "Color and Contrast": "\u0BA8\u0BBF\u0BB1\u0BAE\u0BCD \u0BAE\u0BB1\u0BCD\u0BB1\u0BC1\u0BAE\u0BCD \u0BAE\u0BBE\u0BB1\u0BC1\u0BAA\u0BBE\u0B9F\u0BC1",
         "Dark Contrast": "\u0B95\u0BB0\u0BC1\u0BAE\u0BC8 \u0BB5\u0BC7\u0BB1\u0BC1\u0BAA\u0BBE\u0B9F\u0BC1",
         "Light Contrast": "\u0BB5\u0BC6\u0BB3\u0BBF\u0B9A\u0BCD\u0B9A \u0BB5\u0BC7\u0BB1\u0BC1\u0BAA\u0BBE\u0B9F\u0BC1",
         "High Contrast": "\u0B89\u0BAF\u0BB0\u0BCD \u0BB5\u0BC7\u0BB1\u0BC1\u0BAA\u0BBE\u0B9F\u0BC1",
@@ -3226,8 +3291,8 @@
       module.exports = {
         "Accessibility menu": "\u0C05\u0C02\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C41 \u0C2E\u0C46\u0C28\u0C42",
         Close: "\u0C2E\u0C42\u0C38\u0C3F\u0C35\u0C47\u0C2F\u0C02\u0C21\u0C3F",
-        "Content adjustments": "\u0C35\u0C3F\u0C37\u0C2F \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C4D\u0C32\u0C41",
-        "Navigation adjustments": "\u0C28\u0C3E\u0C35\u0C3F\u0C17\u0C47\u0C37\u0C28\u0C4D \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C4D\u0C32\u0C41",
+        "Text and Reading": "\u0C35\u0C1A\u0C28\u0C02 \u0C2E\u0C30\u0C3F\u0C2F\u0C41 \u0C1A\u0C26\u0C35\u0C21\u0C02",
+        "Navigation and Interaction": "\u0C28\u0C3E\u0C35\u0C3F\u0C17\u0C47\u0C37\u0C28\u0C4D \u0C2E\u0C30\u0C3F\u0C2F\u0C41 \u0C2A\u0C30\u0C38\u0C4D\u0C2A\u0C30 \u0C1A\u0C30\u0C4D\u0C2F",
         "Text Align": "\u0C1F\u0C46\u0C15\u0C4D\u0C38\u0C4D\u0C1F\u0C4D \u0C05\u0C2E\u0C30\u0C3F\u0C15",
         "Align Left": "\u0C0E\u0C21\u0C2E\u0C35\u0C48\u0C2A\u0C41 \u0C38\u0C2E\u0C32\u0C47\u0C16\u0C28\u0C02 \u0C1A\u0C47\u0C2F\u0C3F",
         "Align Center": "\u0C2E\u0C27\u0C4D\u0C2F\u0C32\u0C4B \u0C38\u0C2E\u0C32\u0C47\u0C16\u0C28\u0C02 \u0C1A\u0C47\u0C2F\u0C3F",
@@ -3236,7 +3301,7 @@
         "Highlight Title": "\u0C36\u0C40\u0C30\u0C4D\u0C37\u0C3F\u0C15\u0C28\u0C41 \u0C39\u0C48\u0C32\u0C48\u0C1F\u0C4D \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
         "Highlight Links": "\u0C32\u0C3F\u0C02\u0C15\u0C4D\u200C\u0C32\u0C28\u0C41 \u0C39\u0C48\u0C32\u0C48\u0C1F\u0C4D \u0C1A\u0C47\u0C2F\u0C02\u0C21\u0C3F",
         "Readable Font": "\u0C1A\u0C26\u0C35\u0C17\u0C32\u0C3F\u0C17\u0C47 \u0C2B\u0C3E\u0C02\u0C1F\u0C4D",
-        "Colour adjustments": "\u0C30\u0C02\u0C17\u0C41 \u0C38\u0C30\u0C4D\u0C26\u0C41\u0C2C\u0C3E\u0C1F\u0C4D\u0C32\u0C41",
+        "Color and Contrast": "\u0C30\u0C02\u0C17\u0C41 \u0C2E\u0C30\u0C3F\u0C2F\u0C41 \u0C15\u0C3E\u0C02\u0C1F\u0C4D\u0C30\u0C3E\u0C38\u0C4D\u0C1F\u0C4D",
         "Dark Contrast": "\u0C1A\u0C40\u0C15\u0C1F\u0C3F \u0C35\u0C4D\u0C2F\u0C24\u0C4D\u0C2F\u0C3E\u0C38\u0C02",
         "Light Contrast": "\u0C24\u0C47\u0C32\u0C3F\u0C15 \u0C35\u0C4D\u0C2F\u0C24\u0C4D\u0C2F\u0C3E\u0C38\u0C02",
         "High Contrast": "\u0C0E\u0C15\u0C4D\u0C15\u0C41\u0C35 \u0C35\u0C4D\u0C2F\u0C24\u0C4D\u0C2F\u0C3E\u0C38\u0C02",
@@ -3291,8 +3356,8 @@
       module.exports = {
         "Accessibility menu": "\u0E40\u0E21\u0E19\u0E39\u0E01\u0E32\u0E23\u0E0A\u0E48\u0E27\u0E22\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E16\u0E36\u0E07",
         Close: "\u0E1B\u0E34\u0E14",
-        "Content adjustments": "\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E32",
-        "Navigation adjustments": "\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E19\u0E33\u0E17\u0E32\u0E07",
+        "Text and Reading": "\u0E02\u0E49\u0E2D\u0E04\u0E27\u0E32\u0E21\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E2D\u0E48\u0E32\u0E19",
+        "Navigation and Interaction": "\u0E01\u0E32\u0E23\u0E19\u0E33\u0E17\u0E32\u0E07\u0E41\u0E25\u0E30\u0E01\u0E32\u0E23\u0E42\u0E15\u0E49\u0E15\u0E2D\u0E1A",
         "Text Align": "\u0E01\u0E32\u0E23\u0E08\u0E31\u0E14\u0E41\u0E19\u0E27\u0E02\u0E49\u0E2D\u0E04\u0E27\u0E32\u0E21",
         "Align Left": "\u0E08\u0E31\u0E14\u0E0A\u0E34\u0E14\u0E0B\u0E49\u0E32\u0E22",
         "Align Center": "\u0E08\u0E31\u0E14\u0E01\u0E36\u0E48\u0E07\u0E01\u0E25\u0E32\u0E07",
@@ -3301,7 +3366,7 @@
         "Highlight Title": "\u0E40\u0E19\u0E49\u0E19\u0E2B\u0E31\u0E27\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07",
         "Highlight Links": "\u0E40\u0E19\u0E49\u0E19\u0E25\u0E34\u0E07\u0E01\u0E4C",
         "Readable Font": "\u0E41\u0E1A\u0E1A\u0E2D\u0E31\u0E01\u0E29\u0E23\u0E17\u0E35\u0E48\u0E2D\u0E48\u0E32\u0E19\u0E07\u0E48\u0E32\u0E22",
-        "Colour adjustments": "\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E2A\u0E35",
+        "Color and Contrast": "\u0E2A\u0E35\u0E41\u0E25\u0E30\u0E04\u0E2D\u0E19\u0E17\u0E23\u0E32\u0E2A\u0E15\u0E4C",
         "Dark Contrast": "\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E23\u0E35\u0E22\u0E1A\u0E15\u0E48\u0E32\u0E07\u0E40\u0E02\u0E49\u0E21",
         "Light Contrast": "\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E23\u0E35\u0E22\u0E1A\u0E15\u0E48\u0E32\u0E07\u0E2A\u0E27\u0E48\u0E32\u0E07",
         "High Contrast": "\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E23\u0E35\u0E22\u0E1A\u0E15\u0E48\u0E32\u0E07\u0E2A\u0E39\u0E07",
@@ -3356,8 +3421,8 @@
       module.exports = {
         "Accessibility menu": "Eri\u015Filebilirlik Men\xFCs\xFC",
         Close: "Kapat",
-        "Content adjustments": "\u0130\xE7erik Ayarlar\u0131",
-        "Navigation adjustments": "Gezinme Ayarlar\u0131",
+        "Text and Reading": "Metin ve okuma",
+        "Navigation and Interaction": "Gezinme ve etkile\u015Fim",
         "Text Align": "Metin Hizalama",
         "Align Left": "Sola Hizala",
         "Align Center": "Ortala",
@@ -3366,7 +3431,7 @@
         "Highlight Title": "Ba\u015Fl\u0131\u011F\u0131 Vurgula",
         "Highlight Links": "Ba\u011Flant\u0131lar\u0131 Vurgula",
         "Readable Font": "Okunakl\u0131 Yaz\u0131 Tipi",
-        "Colour adjustments": "Renk Ayarlar\u0131",
+        "Color and Contrast": "Renk ve kontrast",
         "Dark Contrast": "Koyu Kontrast",
         "Light Contrast": "A\xE7\u0131k Kontrast",
         "High Contrast": "Y\xFCksek Kontrast",
@@ -3421,8 +3486,8 @@
       module.exports = {
         "Accessibility menu": "\u041C\u0435\u043D\u044E \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0456",
         Close: "\u0417\u0430\u043A\u0440\u0438\u0442\u0438",
-        "Content adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u0432\u043C\u0456\u0441\u0442\u0443",
-        "Navigation adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u043D\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u0457",
+        "Text and Reading": "\u0422\u0435\u043A\u0441\u0442 \u0456 \u0447\u0438\u0442\u0430\u043D\u043D\u044F",
+        "Navigation and Interaction": "\u041D\u0430\u0432\u0456\u0433\u0430\u0446\u0456\u044F \u0442\u0430 \u0432\u0437\u0430\u0454\u043C\u043E\u0434\u0456\u044F",
         "Text Align": "\u0412\u0438\u0440\u0456\u0432\u043D\u044E\u0432\u0430\u043D\u043D\u044F \u0442\u0435\u043A\u0441\u0442\u0443",
         "Align Left": "\u0412\u0438\u0440\u0456\u0432\u043D\u044F\u0442\u0438 \u043B\u0456\u0432\u043E\u0440\u0443\u0447",
         "Align Center": "\u0412\u0438\u0440\u0456\u0432\u043D\u044F\u0442\u0438 \u043F\u043E \u0446\u0435\u043D\u0442\u0440\u0443",
@@ -3431,7 +3496,7 @@
         "Highlight Title": "\u041F\u0456\u0434\u0441\u0432\u0456\u0442\u0438\u0442\u0438 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A",
         "Highlight Links": "\u041F\u0456\u0434\u0441\u0432\u0456\u0442\u0438\u0442\u0438 \u043F\u043E\u0441\u0438\u043B\u0430\u043D\u043D\u044F",
         "Readable Font": "\u041B\u0435\u0433\u043A\u043E\u0447\u0438\u0442\u0430\u0431\u0435\u043B\u044C\u043D\u0438\u0439 \u0448\u0440\u0438\u0444\u0442",
-        "Colour adjustments": "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F \u043A\u043E\u043B\u044C\u043E\u0440\u0456\u0432",
+        "Color and Contrast": "\u041A\u043E\u043B\u0456\u0440 \u0456 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442",
         "Dark Contrast": "\u0422\u0435\u043C\u043D\u0430 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043D\u0456\u0441\u0442\u044C",
         "Light Contrast": "\u0421\u0432\u0456\u0442\u043B\u0430 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043D\u0456\u0441\u0442\u044C",
         "High Contrast": "\u0412\u0438\u0441\u043E\u043A\u0430 \u043A\u043E\u043D\u0442\u0440\u0430\u0441\u0442\u043D\u0456\u0441\u0442\u044C",
@@ -3486,8 +3551,8 @@
       module.exports = {
         "Accessibility menu": "\u0631\u0633\u0627\u0626\u06CC \u0645\u06CC\u0646\u0648",
         Close: "\u0628\u0646\u062F \u06A9\u0631\u06CC\u06BA",
-        "Content adjustments": "\u0645\u0648\u0627\u062F \u06A9\u06CC \u0627\u06CC\u0688\u062C\u0633\u0679\u0645\u0646\u0679",
-        "Navigation adjustments": "\u0646\u06CC\u0648\u06CC\u06AF\u06CC\u0634\u0646 \u06A9\u06CC \u0627\u06CC\u0688\u062C\u0633\u0679\u0645\u0646\u0679",
+        "Text and Reading": "\u0645\u062A\u0646 \u0627\u0648\u0631 \u067E\u0691\u06BE\u0646\u0627",
+        "Navigation and Interaction": "\u0646\u06CC\u0648\u06CC\u06AF\u06CC\u0634\u0646 \u0627\u0648\u0631 \u062A\u0639\u0627\u0645\u0644",
         "Text Align": "\u0645\u062A\u0646 \u06A9\u06CC \u0633\u06CC\u062F\u06BE",
         "Align Left": "\u0628\u0627\u0626\u06CC\u06BA \u0633\u06CC\u062F\u06BE \u06A9\u0631\u06CC\u06BA",
         "Align Center": "\u062F\u0631\u0645\u06CC\u0627\u0646 \u0645\u06CC\u06BA \u0633\u06CC\u062F\u06BE \u06A9\u0631\u06CC\u06BA",
@@ -3496,7 +3561,7 @@
         "Highlight Title": "\u0639\u0646\u0648\u0627\u0646 \u06A9\u0648 \u0646\u0645\u0627\u06CC\u0627\u06BA \u06A9\u0631\u06CC\u06BA",
         "Highlight Links": "\u0644\u0646\u06A9\u0633 \u06A9\u0648 \u0646\u0645\u0627\u06CC\u0627\u06BA \u06A9\u0631\u06CC\u06BA",
         "Readable Font": "\u0642\u0627\u0628\u0644\u0650 \u0645\u0637\u0627\u0644\u0639\u06C1 \u0641\u0648\u0646\u0679",
-        "Colour adjustments": "\u0631\u0646\u06AF \u06A9\u06CC \u0627\u06CC\u0688\u062C\u0633\u0679\u0645\u0646\u0679",
+        "Color and Contrast": "\u0631\u0646\u06AF \u0627\u0648\u0631 \u062A\u0636\u0627\u062F",
         "Dark Contrast": "\u06AF\u06C1\u0631\u0627 \u062A\u0636\u0627\u062F",
         "Light Contrast": "\u06C1\u0644\u06A9\u0627 \u062A\u0636\u0627\u062F",
         "High Contrast": "\u0632\u06CC\u0627\u062F\u06C1 \u062A\u0636\u0627\u062F",
@@ -3551,8 +3616,8 @@
       module.exports = {
         "Accessibility menu": "Menu Tr\u1EE3 N\u0103ng",
         Close: "\u0110\xF3ng",
-        "Content adjustments": "\u0110i\u1EC1u Ch\u1EC9nh N\u1ED9i Dung",
-        "Navigation adjustments": "\u0110i\u1EC1u Ch\u1EC9nh \u0110i\u1EC1u H\u01B0\u1EDBng",
+        "Text and Reading": "V\u0103n b\u1EA3n v\xE0 \u0111\u1ECDc",
+        "Navigation and Interaction": "\u0110i\u1EC1u h\u01B0\u1EDBng v\xE0 t\u01B0\u01A1ng t\xE1c",
         "Text Align": "C\u0103n ch\u1EC9nh v\u0103n b\u1EA3n",
         "Align Left": "C\u0103n Tr\xE1i",
         "Align Center": "C\u0103n gi\u1EEFa",
@@ -3561,7 +3626,7 @@
         "Highlight Title": "L\xE0m N\u1ED5i B\u1EADt Ti\xEAu \u0110\u1EC1",
         "Highlight Links": "L\xE0m N\u1ED5i B\u1EADt Li\xEAn K\u1EBFt",
         "Readable Font": "Ph\xF4ng Ch\u1EEF D\u1EC5 \u0110\u1ECDc",
-        "Colour adjustments": "\u0110i\u1EC1u Ch\u1EC9nh M\xE0u S\u1EAFc",
+        "Color and Contrast": "M\xE0u s\u1EAFc v\xE0 \u0111\u1ED9 t\u01B0\u01A1ng ph\u1EA3n",
         "Dark Contrast": "T\u01B0\u01A1ng Ph\u1EA3n T\u1ED1i",
         "Light Contrast": "T\u01B0\u01A1ng Ph\u1EA3n S\xE1ng",
         "High Contrast": "T\u01B0\u01A1ng Ph\u1EA3n Cao",
@@ -3616,8 +3681,8 @@
       module.exports = {
         "Accessibility menu": "\u65E0\u969C\u788D\u83DC\u5355",
         Close: "\u5173\u95ED",
-        "Content adjustments": "\u5185\u5BB9\u8C03\u6574",
-        "Navigation adjustments": "\u5BFC\u822A\u8C03\u6574",
+        "Text and Reading": "\u6587\u672C\u4E0E\u9605\u8BFB",
+        "Navigation and Interaction": "\u5BFC\u822A\u4E0E\u4EA4\u4E92",
         "Text Align": "\u6587\u672C\u5BF9\u9F50",
         "Align Left": "\u5DE6\u5BF9\u9F50",
         "Align Center": "\u5C45\u4E2D\u5BF9\u9F50",
@@ -3626,7 +3691,7 @@
         "Highlight Title": "\u7A81\u51FA\u663E\u793A\u6807\u9898",
         "Highlight Links": "\u7A81\u51FA\u663E\u793A\u94FE\u63A5",
         "Readable Font": "\u6613\u8BFB\u5B57\u4F53",
-        "Colour adjustments": "\u989C\u8272\u8C03\u6574",
+        "Color and Contrast": "\u989C\u8272\u4E0E\u5BF9\u6BD4\u5EA6",
         "Dark Contrast": "\u6DF1\u8272\u5BF9\u6BD4\u5EA6",
         "Light Contrast": "\u6D45\u8272\u5BF9\u6BD4\u5EA6",
         "High Contrast": "\u9AD8\u5BF9\u6BD4\u5EA6",
@@ -3681,8 +3746,8 @@
       module.exports = {
         "Accessibility menu": "\u7121\u969C\u7919\u9078\u55AE",
         Close: "\u95DC\u9589",
-        "Content adjustments": "\u5167\u5BB9\u8ABF\u6574",
-        "Navigation adjustments": "\u5C0E\u822A\u8ABF\u6574",
+        "Text and Reading": "\u6587\u5B57\u8207\u95B1\u8B80",
+        "Navigation and Interaction": "\u5C0E\u822A\u8207\u4E92\u52D5",
         "Text Align": "\u6587\u5B57\u5C0D\u9F4A",
         "Align Left": "\u9760\u5DE6\u5C0D\u9F4A",
         "Align Center": "\u7F6E\u4E2D\u5C0D\u9F4A",
@@ -3691,7 +3756,7 @@
         "Highlight Title": "\u7A81\u986F\u6A19\u984C",
         "Highlight Links": "\u7A81\u986F\u9023\u7D50",
         "Readable Font": "\u6613\u8B80\u5B57\u578B",
-        "Colour adjustments": "\u984F\u8272\u8ABF\u6574",
+        "Color and Contrast": "\u984F\u8272\u8207\u5C0D\u6BD4\u5EA6",
         "Dark Contrast": "\u6DF1\u8272\u5C0D\u6BD4",
         "Light Contrast": "\u6DFA\u8272\u5C0D\u6BD4",
         "High Contrast": "\u9AD8\u5C0D\u6BD4",
@@ -3882,33 +3947,28 @@
     "li",
     "ol"
   ];
-  var DARK_CONTRAST_SELECTORS = [
-    ...TEXT_SELECTORS,
-    "span",
-    "nav",
-    "p",
+  var INLINE_TEXT_SELECTORS = [
     "a",
-    "button",
-    "input",
-    "textarea",
-    "select",
-    "label",
-    "li",
-    "ol",
-    "img",
+    "span",
     "i",
-    "section",
-    "figcaption",
-    "body",
-    "header",
-    "footer",
-    "table",
-    "td",
-    "th",
-    "tr",
-    "tbody",
-    "thead",
-    "tfoot"
+    "b",
+    "em",
+    "strong",
+    "u",
+    "s",
+    "small",
+    "sub",
+    "sup",
+    "code",
+    "kbd",
+    "samp",
+    "mark",
+    "cite",
+    "q",
+    "time",
+    "abbr",
+    "del",
+    "ins"
   ];
 
   // src/tools/adjustFontSize.ts
@@ -4092,6 +4152,7 @@
     "../locales/fi.json": () => Promise.resolve().then(() => __toESM(require_fi())),
     "../locales/fil.json": () => Promise.resolve().then(() => __toESM(require_fil())),
     "../locales/fr.json": () => Promise.resolve().then(() => __toESM(require_fr())),
+    "../locales/gl.json": () => Promise.resolve().then(() => __toESM(require_gl())),
     "../locales/he.json": () => Promise.resolve().then(() => __toESM(require_he())),
     "../locales/hi.json": () => Promise.resolve().then(() => __toESM(require_hi())),
     "../locales/hr.json": () => Promise.resolve().then(() => __toESM(require_hr())),
@@ -4153,6 +4214,7 @@
     { code: "fi", label: "suomi (Finnish)" },
     { code: "fil", label: "Tagalog (Filipno)" },
     { code: "fr", label: "Fran\xE7ais (French)" },
+    { code: "gl", label: "Galego (Galician)" },
     { code: "he", label: "\u05E2\u05D1\u05E8\u05D9\u05EA (Hebrew)" },
     { code: "hi", label: "\u0939\u093F\u0928\u094D\u0926\u0940 (Hindi)" },
     { code: "hr", label: "Hrvatski (Croatian)" },
@@ -4222,7 +4284,7 @@
   }
   loadLanguages();
 
-  // src/globals/pluginConfig.ts
+  // src/globals/defaultConfig.ts
   var defaultConfig = {
     status: {
       mobile: true,
@@ -4288,7 +4350,11 @@
         url: ""
       },
       profiles: {
-        enabled: true
+        enabled: true,
+        lowVision: { enabled: true },
+        adhd: { enabled: true },
+        seizureSafe: { enabled: true },
+        epilepsySafe: { enabled: true }
       },
       pageRead: {
         enabled: true
@@ -4298,6 +4364,8 @@
       }
     }
   };
+
+  // src/globals/pluginConfig.ts
   var _remote = window._cyA11yConfig;
   var pluginConfig = {
     ...defaultConfig,
@@ -5124,7 +5192,13 @@
         "fill": "#FFF",
         "background-color": "#181818"
       },
-      childrenSelector: DARK_CONTRAST_SELECTORS,
+      // Every element gets the dark backdrop: any tag left out of a list
+      // (Divi puts excerpt text bare inside <article> over a white <div>)
+      // keeps its original light background under forced-white text.
+      childrenSelector: [""],
+      // Inline text elements would paint that backdrop over the previous
+      // line's glyphs wherever line-height < the font's content box.
+      backgroundResetSelectors: INLINE_TEXT_SELECTORS,
       mainSelector: ""
     },
     "light-contrast": {
@@ -5133,7 +5207,12 @@
         "fill": "#000",
         "background-color": "#FFF"
       },
-      childrenSelector: TEXT_SELECTORS,
+      // Same universal-backdrop + inline-reset treatment as dark-contrast:
+      // the inline overlap clips wrapped headings identically (white boxes
+      // over black glyphs), and dark-themed sites need every container
+      // whitened for the forced-black text to stay readable.
+      childrenSelector: [""],
+      backgroundResetSelectors: INLINE_TEXT_SELECTORS,
       mainSelector: ""
     },
     "high-contrast": {
@@ -5170,10 +5249,17 @@
       document.body.classList.remove("cya11y-filter", "cya11y-dark-contrast");
       return;
     }
-    const css = generateCSSFromConfig({
+    const exclusions = ":not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay):not(.cya11y-rg-container):not(.cya11y-rg-container *)";
+    let css = generateCSSFromConfig({
       ...filter,
-      selector: `*${filter.mainSelector}:not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay):not(.cya11y-rg-container):not(.cya11y-rg-container *)`
+      selector: `*${filter.mainSelector}${exclusions}`
     });
+    if (filter.backgroundResetSelectors?.length) {
+      css += generateCSSFromConfig({
+        styles: { "background-color": "transparent" },
+        selector: filter.backgroundResetSelectors.map((tag) => `${tag}${exclusions}`).join(",")
+      });
+    }
     addStylesheet({ css, id: "cya11y-filter-style" });
     document.body.classList.add("cya11y-filter");
     document.body.classList.toggle("cya11y-dark-contrast", contrast === "dark-contrast");
@@ -5186,11 +5272,20 @@
     enableContrast(userSettings?.states?.contrast);
   }
 
-  // src/views/widget/widget.css
-  var widget_default = ".cya11y-widget,.cya11y-menu{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:400;-webkit-font-smoothing:antialiased}.cya11y-widget *,.cya11y-menu *{box-sizing:border-box!important}.cya11y-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.cya11y-menu-title-container{display:flex;align-items:center;gap:5px}.cya11y-menu-btn{position:fixed;z-index:500000;right:30px;bottom:30px;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433;transition:transform .2s ease,box-shadow .2s ease;border-radius:50%;align-items:center;justify-content:center;width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);display:flex;cursor:pointer;text-decoration:none!important;background:var(--cya11y-primary-color, #1863DC);border:3px solid #ffffff!important;background-clip:padding-box;outline:none;color:#fff}button.cya11y-menu-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433}.cya11y-menu-btn svg{width:85%;max-width:85%;background:transparent!important}.cya11y-menu-btn:hover{transform:scale(1.05)}.cya11y-menu-btn:active{transform:scale(.98)}.cya11y-widget-icon{width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);position:fixed;z-index:500000}@media (prefers-contrast: high){.cya11y-menu-btn{border:3px solid transparent!important;background-clip:padding-box;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c614d}button.cya11y-menu-btn:focus-visible{outline:3px solid #000000;outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c6126}}@media (prefers-reduced-motion: reduce){.cya11y-menu-btn{transition:none}.cya11y-menu-btn:hover{transform:none}}@media only screen and (max-width: 768px){.cya11y-menu-btn{width:42px;height:42px}.cya11y-menu-btn svg{width:26px;height:26px;min-height:26px;min-width:26px;max-width:26px;max-height:26px}}\n";
-
   // src/views/menu/menu.html
-  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class=cya11y-menu-title id=cya11y-menu-title><span class=cya11y-translate>Accessibility menu</span></h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset all settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Content adjustments</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Colour adjustments</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation adjustments</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn" title="Reset all settings" type=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-translate>Reset all settings</span></button><a aria-label="View accessibility statement (opens in new window)" class="cya11y-menu-reset-footer-link cya11y-translate cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> Accessibility statement </a></div></section></main><footer class=cya11y-footer><div style="text-align:right;color:#293c5b;direction:ltr;border-radius:0 0 6px 6px;justify-content:center;align-items:center;font-size:12px;font-weight:400;line-height:20px;display:flex"><a aria-label="Visit AccessiYes on WordPress.org (opens in new window)" href=https://wordpress.org/plugins/accessibility-widget/ rel=noopener style=margin-left:5px;line-height:0 target=_blank> <svg viewbox="0 0 847 109" aria-hidden=true class=cya11y-footer-logo fill=none focusable=false xmlns=http://www.w3.org/2000/svg><path d="M118.623 67.1911H100.495L97.495 75.8639H87.909L104.277 30.283H114.905L131.273 75.8639H121.622L118.623 67.1911ZM116.144 59.8878L109.559 40.8468L102.972 59.8878H116.144ZM132.435 57.8011C132.435 54.0625 133.196 50.802 134.717 48.0198C136.239 45.1941 138.347 43.0205 141.042 41.4989C143.738 39.9339 146.825 39.1514 150.303 39.1514C154.78 39.1514 158.475 40.2817 161.388 42.5422C164.344 44.7593 166.322 47.8894 167.322 51.9323H157.476C156.954 50.3673 156.063 49.1501 154.802 48.2806C153.584 47.3677 152.063 46.9112 150.237 46.9112C147.629 46.9112 145.564 47.8676 144.042 49.7804C142.521 51.6497 141.76 54.3233 141.76 57.8011C141.76 61.2354 142.521 63.909 144.042 65.8218C145.564 67.6911 147.629 68.6257 150.237 68.6257C153.932 68.6257 156.345 66.9738 157.476 63.6699H167.322C166.322 67.5824 164.344 70.6906 161.388 72.995C158.432 75.2988 154.737 76.4507 150.303 76.4507C146.825 76.4507 143.738 75.6899 141.042 74.1685C138.347 72.6032 136.239 70.4296 134.717 67.6476C133.196 64.8219 132.435 61.5398 132.435 57.8011ZM169.054 57.8011C169.054 54.0625 169.815 50.802 171.336 48.0198C172.858 45.1941 174.966 43.0205 177.662 41.4989C180.357 39.9339 183.443 39.1514 186.921 39.1514C191.399 39.1514 195.094 40.2817 198.006 42.5422C200.963 44.7593 202.94 47.8894 203.941 51.9323H194.094C193.572 50.3673 192.681 49.1501 191.42 48.2806C190.204 47.3677 188.681 46.9112 186.856 46.9112C184.247 46.9112 182.183 47.8676 180.661 49.7804C179.139 51.6497 178.379 54.3233 178.379 57.8011C178.379 61.2354 179.139 63.909 180.661 65.8218C182.183 67.6911 184.247 68.6257 186.856 68.6257C190.551 68.6257 192.964 66.9738 194.094 63.6699H203.941C202.94 67.5824 200.963 70.6906 198.006 72.995C195.051 75.2988 191.355 76.4507 186.921 76.4507C183.443 76.4507 180.357 75.6899 177.662 74.1685C174.966 72.6032 172.858 70.4296 171.336 67.6476C169.815 64.8219 169.054 61.5398 169.054 57.8011ZM241.602 57.0186C241.602 58.3228 241.515 59.4965 241.342 60.5399H214.932C215.15 63.1482 216.063 65.1914 217.671 66.6695C219.28 68.1476 221.258 68.8866 223.605 68.8866C226.996 68.8866 229.409 67.4303 230.843 64.5176H240.69C239.647 67.9954 237.646 70.8646 234.69 73.1252C231.735 75.3419 228.104 76.4507 223.801 76.4507C220.323 76.4507 217.193 75.6899 214.41 74.1685C211.672 72.6032 209.52 70.408 207.955 67.5824C206.434 64.7567 205.673 61.4963 205.673 57.8011C205.673 54.0625 206.434 50.7803 207.955 47.9545C209.477 45.1288 211.607 42.9552 214.346 41.4337C217.084 39.9122 220.236 39.1514 223.801 39.1514C227.235 39.1514 230.3 39.8904 232.995 41.3685C235.734 42.8465 237.842 44.955 239.32 47.6937C240.842 50.389 241.602 53.4973 241.602 57.0186ZM232.147 54.4102C232.104 52.0627 231.256 50.1934 229.604 48.8023C227.953 47.3677 225.931 46.6504 223.54 46.6504C221.279 46.6504 219.367 47.346 217.801 48.737C216.28 50.0847 215.345 51.9757 214.997 54.4102H232.147ZM259.482 76.4507C256.526 76.4507 253.874 75.9294 251.527 74.886C249.179 73.7989 247.31 72.3429 245.918 70.5166C244.571 68.691 243.832 66.6695 243.702 64.4524H252.896C253.07 65.8435 253.743 66.9956 254.918 67.9084C256.135 68.8214 257.635 69.2778 259.417 69.2778C261.156 69.2778 262.503 68.93 263.46 68.2345C264.46 67.5389 264.96 66.6478 264.96 65.561C264.96 64.3872 264.351 63.5177 263.134 62.9526C261.96 62.344 260.069 61.6919 257.461 60.9963C254.765 60.3442 252.548 59.6704 250.809 58.9749C249.114 58.2793 247.636 57.2142 246.375 55.7796C245.158 54.345 244.549 52.4105 244.549 49.9761C244.549 47.9763 245.114 46.1504 246.245 44.4985C247.418 42.8465 249.071 41.5424 251.2 40.586C253.374 39.6296 255.917 39.1514 258.83 39.1514C263.134 39.1514 266.568 40.2382 269.133 42.4118C271.698 44.542 273.111 47.4329 273.371 51.0846H264.634C264.503 49.65 263.895 48.5197 262.807 47.6937C261.764 46.8243 260.351 46.3896 258.57 46.3896C256.917 46.3896 255.635 46.6939 254.722 47.3025C253.853 47.9111 253.418 48.7588 253.418 49.8456C253.418 51.0629 254.026 51.9975 255.243 52.6496C256.461 53.2582 258.352 53.8886 260.916 54.5406C263.525 55.1927 265.677 55.8666 267.373 56.5621C269.068 57.2577 270.524 58.3445 271.741 59.8226C273.002 61.2572 273.654 63.1699 273.698 65.561C273.698 67.6476 273.111 69.517 271.937 71.1687C270.807 72.821 269.155 74.1253 266.981 75.0816C264.851 75.9941 262.352 76.4507 259.482 76.4507ZM292.408 76.4507C289.451 76.4507 286.799 75.9294 284.452 74.886C282.105 73.7989 280.235 72.3429 278.844 70.5166C277.497 68.691 276.757 66.6695 276.627 64.4524H285.821C285.995 65.8435 286.669 66.9956 287.843 67.9084C289.06 68.8214 290.56 69.2778 292.342 69.2778C294.081 69.2778 295.429 68.93 296.385 68.2345C297.385 67.5389 297.885 66.6478 297.885 65.561C297.885 64.3872 297.276 63.5177 296.059 62.9526C294.885 62.344 292.994 61.6919 290.386 60.9963C287.691 60.3442 285.473 59.6704 283.735 58.9749C282.039 58.2793 280.561 57.2142 279.301 55.7796C278.083 54.345 277.475 52.4105 277.475 49.9761C277.475 47.9763 278.039 46.1504 279.17 44.4985C280.344 42.8465 281.996 41.5424 284.126 40.586C286.3 39.6296 288.843 39.1514 291.756 39.1514C296.059 39.1514 299.494 40.2382 302.058 42.4118C304.623 44.542 306.036 47.4329 306.297 51.0846H297.559C297.429 49.65 296.82 48.5197 295.733 47.6937C294.69 46.8243 293.277 46.3896 291.495 46.3896C289.843 46.3896 288.56 46.6939 287.647 47.3025C286.778 47.9111 286.343 48.7588 286.343 49.8456C286.343 51.0629 286.952 51.9975 288.169 52.6496C289.386 53.2582 291.277 53.8886 293.842 54.5406C296.451 55.1927 298.602 55.8666 300.298 56.5621C301.993 57.2577 303.45 58.3445 304.667 59.8226C305.927 61.2572 306.58 63.1699 306.623 65.561C306.623 67.6476 306.036 69.517 304.863 71.1687C303.732 72.821 302.08 74.1253 299.906 75.0816C297.777 75.9941 295.277 76.4507 292.408 76.4507ZM363.24 30.3482L347.851 60.0182V75.8639H338.722V60.0182L323.267 30.3482H333.57L343.351 51.1498L353.068 30.3482H363.24ZM399.479 57.0186C399.479 58.3228 399.393 59.4965 399.219 60.5399H372.809C373.026 63.1482 373.939 65.1914 375.548 66.6695C377.156 68.1476 379.134 68.8866 381.482 68.8866C384.873 68.8866 387.285 67.4303 388.719 64.5176H398.566C397.523 67.9954 395.524 70.8646 392.567 73.1252C389.611 75.3419 385.981 76.4507 381.677 76.4507C378.199 76.4507 375.07 75.6899 372.287 74.1685C369.548 72.6032 367.397 70.408 365.832 67.5824C364.31 64.7567 363.549 61.4963 363.549 57.8011C363.549 54.0625 364.31 50.7803 365.832 47.9545C367.353 45.1288 369.483 42.9552 372.222 41.4337C374.961 39.9122 378.112 39.1514 381.677 39.1514C385.111 39.1514 388.177 39.8904 390.871 41.3685C393.61 42.8465 395.719 44.955 397.197 47.6937C398.718 50.389 399.479 53.4973 399.479 57.0186ZM390.024 54.4102C389.981 52.0627 389.133 50.1934 387.481 48.8023C385.829 47.3677 383.807 46.6504 381.416 46.6504C379.156 46.6504 377.243 47.346 375.678 48.737C374.156 50.0847 373.222 51.9757 372.874 54.4102H390.024ZM417.358 76.4507C414.403 76.4507 411.751 75.9294 409.403 74.886C407.056 73.7989 405.186 72.3429 403.796 70.5166C402.447 68.691 401.708 66.6695 401.578 64.4524H410.773C410.946 65.8435 411.62 66.9956 412.794 67.9084C414.011 68.8214 415.511 69.2778 417.294 69.2778C419.032 69.2778 420.38 68.93 421.336 68.2345C422.336 67.5389 422.836 66.6478 422.836 65.561C422.836 64.3872 422.228 63.5177 421.01 62.9526C419.837 62.344 417.945 61.6919 415.337 60.9963C412.642 60.3442 410.425 59.6704 408.686 58.9749C406.99 58.2793 405.513 57.2142 404.251 55.7796C403.035 54.345 402.426 52.4105 402.426 49.9761C402.426 47.9763 402.991 46.1504 404.121 44.4985C405.295 42.8465 406.947 41.5424 409.077 40.586C411.251 39.6296 413.794 39.1514 416.706 39.1514C421.01 39.1514 424.444 40.2382 427.01 42.4118C429.575 44.542 430.988 47.4329 431.248 51.0846H422.51C422.379 49.65 421.771 48.5197 420.685 47.6937C419.641 46.8243 418.228 46.3896 416.446 46.3896C414.794 46.3896 413.512 46.6939 412.599 47.3025C411.729 47.9111 411.294 48.7588 411.294 49.8456C411.294 51.0629 411.903 51.9975 413.12 52.6496C414.337 53.2582 416.228 53.8886 418.793 54.5406C421.402 55.1927 423.554 55.8666 425.249 56.5621C426.944 57.2577 428.401 58.3445 429.618 59.8226C430.878 61.2572 431.53 63.1699 431.574 65.561C431.574 67.6476 430.988 69.517 429.813 71.1687C428.683 72.821 427.031 74.1253 424.858 75.0816C422.727 75.9941 420.228 76.4507 417.358 76.4507Z" fill=black /><path d="M316.139 35.4345C314.53 35.4345 313.182 34.9345 312.095 33.9347C311.052 32.8914 310.53 31.6089 310.53 30.0874C310.53 28.5659 311.052 27.3051 312.095 26.3053C313.182 25.262 314.53 24.7402 316.139 24.7402C317.747 24.7402 319.073 25.262 320.116 26.3053C321.203 27.3051 321.746 28.5659 321.746 30.0874C321.746 31.6089 321.203 32.8914 320.116 33.9347C319.073 34.9345 317.747 35.4345 316.139 35.4345ZM320.637 39.7383V75.8639H311.509V39.7383H320.637Z" fill=white /><path d="M315.279 42.3944C313.67 42.3944 312.323 41.8945 311.236 40.8946C310.193 39.8513 309.671 38.5688 309.671 37.0473C309.671 35.5258 310.193 34.2651 311.236 33.2652C312.323 32.2218 313.67 31.7002 315.279 31.7002C316.887 31.7002 318.213 32.2218 319.257 33.2652C320.344 34.2651 320.887 35.5258 320.887 37.0473C320.887 38.5688 320.344 39.8513 319.257 40.8946C318.213 41.8945 316.887 42.3944 315.279 42.3944ZM319.779 46.6982V75.8639H310.649V46.6982H319.779Z" fill=black /><path d="M63.9552 20.5745C65.8756 18.6985 68.9518 18.7294 70.834 20.6438L76.1159 26.0165C78.0035 27.936 77.9764 31.0222 76.0554 32.9083L40.3103 68.0109C39.5134 68.7934 38.2419 68.8103 37.4245 68.0493L12.4094 44.7593C10.351 42.843 10.3382 39.5868 12.3812 37.6542L18.0434 32.2982C19.9598 30.4853 22.9711 30.527 24.8364 32.3925L36.7304 44.2865C37.5391 45.0952 38.8479 45.1028 39.666 44.3036L63.9552 20.5745Z" fill=#1863DC /><path d="M15.1705 92.6348C13.5412 94.2669 10.8971 94.2697 9.26474 92.6404L2.95578 86.3436C1.32339 84.7143 1.32086 82.0702 2.95012 80.4374L24.7242 58.6218L36.9446 70.8187L15.1705 92.6348Z" fill=#1863DC /><path d="M64.1495 92.4518C65.8508 94.0158 68.4984 93.9002 70.0573 92.195L76.0784 85.6095C77.629 83.9133 77.5184 81.2824 75.8299 79.7234L50.7178 56.5339L40.9738 71.1501L64.1495 92.4518Z" fill=#1863DC /><path d="M39.5818 30.624C46.8852 30.624 52.8058 24.7034 52.8058 17.4C52.8058 10.0966 46.8852 4.17603 39.5818 4.17603C32.2784 4.17603 26.3578 10.0966 26.3578 17.4C26.3578 24.7034 32.2784 30.624 39.5818 30.624Z" fill=black /><path d="M495.545 41.0259L500.596 64.9965L514.127 41.0259H519.228L493.586 84.7359H488.417L496.846 70.4244L490.055 41.0259H495.545Z" fill=#14142A /><path d="M460.24 46.5551C461.575 44.7851 463.314 43.3354 465.46 42.2228C467.605 41.1103 469.919 40.5371 472.419 40.5371C475.967 40.5371 478.822 41.5991 480.95 43.74C483.129 45.8808 484.21 48.7633 484.21 52.4213C484.21 53.4664 484.109 54.5958 483.889 55.7758C483.349 58.7764 482.251 61.4566 480.578 63.7997C478.957 66.1428 476.93 67.9802 474.548 69.2782C472.2 70.5762 469.7 71.2336 467.048 71.2336C464.396 71.2336 462.318 70.6774 460.578 69.548C458.838 68.4354 457.622 67.0026 456.929 65.2663L455.949 70.7448H451L458.112 30.6084H463.061L460.24 46.5551ZM478.822 55.7758C478.974 55.0173 479.041 54.1913 479.041 53.281C479.041 50.6345 478.264 48.5779 476.71 47.0945C475.156 45.5774 473.146 44.8188 470.68 44.8188C468.872 44.8188 467.115 45.274 465.409 46.1674C463.703 47.0271 462.233 48.3251 461.017 50.0108C459.818 51.6796 459.024 53.6013 458.618 55.8096C458.466 56.5681 458.399 57.3941 458.399 58.3044C458.399 60.9509 459.176 63.0412 460.73 64.592C462.318 66.1091 464.328 66.8677 466.761 66.8677C468.602 66.8677 470.375 66.4294 472.031 65.5697C473.737 64.6594 475.19 63.3783 476.389 61.7263C477.622 60.0238 478.433 58.0347 478.838 55.759L478.822 55.7758Z" fill=#14142A /><path d="M548.84 31.3494C558.874 31.3494 566.391 37.0976 568.824 46.5206H557.557C555.834 42.7615 552.59 40.9747 548.739 40.9747C542.455 40.9747 538.097 45.7789 538.097 53.5163C538.097 61.2536 542.455 66.0578 548.739 66.0578C552.59 66.0578 555.834 64.1698 557.557 60.5119H568.824C566.391 69.9181 558.874 75.6831 548.84 75.6831C536.357 75.582 527.64 66.4793 527.64 53.4151C527.64 40.351 536.374 31.3494 548.84 31.3494Z" fill=#404041 /><path d="M589.314 75.8025C579.483 75.8025 572.067 69.0092 572.067 58.0185C572.067 47.0277 579.668 40.2344 589.517 40.2344C599.365 40.2344 606.966 47.0277 606.966 58.0185C606.966 69.0092 599.162 75.8025 589.314 75.8025ZM589.314 66.5986C592.963 66.5986 596.409 63.7667 596.409 58.0185C596.409 52.2702 593.064 49.4383 589.415 49.4383C585.767 49.4383 582.422 52.1522 582.422 58.0185C582.523 63.7667 585.564 66.5986 589.314 66.5986Z" fill=#404041 /><path d="M627.356 75.8025C617.524 75.8025 610.108 69.0092 610.108 58.0185C610.108 47.0277 617.71 40.2344 627.558 40.2344C637.406 40.2344 645.008 47.0277 645.008 58.0185C645.008 69.0092 637.204 75.8025 627.356 75.8025ZM627.356 66.5986C631.004 66.5986 634.45 63.7667 634.45 58.0185C634.45 52.2702 631.106 49.4383 627.457 49.4383C623.808 49.4383 620.463 52.1522 620.463 58.0185C620.463 63.8847 623.605 66.5986 627.356 66.5986Z" fill=#404041 /><path d="M648.657 31.3494H658.91V54.7805L669.046 40.7724H681.732L667.829 58.0339L681.934 75.2954H669.248L658.995 60.7647V75.2954H648.741V31.3831H648.64L648.657 31.3494Z" fill=#404041 /><path d="M684.147 31.4513C684.147 28.2148 686.58 25.7031 690.228 25.7031C693.877 25.7031 696.31 28.2148 696.31 31.4513C696.31 34.6879 693.877 37.0984 690.228 37.0984C686.58 37.0984 684.147 34.5867 684.147 31.4513ZM685.161 40.6552H695.414V75.1614H685.161V40.6552Z" fill=#404041 /><path d="M716.108 75.8025C706.276 75.8025 699.165 69.0092 699.165 58.0185C699.165 47.0277 706.158 40.2344 716.108 40.2344C726.057 40.2344 732.848 46.9266 732.848 57.4959C732.848 58.4399 732.746 59.5862 732.645 60.6313H709.418C709.824 65.1321 712.459 67.2223 715.804 67.2223C718.641 67.2223 720.263 65.7558 721.175 63.8678H732.121C730.398 70.56 724.52 75.7857 716.091 75.7857L716.108 75.8025ZM709.52 54.6639H722.408C722.408 50.9048 719.571 48.6966 716.108 48.6966C712.645 48.6966 710.128 50.7868 709.52 54.6639Z" fill=#404041 /><path d="M780.214 75.8025C770.365 75.8025 763.271 69.0092 763.271 58.0185C763.271 47.0277 770.264 40.2344 780.214 40.2344C790.163 40.2344 796.937 46.9266 796.937 57.4959C796.937 58.4399 796.836 59.5862 796.734 60.6313H773.507C773.913 65.1321 776.548 67.2223 779.893 67.2223C782.731 67.2223 784.352 65.7558 785.264 63.8678H796.211C794.488 70.56 788.508 75.7857 780.18 75.7857L780.214 75.8025ZM773.507 54.6639H786.396C786.396 50.9048 783.558 48.6966 780.112 48.6966C776.666 48.6966 774.132 50.7868 773.524 54.6639H773.507Z" fill=#404041 /><path d="M815.502 75.802C806.583 75.802 800.586 70.6775 800.079 63.9853H810.231C810.434 66.3959 812.563 67.9635 815.4 67.9635C818.036 67.9635 819.454 66.7161 819.454 65.1484C819.454 59.6025 801.194 63.5807 801.194 50.9212C801.194 45.0718 806.059 40.2507 814.792 40.2507C823.526 40.2507 828.272 45.173 828.88 51.9663H819.353C819.049 49.6738 817.326 48.0892 814.387 48.0892C811.954 48.0892 810.637 49.0332 810.637 50.7021C810.637 56.248 828.796 52.2697 828.999 65.2327C829.1 71.2001 823.931 75.802 815.502 75.802Z" fill=#404041 /><path d="M743.49 41.2786H732.831L742.561 59.8886H753.22L743.49 41.2786Z" fill=#0056A7 /><path d="M742.375 59.3829L742.679 59.9054H753.338L746.345 46.8413L742.392 59.3829H742.375Z" fill=#2E3191 /><path d="M761.852 25.6016L742.679 59.9054H753.338L772.511 25.6016H761.869H761.852Z" fill=#0056A7 /><path d="M742.679 65.03H753.034V75.8016H742.679V65.03Z" fill=#0056A7 /></svg> </a></div></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
+  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class=cya11y-menu-title id=cya11y-menu-title><span class=cya11y-translate>Accessibility menu</span></h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset all settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Text and Reading</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Color and Contrast</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation and Interaction</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn" title="Reset all settings" type=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-translate>Reset all settings</span></button></div></section></main><footer class=cya11y-footer><a aria-label="Accessibility statement" class="cya11y-footer-statement-link cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> <span class=cya11y-translate>Accessibility statement</span> <span aria-hidden=true class=cya11y-statement-external-icon> <svg viewbox="0 0 16 16" fill=none height=16 width=16 xmlns=http://www.w3.org/2000/svg><path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333M14 6V2H10M14 2L6.66667 9.33333" stroke=currentColor stroke-linecap=round stroke-linejoin=round /></svg> </span> </a><a aria-label="Visit AccessiYes on WordPress.org (opens in new window)" class=cya11y-footer-brand href=https://wordpress.org/plugins/accessibility-widget/ rel=noopener target=_blank> <img alt="AccessiYes by CookieYes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOMAAABJCAYAAADPCZHEAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAIQdJREFUeAHtXQmUHMV5/rt3V0iYYzGHJStGvQhhYQysjOPgk1mwnRebmBVggp0ErZDgESegle3YL8+OtXKck9hIOD6IAI1wXkwCktZHXoKN0eDENr7QEozANooGA2ZBAkZclnZ3pvN/XfVvV1d3z/TMHhLa/t6r7Znqqr+r/qq//qOqZx1qAZ7X3fnCCyOrHIf6fJ88IqfC2UN8Xbtnz89KlCNHjqbhUJOYO7fbq1ZHtikhTMTAnj071lKOHDmaQlszhaER9+8f+UEdQQQKhx9+3N6XXtpzD+XIkSMz3GYKv/jiaG8DQdRw1lCOHNkBpRBYaVdeeeXhOs+hJpXFyx1NCSML4rKMRTuPP/60bsqRozEgdNUHH3zwDb7vP3vDDTdU+Prkhg0bFiOfWnClXq5oShgdx/eylvV9p5MODJwW7+U4QLjjjjtOWLx48U9GR0eP4q8dIyMjx61cuXLH9ddfj+9+SrVDbizbmynMAlZJ501jzL1ql+eM1VYFtNrd9cNf7irT5AIDhAYeTdG+If9FTvtpIh3IMRXwH3300SvxoaOjI1AOs2bNclkw6ZJLLll2zTXXFHGLQuHLOpYY/zFOJ5DSsIJZnJ7TNA4qNKUZue9fy1KKtzzK9hYHBJFGaxyF9fuR8DnIm1xgoF7FCVste4y0m9PjnGrUdJ9zTDVOPfXUh2q1Gt15553QklStVn0WTNqxY8e9fPvDnJ6m6Fg+SY3HEoL4Hl3WrPtrigrnQYOmVP3cuYu9sbG27SyUjUxQ3m/cMTBeTwsi1/Osx5epw+2ZZA35SU5/ZeVhBUVfX89pB+Xa8WBCW1dX13EvvPDC8O7du4MMh1fzPXv23H/ssceeQWrcnuc0m6IBnQ9y+moKTQgphLXM6TUUFdqrOf0ThVbUQYOm7W4OzPBGv7+xDsnSnj0P9Mi3dEEcL1+eXXWXlItdFZoYZACgAedRct9u4ZQ1CJVj+vAAp8UshIHQtLe3E5upP+CPb9H3l3O6mcJFFeOM+XIsheNuAmXexOkeCjUori9xOpJCE/agQtMm2+7dDxTb22tdELroneAUztrmBBHwvX0d1V6aHLyW06specXDYFxEqs/N9rtRUKiZRW0yaU02nCbzmymX1jfk8XzikASH65HGxsYwVmeT8hWhDbH476VwXFHnlZx+l+Jj7eq8m/TVNa4rdJmxlHZMJurxMvFe3QCO17+rc99zo700q6NkmpLDww/hc48yW9s9jrJWWEiHzLrZBFHD98s0cWAA+/XnJGFD3is4ncOpRNngGrQR2Xsdp5NIra76CCD93CjrU/3oH8rAX0EQ4VROJ3M6jtMLnB7mdB+nfdZzG9HC5xM1vfk6r8zpF6T8I6CN0v2kNt1mPAv8OY3Tb+l2QQDu1bTq0ZEJBhoQICyKr9EJ/QGPwKv9FOeTr+mfAfM0IMYakn3GBziqOmo8A9pxC4XaEdd/5rSA4trxNJ1qRtmnOP17Qh9MXpKmt1jzYDJ4iTE5nlTQ6F4K50s9OlFAmOau2Llr7oqH/XkrHn52/hW/yLxvaNZtmFb+coAmDpm8z1I40OgozJJR/Vnyv52RZoe+QtPeSYrBfkJCVO4GUj4NkLTASR6E8AucfpNCC+0skRJSsw12X2VlhW+8N4UWUpnT7+uybRRfkYU+xhYLwVgKHfD1z1PoSHsO4/RvpPy7tL59ndMciyfuwoULT1i0aNH4GM2ZM8fft2/fk9YzgKcpHEu5voGikVbgv63n4noBxWHy8lOkBCaNl4+QsqySeAAIL0/nxHGVVF5iEf+LJDqJ6jJJq3HBCqflv77p5EGqg/lX7OrmyNg2v3GQh4n6a4dvXDRAEwf6cRanH1O4cgKXcrqKU0F/h0BhcI4hJRBpmgeMhRBfy+mjFDWPbJhRvQKnuynqk8jnd3L6FoUaJMlcMdv+OU4fMdpCFGqABZweIrUA1Isqyr37SfGnRuGiIu36E05fpGx9/BWphUL4KGWxYD1KoRZqxCe05V4ytCTjmXvvvfcY1oZ09tln0/79+4dnz549z6gPmu/m9F8GLdTdrukJ7bkUjZzj+qRuo6mN5B40IIJ6R1I2XoLvZ1B0gRdemr6ttDmNDjRtl6ZTTSzc2Lxs6xu+qWtT0p0DJIiCb3A6X3+WDmNglnL6klX2jzn9SwodYSxW+Uv0Z1nF7YlmfgdDMdhv5/Q/FDXdsCoPGmWSYNKSZ0LjXqXryMKxkNMvNS1Z2ZMEwJyMuIfF5wiKmmRv1W2FsHdQ8mS06TxGyiwWkwz39hufBWkLjfQNW1B75B6Eka/j84aFcviwww4zhVHagOfPM77jigVil/6+lVOv9UwshHdR1IVAPQjiIxTlZRYeoL9H6XoyLm8kpQykf43oAE+ZfYkJ47yVO7czY+qapI7vr37i5kXrzLwDKIgSkMFkE7UPpmNwMHFxAKBCUV/jf0mZZravIff7SAUNhLFyBfOhZbDynkmhXyECJuVwvnJE04LfVKboIEm74SfuJOVXvJ7CldY1yveQMl2lrSP6swioCD0m2w90f6FBTjHaJpNQtIj0Cf2YS6GAtmnefJ6Ur3ee5oU5iXDFInWbpvn3nD5G0Ugn3IO1nJ4gtfrDxD3KooOJiyANzZ8//5SBgYGfP/mkskwrlQpdffXVwwsWLDCFUcbnbZy+S1HtuE23FRbPM9ZzfqXbYI61aEi0c5bBI+F9SfPyCM3L11J0nFEOEeDTDbqYbydavMRcuV7zskAqgGTz8jJOX5HORcB+HIh61Ai+MzB888K1ATMPrEYE4Bd93crDBLlWf4Y/dIb+LExANG4vxYVRBMFmGib7e0kxVoDwOQYNg2NqvCIpkwUIwvYUrpLiNyDgYvpFJ+h2vorCccGz9+g8AD7iJym6sGDyLSLl15kQrWev1O8g5VOB5jBFV3CYgL9n0AYg1D+3aMOsO01/xoJyktFm8AfzYL9VBxroRKNfeCYWDvhp2Pu73ix8yy23DF922WW2MMp4wDJYSFFNdrTmzzW6rPAIAv8jigfW/pLTpym6iCCQBi272yoLGhhnm5fvIhVPwBbLHopaKFgwzrHoeKSE1iyHvpwinYvCD1a0xnD8gbmX71xzgAVROjRg5AnTixSaHtca96XPKynuM6Lun1rlUB9+AlbeUQqfifsYZGgu2/TsI6UdsSK/zqIPQBB2UzTwgOCEOanlGRDSgv6+mkJtKFdotr0UHUu053uktEi7QQvP/5z+PtvIF9xj5eGKSCKikM/pNiO90ihzmNVmLA779XNFa6PsMp2/W/cVE1sCVc+ThaOOOooSYGpm26T8MqmDADKmEqX9ISWbzx+lKC+F109TnJfgy+9QlJeo81kKeWDSBn5k1Jc6ZVLuEforvITcdNiVx8ERzoLju1uzCJjD+4sHUCOi/TBNwEDTbHmQ1Mot/YNgPEdRPw5aYT7FTVVogVOs58Ak/RnFhVfMnTdZ9xAMgFZaw+kTVh0sdgMU1T5kfIdAHk+hX4eBwmoKAR6i6Kr6GVIrvE3LpGdaOviOBeVo3XaJfJoWQIFUEEpotFMYQErq+09Imb5ktA0++ocMGsJzSmljHym3YByDg4PDvb298xLqSFsRAOrWNMQstK0Z3L+f4tYPzMv7KMpLCNZHKRnSTsyrxTpPaL5CP2svhW6SPB/7oN8yaOB+0h5nwMvEfUYWmhJrvJ5qrbY1PZCjkEkQXVo+vGFRkSYfYNAHxp+igE5fZ9wHsP2AFfLNRhlE12A2PWbQa9d55iDBr0gSREAc/x9RMs5LyLuV4guAtBX5/6eTjUuNtgtA430Ursw2YDqZWgd14SNhEYKvCh9yCUX91BIp8xnaENtAMLf2Ws+WLQMAsYOvUDgBJUIL/wgm3BZN51cJNHxqHqLNMO4P6e+m9hFg4bqP4tYfnvlWqy0AtDbckMMpGQi2vGR8F7pdpIQUi9LZFOXlHaR4uZkUL75DSimYzx7nZaJmFMzt48hqW8aN+zQEgnhykSYfpv9wEkVXRKz8suoD6CcibFssGhDaDxvfYX7toShfMIkWUGtA3ddYedDkrRz9w/7kh4zvEgHNAjuyh8gfNAsCFOjvLKuMHZ2F34tAzVcoqumE5/Cnzm5A49e6PjQQzDNz+6ePsmtGMp4LU/zNFF+gcB+WkQirDYx7v/F9IryEK/B9Umb/MxTfbrL5AMGF27SRLKvBpToYLnaVqer2EA50t4KpE0QBJvrJkScSfZPCzVsBPmNrwVzZwIDlRj0gaTP3JWodti+JZ45Sa5hjfW/m9Td7nDFhwBMELLA4bKf6cwF+7y2keOFRVBDRDgjE9XVo4FnwbT9OSsNAc5pbRs1Cnv8HlGwCw1LZUae+zcusgkgU76NYJdCsUAI/pfq8RGT2ZlJRcSiRccFtyAwIJGvInqY15NQLIjpx1fjTokBUzWY4VmNogRONOjCxZQMa2E/xlW8iL0mPWN9d3S5M6mZNtGcS8rB10OzrQOjPsPEdfcYpFpiuV5AKgizS98xwPwANChP6eKM9IlR4TxVbGDilgkDTmbq8wDXKf1HX+TxNDHAxYP6903rOH1GyKyCweYlyT1Hzh8cRZYLGl7HEWMDqgAvUR2qxF2Vh8xILNSLR4DvGMdvKJALptNUQ1Km/B0nqBWS/ra1EUwdh9HKKCg+YcT6Fm/9JMM0GfMZqLdE5aAoIyiuMMjijCQHaR8kCVG/QwWzPyoOP8XRK+XpvE9jbC2gftiHuo+ZhmlBykgZ7jgM6YYUvkNoeeguFE0n247A1cqpBT9oMrf9VnaBtYCpiq+EPSQnmiL6iPDQptO1eag3C890J916i9DEBfmZ9Bz9wOKSVH1GTiL3JSwjo3+gEgX0HqXn2NooKJdoIXi4UQg2BLQxya8sOY5OVhW0orZwWxJKP1XdqXh4WoDOIatmvSmX5ASPHogPBFVMDzLnfKgMBOY+ST7nInhPejxPm/zWpSYaI6jcpDjleZ/NeIm3YWrnWoIfIJPyxbxltFnzaqEsJbQNghh6lE9r0Sp2PRQZWAkx9HF4QvxsJ/jZeJEegA5r0cYq2d7GmBXO3i8JD4fCtjzD6grlyOSn+bqBQU0rb3kcTR5KJWW8eYAy/rz+bArtGX5NkIo2Xx2h64KnJy4UU8hILPObB23WdRygabDxJ02kMCOL4oW4IJfJW/KJoH/iet2Lns69e8XBvNH/nrikUyE0UPYCbdjA3KY1Y399j0P2AzqtRuNrhdI+592ZeP55AXza8jzNomFc5gOBYtE5Paa9stTxLyQelAXMCyucfG32R/shB+WLCcz5otUfad35C2fkp7d2u67QbNNCejoSyn9Jl+ux7HMB5grLhtgS6J9YpL32DWWqOMa5n63tJvLyHorxEKul7NyS04QqrvgRr3p1Q9iSzYYkIhI8398cz+PO8lb+8bvimU/qY6vrxbNaILmvNGjnXRSn4njNa3d7MGx8ZIG2GbyJaQkwomAPnkvIhkhJWevgz5mqKuuYpephYpk8HBmJlR1Dot0lNMlfnYQP97ygMyshKK/tV8FFLFBVgLBowLRH6n6OfiXxEe3EUzfYBMQnkFaaVFI0ag9ZPdV2zHvqH0zRvpHArQO4v09frrTbjimjn6RTdOMdz1lHcRMd2EayIlwzaqIex/giFpqtM9r+lOHbR9EP6Bl6aUWG0F1HhiynOy/8gtelv8hLXPn21eYn7eL3rTIOWWFZfoOi8BYLtjtStjZggRlGcXW1bva99rN/x3VUQxKpbuyCtPD+k4lNbf9oB8xYAlf9d4zs69T2d3whihs2m6MSGeSWvNsFPMo+SmXY+BA8TEPtRHQll4C/AXBH/apama55tNM+MPk/heVazjLQLR62wFSKTQDae5b7UgTn0mC63kOJnalEGZu8njH4jGOPp5zlGeQjZj3UeIpZzKOrnYKtDtDuCNv9g1JVtAvAB5iCCRbA8TjLuSVmYwPAZ+6i5rQ0T0IwXW3kLKNzXTIIcWIAW76Z0XpJu9yyK81LeqhGeYBtFLBiTl/BPf6LrITZhvh2C605KPQ5HDQUR6NvP0dXZY+3rnrhp4THV9rHOeuUDH5KqbNruWkaTgwGKrtTo/GeyVQ0YgDc8bHPzUgqZBMHGPpT4hI5RDpPpaAq1qwiiAIIigw3AZD2VwhMiosWl3fA/ZKPZfDkVz+uhMPInkwAHyh+lcDUXWkfoZ7+WQhOx3SgDn/MTFH07A7R+Q6GGkHrQjpeTCpCZPyos9d6rrygP//Y7xrPEHIUgQUj+jMIQvimICA61GryZKKq6DTjwgAUpjZdIpp8rZbZR+Hqb8ARaEIu0yUvwATzuI2UJHUnhoiYHRt6lr3FhzCCIASBgo3pVdWpuRjOUBVL7nRMAVulzKarqwSRMiCwBKTDrs0ZduX7M+Awmwwx/H8UDPjbE/ECQA4NomrgyUFg1PVKnMSTyVo8WBgomcYmib3rIFT7RZoovBDYt0mUGSB3NMt+NBORQ90MUHiVMoyftxlbQozpPBAsuwJco6ic6KfVFgK+lOvt78tZ/BmQuaEEWN1gRt1J9XgpQBgG6cyl6TNCn8Jgh9jfdDLTER31EMiKTd+7lD2/MIojBIQA2TR8vdgWR1SduXriOSS+nLNAHzKl1wGzCJILpBq0B3wWmirxp0bAFpEwwmCHPaRoIjHSR2h+SjXkw+xsUTubHKL7tgAHF9gX2tWCa7qf4JrSsgI9q+tDAODU0ktA2bHl8mtQKCtPGPsso/hfyoXWwcv8nxQ851DStfyQ1QdZS/IypaGlcobkxwX6qy9gTCfzB3iC2fLZT9P1KEUicDvI4/SupsbF9X/AGGgWaGwufuTCAFsb0GZ0qtVot6++a4jkvGHXB1ywCKrxE2xG0Aw8w3s9RdPzwGYso/GZETT9JoYY3aQnPsJ1TIOXrj1J8ToI+/EmM8Q/JWGzHG60EMVCnDaAEMTidYwHRVJ+cjZnOqxqvYDWJtH092cfKAltDCIQxQt8+5Aw/s1M/C2UxSC9SaMY22oA3zVfUR0h7DoV+rOw/NtJSSWUgdOKPPE/hmdQstEwTGu06gsItCmj63Rlo2feO1DQQ6BrRNOStF5OnJk9sNBrTtHE095GzoB4vIejPpZRLgu2OCB/AV/DyqTRaQaMnQxAFzbxS5Tj+uiduXLSaXh4QMytr/nTRmkxM9fMPdP+mE0331Z13+c7rJksQgcc3dA35VXcJZTjP6vtOP7ZK6OWBRr7ZgaI1mZjq588UQQSa7qvrO35/42LZBFHQzAFzCCTlyJEjsFtL9Ys0J4iC7ALZ4hshOQ4FtBoJnQ6Yp3DMra16sMs19VaKS9W25ekC0ZogCkQg08+zOlpgc8wwTEQInYx5E6VdPeusszo8BoVR5yyo0Snnz6fFl6JeU2+BqABOwkvEvM8z5I+5S1sVRBNe365OHBIw3/iQI3SyPZIjx0xHuLVhCqRDpdljbUsn4Z/RRDBvxcPreIlZlQtijhxxxNQ7tNhkC+F00s/x8kahUGDryV1DwdaYO1gqfWc9TSP4+R6LxbZorrua2zFIU4yD2YHOMcOgBQEnfIw9amdtqXTXAE0TCoUeOTwuKJdK27poGtDqb5DkmAaoydnWrbQEXtx2eWJ8+6A27bnNBW6nF+bUuM2lUrba6GvNOiziL6Po7+JOGQqFc/so9ksWbdmOeU4CZpQwXnjxygGq1cpbttxcpIMUPJdhnq3iSYH9187oq4U1rNxlCv43Zo01RqlMBx2cPi1A8r1Emf8FX7WSYKyVadrgr4l+d4ql0p0lmiZk2Ts5JNDb29dJvr+Go8Tn0EEK5S/BTAsO66cdJ/T4fh/8mkLhvF46hKA0qG+eV8b3adFMzHv8oJYXza21cna6ZcwYYWxvbw/MD99xWvkBpymHFkQEDryMVbhcbWuh8M4CHUJgeRxgH43Vo9/F157p0P7aV7VOgkErTq/lMWPM1Jp2yl31I0kHFfRkwL8yS9KGZZ08ShTUKgtkgSduqZJO2+01aHO5tlJW31Obzb3RZ7uliZhvyjezURtiokNK26uXDLjceH6r7VLlonyNC1kQvfWMjLKtFdWiV+s2aKFMKYvAxuviEEx1yK47Y4TRcfxzfHa7xsbGDsIASGwyAGWYaGbwQwVHnI0UFUpMSqzqA2ZlrWlxCL8QP7M8Bt+zpOmXKQF6sq9RJrH9Bk51jfZdEeksUhNgumu0GW6iTOpXDRg1tNkLb7kQiiGrXdqnztSubnurgoWctyruWqfpeaqPJvz1whclSFVuc7VAMTigVUzz33VdHq+qZ9GXumwF3DUu9DPGTGXViIGrDA4WAw1y8cUrCxddtGLrhRddvguJP2/nAM91l156lWdXvfDCy9fw/W2oU+8Rvb1XeaDJaSM1Bb9gZZQ5r8eOQmqfCpPW0oL+KvMbT7BlegIWKB18z9mlylo3xrcYJIiUCC7jb+QJlfmtG013wMqu6L6WM9TvVP1q6FOjXUEwRvNwU7SIv0ZrTFILTgSI/oqgMm+qDfgo/jv6ZrYVGr7awO3wB0z+zRhh5LWogCN+WmC21Xx/G6vLTodNNsdtGwp+p8f3+0dGR7e9//1XRMPbrrsX9WvR/acYXHdkma9+qe1rlBFK29kD5qdGSlW+32WlJQY9D/4OZf4ldKeotGgkrwnf1e/nCdXfqFQoSLH6q7P7Zi4mbne2spjoEuCKaeLAmlC8j2nFtbq9nuZjFnjazTBQsxcpLKBlii+k/eL3zwhhHBcu36+4baPbWKjuq1Wrx2y+/caezZs3LN9824alWzbf1MXCiYHw8N+3guirhviZvh/TYOOAkHP9AY48FDdvvmmQsiNpcpXqVYB/iAlspvCue10yPX+1SklbBeFPbGp/zrMKYMthva6/KV7f1DRpCDSQZz0Xi06RMiBZcIJ+9egFCVHXcvS2EgjNH1s7rtImv4mhsD0xjVlRgjq++Nl86BZfWPPCs563RB0eCOparlItWDRmhM9Yq9U8XAOtxQK39fYbB5LKbeH8pRet8Figlrnt7X2kfveEbr/9xtKFF62oOPH/RDsOFvJg8Do6qk2Gw91O26drNYqn/Z/eaK4zyH7JUqNMUWuo7mjVgqe1rm22lpUZua1sFObPjjlZoWn6SPMr3q5gM70/oV0DlBnuMotPOBnTY3wv6naZ2teD1lFBHTzfuYBCiyEW2OEyS1V7IUwxjbnaWjj62D9dQBETNuBdkepYJeAx01+ug08atTL+zghh5O2MblZrFGitFEEUtDlOkU3YZY7vn2nmc12YsgX4lLfe+uWyeS/QijTaB0G/9dZimQ4YghMsVl40KgitypNhdcL5ywKpiVSI5jslUxA1DTYBe+CnGpMusBqShNGLb6YHkcgm9w9j/+OlnByVtYNVQRSzpPu93lpEDGArY7yfCdaKmxQFrljPC+opgeuBOWoe69ulgmYOuzAua+A7B+wnzAhh5EjqmYikVl234aFjjraW3bb4v2pggb6bBbowUg2iakXzHkxfvpRrY2PrqGnUYqdOsDKnbVXUR/yfEiVtC1Dy9o5nByF0+9L8X9AoGN8XpJTzrO8SsGm2f7a2KSQEvhrVw/hYi4jAXLRwnM8Waj9LUM5cnFYnmMEF1eaqPknlrjMPws+MAI7vePy3PHjbhqFGRTs6OgKG1qwf2HW1H+fXapEJz5HWPsKE8/21EqltDm3leF57xiBFa2hN0CcNFWrtn8VOGKrfQYCmHE3O+lZdgzrPKmqzN23OeTzL1uFguvjbh7xmRCCGAy/dfsYIp/iXHHktm/nYn4TGdMk6TucEZs8EzrtWS/HzmNjXSg/i6DcLbH8HgYFyvKz4gpG8QgLZFCExD31H4CXUpxS6QGdYL4g89tDEwAEUv9i4mF82v+ltiwYWjFNJ0IwQrKYWEX7WIF8GdbS6wLw8R2tzc+y6ZZ/4kNeMcgzOVT/E2xA8BHDyaVb72KCZD60X/PoBm4ISacX+I1+8WR3VlieW1lIlK7sg+2RWZifnw/RBn7wwOSVFp1aKP8FdlZC3LJ5X0zRsgfZX2ZHS5HOcbMYnoyKBkSiJ7PuTGjb9BSUL6llYPMzUihauJmiz9kr8ebFnBSgEOLdPEmfB7ViHQBr7pceoyLQJ5V4c8pox3Bt0Gpp+EohhoSslBWI4sHM367BuCDiXLZPDZdl/nHjQBmF5Z5eVhyBJH6KOpH4CfkHyaZigZYG/owMHJYpG+LAPiGjnJlUXET874hpsdOsJ6G+yghweDgDwnt1qpTFq5yTs26ENRUoBJi63YX30cELQrkfkJExjQAs65iKiF6zaehWcCU67bLX4U7a3TgrhKSaTduTQQTIfqxsLhXctxTFC43RSf5TO+K/q81zzjcXGQfBoifEMW9jxo8mHvs/IJqoXXHn1qXeCpre3v1MHYqijfSwx0scR1oCJEPDWtzLi0FsKST/m7KkBx8CmnYZxrAMCfkJ7IMQ4DVLbmiCIdh0IRzneDtStbksWxCw+V20gTte/Ln7gIBla85Ws+gP87GdZcHx92sU23dPGxrNSAmJ1udzYdvUs59kEQTQFv2jd61SndM7dqiwb37IKlEt0yAujq/47UIU5uIk128ak424QUrftefhhHvnu8jRNx/5kYLqyUGKFxlbGpsnaylC+jN+kYEMIont1atI2Qye68a6DHM34R0Na0OrCoGs/f2tyFDcJSRv7qdhUynigIAlN8jHSN91Xe3H11EIY7F92Rusqy+bQ14ysxQJfr1oNVrKR0VGcQ92Gc6g4Q4ozqcHROGYQm5xLt2zZUEyjpaOlZV+ZvuUtDfYsmwX279SJkoYTrkzBIe+7+uvQWd2ATkVtZMc33pXJmhwQiiI4lZN5m0LTTZikgUB2Zqhf1vwZqlMsiJiyb9ZHE4Tmo0RfU4tpHgxZdddlHINxE/mQ9hkRaFFBl9rXIEj8fYk+WbOM7dc+FqqKjpquxR5hlq0Jx+XN/5rayqApgDbHupRv43IKfEVPmzK83VIb1GUa0eGweQGaHHQuCH2pgM7dmk6lTv2y0Q6s6GeG9Wt4J7TIEz6hvj+InwcxMioJ7SJ18ihSz6NAyPz10XvRoJRu15L67aq7OCQFzOrxYUCdWjL5CN8Zfnz9sag/BvG2OpQjMxDgYV9xl+O6gzjPSjlyTCJmzitUk4DxoE3b6MvlP2fleBkhF8aM0G9+TNJWRo4cceTCmBF4rYov5cnYysiRIwn576ZmgHH+dHmuFXNMFfIATgPooE1wGCB4ATlHjilCrhkbYl9lVsfsnn379mXdBM+RI0eOHDly5MiRI0eOHDly5MiRI8ehiP8HZVbUO4MWe9EAAAAASUVORK5CYII=" class=cya11y-footer-logo height=25 width=76> </a></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
+
+  // src/core/entitlement.ts
+  function applyBrandingState() {
+    const footer = document.querySelector("#cya11y-container")?.shadowRoot?.querySelector(".cya11y-footer");
+    if (!footer) return;
+    const brand = footer.querySelector(".cya11y-footer-brand");
+    const statement = footer.querySelector(".cya11y-accessibility-statement-link");
+    const hideBrand = false;
+    if (brand) brand.style.display = hideBrand ? "none" : "";
+    const statementVisible = !!statement && statement.style.display !== "none";
+    footer.style.display = hideBrand && !statementVisible ? "none" : "";
+  }
 
   // src/views/statement/renderStatement.ts
   function getTemplateData(lang) {
@@ -5515,6 +5610,49 @@
     return _html;
   }
 
+  // src/views/menu/moduleFilter.ts
+  var CONTENT_KEY_MAP = {
+    "font-size": "adjustFontSizing",
+    "highlight-title": "highlightTitle",
+    "highlight-links": "highlightLinks",
+    "readable-font": "dyslexicFont",
+    "letter-spacing": "letterSpacing",
+    "line-height": "lineHeight",
+    "font-weight": "fontWeight",
+    "text-align": "textAlign"
+  };
+  var COLOR_KEY_MAP = {
+    "dark-contrast": "darkContrast",
+    "light-contrast": "lightContrast",
+    "high-contrast": "highContrast",
+    "high-saturation": "highSaturation",
+    "low-saturation": "lowSaturation",
+    "monochrome": "monochrome"
+  };
+  var NAV_KEY_MAP = {
+    "big-cursor": "bigCursor",
+    "stop-animations": "pauseAnimations",
+    "readable-guide": "readingGuide"
+  };
+  function filterByModule(buttons, moduleSection, keyMap) {
+    if (!moduleSection) return buttons;
+    return buttons.filter((btn) => {
+      const configKey = keyMap[btn.key];
+      if (!configKey) return true;
+      const mod = moduleSection[configKey];
+      return mod?.enabled !== false;
+    });
+  }
+  var PROFILE_KEY_MAP = {
+    "low-vision-profile": "lowVision",
+    "adhd-profile": "adhd",
+    "seizure-safe-profile": "seizureSafe",
+    "epilepsy-safe-profile": "epilepsySafe"
+  };
+  function shouldRemoveProfilesSection(profilesSection, visibleCount) {
+    return profilesSection?.enabled === false || visibleCount === 0;
+  }
+
   // src/views/menu/reset.ts
   function reset($menu2) {
     $menu2?.querySelectorAll(".cya11y-selected")?.forEach((el) => el?.classList?.remove("cya11y-selected"));
@@ -5525,7 +5663,7 @@
   }
 
   // src/views/menu/menu.css
-  var menu_default2 = `:root{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #27283C;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #3D3E50;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-widget{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #333;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #000000 ;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-menu *{color:inherit;font-family:inherit;padding:0;margin:0;letter-spacing:normal}.cya11y-menu{position:fixed;display:flex;flex-direction:column;top:30px;width:462px;height:calc(100% - 30px);background:var(--cya11y-bg-primary, #eff1f5);box-shadow:var(--cya11y-shadow-sm, 0px 8px 26px -4px #27283C33);opacity:1;transition:var(--cya11y-transition-slow, .3s);z-index:var(--cya11y-z-menu, 500000);overflow:auto;line-height:1;font-size:16px;letter-spacing:.015em;color:#000}.cya11y-menu[data-position=bottom-right],.cya11y-menu[data-position=top-right]{right:0;left:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu[data-position=bottom-left],.cya11y-menu[data-position=top-left]{left:0;right:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu-header{display:flex;align-items:center;justify-content:space-between;padding:var(--cya11y-spacing-md, 16px) 15px;font-weight:700;background-color:var(--cya11y-primary-color, #1863DC)}.cya11y-menu-title{font-size:20px;font-weight:500;color:var(--cya11y-text-white, #fff)!important}.cya11y-menu-header>div{display:flex}.cya11y-menu-reset,.cya11y-menu-close{width:32px;height:32px;display:flex;padding:10px;align-items:center;justify-content:center;margin:0;background:var(--cya11y-bg-overlay, rgba(0, 0, 0, .3));cursor:pointer;border-radius:var(--cya11y-radius-full, 50%);transition:opacity var(--cya11y-transition-slow, .3s) ease;border:0;box-shadow:none;outline:none}.cya11y-menu-reset{padding:7px}.cya11y-menu-reset-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px 0}.cya11y-menu-title-shortcut{font-size:13px;font-weight:400;opacity:.75}.cya11y-menu-reset-footer-btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--cya11y-radius-md, 12px);width:100%;height:48px;font-size:15px;font-weight:500;color:var(--cya11y-text-white, #fff);background:var(--cya11y-primary-color);border:2px solid transparent;cursor:pointer;transition:all var(--cya11y-transition-normal, .2s) ease;padding:0 20px;text-decoration:none;outline:none}.cya11y-menu-reset-footer-btn:hover{background:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--cya11y-primary-color) 30%,transparent)}.cya11y-menu-reset-footer-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-menu-reset-footer-btn:active{transform:translateY(0);box-shadow:0 2px 6px color-mix(in srgb,var(--cya11y-primary-color) 20%,transparent)}.cya11y-menu-reset-footer-btn svg{width:20px;height:20px;flex-shrink:0}.cya11y-reset-text{font-weight:500;white-space:nowrap}.cya11y-menu-reset-footer-link{font-size:14px;font-weight:400;color:#4d4e5e;text-decoration:underline;text-align:center;transition:color var(--cya11y-transition-normal, .2s) ease}.cya11y-menu-reset-footer-link:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-menu-reset-footer-link:hover{color:var(--cya11y-primary-color, #1863DC);text-decoration:underline}.cya11y-menu-reset:hover:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:hover,.cya11y-menu-reset:focus-visible:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:focus-visible{outline:3px solid var(--cya11y-focus-color-on-primary, #ffffff);outline-offset:2px}.cya11y-menu-content{flex:1;overflow-y:scroll;overflow-x:auto;padding:var(--cya11y-spacing-lg, 20px) 0 12px;background-color:var(--cya11y-bg-secondary, #f2f2f4);max-height:calc(100vh - 146px)}.cya11y-card{margin:0 var(--cya11y-spacing-lg, 20px) var(--cya11y-spacing-lg, 20px)}.cya11y-card-title{font-size:16px;padding:15px 0;font-weight:500;color:var(--cya11y-text-primary, #27283C)}.cya11y-profile-card{background-color:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px)}.cya11y-profile-card .cya11y-card-title{font-size:16px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);background-color:var(--cya11y-bg-white, #fff);border:none;text-align:left}.cya11y-profile-items{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;padding:0 var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px);margin-top:var(--cya11y-spacing-md, 16px)}.cya11y-profile-items .cya11y-btn{display:flex;gap:10px;align-items:center;flex-direction:row;justify-content:start;text-align:left;width:190px;height:64px;padding:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:background var(--cya11y-transition-normal, .2s) ease,border-color var(--cya11y-transition-normal, .2s) ease}.cya11y-profile-items .cya11y-btn:hover:not(.cya11y-selected){background:color-mix(in srgb,var(--cya11y-primary-color, #1863DC) 8%,var(--cya11y-bg-white, #fff));border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-profile-items .cya11y-btn.cya11y-selected{background:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-text-white, #fff);fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-items .cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:color-mix(in srgb,var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC)) 25%,var(--cya11y-bg-white, #fff));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-profile-items .cya11y-btn.cya11y-selected span,.cya11y-profile-items .cya11y-btn.cya11y-selected svg path{color:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-title-container{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding-left:var(--cya11y-spacing-md, 16px);padding-right:var(--cya11y-spacing-md, 16px);gap:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);border:1.5px solid transparent;transition:border var(--cya11y-transition-normal, .2s)}.cya11y-profile-title-container:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-profile-title{width:100%;height:64px;border-radius:var(--cya11y-radius-md, 12px);cursor:pointer}.cya11y-profile-title:focus,.cya11y-profile-title:focus-visible{outline:none}.cya11y-profile-title-container:has(.cya11y-profile-title:focus-visible){outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:var(--cya11y-radius-md, 12px)}.cya11y-arrow{margin-left:auto;font-size:18px;color:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transition:transform var(--cya11y-transition-normal, .2s) ease-in-out;rotate:270deg}.cya11y-arrow-rotate{transform:rotate(90deg)}.cya11y-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}.cya11y-btn{aspect-ratio:6 / 5;border-radius:var(--cya11y-radius-md, 12px);padding:0 12px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--cya11y-text-primary, #333);font-size:16px;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:border-color var(--cya11y-transition-normal, .2s) ease;cursor:pointer;word-break:break-word;gap:10px;position:relative;width:auto;height:auto}.cya11y-btn .cya11y-translate,.cya11y-adjust-font .cya11y-label div{font-size:14px;font-weight:500;line-height:22px}.cya11y-btn svg{width:34px;height:34px;min-width:34px;min-height:34px;max-width:34px;max-height:34px}.cya11y-btn:hover{border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected{border:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-btn.cya11y-selected{box-shadow:var(--cya11y-shadow-focus, 0px 0px 0px 6px rgba(24, 99, 220, .14))}.cya11y-btn.cya11y-selected svg,.cya11y-btn.cya11y-selected svg path,.cya11y-btn.cya11y-selected span{stroke:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-adjust-font{background:var(--cya11y-bg-white, #fff);padding-top:10px;padding-bottom:13px;border:1px solid var(--cya11y-border-light, #E9EAEC);border-radius:var(--cya11y-radius-md, 12px);box-shadow:none;transition:outline var(--cya11y-transition-normal, .2s) ease;grid-column:span 2}.cya11y-adjust-font .cya11y-label{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);margin-bottom:10px}.cya11y-adjust-font .cya11y-label svg{margin-right:var(--cya11y-spacing-sm, 12px);width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;max-height:36px;fill:var(--cya11y-text-secondary, #293C5B)}.cya11y-adjust-font>div:last-child{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:var(--cya11y-spacing-sm, 12px)}.cya11y-adjust-font svg{width:24px;height:24px;min-width:24px;min-height:24px;max-width:24px;max-height:24px}.cya11y-plus,.cya11y-minus{background-color:var(--cya11y-bg-primary, #eff1f5);border:2px solid transparent;transition:border var(--cya11y-transition-normal, .2s) ease}.cya11y-plus:hover,.cya11y-minus:hover{border-color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-minus:focus-visible,.cya11y-adjust-font .cya11y-plus:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:3px}.cya11y-adjust-font .cya11y-minus,.cya11y-adjust-font .cya11y-plus{background:var(--cya11y-primary-color, #1863DC);border-radius:var(--cya11y-radius-full, 50%);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:none;transition:background var(--cya11y-transition-normal, .2s)}.cya11y-adjust-font .cya11y-minus svg,.cya11y-adjust-font .cya11y-plus svg{fill:var(--cya11y-text-white, #fff);width:38px;height:38px}.cya11y-adjust-font .cya11y-minus:hover,.cya11y-adjust-font .cya11y-plus:hover{background:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font:hover{outline:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-amount{font-size:14px;font-weight:400;color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-amount{background:#e9eaec;color:var(--cya11y-primary-color, #1863DC);font-size:14px;font-weight:400;border-radius:40px;min-width:100px;min-height:40px;display:flex;align-items:center;justify-content:center;margin:0 10px;box-shadow:none;letter-spacing:.01em}.cya11y-footer{bottom:0;left:0;right:0;background:var(--cya11y-bg-white, #fff);padding:14px;text-align:center;border-top:2px solid var(--cya11y-bg-primary, #eff1f5)}.cya11y-footer a{font-size:16px;text-decoration:none;color:var(--cya11y-text-primary, #333);background:transparent;font-weight:600}.cya11y-footer a:hover,.cya11y-footer a:hover span,.cya11y-footer a:focus-visible,.cya11y-footer a:focus-visible span{color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-footer a:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-footer-logo{height:22px;width:auto;display:block;max-width:100%}.cya11y-custom-select{position:relative;width:100%;font-family:inherit;font-size:16px}.cya11y-selected-lang{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);background:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px);padding:15px;cursor:pointer;user-select:none;transition:border var(--cya11y-transition-normal, .2s);border:1.5px solid transparent}.cya11y-selected-lang:focus{outline:none}.cya11y-selected-lang:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-selected-lang:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border:1.5px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-code{display:inline-flex;align-items:center;justify-content:center;background:var(--cya11y-border-light, #E9EAEC);color:var(--cya11y-text-muted, #3D3E50);font-weight:400;border-radius:var(--cya11y-radius-full, 50%);width:32px;height:32px;font-size:14px;text-transform:uppercase}.cya11y-dropdown-list{position:absolute;top:110%;left:0;width:100%;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:var(--cya11y-radius-md, 12px);box-shadow:var(--cya11y-shadow-md, 0 8px 24px rgba(41, 60, 91, .08));z-index:var(--cya11y-z-dropdown, 100);padding:var(--cya11y-spacing-xs, 8px) 0 0 0;max-height:320px;overflow:auto;transition:box-shadow var(--cya11y-transition-normal, .2s)}.cya11y-lang-search{height:48px;width:80%;margin:0 5%;margin-bottom:var(--cya11y-spacing-xs, 8px);padding:0 var(--cya11y-spacing-md, 16px);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:4px;font-size:15px}.cya11y-lang-search:focus{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:0px;border-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-options{max-height:240px;overflow-y:auto}.cya11y-lang-option{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);padding:var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-md, 16px);cursor:pointer;transition:background var(--cya11y-transition-fast, .15s)}.cya11y-lang-option.selected{background:var(--cya11y-primary-light, #D1E0F8)}.cya11y-lang-option:hover,.cya11y-lang-option:focus-visible{background:#f1f6fd}.cya11y-lang-option:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:-2px}.cya11y-lang-label{color:inherit;font-size:15px;font-weight:500}.cya11y-menu .cya11y-select{width:100%;padding:0 15px;font-size:16px;font-family:inherit;font-weight:600;border-radius:var(--cya11y-radius-lg, 45px);background:var(--cya11y-bg-white, #fff);border:none;min-height:45px;max-height:45px;height:45px;color:inherit}.cya11y-overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:var(--cya11y-z-overlay, 10000)}@media only screen and (max-width: 560px){.cya11y-menu{width:100%}.cya11y-profile-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;padding:0 var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px)}}@media only screen and (max-width: 420px){.cya11y-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.cya11y-profile-items{grid-template-columns:1fr;gap:.5rem;padding:0 var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px);justify-items:center}}.cya11y-text-align .cya11y-text-align-icon{display:none}.cya11y-text-align[data-state=off] .cya11y-text-align-icon[data-icon=left],.cya11y-text-align[data-state=left] .cya11y-text-align-icon[data-icon=left],.cya11y-text-align[data-state=right] .cya11y-text-align-icon[data-icon=right],.cya11y-text-align[data-state=center] .cya11y-text-align-icon[data-icon=center]{display:inline-flex}.cya11y-text-align .cya11y-text-align-progress{display:none;position:absolute;bottom:6px;left:50%;transform:translate(-50%);gap:4px;pointer-events:none}.cya11y-text-align:not([data-state=off]) .cya11y-text-align-progress{display:inline-flex}.cya11y-text-align .cya11y-text-align-segment{width:14px;height:3px;border-radius:2px;background:var(--cya11y-border-light, #E9EAEC);transition:background-color var(--cya11y-transition-normal, .2s) ease}.cya11y-text-align[data-state=left] .cya11y-text-align-segment[data-pos=left],.cya11y-text-align[data-state=center] .cya11y-text-align-segment[data-pos=center],.cya11y-text-align[data-state=right] .cya11y-text-align-segment[data-pos=right]{background:var(--cya11y-primary-color, #1863DC)}
+  var menu_default2 = `:root{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #27283C;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #3D3E50;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-widget{--cya11y-primary-color: #1863DC;--cya11y-primary-light: #D1E0F8;--cya11y-bg-primary: #eff1f5;--cya11y-bg-secondary: #f2f2f4;--cya11y-bg-white: #fff;--cya11y-bg-overlay: rgba(0, 0, 0, .3);--cya11y-text-primary: #333;--cya11y-text-secondary: #293C5B;--cya11y-text-muted: #000000 ;--cya11y-text-white: #fff;--cya11y-border-light: #E9EAEC;--cya11y-border-focus: #dbeafe;--cya11y-spacing-xs: 8px;--cya11y-spacing-sm: 12px;--cya11y-spacing-md: 16px;--cya11y-spacing-lg: 20px;--cya11y-spacing-xl: 30px;--cya11y-radius-sm: 8px;--cya11y-radius-md: 12px;--cya11y-radius-lg: 45px;--cya11y-radius-full: 50%;--cya11y-shadow-sm: 0px 8px 26px -4px #27283C33;--cya11y-shadow-md: 0 8px 24px rgba(41, 60, 91, .08);--cya11y-shadow-focus: 0px 0px 0px 6px #1863DC24;--cya11y-transition-fast: .15s;--cya11y-transition-normal: .2s;--cya11y-transition-slow: .3s;--cya11y-z-overlay: 10000;--cya11y-z-menu: 500000;--cya11y-z-dropdown: 100}.cya11y-menu *{color:inherit;font-family:inherit;padding:0;margin:0;letter-spacing:normal}.cya11y-menu{position:fixed;display:flex;flex-direction:column;top:30px;width:462px;height:calc(100% - 30px);background:var(--cya11y-bg-primary, #eff1f5);box-shadow:var(--cya11y-shadow-sm, 0px 8px 26px -4px #27283C33);opacity:1;transition:var(--cya11y-transition-slow, .3s);z-index:var(--cya11y-z-menu, 500000);overflow:auto;line-height:1;font-size:16px;letter-spacing:.015em;color:#000}.cya11y-menu[data-position=bottom-right],.cya11y-menu[data-position=top-right]{right:0;left:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu[data-position=bottom-left],.cya11y-menu[data-position=top-left]{left:0;right:auto;border-radius:var(--cya11y-radius-md, 12px) var(--cya11y-radius-md, 12px) 0 0}.cya11y-menu-header{display:flex;align-items:center;justify-content:space-between;padding:var(--cya11y-spacing-md, 16px) 15px;font-weight:700;background-color:var(--cya11y-primary-color, #1863DC)}.cya11y-menu-title{font-size:20px;font-weight:500;color:var(--cya11y-text-white, #fff)!important}.cya11y-menu-header>div{display:flex}.cya11y-menu-reset,.cya11y-menu-close{width:32px;height:32px;display:flex;padding:10px;align-items:center;justify-content:center;margin:0;background:var(--cya11y-bg-overlay, rgba(0, 0, 0, .3));cursor:pointer;border-radius:var(--cya11y-radius-full, 50%);transition:opacity var(--cya11y-transition-slow, .3s) ease;border:0;box-shadow:none;outline:none}.cya11y-menu-reset{padding:7px}.cya11y-menu-reset-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px 0}.cya11y-menu-title-shortcut{font-size:13px;font-weight:400;opacity:.75}.cya11y-menu-reset-footer-btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--cya11y-radius-md, 12px);width:100%;height:48px;font-size:15px;font-weight:500;color:var(--cya11y-text-white, #fff);background:var(--cya11y-primary-color);border:2px solid transparent;cursor:pointer;transition:all var(--cya11y-transition-normal, .2s) ease;padding:0 20px;text-decoration:none;outline:none}.cya11y-menu-reset-footer-btn:hover{background:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--cya11y-primary-color) 30%,transparent)}.cya11y-menu-reset-footer-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-menu-reset-footer-btn:active{transform:translateY(0);box-shadow:0 2px 6px color-mix(in srgb,var(--cya11y-primary-color) 20%,transparent)}.cya11y-menu-reset-footer-btn svg{width:20px;height:20px;flex-shrink:0}.cya11y-reset-text{font-weight:500;white-space:nowrap}.cya11y-menu-reset:hover:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:hover,.cya11y-menu-reset:focus-visible:not(.cya11y-menu-reset-footer-btn),.cya11y-menu-close:focus-visible{outline:3px solid var(--cya11y-focus-color-on-primary, #ffffff);outline-offset:2px}.cya11y-menu-content{flex:1;overflow-y:auto;overflow-x:auto;padding:var(--cya11y-spacing-lg, 20px) 0 12px;background-color:var(--cya11y-bg-secondary, #f2f2f4);max-height:calc(100vh - 146px)}.cya11y-card{margin:0 var(--cya11y-spacing-lg, 20px) var(--cya11y-spacing-lg, 20px)}.cya11y-card-title{font-size:16px;padding:15px 0;font-weight:500;color:var(--cya11y-text-primary, #27283C)}.cya11y-profile-card{background-color:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px)}.cya11y-profile-card .cya11y-card-title{font-size:16px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);background-color:var(--cya11y-bg-white, #fff);border:none;text-align:left}.cya11y-profile-items{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;padding:0 var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px) var(--cya11y-spacing-md, 16px);margin-top:var(--cya11y-spacing-md, 16px)}.cya11y-profile-items .cya11y-btn{display:flex;gap:10px;align-items:center;flex-direction:row;justify-content:start;text-align:left;width:190px;height:64px;padding:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:background var(--cya11y-transition-normal, .2s) ease,border-color var(--cya11y-transition-normal, .2s) ease}.cya11y-profile-items .cya11y-btn:hover:not(.cya11y-selected){background:color-mix(in srgb,var(--cya11y-primary-color, #1863DC) 8%,var(--cya11y-bg-white, #fff));border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-profile-items .cya11y-btn.cya11y-selected{background:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-text-white, #fff);fill:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-items .cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34001C16.5085 2.21087 17.7632 3.46054 18.6401 4.96531C19.5169 6.47009 19.9856 8.17779 19.9997 9.91935C20.0137 11.6609 19.5727 13.376 18.7203 14.8947C17.8678 16.4135 16.6335 17.6832 15.1395 18.5783C13.6455 19.4734 11.9436 19.9628 10.2023 19.9981C8.46107 20.0333 6.74079 19.6132 5.2118 18.7793C3.6828 17.9453 2.39812 16.7265 1.48491 15.2435C0.571706 13.7605 0.0616534 12.0647 0.00524426 10.324L0.000244141 10L0.00524426 9.67601C0.0612473 7.94901 0.563792 6.26598 1.46388 4.79101C2.36398 3.31604 3.6309 2.09947 5.14114 1.2599C6.65137 0.420327 8.35339 -0.0135887 10.0813 0.000452316C11.8091 0.0144933 13.5038 0.476012 15.0002 1.34001ZM13.7072 7.29302C13.5351 7.12084 13.306 7.01741 13.0629 7.00213C12.8199 6.98685 12.5796 7.06076 12.3872 7.21001L12.2932 7.29302L9.00024 10.585L7.70724 9.29301L7.61324 9.21001C7.42083 9.06087 7.18062 8.98704 6.93765 9.00237C6.69468 9.0177 6.46565 9.12113 6.29351 9.29328C6.12136 9.46542 6.01793 9.69445 6.0026 9.93742C5.98727 10.1804 6.0611 10.4206 6.21024 10.613L6.29324 10.707L8.29324 12.707L8.38724 12.79C8.56262 12.9261 8.77828 12.9999 9.00024 12.9999C9.22221 12.9999 9.43787 12.9261 9.61324 12.79L9.70724 12.707L13.7072 8.70701L13.7902 8.61301C13.9395 8.42061 14.0134 8.18036 13.9981 7.93733C13.9829 7.69431 13.8794 7.46521 13.7072 7.29302Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:color-mix(in srgb,var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC)) 25%,var(--cya11y-bg-white, #fff));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-profile-items .cya11y-btn.cya11y-selected span,.cya11y-profile-items .cya11y-btn.cya11y-selected svg path{color:var(--cya11y-text-white, #fff);stroke:var(--cya11y-text-white, #fff)}.cya11y-profile-title-container{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding-left:var(--cya11y-spacing-md, 16px);padding-right:var(--cya11y-spacing-md, 16px);gap:var(--cya11y-spacing-sm, 12px);border-radius:var(--cya11y-radius-md, 12px);border:1.5px solid transparent;transition:border var(--cya11y-transition-normal, .2s)}.cya11y-profile-title-container:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-profile-title{width:100%;height:64px;border-radius:var(--cya11y-radius-md, 12px);cursor:pointer}.cya11y-profile-title:focus,.cya11y-profile-title:focus-visible{outline:none}.cya11y-profile-title-container:has(.cya11y-profile-title:focus-visible){outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:var(--cya11y-radius-md, 12px)}.cya11y-arrow{margin-left:auto;font-size:18px;color:color-mix(in srgb,var(--cya11y-primary-color) 85%,white);transition:transform var(--cya11y-transition-normal, .2s) ease-in-out;rotate:270deg}.cya11y-arrow-rotate{transform:rotate(90deg)}.cya11y-items{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}.cya11y-btn{aspect-ratio:6 / 5;border-radius:var(--cya11y-radius-md, 12px);padding:0 12px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--cya11y-text-primary, #333);font-size:16px;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-light, #E9EAEC);transition:border-color var(--cya11y-transition-normal, .2s) ease;cursor:pointer;word-break:break-word;gap:10px;position:relative;width:auto;height:auto}.cya11y-btn .cya11y-translate,.cya11y-adjust-font .cya11y-label div{font-size:14px;font-weight:500;line-height:22px}.cya11y-btn svg{width:34px;height:34px;min-width:34px;min-height:34px;max-width:34px;max-height:34px}.cya11y-btn:hover{border:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected{border:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px}.cya11y-btn.cya11y-selected{box-shadow:var(--cya11y-shadow-focus, 0px 0px 0px 6px rgba(24, 99, 220, .14))}.cya11y-btn.cya11y-selected svg,.cya11y-btn.cya11y-selected svg path,.cya11y-btn.cya11y-selected span{stroke:var(--cya11y-primary-color, #1863DC);color:var(--cya11y-primary-color, #1863DC)}.cya11y-btn.cya11y-selected:after{content:"";display:inline-block;-webkit-mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0002 1.34014C16.5085 2.21099 17.7632 3.46066 18.6401 4.96544C19.5169 6.47021 19.9856 8.17791 19.9997 9.91948C20.0137 11.661 19.5727 13.3761 18.7203 14.8948C17.8678 16.4136 16.6335 17.6834 15.1395 18.5785C13.6455 19.4736 11.9436 19.963 10.2023 19.9982C8.46107 20.0334 6.74079 19.6133 5.2118 18.7794C3.6828 17.9455 2.39812 16.7267 1.48491 15.2437C0.571706 13.7606 0.0616534 12.0648 0.00524426 10.3241L0.000244141 10.0001L0.00524426 9.67614C0.0612473 7.94913 0.563792 6.2661 1.46388 4.79113C2.36398 3.31616 3.6309 2.09959 5.14114 1.26002C6.65137 0.420449 8.35339 -0.0134666 10.0813 0.000574386C11.8091 0.0146154 13.5038 0.476134 15.0002 1.34014ZM13.7072 7.29314C13.5351 7.12096 13.306 7.01753 13.0629 7.00225C12.8199 6.98697 12.5796 7.06089 12.3872 7.21014L12.2932 7.29314L9.00024 10.5851L7.70724 9.29314L7.61324 9.21014C7.42083 9.06099 7.18062 8.98716 6.93765 9.00249C6.69468 9.01782 6.46565 9.12125 6.29351 9.2934C6.12136 9.46554 6.01793 9.69457 6.0026 9.93754C5.98727 10.1805 6.0611 10.4207 6.21024 10.6131L6.29324 10.7071L8.29324 12.7071L8.38724 12.7901C8.56262 12.9262 8.77828 13.0001 9.00024 13.0001C9.22221 13.0001 9.43787 12.9262 9.61324 12.7901L9.70724 12.7071L13.7072 8.70714L13.7902 8.61314C13.9395 8.42073 14.0134 8.18048 13.9981 7.93746C13.9829 7.69443 13.8794 7.46533 13.7072 7.29314Z' fill='%23000000'/%3E%3C/svg%3E");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;background-color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));position:absolute;top:10px;right:10px;width:20px;height:20px}.cya11y-adjust-font{background:var(--cya11y-bg-white, #fff);padding-top:10px;padding-bottom:13px;border:1px solid var(--cya11y-border-light, #E9EAEC);border-radius:var(--cya11y-radius-md, 12px);box-shadow:none;transition:outline var(--cya11y-transition-normal, .2s) ease;grid-column:span 2}.cya11y-adjust-font .cya11y-label{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--cya11y-text-secondary, #293C5B);margin-bottom:10px}.cya11y-adjust-font .cya11y-label svg{margin-right:var(--cya11y-spacing-sm, 12px);width:36px;height:36px;min-width:36px;min-height:36px;max-width:36px;max-height:36px;fill:var(--cya11y-text-secondary, #293C5B)}.cya11y-adjust-font>div:last-child{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:var(--cya11y-spacing-sm, 12px)}.cya11y-adjust-font svg{width:24px;height:24px;min-width:24px;min-height:24px;max-width:24px;max-height:24px}.cya11y-plus,.cya11y-minus{background-color:var(--cya11y-bg-primary, #eff1f5);border:2px solid transparent;transition:border var(--cya11y-transition-normal, .2s) ease}.cya11y-plus:hover,.cya11y-minus:hover{border-color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-minus:focus-visible,.cya11y-adjust-font .cya11y-plus:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:3px}.cya11y-adjust-font .cya11y-minus,.cya11y-adjust-font .cya11y-plus{background:var(--cya11y-primary-color, #1863DC);border-radius:var(--cya11y-radius-full, 50%);width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;box-shadow:none;transition:background var(--cya11y-transition-normal, .2s)}.cya11y-adjust-font .cya11y-minus svg,.cya11y-adjust-font .cya11y-plus svg{fill:var(--cya11y-text-white, #fff);width:38px;height:38px}.cya11y-adjust-font .cya11y-minus:hover,.cya11y-adjust-font .cya11y-plus:hover{background:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font:hover{outline:2px solid var(--cya11y-primary-color, #1863DC)}.cya11y-amount{font-size:14px;font-weight:400;color:var(--cya11y-primary-color, #1863DC)}.cya11y-adjust-font .cya11y-amount{background:#e9eaec;color:var(--cya11y-primary-color, #1863DC);font-size:14px;font-weight:400;border-radius:40px;min-width:100px;min-height:40px;display:flex;align-items:center;justify-content:center;margin:0 10px;box-shadow:none;letter-spacing:.01em}.cya11y-footer{bottom:0;left:0;right:0;background:var(--cya11y-bg-white, #fff);padding:14px var(--cya11y-spacing-lg, 20px) 10px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:2px solid var(--cya11y-bg-primary, #eff1f5)}.cya11y-footer .cya11y-footer-statement-link{display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:500;color:var(--cya11y-text-primary, #293C5B);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.25ch}.cya11y-footer .cya11y-footer-statement-link:hover,.cya11y-footer .cya11y-footer-statement-link:hover span{color:var(--cya11y-primary-color, #1863DC)}.cya11y-footer .cya11y-footer-statement-link:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-statement-external-icon{display:none;align-items:center;color:var(--cya11y-text-primary, #293C5B);line-height:0}.cya11y-footer-statement-link.cya11y-statement-external .cya11y-statement-external-icon{display:inline-flex}.cya11y-statement-external-icon svg{width:16px;height:16px;display:block}.cya11y-footer .cya11y-footer-brand{margin-left:auto;line-height:0}.cya11y-footer a{font-size:16px;text-decoration:none;color:var(--cya11y-text-primary, #333);background:transparent;font-weight:600}.cya11y-footer a:hover,.cya11y-footer a:hover span,.cya11y-footer a:focus-visible,.cya11y-footer a:focus-visible span{color:var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-footer a:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border-radius:2px}.cya11y-footer-logo{height:30px;width:auto;display:block;max-width:100%}.cya11y-custom-select{position:relative;width:100%;font-family:inherit;font-size:16px}.cya11y-selected-lang{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);background:var(--cya11y-bg-white, #fff);border-radius:var(--cya11y-radius-md, 12px);padding:15px;cursor:pointer;user-select:none;transition:border var(--cya11y-transition-normal, .2s);border:1.5px solid transparent}.cya11y-selected-lang:focus{outline:none}.cya11y-selected-lang:hover{border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color) 85%,white)}.cya11y-selected-lang:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:2px;border:1.5px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC))}.cya11y-lang-code{display:inline-flex;align-items:center;justify-content:center;background:var(--cya11y-border-light, #E9EAEC);color:var(--cya11y-text-muted, #3D3E50);font-weight:400;border-radius:var(--cya11y-radius-full, 50%);width:32px;height:32px;font-size:14px;text-transform:uppercase}.cya11y-dropdown-list{position:absolute;top:110%;left:0;width:100%;background:var(--cya11y-bg-white, #fff);border:1px solid var(--cya11y-border-focus, #dbeafe);border-radius:var(--cya11y-radius-md, 12px);box-shadow:var(--cya11y-shadow-md, 0 8px 24px rgba(41, 60, 91, .08));z-index:var(--cya11y-z-dropdown, 100);padding:var(--cya11y-spacing-xs, 8px) 0 0 0;max-height:320px;overflow:auto;transition:box-shadow var(--cya11y-transition-normal, .2s)}.cya11y-lang-search{height:48px;width:80%;margin:0 5%;margin-bottom:var(--cya11y-spacing-xs, 8px);padding:0 var(--cya11y-spacing-md, 16px);border:1.5px solid transparent;border-radius:4px;font-size:15px}.cya11y-lang-search:focus{outline:none;border:1.5px solid color-mix(in srgb,var(--cya11y-primary-color, #1863DC) 85%,white)}.cya11y-lang-options{max-height:240px;overflow-y:auto}.cya11y-lang-option{display:flex;align-items:center;gap:var(--cya11y-spacing-sm, 12px);padding:var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-md, 16px);cursor:pointer;transition:background var(--cya11y-transition-fast, .15s)}.cya11y-lang-option.selected{background:var(--cya11y-primary-light, #D1E0F8)}.cya11y-lang-option:hover,.cya11y-lang-option:focus-visible{background:#f1f6fd}.cya11y-lang-option:focus-visible{outline:2px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:-2px}.cya11y-lang-label{color:inherit;font-size:15px;font-weight:500}.cya11y-menu .cya11y-select{width:100%;padding:0 15px;font-size:16px;font-family:inherit;font-weight:600;border-radius:var(--cya11y-radius-lg, 45px);background:var(--cya11y-bg-white, #fff);border:none;min-height:45px;max-height:45px;height:45px;color:inherit}.cya11y-overlay{position:fixed;top:0;left:0;width:100%;height:100%;z-index:var(--cya11y-z-overlay, 10000)}@media only screen and (max-width: 560px){.cya11y-menu{width:100%}.cya11y-profile-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;padding:0 var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px) var(--cya11y-spacing-sm, 12px)}}@media only screen and (max-width: 420px){.cya11y-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.cya11y-profile-items{grid-template-columns:1fr;gap:.5rem;padding:0 var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px) var(--cya11y-spacing-xs, 8px);justify-items:center}}.cya11y-text-align .cya11y-text-align-icon{display:none}.cya11y-text-align[data-state=off] .cya11y-text-align-icon[data-icon=left],.cya11y-text-align[data-state=left] .cya11y-text-align-icon[data-icon=left],.cya11y-text-align[data-state=right] .cya11y-text-align-icon[data-icon=right],.cya11y-text-align[data-state=center] .cya11y-text-align-icon[data-icon=center]{display:inline-flex}.cya11y-text-align .cya11y-text-align-progress{display:none;position:absolute;bottom:6px;left:50%;transform:translate(-50%);gap:4px;pointer-events:none}.cya11y-text-align:not([data-state=off]) .cya11y-text-align-progress{display:inline-flex}.cya11y-text-align .cya11y-text-align-segment{width:14px;height:3px;border-radius:2px;background:var(--cya11y-border-light, #E9EAEC);transition:background-color var(--cya11y-transition-normal, .2s) ease}.cya11y-text-align[data-state=left] .cya11y-text-align-segment[data-pos=left],.cya11y-text-align[data-state=center] .cya11y-text-align-segment[data-pos=center],.cya11y-text-align[data-state=right] .cya11y-text-align-segment[data-pos=right]{background:var(--cya11y-primary-color, #1863DC)}
 `;
 
   // src/views/menu/toggleMenu.ts
@@ -5574,6 +5712,209 @@
           }
         }
       }
+    }
+  }
+
+  // src/views/widget/widget.css
+  var widget_default = ".cya11y-widget,.cya11y-menu{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-weight:400;-webkit-font-smoothing:antialiased}.cya11y-widget *,.cya11y-menu *{box-sizing:border-box!important}.cya11y-sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.cya11y-menu-title-container{display:flex;align-items:center;gap:5px}.cya11y-menu-btn{position:fixed;z-index:500000;right:30px;bottom:30px;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433;transition:transform .2s ease,box-shadow .2s ease;border-radius:50%;align-items:center;justify-content:center;width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);display:flex;cursor:pointer;text-decoration:none!important;background:var(--cya11y-primary-color, #1863DC);border:3px solid #ffffff!important;background-clip:padding-box;outline:none;color:#fff}button.cya11y-menu-btn:focus-visible{outline:3px solid var(--cya11y-focus-ring-color, var(--cya11y-primary-color, #1863DC));outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) var(--cya11y-primary-color, #1863DC),0 5px 15px #252c6126,0 2px 4px #5d649433}.cya11y-menu-btn svg{width:85%;max-width:85%;background:transparent!important}.cya11y-menu-btn:hover{transform:scale(1.05)}.cya11y-menu-btn:active{transform:scale(.98)}.cya11y-widget-icon{width:var(--cya11y-size, 44px);height:var(--cya11y-size, 44px);position:fixed;z-index:500000}@media (prefers-contrast: high){.cya11y-menu-btn{border:3px solid transparent!important;background-clip:padding-box;box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c614d}button.cya11y-menu-btn:focus-visible{outline:3px solid #000000;outline-offset:calc(var(--cya11y-size, 44px) * .09 + 3px);box-shadow:0 0 0 calc(var(--cya11y-size, 44px) * .09) #000,0 5px 15px #252c6126}}@media (prefers-reduced-motion: reduce){.cya11y-menu-btn{transition:none}.cya11y-menu-btn:hover{transform:none}}@media only screen and (max-width: 768px){.cya11y-menu-btn{width:42px;height:42px}.cya11y-menu-btn svg{width:26px;height:26px;min-height:26px;min-width:26px;max-width:26px;max-height:26px}}\n";
+
+  // src/utils/device.ts
+  var MOBILE_BREAKPOINT = 768;
+  function isMobileDevice() {
+    return window.innerWidth < MOBILE_BREAKPOINT;
+  }
+  function getCurrentDevice() {
+    return isMobileDevice() ? "mobile" : "desktop";
+  }
+
+  // src/icons/accessibility.ts
+  var Accessibility = `
+   <svg viewBox="0 0 24 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+     <path
+       d="M11.8001 20.032L11.1521 26.206C11.1245 26.4672 11.0457 26.7204 10.9203 26.9512C10.7949 27.1819 10.6252 27.3857 10.421 27.5509C10.2168 27.7161 9.98208 27.8395 9.73021 27.914C9.47834 27.9884 9.21427 28.0126 8.95307 27.985C8.69187 27.9574 8.43866 27.8787 8.2079 27.7532C7.97714 27.6278 7.77334 27.4581 7.60814 27.2539C7.44295 27.0497 7.31959 26.815 7.24511 26.5631C7.17063 26.3113 7.14649 26.0472 7.17407 25.786L8.62007 12.02H2.00007C1.46884 12.02 0.959371 11.809 0.583735 11.4333C0.2081 11.0577 -0.00292969 10.5482 -0.00292969 10.017C-0.00292969 9.48577 0.2081 8.9763 0.583735 8.60067C0.959371 8.22503 1.46884 8.014 2.00007 8.014H22.0001C22.5313 8.014 23.0408 8.22503 23.4164 8.60067C23.792 8.9763 24.0031 9.48577 24.0031 10.017C24.0031 10.5482 23.792 11.0577 23.4164 11.4333C23.0408 11.809 22.5313 12.02 22.0001 12.02H15.3801L16.8261 25.79C16.8628 26.0559 16.8456 26.3264 16.7756 26.5855C16.7057 26.8446 16.5844 27.087 16.4189 27.2982C16.2533 27.5095 16.0471 27.6853 15.8122 27.8153C15.5774 27.9452 15.3189 28.0266 15.052 28.0547C14.7851 28.0827 14.5152 28.0568 14.2585 27.9785C14.0019 27.9001 13.7635 27.771 13.5577 27.5987C13.352 27.4264 13.1829 27.2146 13.0607 26.9756C12.9384 26.7367 12.8654 26.4757 12.8461 26.208L12.2001 20.032H11.8001ZM12.0001 8.012C9.79007 8.012 8.00007 6.218 8.00007 4.006C8.00007 1.794 9.79007 0 12.0001 0C14.2101 0 16.0001 1.794 16.0001 4.006C16.0009 4.53179 15.898 5.05258 15.6973 5.53858C15.4966 6.02457 15.2021 6.46624 14.8306 6.83831C14.4591 7.21038 14.0179 7.50555 13.5322 7.70695C13.0465 7.90834 12.5259 8.012 12.0001 8.012Z"
+       fill="currentColor" />
+   </svg>
+   `;
+
+  // src/icons/assist.ts
+  var Assist = `<svg viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.456055 15.2607C0.456063 19.7696 4.11123 23.4248 8.62012 23.4248C12.0774 23.4248 15.0296 21.2763 16.2207 18.2451L16.3301 17.9492L16.3633 17.8379C16.4953 17.2835 16.1883 16.7084 15.6387 16.5166C15.0886 16.3248 14.4901 16.5848 14.249 17.1016L14.2061 17.208L14.126 17.4228C13.2621 19.621 11.1214 21.1748 8.62012 21.1748C5.35387 21.1748 2.70606 18.527 2.70605 15.2607C2.70605 12.5025 4.59543 10.183 7.15137 9.53027L7.40039 9.47265L7.51172 9.44336C8.05538 9.27083 8.39091 8.71087 8.27148 8.14062C8.15202 7.57074 7.62056 7.19323 7.05371 7.25293L6.93945 7.2705L6.5957 7.35058C3.06643 8.25152 0.456055 11.4497 0.456055 15.2607Z" fill="currentColor"/>
+<path d="M10.3848 2.5752C10.3848 3.61071 9.54527 4.4502 8.50976 4.4502C7.47424 4.4502 6.63476 3.61071 6.63476 2.5752C6.63476 1.53968 7.47424 0.700195 8.50976 0.700195C9.54527 0.700195 10.3848 1.53968 10.3848 2.5752Z" fill="currentColor"/>
+<path d="M20.0073 19.3406L14.9273 14.2605H9.9834V11.4127H14.9655C15.7421 11.4127 16.3718 10.7831 16.3718 10.0064C16.3718 9.22982 15.7421 8.60019 14.9655 8.60019H9.9834V7.25853C9.9834 6.49227 9.3826 5.84455 8.61666 5.82355C7.82194 5.8018 7.1709 6.43949 7.1709 7.22928V16.1355C7.1709 16.6533 7.59062 17.073 8.1084 17.073H13.7623L18.0186 21.3294C18.5678 21.8785 19.4581 21.8785 20.0073 21.3294C20.5565 20.7802 20.5565 19.8898 20.0073 19.3406Z" fill="currentColor"/>
+<path d="M18.8955 5C18.8955 4.4201 19.3654 3.95019 19.9453 3.95019C20.5252 3.95019 20.9951 4.4201 20.9951 5V12.4883C20.9951 13.0682 20.5252 13.5381 19.9453 13.5381H12C11.4201 13.5381 10.9502 13.0682 10.9502 12.4883C10.9502 11.9084 11.4201 11.4385 12 11.4385H18.8955V5Z" fill="currentColor"/>
+</svg>
+`;
+
+  // src/icons/default.ts
+  var DefaultIcon = `
+<svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M15.5078 9.20507C17.9927 9.20507 20.007 7.17551 20.007 4.6724V4.53273C20.007 2.02961 17.9927 6.10352e-05 15.5078 6.10352e-05C13.0229 6.10352e-05 11.0087 2.02961 11.0087 4.53273V4.6724C11.0087 7.17551 13.0229 9.20507 15.5078 9.20507Z"
+        fill="currentColor"
+    />
+    <path
+        d="M10.0938 19.689L2.52471 27.1219C1.83818 27.7941 1.82307 28.9027 2.49232 29.5945L4.3058 31.4713C4.97074 32.1587 6.06098 32.174 6.74319 31.504L14.5239 23.8615L10.0938 19.6868V19.689Z"
+        fill="currentColor"
+    />
+    <path
+        d="M28.4812 10.1043C29.1612 9.43214 29.1742 8.33007 28.5114 7.64046L26.7022 5.75712C26.0351 5.06315 24.9384 5.05005 24.254 5.72657L15.042 14.8443L9.91249 9.91662C9.32095 9.34922 8.38615 9.37104 7.82052 9.96681L5.71991 12.1862C5.1478 12.7885 5.17587 13.7488 5.78036 14.3183L14.8413 22.8512C15.042 23.0389 15.3529 23.0345 15.5472 22.8403L19.0468 19.342L15.9704 23.9118L24.0684 31.5325C24.7635 32.1871 25.8516 32.15 26.5036 31.4517L28.2135 29.6142C28.8676 28.9093 28.8331 27.8007 28.1336 27.1416L19.5002 18.9951L28.479 10.1043H28.4812Z"
+        fill="currentColor"
+    />
+</svg>
+   `;
+
+  // src/icons/wheel.ts
+  var wheel = `<svg  viewBox="0 0 20 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.3572 19.3372L14.2778 14.2578H9.33459V11.4104H14.316C15.0926 11.4104 15.7221 10.7809 15.7221 10.0043C15.7221 9.22779 15.0926 8.59825 14.316 8.59825H9.33459V7.25677C9.33459 6.49061 8.73387 5.84298 7.96804 5.82198C7.17342 5.80019 6.52246 6.43783 6.52246 7.22753V16.1326C6.52246 16.6503 6.94212 17.07 7.45984 17.07H13.113L17.3687 21.3257C17.9179 21.8748 18.8081 21.8748 19.3572 21.3257C19.9063 20.7766 19.9063 19.8864 19.3572 19.3372Z" fill="currentColor"/>
+<path d="M10.1749 2.73937C10.4575 1.54389 9.71744 0.345677 8.52196 0.0630863C7.32648 -0.219504 6.12827 0.52054 5.84568 1.71602C5.56309 2.9115 6.30313 4.10971 7.49861 4.3923C8.69409 4.67489 9.8923 3.93485 10.1749 2.73937Z" fill="currentColor"/>
+<path d="M13.4658 19.4113C12.371 21.3118 10.3186 22.5939 7.97225 22.5939C4.47908 22.5939 1.63714 19.752 1.63714 16.2589C1.63714 13.7925 3.05403 11.651 5.1164 10.605V9.06375C2.25722 10.2027 0.231079 12.9985 0.231079 16.2589C0.231079 20.5273 3.70377 24 7.97225 24C10.7043 24 13.1103 22.5773 14.4884 20.4339L13.4658 19.4113Z" fill="currentColor"/>
+</svg>
+`;
+
+  // src/views/widget/renderButton.ts
+  var ICON_LIBRARY = [
+    { id: "default", icon: DefaultIcon },
+    { id: "accessibility", icon: Accessibility },
+    { id: "assist", icon: Assist },
+    { id: "wheel", icon: wheel }
+  ];
+  function getWidgetEl() {
+    return document.querySelector("#cya11y-container")?.shadowRoot?.querySelector(".cya11y-widget") ?? null;
+  }
+  function hexToRgb(hex) {
+    const cleaned = hex.replace("#", "");
+    if (!/^[0-9a-fA-F]{6}$/.test(cleaned)) return null;
+    return [
+      parseInt(cleaned.slice(0, 2), 16),
+      parseInt(cleaned.slice(2, 4), 16),
+      parseInt(cleaned.slice(4, 6), 16)
+    ];
+  }
+  function getRelativeLuminance(r, g, b) {
+    const toLinear = (c) => {
+      const s = c / 255;
+      return s <= 0.04045 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4);
+    };
+    return 0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
+  }
+  function getContrastRatio(hex1, hex2) {
+    const rgb1 = hexToRgb(hex1);
+    const rgb2 = hexToRgb(hex2);
+    if (!rgb1 || !rgb2) return 1;
+    const l1 = getRelativeLuminance(...rgb1);
+    const l2 = getRelativeLuminance(...rgb2);
+    const lighter = Math.max(l1, l2);
+    const darker = Math.min(l1, l2);
+    return (lighter + 0.05) / (darker + 0.05);
+  }
+  var POSITION_STYLES = {
+    "bottom-right": (m) => ({ bottom: `${m.bottom}px`, right: `${m.right}px`, left: "auto" }),
+    "top-left": (m) => ({ top: `${m.top}px`, left: `${m.left}px`, bottom: "auto", right: "auto" }),
+    "top-right": (m) => ({ top: `${m.top}px`, right: `${m.right}px`, left: "auto", bottom: "auto" }),
+    "bottom-left": (m) => ({ bottom: `${m.bottom}px`, left: `${m.left}px`, right: "auto" })
+  };
+  function getButtonStyle(config) {
+    const device = getCurrentDevice();
+    const currentPosition = config.position[device];
+    const currentMargins = config.margins[device];
+    const positionStyle = POSITION_STYLES[currentPosition];
+    return positionStyle ? positionStyle(currentMargins) : POSITION_STYLES["bottom-left"](currentMargins);
+  }
+  function handleButtonKeydown(event, button, onActivate) {
+    switch (event.key) {
+      case "Enter":
+      case " ":
+        event.preventDefault();
+        onActivate();
+        break;
+      case "Escape": {
+        const shadowRoot = document.querySelector("#cya11y-container")?.shadowRoot;
+        const menu = shadowRoot?.querySelector(".cya11y-menu");
+        if (menu && menu.style.display !== "none") {
+          menu.querySelector(".cya11y-menu-close")?.click();
+          button.setAttribute("aria-expanded", "false");
+        }
+        break;
+      }
+    }
+  }
+  function renderButton({ config, label, onActivate }) {
+    try {
+      const device = getCurrentDevice();
+      const deviceStatus = device === "mobile" ? config.status.mobile : config.status.desktop;
+      if (!deviceStatus) return null;
+      const $container = document.createElement("div");
+      $container.id = "cya11y-container";
+      const shadow = $container.attachShadow({ mode: "open" });
+      const currentPosition = config.position[device];
+      const selectedIcon = ICON_LIBRARY.find((icon) => icon.id === config.iconId);
+      shadow.innerHTML = `
+      <style id="cya11y-widget-css">${widget_default}</style>
+      <div class="cya11y-widget" data-position="${currentPosition}">
+        <div class="cya11y-widget-icon">
+          <button
+             class="cya11y-menu-btn"
+             aria-label="${label}"
+             title="${label}"
+             aria-expanded="false"
+             aria-haspopup="dialog"
+             role="button"
+             type="button"
+             tabindex="0">
+            <span class="cya11y-btn-content" aria-hidden="true">
+              ${selectedIcon?.icon || DefaultIcon}
+            </span>
+            <span class="cya11y-sr-only" aria-hidden="true">Open accessibility menu</span>
+          </button>
+        </div>
+      </div>
+    `;
+      const $widget2 = shadow.querySelector(".cya11y-widget");
+      if (!$widget2) throw new Error("Failed to find widget element");
+      $widget2.style.setProperty("--cya11y-primary-color", config.primaryColor);
+      $widget2.style.setProperty("--cya11y-size", `${config.iconSize}px`);
+      const contrastWithWhite = getContrastRatio(config.primaryColor, "#ffffff");
+      const primaryVisibleOnWhite = contrastWithWhite >= 3;
+      const customFocusRing = config.focusRingColor;
+      $widget2.style.setProperty(
+        "--cya11y-focus-color-on-primary",
+        customFocusRing || (primaryVisibleOnWhite ? "#ffffff" : "#000000")
+      );
+      $widget2.style.setProperty(
+        "--cya11y-focus-color-on-white",
+        primaryVisibleOnWhite ? config.primaryColor : "#000000"
+      );
+      const focusRingColor = customFocusRing || (primaryVisibleOnWhite ? config.primaryColor : "#000000");
+      $widget2.style.setProperty("--cya11y-focus-ring-color", focusRingColor);
+      const shadowSourceColor = customFocusRing || config.primaryColor;
+      const rgb = hexToRgb(shadowSourceColor);
+      const shadowColor = rgb && (customFocusRing || primaryVisibleOnWhite) ? `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.14)` : "rgba(0, 0, 0, 0.14)";
+      $widget2.style.setProperty("--cya11y-shadow-focus", `0px 0px 0px 6px ${shadowColor}`);
+      const $btn = $widget2.querySelector(".cya11y-menu-btn");
+      const $icon = $widget2.querySelector(".cya11y-widget-icon");
+      if ($btn && $icon) {
+        Object.assign($btn.style, getButtonStyle(config));
+        Object.assign($icon.style, getButtonStyle(config));
+        $btn.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          event.stopImmediatePropagation();
+          onActivate();
+          setTimeout(() => {
+            const shadowRoot = document.querySelector("#cya11y-container")?.shadowRoot;
+            const menu = shadowRoot?.querySelector(".cya11y-menu");
+            if (menu) $btn.setAttribute("aria-expanded", (menu.style.display !== "none").toString());
+          }, 10);
+        });
+        $btn.addEventListener("keydown", (event) => handleButtonKeydown(event, $btn, onActivate));
+        $btn.addEventListener("focus", () => $btn.classList.add("cya11y-focus-visible"));
+        $btn.addEventListener("blur", () => $btn.classList.remove("cya11y-focus-visible"));
+      }
+      document.body.insertBefore($container, document.body.firstChild);
+      return $widget2;
+    } catch (error) {
+      console.error("Failed to render widget button:", error);
+      return null;
     }
   }
 
@@ -5703,12 +6044,13 @@
       const text = el.textContent?.trim() || "";
       el.textContent = getTranslatedLabel(el, text);
     });
-    if (!$widget) return;
-    $widget.querySelectorAll("[title]").forEach((el) => {
+    const $widget2 = getWidgetEl();
+    if (!$widget2) return;
+    $widget2.querySelectorAll("[title]").forEach((el) => {
       const title = el.getAttribute("title") || "";
       el.setAttribute("title", getTranslatedLabel(el, title));
     });
-    $widget.querySelectorAll("[aria-label]").forEach((el) => {
+    $widget2.querySelectorAll("[aria-label]").forEach((el) => {
       translateAttribute(el, "aria-label", "data-translate-aria");
     });
   }
@@ -5965,15 +6307,6 @@
     }
   }
 
-  // src/utils/device.ts
-  var MOBILE_BREAKPOINT = 768;
-  function isMobileDevice() {
-    return window.innerWidth < MOBILE_BREAKPOINT;
-  }
-  function getCurrentDevice() {
-    return isMobileDevice() ? "mobile" : "desktop";
-  }
-
   // src/utils/trapFocus.ts
   function trapFocus(container) {
     const focusableElements = container.querySelectorAll(
@@ -6073,6 +6406,7 @@
   function showStatementPanel($container, $menu2) {
     const $menuContent = $menu2.querySelector(".cya11y-menu-content");
     if (!$menuContent) return;
+    if ($menuContent.querySelector(".cya11y-statement-view")) return;
     const fragment = document.createDocumentFragment();
     while ($menuContent.firstChild) {
       fragment.appendChild($menuContent.firstChild);
@@ -6084,38 +6418,6 @@
     });
     $menuContent.appendChild($statementWrapper);
     $menuContent.scrollTop = 0;
-  }
-  var CONTENT_KEY_MAP = {
-    "font-size": "adjustFontSizing",
-    "highlight-title": "highlightTitle",
-    "highlight-links": "highlightLinks",
-    "readable-font": "dyslexicFont",
-    "letter-spacing": "letterSpacing",
-    "line-height": "lineHeight",
-    "font-weight": "fontWeight",
-    "text-align": "textAlign"
-  };
-  var COLOR_KEY_MAP = {
-    "dark-contrast": "darkContrast",
-    "light-contrast": "lightContrast",
-    "high-contrast": "highContrast",
-    "high-saturation": "highSaturation",
-    "low-saturation": "lowSaturation",
-    "monochrome": "monochrome"
-  };
-  var NAV_KEY_MAP = {
-    "big-cursor": "bigCursor",
-    "stop-animations": "pauseAnimations",
-    "readable-guide": "readingGuide"
-  };
-  function filterByModule(buttons, moduleSection, keyMap) {
-    if (!moduleSection) return buttons;
-    return buttons.filter((btn) => {
-      const configKey = keyMap[btn.key];
-      if (!configKey) return true;
-      const mod = moduleSection[configKey];
-      return mod === void 0 || mod.enabled !== false;
-    });
   }
   function renderMenu() {
     const device = getCurrentDevice();
@@ -6145,6 +6447,11 @@
       return true;
     });
     const visibleFilters = filterByModule(FilterButtons_default, pluginConfig.modules?.color, COLOR_KEY_MAP);
+    const visibleProfiles = filterByModule(
+      ProfileButtons_default,
+      pluginConfig.modules?.profiles,
+      PROFILE_KEY_MAP
+    );
     if (contentElement) {
       if (visibleContent.length > 0) {
         contentElement.innerHTML = renderButtons(visibleContent);
@@ -6168,7 +6475,7 @@
     }
     if (profilesElement) {
       profilesElement.innerHTML = renderButtons(
-        ProfileButtons_default,
+        visibleProfiles,
         "cya11y-profile"
       );
     }
@@ -6189,7 +6496,7 @@
         announceToScreenReader(isExpanded ? "Accessibility profiles collapsed" : "Accessibility profiles expanded");
       });
     }
-    if (pluginConfig.modules?.profiles?.enabled === false) {
+    if (shouldRemoveProfilesSection(pluginConfig.modules?.profiles, visibleProfiles.length)) {
       $profileCard.remove();
     }
     const states = userSettings?.states;
@@ -6208,9 +6515,10 @@
       const taLabelKey = ta === "left" ? "Align Left" : ta === "center" ? "Align Center" : ta === "right" ? "Align Right" : "Text Align";
       const $taLabel = $textAlignBtn.querySelector(".cya11y-translate");
       if ($taLabel) {
-        $taLabel.textContent = taLabelKey;
-        $taLabel.innerHTML = t(taLabelKey);
+        $taLabel.setAttribute("data-translate", taLabelKey);
+        $taLabel.textContent = t(taLabelKey);
       }
+      $textAlignBtn.setAttribute("data-translate", taLabelKey);
       $textAlignBtn.setAttribute("title", t(taLabelKey));
     }
     renderLanguageDropdown($menu2);
@@ -6221,7 +6529,9 @@
         $statementLink.removeAttribute("href");
         $statementLink.setAttribute("role", "button");
         $statementLink.setAttribute("tabindex", "0");
-        $statementLink.style.display = "block";
+        $statementLink.setAttribute("aria-label", "Accessibility statement");
+        $statementLink.classList.remove("cya11y-statement-external");
+        $statementLink.style.display = "inline-flex";
         $statementLink.style.cursor = "pointer";
         const openStatement = (e) => {
           e.preventDefault();
@@ -6233,7 +6543,9 @@
         });
       } else if (statementModule.enabled) {
         $statementLink.href = statementModule.url || "#";
-        $statementLink.style.display = "block";
+        $statementLink.classList.add("cya11y-statement-external");
+        $statementLink.setAttribute("aria-label", "View accessibility statement (opens in new window)");
+        $statementLink.style.display = "inline-flex";
         $statementLink.addEventListener("keydown", (e) => {
           if (e.key === " ") {
             e.preventDefault();
@@ -6300,9 +6612,10 @@
           const labelKey = next === "left" ? "Align Left" : next === "center" ? "Align Center" : next === "right" ? "Align Right" : "Text Align";
           const labelEl = element.querySelector(".cya11y-translate");
           if (labelEl) {
-            labelEl.textContent = labelKey;
-            labelEl.innerHTML = t(labelKey);
+            labelEl.setAttribute("data-translate", labelKey);
+            labelEl.textContent = t(labelKey);
           }
+          element.setAttribute("data-translate", labelKey);
           element.setAttribute("title", t(labelKey));
           if (next) {
             element.classList.add("cya11y-selected");
@@ -6379,7 +6692,7 @@
         announceToScreenReader(`${settingLabel} ${isSelected ? "enabled" : "disabled"}`);
       });
     });
-    $container.querySelectorAll(".cya11y-footer a").forEach((el) => {
+    $container.querySelectorAll(".cya11y-footer a:not(.cya11y-accessibility-statement-link)").forEach((el) => {
       el.addEventListener("keydown", (e) => {
         if (e.key === " ") {
           e.preventDefault();
@@ -6387,9 +6700,11 @@
         }
       });
     });
-    if ($widget) {
-      $widget.appendChild($container);
+    const $widget2 = getWidgetEl();
+    if ($widget2) {
+      $widget2.appendChild($container);
     }
+    applyBrandingState();
     trapFocus($menu2);
     return $menu2;
   }
@@ -6404,240 +6719,23 @@
       const widgetContainer = document.querySelector("#cya11y-container");
       const btn = widgetContainer?.shadowRoot?.querySelector(".cya11y-menu-btn");
       btn?.setAttribute("aria-controls", "cya11y-accessibility-menu");
+      btn?.setAttribute("aria-expanded", "true");
     }
     translateWidget($menu);
   }
 
-  // src/icons/accessibility.ts
-  var Accessibility = `
-   <svg viewBox="0 0 24 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-     <path
-       d="M11.8001 20.032L11.1521 26.206C11.1245 26.4672 11.0457 26.7204 10.9203 26.9512C10.7949 27.1819 10.6252 27.3857 10.421 27.5509C10.2168 27.7161 9.98208 27.8395 9.73021 27.914C9.47834 27.9884 9.21427 28.0126 8.95307 27.985C8.69187 27.9574 8.43866 27.8787 8.2079 27.7532C7.97714 27.6278 7.77334 27.4581 7.60814 27.2539C7.44295 27.0497 7.31959 26.815 7.24511 26.5631C7.17063 26.3113 7.14649 26.0472 7.17407 25.786L8.62007 12.02H2.00007C1.46884 12.02 0.959371 11.809 0.583735 11.4333C0.2081 11.0577 -0.00292969 10.5482 -0.00292969 10.017C-0.00292969 9.48577 0.2081 8.9763 0.583735 8.60067C0.959371 8.22503 1.46884 8.014 2.00007 8.014H22.0001C22.5313 8.014 23.0408 8.22503 23.4164 8.60067C23.792 8.9763 24.0031 9.48577 24.0031 10.017C24.0031 10.5482 23.792 11.0577 23.4164 11.4333C23.0408 11.809 22.5313 12.02 22.0001 12.02H15.3801L16.8261 25.79C16.8628 26.0559 16.8456 26.3264 16.7756 26.5855C16.7057 26.8446 16.5844 27.087 16.4189 27.2982C16.2533 27.5095 16.0471 27.6853 15.8122 27.8153C15.5774 27.9452 15.3189 28.0266 15.052 28.0547C14.7851 28.0827 14.5152 28.0568 14.2585 27.9785C14.0019 27.9001 13.7635 27.771 13.5577 27.5987C13.352 27.4264 13.1829 27.2146 13.0607 26.9756C12.9384 26.7367 12.8654 26.4757 12.8461 26.208L12.2001 20.032H11.8001ZM12.0001 8.012C9.79007 8.012 8.00007 6.218 8.00007 4.006C8.00007 1.794 9.79007 0 12.0001 0C14.2101 0 16.0001 1.794 16.0001 4.006C16.0009 4.53179 15.898 5.05258 15.6973 5.53858C15.4966 6.02457 15.2021 6.46624 14.8306 6.83831C14.4591 7.21038 14.0179 7.50555 13.5322 7.70695C13.0465 7.90834 12.5259 8.012 12.0001 8.012Z"
-       fill="currentColor" />
-   </svg>
-   `;
-
-  // src/icons/assist.ts
-  var Assist = `<svg viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.456055 15.2607C0.456063 19.7696 4.11123 23.4248 8.62012 23.4248C12.0774 23.4248 15.0296 21.2763 16.2207 18.2451L16.3301 17.9492L16.3633 17.8379C16.4953 17.2835 16.1883 16.7084 15.6387 16.5166C15.0886 16.3248 14.4901 16.5848 14.249 17.1016L14.2061 17.208L14.126 17.4228C13.2621 19.621 11.1214 21.1748 8.62012 21.1748C5.35387 21.1748 2.70606 18.527 2.70605 15.2607C2.70605 12.5025 4.59543 10.183 7.15137 9.53027L7.40039 9.47265L7.51172 9.44336C8.05538 9.27083 8.39091 8.71087 8.27148 8.14062C8.15202 7.57074 7.62056 7.19323 7.05371 7.25293L6.93945 7.2705L6.5957 7.35058C3.06643 8.25152 0.456055 11.4497 0.456055 15.2607Z" fill="currentColor"/>
-<path d="M10.3848 2.5752C10.3848 3.61071 9.54527 4.4502 8.50976 4.4502C7.47424 4.4502 6.63476 3.61071 6.63476 2.5752C6.63476 1.53968 7.47424 0.700195 8.50976 0.700195C9.54527 0.700195 10.3848 1.53968 10.3848 2.5752Z" fill="currentColor"/>
-<path d="M20.0073 19.3406L14.9273 14.2605H9.9834V11.4127H14.9655C15.7421 11.4127 16.3718 10.7831 16.3718 10.0064C16.3718 9.22982 15.7421 8.60019 14.9655 8.60019H9.9834V7.25853C9.9834 6.49227 9.3826 5.84455 8.61666 5.82355C7.82194 5.8018 7.1709 6.43949 7.1709 7.22928V16.1355C7.1709 16.6533 7.59062 17.073 8.1084 17.073H13.7623L18.0186 21.3294C18.5678 21.8785 19.4581 21.8785 20.0073 21.3294C20.5565 20.7802 20.5565 19.8898 20.0073 19.3406Z" fill="currentColor"/>
-<path d="M18.8955 5C18.8955 4.4201 19.3654 3.95019 19.9453 3.95019C20.5252 3.95019 20.9951 4.4201 20.9951 5V12.4883C20.9951 13.0682 20.5252 13.5381 19.9453 13.5381H12C11.4201 13.5381 10.9502 13.0682 10.9502 12.4883C10.9502 11.9084 11.4201 11.4385 12 11.4385H18.8955V5Z" fill="currentColor"/>
-</svg>
-`;
-
-  // src/icons/default.ts
-  var DefaultIcon = `
-<svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M15.5078 9.20507C17.9927 9.20507 20.007 7.17551 20.007 4.6724V4.53273C20.007 2.02961 17.9927 6.10352e-05 15.5078 6.10352e-05C13.0229 6.10352e-05 11.0087 2.02961 11.0087 4.53273V4.6724C11.0087 7.17551 13.0229 9.20507 15.5078 9.20507Z"
-        fill="currentColor"
-    />
-    <path
-        d="M10.0938 19.689L2.52471 27.1219C1.83818 27.7941 1.82307 28.9027 2.49232 29.5945L4.3058 31.4713C4.97074 32.1587 6.06098 32.174 6.74319 31.504L14.5239 23.8615L10.0938 19.6868V19.689Z"
-        fill="currentColor"
-    />
-    <path
-        d="M28.4812 10.1043C29.1612 9.43214 29.1742 8.33007 28.5114 7.64046L26.7022 5.75712C26.0351 5.06315 24.9384 5.05005 24.254 5.72657L15.042 14.8443L9.91249 9.91662C9.32095 9.34922 8.38615 9.37104 7.82052 9.96681L5.71991 12.1862C5.1478 12.7885 5.17587 13.7488 5.78036 14.3183L14.8413 22.8512C15.042 23.0389 15.3529 23.0345 15.5472 22.8403L19.0468 19.342L15.9704 23.9118L24.0684 31.5325C24.7635 32.1871 25.8516 32.15 26.5036 31.4517L28.2135 29.6142C28.8676 28.9093 28.8331 27.8007 28.1336 27.1416L19.5002 18.9951L28.479 10.1043H28.4812Z"
-        fill="currentColor"
-    />
-</svg>
-   `;
-
-  // src/icons/wheel.ts
-  var wheel = `<svg  viewBox="0 0 20 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.3572 19.3372L14.2778 14.2578H9.33459V11.4104H14.316C15.0926 11.4104 15.7221 10.7809 15.7221 10.0043C15.7221 9.22779 15.0926 8.59825 14.316 8.59825H9.33459V7.25677C9.33459 6.49061 8.73387 5.84298 7.96804 5.82198C7.17342 5.80019 6.52246 6.43783 6.52246 7.22753V16.1326C6.52246 16.6503 6.94212 17.07 7.45984 17.07H13.113L17.3687 21.3257C17.9179 21.8748 18.8081 21.8748 19.3572 21.3257C19.9063 20.7766 19.9063 19.8864 19.3572 19.3372Z" fill="currentColor"/>
-<path d="M10.1749 2.73937C10.4575 1.54389 9.71744 0.345677 8.52196 0.0630863C7.32648 -0.219504 6.12827 0.52054 5.84568 1.71602C5.56309 2.9115 6.30313 4.10971 7.49861 4.3923C8.69409 4.67489 9.8923 3.93485 10.1749 2.73937Z" fill="currentColor"/>
-<path d="M13.4658 19.4113C12.371 21.3118 10.3186 22.5939 7.97225 22.5939C4.47908 22.5939 1.63714 19.752 1.63714 16.2589C1.63714 13.7925 3.05403 11.651 5.1164 10.605V9.06375C2.25722 10.2027 0.231079 12.9985 0.231079 16.2589C0.231079 20.5273 3.70377 24 7.97225 24C10.7043 24 13.1103 22.5773 14.4884 20.4339L13.4658 19.4113Z" fill="currentColor"/>
-</svg>
-`;
-
   // src/views/widget/widget.ts
-  var ICON_LIBRARY = [
-    { id: "default", icon: DefaultIcon },
-    { id: "accessibility", icon: Accessibility },
-    { id: "assist", icon: Assist },
-    { id: "wheel", icon: wheel }
-  ];
   var $widget = null;
-  function hexToRgb(hex) {
-    const cleaned = hex.replace("#", "");
-    if (!/^[0-9a-fA-F]{6}$/.test(cleaned)) return null;
-    return [
-      parseInt(cleaned.slice(0, 2), 16),
-      parseInt(cleaned.slice(2, 4), 16),
-      parseInt(cleaned.slice(4, 6), 16)
-    ];
-  }
-  function getRelativeLuminance(r, g, b) {
-    const toLinear = (c) => {
-      const s = c / 255;
-      return s <= 0.04045 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4);
-    };
-    return 0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
-  }
-  function getContrastRatio(hex1, hex2) {
-    const rgb1 = hexToRgb(hex1);
-    const rgb2 = hexToRgb(hex2);
-    if (!rgb1 || !rgb2) return 1;
-    const l1 = getRelativeLuminance(...rgb1);
-    const l2 = getRelativeLuminance(...rgb2);
-    const lighter = Math.max(l1, l2);
-    const darker = Math.min(l1, l2);
-    return (lighter + 0.05) / (darker + 0.05);
-  }
-  var POSITION_STYLES = {
-    "bottom-right": (margins) => ({
-      bottom: `${margins.bottom}px`,
-      right: `${margins.right}px`,
-      left: "auto"
-    }),
-    "top-left": (margins) => ({
-      top: `${margins.top}px`,
-      left: `${margins.left}px`,
-      bottom: "auto",
-      right: "auto"
-    }),
-    "top-right": (margins) => ({
-      top: `${margins.top}px`,
-      right: `${margins.right}px`,
-      left: "auto",
-      bottom: "auto"
-    }),
-    "bottom-left": (margins) => ({
-      bottom: `${margins.bottom}px`,
-      left: `${margins.left}px`,
-      right: "auto"
-    })
-  };
-  function getButtonStyle() {
-    const device = getCurrentDevice();
-    const { position, margins } = pluginConfig;
-    const currentPosition = position[device];
-    const currentMargins = margins[device];
-    const positionStyle = POSITION_STYLES[currentPosition];
-    return positionStyle ? positionStyle(currentMargins) : POSITION_STYLES["bottom-left"](currentMargins);
-  }
-  function handleWidgetKeyboardNavigation(event, button) {
-    switch (event.key) {
-      case "Enter":
-      case " ":
-        event.preventDefault();
-        openMenu();
-        break;
-      case "Escape":
-        const widgetContainer = document.querySelector("#cya11y-container");
-        if (widgetContainer) {
-          const shadowRoot = widgetContainer.shadowRoot;
-          if (shadowRoot) {
-            const menu = shadowRoot.querySelector(".cya11y-menu");
-            if (menu && menu.style.display !== "none") {
-              const closeButton = menu.querySelector(".cya11y-menu-close");
-              if (closeButton) {
-                closeButton.click();
-                button.setAttribute("aria-expanded", "false");
-              }
-            }
-          }
-        }
-        break;
-    }
-  }
   function renderWidget() {
     try {
-      const device = getCurrentDevice();
-      const deviceStatus = device === "mobile" ? pluginConfig.status.mobile : pluginConfig.status.desktop;
-      if (!deviceStatus) {
-        console.log(`Widget disabled for ${device} device`);
-        return null;
-      }
-      const $container = document.createElement("div");
-      $container.id = "cya11y-container";
-      const shadow = $container.attachShadow({ mode: "open" });
-      const currentPosition = pluginConfig.position[device];
-      const selectedIcon = ICON_LIBRARY.find(
-        (icon) => icon.id === pluginConfig.iconId
-      );
       const defaultLanguage = getDefaultLanguage();
-      const baseLabel = LANGUAGE_DICTIONARY[defaultLanguage][pluginConfig.label] || "Accessibility menu";
+      const baseLabel = LANGUAGE_DICTIONARY[defaultLanguage]?.[pluginConfig.label] || "Accessibility menu";
       const shortcutHint = pluginConfig.keyboard?.enabled && pluginConfig.keyboard.shortcut ? ` \u2014 Press ${getShortcutLabel(pluginConfig.keyboard.shortcut)} to open/close` : "";
-      const buttonLabel = `${baseLabel}${shortcutHint}`;
-      shadow.innerHTML = `
-      <style id="cya11y-widget-css">${widget_default}</style>
-      <div class="cya11y-widget" data-position="${currentPosition}">
-        <div class="cya11y-widget-icon">
-          <button
-             class="cya11y-menu-btn"
-             aria-label="${buttonLabel}"
-             title="${buttonLabel}"
-             aria-expanded="false"
-             aria-haspopup="dialog"
-             role="button"
-             type="button"
-             tabindex="0">
-            <span class="cya11y-btn-content" aria-hidden="true">
-              ${selectedIcon?.icon || DefaultIcon}
-            </span>
-            <span class="cya11y-sr-only" aria-hidden="true">Open accessibility menu</span>
-          </button>
-        </div>
-      </div>
-    `;
-      $widget = shadow.querySelector(".cya11y-widget");
-      if (!$widget) {
-        throw new Error("Failed to find widget element");
-      }
-      $widget.style.setProperty("--cya11y-primary-color", pluginConfig.primaryColor);
-      $widget.style.setProperty("--cya11y-size", `${pluginConfig.iconSize}px`);
-      const contrastWithWhite = getContrastRatio(pluginConfig.primaryColor, "#ffffff");
-      const primaryVisibleOnWhite = contrastWithWhite >= 3;
-      const customFocusRing = pluginConfig.focusRingColor;
-      $widget.style.setProperty(
-        "--cya11y-focus-color-on-primary",
-        customFocusRing || (primaryVisibleOnWhite ? "#ffffff" : "#000000")
-      );
-      $widget.style.setProperty("--cya11y-focus-color-on-white", primaryVisibleOnWhite ? pluginConfig.primaryColor : "#000000");
-      const focusRingColor = customFocusRing || (primaryVisibleOnWhite ? pluginConfig.primaryColor : "#000000");
-      $widget.style.setProperty("--cya11y-focus-ring-color", focusRingColor);
-      const shadowSourceColor = customFocusRing || pluginConfig.primaryColor;
-      const rgb = hexToRgb(shadowSourceColor);
-      const shadowColor = rgb && (customFocusRing || primaryVisibleOnWhite) ? `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, 0.14)` : "rgba(0, 0, 0, 0.14)";
-      $widget.style.setProperty("--cya11y-shadow-focus", `0px 0px 0px 6px ${shadowColor}`);
-      const $btn = $widget.querySelector(".cya11y-menu-btn");
-      const $icon = $widget.querySelector(".cya11y-widget-icon");
-      if ($btn && $icon) {
-        Object.assign($btn.style, getButtonStyle());
-        Object.assign($icon.style, getButtonStyle());
-        $btn.addEventListener("click", (event) => {
-          event.preventDefault();
-          event.stopPropagation();
-          event.stopImmediatePropagation();
-          openMenu();
-          setTimeout(() => {
-            const widgetContainer = document.querySelector(".cya11y-container");
-            if (widgetContainer) {
-              const widgetShadowRoot = widgetContainer.shadowRoot;
-              if (widgetShadowRoot) {
-                const menu = widgetShadowRoot.querySelector(".cya11y-menu");
-                if (menu) {
-                  const isExpanded = menu.style.display !== "none";
-                  $btn.setAttribute("aria-expanded", isExpanded.toString());
-                }
-              }
-            }
-          }, 10);
-        });
-        $btn.addEventListener("keydown", (event) => {
-          handleWidgetKeyboardNavigation(event, $btn);
-        });
-        $btn.addEventListener("focus", () => {
-          $btn.classList.add("cya11y-focus-visible");
-        });
-        $btn.addEventListener("blur", () => {
-          $btn.classList.remove("cya11y-focus-visible");
-        });
-      }
-      document.body.insertBefore($container, document.body.firstChild);
+      $widget = renderButton({
+        config: pluginConfig,
+        label: `${baseLabel}${shortcutHint}`,
+        onActivate: openMenu
+      });
       return $widget;
     } catch (error) {
       console.error("Failed to render widget:", error);
@@ -6645,7 +6743,7 @@
     }
   }
 
-  // src/utils/keyboardShortcut.ts
+  // src/utils/shortcutParsing.ts
   function parseShortcut(shortcut) {
     const parts = shortcut.toLowerCase().split("+");
     const rawKey = parts[parts.length - 1];
@@ -6673,42 +6771,45 @@
     const tag = target.tagName.toLowerCase();
     return ["input", "textarea", "select"].includes(tag) || (target.getAttribute("contenteditable") ?? "false") !== "false";
   }
+  function matchesShortcut(event, parsed) {
+    return event.altKey === parsed.alt && event.shiftKey === parsed.shift && event.ctrlKey === parsed.ctrl && event.code.toLowerCase() === parsed.code;
+  }
+
+  // src/utils/keyboardShortcut.ts
   var registered = false;
-  function registerKeyboardShortcut() {
+  function registerKeyboardShortcut(keyboard, onTrigger) {
     if (registered) return;
-    const keyboard = pluginConfig.keyboard;
     if (!keyboard?.enabled || !keyboard.shortcut) return;
     const parsed = parseShortcut(keyboard.shortcut);
     document.addEventListener("keydown", (event) => {
       if (isTypingContext(event.target)) return;
-      if (event.altKey === parsed.alt && event.shiftKey === parsed.shift && event.ctrlKey === parsed.ctrl && event.code.toLowerCase() === parsed.code) {
+      if (matchesShortcut(event, parsed)) {
         event.preventDefault();
-        openMenu();
+        onTrigger();
       }
     });
     registered = true;
   }
 
   // src/widget.ts
+  async function initRuntime() {
+    await loadLanguages();
+    const savedSettings = getSavedUserSettings();
+    Object.assign(userSettings, savedSettings);
+    if (!userSettings.lang) {
+      userSettings.lang = getDefaultLanguage();
+    }
+    runAccessibility();
+  }
   async function accessibilityWidget() {
     try {
-      await loadLanguages();
-      const savedSettings = getSavedUserSettings();
-      Object.assign(userSettings, savedSettings);
-      if (!userSettings.lang) {
-        userSettings.lang = getDefaultLanguage();
-      }
-      runAccessibility();
+      await initRuntime();
       renderWidget();
-      registerKeyboardShortcut();
-      return {
-        changeLanguage
-      };
+      registerKeyboardShortcut(pluginConfig.keyboard, openMenu);
+      return { changeLanguage };
     } catch (error) {
       console.error("Failed to initialize accessibility widget:", error);
-      return {
-        changeLanguage
-      };
+      return { changeLanguage };
     }
   }
 
