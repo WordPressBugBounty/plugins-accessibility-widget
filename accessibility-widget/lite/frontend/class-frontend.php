@@ -144,6 +144,12 @@ class Frontend {
 		$suffix      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 		$widget_file = 'assets/js/widget' . $suffix . '.js';
 		$widget_path = plugin_dir_path( __FILE__ ) . $widget_file;
+		// Release packages may ship only the minified bundle; fall back to it so
+		// SCRIPT_DEBUG sites don't 404 on widget.js and lose the widget entirely.
+		if ( '' === $suffix && ! file_exists( $widget_path ) ) {
+			$widget_file = 'assets/js/widget.min.js';
+			$widget_path = plugin_dir_path( __FILE__ ) . $widget_file;
+		}
 		// Version by file mtime so a rebuilt bundle always busts the browser cache;
 		// a static plugin version would keep serving stale JS after an update.
 		$widget_ver = file_exists( $widget_path ) ? filemtime( $widget_path ) : $this->version;

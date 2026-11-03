@@ -5198,8 +5198,7 @@
       childrenSelector: [""],
       // Inline text elements would paint that backdrop over the previous
       // line's glyphs wherever line-height < the font's content box.
-      backgroundResetSelectors: INLINE_TEXT_SELECTORS,
-      mainSelector: ""
+      backgroundResetSelectors: INLINE_TEXT_SELECTORS
     },
     "light-contrast": {
       styles: {
@@ -5212,47 +5211,57 @@
       // over black glyphs), and dark-themed sites need every container
       // whitened for the forced-black text to stay readable.
       childrenSelector: [""],
-      backgroundResetSelectors: INLINE_TEXT_SELECTORS,
-      mainSelector: ""
+      backgroundResetSelectors: INLINE_TEXT_SELECTORS
     },
+    // Colour filters run once, on <html>. A `filter` on any other element
+    // makes it the containing block for its absolute/fixed descendants and a
+    // stacking context, and nested filters compound (ALLY-169). The widget's
+    // own UI is filtered along with the page — there is no way to exempt a
+    // descendant of the root.
     "high-contrast": {
       styles: {
-        "filter": "contrast(110%)"
+        "filter": "contrast(125%)"
       },
-      mainSelector: ":not(html):not(body)"
+      applyToRoot: true
     },
     "high-saturation": {
       styles: {
-        "filter": "saturate(110%)"
+        "filter": "saturate(200%)"
       },
-      mainSelector: ":not(html):not(body)"
+      applyToRoot: true
     },
     "low-saturation": {
       styles: {
-        "filter": "saturate(87%)"
+        "filter": "saturate(50%)"
       },
-      mainSelector: ":not(html):not(body)"
+      applyToRoot: true
     },
     "monochrome": {
       styles: {
         "filter": "grayscale(100%)"
       },
-      mainSelector: ":not(html):not(body)"
+      applyToRoot: true
     }
   };
+
+  // src/tools/disableContrast.ts
+  function disableContrast() {
+    document.getElementById("cya11y-filter-style")?.remove();
+    document.documentElement.classList.remove("cya11y-root-filter");
+    document.body.classList.remove("cya11y-filter", "cya11y-dark-contrast");
+  }
 
   // src/tools/enableContrast.ts
   function enableContrast(contrast) {
     const filter = FILTERS[contrast];
     if (!filter) {
-      document.getElementById("cya11y-filter-style")?.remove();
-      document.body.classList.remove("cya11y-filter", "cya11y-dark-contrast");
+      disableContrast();
       return;
     }
     const exclusions = ":not(#cya11y-container):not(#cya11y-container *):not(.cya11y-overlay):not(.cya11y-rg-container):not(.cya11y-rg-container *)";
     let css = generateCSSFromConfig({
       ...filter,
-      selector: `*${filter.mainSelector}${exclusions}`
+      selector: filter.applyToRoot ? "html.cya11y-root-filter" : `*${exclusions}`
     });
     if (filter.backgroundResetSelectors?.length) {
       css += generateCSSFromConfig({
@@ -5261,6 +5270,7 @@
       });
     }
     addStylesheet({ css, id: "cya11y-filter-style" });
+    document.documentElement.classList.toggle("cya11y-root-filter", !!filter.applyToRoot);
     document.body.classList.add("cya11y-filter");
     document.body.classList.toggle("cya11y-dark-contrast", contrast === "dark-contrast");
   }
@@ -5273,7 +5283,7 @@
   }
 
   // src/views/menu/menu.html
-  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class=cya11y-menu-title id=cya11y-menu-title><span class=cya11y-translate>Accessibility menu</span></h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset all settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Text and Reading</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Color and Contrast</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation and Interaction</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn" title="Reset all settings" type=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-translate>Reset all settings</span></button></div></section></main><footer class=cya11y-footer><a aria-label="Accessibility statement" class="cya11y-footer-statement-link cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> <span class=cya11y-translate>Accessibility statement</span> <span aria-hidden=true class=cya11y-statement-external-icon> <svg viewbox="0 0 16 16" fill=none height=16 width=16 xmlns=http://www.w3.org/2000/svg><path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333M14 6V2H10M14 2L6.66667 9.33333" stroke=currentColor stroke-linecap=round stroke-linejoin=round /></svg> </span> </a><a aria-label="Visit AccessiYes on WordPress.org (opens in new window)" class=cya11y-footer-brand href=https://wordpress.org/plugins/accessibility-widget/ rel=noopener target=_blank> <img alt="AccessiYes by CookieYes" src="data:image/png;base64,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" class=cya11y-footer-logo height=25 width=76> </a></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
+  var menu_default = '<div aria-labelledby=cya11y-menu-title aria-modal=true class=cya11y-menu id=cya11y-accessibility-menu role=dialog><div aria-atomic=true aria-live=polite class=cya11y-sr-only id=cya11y-menu-announcements></div><header class=cya11y-menu-header><div class=cya11y-menu-title-container><div aria-hidden=true class=cya11y-menu-title-icon><svg viewbox="0 0 28 28" fill=none height=28 width=28 xmlns=http://www.w3.org/2000/svg><path d="M14.1009 19.5167L14.0943 19.5102L14.064 19.5405L14.0705 19.547L14.1009 19.5167Z" fill=white /><path d="M13.957 7.7588C16.0735 7.7588 17.7899 6.04796 17.7899 3.93836V3.82044C17.7899 1.71084 16.0735 0 13.957 0C11.8406 0 10.1241 1.71084 10.1241 3.82044V3.93836C10.1241 6.04796 11.8406 7.7588 13.957 7.7588Z" fill=white /><path d="M2.65871 24.1362C2.19047 24.6548 2.23269 25.4551 2.7529 25.9216L4.7109 27.6775C5.22857 28.1417 6.02418 28.0998 6.49023 27.5837L13.3518 19.9865L9.54467 16.5091L2.65871 24.1362Z" fill=white /><path d="M25.5243 8.37116C26.0208 7.88495 26.0308 7.08893 25.5468 6.59033L23.715 4.70324C23.2281 4.20155 22.426 4.19133 21.9264 4.68046L13.9283 12.5108L9.55938 8.35834C9.05541 7.87934 8.25896 7.89812 7.77814 8.40036L5.98803 10.2702C5.5013 10.7786 5.52445 11.5869 6.03948 12.0666L14.0638 19.5407L14.0939 19.5107L14.1003 19.5171L17.0213 16.6164L14.4595 19.9438L20.8258 27.4911C21.2742 28.0228 22.0683 28.0914 22.6014 27.6445L24.618 25.954C25.1534 25.5052 25.2223 24.7068 24.7719 24.1729L17.8128 15.9239L25.5243 8.37116Z" fill=white /></svg></div><h2 class=cya11y-menu-title id=cya11y-menu-title><span class=cya11y-translate>Accessibility menu</span></h2></div><div class=cya11y-menu-actions style=gap:15px><button aria-label="Reset all accessibility settings to default" title="Reset all settings" class=cya11y-menu-reset role=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Reset settings</span></button><button aria-label="Close accessibility menu" title="Close accessibility menu" class=cya11y-menu-close role=button><svg viewbox="0 0 14 14" aria-hidden=true fill=none height=14 width=14 xmlns=http://www.w3.org/2000/svg><path d="M13 1L1 13M1 1L13 13" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-sr-only>Close</span></button></div></header><main class=cya11y-menu-content><section aria-labelledby=cya11y-language-section class=cya11y-card><h2 class=cya11y-sr-only id=cya11y-language-section>Language Selection</h2><div id=cya11y-language-dropdown></div></section><section class="cya11y-card cya11y-profile-card" aria-labelledby=cya11y-profile-section><div class=cya11y-profile-title-container><div aria-hidden=true><svg viewbox="0 0 32 32" fill=none height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill=#E9EAEC /><path d="M7 16C7 17.1819 7.23279 18.3522 7.68508 19.4442C8.13738 20.5361 8.80031 21.5282 9.63604 22.364C10.4718 23.1997 11.4639 23.8626 12.5558 24.3149C13.6478 24.7672 14.8181 25 16 25C17.1819 25 18.3522 24.7672 19.4442 24.3149C20.5361 23.8626 21.5282 23.1997 22.364 22.364C23.1997 21.5282 23.8626 20.5361 24.3149 19.4442C24.7672 18.3522 25 17.1819 25 16C25 14.8181 24.7672 13.6478 24.3149 12.5558C23.8626 11.4639 23.1997 10.4718 22.364 9.63604C21.5282 8.80031 20.5361 8.13738 19.4442 7.68508C18.3522 7.23279 17.1819 7 16 7C14.8181 7 13.6478 7.23279 12.5558 7.68508C11.4639 8.13738 10.4718 8.80031 9.63604 9.63604C8.80031 10.4718 8.13738 11.4639 7.68508 12.5558C7.23279 13.6478 7 14.8181 7 16Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M14 20.5L16 17.5M16 17.5L18 20.5M16 17.5V15.5M16 15.5L19 14.5M16 15.5L13 14.5" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /><path d="M16 12C16.2761 12 16.5 11.7761 16.5 11.5C16.5 11.2239 16.2761 11 16 11C15.7239 11 15.5 11.2239 15.5 11.5C15.5 11.7761 15.7239 12 16 12Z" stroke=#27283C stroke-linecap=round stroke-linejoin=round stroke-width=1.5 /></svg></div><button class="cya11y-card-title cya11y-profile-title" aria-controls=cya11y-profile-items aria-expanded=false id=cya11y-profile-section role=button>Accessibility Profiles</button><div aria-hidden=true class=cya11y-arrow><svg viewbox="0 0 24 24" fill=none height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M18 9L12 15L6 9" stroke=black stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg></div></div><div class="cya11y-profile-items profiles" aria-labelledby=cya11y-profile-section id=cya11y-profile-items role=region></div></section><section aria-labelledby=cya11y-content-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-content-section>Text and Reading</h2><div class="cya11y-items content" aria-labelledby=cya11y-content-section role=group></div></section><section aria-labelledby=cya11y-color-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-color-section>Color and Contrast</h2><div class="cya11y-items contrast" aria-labelledby=cya11y-color-section role=group></div></section><section aria-labelledby=cya11y-navigation-section class=cya11y-card><h2 class=cya11y-card-title id=cya11y-navigation-section>Navigation and Interaction</h2><div class="cya11y-items tools" aria-labelledby=cya11y-navigation-section role=group></div></section><section class=cya11y-card><div class=cya11y-menu-reset-footer><button aria-label="Reset all accessibility settings to default" class="cya11y-menu-reset cya11y-menu-reset-footer-btn" title="Reset all settings" type=button><svg viewbox="0 0 24 24" aria-hidden=true fill=none height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M3.06006 13C3.30547 15.1939 4.34865 17.221 5.9912 18.696C7.63374 20.1709 9.76108 20.9907 11.9686 20.9994C14.1762 21.0081 16.3099 20.2052 17.9641 18.7434C19.6183 17.2815 20.6775 15.2627 20.9403 13.0708C21.2031 10.879 20.6511 8.66696 19.3894 6.85551C18.1276 5.04406 16.2441 3.75951 14.0971 3.24618C11.95 2.73284 9.68922 3.02652 7.74457 4.07135C5.79993 5.11619 4.30712 6.83931 3.55006 8.913" stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /><path d="M3 4.00098V9.00098H8" fill=none stroke=#FFFFFF stroke-linecap=round stroke-linejoin=round stroke-width=2 /></svg> <span class=cya11y-translate>Reset all settings</span></button></div></section></main><footer class=cya11y-footer><a aria-label="Accessibility statement" class="cya11y-footer-statement-link cya11y-accessibility-statement-link" rel="noopener noreferrer" href=# target=_blank> <span class=cya11y-translate>Accessibility statement</span> <span aria-hidden=true class=cya11y-statement-external-icon> <svg viewbox="0 0 16 16" fill=none height=16 width=16 xmlns=http://www.w3.org/2000/svg><path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333M14 6V2H10M14 2L6.66667 9.33333" stroke=currentColor stroke-linecap=round stroke-linejoin=round /></svg> </span> </a><a aria-label="Visit AccessiYes website (opens in new window)" href="https://www.accessiyes.com/?utm_source=widget_link&utm_medium=widget_footer_link&utm_campaign=powered_by_ay" class=cya11y-footer-brand rel=noopener target=_blank> <img alt="AccessiYes by CookieYes" src="data:image/png;base64,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" class=cya11y-footer-logo height=25 width=76> </a></footer></div><div aria-hidden=true class=cya11y-overlay></div>';
 
   // src/core/entitlement.ts
   function applyBrandingState() {
@@ -5333,12 +5343,15 @@
 
   // src/views/statement/statementPanel.ts
   function renderStatementPanel(onBack) {
-    const label = t("Accessibility statement");
+    const labelKey = "Accessibility statement";
+    const backLabelKey = "Back to accessibility menu";
+    const label = t(labelKey);
+    const backLabel = t(backLabelKey);
     const $wrapper = document.createElement("div");
     $wrapper.innerHTML = `<style id="cya11y-statement-css">${statementPanel_default}</style>
-<div class="cya11y-statement-view" role="region" aria-label="${label}">
+<div class="cya11y-statement-view" role="region" aria-label="${label}" data-translate-aria="${labelKey}">
   <header class="cya11y-statement-header">
-    <button class="cya11y-statement-back-btn" aria-label="Back to accessibility menu" type="button">
+    <button class="cya11y-statement-back-btn" aria-label="${backLabel}" data-translate-aria="${backLabelKey}" title="${backLabel}" data-translate="${backLabelKey}" type="button">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"
            xmlns="http://www.w3.org/2000/svg">
         <path d="M19 12H5M5 12L12 19M5 12L12 5"
@@ -5610,6 +5623,26 @@
     return _html;
   }
 
+  // src/enum/Profiles.ts
+  var PROFILES = {
+    "low-vision-profile": {
+      "contrast": "high-contrast",
+      "tools": ["font-size", "page-read"]
+    },
+    "adhd-profile": {
+      "contrast": "high-saturation",
+      "tools": ["stop-animations", "readable-guide"]
+    },
+    "seizure-safe-profile": {
+      "contrast": "monochrome",
+      "tools": ["stop-animations"]
+    },
+    "epilepsy-safe-profile": {
+      "contrast": "monochrome",
+      "tools": ["stop-animations", "mute-sounds"]
+    }
+  };
+
   // src/views/menu/moduleFilter.ts
   var CONTENT_KEY_MAP = {
     "font-size": "adjustFontSizing",
@@ -5634,6 +5667,10 @@
     "stop-animations": "pauseAnimations",
     "readable-guide": "readingGuide"
   };
+  var TOP_LEVEL_KEY_MAP = {
+    "page-read": "pageRead",
+    "mute-sounds": "muteSounds"
+  };
   function filterByModule(buttons, moduleSection, keyMap) {
     if (!moduleSection) return buttons;
     return buttons.filter((btn) => {
@@ -5649,8 +5686,54 @@
     "seizure-safe-profile": "seizureSafe",
     "epilepsy-safe-profile": "epilepsySafe"
   };
+  var PROFILE_BUTTON_KEYS = [
+    "low-vision-profile",
+    "adhd-profile",
+    "seizure-safe-profile",
+    "epilepsy-safe-profile"
+  ];
   function shouldRemoveProfilesSection(profilesSection, visibleCount) {
     return profilesSection?.enabled === false || visibleCount === 0;
+  }
+  var CONTENT_STATE_KEY = { "font-size": "fontSize" };
+  function dropDisabledModuleStates(states, modules) {
+    if (!modules) return { states, changed: false };
+    const next = { ...states };
+    let changed = false;
+    const drop = (stateKey) => {
+      if (stateKey in next) {
+        delete next[stateKey];
+        changed = true;
+      }
+    };
+    const isDisabled = (section, configKey) => section?.[configKey]?.enabled === false;
+    for (const [btnKey, configKey] of Object.entries(CONTENT_KEY_MAP)) {
+      if (isDisabled(modules.content, configKey)) drop(CONTENT_STATE_KEY[btnKey] ?? btnKey);
+    }
+    for (const [btnKey, configKey] of Object.entries(NAV_KEY_MAP)) {
+      if (isDisabled(modules.navigation, configKey)) drop(btnKey);
+    }
+    const contrast = next["contrast"];
+    if (typeof contrast === "string") {
+      const colorConfigKey = COLOR_KEY_MAP[contrast];
+      if (colorConfigKey && isDisabled(modules.color, colorConfigKey)) drop("contrast");
+    }
+    for (const [btnKey, configKey] of Object.entries(TOP_LEVEL_KEY_MAP)) {
+      if (modules[configKey]?.enabled === false) drop(btnKey);
+    }
+    const profilesSection = modules.profiles;
+    for (const btnKey of PROFILE_BUTTON_KEYS) {
+      const configKey = PROFILE_KEY_MAP[btnKey];
+      const profileOff = profilesSection?.enabled === false || profilesSection?.[configKey]?.enabled === false;
+      if (!profileOff) continue;
+      const wasActive = Boolean(next[btnKey]);
+      drop(btnKey);
+      if (!wasActive) continue;
+      const bundle = PROFILES[btnKey];
+      drop("contrast");
+      bundle.tools.forEach((tool) => drop(CONTENT_STATE_KEY[tool] ?? tool));
+    }
+    return { states: next, changed };
   }
 
   // src/views/menu/reset.ts
@@ -5918,26 +6001,6 @@
     }
   }
 
-  // src/enum/Profiles.ts
-  var PROFILES = {
-    "low-vision-profile": {
-      "contrast": "high-contrast",
-      "tools": ["font-size", "page-read"]
-    },
-    "adhd-profile": {
-      "contrast": "high-saturation",
-      "tools": ["stop-animations", "readable-guide"]
-    },
-    "seizure-safe-profile": {
-      "contrast": "monochrome",
-      "tools": ["stop-animations"]
-    },
-    "epilepsy-safe-profile": {
-      "contrast": "monochrome",
-      "tools": ["stop-animations", "mute-sounds"]
-    }
-  };
-
   // src/tools/selectButtons.ts
   function selectButtons($menu2) {
     const states = userSettings.states;
@@ -5991,12 +6054,6 @@
     if (amountElement) {
       amountElement.textContent = `${(newFontSize * 100).toFixed(0)}%`;
     }
-  }
-
-  // src/tools/disableContrast.ts
-  function disableContrast() {
-    document.getElementById("cya11y-filter-style")?.remove();
-    document.body.classList.remove("cya11y-filter", "cya11y-dark-contrast");
   }
 
   // src/tools/disableProfile.ts
@@ -6442,9 +6499,8 @@
     const visibleContent = filterByModule(ContentButtons_default, pluginConfig.modules?.content, CONTENT_KEY_MAP);
     const visibleToolsRaw = filterByModule(TOOL_PRESETS_default, pluginConfig.modules?.navigation, NAV_KEY_MAP);
     const visibleTools = visibleToolsRaw.filter((btn) => {
-      if (btn.key === "page-read" && pluginConfig.modules?.pageRead?.enabled === false) return false;
-      if (btn.key === "mute-sounds" && pluginConfig.modules?.muteSounds?.enabled === false) return false;
-      return true;
+      const topLevelKey = TOP_LEVEL_KEY_MAP[btn.key];
+      return !topLevelKey || pluginConfig.modules?.[topLevelKey]?.enabled !== false;
     });
     const visibleFilters = filterByModule(FilterButtons_default, pluginConfig.modules?.color, COLOR_KEY_MAP);
     const visibleProfiles = filterByModule(
@@ -6795,7 +6851,15 @@
   async function initRuntime() {
     await loadLanguages();
     const savedSettings = getSavedUserSettings();
+    const { states, changed } = dropDisabledModuleStates(
+      savedSettings.states,
+      pluginConfig.modules
+    );
+    savedSettings.states = states;
     Object.assign(userSettings, savedSettings);
+    if (changed) {
+      saveUserSettings();
+    }
     if (!userSettings.lang) {
       userSettings.lang = getDefaultLanguage();
     }

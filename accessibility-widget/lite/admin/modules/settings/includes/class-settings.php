@@ -221,7 +221,7 @@ class Settings {
 			if ( in_array( $key, $html_keys, true ) ) {
 				$result[ $key ] = \wp_kses_post( $settings[ $key ] );
 			} elseif ( is_array( $data ) ) {
-				$result[ $key ] = self::sanitize_widget_data( $settings[ $key ], $data );
+				$result[ $key ] = self::sanitize_widget_data( $settings[ $key ], $data, $excludes );
 			} else {
 				$result[ $key ] = self::sanitize_value( $settings[ $key ], $data );
 			}
@@ -229,20 +229,40 @@ class Settings {
 		return $result;
 	}
 
-	private static function sanitize_widget_data( $input, $default ) {
+	private static function sanitize_widget_data( $input, $default, $excludes = array() ) {
 		$result = array();
 		foreach ( $default as $key => $value ) {
+			// Excluded keys (e.g. 'selected') are plain lists, not templates to
+			// reconcile against — walking $default's (empty) keys would always
+			// discard whatever the caller submitted, so sanitize them as a list.
+			if ( in_array( $key, $excludes, true ) ) {
+				$result[ $key ] = self::sanitize_list( isset( $input[ $key ] ) ? $input[ $key ] : $value );
+				continue;
+			}
 			if ( ! isset( $input[ $key ] ) ) {
 				$result[ $key ] = $value;
 				continue;
 			}
 			if ( is_array( $value ) ) {
-				$result[ $key ] = self::sanitize_widget_data( $input[ $key ], $value );
+				$result[ $key ] = self::sanitize_widget_data( $input[ $key ], $value, $excludes );
 			} else {
 				$result[ $key ] = self::sanitize_value( $input[ $key ], $value );
 			}
 		}
 		return $result;
+	}
+
+	/**
+	 * Sanitize a flat list of scalar values (e.g. language codes).
+	 *
+	 * @param mixed $input Input value expected to be an array of strings.
+	 * @return array
+	 */
+	private static function sanitize_list( $input ) {
+		if ( ! is_array( $input ) ) {
+			return array();
+		}
+		return array_values( array_map( 'sanitize_text_field', array_filter( $input, 'is_string' ) ) );
 	}
 
 	private static function sanitize_value( $input, $default ) {
