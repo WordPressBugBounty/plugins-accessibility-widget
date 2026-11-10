@@ -74,8 +74,9 @@ class Settings {
 				'desktop' => 'bottom-right',
 			),
 			'language'     => array(
-				'default'  => 'en',
-				'selected' => array(),
+				'default'      => 'en',
+				'selected'     => array(),
+				'showSelector' => true,
 			),
 			'margins'      => array(
 				'desktop' => array(

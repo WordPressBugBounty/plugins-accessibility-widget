@@ -205,6 +205,11 @@ class Api extends Rest_Controller {
 		if ( isset( $data['keyboard'] ) && is_array( $data['keyboard'] ) ) {
 			unset( $data['keyboard']['shortcut'] );
 		}
+		// language.showSelector is set only by the cya11y_show_language_selector filter (no admin UI);
+		// strip it so a REST client cannot hide the selector where the admin screen can't show it.
+		if ( isset( $data['language'] ) && is_array( $data['language'] ) ) {
+			unset( $data['language']['showSelector'] );
+		}
 		$object->update( $data, $clear );
 		return $object->get();
 	}
@@ -309,14 +314,18 @@ class Api extends Rest_Controller {
 					'type'        => 'object',
 					'context'     => array( 'view', 'edit' ),
 					'properties'  => array(
-						'default'  => array(
+						'default'      => array(
 							'type' => 'string',
 						),
-						'selected' => array(
+						'selected'     => array(
 							'type'  => 'array',
 							'items' => array(
 								'type' => 'string',
 							),
+						),
+						'showSelector' => array(
+							'type'     => 'boolean',
+							'readonly' => true,
 						),
 					),
 				),

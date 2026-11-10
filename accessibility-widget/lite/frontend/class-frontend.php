@@ -220,6 +220,22 @@ class Frontend {
 			$settings['keyboard']['shortcut'] = apply_filters( 'cya11y_keyboard_shortcut', 'alt+a' );
 		}
 
+		if ( isset( $settings['language'] ) ) {
+			/**
+			 * Filters whether the language selector card is shown inside the widget menu.
+			 *
+			 * Return false to hide the selector. The widget still auto-translates
+			 * (page/browser language first, then the default language chosen in the
+			 * admin settings); visitors only lose the manual override.
+			 * Takes effect immediately — no re-save required.
+			 *
+			 * @since 3.2.8
+			 *
+			 * @param bool $show Whether to show the selector. Defaults to the saved setting (true).
+			 */
+			$settings['language']['showSelector'] = (bool) apply_filters( 'cya11y_show_language_selector', $settings['language']['showSelector'] );
+		}
+
 		/**
 		 * Filters the keyboard focus-ring colour used inside the widget panel.
 		 *

@@ -19635,7 +19635,8 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
     },
     language: {
       default: "en",
-      selected: []
+      selected: [],
+      showSelector: true
     },
     margins: {
       desktop: {

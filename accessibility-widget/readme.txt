@@ -4,7 +4,7 @@ Tags: web accessibility, wp accessibility, accessibility widget, accessibility t
 Requires at least: 5.0.0
 Tested up to: 7.1.4
 Requires PHP: 5.6
-Stable tag: 3.2.7
+Stable tag: 3.2.8
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -116,6 +116,7 @@ Yes. The plugin includes these hooks:
 
 * `cya11y_keyboard_shortcut` (filter): change the keyboard shortcut, for example `shift+alt+w`.
 * `cya11y_focus_ring_color` (filter): set a custom hex colour for the focus ring inside the widget.
+* `cya11y_show_language_selector` (filter): return false to hide the language selector from the widget menu.
 * `cya11y_is_module_active_{module_id}` (filter): turn a module on or off in code.
 * `cya11y_after_update_settings` (action): runs after the plugin settings are saved.
 * `cya11y_after_activate` (action): runs after the plugin is activated.
@@ -140,6 +141,12 @@ The plugin admin also shows optional links to WebYes (an accessibility scanner a
 5. Choose which accessibility features visitors see in the widget.
 
 == Changelog ==
+
+= 3.2.8 2026-11-10 =
+
+[Add] - Added the `cya11y_show_language_selector` filter to hide the language selector from the widget menu. The widget still auto-translates to the visitor's page or browser language, or the default language set in the admin settings.
+[Fix] - The widget no longer logs "Invalid original font size for element" console warnings on pages where Elementor sets a zero font size on social icon containers.
+[Fix] - The widget now switches language right away when the page language changes while the menu is open.
 
 = 3.2.7 2026-11-03 =
 
@@ -268,12 +275,8 @@ The plugin admin also shows optional links to WebYes (an accessibility scanner a
 
 == Upgrade Notice ==
 
-= 3.2.7 2026-11-03 =
+= 3.2.8 2026-11-10 =
 
-[Add] - Added Slovenian accessibility statement template.
-[Fix] - Colour filter modes (High Contrast, High Saturation, Low Saturation, Monochrome) no longer break the page layout, such as sliders shrinking or sticky headers scrolling away.
-[Fix] - Features turned off in the admin settings no longer stay active for visitors who had enabled them earlier.
-[Fix] - The back button on the accessibility statement panel is now translated.
-[Fix] - Serbian (Cyrillic) can now be selected as the widget's default/enabled language in the admin settings.
-[Fix] - Added missing Galician language option to the widget language list in the admin settings.
-[Compatibility] - Tested OK with WordPress version 7.1.4.
+[Add] - Added the `cya11y_show_language_selector` filter to hide the language selector from the widget menu. The widget still auto-translates to the visitor's page or browser language, or the default language set in the admin settings.
+[Fix] - The widget no longer logs "Invalid original font size for element" console warnings on pages where Elementor sets a zero font size on social icon containers.
+[Fix] - The widget now switches language right away when the page language changes while the menu is open.

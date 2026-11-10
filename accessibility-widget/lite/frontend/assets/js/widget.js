@@ -3993,8 +3993,12 @@
           }
           const originalInlineStyle = element.style.fontSize;
           const computedFontSize = parseInt(window.getComputedStyle(element).fontSize);
-          if (isNaN(computedFontSize) || computedFontSize <= 0) {
+          if (isNaN(computedFontSize)) {
             console.warn("Invalid original font size for element:", element);
+            return;
+          }
+          if (computedFontSize <= 0) {
+            element.dataset[ORIGINAL_FONT_SIZE_ATTR] = "0";
             return;
           }
           element.dataset[ORIGINAL_FONT_SIZE_ATTR] = String(computedFontSize);
@@ -4300,7 +4304,8 @@
     },
     language: {
       default: "en",
-      selected: []
+      selected: [],
+      showSelector: true
     },
     margins: {
       desktop: {
@@ -5735,6 +5740,9 @@
     }
     return { states: next, changed };
   }
+  function shouldShowLanguageSelector(language) {
+    return language?.showSelector !== false;
+  }
 
   // src/views/menu/reset.ts
   function reset($menu2) {
@@ -6119,11 +6127,10 @@
     newLang = matched ? matched.code : pluginConfig.language.default;
     if (userSettings.lang !== newLang) {
       userSettings.lang = newLang;
-      const $lang = $menu2.querySelector("#cya11y-language");
-      if ($lang) {
-        $lang.value = newLang;
+      const $target = $menu2 instanceof HTMLElement ? $menu2 : $menu;
+      if ($target) {
+        translateWidget($target);
       }
-      translateWidget($menu2);
       saveUserSettings();
     }
   }
@@ -6150,12 +6157,14 @@
       return null;
     }
   }
-  var detectedLanguage = getScriptDataAttribute("lang") || document.documentElement?.lang || navigator?.language || document.querySelector('meta[http-equiv="Content-Language"]')?.getAttribute("content");
+  function getDetectedLanguage() {
+    return getScriptDataAttribute("lang") || document.documentElement?.lang || navigator?.language || document.querySelector('meta[http-equiv="Content-Language"]')?.getAttribute("content");
+  }
 
   // src/i18n/getDefaultLanguage.ts
   var isSupported = (code) => !!code && LANGUAGES.some((lang) => lang.code === code);
   function getDefaultLanguage() {
-    const detected = detectedLanguage?.split(/[-_]/)?.[0]?.trim();
+    const detected = getDetectedLanguage()?.split(/[-_]/)?.[0]?.trim();
     if (isSupported(detected)) {
       return detected;
     }
@@ -6577,7 +6586,12 @@
       $textAlignBtn.setAttribute("data-translate", taLabelKey);
       $textAlignBtn.setAttribute("title", t(taLabelKey));
     }
-    renderLanguageDropdown($menu2);
+    if (shouldShowLanguageSelector(pluginConfig.language)) {
+      renderLanguageDropdown($menu2);
+    } else {
+      const $langDropdown = $menu2.querySelector("#cya11y-language-dropdown");
+      ($langDropdown?.closest("section") || $langDropdown?.parentElement)?.remove();
+    }
     const $statementLink = $container.querySelector(".cya11y-accessibility-statement-link");
     const statementModule = pluginConfig.modules.statement;
     if ($statementLink) {
@@ -6860,7 +6874,7 @@
     if (changed) {
       saveUserSettings();
     }
-    if (!userSettings.lang) {
+    if (!userSettings.lang || !shouldShowLanguageSelector(pluginConfig.language)) {
       userSettings.lang = getDefaultLanguage();
     }
     runAccessibility();
@@ -6890,7 +6904,7 @@
           for (const mutation of mutations) {
             if (mutation.type === "attributes" && mutation.attributeName === "lang") {
               const newLanguage = getDefaultLanguage();
-              changeLanguage(newLanguage, true);
+              changeLanguage(newLanguage);
             }
           }
         } catch (error) {
